@@ -1,0 +1,18 @@
+.top_menu_second {
+	left: -430px;
+	right: auto;
+}
+.main-site{
+	left: 0;
+	right: auto;
+}
+.main-site.open-sidebar1 .header.fixed {
+	left: 370px;
+	right: auto;
+}
+@media (max-width: 991px){
+	.top_menu_second{
+	  right: 15px;
+	  left: auto;
+	}
+}
