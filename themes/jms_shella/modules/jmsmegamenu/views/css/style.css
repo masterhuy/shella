@@ -68,18 +68,25 @@
     display: inline-block;
     float: inherit;
     margin: 0;
-    padding: 0 18.5px;
+    padding: 0 5px;
     vertical-align: top;
 }
 .jms-megamenu .nav > .menu-item.mega.new{
 	top:0 !important;
-} 
+}
+.jms-megamenu .nav > li.sub-layouts{
+    padding-left: 0;
+}
 .jms-megamenu .nav > li > a {
-    line-height: 60px;
+    line-height: 38px;
     padding: 0;
     position: relative;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    display: flex;
+}
+.jms-megamenu .nav > li > a i{
+    display: flex;
 }
 .jms-megamenu .nav > li > a:hover, .jms-megamenu .nav > li > a:focus {
     color: #b20f0f;

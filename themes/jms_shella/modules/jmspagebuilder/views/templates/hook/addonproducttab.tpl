@@ -33,7 +33,7 @@ var p_nav_tab = {if $navigation == 1}true{else}false{/if};
 var p_pag_tab = {if $pagination == 1}true{else}false{/if};
 var auto_play_tab = {if $autoplay == 1}true{else}false{/if};
 </script>
-</script>
+
 <div class="product_tab">
 	{if $addon_title}
 	<div class="addon-title">
@@ -43,8 +43,8 @@ var auto_play_tab = {if $autoplay == 1}true{else}false{/if};
 	{if $addon_desc}
 	<p class="addon-desc">{$addon_desc|escape:'htmlall':'UTF-8'}</p>
 	{/if}		
-	<div class="jms-tab">
-		<ul class="nav" role="tablist">
+	<div class="jms-tab d-flex flex-center">
+		<ul class="nav d-flex" role="tablist">
 		{$cf = 0}
 			{if $config.show_featured eq '1'}
 				<li class="nav-item"><a class="button active" data-toggle="tab" href="#featured">{l s='Featured'  d='Shop.Theme'}</a></li>
@@ -150,8 +150,5 @@ var auto_play_tab = {if $autoplay == 1}true{else}false{/if};
 			 </div>
 			{$cf = $cf + 1}
 		{/if}
-	</div>
-	<div class="text-center view-all">
-		<a href="index.php?id_category=2&controller=category&id_lang=1" class="btn-underline">{l s='view all products'  d='Shop.Theme'}</a>
 	</div>
 </div>

@@ -100,8 +100,16 @@
 			  </div>
 			{/if}
 		{/block}
-		
-	
+
+		{block name='product_variants'}
+			{if $product.main_variants}
+				{if isset($jpb_pcolor) && $jpb_pcolor == 1}
+					<div class="color_to_pick_list">
+						{include file='catalog/_partials/variant-links.tpl' variants=$product.main_variants}
+					</div>
+				{/if}
+			{/if}
+		{/block}
 		
 		<div class="product-description">
 			{$product.description_short|truncate:170:'...' nofilter}
@@ -138,15 +146,6 @@
 				</a>
 			{/if}
 		</div>
-		{block name='product_variants'}
-			{if $product.main_variants}
-				{if isset($jpb_pcolor) && $jpb_pcolor == 1}
-					<div class="color_to_pick_list">
-						{include file='catalog/_partials/variant-links.tpl' variants=$product.main_variants}
-					</div>
-				{/if}
-			{/if}
-		{/block}
     </div>
 </div>
 

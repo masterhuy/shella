@@ -242,7 +242,12 @@ class JmsMegaMenu extends Module
                 }
                 $this->menu .=  "<span>".$item['name']."</span>";
                 if (($item['level'] == 0) && isset($this->children[$itemid])) {
-                    $this->menu .= '<em class="caret"></em>';
+                    $this->menu .= '<i>
+                    <svg aria-hidden="true" focusable="false" role="presentation"
+                        class="icon icon-theme-229" viewBox="0 0 24 24">
+                        <path d="M11.783 14.088l-3.75-3.75a.652.652 0 0 1-.176-.449c0-.169.059-.319.176-.449a.65.65 0 0 1 .449-.176c.169 0 .318.059.449.176l3.301 3.32 3.301-3.32a.65.65 0 0 1 .449-.176c.169 0 .318.059.449.176.117.13.176.28.176.449a.652.652 0 0 1-.176.449l-3.75 3.75a.877.877 0 0 1-.215.127.596.596 0 0 1-.468 0 .841.841 0 0 1-.215-.127z"/>
+                    </svg>
+                </i>';
                 }
                 $this->menu .= '</a>';
             }

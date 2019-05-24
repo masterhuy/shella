@@ -59,6 +59,10 @@
 .header {
   padding: 5.5px 0; }
 
+.jms-slider-wrapper .btn-shop .btn-default {
+  min-width: 215px;
+  margin: 0 3px; }
+
 .right-icon-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,8 +83,71 @@
       display: -ms-flexbox;
       display: flex; }
 
+.banner-category .jms-banner:hover .banner-content p {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0); }
+
+.banner-category .jms-banner:hover .banner-content ul {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1); }
+
+.banner-category .banner-content {
+  position: unset; }
+  .banner-category .banner-content p {
+    padding: 9.5px;
+    letter-spacing: 0.7px;
+    font-size: 15px;
+    position: absolute;
+    width: calc(100% - 40px);
+    text-align: center;
+    left: 20px;
+    bottom: 20px;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.9);
+    -webkit-transition: .4s all;
+    -o-transition: .4s all;
+    transition: .4s all; }
+  .banner-category .banner-content ul {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: calc(100% - 40px);
+    text-align: center;
+    height: calc(100% - 40px);
+    margin: 0;
+    background: rgba(255, 255, 255, 0.9);
+    -webkit-transition: .4s all;
+    -o-transition: .4s all;
+    transition: .4s all;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0); }
+    .banner-category .banner-content ul li.group a {
+      color: #141414;
+      font-size: 15px;
+      letter-spacing: 0.7px;
+      padding-bottom: 4px; }
+    .banner-category .banner-content ul li a {
+      color: #858585;
+      line-height: 23px;
+      display: inline-block; }
+      .banner-category .banner-content ul li a:hover {
+        color: #141414; }
+
 #jms_ajax_search #search-form .close-search {
   background: #b20f0f url("../img/icon/close-search.png") no-repeat center; }
+
+.jms-tab ul .nav-item.active a {
+  color: #141414; }
+
+.jms-tab ul .nav-item a {
+  padding: 0 15px;
+  font-size: 18px;
+  color: #858585; }
+  .jms-tab ul .nav-item a.active {
+    color: #141414; }
 
 #product #main {
   position: relative; }

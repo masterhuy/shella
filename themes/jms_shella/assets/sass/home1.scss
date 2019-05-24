@@ -1,2 +1,12 @@
 @import "mixin";
 @import "varians";
+
+.menu{
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+}
+.jms-slider-wrapper{
+	.text-2{
+		letter-spacing: 2px;
+	}
+}
