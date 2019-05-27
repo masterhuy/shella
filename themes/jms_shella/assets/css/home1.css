@@ -4,3 +4,27 @@
 
 .jms-slider-wrapper .text-2 {
   letter-spacing: 2px; }
+
+.banner-4 .banner-content {
+  top: 50%;
+  left: 0;
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.banner-4 .banner-content .text-1 {
+  font-size: 15px;
+  letter-spacing: 0.7px;
+  margin-bottom: 13px;
+  padding-top: 7px; }
+
+.banner-4 .banner-content .text-2 {
+  font-size: 32px;
+  letter-spacing: 1.6px;
+  margin-bottom: 11px; }
+
+.banner-4 .banner-content .text-3 {
+  margin-bottom: 27px; }

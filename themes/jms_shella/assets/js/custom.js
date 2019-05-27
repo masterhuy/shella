@@ -43,6 +43,8 @@
 		$.fancybox(ez.getGalleryList()); 
 		return false; 
 	});
+	
+	$('[data-toggle="tooltip"]').tooltip();   
 
 });
  
@@ -248,6 +250,7 @@ jQuery(function ($) {
 			loop: true,
 			slideSpeed: 800,
 		});
+
 	}
 
 	if($(".product-carousel-col1").length) {		

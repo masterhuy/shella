@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Simplify cross-border selling with multi-currency</title>
+    <link>https://www.prestashop.com/en/blog/business-international-sell-multicurrency</link>
+    <description>Digital cross-border buying continues to grow in popularity. Based on a survey of consumers in 12 countries, 70% of online buyers made a purchase from a foreign site in 2017.</description>
+     <pubDate>Fri, 24 May 2019 12:05:12 +0200</pubDate>
+ <dc:creator>Amazon Pay</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/business-international-sell-multicurrency</guid>
+  </item>
+  <item>
     <title>What is CPA and how can it improve my eCommerce’s online ads strategy</title>
     <link>https://www.prestashop.com/en/blog/cpa-ecommerces-online-ads-strategy</link>
     <description>For your campaigns to be effective, and to make sure your hard work promoting your products pays off, it is essential to define the structure your campaigns are going to take.</description>
@@ -76,14 +84,6 @@
      <pubDate>Fri, 19 Apr 2019 10:32:09 +0200</pubDate>
  <dc:creator>Zeeshan Khalid</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/ultimate-seo-checklist-for-prestashop</guid>
-  </item>
-  <item>
-    <title>New developments at PrestaShop! What’s the latest?</title>
-    <link>https://www.prestashop.com/en/blog/new-features-prestashop-2019</link>
-    <description>We often say that a picture is worth a thousand words.</description>
-     <pubDate>Thu, 18 Apr 2019 17:17:30 +0200</pubDate>
- <dc:creator>Méguy Solvet</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/new-features-prestashop-2019</guid>
   </item>
   </channel>
 </rss>
