@@ -26,9 +26,11 @@
 <div class="addon-instagram">
 	<div class="addon-title">
 		<h3>
-			{l s='Follow us' d='Modules.JmsPagebuilder'}
+			<span class="text-underline">
+				{l s='@Shella' d='Modules.JmsPagebuilder'}
+			</span>
+			{l s='Follow Us On Instagram' d='Modules.JmsPagebuilder'}
 		</h3>
-		<span>#{l s='Mella' d='Modules.JmsPagebuilder'}</span>
 	</div>
 	<div class="instagram-carousel">
 		{foreach from=$insta_images item=img}

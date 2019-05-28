@@ -899,7 +899,7 @@ jQuery(function ($) {
 			responsiveClass:true,
 			responsive:{			
 				1199:{
-					items:8
+					items:6
 					},
 				991:{
 					items:5

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-27 06:28:21
+/* Smarty version 3.1.33, created on 2019-05-28 05:59:32
   from 'D:\xamppp\htdocs\jms_shella\themes\jms_shella\modules\jmspagebuilder\views\templates\hook\addonbrand.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cebbbc5c171d3_12395695',
+  'unifunc' => 'content_5ced06841a8794_49166110',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd4ac15c03a455b52c2058d2050584197aa0663be' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_shella\\themes\\jms_shella\\modules\\jmspagebuilder\\views\\templates\\hook\\addonbrand.tpl',
-      1 => 1558952689,
+      1 => 1559008820,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cebbbc5c171d3_12395695 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ced06841a8794_49166110 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">    	
 	var brand_items = 3,
@@ -67,6 +67,7 @@ echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'mo
 echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['brand']->value['image'],'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
 " alt="<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['brand']->value['title'],'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
 " />
+				<div class="promobox__border absolute-stretch"></div>
 			</a>
 			<?php }?>
 		</div>

@@ -47,6 +47,7 @@
 			{if $brand.image}
 			<a href="{if $link_enable == '1'}{$brand.url|escape:'html':'UTF-8'}{else}#{/if}" title="{$brand.title|escape:'html':'UTF-8'}">					
 				<img src="{$image_url|escape:'html':'UTF-8'}{$brand.image|escape:'html':'UTF-8'}" alt="{$brand.title|escape:'html':'UTF-8'}" />
+				<div class="promobox__border absolute-stretch"></div>
 			</a>
 			{/if}
 		</div>
