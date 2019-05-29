@@ -39,7 +39,6 @@
 				{foreach from=$languages key=k item=language name="languages"}
 					<li {if $language.id_lang == $current_language.id_lang} class="current" {/if}>
 						<a href="{url entity='language' id=$language.id_lang}" class="collapse-item">
-							<img class="flag" alt="{$language.iso_code}" src="{$urls.base_url}img/l/{$language.id_lang}.jpg" width="16" height="11"/>
 							{$language.name_simple}
 						</a>
 					</li>

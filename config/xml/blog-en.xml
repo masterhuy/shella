@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>International Shipping</title>
+    <link>https://www.prestashop.com/en/blog/international-shipping</link>
+    <description>International shipping takes planning, patience, and going through a bit of red tape.</description>
+     <pubDate>Mon, 27 May 2019 10:33:12 +0200</pubDate>
+ <dc:creator>shipstation</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/international-shipping</guid>
+  </item>
+  <item>
     <title>Simplify cross-border selling with multi-currency</title>
     <link>https://www.prestashop.com/en/blog/business-international-sell-multicurrency</link>
     <description>Digital cross-border buying continues to grow in popularity. Based on a survey of consumers in 12 countries, 70% of online buyers made a purchase from a foreign site in 2017.</description>
@@ -76,14 +84,6 @@
      <pubDate>Fri, 26 Apr 2019 16:10:05 +0200</pubDate>
  <dc:creator>Shamla Tech Agency</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/cryptocurrency-the-e-commerce-game-changer</guid>
-  </item>
-  <item>
-    <title>The Ultimate SEO Checklist for PrestaShop (2019)</title>
-    <link>https://www.prestashop.com/en/blog/ultimate-seo-checklist-for-prestashop</link>
-    <description>Search Engine Optimization (SEO) has become an integral part of promoting and marketing a website online.</description>
-     <pubDate>Fri, 19 Apr 2019 10:32:09 +0200</pubDate>
- <dc:creator>Zeeshan Khalid</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/ultimate-seo-checklist-for-prestashop</guid>
   </item>
   </channel>
 </rss>

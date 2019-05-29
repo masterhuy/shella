@@ -599,15 +599,16 @@
 .btn-group{
 	.collapse, .collapsing {
 		position: absolute !important;
-		right: -20px;
-		top: calc(100% + 10px);
-		min-width: 150px;
+		right: 0;
+		top: 100%;
+		min-width: 169px;
 		margin-bottom: 0;
 		background: #fff;
 		box-shadow: 0 0 11px rgba(0,0,0,0.1);
 		z-index: 999;
 		li{
-			line-height: 35px;
+			line-height: 23px;
+			padding: 0 15px;
 		}
 		.collapse-item {
 			font-size: 12px;
@@ -615,6 +616,7 @@
 			white-space: nowrap;
 			overflow: hidden;
 			text-overflow: ellipsis;
+			letter-spacing: 0.5px;
 		}
 	}
 }
@@ -904,8 +906,11 @@
 	ul > li{
 		&.current > a{
 			color: $active;
+			background: #f2f2f2;
 		}
 		> a{
+			padding: 0 7px;
+			color: $subcolor;
 			&:hover{
 				color: $active;
 			}
@@ -2396,6 +2401,34 @@ a.wishlist_top{
 }
 #cart_block{
 	display: flow-root;
+	.dropdown-menu{
+		position: fixed;
+		right: 0;
+		top: 0;
+		width: 270px;
+		height: 100%;
+		left: auto;
+		padding: 0;
+	}
+	.btn-default{
+		text-align: center;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.close-cart {
+	  position: absolute;
+	  right: 20px;
+	  top: 25px;
+	  cursor: pointer;
+	}
+	.quantity{
+		text-transform: uppercase;
+		letter-spacing: 0.8px;
+		font-size: 15px;
+	}
+	.cart_block_list {
+		padding-top: 17px;
+	}
 }
 .cart-icon{
 	display: inline-flex;
@@ -2533,6 +2566,12 @@ a.wishlist_top{
 			}
 		}
 	}
+}
+//
+
+//ajaxsearch
+#jms_ajax_search #ajax_search{
+	background: #fff url("../img/icon/search-bg.png") no-repeat right;
 }
 //
 

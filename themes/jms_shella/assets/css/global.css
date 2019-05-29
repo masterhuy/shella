@@ -505,23 +505,25 @@
 
 .btn-group .collapse, .btn-group .collapsing {
   position: absolute !important;
-  right: -20px;
-  top: calc(100% + 10px);
-  min-width: 150px;
+  right: 0;
+  top: 100%;
+  min-width: 169px;
   margin-bottom: 0;
   background: #fff;
   -webkit-box-shadow: 0 0 11px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 11px rgba(0, 0, 0, 0.1);
   z-index: 999; }
   .btn-group .collapse li, .btn-group .collapsing li {
-    line-height: 35px; }
+    line-height: 23px;
+    padding: 0 15px; }
   .btn-group .collapse .collapse-item, .btn-group .collapsing .collapse-item {
     font-size: 12px;
     display: block;
     white-space: nowrap;
     overflow: hidden;
     -o-text-overflow: ellipsis;
-    text-overflow: ellipsis; }
+    text-overflow: ellipsis;
+    letter-spacing: 0.5px; }
 
 #footer {
   margin-top: 60px;
@@ -757,10 +759,14 @@
   display: none; }
 
 .languages-info ul > li.current > a, #_desktop_currency_selector ul > li.current > a, #_desktop_user_info ul > li.current > a {
-  color: #141414; }
+  color: #141414;
+  background: #f2f2f2; }
 
-.languages-info ul > li > a:hover, #_desktop_currency_selector ul > li > a:hover, #_desktop_user_info ul > li > a:hover {
-  color: #141414; }
+.languages-info ul > li > a, #_desktop_currency_selector ul > li > a, #_desktop_user_info ul > li > a {
+  padding: 0 7px;
+  color: #858585; }
+  .languages-info ul > li > a:hover, #_desktop_currency_selector ul > li > a:hover, #_desktop_user_info ul > li > a:hover {
+    color: #141414; }
 
 .btn-tertiary.js-search-filters-clear-all {
   font-size: 14px;
@@ -2045,6 +2051,29 @@ a.wishlist_top {
 
 #cart_block {
   display: flow-root; }
+  #cart_block .dropdown-menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 270px;
+    height: 100%;
+    left: auto;
+    padding: 0; }
+  #cart_block .btn-default {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px; }
+  #cart_block .close-cart {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    cursor: pointer; }
+  #cart_block .quantity {
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    font-size: 15px; }
+  #cart_block .cart_block_list {
+    padding-top: 17px; }
 
 .cart-icon {
   display: -webkit-inline-box;
@@ -2165,6 +2194,9 @@ a.wishlist_top {
   .mega-tab-right .mega_cates_tab .jms-tab ul .nav-item, .mega-tab-right .product_tab .jms-tab ul .nav-item {
     margin-right: 0;
     margin-left: 48px; }
+
+#jms_ajax_search #ajax_search {
+  background: #fff url("../img/icon/search-bg.png") no-repeat right; }
 
 .mega-tab-center .mega_cates_tab .addon-desc {
   margin-bottom: 44px; }

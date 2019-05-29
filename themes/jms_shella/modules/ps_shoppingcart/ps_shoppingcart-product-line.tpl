@@ -7,16 +7,22 @@
 			{$product.name}
 		</a>
 		<div class="line">
+			<div class="quantity-formated">
+				<span class="quantity">
+					{$product.quantity} 
+				</span>
+				<span>x</span>
+			</div>
 			<div class="content_price">
 				<span class="price new">
 					{$product.price}
 				</span>
 			</div>
-			<span class="remove_link">
-				<a class="remove-from-cart" rel="nofollow" href="{$product.remove_from_cart_url}" data-link-action="remove-from-cart" title="{l s='Remove from cart' d='Shop.Theme.Actions'}" >
-					<i class="fa fa-times" aria-hidden="true"></i>
-				</a>
-			</span>
 		</div>
+		<span class="remove_link">
+			<a class="remove-from-cart" rel="nofollow" href="{$product.remove_from_cart_url}" data-link-action="remove-from-cart" title="{l s='Remove from cart' d='Shop.Theme.Actions'}" >
+				{l s='Remove' d='Shop.Theme.Actions'}
+			</a>
+		</span>
 	</div>
 </div>

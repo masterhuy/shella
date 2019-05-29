@@ -1058,33 +1058,6 @@ $(document).ready(function() {
     	$('.jms-row.video').removeClass('show-video');
     });
 
-	$('.home_3 #jms_ajax_search .btn-search').click(function() {
-		$(".header-left-fixed").addClass('new-zindex');
-	});
-
-	$('.home_3 #jms_ajax_search .close-search').click(function() {
-		$(".header-left-fixed").removeClass('new-zindex');
-	});
-
-	$('.home_9 #jms_ajax_search .btn-search').click(function() {
-		$("#header").addClass('new-zindex');
-	});
-
-	$('.home_9 #jms_ajax_search #search-form').click(function() {
-		$("#header").removeClass('new-zindex');
-	});
-
-	$('#jms_ajax_search .btn-search').click(function(e) {
-		$("#search-form").addClass('open');
-	});
-
-	$(".searchbox").on('click', function (e) {
-	     e.stopPropagation();
-	});
-
-	$("#search-form").on('click', function (e) {
-	     $("#search-form").removeClass('open');
-	});
 
 	$('.jms-popup').addClass('collapse');
 		setTimeout( function(){

@@ -25,28 +25,34 @@
 <div class="result_div">
     {if $products}
         <div class="results">
-            {foreach from=$products item=product name=i}
-                <div class="item clearfix">     
-					{if $show_image == 1}
-                    <div class="left-img">
-                        <a href="{$product.link nofilter}" title="{$product.name nofilter}" class="product_image">
-                            <img src="{$link->getImageLink($product.id_image, $product.id_image, 'home_default') nofilter}" alt="{$product.name nofilter}" class="img-responsive" />
-                        </a>
+            <div class="row">
+                {foreach from=$products item=product name=i}
+                    
+                    <div class="item clearfix">     
+                        {if $show_image == 1}
+                        <div class="left-img">
+                            <a href="{$product.link nofilter}" title="{$product.name nofilter}" class="product_image">
+                                <img src="{$link->getImageLink($product.id_image, $product.id_image, 'home_default') nofilter}" alt="{$product.name nofilter}" class="img-responsive" />
+                            </a>
+                        </div>
+                        {/if}	
+                        <div class="right-info">
+                            <a class="product-link" href="{$product.link nofilter}" title="{$product.name nofilter}">
+                                {$product.name|truncate:35:'...' nofilter}
+                            </a>
+                            {if $show_desc == 1}
+                                <p class="desc">{$product.desc|truncate:$desc_count:'...' nofilter}</p>
+                            {/if}
+                            {if $show_price == 1}
+                            <div class="content_price">
+                                <span class="price new">{$product.price nofilter}</span>
+                            </div>
+                            {/if}
+                        </div>
                     </div>
-					{/if}	
-                    <div class="right-info">
-                        <a href="{$product.link nofilter}" title="{$product.name nofilter}">
-                            {$product.name|truncate:35:'...' nofilter}
-                        </a>
-                        {if $show_desc == 1}
-                            <p class="desc">{$product.desc|truncate:$desc_count:'...' nofilter}</p>
-                        {/if}
-                        {if $show_price == 1}
-                            <span class="price">{$product.price nofilter}</span>
-                        {/if}
-                    </div>
-                </div>
-            {/foreach}
+                    
+                {/foreach}
+            </div>
         </div>
     {else}
         {$no_text nofilter}
