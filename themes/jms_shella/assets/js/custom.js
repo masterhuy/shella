@@ -18,6 +18,10 @@
 		event: jmmm_event,
 		duration: jmmm_duration
 	});
+	// var footerHeight = $("#footer").outerHeight();
+	// var footerHeight2 = footerHeight + 60;
+	// console.log(footerHeight2);
+	// $("#wrapper").attr("style","margin-bottom:" + footerHeight2 + "px");
 
 	$('.menu-item.collection .mega-dropdown-inner').addClass('collection-carousel');
 
@@ -1058,15 +1062,6 @@ $(document).ready(function() {
     	$('.jms-row.video').removeClass('show-video');
     });
 
-
-	$('.jms-popup').addClass('collapse');
-		setTimeout( function(){
-    	$('.jms-popup').addClass('flipInX animated in');
-	},500);
-	
-	// $('.mega_menu').click(function(event) {
-	// 	$('.main-site').toggleClass('open-sidebar1');
-	// });
 });
 
 jQuery(function ($) {

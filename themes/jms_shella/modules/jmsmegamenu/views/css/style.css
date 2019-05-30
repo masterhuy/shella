@@ -51,8 +51,9 @@
     height: 14px;
     background: #e8b7b7;
 }
-.jms-megamenu .nav.level0{
-    justify-content: flex-end;
+.menu.center .jms-megamenu .nav.level0{
+    display: flex;
+    justify-content: center;
 }
 .jms-megamenu .nav a {
     transition: all 400ms ease 0s;
@@ -74,7 +75,7 @@
 .jms-megamenu .nav > .menu-item.mega.new{
 	top:0 !important;
 }
-.jms-megamenu .nav > li.sub-layouts{
+.menu.left .jms-megamenu .nav > li.sub-layouts{
     padding-left: 0;
 }
 .jms-megamenu .nav > li > a {

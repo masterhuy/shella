@@ -46,18 +46,21 @@
 {/foreach}
 {if $settingpanel}
 <div id="jmstools" class="jmsclose hidden-xs hidden-sm">
-	<a id="jmstools-arrow" class="pull-right"><i class="fa fa-cog fa-spin"></i></a>
+	<a id="jmstools-arrow" class="pull-right">
+		<i class="la la-cog"></i>
+		<i class="la la-close"></i>
+	</a>
 	<div id="jmstools-content" class="pull-left">
 		<form action="index.php" method="POST">
 			{if $themeskins|@count > 0}
 			<div class="form-group">
 				<label class="form-label">Theme Skin</label>
 					<a class="skin-box {if $jpb_skin=='default' || $jpb_skin==''}active{/if}" title="Default">
-					<img src="themes/{$themename nofilter}/skin-icons/default.png" alt="Default" />
+					<img src="themes/{$themename|escape:'htmlall':'UTF-8'}/skin-icons/default.png" alt="Default" />
 					</a>
 				{foreach from=$themeskins item=sk}
-					<a class="skin-box {if $jpb_skin== $sk}active{/if}" title="{$sk nofilter}" data-color="{$sk nofilter}">
-					<img src="themes/{$themename nofilter}/skin-icons/{$sk nofilter}.png" alt="{$sk nofilter}" />
+					<a class="skin-box {if $jpb_skin=={$sk}}active{/if}" title="{$sk|escape:'htmlall':'UTF-8'}" data-color="{$sk|escape:'htmlall':'UTF-8'}">
+					<img src="themes/{$themename|escape:'htmlall':'UTF-8'}/skin-icons/{$sk|escape:'htmlall':'UTF-8'}.png" alt="{$sk|escape:'htmlall':'UTF-8'}" />
 					</a>					
 				{/foreach}
 			</div>
@@ -67,7 +70,7 @@
 					<label>Home Page</label>
 					<select name="jpb_homepage" id="jmshomepage">
 					{foreach from=$homepages item=hp}
-						<option value="{$hp.id_homepage nofilter}" {if $jpb_homepage=={$hp.id_homepage nofilter}}selected="selected"{/if}>{$hp.title nofilter}</option>					
+						<option value="{$hp.id_homepage|escape:'htmlall':'UTF-8'}" {if $jpb_homepage=={$hp.id_homepage|escape:'htmlall':'UTF-8'}}selected="selected"{/if}>{$hp.title|escape:'htmlall':'UTF-8'}</option>					
 					{/foreach}	
 					</select>
 			</div>
@@ -77,11 +80,18 @@
 					<label>Product Box Hover</label>
 					<select name="jpb_phover" id="jmsphover">
 					{foreach from=$producthovers item=ph key=phkey}
-						<option value="{$phkey nofilter}" {if $jpb_phover=={$phkey nofilter}}selected="selected"{/if}>{$ph nofilter}</option>					
+						<option value="{$phkey|escape:'htmlall':'UTF-8'}" {if $jpb_phover=={$phkey|escape:'htmlall':'UTF-8'}}selected="selected"{/if}>{$ph|escape:'htmlall':'UTF-8'}</option>					
 					{/foreach}	
 					</select>
 			</div>
-			{/if}				
+			{/if}		
+			<div class="form-group">		
+				<label>Product Box Color Pick</label>	
+				<select name="jpb_pcolor">
+					<option value="1" {if $jpb_pcolor=='1'}selected="selected"{/if}>Show</option>										
+					<option value="0" {if $jpb_pcolor=='0'}selected="selected"{/if}>Hide</option>										
+				</select>				
+			</div>
 			<div class="form-group">		
 				<label>Direction</label>	
 				<select name="jpb_rtl">
@@ -89,7 +99,7 @@
 					<option value="1" {if $jpb_rtl=='1'}selected="selected"{/if}>RTL</option>										
 				</select>				
 			</div>
-			<input id="jmsskin" type="hidden" name="jpb_skin" value="{$jpb_skin nofilter}" />
+			<input id="jmsskin" type="hidden" name="jpb_skin" value="{$jpb_skin|escape:'htmlall':'UTF-8'}" />
 			
 			<div class="form-group btn-action">
 				<button type="submit" class="btn" name="apply" value="1">Apply</button>

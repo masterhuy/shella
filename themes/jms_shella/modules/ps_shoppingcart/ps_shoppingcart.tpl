@@ -35,8 +35,8 @@
 			<div class="cart-prices">
 				<div class="checkout-info">
 					{foreach from=$cart.subtotals item="subtotal"}
-						<div class="{$subtotal.type} cart-prices-line">
-							<span class="label">{$subtotal.label}</span>
+						<div class="{if $subtotal.type == ''}hidden {else}$subtotal.type {/if} cart-prices-line">
+							<span class="label">{$subtotal.label}:</span>
 							<span class="value">{$subtotal.value}</span>
 						</div>
 					{/foreach}
@@ -51,6 +51,6 @@
 				</div>
 			</div>
 		</div>
-		<div class="bg-overlay"></div>
 	</div>
+	<div class="bg-overlay"></div>
 </div>

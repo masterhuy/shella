@@ -37,6 +37,9 @@
 						<button type="submit" name="submitNewsletter" class="btn-default">
 							{l s='SUBSCRIBE!' d='Shop.Theme.Global'}
 						</button>
+						<button type="submit" name="submitNewsletter" class="btn-default active">
+							{l s='SUBSCRIBE!' d='Shop.Theme.Global'}
+						</button>
 						<input type="hidden" name="action" value="0" />
 					</div>
 					{if $msg}

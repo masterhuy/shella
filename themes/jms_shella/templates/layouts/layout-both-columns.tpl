@@ -105,8 +105,11 @@
           {if $page.page_name != 'index'}
           </div>
 		    </div>
+        
 		{/if}
       </div>
+      </div>
+
 
       <footer id="footer">
         {block name="footer"}

@@ -32,6 +32,7 @@ body {
   line-height: normal; }
 
 .main-site {
+  background: #fff;
   overflow: hidden;
   position: relative; }
 
@@ -120,7 +121,17 @@ hr {
 .text-underline {
   text-decoration: underline !important;
 }
-
+.bg-overlay{
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 999;
+}
 .download-invoice {
     color: #fff !important;
     font-weight: 700;
@@ -150,9 +161,6 @@ hr {
   padding: 12px 26px;
   background: #fff;
   box-shadow: 0 0 3px rgba(0,0,0,0.06);
-}
-.bg-color-f2{
-  background: #f2f2f2;
 }
 
 .warning, .alert-warning, .warning_inline {
@@ -985,17 +993,18 @@ table td[class*="col-"], table table th[class*="col-"] {
 
 /* Dropdown Menu */
 .dropdown-menu {
+  display: block;
   font-size: 13px;
   top: calc(100% + 1px);
   border: 0;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: opacity 0.3s ease 0s, visibility 0s ease 0.3s, transform 0.3s ease 0s;
-  -o-transition: opacity 0.3s ease 0s, visibility 0s ease 0.3s, transform 0.3s ease 0s;
-  -webkit-transition: opacity 0.3s ease 0s, visibility 0s ease 0.3s, -webkit-transform 0.3s ease 0s;
-  transition: opacity 0.3s ease 0s, visibility 0s ease 0.3s, -webkit-transform 0.3s ease 0s;
-  transition: opacity 0.3s ease 0s, visibility 0s ease 0.3s, transform 0.3s ease 0s;
-  transition: opacity 0.3s ease 0s, visibility 0s ease 0.3s, transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+   -webkit-transition: opacity 0.4s ease 0s, visibility 0s ease 0.4s, transform 0.4s ease 0s;
+  -o-transition: opacity 0.4s ease 0s, visibility 0s ease 0.4s, transform 0.4s ease 0s;
+  -webkit-transition: opacity 0.4s ease 0s, visibility 0s ease 0.4s, -webkit-transform 0.4s ease 0s;
+  transition: opacity 0.4s ease 0s, visibility 0s ease 0.4s, -webkit-transform 0.4s ease 0s;
+  transition: opacity 0.4s ease 0s, visibility 0s ease 0.4s, transform 0.4s ease 0s;
+  transition: opacity 0.4s ease 0s, visibility 0s ease 0.4s, transform 0.4s ease 0s, -webkit-transform 0.4s ease 0s;
   margin: 0;
   -webkit-box-shadow: 0 8 8px rgba(0, 0, 0, 0.2);
   box-shadow: 0 8 8px rgba(0, 0, 0, 0.2);
@@ -1329,10 +1338,10 @@ ul.cart_block_list li:not(:last-child){
   margin-top: 2px;
 }
 .cart-prices .value {
-  float: right;
-  font-size: 13px;
+  font-size: 15px;
   color: #141414;
-  font-weight: 500;
+  font-weight: 400;
+  letter-spacing: 0.8px;
   line-height: 33px;
 }
 .cart-wrap .preview-image img {
@@ -1360,7 +1369,7 @@ ul.cart_block_list li:not(:last-child){
   margin-right: 4px;
   color: #858585;
   display: block;
-  line-height: 22px;
+  line-height: 20px;
   float: left; }
 
 .cart-wrap .quantity-formated .quantity {
@@ -3823,20 +3832,15 @@ footer .blog-carousel {
 
 /*back to top*/
 .back-to-top {
-  background: #141414 none repeat scroll 0 0;
-  border-radius: 5px;
-  color: #fff;
-  bottom: 18%;
-  -webkit-box-shadow: 0 0 11px rgba(0, 0, 0, 0.12);
-  box-shadow: 0 0 11px rgba(0, 0, 0, 0.12);
+  bottom: 16px;
   cursor: pointer;
   font-size: 20px;
-  height: 40px;
-  line-height: 40px;
+  height: 30px;
+  line-height: 30px;
   position: fixed;
   right: -40px;
   text-align: center;
-  width: 40px;
+  width: 30px;
   padding: 0;
   border: 0;
   z-index: 9999;
@@ -3844,6 +3848,9 @@ footer .blog-carousel {
 }
 .back-to-top.show{
   right: 0;
+}
+.back-to-top i{
+  height: 30px;
 }
 
 /*Blog*/

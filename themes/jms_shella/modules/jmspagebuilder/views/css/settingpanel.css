@@ -20,28 +20,30 @@
 	color:#FFF;
 	line-height:30px;	
 	cursor:pointer;    
-	width:310px;	
+	width:300px;	
 	z-index:999991; 
 	font-size:12px;	
 }
 #jmstools-arrow {
 	display:block;
-	width:40px;
-	height:40px;
+	width:30px;
+	height:30px;
 	text-align:center;	
 	background:#333;
 }
-#jmstools-arrow  i {
-	font-size:18px;
-	line-height:40px;
-	color:#FFF;
+#jmstools-arrow i {
+	font-size: 18px;
+	line-height: 30px;
+	fill: #FFF;
+	height: 30px;
+	justify-content: center;
 }
-#jmstools-arrow .fa-close,
-.jmsopen #jmstools-arrow .la-cog{
+#jmstools-arrow .close-cog,
+.jmsopen #jmstools-arrow .cog{
 	display: none;
 }
-.jmsopen #jmstools-arrow .fa-close{
-	display: block;
+.jmsopen #jmstools-arrow .close-cog{
+	display: flex;
 }
 #jmstools-content {
 	width:270px;
