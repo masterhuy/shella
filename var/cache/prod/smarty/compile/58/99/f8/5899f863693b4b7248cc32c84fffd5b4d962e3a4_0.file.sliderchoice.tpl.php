@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-30 05:10:10
+/* Smarty version 3.1.33, created on 2019-05-31 03:05:39
   from 'D:\xamppp\htdocs\jms_shella\modules\jmsslider\views\templates\hook\sliderchoice.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cef9df2ba1eb4_33492835',
+  'unifunc' => 'content_5cf0d243770e02_76050113',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:./display_row.tpl' => 1,
   ),
 ),false)) {
-function content_5cef9df2ba1eb4_33492835 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cf0d243770e02_76050113 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="defaultForm form-horizontal">
     <input type="hidden" name="chooseSlider" value="1">
     <input type="hidden" name="site_url" id="site_url" value="<?php echo $_smarty_tpl->tpl_vars['root_url']->value;?>

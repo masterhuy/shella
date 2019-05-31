@@ -24,12 +24,6 @@
 #index{
 	overflow-x: hidden;
 }
-.header{
-	.container > .row, .container-fluid > .row{
-		display: flex;
-		align-items: center;
-	}
-}
 
 .icon {
 	width: 20px;
@@ -96,6 +90,35 @@
 	}
 }
 //
+
+//service
+.service{
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	padding: 20px 0;
+	i{
+		margin-right: 15px;
+	}
+	p{
+		display: flex;
+		align-items: center;
+		margin-bottom: 0;
+		span{
+			color: $subcolor;
+			line-height: 1.3;
+			span{
+				color: $active;
+			}
+		}
+	}
+	.icon{
+		width: 30px;
+		height: 30px;
+	}
+}
+//
+
+
 
 //banner category
 .banner-category{
@@ -2974,40 +2997,6 @@ a.wishlist_top{
 	}
 }
 //
-
-//newsletter type 2
-.newsletter-type-2{
-
-}
-//
-
-//footer one row
-.footer-one-row{
-	padding: 90px 0 100px;
-	.container > .row{
-		display: flex;
-		align-items: center;
-	}
-	p{
-		margin-bottom: 0;
-	}
-	.flex-middle{
-		p{
-			margin-left: 19px;
-			font-size: 12px;
-			font-weight: 500;
-			color: $subcolor;
-			text-transform: uppercase;
-			letter-spacing: 0.6px;
-			span{
-				color: $active;
-			}
-		}
-	}
-}
-#footer .footer-one-row #social_block ul li {
-	margin: 0 14px;
-}
 
 //blog single
 .commentForm{
