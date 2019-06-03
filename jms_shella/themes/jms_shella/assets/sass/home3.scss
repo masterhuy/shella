@@ -1,0 +1,55 @@
+@import "mixin";
+@import "varians";
+
+.header{
+	border-bottom: 1px solid #e5e5e5;
+	.menu{
+		display: flex;
+		align-items: center;
+		.addon-box:first-child{
+			margin-right: 20px;
+		}
+	}
+	.jms-megamenu .nav > li > a {
+		line-height: 27px;
+	}
+}
+.jms-banner{
+	> a{
+		display: block;
+		overflow: hidden;
+	}
+	.banner-content{
+		position: unset;
+		text-align: center;
+		margin-top: 18px;
+		.banner-title{
+			font-size: 24px;
+			padding-bottom: 9px;
+		}
+		.banner-desc{
+			color: $subcolor;
+			padding-bottom: 19px;
+		}
+	}
+}
+#footer{
+	border-top: 0;
+	margin-top: 0;
+	.find-us {
+		display: flex;
+	}
+	#newsletter_block_left{
+		.news_content{
+			margin-top:23px;
+			margin-bottom: 38px;
+		}
+	}
+	.footer-top{
+		margin-bottom: 40px;
+		#social_block .fa {
+		    min-width: auto;
+		    padding-right: 20px;
+		}
+	}
+}

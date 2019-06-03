@@ -1,0 +1,158 @@
+.page-index {
+  padding: 13px 0;
+  background: #f8f8f8; }
+
+.main-site {
+  right: 0; }
+  .main-site.open-sidebar1 {
+    overflow: unset;
+    right: 370px; }
+    .main-site.open-sidebar1 .header.fixed {
+      right: 370px;
+      left: auto; }
+    .main-site.open-sidebar1 .top_menu_second {
+      right: 0; }
+
+.page-index .header {
+  position: absolute;
+  top: 60px;
+  padding: 0 77px;
+  width: 100%; }
+  .page-index .header .container-fluid > .row {
+    display: block; }
+
+.header {
+  padding: 20px;
+  z-index: 9999; }
+  .header .container-fluid {
+    max-width: 1880px; }
+    .header .container-fluid > .row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+  .header.fixed .logo {
+    width: 70px; }
+  .header .left-icon-group .addon-box {
+    padding-top: 0px;
+    margin-top: -3px;
+    margin-left: 29px; }
+    .header .left-icon-group .addon-box .mega_menu {
+      margin-bottom: 6px; }
+
+div.jms-slider-wrapper .text-1 {
+  letter-spacing: 0.17vw;
+  width: auto !important; }
+  div.jms-slider-wrapper .text-1::after {
+    content: "";
+    width: 5.25vw;
+    height: 2px;
+    background: #b20f0f;
+    position: absolute;
+    bottom: -3vw;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+
+div.jms-slider-wrapper .text-2 {
+  letter-spacing: -0.1vw; }
+
+.fs-pager-wrapper {
+  width: auto;
+  left: auto;
+  right: 3.3vw;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  bottom: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .fs-pager-wrapper a {
+    width: auto !important;
+    height: auto !important; }
+    .fs-pager-wrapper a span {
+      margin: 0.26vw 0 !important;
+      width: 14px;
+      height: 14px;
+      display: block; }
+
+@media (max-width: 1199px) {
+  .header {
+    top: 50px; } }
+
+@media (max-width: 991px) {
+  a#open-button {
+    padding-top: 0;
+    position: relative;
+    bottom: 2px; }
+  .page-index {
+    padding: 0;
+    background: transparent; }
+    .page-index .header {
+      position: unset;
+      padding: 0; }
+      .page-index .header .container-fluid {
+        max-width: 750px; }
+        .page-index .header .container-fluid > .row {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center; }
+  #header {
+    padding: 20px 0 10px; }
+  div.menu-wrap {
+    left: auto;
+    right: -300px;
+    -webkit-transition: right 0.4s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+    -o-transition: right 0.4s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+    transition: right 0.4s cubic-bezier(0.7, 0, 0.3, 1) 0s; }
+  .show-menu div.menu-wrap {
+    -webkit-transition: right 0.4s;
+    -o-transition: right 0.4s;
+    transition: right 0.4s;
+    left: auto;
+    right: 0; } }
+
+@media (max-width: 767px) {
+  .header .container-fluid {
+    max-width: 100%;
+    padding: 0 15px; }
+  .fs-pager-wrapper a span {
+    width: 11px;
+    height: 11px; } }
+
+@media (max-width: 481px) {
+  #header {
+    padding: 50px 0; }
+  .jms-slider-wrapper .text-1, .jms-slider-wrapper .btn-underline {
+    font-size: 5px !important; }
+  .jms-slider-wrapper .text-2 {
+    font-size: 12px !important; }
+  .fraction-slider {
+    height: 100vw !important; }
+  .fs-pager-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .left-icon-group .module-group-box {
+    position: unset; }
+  .left-icon-group #module-group {
+    right: 15px; } }

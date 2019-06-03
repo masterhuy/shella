@@ -1,0 +1,21 @@
+.jms-megamenu .nav.level0{
+	display: flex;
+}
+.jms-slider-wrapper .text-1::after {
+  left: 100%;
+}
+.left-icon-group .addon-box {
+	margin-right: 25px;
+	margin-left: 0;
+}
+.footer-top-1 .group-btn .addon-box {
+  margin-right: 27px;
+  margin-left: 0;
+}
+#footer .find-us {
+  text-align: left;
+}
+#footer #social_block ul li {
+	margin-left: 0;
+	margin-right: 28px;
+}

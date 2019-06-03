@@ -1,0 +1,30 @@
+.left-icon-group .addon-box {
+	margin-right: 25px;
+	margin-left: 0;
+}
+.header .flex-middle .addon-box {
+	margin-left: 30px;
+	margin-right: 0;
+}
+.main-site {
+  	right: 0;
+  	left: auto;
+}
+.main-site.open-sidebar1 {
+    right: 370px; 
+    left: auto;
+}
+.main-site.open-sidebar1 .header.fixed {
+    right: 370px; 
+    left: auto;
+}
+.main-site.open-sidebar1 .top_menu_second {
+	right: 0;
+	left: auto;
+}
+@media (max-width: 481px){
+	.header .flex-middle .addon-box {
+		margin-left: 15px;
+		margin-right: 0;
+	}
+}

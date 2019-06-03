@@ -1,0 +1,12 @@
+.jms-megamenu .nav > li.sub-home {
+	padding-right: 0 !important;
+	padding-left: 18.5px !important;
+}
+.left-icon-group .addon-box {
+	margin-right: 25px;
+	margin-left: 0;
+}
+.header-left-fixed #jms_ajax_search .btn-search span {
+	margin-right: 23px;
+	margin-left: 0;
+}
