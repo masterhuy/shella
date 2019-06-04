@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-31 03:04:48
+/* Smarty version 3.1.33, created on 2019-06-03 04:44:53
   from 'D:\xamppp\htdocs\jms_shella\admin4672dprho\themes\new-theme\template\components\layout\confirmation_messages.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cf0d210ec8397_79731282',
+  'unifunc' => 'content_5cf4de050c2796_35269910',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cf0d210ec8397_79731282 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cf4de050c2796_35269910 (Smarty_Internal_Template $_smarty_tpl) {
 if (isset($_smarty_tpl->tpl_vars['confirmations']->value) && count($_smarty_tpl->tpl_vars['confirmations']->value) && $_smarty_tpl->tpl_vars['confirmations']->value) {?>
   <div class="bootstrap">
     <div class="alert alert-success" style="display:block;">

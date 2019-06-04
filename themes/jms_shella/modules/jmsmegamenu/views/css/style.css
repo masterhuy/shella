@@ -89,9 +89,6 @@
 .jms-megamenu .nav > li > a i{
     display: flex;
 }
-.jms-megamenu .nav > li > a:hover, .jms-megamenu .nav > li > a:focus {
-    color: #b20f0f;
-}
 .jms-megamenu .nav > li:hover, .jms-megamenu .nav > li.open {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
 }

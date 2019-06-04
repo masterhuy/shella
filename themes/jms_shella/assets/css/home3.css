@@ -1,10 +1,16 @@
-.header .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.header #jms_ajax_search .btn-search span {
-  display: none; }
+.header {
+  border-bottom: 1px solid #e5e5e5; }
+  .header .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .header .menu .addon-box:first-child {
+      margin-right: 20px; }
+  .header .jms-megamenu .nav > li > a {
+    line-height: 27px; }
 
 .jms-banner > a {
   display: block;
@@ -21,7 +27,18 @@
     color: #858585;
     padding-bottom: 19px; }
 
-#footer .find-us {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+#footer {
+  border-top: 0;
+  margin-top: 0; }
+  #footer .find-us {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  #footer #newsletter_block_left .news_content {
+    margin-top: 23px;
+    margin-bottom: 38px; }
+  #footer .footer-top {
+    margin-bottom: 40px; }
+    #footer .footer-top #social_block .fa {
+      min-width: auto;
+      padding-right: 20px; }

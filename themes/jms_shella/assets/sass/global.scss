@@ -456,7 +456,35 @@
 		}
 	}
 }
+//
 
+//logo center
+.logo-center{
+	.addon-box{
+		display: flex;
+		justify-content: center;
+	}
+}
+//
+
+//social block inline
+#social_block.type-2{
+	ul{
+		display: flex;
+		justify-content: center;
+		margin-bottom: 0;
+		li{
+			padding: 0 9px;
+			position: relative;
+			a{
+				color: #141414;
+				&:hover .tooltip-wrap{
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
 //
 
 .top_menu_second{

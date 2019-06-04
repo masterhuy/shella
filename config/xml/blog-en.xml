@@ -6,6 +6,22 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Everyday AI</title>
+    <link>https://www.prestashop.com/en/blog/everyday-artificial-intelligence</link>
+    <description>The way most people picture artificial intelligence are futuristic robots with human-like features that exist alongside us.</description>
+     <pubDate>Wed, 29 May 2019 15:27:55 +0200</pubDate>
+ <dc:creator>ns8</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/everyday-artificial-intelligence</guid>
+  </item>
+  <item>
+    <title>E-Commerce SEO: How to Optimize Product Pages</title>
+    <link>https://www.prestashop.com/en/blog/e-commerce-optimize-product-pages</link>
+    <description>Did you know that 39% of all global e-commerce traffic comes from search?</description>
+     <pubDate>Tue, 28 May 2019 10:52:41 +0200</pubDate>
+ <dc:creator>WebDesk</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/e-commerce-optimize-product-pages</guid>
+  </item>
+  <item>
     <title>International Shipping</title>
     <link>https://www.prestashop.com/en/blog/international-shipping</link>
     <description>International shipping takes planning, patience, and going through a bit of red tape.</description>
@@ -68,22 +84,6 @@
      <pubDate>Fri, 03 May 2019 11:09:12 +0200</pubDate>
  <dc:creator>Interseroh EN</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/shipping-german-packaging-act</guid>
-  </item>
-  <item>
-    <title>Building an eCommerce site for your customer base.</title>
-    <link>https://www.prestashop.com/en/blog/building-ecommerce-site-for-customer-base</link>
-    <description>Depends on the industry and type of selling goods the e-commerce set up will be different each time, the same as different will be customer’s expectations.</description>
-     <pubDate>Mon, 29 Apr 2019 15:29:46 +0200</pubDate>
- <dc:creator>Code Sphere Network.</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/building-ecommerce-site-for-customer-base</guid>
-  </item>
-  <item>
-    <title>Is cryptocurrency the E-Commerce Game Changer? Here you go!</title>
-    <link>https://www.prestashop.com/en/blog/cryptocurrency-the-e-commerce-game-changer</link>
-    <description>Cryptocurrency is the hottest cake in the market right now and bringing it into E-commerce shall take the booming industry to much greater heights.</description>
-     <pubDate>Fri, 26 Apr 2019 16:10:05 +0200</pubDate>
- <dc:creator>Shamla Tech Agency</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/cryptocurrency-the-e-commerce-game-changer</guid>
   </item>
   </channel>
 </rss>

@@ -1,180 +1,96 @@
 @import "mixin";
 @import "varians";
 
-body{
-	border: 20px solid #fff;
+#jms_ajax_search .btn-search span {
+	display: block;
 }
-.page-index header{
-	position: absolute;
-	width: 100%;
-	z-index: 99999;
-}
-.header{
-	padding: 22px 0;
-	&.fixed{
-		padding: 10px 0;
-		.toggle-menu{
-			margin-top: 13px;
-		}
-		.flex-center{
-			margin-top: 5px;
-		}
-		.left-icon-group{
-			position: relative;
-			top: 6px;
-		}
-		.menu{
-			position: relative;
-			top: 6px;
-		}
+.menu{
+	background: #141414;
+	.jms-megamenu .nav > li > a{
+		color: #fff;
 	}
-	.mega_menu{
-		padding-top: 0;
+	svg{
+		fill: #fff;
 	}
-	.container > .row{
-		display: block;
-	}
-	.toggle-menu{
-		margin-top: 6px;
-	}
-	.left-icon-group{
-		margin-top: -5px;
-	}
-}
-.jms-slider-wrapper{
-	.text-1{
-		font-weight: 600;
-		letter-spacing: -0.086vw;
-	}
-	.text-2{
-		font-weight: 500;
-	}
-}
-.fs-pager-wrapper {
-	width: auto;
-	left: 17.95vw;
-	bottom: 2.7vw;
-}
-.jms-megamenu .nav.level0 {
-	display: flex;
-	.sub-contact{
-		padding-right: 0;
-	}
-}
-.layout-column.menu {
-	opacity: 0;
-	visibility: hidden;
-	margin-top: -53px;
-	transition: .4s all;
-}
-.open-sidebar1{
-	.layout-column.menu{
-		opacity: 1;
-		visibility: visible;
-	}
-	.close_menu{
-		position: relative;
-		z-index: 9999;
-	}
-	.flex-center, .left-icon-group{
-		opacity: 0;
-		visibility: hidden;
+	#jms_ajax_search .btn-search{
+		color: #fff;
 	}
 }
 .jms-banner{
-	.banner-content {
-		position: absolute;
-		top: auto;
-		left: 0;
-		bottom: 24px;
-		width: 100%;
-		padding: 0 20px;
+	> a{
+		display: block;
+		overflow: hidden;
 	}
-	&.banner-text-right{
-		.banner-content{
-			left: auto;
-			right: 0;
-			width: auto;
-			padding: 0 60px;
-			top: 50%;
-			transform: translateY(-50%);
-			bottom: auto;
-		}
-	}
-}
-.footer-one-row {
-	padding: 100px 0 100px;
-}
-@media (max-width: 1366px) and (min-width: 1200px){
-	.jms-slider-wrapper{
-		.text-1{
-			font-size: 30px !important;
-		}
-		.text-2{
-			font-size: 10px !important;
-		}
-	}
-}
-@media (max-width: 1199px) and (min-width: 992px){
-	.newsletter-type-2 #newsletter_block_left {
-		padding: 55px 30px 60px;
-	}
-}
-@media (max-width: 1199px){
-	body{
-		border: 0;
-	}
-	.page-index header{
+	.banner-content{
 		position: unset;
-	}
-	.jms-megamenu .mega-nav{
-		li > a{
-			text-align: right;
-			&::after{
-				right: auto;
-				left: 22px;
-				transform: rotate(180deg);
-			}
+		text-align: center;
+		margin-top: 18px;
+		.title{
+			font-size: 15px;
+			padding-bottom: 4px;
+			letter-spacing: 0.7px;
 		}
-		> .mega > .dropdown-menu {
-			left: auto;
-			right: 100%;
+		.desc{
+			font-size: 13px;
+			color: $subcolor;
 		}
 	}
 }
-@media (max-width: 991px){
-	.header{
-		padding: 0;
-	}
-	a#open-button{
-		padding-top: 0;
-		position: relative;
-		bottom: 7px;
-	}
-	.newsletter-type-2{
-		margin-bottom: 20px;
-	}
-	.contact_info{
-		padding-right: 10px !important;
-		margin-bottom: 20px;
-	}
-	.help_service{
-		padding-left: 10px !important;
-		.addon-box{
-			padding-left: 60px;
-			padding-right: 60px;
+#footer{
+	margin-top: 55px;
+	background: #141414;
+	.newsletter{
+		margin-bottom: 50px;
+		.container > .row{
+			max-width: 600px;
+			margin: auto;
+		}
+		.addon-title{
+			h3{
+				color: #fff;
+			}
+			span{
+				color: $subcolor;
+			}
+			h3, span{
+				display: block;
+				text-align: center;
+			}
+		}
+		.news_content{
+			margin-top: 20px;
+		}
+		.form-group button{
+			color: #fff;
+			border-color: #fff;
+			&:hover{
+				background: #fff;
+				color: $active;
+			}
+		}
+		#newsletter_block_left #newsletter-input {
+			background: transparent;
+			border-color: #3e3e3e;
 		}
 	}
-}
-@media (max-width: 767px){
-	.left-icon-group{
-		.addon-box{
-			&:first-child, &:nth-child(3){
-				display: none;
+	.footer-bottom{
+		border-top-color: #3e3e3e;
+		text-align: center;
+		padding: 18px 0 12px;
+		p {
+			font-size: 10px;
+			color: #858585;
+			margin-bottom: 10px;
+			a{
+				text-decoration: underline;
+				color: $subcolor;
+				&:hover{
+					color: $active;
+				}
 			}
 		}
 	}
-	.fs-pager-wrapper{
-		display: none;
-	}
+}
+#social_block.type-2 ul li a {
+	color: #fff !important;
 }

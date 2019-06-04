@@ -21,6 +21,7 @@
 #jms_ajax_search .btn-search span{
     text-transform: uppercase;
     padding-right: 6px;
+    display: none;
 }
 #jms_ajax_search #search-form .searchbox {
     display: -webkit-box;

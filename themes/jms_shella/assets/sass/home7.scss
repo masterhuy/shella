@@ -1,201 +1,86 @@
 @import "mixin";
 @import "varians";
 
-
-.main-site{
-	right: 0;
-	&.open-sidebar1{
-		overflow: unset;
-		right: 370px;
-		.header.fixed{
-			right: 370px;
-			left: auto;
-		}
-		.top_menu_second{
-			right: 0;
+.header{
+	background: #141414;
+	.menu{
+		display: flex;
+		align-items: center;
+		.addon-box:first-child{
+			margin-right: 20px;
 		}
 	}
 }
-.jms-row.header{
-	left: auto;
-	right: 0;
-	padding: 60px 0;
-	&.fixed{
-		padding: 10px 0;
+.jms-megamenu .nav > li > a {
+	line-height: 27px;
+	color: #fff;
+	&:hover{
+		color: $subcolor;
+		i{
+			fill: $subcolor;
+		}
+	}
+	i{
+		fill: #fff;
 	}
 }
-.left-icon-group{
-	.addon-box:last-child{
-		margin-left: 46px;
+.right-icon-group{
+	svg{
+		fill: #fff;
 	}
-	.addon-box{
-		padding-top: 0;
-		margin-left: 29px;
+	.cart-icon{
+		color: #fff;
 	}
-	#_desktop_user_info, #cart_block{
-		padding-top: 8px;
-		display: inline-block;
+	.languages-info .btn-xs, 
+	.currency-info .btn-xs {
+		color: #fff;
 	}
-	.mega_menu{
-		padding-top: 5px;
-	}
-}
-.intro-text {
-	padding-top: 36px;
 }
 .jms-banner{
-	&:hover{
-		.banner-content .text-2{
-			color: $active;
-		}
-	}
-	> a img{
-		width: auto;
-		transform: unset !important;
+	> a{
+		display: block;
+		overflow: hidden;
 	}
 	.banner-content{
-		.text-1{
+		position: unset;
+		text-align: center;
+		margin-top: 18px;
+		.banner-title{
 			font-size: 24px;
-			font-weight: 500;
-			letter-spacing: -0.6px;
+			padding-bottom: 9px;
 		}
-		.text-2{
-			font-size: 18px;
-			font-weight: 500;
-			color: $sub-cl;
-			letter-spacing: -0.6px;
-			transition: .4s all;
+		.banner-desc{
+			color: $subcolor;
+			padding-bottom: 19px;
 		}
 	}
 }
-.banner-1{
-	> a img{
-		float: right;
-	}
-	.banner-content{
-		text-align: right;
-		top: auto;
-		bottom: 131px;
-		left: 65px;
-	}
-}
-.banner-2{
-	margin-top: -182px;
-	> a img{
-		float: left;
-	}
-	.banner-content{
-		text-align: left;
-		top: auto;
-		bottom: 63px;
-		right: 58px;
-		left: auto;
-	}
-}
-.banner-3{
-	> a img{
-		float: right;
-	}
-	.banner-content{
-		text-align: right;
-		top: auto;
-		bottom: 136px;
-		left: 87px;
-	}
-}
-.banner-4{
-	margin-top: -79px;
-	> a img{
-		float: left;
-	}
-	.banner-content{
-		text-align: left;
-		top: auto;
-		bottom: 59px;
-		right: 6px;
-		left: auto;
-	}
-}
-.product-miniature img{
-	background: #f1f1f1;
-}
-.newsletter{
-	.container-fluid{
-		max-width: 1880px;
-		background: #f1f1f1;
-	}
-}
-
-@media (max-width: 991px){
-	.banner-2{
-		margin-top: 0;
-	}
-	.banner-4{
-		margin-top: 0;
-	}
-	.jms-row.header {
-		padding: 20px 0;
-	}
-	.left-icon-group{
-		justify-content: center;
-		.addon-box{
-			margin: 0;
-			margin: 0 14px !important;
+#footer {
+	border-top: 0;
+	padding-top: 0;
+	margin-top: 70px;
+	.footer-bottom{
+		background: #141414;
+		padding: 18px 0;
+		border-top: 0;
+		.container > .row{
+			display: flex;
+			align-items: center;
 		}
-	}
-	div.menu-wrap{
-		left: auto;
-		right: -300px;
-		transition: right 0.4s cubic-bezier(0.7, 0, 0.3, 1) 0s;
-	}
-	.show-menu div.menu-wrap{
-		transition: right 0.4s;
-		left: auto;
-		right: 0;
-	}
-}
-@media (max-width: 767px){
-	.jms-banner{
-		margin-bottom: 20px;
-	}
-}
-@media (max-width: 481px){
-	div#newsletter_block_left{
-		.form-group{
-			display: block;
-			background: transparent;
-			border: 0;
-			input{
-				text-align: center;
-				background: #fff;
-				margin-bottom: 15px;
-				border-radius: 30px;
+		.find-us{
+			justify-content: flex-end;
+			li a{
+				color: #fff;
 			}
 		}
-		.newsletter-btn{
-			width: 100%;
+		p {
+			font-size: 10px;
+			color: #fff;
+			margin-bottom: 0;
+			a{
+				text-decoration: underline;
+				color: #fff !important;
+			}
 		}
-	}
-	.jms-banner .banner-content .text-1 {
-		font-size: 16px;
-	}
-	.left-icon-group .addon-box {
-		margin: 0 10px !important;
-	}
-	.banner-1, .banner-3{
-		.banner-content {
-			bottom: 15px;
-			left: 15px;
-		}
-	}
-	.banner-2 .banner-content {
-		bottom: 15px;
-		right: 15px;
-	}
-	.banner-content .text-1{
-		font-size: 16px;
-	}
-	#currency-1, #languages-1{
-		right: auto;
 	}
 }

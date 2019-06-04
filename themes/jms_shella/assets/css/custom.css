@@ -1757,6 +1757,8 @@ ul.cart_block_list li:not(:last-child){
   pointer-events: none;
   font-style: italic;
   letter-spacing: 0.5px;
+  max-height: 15px;
+  line-height: 12px;
 }
 .tooltip-wrap.left{
   right: 100%;
