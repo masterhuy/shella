@@ -1,112 +1,59 @@
 .header {
-  padding: 60px 0; }
-  .header .flex-middle .addon-box {
-    margin-right: 30px; }
+  background: #141414; }
+  .header .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .header .menu .addon-box:first-child {
+      margin-right: 20px; }
 
-.page-index {
-  background: #f8f8f8; }
-  .page-index #wrapper {
-    max-width: 1290px;
-    margin: 0 auto;
-    border: 60px solid #fff;
-    background: #fff; }
+.jms-megamenu .nav > li > a {
+  line-height: 27px;
+  color: #fff; }
+  .jms-megamenu .nav > li > a:hover {
+    color: #858585; }
+    .jms-megamenu .nav > li > a:hover i {
+      fill: #858585; }
+  .jms-megamenu .nav > li > a i {
+    fill: #fff; }
 
-.main-site {
-  left: 0; }
-  .main-site.open-sidebar1 {
-    overflow: unset;
-    left: 343px; }
-    .main-site.open-sidebar1 .header.fixed {
-      left: 343px; }
-    .main-site.open-sidebar1 #jmstools {
-      display: none; }
-    .main-site.open-sidebar1 .top_menu_second {
-      left: 0; }
+.right-icon-group svg {
+  fill: #fff; }
 
-.jms-slider-wrapper .text-1 {
-  font-weight: 600;
-  letter-spacing: -0.086vw; }
+.right-icon-group .cart-icon {
+  color: #fff; }
 
-.jms-slider-wrapper .text-2 {
-  font-weight: 500;
-  line-height: 2.1; }
+.right-icon-group .languages-info .btn-xs,
+.right-icon-group .currency-info .btn-xs {
+  color: #fff; }
 
-.fs-pager-wrapper {
-  width: auto;
-  left: 4.85vw;
-  bottom: 2.8vw; }
+.banner-content {
+  top: auto;
+  padding: 9px 10px;
+  bottom: 15px;
+  left: 20px;
+  width: calc(100% - 40px);
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9); }
+  .banner-content .text-1 {
+    font-size: 15px;
+    letter-spacing: 0.8px;
+    padding-bottom: 4px; }
+  .banner-content .text-2 {
+    color: #858585; }
 
-.fs-pager-wrapper a,
-.fs-custom-pager-wrapper a {
-  margin: 0 4.5px;
-  width: 11px;
-  height: 11px; }
-
-.banner_category .jms-banner:hover .banner-content {
-  -webkit-transform: translateY(-83px);
-  -ms-transform: translateY(-83px);
-  transform: translateY(-83px); }
-
-.banner_category .banner-content {
-  margin-top: 18px; }
-  .banner_category .banner-content p {
-    font-size: 32px;
-    letter-spacing: -0.6px; }
-
-#footer {
-  padding-top: 36px; }
-
-.footer-one-row {
-  padding: 60px 0; }
-  .footer-one-row #social_block ul li {
-    margin-left: 0 !important;
-    margin: 0 15px !important; }
-  .footer-one-row .find-us {
-    text-align: center !important; }
-  .footer-one-row .flex-middle p {
-    text-transform: capitalize;
-    letter-spacing: 0; }
-    .footer-one-row .flex-middle p span {
-      color: #000; }
-
-@media (max-width: 1280px) {
-  .page-index #wrapper {
-    border: 15px solid #fff; } }
-
-@media (max-width: 1199px) and (min-width: 992px) {
-  .fs-pager-wrapper {
-    left: 76px; } }
-
-@media (max-width: 1199px) {
-  .page-index #wrapper {
-    border: 0;
-    padding-top: 15px; } }
-
-@media (max-width: 991px) {
-  #currency-1, #languages-1 {
-    right: auto; }
-  .header {
-    padding: 20px 0; } }
-
-@media (max-width: 991px) and (min-width: 768px) {
-  .fs-pager-wrapper {
-    left: 60px; } }
-
-@media (max-width: 767px) {
-  .fs-pager-wrapper {
-    display: none; }
-  .left-icon-group .addon-box:first-child, .left-icon-group .addon-box:nth-child(2) {
-    display: none; }
-  .banner_category .banner-content p {
-    font-size: 20px;
-    letter-spacing: 0; } }
-
-@media (max-width: 481px) {
-  .fraction-slider {
-    height: 70vw !important; }
-  .header .flex-middle .addon-box {
-    margin-right: 15px; }
-  .jms-slider-wrapper .text-1 {
-    font-size: 12px !important; }
-  .jms-slider-wrapper .text-2, .jms-slider-wrapper .btn-underline {
-    font-size: 6px !important; } }
+.banner-bg {
+  padding: 159px 0 163px; }
+  .banner-bg p {
+    color: #141414; }
+    .banner-bg p.text-3 {
+      color: #858585; }
+  .banner-bg .btn-default {
+    color: #141414;
+    border-color: #141414; }
+    .banner-bg .btn-default:hover {
+      background: #141414;
+      color: #fff; }

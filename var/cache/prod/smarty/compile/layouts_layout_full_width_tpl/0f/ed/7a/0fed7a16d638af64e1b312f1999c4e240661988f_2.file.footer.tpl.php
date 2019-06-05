@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-04 05:39:55
+/* Smarty version 3.1.33, created on 2019-06-05 05:28:26
   from 'D:\xamppp\htdocs\jms_shella\themes\jms_shella\templates\_partials\footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cf63c6b100225_86643573',
+  'unifunc' => 'content_5cf78b3a1c3cb2_92250404',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cf63c6b100225_86643573 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cf78b3a1c3cb2_92250404 (Smarty_Internal_Template $_smarty_tpl) {
 ?> <div class="back-to-top" id="back-to-top" title="Back to top">
 	<i class="d-flex flex-center">
 		<svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-theme-014"

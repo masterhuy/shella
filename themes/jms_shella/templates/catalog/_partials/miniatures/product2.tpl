@@ -39,19 +39,19 @@
 				/>
 			{/if}
 		  </a>
-		  <div class="block-label">
-			  	{block name='product_flags'}
-					{if $product.has_discount}
-						{if $product.discount_type === 'percentage'}
-	                	<span class="label label-discount discount-percentage discount-product">{$product.discount_percentage}</span>
-						{/if}
-					{/if}
-			   {/block}	
-			</div>
 		{/block}				
 	</div>
 
     <div class="product-info">
+    	<div class="block-label">
+		  	{block name='product_flags'}
+				{if $product.has_discount}
+					{if $product.discount_type === 'percentage'}
+                	<span class="label label-discount discount-percentage discount-product">{$product.discount_percentage}</span>
+					{/if}
+				{/if}
+		   {/block}	
+		</div>
     	{if isset($jpb_categoryname) && $jpb_categoryname}
 		    <span class="categoryname">
 				<a href="{url entity='category' id=$product.id_category_default}">
@@ -67,6 +67,7 @@
 		          	{if $product.has_discount}
 		              {hook h='displayProductPriceBlock' product=$product type="old_price"}
 		              <span class="old price">{$product.regular_price}</span>
+		              <span class="from">{l s='from' d='Shop.Theme.Actions'}</span>
 		            {/if}
 		          	{hook h='displayProductPriceBlock' product=$product type="before_price"}
 		            <span class="price new">{$product.price}</span>

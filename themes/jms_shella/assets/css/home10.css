@@ -125,7 +125,8 @@
     border-top-color: #3e3e3e; }
     #footer .footer-bottom p {
       font-size: 10px;
-      color: #858585; }
+      color: #858585;
+      margin-bottom: 0; }
       #footer .footer-bottom p:first-child {
         margin-bottom: 6px; }
       #footer .footer-bottom p a {
