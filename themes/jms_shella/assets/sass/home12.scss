@@ -70,3 +70,68 @@
 		}
 	}
 }
+#footer{
+	border-top: 0;
+	margin-top: 0;
+	background: #141414;
+	.addon-title h3{
+		color: #fff;
+	}
+	ul li a:hover{
+		color: #fff;
+	}
+	svg{
+		fill: #fff;
+	}
+	.addon-desc a:hover{
+		color: #fff;
+	}
+	.footer-top{
+		.contact-info p a:hover{
+			color: #fff;
+		}	
+		#social_block .fa {
+			color: #fff;
+		}
+	}
+	.footer-bottom{
+		border-top-color: #3e3e3e;
+	}
+	#newsletter_block_left{
+		button{
+			color: #fff;
+			border-color: #fff;
+			&:hover{
+				background: #fff;
+				color: $active;
+			}
+		}
+		#newsletter-input {
+			background: transparent;
+			border-color: #3e3e3e;
+		}
+	}
+	.footer-top{
+		.addon-social .addon-title h3{
+			padding-bottom: 15px;
+		}
+		#social_block{
+			ul{
+				.fa{
+					min-width: auto;
+				}
+				li {
+					line-height: normal;
+					padding: 0;
+					padding-right: 17px;
+				}
+			}
+		}
+	}
+	.addon-social{
+		margin-top: 40px;
+	}
+	#social_block.type-2 ul{
+		justify-content: flex-start;
+	}
+}

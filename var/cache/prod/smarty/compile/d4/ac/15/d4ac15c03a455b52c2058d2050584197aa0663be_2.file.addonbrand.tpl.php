@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-02 22:56:22
+/* Smarty version 3.1.33, created on 2019-06-06 06:20:43
   from 'D:\xamppp\htdocs\jms_shella\themes\jms_shella\modules\jmspagebuilder\views\templates\hook\addonbrand.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cf48c56c4c309_71609572',
+  'unifunc' => 'content_5cf8e8fbd11dc0_05512285',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cf48c56c4c309_71609572 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cf8e8fbd11dc0_05512285 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">    	
 	var brand_items = 3,

@@ -68,8 +68,8 @@
     margin-bottom: 0;
     width: 100%;
 }
-#jms_ajax_search .label-form i{
-    fill: #dbdbdb;
+#jms_ajax_search .label-form i svg{
+    fill: #dbdbdb !important;
     cursor: pointer;
 }
 #jms_ajax_search .modal-dialog{

@@ -524,6 +524,7 @@
 				color: #141414;
 				&:hover .tooltip-wrap{
 					opacity: 1;
+					transform: translate(-50%, -50%) scale(1);
 				}
 			}
 		}
@@ -802,6 +803,7 @@
 		.payments{
 			p{
 				text-align: right;
+				margin-bottom: 0;
 			}
 		}
 		.copyright{
@@ -3035,6 +3037,7 @@ a.wishlist_top{
 	.form-group{
 		display: flex;
 		margin-bottom: 0;
+		margin-top: 20px;
 	}
 	#newsletter-input{
 		margin-right: 10px;
@@ -3060,6 +3063,9 @@ a.wishlist_top{
 		.news_content{
 			width: 100%;
 		}
+	}
+	#newsletter_block_left .form-group{
+		margin-top: 0;
 	}
 }
 //

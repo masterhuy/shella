@@ -127,7 +127,7 @@
 		</div>
 	</div>
 	<div class="product_action">
-		<button class="btn-default ajax-add-to-cart product-btn cart-button" {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Out of Stock' d='Shop.Theme.Actions'}{else}{l s='Add to Cart' d='Shop.Theme.Actions'}{/if}" {if $product.quantity < 1}disabled{/if} data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
+		<button class="btn-default ajax-add-to-cart product-btn {if $product.quantity < 1}disabled{/if} cart-button" {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Sold Out' d='Shop.Theme.Actions'}{else}{l s='Add to Cart' d='Shop.Theme.Actions'}{/if}" {if $product.quantity < 1}disabled{/if} data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
 			<span class="la la-spin la-spinner"></span>
 			<span class="la la-check">
 				<i class="d-flex">
@@ -150,7 +150,6 @@
 				{l s='Added' d='Shop.Theme.Actions'}
 			</span>		
 			<span class="text-outofstock">
-				<i class="la la-ban"></i>
 				{l s='SOLD OUT' d='Shop.Theme.Actions'}
 			</span>								   
 		</button>

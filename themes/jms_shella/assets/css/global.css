@@ -410,7 +410,10 @@
     #social_block.type-2 ul li a {
       color: #141414; }
       #social_block.type-2 ul li a:hover .tooltip-wrap {
-        opacity: 1; }
+        opacity: 1;
+        -webkit-transform: translate(-50%, -50%) scale(1);
+        -ms-transform: translate(-50%, -50%) scale(1);
+        transform: translate(-50%, -50%) scale(1); }
 
 .top_menu_second .container {
   position: unset; }
@@ -630,7 +633,8 @@
     padding: 15px 0;
     border-top: 1px solid #e5e5e5; }
     #footer .footer-bottom .payments p {
-      text-align: right; }
+      text-align: right;
+      margin-bottom: 0; }
     #footer .footer-bottom .copyright {
       -webkit-box-align: center;
       -ms-flex-align: center;
@@ -2547,7 +2551,8 @@ a.wishlist_top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  margin-top: 20px; }
 
 #newsletter_block_left #newsletter-input {
   margin-right: 10px; }
@@ -2569,6 +2574,9 @@ a.wishlist_top {
       text-align: left; }
   .newsletter-type-1 .block_content .news_content {
     width: 100%; }
+
+.newsletter-type-1 #newsletter_block_left .form-group {
+  margin-top: 0; }
 
 .commentForm .addon-title h3 {
   font-size: 24px !important;

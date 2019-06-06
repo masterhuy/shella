@@ -1,0 +1,51 @@
+.header {
+  border-bottom: 1px solid #e5e5e5; }
+  .header .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .header .menu .addon-box:first-child {
+      margin-right: 20px; }
+  .header .jms-megamenu .nav > li > a {
+    line-height: 27px; }
+
+#jms_ajax_search .btn-search span {
+  display: block; }
+
+.menu {
+  background: #141414; }
+  .menu .jms-megamenu .nav > li > a {
+    color: #fff; }
+  .menu svg {
+    fill: #fff; }
+  .menu #jms_ajax_search .btn-search {
+    color: #fff; }
+
+.jms-banner > a {
+  display: block;
+  overflow: hidden; }
+
+.jms-banner .banner-content {
+  position: unset;
+  text-align: center;
+  margin-top: 18px; }
+  .jms-banner .banner-content .banner-title {
+    font-size: 24px;
+    padding-bottom: 12px; }
+
+.service {
+  border: 0;
+  background: #141414; }
+  .service p span span {
+    color: #fff; }
+  .service svg {
+    fill: #fff; }
+
+#footer {
+  margin-top: 0;
+  border-top: 0; }
+  #footer .footer-top {
+    margin-bottom: 50px; }

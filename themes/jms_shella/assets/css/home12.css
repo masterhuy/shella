@@ -57,3 +57,45 @@
     .banner-bg .btn-default:hover {
       background: #141414;
       color: #fff; }
+
+#footer {
+  border-top: 0;
+  margin-top: 0;
+  background: #141414; }
+  #footer .addon-title h3 {
+    color: #fff; }
+  #footer ul li a:hover {
+    color: #fff; }
+  #footer svg {
+    fill: #fff; }
+  #footer .addon-desc a:hover {
+    color: #fff; }
+  #footer .footer-top .contact-info p a:hover {
+    color: #fff; }
+  #footer .footer-top #social_block .fa {
+    color: #fff; }
+  #footer .footer-bottom {
+    border-top-color: #3e3e3e; }
+  #footer #newsletter_block_left button {
+    color: #fff;
+    border-color: #fff; }
+    #footer #newsletter_block_left button:hover {
+      background: #fff;
+      color: #141414; }
+  #footer #newsletter_block_left #newsletter-input {
+    background: transparent;
+    border-color: #3e3e3e; }
+  #footer .footer-top .addon-social .addon-title h3 {
+    padding-bottom: 15px; }
+  #footer .footer-top #social_block ul .fa {
+    min-width: auto; }
+  #footer .footer-top #social_block ul li {
+    line-height: normal;
+    padding: 0;
+    padding-right: 17px; }
+  #footer .addon-social {
+    margin-top: 40px; }
+  #footer #social_block.type-2 ul {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }

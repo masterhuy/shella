@@ -1,2 +1,152 @@
 @import "mixin";
 @import "varians";
+
+.header{
+	background: #141414;
+	.menu{
+		display: flex;
+		align-items: center;
+		.addon-box:first-child{
+			margin-right: 20px;
+		}
+	}
+}
+.menu{
+	background: #141414;
+	border-top: 1px solid #3e3e3e;
+	.jms-megamenu .nav > li > a{
+		color: #fff;
+	}
+	svg{
+		fill: #fff;
+	}
+	#jms_ajax_search .btn-search{
+		color: #fff;
+		span{
+			display: block;
+		}
+	}
+}
+.jms-megamenu .nav > li > a {
+	color: #fff;
+	&:hover{
+		color: $subcolor;
+		i{
+			fill: $subcolor;
+		}
+	}
+	i{
+		fill: #fff;
+	}
+}
+.right-icon-group{
+	svg{
+		fill: #fff;
+	}
+	.cart-icon{
+		color: #fff;
+	}
+	.languages-info .btn-xs, 
+	.currency-info .btn-xs {
+		color: #fff;
+	}
+}
+.banner-content {
+	top: auto;
+	padding: 9px 10px;
+	bottom: 15px;
+	left: 20px;
+	width: calc(100% - 40px);
+	text-align: center;
+	background: rgba(255,255,255,0.9);
+	.text-1{
+		font-size: 15px;
+		letter-spacing: 0.8px;
+		padding-bottom: 4px;
+	}
+	.text-2{
+		color: $subcolor;
+	}
+}
+.banner-bg{
+	padding: 159px 0 163px;
+	p{
+		color: #141414;
+		&.text-3{
+			color: $subcolor;
+		}
+	}
+	.btn-default{
+		color: #141414;
+		border-color: #141414;
+		&:hover{
+			background: $active;
+			color: #fff;
+		}
+	}
+}
+#footer{
+	border-top: 0;
+	margin-top: 0;
+	background: #141414;
+	.addon-title h3{
+		color: #fff;
+	}
+	ul li a:hover{
+		color: #fff;
+	}
+	svg{
+		fill: #fff;
+	}
+	.addon-desc a:hover{
+		color: #fff;
+	}
+	.footer-top{
+		.contact-info p a:hover{
+			color: #fff;
+		}	
+		#social_block .fa {
+			color: #fff;
+		}
+	}
+	.footer-bottom{
+		border-top-color: #3e3e3e;
+	}
+	#newsletter_block_left{
+		button{
+			color: #fff;
+			border-color: #fff;
+			&:hover{
+				background: #fff;
+				color: $active;
+			}
+		}
+		#newsletter-input {
+			background: transparent;
+			border-color: #3e3e3e;
+		}
+	}
+	.footer-top{
+		.addon-social .addon-title h3{
+			padding-bottom: 15px;
+		}
+		#social_block{
+			ul{
+				.fa{
+					min-width: auto;
+				}
+				li {
+					line-height: normal;
+					padding: 0;
+					padding-right: 17px;
+				}
+			}
+		}
+	}
+	.addon-social{
+		margin-top: 40px;
+	}
+	#social_block.type-2 ul{
+		justify-content: flex-start;
+	}
+}

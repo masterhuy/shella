@@ -1,2 +1,63 @@
 @import "mixin";
 @import "varians";
+
+.header{
+	border-bottom: 1px solid #e5e5e5;
+	.menu{
+		display: flex;
+		align-items: center;
+		.addon-box:first-child{
+			margin-right: 20px;
+		}
+	}
+	.jms-megamenu .nav > li > a {
+		line-height: 27px;
+	}
+}
+#jms_ajax_search .btn-search span {
+	display: block;
+}
+.menu{
+	background: #141414;
+	.jms-megamenu .nav > li > a{
+		color: #fff;
+	}
+	svg{
+		fill: #fff;
+	}
+	#jms_ajax_search .btn-search{
+		color: #fff;
+	}
+}
+.jms-banner{
+	> a{
+		display: block;
+		overflow: hidden;
+	}
+	.banner-content{
+		position: unset;
+		text-align: center;
+		margin-top: 18px;
+		.banner-title{
+			font-size: 24px;
+			padding-bottom: 12px;
+		}
+	}
+}
+.service{
+	border: 0;
+	background: #141414;
+	p span span{
+		color: #fff;
+	}
+	svg{
+		fill: #fff;
+	}
+}
+#footer{
+	margin-top: 0;
+	border-top: 0;
+	.footer-top{
+		margin-bottom: 50px;
+	}
+}
