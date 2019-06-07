@@ -95,6 +95,22 @@
 }
 //
 
+//dropdown menu fullwidth
+.jms-row.menu{
+	position: relative;
+	.container, .layout-column{
+		position: unset;
+	}
+}
+.dropdown-menu.fullwidth{
+	width: 100%;
+	> .mega-dropdown-inner{
+		max-width: 1170px;
+		margin: auto;
+	}
+}
+//
+
 //service
 .service{
 	border-top: 1px solid #e5e5e5;

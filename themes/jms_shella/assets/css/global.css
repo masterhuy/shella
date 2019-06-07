@@ -54,6 +54,17 @@
       display: -ms-flexbox;
       display: flex; }
 
+.jms-row.menu {
+  position: relative; }
+  .jms-row.menu .container, .jms-row.menu .layout-column {
+    position: unset; }
+
+.dropdown-menu.fullwidth {
+  width: 100%; }
+  .dropdown-menu.fullwidth > .mega-dropdown-inner {
+    max-width: 1170px;
+    margin: auto; }
+
 .service {
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
