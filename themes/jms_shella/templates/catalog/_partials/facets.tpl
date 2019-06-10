@@ -56,6 +56,7 @@
                             type="checkbox"
                             {if $filter.active } checked {/if}
                           >
+                          <span class="checkmark"></span>
                           {if isset($filter.properties.color)}
                             <span class="color" style="background-color:{$filter.properties.color}"></span>
                             {elseif isset($filter.properties.texture)}
@@ -72,6 +73,7 @@
                             name="filter {$facet.label}"
                             {if $filter.active } checked {/if}
                           >
+                          <span class="checkmark"></span>
                           <span {if !$js_enabled} class="ps-shown-by-js" {/if}></span>
                         </span>
                       {/if}

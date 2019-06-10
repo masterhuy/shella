@@ -3084,8 +3084,8 @@ ul.footer_links {
 
 /*Breadcrumb*/
 .breadcrumb {
-  background: #f1f1f1;
-  padding: 43.5px 0;
+  background: #fff;
+  padding: 16px 0;
   margin-bottom: 98px;
   border-radius: 0;
 }
@@ -3106,7 +3106,7 @@ ul.footer_links {
 
 .breadcrumb-inner {
   width: 100%;
-  text-align: right;
+  text-align: left;
 }
 
 .title_meta {
@@ -3116,6 +3116,7 @@ ul.footer_links {
   padding-bottom: 0;
   text-transform: uppercase;
   width: 100%;
+  display: none;
 }
 
 .breadcrumb-inner ol {
@@ -3124,19 +3125,25 @@ ul.footer_links {
 .breadcrumb-inner ol li {
   position: relative;
   display: inline-block;
-  margin-left: 47px;
+  margin-right: 11px;
 }
 .breadcrumb-inner ol li::after {
-  content: "\f101";
-  font-family: FontAwesome;
+  content: "/";
   position: absolute;
-  right: -30px;
+  right: -9px;
   top: 50%;
   transform: translateY(-50%);
   color: #858585;
 }
 .breadcrumb-inner ol li:last-child:after {
   display: none; 
+}
+.breadcrumb-inner ol li a{
+  font-size: 10px;
+  color: #858585;
+}
+.breadcrumb-inner ol li a:hover{
+  color: #141414;
 }
 
 /*GLOBAL*--HEADER*/

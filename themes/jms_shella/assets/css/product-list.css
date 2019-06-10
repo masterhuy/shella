@@ -15,37 +15,22 @@
 }
 #search_filters .facet .facet-title {
 	padding-bottom: 6px;
-	font-size: 16px;
-	font-weight: 600;
+	font-size: 15px;
 	margin-bottom: 6px;
 	position: relative;
-	color: #7f7f7f;
-}
-#search_filters .facet.size ul li a {
-	display: inline-block;
-	font-size: 16px;
-	font-weight: 600;
-	line-height: 48px;
-	min-width: 48px;
-	text-align: center;
-	height: 48px;
-	background: #f2f2f2;
-	border-radius: 50%;
-	color: #8f8f8f;
+	text-transform: uppercase;
+	letter-spacing: 0.7px;
 }
 #search_filters {
 	margin-bottom: 21px;
 }
-#search_filters .facet.size .custom-checkbox {
-	display:none;
-}
 #search_filters .facet li {
-	padding: 2px 0;
 	position: relative;
+	line-height: 29px;
 }
 #search_filters .facet.size ul li {
-	margin-right: 4px;
 	float: left;
+	width: 50%;
 }
 .products-list-in-column.item-gutter-40 .js-product-miniature:hover::after {
 	width: calc(100% - 40px);
@@ -188,14 +173,50 @@
   width:100%;
 }
 #search_filters .custom-checkbox {
-	margin-right: 0;
+	margin-right: 4px;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	position: relative;
+	top: 5px;
 }
 #search_filters .custom-checkbox > input{
-	display: none;
+	opacity: 0;	
 }
 #search_filters .facet.color .custom-checkbox {
-	margin-right: 4px;
+	margin-right: 10px;
+	margin-bottom: 10px;
 }
+/*customs checkbox*/
+#category .facet-label .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 18px;
+	width: 18px;
+	border: 1px solid #e5e5e5;
+}
+#category .facet-label input:checked ~ .checkmark {
+  border-color: #141414;
+}
+#category .facet-label .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+#category .facet-label input:checked ~ .checkmark:after {
+  display: block;
+}
+#category .facet-label .checkmark::after {
+	content: "\f17b";
+	font-family: LineAwesome;
+	font-size: 10px;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	left: 50%;
+}
+/**/
 .facet.color ul li a {
 	display: none;
 }
@@ -220,14 +241,15 @@
 #category .facet.size ul li{
 	border-bottom: 0;
 }
-#category .color-style .custom-checkbox input {
+#category .color-style .custom-checkbox input,
+#category .color-style .custom-checkbox .checkmark {
     display: none;
 }
 #category .color-style .custom-checkbox .color {
 	border-radius: 50%;
 	display: block;
-	height: 48px;
-	width: 48px;
+	height: 18px;
+	width: 18px;
 	cursor: pointer;
 	position: relative;
 	box-shadow: 0 0 13px rgba(0,0,0,0.17);

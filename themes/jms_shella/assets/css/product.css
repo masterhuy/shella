@@ -3,21 +3,20 @@
     padding-bottom: 0;
 }
 .title-block h3 {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 25px;
+    font-size: 15px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
 }
 .block-categories .title-block h3 {
-    padding-bottom: 6px;
+    padding-bottom: 7px;
     position: relative;
 }
 .block-categories li a {
     display: inline-block;
-    line-height: 30px;
-    font-size: 16px;
-    font-weight: 500;
-    text-transform: uppercase;
+    line-height: 29px;
     padding-right: 15px;
+    color: #858585;
 }
 .block-categories .sub-list li a {
     font-size: 14px;

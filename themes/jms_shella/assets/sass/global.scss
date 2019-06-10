@@ -102,11 +102,12 @@
 		position: unset;
 	}
 }
-.dropdown-menu.fullwidth{
+.jms-megamenu .dropdown-menu.fullwidth{
 	width: 100%;
 	> .mega-dropdown-inner{
 		max-width: 1170px;
 		margin: auto;
+		padding: 0;
 	}
 }
 //
@@ -843,7 +844,22 @@
 		}
 	}
 }
+//
 
+// customs html left
+.customs-html-left{
+	.block-service{
+		margin-bottom: 16px;
+		margin-top: 2px;
+		p{
+			margin-right: 12px;
+		}
+		span{
+			line-height: 1.29;
+			color: $subcolor;
+		}
+	}
+}
 //
 
 //product page
@@ -1006,21 +1022,6 @@
 }
 .la.la-cog{
 	animation: fa-spin 2s infinite linear;
-}
-.breadcrumb-inner ol li{
-	&:first-child::before{
-		content: "\f015";
-		font-family: FontAwesome;
-		margin-right: 4px;
-	}
-	a{
-		font-size: 14px;
-		color: #8f8f8f;
-		font-weight: 500;
-		&:hover{
-			color: $active;
-		}
-	}
 }
 .jms-advsearch .input-group.keyword-group {
     width: 100%;
