@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-10 06:20:45
+/* Smarty version 3.1.33, created on 2019-06-11 05:18:38
   from 'D:\xamppp\htdocs\jms_shella\themes\jms_shella\templates\catalog\_partials\facets.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cfe2efd9c97d6_09186128',
+  'unifunc' => 'content_5cff71ee99d284_30992791',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1c0cebb2ab1944afe7aaa807dc01d3052527b2bb' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_shella\\themes\\jms_shella\\templates\\catalog\\_partials\\facets.tpl',
-      1 => 1560151310,
+      1 => 1560219342,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cfe2efd9c97d6_09186128 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cff71ee99d284_30992791 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_shella\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.replace.php','function'=>'smarty_modifier_replace',),));
 ?>
   <div id="search_filters">
@@ -84,7 +84,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['filter']->value) {
                           <span class="checkmark"></span>
                           <?php if (isset($_smarty_tpl->tpl_vars['filter']->value['properties']['color'])) {?>
                             <span class="color" style="background-color:<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['filter']->value['properties']['color'], ENT_QUOTES, 'UTF-8');?>
-"></span>
+;<?php if ($_smarty_tpl->tpl_vars['filter']->value['properties']['color'] == '#ffffff') {?>border: 1px solid #e5e5e5<?php }?>"></span>
                             <?php } elseif (isset($_smarty_tpl->tpl_vars['filter']->value['properties']['texture'])) {?>
                               <span class="color texture" style="background-image:url(<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['filter']->value['properties']['texture'], ENT_QUOTES, 'UTF-8');?>
 )"></span>

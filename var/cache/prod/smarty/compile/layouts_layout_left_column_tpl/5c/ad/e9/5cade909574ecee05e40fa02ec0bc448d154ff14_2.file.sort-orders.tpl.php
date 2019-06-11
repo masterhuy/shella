@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-10 05:30:30
+/* Smarty version 3.1.33, created on 2019-06-11 05:18:39
   from 'D:\xamppp\htdocs\jms_shella\themes\jms_shella\templates\catalog\_partials\sort-orders.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cfe2336c90732_22962000',
+  'unifunc' => 'content_5cff71efb56d01_88636133',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5cade909574ecee05e40fa02ec0bc448d154ff14' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_shella\\themes\\jms_shella\\templates\\catalog\\_partials\\sort-orders.tpl',
-      1 => 1558585495,
+      1 => 1560222955,
       2 => 'file',
     ),
   ),
@@ -20,10 +20,10 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cfe2336c90732_22962000 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cff71efb56d01_88636133 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="inlude_sort_by">
-	<span class="hidden-sm-down sort-by"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Sort by','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
-</span>
+	<span class="hidden-sm-down sort-by"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Sort','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
+:</span>
 	<div class="<?php if (!empty($_smarty_tpl->tpl_vars['listing']->value['rendered_facets'])) {
 } else {
 }?>  products-sort-order dropdown">
