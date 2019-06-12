@@ -28,12 +28,12 @@
 	$('#mobile-vermegamenu').addClass('collapse');
 	
 	//initiate the plugin and pass the id of the div containing gallery images
-	$(".zoom_01").elevateZoom({
-		gallery: 'gal1',
-		zoomType: "lens",
-		lensShape : "round",
-		lensSize : 200
-	});
+	// $(".zoom_01").elevateZoom({
+	// 	gallery: 'gal1',
+	// 	zoomType: "lens",
+	// 	lensShape : "round",
+	// 	lensSize : 200
+	// });
 	
 	// $(".zoom_01").elevateZoom({
 	// 	gallery: 'gal1',
@@ -123,7 +123,7 @@ jQuery(function ($) {
 			responsiveClass:true,
 			responsive:{            
 				1199:{
-                  	items:3
+                  	items:4
 				},
 				991:{
 					items:3

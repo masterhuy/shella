@@ -24,7 +24,7 @@
  *}
 <section class="featured-products clearfix mt-3 addon-title">
   <h3>
-    {l s='You Might Like Also' d='Shop.Theme.Catalog'}
+    {l s='Related Products' d='Shop.Theme.Catalog'}
   </h3>
   <div class="product_box">
     <div class="products customs-carousel-product"> 

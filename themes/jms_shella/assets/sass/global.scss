@@ -1570,8 +1570,11 @@ a.wishlist_top{
 //
 
 #more_info_block + .featured-products{
+	border-top: 1px solid #e5e5e5;
+	padding-top: 53px;
+	margin-top: 56px;
 	.customs-carousel-product{
-		padding-top: 60px;
+		padding-top: 38px;
 	}
 }
 #product{
@@ -1636,16 +1639,18 @@ a.wishlist_top{
 	.product-variants-item.size input{
 		+ span{
 			display: flex;
+			color: $subcolor;
 			width: 35px;
 		    height: 35px;
 		    align-items: center;
 		    justify-content: center;
+		    border: 1px solid #e5e5e5;
 		    z-index: 0;
 		}
 		&:checked + span{
 		    position: relative;
-		    color: #fff;
-		    background: $active;
+		    color: $active;
+		    border-color: $active;
 		}
 	}
 }
@@ -1859,7 +1864,7 @@ a.wishlist_top{
 .product-cover{
 	position: relative;
 	overflow: hidden;
-	margin-bottom: 10px;
+	margin-bottom: 0;
 }
 #product{
 	.product-cover{

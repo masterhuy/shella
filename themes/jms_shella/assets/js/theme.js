@@ -2567,8 +2567,8 @@
 
         function e() {
             (0, o.default)("#main .js-qv-product-images li").length > 2 ? ((0, o.default)("#main .js-qv-mask").addClass("scroll"), (0, o.default)(".scroll-box-arrows").addClass("scroll"), (0, o.default)("#main .js-qv-mask").scrollbox({
-                direction: "v",
-                distance: 125,
+                direction: "vertical",
+                distance: 100,
                 autoPlay: !1
             }), (0, o.default)(".scroll-box-arrows .left").click(function() {
                 (0, o.default)("#main .js-qv-mask").trigger("backward")

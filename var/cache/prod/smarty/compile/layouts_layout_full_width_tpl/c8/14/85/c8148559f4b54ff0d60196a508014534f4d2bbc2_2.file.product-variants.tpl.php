@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-11 05:51:31
+/* Smarty version 3.1.33, created on 2019-06-12 05:18:52
   from 'D:\xamppp\htdocs\jms_shella\themes\jms_shella\templates\catalog\_partials\product-variants.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cff79a3171447_68982376',
+  'unifunc' => 'content_5d00c37c292fb5_70967295',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c8148559f4b54ff0d60196a508014534f4d2bbc2' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_shella\\themes\\jms_shella\\templates\\catalog\\_partials\\product-variants.tpl',
-      1 => 1560244711,
+      1 => 1560304332,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cff79a3171447_68982376 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d00c37c292fb5_70967295 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_shella\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.replace.php','function'=>'smarty_modifier_replace',),));
 ?>
  <div class="product-variants">
@@ -32,7 +32,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['id_attribute_group']->value => $_smar
         <div class="clearfix product-variants-item <?php echo htmlspecialchars(smarty_modifier_replace(mb_strtolower($_smarty_tpl->tpl_vars['group']->value['name'], 'UTF-8'),' ',''), ENT_QUOTES, 'UTF-8');?>
 ">
             <span class="control-label"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['group']->value['name'], ENT_QUOTES, 'UTF-8');?>
-</span>
+:</span>
             <?php if ($_smarty_tpl->tpl_vars['group']->value['group_type'] == 'select') {?>
                 <select
                     id="group_<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['id_attribute_group']->value, ENT_QUOTES, 'UTF-8');?>

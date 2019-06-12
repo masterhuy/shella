@@ -2,10 +2,10 @@
 -- version 4.8.0
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Jun 11, 2019 at 12:30 PM
--- Server version: 10.1.31-MariaDB
--- PHP Version: 7.0.29
+-- Máy chủ: 127.0.0.1
+-- Thời gian đã tạo: Th6 12, 2019 lúc 12:30 PM
+-- Phiên bản máy phục vụ: 10.1.31-MariaDB
+-- Phiên bản PHP: 7.0.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `jms_shella`
+-- Cơ sở dữ liệu: `jms_shella`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_access`
+-- Cấu trúc bảng cho bảng `jms_access`
 --
 
 CREATE TABLE `jms_access` (
@@ -34,7 +34,7 @@ CREATE TABLE `jms_access` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_access`
+-- Đang đổ dữ liệu cho bảng `jms_access`
 --
 
 INSERT INTO `jms_access` (`id_profile`, `id_authorization_role`) VALUES
@@ -830,7 +830,7 @@ INSERT INTO `jms_access` (`id_profile`, `id_authorization_role`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_accessory`
+-- Cấu trúc bảng cho bảng `jms_accessory`
 --
 
 CREATE TABLE `jms_accessory` (
@@ -841,7 +841,7 @@ CREATE TABLE `jms_accessory` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_address`
+-- Cấu trúc bảng cho bảng `jms_address`
 --
 
 CREATE TABLE `jms_address` (
@@ -872,7 +872,7 @@ CREATE TABLE `jms_address` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_address`
+-- Đang đổ dữ liệu cho bảng `jms_address`
 --
 
 INSERT INTO `jms_address` (`id_address`, `id_country`, `id_state`, `id_customer`, `id_manufacturer`, `id_supplier`, `id_warehouse`, `alias`, `company`, `lastname`, `firstname`, `address1`, `address2`, `postcode`, `city`, `other`, `phone`, `phone_mobile`, `vat_number`, `dni`, `date_add`, `date_upd`, `active`, `deleted`) VALUES
@@ -884,7 +884,7 @@ INSERT INTO `jms_address` (`id_address`, `id_country`, `id_state`, `id_customer`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_address_format`
+-- Cấu trúc bảng cho bảng `jms_address_format`
 --
 
 CREATE TABLE `jms_address_format` (
@@ -893,7 +893,7 @@ CREATE TABLE `jms_address_format` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_address_format`
+-- Đang đổ dữ liệu cho bảng `jms_address_format`
 --
 
 INSERT INTO `jms_address_format` (`id_country`, `format`) VALUES
@@ -1145,7 +1145,7 @@ INSERT INTO `jms_address_format` (`id_country`, `format`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_admin_filter`
+-- Cấu trúc bảng cho bảng `jms_admin_filter`
 --
 
 CREATE TABLE `jms_admin_filter` (
@@ -1158,7 +1158,7 @@ CREATE TABLE `jms_admin_filter` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_admin_filter`
+-- Đang đổ dữ liệu cho bảng `jms_admin_filter`
 --
 
 INSERT INTO `jms_admin_filter` (`id`, `employee`, `shop`, `controller`, `action`, `filter`) VALUES
@@ -1167,7 +1167,7 @@ INSERT INTO `jms_admin_filter` (`id`, `employee`, `shop`, `controller`, `action`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_advice`
+-- Cấu trúc bảng cho bảng `jms_advice`
 --
 
 CREATE TABLE `jms_advice` (
@@ -1185,28 +1185,28 @@ CREATE TABLE `jms_advice` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_advice`
+-- Đang đổ dữ liệu cho bảng `jms_advice`
 --
 
 INSERT INTO `jms_advice` (`id_advice`, `id_ps_advice`, `id_tab`, `ids_tab`, `validated`, `hide`, `location`, `selector`, `start_day`, `stop_day`, `weight`) VALUES
-(79, 853, 1, NULL, 1, 0, 'after', '#dashtrends', 0, 0, 1),
-(80, 27, 1, NULL, 1, 0, 'after', '#dashtrends', 0, 0, 1),
-(81, 674, 1, NULL, 1, 0, 'after', '#dashtrends', 0, 0, 1),
-(82, 765, 1, NULL, 1, 0, 'after', '#dashtrends', 0, 0, 1),
-(83, 828, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
-(84, 829, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
-(85, 851, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
-(86, 730, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
-(87, 731, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
-(88, 732, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
-(89, 734, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
-(90, 708, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
-(91, 735, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1);
+(92, 853, 1, NULL, 1, 0, 'after', '#dashtrends', 0, 0, 1),
+(93, 27, 1, NULL, 1, 0, 'after', '#dashtrends', 0, 0, 1),
+(94, 674, 1, NULL, 1, 0, 'after', '#dashtrends', 0, 0, 1),
+(95, 765, 1, NULL, 1, 0, 'after', '#dashtrends', 0, 0, 1),
+(96, 828, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
+(97, 829, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
+(98, 851, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
+(99, 730, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
+(100, 731, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
+(101, 732, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
+(102, 734, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
+(103, 708, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
+(104, 735, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_advice_lang`
+-- Cấu trúc bảng cho bảng `jms_advice_lang`
 --
 
 CREATE TABLE `jms_advice_lang` (
@@ -1216,95 +1216,95 @@ CREATE TABLE `jms_advice_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_advice_lang`
+-- Đang đổ dữ liệu cho bảng `jms_advice_lang`
 --
 
 INSERT INTO `jms_advice_lang` (`id_advice`, `id_lang`, `html`) VALUES
-(79, 1, '<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(79, 2, '<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(79, 3, '<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(79, 4, '<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(79, 5, '<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(79, 7, '<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(80, 1, '<div id=\"wrap_id_advice_27\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"27\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"paypal\" href=\"{link}AdminModules{/link}&install=paypal&module_name=paypal&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/paypal.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/27.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Complete more sales with PayPal. Download the free module now. </p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_27 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=27&url=\'+link;\n                $(\'#wrap_id_advice_27 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(80, 2, '<div id=\"wrap_id_advice_27\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"27\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"paypal\" href=\"{link}AdminModules{/link}&install=paypal&module_name=paypal&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/paypal.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/27.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Complete more sales with PayPal. Download the free module now. </p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_27 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=27&url=\'+link;\n                $(\'#wrap_id_advice_27 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(80, 3, '<div id=\"wrap_id_advice_27\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"27\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"paypal\" href=\"{link}AdminModules{/link}&install=paypal&module_name=paypal&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/paypal.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/27.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Complete more sales with PayPal. Download the free module now. </p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_27 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=27&url=\'+link;\n                $(\'#wrap_id_advice_27 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(80, 4, '<div id=\"wrap_id_advice_27\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"27\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"paypal\" href=\"{link}AdminModules{/link}&install=paypal&module_name=paypal&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/paypal.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/27.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Complete more sales with PayPal. Download the free module now. </p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_27 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=27&url=\'+link;\n                $(\'#wrap_id_advice_27 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(80, 5, '<div id=\"wrap_id_advice_27\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"27\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"paypal\" href=\"{link}AdminModules{/link}&install=paypal&module_name=paypal&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/paypal.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/27.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Complete more sales with PayPal. Download the free module now. </p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_27 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=27&url=\'+link;\n                $(\'#wrap_id_advice_27 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(80, 7, '<div id=\"wrap_id_advice_27\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"27\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"paypal\" href=\"{link}AdminModules{/link}&install=paypal&module_name=paypal&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/paypal.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/27.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Complete more sales with PayPal. Download the free module now. </p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_27 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=27&url=\'+link;\n                $(\'#wrap_id_advice_27 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(81, 1, '<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(81, 2, '<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(81, 3, '<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(81, 4, '<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(81, 5, '<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(81, 7, '<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(82, 1, '<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(82, 2, '<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(82, 3, '<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(82, 4, '<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(82, 5, '<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(82, 7, '<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>');
+(92, 1, '<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(92, 2, '<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(92, 3, '<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(92, 4, '<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(92, 5, '<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(92, 7, '<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(93, 1, '<div id=\"wrap_id_advice_27\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"27\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"paypal\" href=\"{link}AdminModules{/link}&install=paypal&module_name=paypal&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/paypal.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/27.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Complete more sales with PayPal. Download the free module now. </p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_27 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=27&url=\'+link;\n                $(\'#wrap_id_advice_27 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(93, 2, '<div id=\"wrap_id_advice_27\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"27\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"paypal\" href=\"{link}AdminModules{/link}&install=paypal&module_name=paypal&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/paypal.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/27.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Complete more sales with PayPal. Download the free module now. </p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_27 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=27&url=\'+link;\n                $(\'#wrap_id_advice_27 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(93, 3, '<div id=\"wrap_id_advice_27\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"27\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"paypal\" href=\"{link}AdminModules{/link}&install=paypal&module_name=paypal&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/paypal.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/27.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Complete more sales with PayPal. Download the free module now. </p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_27 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=27&url=\'+link;\n                $(\'#wrap_id_advice_27 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(93, 4, '<div id=\"wrap_id_advice_27\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"27\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"paypal\" href=\"{link}AdminModules{/link}&install=paypal&module_name=paypal&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/paypal.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/27.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Complete more sales with PayPal. Download the free module now. </p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_27 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=27&url=\'+link;\n                $(\'#wrap_id_advice_27 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(93, 5, '<div id=\"wrap_id_advice_27\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"27\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"paypal\" href=\"{link}AdminModules{/link}&install=paypal&module_name=paypal&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/paypal.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/27.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Complete more sales with PayPal. Download the free module now. </p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_27 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=27&url=\'+link;\n                $(\'#wrap_id_advice_27 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(93, 7, '<div id=\"wrap_id_advice_27\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"27\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"paypal\" href=\"{link}AdminModules{/link}&install=paypal&module_name=paypal&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/paypal.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/27.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Complete more sales with PayPal. Download the free module now. </p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_27 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=27&url=\'+link;\n                $(\'#wrap_id_advice_27 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(94, 1, '<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(94, 2, '<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(94, 3, '<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(94, 4, '<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(94, 5, '<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(94, 7, '<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(95, 1, '<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(95, 2, '<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(95, 3, '<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(95, 4, '<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(95, 5, '<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(95, 7, '<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>');
 INSERT INTO `jms_advice_lang` (`id_advice`, `id_lang`, `html`) VALUES
-(83, 1, ' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(83, 2, ' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(83, 3, ' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(83, 4, ' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(83, 5, ' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(83, 7, ' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(84, 1, ' <div id=\"wrap_id_advice_829\"> <section id=\"0_cappasity\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/cappasity.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/829.png\"/> <p> <b>3D images are proven to increase conversion over static images by up to 30%</b> </p> <p> Customers interact with 3D products the same way as with real ones. They look at them from all sides, see the details and better understand what they are about to purchase. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=829&url=https://addons.prestashop.com/fr/visuels-produits/26586-cappasity-3d-and-360-product-viewer.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dcappasity\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_cappasity\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(84, 2, ' <div id=\"wrap_id_advice_829\"> <section id=\"0_cappasity\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/cappasity.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/829.png\"/> <p> <b>3D images are proven to increase conversion over static images by up to 30%</b> </p> <p> Customers interact with 3D products the same way as with real ones. They look at them from all sides, see the details and better understand what they are about to purchase. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=829&url=https://addons.prestashop.com/fr/visuels-produits/26586-cappasity-3d-and-360-product-viewer.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dcappasity\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_cappasity\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(84, 3, ' <div id=\"wrap_id_advice_829\"> <section id=\"0_cappasity\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/cappasity.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/829.png\"/> <p> <b>3D images are proven to increase conversion over static images by up to 30%</b> </p> <p> Customers interact with 3D products the same way as with real ones. They look at them from all sides, see the details and better understand what they are about to purchase. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=829&url=https://addons.prestashop.com/fr/visuels-produits/26586-cappasity-3d-and-360-product-viewer.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dcappasity\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_cappasity\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(84, 4, ' <div id=\"wrap_id_advice_829\"> <section id=\"0_cappasity\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/cappasity.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/829.png\"/> <p> <b>3D images are proven to increase conversion over static images by up to 30%</b> </p> <p> Customers interact with 3D products the same way as with real ones. They look at them from all sides, see the details and better understand what they are about to purchase. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=829&url=https://addons.prestashop.com/fr/visuels-produits/26586-cappasity-3d-and-360-product-viewer.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dcappasity\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_cappasity\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(84, 5, ' <div id=\"wrap_id_advice_829\"> <section id=\"0_cappasity\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/cappasity.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/829.png\"/> <p> <b>3D images are proven to increase conversion over static images by up to 30%</b> </p> <p> Customers interact with 3D products the same way as with real ones. They look at them from all sides, see the details and better understand what they are about to purchase. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=829&url=https://addons.prestashop.com/fr/visuels-produits/26586-cappasity-3d-and-360-product-viewer.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dcappasity\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_cappasity\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(84, 7, ' <div id=\"wrap_id_advice_829\"> <section id=\"0_cappasity\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/cappasity.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/829.png\"/> <p> <b>3D images are proven to increase conversion over static images by up to 30%</b> </p> <p> Customers interact with 3D products the same way as with real ones. They look at them from all sides, see the details and better understand what they are about to purchase. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=829&url=https://addons.prestashop.com/fr/visuels-produits/26586-cappasity-3d-and-360-product-viewer.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dcappasity\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_cappasity\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(85, 1, ' <div id=\"wrap_id_advice_851\"> <section id=\"0_upela\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/upela.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/851.png\"/> <p> <b>Did you know? 45% of basket abandon is due to the lack of delivery options.</b> </p> <p> Reverse the trend and propose a complete delivery offer to your customers: dropoff, standard or express. Respond to all your customers\' needs and increase their satisfaction. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=851&url=https://addons.prestashop.com/en/shipping-carriers/26804-upela-parcel-shipping-at-the-best-rate.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dupela\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_upela\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(85, 2, ' <div id=\"wrap_id_advice_851\"> <section id=\"0_upela\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/upela.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/851.png\"/> <p> <b>Did you know? 45% of basket abandon is due to the lack of delivery options.</b> </p> <p> Reverse the trend and propose a complete delivery offer to your customers: dropoff, standard or express. Respond to all your customers\' needs and increase their satisfaction. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=851&url=https://addons.prestashop.com/en/shipping-carriers/26804-upela-parcel-shipping-at-the-best-rate.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dupela\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_upela\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(85, 3, ' <div id=\"wrap_id_advice_851\"> <section id=\"0_upela\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/upela.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/851.png\"/> <p> <b>Did you know? 45% of basket abandon is due to the lack of delivery options.</b> </p> <p> Reverse the trend and propose a complete delivery offer to your customers: dropoff, standard or express. Respond to all your customers\' needs and increase their satisfaction. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=851&url=https://addons.prestashop.com/en/shipping-carriers/26804-upela-parcel-shipping-at-the-best-rate.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dupela\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_upela\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(85, 4, ' <div id=\"wrap_id_advice_851\"> <section id=\"0_upela\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/upela.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/851.png\"/> <p> <b>Did you know? 45% of basket abandon is due to the lack of delivery options.</b> </p> <p> Reverse the trend and propose a complete delivery offer to your customers: dropoff, standard or express. Respond to all your customers\' needs and increase their satisfaction. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=851&url=https://addons.prestashop.com/en/shipping-carriers/26804-upela-parcel-shipping-at-the-best-rate.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dupela\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_upela\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(85, 5, ' <div id=\"wrap_id_advice_851\"> <section id=\"0_upela\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/upela.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/851.png\"/> <p> <b>Did you know? 45% of basket abandon is due to the lack of delivery options.</b> </p> <p> Reverse the trend and propose a complete delivery offer to your customers: dropoff, standard or express. Respond to all your customers\' needs and increase their satisfaction. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=851&url=https://addons.prestashop.com/en/shipping-carriers/26804-upela-parcel-shipping-at-the-best-rate.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dupela\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_upela\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(85, 7, ' <div id=\"wrap_id_advice_851\"> <section id=\"0_upela\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/upela.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/851.png\"/> <p> <b>Did you know? 45% of basket abandon is due to the lack of delivery options.</b> </p> <p> Reverse the trend and propose a complete delivery offer to your customers: dropoff, standard or express. Respond to all your customers\' needs and increase their satisfaction. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=851&url=https://addons.prestashop.com/en/shipping-carriers/26804-upela-parcel-shipping-at-the-best-rate.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dupela\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_upela\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(86, 1, ' <div id=\"wrap_id_advice_730\"> <section id=\"0_videotraining_businesstech\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_businesstech.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/730.png\"/> <p> <b>4 simple steps to optimize your online shop’s performance</b> </p> <p> See how you can start analyzing and optimizing your online shop in 4 simple steps in this short video from Business Tech, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=730&url=https://www.youtube.com/watch?v=0acJfI8fn-0?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=kpi%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_businesstech\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_businesstech\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(86, 2, ' <div id=\"wrap_id_advice_730\"> <section id=\"0_videotraining_businesstech\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_businesstech.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/730.png\"/> <p> <b>4 simple steps to optimize your online shop’s performance</b> </p> <p> See how you can start analyzing and optimizing your online shop in 4 simple steps in this short video from Business Tech, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=730&url=https://www.youtube.com/watch?v=0acJfI8fn-0?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=kpi%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_businesstech\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_businesstech\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(86, 3, ' <div id=\"wrap_id_advice_730\"> <section id=\"0_videotraining_businesstech\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_businesstech.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/730.png\"/> <p> <b>4 simple steps to optimize your online shop’s performance</b> </p> <p> See how you can start analyzing and optimizing your online shop in 4 simple steps in this short video from Business Tech, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=730&url=https://www.youtube.com/watch?v=0acJfI8fn-0?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=kpi%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_businesstech\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_businesstech\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(86, 4, ' <div id=\"wrap_id_advice_730\"> <section id=\"0_videotraining_businesstech\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_businesstech.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/730.png\"/> <p> <b>4 simple steps to optimize your online shop’s performance</b> </p> <p> See how you can start analyzing and optimizing your online shop in 4 simple steps in this short video from Business Tech, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=730&url=https://www.youtube.com/watch?v=0acJfI8fn-0?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=kpi%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_businesstech\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_businesstech\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(86, 5, ' <div id=\"wrap_id_advice_730\"> <section id=\"0_videotraining_businesstech\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_businesstech.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/730.png\"/> <p> <b>4 simple steps to optimize your online shop’s performance</b> </p> <p> See how you can start analyzing and optimizing your online shop in 4 simple steps in this short video from Business Tech, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=730&url=https://www.youtube.com/watch?v=0acJfI8fn-0?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=kpi%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_businesstech\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_businesstech\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(86, 7, ' <div id=\"wrap_id_advice_730\"> <section id=\"0_videotraining_businesstech\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_businesstech.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/730.png\"/> <p> <b>4 simple steps to optimize your online shop’s performance</b> </p> <p> See how you can start analyzing and optimizing your online shop in 4 simple steps in this short video from Business Tech, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=730&url=https://www.youtube.com/watch?v=0acJfI8fn-0?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=kpi%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_businesstech\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_businesstech\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(87, 1, ' <div id=\"wrap_id_advice_731\"> <section id=\"0_videotraining_enverguredigital\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_enverguredigital.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/731.png\"/> <p> <b>12 essential tips to create an efficient product page</b> </p> <p> Learn how to create an efficient product page to boost your sales, in this short video from Envergure Digitale, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=731&url=https://www.youtube.com/watch?v=5k3ZdPo00KY?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=product%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_enverguredigital\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_enverguredigital\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(87, 2, ' <div id=\"wrap_id_advice_731\"> <section id=\"0_videotraining_enverguredigital\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_enverguredigital.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/731.png\"/> <p> <b>12 essential tips to create an efficient product page</b> </p> <p> Learn how to create an efficient product page to boost your sales, in this short video from Envergure Digitale, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=731&url=https://www.youtube.com/watch?v=5k3ZdPo00KY?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=product%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_enverguredigital\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_enverguredigital\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(87, 3, ' <div id=\"wrap_id_advice_731\"> <section id=\"0_videotraining_enverguredigital\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_enverguredigital.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/731.png\"/> <p> <b>12 essential tips to create an efficient product page</b> </p> <p> Learn how to create an efficient product page to boost your sales, in this short video from Envergure Digitale, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=731&url=https://www.youtube.com/watch?v=5k3ZdPo00KY?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=product%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_enverguredigital\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_enverguredigital\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(87, 4, ' <div id=\"wrap_id_advice_731\"> <section id=\"0_videotraining_enverguredigital\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_enverguredigital.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/731.png\"/> <p> <b>12 essential tips to create an efficient product page</b> </p> <p> Learn how to create an efficient product page to boost your sales, in this short video from Envergure Digitale, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=731&url=https://www.youtube.com/watch?v=5k3ZdPo00KY?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=product%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_enverguredigital\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_enverguredigital\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(87, 5, ' <div id=\"wrap_id_advice_731\"> <section id=\"0_videotraining_enverguredigital\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_enverguredigital.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/731.png\"/> <p> <b>12 essential tips to create an efficient product page</b> </p> <p> Learn how to create an efficient product page to boost your sales, in this short video from Envergure Digitale, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=731&url=https://www.youtube.com/watch?v=5k3ZdPo00KY?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=product%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_enverguredigital\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_enverguredigital\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(87, 7, ' <div id=\"wrap_id_advice_731\"> <section id=\"0_videotraining_enverguredigital\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_enverguredigital.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/731.png\"/> <p> <b>12 essential tips to create an efficient product page</b> </p> <p> Learn how to create an efficient product page to boost your sales, in this short video from Envergure Digitale, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=731&url=https://www.youtube.com/watch?v=5k3ZdPo00KY?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=product%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_enverguredigital\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_enverguredigital\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(88, 1, ' <div id=\"wrap_id_advice_732\"> <section id=\"0_videotraining_envoimoinscher\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_envoimoinscher.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/732.png\"/> <p> <b>6 tips for creating a delivery policy that attracts customers</b> </p> <p> Find important tips for creating an efficient delivery policy in this short video from Envoismoinscher.com. It will to help you to attract customers and build loyalty. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=732&url=https://www.youtube.com/watch?v=QhTU_eSrm7o?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=shipping%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_envoimoinscher\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_envoimoinscher\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(88, 2, ' <div id=\"wrap_id_advice_732\"> <section id=\"0_videotraining_envoimoinscher\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_envoimoinscher.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/732.png\"/> <p> <b>6 tips for creating a delivery policy that attracts customers</b> </p> <p> Find important tips for creating an efficient delivery policy in this short video from Envoismoinscher.com. It will to help you to attract customers and build loyalty. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=732&url=https://www.youtube.com/watch?v=QhTU_eSrm7o?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=shipping%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_envoimoinscher\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_envoimoinscher\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(88, 3, ' <div id=\"wrap_id_advice_732\"> <section id=\"0_videotraining_envoimoinscher\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_envoimoinscher.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/732.png\"/> <p> <b>6 tips for creating a delivery policy that attracts customers</b> </p> <p> Find important tips for creating an efficient delivery policy in this short video from Envoismoinscher.com. It will to help you to attract customers and build loyalty. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=732&url=https://www.youtube.com/watch?v=QhTU_eSrm7o?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=shipping%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_envoimoinscher\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_envoimoinscher\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(88, 4, ' <div id=\"wrap_id_advice_732\"> <section id=\"0_videotraining_envoimoinscher\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_envoimoinscher.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/732.png\"/> <p> <b>6 tips for creating a delivery policy that attracts customers</b> </p> <p> Find important tips for creating an efficient delivery policy in this short video from Envoismoinscher.com. It will to help you to attract customers and build loyalty. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=732&url=https://www.youtube.com/watch?v=QhTU_eSrm7o?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=shipping%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_envoimoinscher\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_envoimoinscher\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(88, 5, ' <div id=\"wrap_id_advice_732\"> <section id=\"0_videotraining_envoimoinscher\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_envoimoinscher.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/732.png\"/> <p> <b>6 tips for creating a delivery policy that attracts customers</b> </p> <p> Find important tips for creating an efficient delivery policy in this short video from Envoismoinscher.com. It will to help you to attract customers and build loyalty. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=732&url=https://www.youtube.com/watch?v=QhTU_eSrm7o?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=shipping%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_envoimoinscher\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_envoimoinscher\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>');
+(96, 1, ' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(96, 2, ' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(96, 3, ' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(96, 4, ' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(96, 5, ' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(96, 7, ' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(97, 1, ' <div id=\"wrap_id_advice_829\"> <section id=\"0_cappasity\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/cappasity.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/829.png\"/> <p> <b>3D images are proven to increase conversion over static images by up to 30%</b> </p> <p> Customers interact with 3D products the same way as with real ones. They look at them from all sides, see the details and better understand what they are about to purchase. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=829&url=https://addons.prestashop.com/fr/visuels-produits/26586-cappasity-3d-and-360-product-viewer.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dcappasity\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_cappasity\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(97, 2, ' <div id=\"wrap_id_advice_829\"> <section id=\"0_cappasity\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/cappasity.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/829.png\"/> <p> <b>3D images are proven to increase conversion over static images by up to 30%</b> </p> <p> Customers interact with 3D products the same way as with real ones. They look at them from all sides, see the details and better understand what they are about to purchase. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=829&url=https://addons.prestashop.com/fr/visuels-produits/26586-cappasity-3d-and-360-product-viewer.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dcappasity\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_cappasity\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(97, 3, ' <div id=\"wrap_id_advice_829\"> <section id=\"0_cappasity\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/cappasity.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/829.png\"/> <p> <b>3D images are proven to increase conversion over static images by up to 30%</b> </p> <p> Customers interact with 3D products the same way as with real ones. They look at them from all sides, see the details and better understand what they are about to purchase. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=829&url=https://addons.prestashop.com/fr/visuels-produits/26586-cappasity-3d-and-360-product-viewer.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dcappasity\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_cappasity\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(97, 4, ' <div id=\"wrap_id_advice_829\"> <section id=\"0_cappasity\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/cappasity.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/829.png\"/> <p> <b>3D images are proven to increase conversion over static images by up to 30%</b> </p> <p> Customers interact with 3D products the same way as with real ones. They look at them from all sides, see the details and better understand what they are about to purchase. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=829&url=https://addons.prestashop.com/fr/visuels-produits/26586-cappasity-3d-and-360-product-viewer.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dcappasity\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_cappasity\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(97, 5, ' <div id=\"wrap_id_advice_829\"> <section id=\"0_cappasity\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/cappasity.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/829.png\"/> <p> <b>3D images are proven to increase conversion over static images by up to 30%</b> </p> <p> Customers interact with 3D products the same way as with real ones. They look at them from all sides, see the details and better understand what they are about to purchase. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=829&url=https://addons.prestashop.com/fr/visuels-produits/26586-cappasity-3d-and-360-product-viewer.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dcappasity\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_cappasity\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(97, 7, ' <div id=\"wrap_id_advice_829\"> <section id=\"0_cappasity\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/cappasity.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/829.png\"/> <p> <b>3D images are proven to increase conversion over static images by up to 30%</b> </p> <p> Customers interact with 3D products the same way as with real ones. They look at them from all sides, see the details and better understand what they are about to purchase. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=829&url=https://addons.prestashop.com/fr/visuels-produits/26586-cappasity-3d-and-360-product-viewer.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dcappasity\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_cappasity\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(98, 1, ' <div id=\"wrap_id_advice_851\"> <section id=\"0_upela\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/upela.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/851.png\"/> <p> <b>Did you know? 45% of basket abandon is due to the lack of delivery options.</b> </p> <p> Reverse the trend and propose a complete delivery offer to your customers: dropoff, standard or express. Respond to all your customers\' needs and increase their satisfaction. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=851&url=https://addons.prestashop.com/en/shipping-carriers/26804-upela-parcel-shipping-at-the-best-rate.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dupela\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_upela\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(98, 2, ' <div id=\"wrap_id_advice_851\"> <section id=\"0_upela\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/upela.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/851.png\"/> <p> <b>Did you know? 45% of basket abandon is due to the lack of delivery options.</b> </p> <p> Reverse the trend and propose a complete delivery offer to your customers: dropoff, standard or express. Respond to all your customers\' needs and increase their satisfaction. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=851&url=https://addons.prestashop.com/en/shipping-carriers/26804-upela-parcel-shipping-at-the-best-rate.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dupela\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_upela\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(98, 3, ' <div id=\"wrap_id_advice_851\"> <section id=\"0_upela\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/upela.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/851.png\"/> <p> <b>Did you know? 45% of basket abandon is due to the lack of delivery options.</b> </p> <p> Reverse the trend and propose a complete delivery offer to your customers: dropoff, standard or express. Respond to all your customers\' needs and increase their satisfaction. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=851&url=https://addons.prestashop.com/en/shipping-carriers/26804-upela-parcel-shipping-at-the-best-rate.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dupela\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_upela\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(98, 4, ' <div id=\"wrap_id_advice_851\"> <section id=\"0_upela\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/upela.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/851.png\"/> <p> <b>Did you know? 45% of basket abandon is due to the lack of delivery options.</b> </p> <p> Reverse the trend and propose a complete delivery offer to your customers: dropoff, standard or express. Respond to all your customers\' needs and increase their satisfaction. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=851&url=https://addons.prestashop.com/en/shipping-carriers/26804-upela-parcel-shipping-at-the-best-rate.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dupela\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_upela\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(98, 5, ' <div id=\"wrap_id_advice_851\"> <section id=\"0_upela\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/upela.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/851.png\"/> <p> <b>Did you know? 45% of basket abandon is due to the lack of delivery options.</b> </p> <p> Reverse the trend and propose a complete delivery offer to your customers: dropoff, standard or express. Respond to all your customers\' needs and increase their satisfaction. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=851&url=https://addons.prestashop.com/en/shipping-carriers/26804-upela-parcel-shipping-at-the-best-rate.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dupela\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_upela\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(98, 7, ' <div id=\"wrap_id_advice_851\"> <section id=\"0_upela\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/upela.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/851.png\"/> <p> <b>Did you know? 45% of basket abandon is due to the lack of delivery options.</b> </p> <p> Reverse the trend and propose a complete delivery offer to your customers: dropoff, standard or express. Respond to all your customers\' needs and increase their satisfaction. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=851&url=https://addons.prestashop.com/en/shipping-carriers/26804-upela-parcel-shipping-at-the-best-rate.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dupela\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_upela\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(99, 1, ' <div id=\"wrap_id_advice_730\"> <section id=\"0_videotraining_businesstech\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_businesstech.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/730.png\"/> <p> <b>4 simple steps to optimize your online shop’s performance</b> </p> <p> See how you can start analyzing and optimizing your online shop in 4 simple steps in this short video from Business Tech, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=730&url=https://www.youtube.com/watch?v=0acJfI8fn-0?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=kpi%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_businesstech\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_businesstech\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(99, 2, ' <div id=\"wrap_id_advice_730\"> <section id=\"0_videotraining_businesstech\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_businesstech.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/730.png\"/> <p> <b>4 simple steps to optimize your online shop’s performance</b> </p> <p> See how you can start analyzing and optimizing your online shop in 4 simple steps in this short video from Business Tech, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=730&url=https://www.youtube.com/watch?v=0acJfI8fn-0?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=kpi%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_businesstech\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_businesstech\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(99, 3, ' <div id=\"wrap_id_advice_730\"> <section id=\"0_videotraining_businesstech\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_businesstech.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/730.png\"/> <p> <b>4 simple steps to optimize your online shop’s performance</b> </p> <p> See how you can start analyzing and optimizing your online shop in 4 simple steps in this short video from Business Tech, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=730&url=https://www.youtube.com/watch?v=0acJfI8fn-0?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=kpi%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_businesstech\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_businesstech\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(99, 4, ' <div id=\"wrap_id_advice_730\"> <section id=\"0_videotraining_businesstech\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_businesstech.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/730.png\"/> <p> <b>4 simple steps to optimize your online shop’s performance</b> </p> <p> See how you can start analyzing and optimizing your online shop in 4 simple steps in this short video from Business Tech, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=730&url=https://www.youtube.com/watch?v=0acJfI8fn-0?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=kpi%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_businesstech\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_businesstech\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(99, 5, ' <div id=\"wrap_id_advice_730\"> <section id=\"0_videotraining_businesstech\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_businesstech.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/730.png\"/> <p> <b>4 simple steps to optimize your online shop’s performance</b> </p> <p> See how you can start analyzing and optimizing your online shop in 4 simple steps in this short video from Business Tech, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=730&url=https://www.youtube.com/watch?v=0acJfI8fn-0?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=kpi%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_businesstech\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_businesstech\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(99, 7, ' <div id=\"wrap_id_advice_730\"> <section id=\"0_videotraining_businesstech\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_businesstech.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/730.png\"/> <p> <b>4 simple steps to optimize your online shop’s performance</b> </p> <p> See how you can start analyzing and optimizing your online shop in 4 simple steps in this short video from Business Tech, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=730&url=https://www.youtube.com/watch?v=0acJfI8fn-0?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=kpi%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_businesstech\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_businesstech\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(100, 1, ' <div id=\"wrap_id_advice_731\"> <section id=\"0_videotraining_enverguredigital\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_enverguredigital.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/731.png\"/> <p> <b>12 essential tips to create an efficient product page</b> </p> <p> Learn how to create an efficient product page to boost your sales, in this short video from Envergure Digitale, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=731&url=https://www.youtube.com/watch?v=5k3ZdPo00KY?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=product%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_enverguredigital\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_enverguredigital\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(100, 2, ' <div id=\"wrap_id_advice_731\"> <section id=\"0_videotraining_enverguredigital\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_enverguredigital.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/731.png\"/> <p> <b>12 essential tips to create an efficient product page</b> </p> <p> Learn how to create an efficient product page to boost your sales, in this short video from Envergure Digitale, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=731&url=https://www.youtube.com/watch?v=5k3ZdPo00KY?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=product%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_enverguredigital\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_enverguredigital\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(100, 3, ' <div id=\"wrap_id_advice_731\"> <section id=\"0_videotraining_enverguredigital\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_enverguredigital.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/731.png\"/> <p> <b>12 essential tips to create an efficient product page</b> </p> <p> Learn how to create an efficient product page to boost your sales, in this short video from Envergure Digitale, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=731&url=https://www.youtube.com/watch?v=5k3ZdPo00KY?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=product%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_enverguredigital\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_enverguredigital\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(100, 4, ' <div id=\"wrap_id_advice_731\"> <section id=\"0_videotraining_enverguredigital\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_enverguredigital.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/731.png\"/> <p> <b>12 essential tips to create an efficient product page</b> </p> <p> Learn how to create an efficient product page to boost your sales, in this short video from Envergure Digitale, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=731&url=https://www.youtube.com/watch?v=5k3ZdPo00KY?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=product%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_enverguredigital\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_enverguredigital\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(100, 5, ' <div id=\"wrap_id_advice_731\"> <section id=\"0_videotraining_enverguredigital\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_enverguredigital.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/731.png\"/> <p> <b>12 essential tips to create an efficient product page</b> </p> <p> Learn how to create an efficient product page to boost your sales, in this short video from Envergure Digitale, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=731&url=https://www.youtube.com/watch?v=5k3ZdPo00KY?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=product%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_enverguredigital\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_enverguredigital\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(100, 7, ' <div id=\"wrap_id_advice_731\"> <section id=\"0_videotraining_enverguredigital\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_enverguredigital.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/731.png\"/> <p> <b>12 essential tips to create an efficient product page</b> </p> <p> Learn how to create an efficient product page to boost your sales, in this short video from Envergure Digitale, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=731&url=https://www.youtube.com/watch?v=5k3ZdPo00KY?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=product%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_enverguredigital\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_enverguredigital\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(101, 1, ' <div id=\"wrap_id_advice_732\"> <section id=\"0_videotraining_envoimoinscher\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_envoimoinscher.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/732.png\"/> <p> <b>6 tips for creating a delivery policy that attracts customers</b> </p> <p> Find important tips for creating an efficient delivery policy in this short video from Envoismoinscher.com. It will to help you to attract customers and build loyalty. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=732&url=https://www.youtube.com/watch?v=QhTU_eSrm7o?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=shipping%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_envoimoinscher\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_envoimoinscher\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(101, 2, ' <div id=\"wrap_id_advice_732\"> <section id=\"0_videotraining_envoimoinscher\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_envoimoinscher.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/732.png\"/> <p> <b>6 tips for creating a delivery policy that attracts customers</b> </p> <p> Find important tips for creating an efficient delivery policy in this short video from Envoismoinscher.com. It will to help you to attract customers and build loyalty. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=732&url=https://www.youtube.com/watch?v=QhTU_eSrm7o?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=shipping%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_envoimoinscher\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_envoimoinscher\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(101, 3, ' <div id=\"wrap_id_advice_732\"> <section id=\"0_videotraining_envoimoinscher\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_envoimoinscher.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/732.png\"/> <p> <b>6 tips for creating a delivery policy that attracts customers</b> </p> <p> Find important tips for creating an efficient delivery policy in this short video from Envoismoinscher.com. It will to help you to attract customers and build loyalty. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=732&url=https://www.youtube.com/watch?v=QhTU_eSrm7o?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=shipping%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_envoimoinscher\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_envoimoinscher\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(101, 4, ' <div id=\"wrap_id_advice_732\"> <section id=\"0_videotraining_envoimoinscher\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_envoimoinscher.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/732.png\"/> <p> <b>6 tips for creating a delivery policy that attracts customers</b> </p> <p> Find important tips for creating an efficient delivery policy in this short video from Envoismoinscher.com. It will to help you to attract customers and build loyalty. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=732&url=https://www.youtube.com/watch?v=QhTU_eSrm7o?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=shipping%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_envoimoinscher\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_envoimoinscher\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(101, 5, ' <div id=\"wrap_id_advice_732\"> <section id=\"0_videotraining_envoimoinscher\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_envoimoinscher.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/732.png\"/> <p> <b>6 tips for creating a delivery policy that attracts customers</b> </p> <p> Find important tips for creating an efficient delivery policy in this short video from Envoismoinscher.com. It will to help you to attract customers and build loyalty. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=732&url=https://www.youtube.com/watch?v=QhTU_eSrm7o?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=shipping%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_envoimoinscher\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_envoimoinscher\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>');
 INSERT INTO `jms_advice_lang` (`id_advice`, `id_lang`, `html`) VALUES
-(88, 7, ' <div id=\"wrap_id_advice_732\"> <section id=\"0_videotraining_envoimoinscher\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_envoimoinscher.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/732.png\"/> <p> <b>6 tips for creating a delivery policy that attracts customers</b> </p> <p> Find important tips for creating an efficient delivery policy in this short video from Envoismoinscher.com. It will to help you to attract customers and build loyalty. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=732&url=https://www.youtube.com/watch?v=QhTU_eSrm7o?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=shipping%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_envoimoinscher\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_envoimoinscher\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(89, 1, ' <div id=\"wrap_id_advice_734\"> <section id=\"0_videotraining_prestashop\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_prestashop.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/734.png\"/> <p> <b>4 traps to avoid when building an Ecommerce project</b> </p> <p> Learn how to avoid 4 common errors when preparing your Ecommerce project in this short video, drawing on the expertise we\'ve gained from working with PrestaShop merchants. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=734&url=https://www.youtube.com/watch?v=7u56FJfAGSQ?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=entrepreneur%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_prestashop\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_prestashop\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(89, 2, ' <div id=\"wrap_id_advice_734\"> <section id=\"0_videotraining_prestashop\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_prestashop.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/734.png\"/> <p> <b>4 traps to avoid when building an Ecommerce project</b> </p> <p> Learn how to avoid 4 common errors when preparing your Ecommerce project in this short video, drawing on the expertise we\'ve gained from working with PrestaShop merchants. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=734&url=https://www.youtube.com/watch?v=7u56FJfAGSQ?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=entrepreneur%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_prestashop\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_prestashop\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(89, 3, ' <div id=\"wrap_id_advice_734\"> <section id=\"0_videotraining_prestashop\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_prestashop.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/734.png\"/> <p> <b>4 traps to avoid when building an Ecommerce project</b> </p> <p> Learn how to avoid 4 common errors when preparing your Ecommerce project in this short video, drawing on the expertise we\'ve gained from working with PrestaShop merchants. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=734&url=https://www.youtube.com/watch?v=7u56FJfAGSQ?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=entrepreneur%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_prestashop\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_prestashop\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(89, 4, ' <div id=\"wrap_id_advice_734\"> <section id=\"0_videotraining_prestashop\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_prestashop.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/734.png\"/> <p> <b>4 traps to avoid when building an Ecommerce project</b> </p> <p> Learn how to avoid 4 common errors when preparing your Ecommerce project in this short video, drawing on the expertise we\'ve gained from working with PrestaShop merchants. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=734&url=https://www.youtube.com/watch?v=7u56FJfAGSQ?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=entrepreneur%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_prestashop\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_prestashop\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(89, 5, ' <div id=\"wrap_id_advice_734\"> <section id=\"0_videotraining_prestashop\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_prestashop.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/734.png\"/> <p> <b>4 traps to avoid when building an Ecommerce project</b> </p> <p> Learn how to avoid 4 common errors when preparing your Ecommerce project in this short video, drawing on the expertise we\'ve gained from working with PrestaShop merchants. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=734&url=https://www.youtube.com/watch?v=7u56FJfAGSQ?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=entrepreneur%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_prestashop\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_prestashop\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(89, 7, ' <div id=\"wrap_id_advice_734\"> <section id=\"0_videotraining_prestashop\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_prestashop.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/734.png\"/> <p> <b>4 traps to avoid when building an Ecommerce project</b> </p> <p> Learn how to avoid 4 common errors when preparing your Ecommerce project in this short video, drawing on the expertise we\'ve gained from working with PrestaShop merchants. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=734&url=https://www.youtube.com/watch?v=7u56FJfAGSQ?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=entrepreneur%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_prestashop\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_prestashop\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(90, 1, ' <div id=\"wrap_id_advice_708\"> <section id=\"0_videotraining_productpage\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_productpage.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/708.png\"/> <p> <b>How do your product pages look?</b> </p> <p> Check out our quick video with 12 tips to make sure they\'re smokin\'! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=708&url=http://bit.ly/1OQlZUM%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_productpage\"> Watch now </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_productpage\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(90, 2, ' <div id=\"wrap_id_advice_708\"> <section id=\"0_videotraining_productpage\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_productpage.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/708.png\"/> <p> <b>How do your product pages look?</b> </p> <p> Check out our quick video with 12 tips to make sure they\'re smokin\'! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=708&url=http://bit.ly/1OQlZUM%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_productpage\"> Watch now </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_productpage\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(90, 3, ' <div id=\"wrap_id_advice_708\"> <section id=\"0_videotraining_productpage\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_productpage.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/708.png\"/> <p> <b>How do your product pages look?</b> </p> <p> Check out our quick video with 12 tips to make sure they\'re smokin\'! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=708&url=http://bit.ly/1OQlZUM%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_productpage\"> Watch now </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_productpage\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(90, 4, ' <div id=\"wrap_id_advice_708\"> <section id=\"0_videotraining_productpage\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_productpage.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/708.png\"/> <p> <b>How do your product pages look?</b> </p> <p> Check out our quick video with 12 tips to make sure they\'re smokin\'! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=708&url=http://bit.ly/1OQlZUM%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_productpage\"> Watch now </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_productpage\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(90, 5, ' <div id=\"wrap_id_advice_708\"> <section id=\"0_videotraining_productpage\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_productpage.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/708.png\"/> <p> <b>How do your product pages look?</b> </p> <p> Check out our quick video with 12 tips to make sure they\'re smokin\'! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=708&url=http://bit.ly/1OQlZUM%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_productpage\"> Watch now </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_productpage\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(90, 7, ' <div id=\"wrap_id_advice_708\"> <section id=\"0_videotraining_productpage\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_productpage.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/708.png\"/> <p> <b>How do your product pages look?</b> </p> <p> Check out our quick video with 12 tips to make sure they\'re smokin\'! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=708&url=http://bit.ly/1OQlZUM%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_productpage\"> Watch now </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_productpage\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(91, 1, ' <div id=\"wrap_id_advice_735\"> <section id=\"0_videotraining_suscribe\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_suscribe.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/735.png\"/> <p> <b>Discover all our Ecommerce videos on our Youtube Channel!</b> </p> <p> Enjoy some Ecommerce advice from Experts, Merchants stories, PrestaShop tutorials, in subscribing to the PrestaShop Youtube Channel! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=735&url=https://www.youtube.com/user/prestashop?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=launch%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_suscribe\"> Subscribe now! </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_suscribe\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(91, 2, ' <div id=\"wrap_id_advice_735\"> <section id=\"0_videotraining_suscribe\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_suscribe.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/735.png\"/> <p> <b>Discover all our Ecommerce videos on our Youtube Channel!</b> </p> <p> Enjoy some Ecommerce advice from Experts, Merchants stories, PrestaShop tutorials, in subscribing to the PrestaShop Youtube Channel! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=735&url=https://www.youtube.com/user/prestashop?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=launch%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_suscribe\"> Subscribe now! </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_suscribe\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(91, 3, ' <div id=\"wrap_id_advice_735\"> <section id=\"0_videotraining_suscribe\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_suscribe.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/735.png\"/> <p> <b>Discover all our Ecommerce videos on our Youtube Channel!</b> </p> <p> Enjoy some Ecommerce advice from Experts, Merchants stories, PrestaShop tutorials, in subscribing to the PrestaShop Youtube Channel! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=735&url=https://www.youtube.com/user/prestashop?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=launch%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_suscribe\"> Subscribe now! </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_suscribe\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(91, 4, ' <div id=\"wrap_id_advice_735\"> <section id=\"0_videotraining_suscribe\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_suscribe.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/735.png\"/> <p> <b>Discover all our Ecommerce videos on our Youtube Channel!</b> </p> <p> Enjoy some Ecommerce advice from Experts, Merchants stories, PrestaShop tutorials, in subscribing to the PrestaShop Youtube Channel! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=735&url=https://www.youtube.com/user/prestashop?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=launch%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_suscribe\"> Subscribe now! </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_suscribe\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(91, 5, ' <div id=\"wrap_id_advice_735\"> <section id=\"0_videotraining_suscribe\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_suscribe.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/735.png\"/> <p> <b>Discover all our Ecommerce videos on our Youtube Channel!</b> </p> <p> Enjoy some Ecommerce advice from Experts, Merchants stories, PrestaShop tutorials, in subscribing to the PrestaShop Youtube Channel! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=735&url=https://www.youtube.com/user/prestashop?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=launch%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_suscribe\"> Subscribe now! </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_suscribe\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(91, 7, ' <div id=\"wrap_id_advice_735\"> <section id=\"0_videotraining_suscribe\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_suscribe.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/735.png\"/> <p> <b>Discover all our Ecommerce videos on our Youtube Channel!</b> </p> <p> Enjoy some Ecommerce advice from Experts, Merchants stories, PrestaShop tutorials, in subscribing to the PrestaShop Youtube Channel! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=735&url=https://www.youtube.com/user/prestashop?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=launch%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_suscribe\"> Subscribe now! </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_suscribe\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>');
+(101, 7, ' <div id=\"wrap_id_advice_732\"> <section id=\"0_videotraining_envoimoinscher\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_envoimoinscher.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/732.png\"/> <p> <b>6 tips for creating a delivery policy that attracts customers</b> </p> <p> Find important tips for creating an efficient delivery policy in this short video from Envoismoinscher.com. It will to help you to attract customers and build loyalty. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=732&url=https://www.youtube.com/watch?v=QhTU_eSrm7o?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=shipping%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_envoimoinscher\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_envoimoinscher\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(102, 1, ' <div id=\"wrap_id_advice_734\"> <section id=\"0_videotraining_prestashop\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_prestashop.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/734.png\"/> <p> <b>4 traps to avoid when building an Ecommerce project</b> </p> <p> Learn how to avoid 4 common errors when preparing your Ecommerce project in this short video, drawing on the expertise we\'ve gained from working with PrestaShop merchants. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=734&url=https://www.youtube.com/watch?v=7u56FJfAGSQ?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=entrepreneur%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_prestashop\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_prestashop\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(102, 2, ' <div id=\"wrap_id_advice_734\"> <section id=\"0_videotraining_prestashop\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_prestashop.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/734.png\"/> <p> <b>4 traps to avoid when building an Ecommerce project</b> </p> <p> Learn how to avoid 4 common errors when preparing your Ecommerce project in this short video, drawing on the expertise we\'ve gained from working with PrestaShop merchants. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=734&url=https://www.youtube.com/watch?v=7u56FJfAGSQ?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=entrepreneur%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_prestashop\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_prestashop\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(102, 3, ' <div id=\"wrap_id_advice_734\"> <section id=\"0_videotraining_prestashop\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_prestashop.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/734.png\"/> <p> <b>4 traps to avoid when building an Ecommerce project</b> </p> <p> Learn how to avoid 4 common errors when preparing your Ecommerce project in this short video, drawing on the expertise we\'ve gained from working with PrestaShop merchants. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=734&url=https://www.youtube.com/watch?v=7u56FJfAGSQ?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=entrepreneur%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_prestashop\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_prestashop\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(102, 4, ' <div id=\"wrap_id_advice_734\"> <section id=\"0_videotraining_prestashop\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_prestashop.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/734.png\"/> <p> <b>4 traps to avoid when building an Ecommerce project</b> </p> <p> Learn how to avoid 4 common errors when preparing your Ecommerce project in this short video, drawing on the expertise we\'ve gained from working with PrestaShop merchants. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=734&url=https://www.youtube.com/watch?v=7u56FJfAGSQ?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=entrepreneur%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_prestashop\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_prestashop\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(102, 5, ' <div id=\"wrap_id_advice_734\"> <section id=\"0_videotraining_prestashop\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_prestashop.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/734.png\"/> <p> <b>4 traps to avoid when building an Ecommerce project</b> </p> <p> Learn how to avoid 4 common errors when preparing your Ecommerce project in this short video, drawing on the expertise we\'ve gained from working with PrestaShop merchants. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=734&url=https://www.youtube.com/watch?v=7u56FJfAGSQ?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=entrepreneur%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_prestashop\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_prestashop\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(102, 7, ' <div id=\"wrap_id_advice_734\"> <section id=\"0_videotraining_prestashop\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_prestashop.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/734.png\"/> <p> <b>4 traps to avoid when building an Ecommerce project</b> </p> <p> Learn how to avoid 4 common errors when preparing your Ecommerce project in this short video, drawing on the expertise we\'ve gained from working with PrestaShop merchants. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=734&url=https://www.youtube.com/watch?v=7u56FJfAGSQ?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=entrepreneur%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_prestashop\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_prestashop\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(103, 1, ' <div id=\"wrap_id_advice_708\"> <section id=\"0_videotraining_productpage\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_productpage.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/708.png\"/> <p> <b>How do your product pages look?</b> </p> <p> Check out our quick video with 12 tips to make sure they\'re smokin\'! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=708&url=http://bit.ly/1OQlZUM%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_productpage\"> Watch now </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_productpage\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(103, 2, ' <div id=\"wrap_id_advice_708\"> <section id=\"0_videotraining_productpage\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_productpage.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/708.png\"/> <p> <b>How do your product pages look?</b> </p> <p> Check out our quick video with 12 tips to make sure they\'re smokin\'! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=708&url=http://bit.ly/1OQlZUM%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_productpage\"> Watch now </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_productpage\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(103, 3, ' <div id=\"wrap_id_advice_708\"> <section id=\"0_videotraining_productpage\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_productpage.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/708.png\"/> <p> <b>How do your product pages look?</b> </p> <p> Check out our quick video with 12 tips to make sure they\'re smokin\'! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=708&url=http://bit.ly/1OQlZUM%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_productpage\"> Watch now </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_productpage\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(103, 4, ' <div id=\"wrap_id_advice_708\"> <section id=\"0_videotraining_productpage\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_productpage.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/708.png\"/> <p> <b>How do your product pages look?</b> </p> <p> Check out our quick video with 12 tips to make sure they\'re smokin\'! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=708&url=http://bit.ly/1OQlZUM%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_productpage\"> Watch now </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_productpage\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(103, 5, ' <div id=\"wrap_id_advice_708\"> <section id=\"0_videotraining_productpage\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_productpage.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/708.png\"/> <p> <b>How do your product pages look?</b> </p> <p> Check out our quick video with 12 tips to make sure they\'re smokin\'! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=708&url=http://bit.ly/1OQlZUM%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_productpage\"> Watch now </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_productpage\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(103, 7, ' <div id=\"wrap_id_advice_708\"> <section id=\"0_videotraining_productpage\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_productpage.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/708.png\"/> <p> <b>How do your product pages look?</b> </p> <p> Check out our quick video with 12 tips to make sure they\'re smokin\'! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=708&url=http://bit.ly/1OQlZUM%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_productpage\"> Watch now </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_productpage\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(104, 1, ' <div id=\"wrap_id_advice_735\"> <section id=\"0_videotraining_suscribe\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_suscribe.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/735.png\"/> <p> <b>Discover all our Ecommerce videos on our Youtube Channel!</b> </p> <p> Enjoy some Ecommerce advice from Experts, Merchants stories, PrestaShop tutorials, in subscribing to the PrestaShop Youtube Channel! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=735&url=https://www.youtube.com/user/prestashop?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=launch%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_suscribe\"> Subscribe now! </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_suscribe\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(104, 2, ' <div id=\"wrap_id_advice_735\"> <section id=\"0_videotraining_suscribe\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_suscribe.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/735.png\"/> <p> <b>Discover all our Ecommerce videos on our Youtube Channel!</b> </p> <p> Enjoy some Ecommerce advice from Experts, Merchants stories, PrestaShop tutorials, in subscribing to the PrestaShop Youtube Channel! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=735&url=https://www.youtube.com/user/prestashop?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=launch%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_suscribe\"> Subscribe now! </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_suscribe\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(104, 3, ' <div id=\"wrap_id_advice_735\"> <section id=\"0_videotraining_suscribe\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_suscribe.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/735.png\"/> <p> <b>Discover all our Ecommerce videos on our Youtube Channel!</b> </p> <p> Enjoy some Ecommerce advice from Experts, Merchants stories, PrestaShop tutorials, in subscribing to the PrestaShop Youtube Channel! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=735&url=https://www.youtube.com/user/prestashop?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=launch%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_suscribe\"> Subscribe now! </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_suscribe\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(104, 4, ' <div id=\"wrap_id_advice_735\"> <section id=\"0_videotraining_suscribe\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_suscribe.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/735.png\"/> <p> <b>Discover all our Ecommerce videos on our Youtube Channel!</b> </p> <p> Enjoy some Ecommerce advice from Experts, Merchants stories, PrestaShop tutorials, in subscribing to the PrestaShop Youtube Channel! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=735&url=https://www.youtube.com/user/prestashop?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=launch%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_suscribe\"> Subscribe now! </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_suscribe\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(104, 5, ' <div id=\"wrap_id_advice_735\"> <section id=\"0_videotraining_suscribe\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_suscribe.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/735.png\"/> <p> <b>Discover all our Ecommerce videos on our Youtube Channel!</b> </p> <p> Enjoy some Ecommerce advice from Experts, Merchants stories, PrestaShop tutorials, in subscribing to the PrestaShop Youtube Channel! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=735&url=https://www.youtube.com/user/prestashop?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=launch%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_suscribe\"> Subscribe now! </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_suscribe\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(104, 7, ' <div id=\"wrap_id_advice_735\"> <section id=\"0_videotraining_suscribe\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_suscribe.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/735.png\"/> <p> <b>Discover all our Ecommerce videos on our Youtube Channel!</b> </p> <p> Enjoy some Ecommerce advice from Experts, Merchants stories, PrestaShop tutorials, in subscribing to the PrestaShop Youtube Channel! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=735&url=https://www.youtube.com/user/prestashop?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=launch%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_suscribe\"> Subscribe now! </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_suscribe\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_alias`
+-- Cấu trúc bảng cho bảng `jms_alias`
 --
 
 CREATE TABLE `jms_alias` (
@@ -1315,7 +1315,7 @@ CREATE TABLE `jms_alias` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_alias`
+-- Đang đổ dữ liệu cho bảng `jms_alias`
 --
 
 INSERT INTO `jms_alias` (`id_alias`, `alias`, `search`, `active`) VALUES
@@ -1325,7 +1325,7 @@ INSERT INTO `jms_alias` (`id_alias`, `alias`, `search`, `active`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_attachment`
+-- Cấu trúc bảng cho bảng `jms_attachment`
 --
 
 CREATE TABLE `jms_attachment` (
@@ -1339,7 +1339,7 @@ CREATE TABLE `jms_attachment` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_attachment_lang`
+-- Cấu trúc bảng cho bảng `jms_attachment_lang`
 --
 
 CREATE TABLE `jms_attachment_lang` (
@@ -1352,7 +1352,7 @@ CREATE TABLE `jms_attachment_lang` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_attribute`
+-- Cấu trúc bảng cho bảng `jms_attribute`
 --
 
 CREATE TABLE `jms_attribute` (
@@ -1363,7 +1363,7 @@ CREATE TABLE `jms_attribute` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_attribute`
+-- Đang đổ dữ liệu cho bảng `jms_attribute`
 --
 
 INSERT INTO `jms_attribute` (`id_attribute`, `id_attribute_group`, `color`, `position`) VALUES
@@ -1398,7 +1398,7 @@ INSERT INTO `jms_attribute` (`id_attribute`, `id_attribute_group`, `color`, `pos
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_attribute_group`
+-- Cấu trúc bảng cho bảng `jms_attribute_group`
 --
 
 CREATE TABLE `jms_attribute_group` (
@@ -1409,7 +1409,7 @@ CREATE TABLE `jms_attribute_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_attribute_group`
+-- Đang đổ dữ liệu cho bảng `jms_attribute_group`
 --
 
 INSERT INTO `jms_attribute_group` (`id_attribute_group`, `is_color_group`, `group_type`, `position`) VALUES
@@ -1419,7 +1419,7 @@ INSERT INTO `jms_attribute_group` (`id_attribute_group`, `is_color_group`, `grou
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_attribute_group_lang`
+-- Cấu trúc bảng cho bảng `jms_attribute_group_lang`
 --
 
 CREATE TABLE `jms_attribute_group_lang` (
@@ -1430,7 +1430,7 @@ CREATE TABLE `jms_attribute_group_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_attribute_group_lang`
+-- Đang đổ dữ liệu cho bảng `jms_attribute_group_lang`
 --
 
 INSERT INTO `jms_attribute_group_lang` (`id_attribute_group`, `id_lang`, `name`, `public_name`) VALUES
@@ -1456,7 +1456,7 @@ INSERT INTO `jms_attribute_group_lang` (`id_attribute_group`, `id_lang`, `name`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_attribute_group_shop`
+-- Cấu trúc bảng cho bảng `jms_attribute_group_shop`
 --
 
 CREATE TABLE `jms_attribute_group_shop` (
@@ -1465,7 +1465,7 @@ CREATE TABLE `jms_attribute_group_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_attribute_group_shop`
+-- Đang đổ dữ liệu cho bảng `jms_attribute_group_shop`
 --
 
 INSERT INTO `jms_attribute_group_shop` (`id_attribute_group`, `id_shop`) VALUES
@@ -1475,7 +1475,7 @@ INSERT INTO `jms_attribute_group_shop` (`id_attribute_group`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_attribute_impact`
+-- Cấu trúc bảng cho bảng `jms_attribute_impact`
 --
 
 CREATE TABLE `jms_attribute_impact` (
@@ -1489,7 +1489,7 @@ CREATE TABLE `jms_attribute_impact` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_attribute_lang`
+-- Cấu trúc bảng cho bảng `jms_attribute_lang`
 --
 
 CREATE TABLE `jms_attribute_lang` (
@@ -1499,7 +1499,7 @@ CREATE TABLE `jms_attribute_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_attribute_lang`
+-- Đang đổ dữ liệu cho bảng `jms_attribute_lang`
 --
 
 INSERT INTO `jms_attribute_lang` (`id_attribute`, `id_lang`, `name`) VALUES
@@ -1714,7 +1714,7 @@ INSERT INTO `jms_attribute_lang` (`id_attribute`, `id_lang`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_attribute_shop`
+-- Cấu trúc bảng cho bảng `jms_attribute_shop`
 --
 
 CREATE TABLE `jms_attribute_shop` (
@@ -1723,7 +1723,7 @@ CREATE TABLE `jms_attribute_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_attribute_shop`
+-- Đang đổ dữ liệu cho bảng `jms_attribute_shop`
 --
 
 INSERT INTO `jms_attribute_shop` (`id_attribute`, `id_shop`) VALUES
@@ -1758,7 +1758,7 @@ INSERT INTO `jms_attribute_shop` (`id_attribute`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_authorization_role`
+-- Cấu trúc bảng cho bảng `jms_authorization_role`
 --
 
 CREATE TABLE `jms_authorization_role` (
@@ -1767,7 +1767,7 @@ CREATE TABLE `jms_authorization_role` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_authorization_role`
+-- Đang đổ dữ liệu cho bảng `jms_authorization_role`
 --
 
 INSERT INTO `jms_authorization_role` (`id_authorization_role`, `slug`) VALUES
@@ -1887,6 +1887,10 @@ INSERT INTO `jms_authorization_role` (`id_authorization_role`, `slug`) VALUES
 (724, 'ROLE_MOD_MODULE_PS_BUYBUTTONLITE_DELETE'),
 (722, 'ROLE_MOD_MODULE_PS_BUYBUTTONLITE_READ'),
 (723, 'ROLE_MOD_MODULE_PS_BUYBUTTONLITE_UPDATE'),
+(845, 'ROLE_MOD_MODULE_PS_CATEGORYPRODUCTS_CREATE'),
+(848, 'ROLE_MOD_MODULE_PS_CATEGORYPRODUCTS_DELETE'),
+(846, 'ROLE_MOD_MODULE_PS_CATEGORYPRODUCTS_READ'),
+(847, 'ROLE_MOD_MODULE_PS_CATEGORYPRODUCTS_UPDATE'),
 (493, 'ROLE_MOD_MODULE_PS_CATEGORYTREE_CREATE'),
 (496, 'ROLE_MOD_MODULE_PS_CATEGORYTREE_DELETE'),
 (494, 'ROLE_MOD_MODULE_PS_CATEGORYTREE_READ'),
@@ -2615,7 +2619,7 @@ INSERT INTO `jms_authorization_role` (`id_authorization_role`, `slug`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_badge`
+-- Cấu trúc bảng cho bảng `jms_badge`
 --
 
 CREATE TABLE `jms_badge` (
@@ -2630,7 +2634,7 @@ CREATE TABLE `jms_badge` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_badge`
+-- Đang đổ dữ liệu cho bảng `jms_badge`
 --
 
 INSERT INTO `jms_badge` (`id_badge`, `id_ps_badge`, `type`, `id_group`, `group_position`, `scoring`, `awb`, `validated`) VALUES
@@ -2872,7 +2876,7 @@ INSERT INTO `jms_badge` (`id_badge`, `id_ps_badge`, `type`, `id_group`, `group_p
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_badge_lang`
+-- Cấu trúc bảng cho bảng `jms_badge_lang`
 --
 
 CREATE TABLE `jms_badge_lang` (
@@ -2884,7 +2888,7 @@ CREATE TABLE `jms_badge_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_badge_lang`
+-- Đang đổ dữ liệu cho bảng `jms_badge_lang`
 --
 
 INSERT INTO `jms_badge_lang` (`id_badge`, `id_lang`, `name`, `description`, `group_name`) VALUES
@@ -4297,7 +4301,7 @@ INSERT INTO `jms_badge_lang` (`id_badge`, `id_lang`, `name`, `description`, `gro
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_carrier`
+-- Cấu trúc bảng cho bảng `jms_carrier`
 --
 
 CREATE TABLE `jms_carrier` (
@@ -4325,7 +4329,7 @@ CREATE TABLE `jms_carrier` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_carrier`
+-- Đang đổ dữ liệu cho bảng `jms_carrier`
 --
 
 INSERT INTO `jms_carrier` (`id_carrier`, `id_reference`, `id_tax_rules_group`, `name`, `url`, `active`, `deleted`, `shipping_handling`, `range_behavior`, `is_module`, `is_free`, `shipping_external`, `need_range`, `external_module_name`, `shipping_method`, `position`, `max_width`, `max_height`, `max_depth`, `max_weight`, `grade`) VALUES
@@ -4335,7 +4339,7 @@ INSERT INTO `jms_carrier` (`id_carrier`, `id_reference`, `id_tax_rules_group`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_carrier_group`
+-- Cấu trúc bảng cho bảng `jms_carrier_group`
 --
 
 CREATE TABLE `jms_carrier_group` (
@@ -4344,7 +4348,7 @@ CREATE TABLE `jms_carrier_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_carrier_group`
+-- Đang đổ dữ liệu cho bảng `jms_carrier_group`
 --
 
 INSERT INTO `jms_carrier_group` (`id_carrier`, `id_group`) VALUES
@@ -4358,7 +4362,7 @@ INSERT INTO `jms_carrier_group` (`id_carrier`, `id_group`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_carrier_lang`
+-- Cấu trúc bảng cho bảng `jms_carrier_lang`
 --
 
 CREATE TABLE `jms_carrier_lang` (
@@ -4369,7 +4373,7 @@ CREATE TABLE `jms_carrier_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_carrier_lang`
+-- Đang đổ dữ liệu cho bảng `jms_carrier_lang`
 --
 
 INSERT INTO `jms_carrier_lang` (`id_carrier`, `id_shop`, `id_lang`, `delay`) VALUES
@@ -4395,7 +4399,7 @@ INSERT INTO `jms_carrier_lang` (`id_carrier`, `id_shop`, `id_lang`, `delay`) VAL
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_carrier_shop`
+-- Cấu trúc bảng cho bảng `jms_carrier_shop`
 --
 
 CREATE TABLE `jms_carrier_shop` (
@@ -4404,7 +4408,7 @@ CREATE TABLE `jms_carrier_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_carrier_shop`
+-- Đang đổ dữ liệu cho bảng `jms_carrier_shop`
 --
 
 INSERT INTO `jms_carrier_shop` (`id_carrier`, `id_shop`) VALUES
@@ -4414,7 +4418,7 @@ INSERT INTO `jms_carrier_shop` (`id_carrier`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_carrier_tax_rules_group_shop`
+-- Cấu trúc bảng cho bảng `jms_carrier_tax_rules_group_shop`
 --
 
 CREATE TABLE `jms_carrier_tax_rules_group_shop` (
@@ -4424,7 +4428,7 @@ CREATE TABLE `jms_carrier_tax_rules_group_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_carrier_tax_rules_group_shop`
+-- Đang đổ dữ liệu cho bảng `jms_carrier_tax_rules_group_shop`
 --
 
 INSERT INTO `jms_carrier_tax_rules_group_shop` (`id_carrier`, `id_tax_rules_group`, `id_shop`) VALUES
@@ -4434,7 +4438,7 @@ INSERT INTO `jms_carrier_tax_rules_group_shop` (`id_carrier`, `id_tax_rules_grou
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_carrier_zone`
+-- Cấu trúc bảng cho bảng `jms_carrier_zone`
 --
 
 CREATE TABLE `jms_carrier_zone` (
@@ -4443,7 +4447,7 @@ CREATE TABLE `jms_carrier_zone` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_carrier_zone`
+-- Đang đổ dữ liệu cho bảng `jms_carrier_zone`
 --
 
 INSERT INTO `jms_carrier_zone` (`id_carrier`, `id_zone`) VALUES
@@ -4454,7 +4458,7 @@ INSERT INTO `jms_carrier_zone` (`id_carrier`, `id_zone`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cart`
+-- Cấu trúc bảng cho bảng `jms_cart`
 --
 
 CREATE TABLE `jms_cart` (
@@ -4481,7 +4485,7 @@ CREATE TABLE `jms_cart` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_cart`
+-- Đang đổ dữ liệu cho bảng `jms_cart`
 --
 
 INSERT INTO `jms_cart` (`id_cart`, `id_shop_group`, `id_shop`, `id_carrier`, `delivery_option`, `id_lang`, `id_address_delivery`, `id_address_invoice`, `id_currency`, `id_customer`, `id_guest`, `secure_key`, `recyclable`, `gift`, `gift_message`, `mobile_theme`, `allow_seperated_package`, `date_add`, `date_upd`, `checkout_session_data`) VALUES
@@ -4495,7 +4499,7 @@ INSERT INTO `jms_cart` (`id_cart`, `id_shop_group`, `id_shop`, `id_carrier`, `de
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cart_cart_rule`
+-- Cấu trúc bảng cho bảng `jms_cart_cart_rule`
 --
 
 CREATE TABLE `jms_cart_cart_rule` (
@@ -4506,7 +4510,7 @@ CREATE TABLE `jms_cart_cart_rule` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cart_product`
+-- Cấu trúc bảng cho bảng `jms_cart_product`
 --
 
 CREATE TABLE `jms_cart_product` (
@@ -4521,7 +4525,7 @@ CREATE TABLE `jms_cart_product` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_cart_product`
+-- Đang đổ dữ liệu cho bảng `jms_cart_product`
 --
 
 INSERT INTO `jms_cart_product` (`id_cart`, `id_product`, `id_address_delivery`, `id_shop`, `id_product_attribute`, `id_customization`, `quantity`, `date_add`) VALUES
@@ -4530,7 +4534,7 @@ INSERT INTO `jms_cart_product` (`id_cart`, `id_product`, `id_address_delivery`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cart_rule`
+-- Cấu trúc bảng cho bảng `jms_cart_rule`
 --
 
 CREATE TABLE `jms_cart_rule` (
@@ -4572,7 +4576,7 @@ CREATE TABLE `jms_cart_rule` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cart_rule_carrier`
+-- Cấu trúc bảng cho bảng `jms_cart_rule_carrier`
 --
 
 CREATE TABLE `jms_cart_rule_carrier` (
@@ -4583,7 +4587,7 @@ CREATE TABLE `jms_cart_rule_carrier` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cart_rule_combination`
+-- Cấu trúc bảng cho bảng `jms_cart_rule_combination`
 --
 
 CREATE TABLE `jms_cart_rule_combination` (
@@ -4594,7 +4598,7 @@ CREATE TABLE `jms_cart_rule_combination` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cart_rule_country`
+-- Cấu trúc bảng cho bảng `jms_cart_rule_country`
 --
 
 CREATE TABLE `jms_cart_rule_country` (
@@ -4605,7 +4609,7 @@ CREATE TABLE `jms_cart_rule_country` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cart_rule_group`
+-- Cấu trúc bảng cho bảng `jms_cart_rule_group`
 --
 
 CREATE TABLE `jms_cart_rule_group` (
@@ -4616,7 +4620,7 @@ CREATE TABLE `jms_cart_rule_group` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cart_rule_lang`
+-- Cấu trúc bảng cho bảng `jms_cart_rule_lang`
 --
 
 CREATE TABLE `jms_cart_rule_lang` (
@@ -4628,7 +4632,7 @@ CREATE TABLE `jms_cart_rule_lang` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cart_rule_product_rule`
+-- Cấu trúc bảng cho bảng `jms_cart_rule_product_rule`
 --
 
 CREATE TABLE `jms_cart_rule_product_rule` (
@@ -4640,7 +4644,7 @@ CREATE TABLE `jms_cart_rule_product_rule` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cart_rule_product_rule_group`
+-- Cấu trúc bảng cho bảng `jms_cart_rule_product_rule_group`
 --
 
 CREATE TABLE `jms_cart_rule_product_rule_group` (
@@ -4652,7 +4656,7 @@ CREATE TABLE `jms_cart_rule_product_rule_group` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cart_rule_product_rule_value`
+-- Cấu trúc bảng cho bảng `jms_cart_rule_product_rule_value`
 --
 
 CREATE TABLE `jms_cart_rule_product_rule_value` (
@@ -4663,7 +4667,7 @@ CREATE TABLE `jms_cart_rule_product_rule_value` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cart_rule_shop`
+-- Cấu trúc bảng cho bảng `jms_cart_rule_shop`
 --
 
 CREATE TABLE `jms_cart_rule_shop` (
@@ -4674,7 +4678,7 @@ CREATE TABLE `jms_cart_rule_shop` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_category`
+-- Cấu trúc bảng cho bảng `jms_category`
 --
 
 CREATE TABLE `jms_category` (
@@ -4692,7 +4696,7 @@ CREATE TABLE `jms_category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_category`
+-- Đang đổ dữ liệu cho bảng `jms_category`
 --
 
 INSERT INTO `jms_category` (`id_category`, `id_parent`, `id_shop_default`, `level_depth`, `nleft`, `nright`, `active`, `date_add`, `date_upd`, `position`, `is_root_category`) VALUES
@@ -4708,7 +4712,7 @@ INSERT INTO `jms_category` (`id_category`, `id_parent`, `id_shop_default`, `leve
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_category_group`
+-- Cấu trúc bảng cho bảng `jms_category_group`
 --
 
 CREATE TABLE `jms_category_group` (
@@ -4717,7 +4721,7 @@ CREATE TABLE `jms_category_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_category_group`
+-- Đang đổ dữ liệu cho bảng `jms_category_group`
 --
 
 INSERT INTO `jms_category_group` (`id_category`, `id_group`) VALUES
@@ -4747,7 +4751,7 @@ INSERT INTO `jms_category_group` (`id_category`, `id_group`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_category_lang`
+-- Cấu trúc bảng cho bảng `jms_category_lang`
 --
 
 CREATE TABLE `jms_category_lang` (
@@ -4763,7 +4767,7 @@ CREATE TABLE `jms_category_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_category_lang`
+-- Đang đổ dữ liệu cho bảng `jms_category_lang`
 --
 
 INSERT INTO `jms_category_lang` (`id_category`, `id_shop`, `id_lang`, `name`, `description`, `link_rewrite`, `meta_title`, `meta_keywords`, `meta_description`) VALUES
@@ -4831,7 +4835,7 @@ INSERT INTO `jms_category_lang` (`id_category`, `id_shop`, `id_lang`, `name`, `d
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_category_product`
+-- Cấu trúc bảng cho bảng `jms_category_product`
 --
 
 CREATE TABLE `jms_category_product` (
@@ -4841,7 +4845,7 @@ CREATE TABLE `jms_category_product` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_category_product`
+-- Đang đổ dữ liệu cho bảng `jms_category_product`
 --
 
 INSERT INTO `jms_category_product` (`id_category`, `id_product`, `position`) VALUES
@@ -4888,7 +4892,7 @@ INSERT INTO `jms_category_product` (`id_category`, `id_product`, `position`) VAL
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_category_shop`
+-- Cấu trúc bảng cho bảng `jms_category_shop`
 --
 
 CREATE TABLE `jms_category_shop` (
@@ -4898,7 +4902,7 @@ CREATE TABLE `jms_category_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_category_shop`
+-- Đang đổ dữ liệu cho bảng `jms_category_shop`
 --
 
 INSERT INTO `jms_category_shop` (`id_category`, `id_shop`, `position`) VALUES
@@ -4914,7 +4918,7 @@ INSERT INTO `jms_category_shop` (`id_category`, `id_shop`, `position`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cms`
+-- Cấu trúc bảng cho bảng `jms_cms`
 --
 
 CREATE TABLE `jms_cms` (
@@ -4926,7 +4930,7 @@ CREATE TABLE `jms_cms` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_cms`
+-- Đang đổ dữ liệu cho bảng `jms_cms`
 --
 
 INSERT INTO `jms_cms` (`id_cms`, `id_cms_category`, `position`, `active`, `indexation`) VALUES
@@ -4939,7 +4943,7 @@ INSERT INTO `jms_cms` (`id_cms`, `id_cms_category`, `position`, `active`, `index
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cms_category`
+-- Cấu trúc bảng cho bảng `jms_cms_category`
 --
 
 CREATE TABLE `jms_cms_category` (
@@ -4953,7 +4957,7 @@ CREATE TABLE `jms_cms_category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_cms_category`
+-- Đang đổ dữ liệu cho bảng `jms_cms_category`
 --
 
 INSERT INTO `jms_cms_category` (`id_cms_category`, `id_parent`, `level_depth`, `active`, `date_add`, `date_upd`, `position`) VALUES
@@ -4962,7 +4966,7 @@ INSERT INTO `jms_cms_category` (`id_cms_category`, `id_parent`, `level_depth`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cms_category_lang`
+-- Cấu trúc bảng cho bảng `jms_cms_category_lang`
 --
 
 CREATE TABLE `jms_cms_category_lang` (
@@ -4978,7 +4982,7 @@ CREATE TABLE `jms_cms_category_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_cms_category_lang`
+-- Đang đổ dữ liệu cho bảng `jms_cms_category_lang`
 --
 
 INSERT INTO `jms_cms_category_lang` (`id_cms_category`, `id_lang`, `id_shop`, `name`, `description`, `link_rewrite`, `meta_title`, `meta_keywords`, `meta_description`) VALUES
@@ -4995,7 +4999,7 @@ INSERT INTO `jms_cms_category_lang` (`id_cms_category`, `id_lang`, `id_shop`, `n
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cms_category_shop`
+-- Cấu trúc bảng cho bảng `jms_cms_category_shop`
 --
 
 CREATE TABLE `jms_cms_category_shop` (
@@ -5004,7 +5008,7 @@ CREATE TABLE `jms_cms_category_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_cms_category_shop`
+-- Đang đổ dữ liệu cho bảng `jms_cms_category_shop`
 --
 
 INSERT INTO `jms_cms_category_shop` (`id_cms_category`, `id_shop`) VALUES
@@ -5013,7 +5017,7 @@ INSERT INTO `jms_cms_category_shop` (`id_cms_category`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cms_lang`
+-- Cấu trúc bảng cho bảng `jms_cms_lang`
 --
 
 CREATE TABLE `jms_cms_lang` (
@@ -5029,7 +5033,7 @@ CREATE TABLE `jms_cms_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_cms_lang`
+-- Đang đổ dữ liệu cho bảng `jms_cms_lang`
 --
 
 INSERT INTO `jms_cms_lang` (`id_cms`, `id_lang`, `id_shop`, `meta_title`, `head_seo_title`, `meta_description`, `meta_keywords`, `content`, `link_rewrite`) VALUES
@@ -5083,7 +5087,7 @@ INSERT INTO `jms_cms_lang` (`id_cms`, `id_lang`, `id_shop`, `meta_title`, `head_
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cms_role`
+-- Cấu trúc bảng cho bảng `jms_cms_role`
 --
 
 CREATE TABLE `jms_cms_role` (
@@ -5093,7 +5097,7 @@ CREATE TABLE `jms_cms_role` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_cms_role`
+-- Đang đổ dữ liệu cho bảng `jms_cms_role`
 --
 
 INSERT INTO `jms_cms_role` (`id_cms_role`, `name`, `id_cms`) VALUES
@@ -5103,7 +5107,7 @@ INSERT INTO `jms_cms_role` (`id_cms_role`, `name`, `id_cms`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cms_role_lang`
+-- Cấu trúc bảng cho bảng `jms_cms_role_lang`
 --
 
 CREATE TABLE `jms_cms_role_lang` (
@@ -5116,7 +5120,7 @@ CREATE TABLE `jms_cms_role_lang` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cms_shop`
+-- Cấu trúc bảng cho bảng `jms_cms_shop`
 --
 
 CREATE TABLE `jms_cms_shop` (
@@ -5125,7 +5129,7 @@ CREATE TABLE `jms_cms_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_cms_shop`
+-- Đang đổ dữ liệu cho bảng `jms_cms_shop`
 --
 
 INSERT INTO `jms_cms_shop` (`id_cms`, `id_shop`) VALUES
@@ -5138,7 +5142,7 @@ INSERT INTO `jms_cms_shop` (`id_cms`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_condition`
+-- Cấu trúc bảng cho bảng `jms_condition`
 --
 
 CREATE TABLE `jms_condition` (
@@ -5157,260 +5161,260 @@ CREATE TABLE `jms_condition` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_condition`
+-- Đang đổ dữ liệu cho bảng `jms_condition`
 --
 
 INSERT INTO `jms_condition` (`id_condition`, `id_ps_condition`, `type`, `request`, `operator`, `value`, `result`, `calculation_type`, `calculation_detail`, `validated`, `date_add`, `date_upd`) VALUES
-(1, 1, 'configuration', 'PS_REWRITING_SETTINGS', '==', '1', '', 'hook', 'actionAdminMetaControllerUpdate_optionsAfter', 0, '2019-06-10 21:37:44', '2019-06-10 21:37:44'),
-(2, 2, 'configuration', 'PS_SMARTY_FORCE_COMPILE', '!=', '2', '', 'hook', 'actionAdminPerformanceControllerSaveAfter', 0, '2019-06-10 21:37:44', '2019-06-10 21:37:44'),
-(3, 3, 'configuration', 'PS_CSS_THEME_CACHE', '==', '1', '', 'hook', 'actionAdminPerformanceControllerSaveAfter', 0, '2019-06-10 21:37:44', '2019-06-10 21:37:44'),
-(4, 4, 'configuration', 'PS_CIPHER_ALGORITHM', '==', '1', '', 'hook', 'actionAdminPerformanceControllerSaveAfter', 0, '2019-06-10 21:37:44', '2019-06-10 21:37:44'),
-(5, 5, 'configuration', 'PS_MEDIA_SERVERS', '==', '1', '', 'hook', 'actionAdminPerformanceControllerSaveAfter', 0, '2019-06-10 21:37:44', '2019-06-10 21:37:44'),
-(6, 6, 'sql', 'SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")', '>', '0', '', 'hook', 'actionModuleInstallAfter', 0, '2019-06-10 21:37:44', '2019-06-10 21:37:44'),
-(7, 7, 'sql', 'SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")', '>', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2019-06-10 21:37:44', '2019-06-10 21:37:44'),
-(8, 8, 'sql', 'SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")', '>', '0', '', 'hook', 'actionObjectCarrierAddAfter', 0, '2019-06-10 21:37:44', '2019-06-10 21:37:44'),
-(9, 9, 'sql', 'SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")', '>', '1', '', 'hook', 'actionObjectCarrierAddAfter', 0, '2019-06-10 21:37:44', '2019-06-10 21:37:44'),
-(10, 10, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '0', '', 'hook', 'actionObjectProductAddAfter', 0, '2019-06-10 21:37:44', '2019-06-10 21:37:44'),
-(11, 11, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '9', '', 'hook', 'actionObjectProductAddAfter', 0, '2019-06-10 21:37:44', '2019-06-10 21:37:44'),
-(12, 12, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '99', '', 'hook', 'actionObjectProductAddAfter', 0, '2019-06-10 21:37:44', '2019-06-10 21:37:44'),
-(13, 13, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '999', '', 'hook', 'actionObjectProductAddAfter', 0, '2019-06-10 21:37:44', '2019-06-10 21:37:44'),
-(14, 14, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '9999', '', 'hook', 'actionObjectProductAddAfter', 0, '2019-06-10 21:37:44', '2019-06-10 21:37:44'),
-(15, 15, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '99999', '', 'hook', 'actionObjectProductAddAfter', 0, '2019-06-10 21:37:44', '2019-06-10 21:37:44'),
-(16, 16, 'configuration', 'PS_SHOP_PHONE', '!=', '0', '', 'hook', 'actionAdminStoresControllerUpdate_optionsAfter', 0, '2019-06-10 21:37:44', '2019-06-10 21:37:44'),
-(17, 17, 'sql', 'SELECT COUNT(*) FROM PREFIX_contact', '>', '2', '', 'hook', 'actionObjectContactAddAfter', 0, '2019-06-10 21:37:44', '2019-06-10 21:37:44'),
-(18, 18, 'sql', 'SELECT COUNT(*) FROM PREFIX_contact', '>', '4', '', 'hook', 'actionObjectContactAddAfter', 0, '2019-06-10 21:37:44', '2019-06-10 21:37:44'),
-(19, 19, 'install', '', '>', '0', '1', 'time', '1', 1, '2019-06-10 21:37:44', '2019-06-10 21:37:44'),
-(20, 20, 'install', '', '>=', '7', '1', 'time', '1', 1, '2019-06-10 21:37:44', '2019-06-10 21:37:44'),
-(21, 21, 'configuration', 'PS_LOGO', '!=', 'logo.jpg', '', 'hook', 'actionAdminThemesControllerUpdate_optionsAfter', 0, '2019-06-10 21:37:44', '2019-06-10 21:37:44'),
-(22, 22, 'sql', 'SELECT COUNT(*) FROM PREFIX_theme WHERE directory != \"default\" AND directory != \"prestashop\" AND directory ! \"default-bootstrap\"', '>', '0', '', 'hook', 'actionObjectShopUpdateAfter', 0, '2019-06-10 21:37:44', '2019-06-10 21:37:44'),
-(23, 23, 'configuration', 'PS_LOGGED_ON_ADDONS', '==', '1', '', 'time', '1', 0, '2019-06-10 21:37:44', '2019-06-11 00:14:55'),
-(24, 24, 'configuration', 'PS_MULTISHOP_FEATURE_ACTIVE', '==', '1', '', 'hook', 'actionAdminPreferencesControllerUpdate_optionsAfter', 0, '2019-06-10 21:37:44', '2019-06-10 21:37:44'),
-(25, 25, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop', '>', '1', '', 'hook', 'actionObjectShopAddAfter', 0, '2019-06-10 21:37:44', '2019-06-10 21:37:44'),
-(26, 26, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop', '>', '4', '', 'hook', 'actionObjectShopAddAfter', 0, '2019-06-10 21:37:44', '2019-06-10 21:37:44'),
-(27, 27, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop_group', '>', '5', '', 'hook', 'actionObjectShopGroupAddAfter 	', 0, '2019-06-10 21:37:44', '2019-06-10 21:37:44'),
-(28, 28, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop_group', '>', '1', '', 'hook', 'actionObjectShopGroupAddAfter', 0, '2019-06-10 21:37:44', '2019-06-10 21:37:44'),
-(29, 29, 'sql', 'SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")', '>', '2', '', 'hook', 'actionModuleInstallAfter', 0, '2019-06-10 21:37:44', '2019-06-10 21:37:44'),
-(30, 30, 'sql', 'SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")', '>', '2', '', 'hook', 'actionObjectCarrierAddAfter', 0, '2019-06-10 21:37:44', '2019-06-10 21:37:44'),
-(31, 31, 'sql', 'SELECT SUM(total_paid_tax_excl / c.conversion_rate)\r\nFROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '200', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-06-10 21:37:44', '2019-06-10 21:37:44'),
-(32, 32, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '2000', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-06-10 21:37:44', '2019-06-10 21:37:44'),
-(33, 33, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '20000', '0', 'time', '1', 0, '2019-06-10 21:37:45', '2019-06-11 00:14:55'),
-(34, 34, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '200000', '0', 'time', '7', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(35, 35, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '2000000', '0', 'time', '7', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(36, 36, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '20000000', '0', 'time', '7', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(37, 37, 'install', '', '>=', '30', '', 'time', '1', 0, '2019-06-10 21:37:45', '2019-06-11 00:14:55'),
-(38, 38, 'install', '', '>=', '182', '', 'time', '2', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(39, 39, 'install', '', '>=', '365', '', 'time', '2', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(40, 40, 'install', '', '>=', '730', '', 'time', '2', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(41, 41, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '10', '4', 'time', '1', 0, '2019-06-10 21:37:45', '2019-06-11 00:14:55'),
-(42, 42, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '100', '4', 'time', '1', 0, '2019-06-10 21:37:45', '2019-06-11 00:14:55'),
-(43, 43, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '1000', '4', 'time', '1', 0, '2019-06-10 21:37:45', '2019-06-11 00:14:55'),
-(44, 44, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '10000', '4', 'time', '2', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(45, 45, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '100000', '4', 'time', '3', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(46, 46, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '1000000', '4', 'time', '4', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(47, 47, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '2', '', 'hook', 'actionObjectCartAddAfter', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(48, 48, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '10', '', 'hook', 'actionObjectCartAddAfter', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(49, 49, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '100', '', 'hook', 'actionObjectCartAddAfter', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(50, 50, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '1000', '1', 'time', '1', 0, '2019-06-10 21:37:45', '2019-06-11 00:14:55'),
-(51, 51, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '10000', '1', 'time', '4', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(52, 52, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '100000', '1', 'time', '8', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(53, 53, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '1', '', 'hook', 'actionObjectOrderAddAfter', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(54, 54, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '10', '', 'hook', 'actionObjectOrderAddAfter', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(55, 55, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '100', '', 'hook', 'actionObjectOrderAddAfter', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(56, 56, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '1000', '0', 'time', '2', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(57, 57, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '10000', '0', 'time', '4', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(58, 58, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '100000', '0', 'time', '8', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(59, 59, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '1', '', 'hook', 'actionObjectCustomerAddAfter', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(60, 60, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '10', '', 'hook', 'actionObjectCustomerAddAfter', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(61, 61, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '100', '', 'hook', 'actionObjectCustomerAddAfter', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(62, 62, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '1000', '0', 'time', '1', 0, '2019-06-10 21:37:45', '2019-06-11 00:14:55'),
-(63, 63, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '10000', '0', 'time', '2', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(64, 64, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '100000', '0', 'time', '4', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(65, 65, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '1', '', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(66, 66, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '10', '', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(67, 67, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '100', '', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(68, 68, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '1000', '0', 'time', '2', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(69, 69, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '10000', '0', 'time', '4', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(70, 70, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '100000', '0', 'time', '8', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(71, 76, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"CA\",\r\n\"GL\",\r\n\"PM\",\r\n\"US\"\r\n)', '!=', '0', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(72, 79, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"UM\",\r\n\"AS\",\r\n\"AU\",\r\n\"CK\",\r\n\"FJ\",\r\n\"FM\",\r\n\"GU\",\r\n\"KI\",\r\n\"MH,\"\r\n\"MP\",\r\n\"NC\",\r\n\"NF\",\r\n\"NR\",\r\n\"NU\",\r\n\"NZ\",\r\n\"PF\",\r\n\"PG\",\r\n\"PN\",\r\n\"PW\",\r\n\"SB\",\r\n\"TK\",\r\n\"TO\",\r\n\"TV\",\r\n\"VU\",\r\n\"WF\",\r\n\"WS\"\r\n)', '!=', '0', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(73, 85, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"KG\",\r\n\"KZ\",\r\n\"TJ\",\r\n\"TM\",\r\n\"UZ\",\r\n\"AE\",\r\n\"AM\",\r\n\"AZ\",\r\n\"BH\",\r\n\"CY\",\r\n\"GE\",\r\n\"IL\",\r\n\"IQ\",\r\n\"IR\",\r\n\"JO\",\r\n\"KW\",\r\n\"LB\",\r\n\"OM\",\r\n\"QA\",\r\n\"SA\",\r\n\"SY\",\r\n\"TR\",\r\n\"YE\",\r\n\"AF\",\r\n\"BD\",\r\n\"BT\",\r\n\"IN\",\r\n\"IO\",\r\n\"LK\",\r\n\"MV\",\r\n\"NP\",\r\n\"PK\",\r\n\"CN\",\r\n\"HK\",\r\n\"JP\",\r\n\"KP\",\r\n\"KR\",\r\n\"MO\",\r\n\"TW\",\r\n\"MN\",\r\n\"BN\",\r\n\"CC\",\r\n\"CX\",\r\n\"ID\",\r\n\"KH\",\r\n\"LA\",\r\n\"MM\",\r\n\"MY\",\r\n\"PH\",\r\n\"SG\",\r\n\"TH\",\r\n\"TP\",\r\n\"VN\"\r\n)', '!=', '0', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(74, 86, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BZ\",\r\n\"CR\",\r\n\"GT\",\r\n\"HN\",\r\n\"MX\",\r\n\"NI\",\r\n\"PA\",\r\n\"SV\",\r\n\"AG\",\r\n\"AI\",\r\n\"AN\",\r\n\"AW\",\r\n\"BB\",\r\n\"BM\",\r\n\"BS\",\r\n\"CU\",\r\n\"DM\",\r\n\"DO\",\r\n\"GD\",\r\n\"GP\",\r\n\"HT\",\r\n\"JM\",\r\n\"KN\",\r\n\"KY\",\r\n\"LC\",\r\n\"MQ\",\r\n\"MS\",\r\n\"PR\",\r\n\"TC\",\r\n\"TT\",\r\n\"VC\",\r\n\"VG\",\r\n\"VI\",\r\n\"AR\",\r\n\"BO\",\r\n\"BR\",\r\n\"CL\",\r\n\"CO\",\r\n\"EC\",\r\n\"FK\",\r\n\"GF\",\r\n\"GY\",\r\n\"PE\",\r\n\"PY\",\r\n\"SR\",\r\n\"UY\",\r\n\"VE\"\r\n)', '!=', '0', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(75, 87, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BE\",\r\n\"DE\",\r\n\"FR\",\r\n\"FX\",\r\n\"GB\",\r\n\"IE\",\r\n\"LU\",\r\n\"MC\",\r\n\"NL\",\r\n\"IT\",\r\n\"MT\",\r\n\"SM\",\r\n\"VA\",\r\n\"AD\",\r\n\"ES\",\r\n\"GI\",\r\n\"PT\",\r\n\"BY\",\r\n\"EE\",\r\n\"LT\",\r\n\"LV\",\r\n\"MD\",\r\n\"PL\",\r\n\"UA\",\r\n\"AL\",\r\n\"BA\",\r\n\"BG\",\r\n\"GR\",\r\n\"HR\",\r\n\"MK\",\r\n\"RO\",\r\n\"SI\",\r\n\"YU\",\r\n\"RU\",\r\n\"AT\",\r\n\"CH\",\r\n\"CZ\",\r\n\"HU\",\r\n\"LI\",\r\n\"SK\",\r\n\"DK\",\r\n\"FI\",\r\n\"FO\",\r\n\"IS\",\r\n\"NO\",\r\n\"SE\",\r\n\"SJ\"\r\n)', '!=', '0', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(76, 88, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BI\",\r\n\"CF\",\r\n\"CG\",\r\n\"RW\",\r\n\"TD\",\r\n\"ZR\",\r\n\"DJ\",\r\n\"ER\",\r\n\"ET\",\r\n\"KE\",\r\n\"SO\",\r\n\"TZ\",\r\n\"UG\",\r\n\"KM\",\r\n\"MG\",\r\n\"MU\",\r\n\"RE\",\r\n\"SC\",\r\n\"YT\",\r\n\"AO\",\r\n\"BW\",\r\n\"LS\",\r\n\"MW\",\r\n\"MZ\",\r\n\"NA\",\r\n\"SZ\",\r\n\"ZA\",\r\n\"ZM\",\r\n\"ZW\",\r\n\"BF\",\r\n\"BJ\",\r\n\"CI\",\r\n\"CM\",\r\n\"CV\",\r\n\"GA\",\r\n\"GH\",\r\n\"GM\",\r\n\"GN\",\r\n\"GQ\",\r\n\"GW\",\r\n\"LR\",\r\n\"ML\",\r\n\"MR\",\r\n\"NE\",\r\n\"NG\",\r\n\"SL\",\r\n\"SN\",\r\n\"ST\",\r\n\"TG\"\r\n)', '!=', '0', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(77, 89, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"DZ\",\r\n\"EG\",\r\n\"EH\",\r\n\"LY\",\r\n\"MA\",\r\n\"SD\",\r\n\"TN\"\r\n)', '!=', '0', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(78, 90, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '2', '', 'hook', 'actionObjectEmployeeAddAfter', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(79, 91, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '3', '', 'hook', 'actionObjectEmployeeAddAfter', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(80, 92, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '5', '', 'hook', 'actionObjectEmployeeAddAfter', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(81, 93, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '10', '', 'hook', 'actionObjectEmployeeAddAfter', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(82, 94, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '20', '', 'hook', 'actionObjectEmployeeAddAfter', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(83, 95, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '40', '', 'hook', 'actionObjectEmployeeAddAfter', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(84, 96, 'sql', 'SELECT id_image FROM PREFIX_image WHERE id_image > 26', '>', '0', '', 'hook', 'actionObjectImageAddAfter', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(85, 97, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '50', '', 'hook', 'actionObjectImageAddAfter', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(86, 98, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '100', '', 'hook', 'actionObjectImageAddAfter', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(87, 99, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '1000', '338', 'time', '2', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(88, 100, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '10000', '338', 'time', '4', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(89, 101, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '50000', '338', 'time', '8', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(90, 102, 'sql', 'SELECT id_cms FROM PREFIX_cms WHERE id_cms > 5', '>', '0', '', 'hook', 'actionObjectCMSAddAfter', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(91, 103, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '1', '', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2019-06-10 21:37:45', '2019-06-10 21:37:45'),
-(92, 104, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '10', '', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(93, 105, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '100', '', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(94, 106, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '1000', '', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(95, 107, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '500', '', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(96, 108, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '5000', '', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(97, 109, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '1', '', 'hook', 'newOrder', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(98, 110, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '10', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(99, 111, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '100', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(100, 112, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '10000', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(101, 113, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '1000', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(102, 114, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '5000', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(103, 132, 'sql', 'SELECT count(id_configuration) FROM PREFIX_configuration WHERE `name` = \'PS_SHOP_DOMAIN\' AND value IN (\'127.0.0.1\', \'localhost\' )', '==', '1', '', 'time', '1', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(104, 136, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ebay%\"', '>=', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(105, 140, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%moneybookers%\"', '>=', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(106, 142, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypal%\"', '>=', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(107, 158, 'install', '', '>=', '90', '', 'time', '2', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(108, 159, 'install', '', '<=', '90', '', 'time', '2', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(109, 165, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '0', '', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(110, 166, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '1', '', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(111, 167, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '4', '', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(112, 168, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '9', '', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(113, 169, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '19', '', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(114, 170, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '49', '', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(115, 171, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '1', '', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(116, 172, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '2', '', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(117, 173, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '3', '', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(118, 174, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '4', '', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(119, 175, 'sql', 'SELECT count(*) FROM	 PREFIX_configuration WHERE name = \'PS_HOSTED_MODE\'', '==', '0', '', 'time', '1', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(120, 209, 'configuration', 'EBAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-10 21:37:46', '2019-06-11 00:14:55'),
-(121, 320, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shopgate%\" ', '>=', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(122, 322, 'configuration', 'SHOPGATE_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-10 21:37:46', '2019-06-11 00:14:55'),
-(123, 323, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shoppingfluxexport%\" ', '>=', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(124, 324, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shoppingfluxexport%\" ', '==', '0', '', 'time', '1', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(125, 325, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURATION_OK\' OR name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURED\'', '>=', '1', '0', 'time', '1', 0, '2019-06-10 21:37:46', '2019-06-11 00:14:55'),
-(126, 326, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'MONEYBOOKERS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'MB_PAY_TO_EMAIL \') AND ( value != \'testaccount2@moneybookers.com \'))', '==', '2', '0', 'time', '1', 0, '2019-06-10 21:37:46', '2019-06-11 00:14:55'),
-(127, 358, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1', '>=', '1', '0', 'time', '1', 0, '2019-06-10 21:37:46', '2019-06-11 00:14:55'),
-(128, 359, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2019-06-10 21:37:46', '2019-06-11 00:14:55'),
-(129, 375, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '1', '0', 'time', '1', 0, '2019-06-10 21:37:46', '2019-06-11 00:14:55'),
-(130, 376, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2019-06-10 21:37:46', '2019-06-11 00:14:55'),
-(131, 377, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%moneybookers%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '1', '0', 'time', '1', 0, '2019-06-10 21:37:46', '2019-06-11 00:14:55'),
-(132, 394, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%sofortbanking%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2019-06-10 21:37:46', '2019-06-11 00:14:55'),
-(133, 399, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '499', '', 'hook', 'actionObjectProductAddAfter', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(134, 424, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%alliance3%\"', '>=', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(135, 425, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ALLIANCE3_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ALLIANCE_DEMO\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-06-10 21:37:46', '2019-06-11 00:14:55'),
-(136, 426, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%alliance3%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(137, 427, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%alliance3%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(138, 428, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%authorizeaim%\"', '>=', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(139, 429, 'configuration', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'AUTHORIZEAIM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AUTHORIZE_AIM_SANDBOX\') AND ( value = \'0\'))', '==', '2', '', 'time', '2', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(140, 430, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(141, 431, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(142, 434, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%bluepay%\"', '>=', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(143, 435, 'configuration', 'BLUEPAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-10 21:37:46', '2019-06-11 00:14:55'),
-(144, 436, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluepay%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(145, 437, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluepay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(146, 438, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%payplug%\"', '>=', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(147, 439, 'configuration', 'PAYPLUG_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-10 21:37:46', '2019-06-11 00:14:55'),
-(148, 440, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(149, 441, 'sql', 'SELECT SUM(o.total_paid) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '10000', '0', 'time', '7', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(150, 442, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%affinityitems%\"', '>=', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(151, 443, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'AFFINITYITEMS_CONFIGURATION_OK\' AND value = \'1\'', '==', '1', '0', 'time', '1', 0, '2019-06-10 21:37:46', '2019-06-11 00:14:55'),
-(152, 446, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%dpdpoland%\"', '>=', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(153, 447, 'configuration', 'DPDPOLAND_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-10 21:37:46', '2019-06-11 00:14:55'),
-(154, 448, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(155, 449, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(156, 450, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%envoimoinscher%\"', '>=', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(157, 451, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ENVOIMOINSCHER_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'EMC_ENV \') AND ( value != \'TEST\'))', '==', '2', '0', 'time', '1', 0, '2019-06-10 21:37:46', '2019-06-11 00:14:55'),
-(158, 452, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(159, 453, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(160, 454, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%klikandpay%\"', '>=', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(161, 455, 'configuration', 'KLIKANDPAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-10 21:37:46', '2019-06-11 00:14:55'),
-(162, 456, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(163, 457, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(164, 458, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%clickline%\"', '>=', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(165, 459, 'configuration', 'CLICKLINE_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-10 21:37:46', '2019-06-11 00:14:55'),
-(166, 460, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(167, 461, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(168, 462, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%cdiscount%\"', '>=', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(169, 463, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(170, 464, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(171, 465, 'sql', 'SELECT SUM(o.total_paid) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 365 DAY)', '>=', '500', '0', 'time', '7', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(172, 467, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%erpillicopresta%\"', '>=', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(173, 468, 'configuration', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ERPILLICOPRESTA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ERP_LICENCE_VALIDITY \') AND ( value == \'1\')) OR (( name LIKE \'ERP_MONTH_FREE_ACTIVE \') AND ( value == \'0\'))', '==', '3', '', 'time', '1', 0, '2019-06-10 21:37:46', '2019-06-11 00:14:55'),
-(174, 469, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(175, 470, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(176, 471, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%netreviews%\"', '>=', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(177, 472, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'NETREVIEWS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AVISVERIFIES_URLCERTIFICAT \') AND ( value IS NOT LIKE \'%preprod%\'))', '==', '2', '0', 'time', '1', 0, '2019-06-10 21:37:46', '2019-06-11 00:14:55'),
-(178, 473, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(179, 474, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(180, 475, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%bluesnap%\"', '>=', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(181, 476, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'BLUESNAP_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'BLUESNAP_SANDBOX \') AND ( value NOT LIKE \'%sandbox%\'))', '==', '2', '0', 'time', '1', 0, '2019-06-10 21:37:46', '2019-06-11 00:14:55'),
-(182, 477, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(183, 478, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(184, 479, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%desjardins%\"', '>=', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(185, 480, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'DESJARDINS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'DESJARDINS_MODE \') AND ( value NOT LIKE \'%test%\'))', '==', '2', '0', 'time', '1', 0, '2019-06-10 21:37:46', '2019-06-11 00:14:55'),
-(186, 481, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(187, 482, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(188, 483, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%firstdata%\"', '>=', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(189, 484, 'configuration', 'FIRSTDATA_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-10 21:37:46', '2019-06-11 00:14:55'),
-(190, 485, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(191, 486, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(192, 487, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%giveit%\"', '>=', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(193, 488, 'sql', 'GIVEIT_CONFIGURATION_OK', '>=', '1', '0', 'time', '1', 0, '2019-06-10 21:37:46', '2019-06-11 00:14:55'),
-(194, 489, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(195, 490, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(196, 491, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ganalytics%\"', '>=', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2019-06-10 21:37:46', '2019-06-10 21:37:46'),
-(197, 492, 'configuration', 'GANALYTICS_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-10 21:37:46', '2019-06-11 00:14:55'),
-(198, 493, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '1', 0, '2019-06-10 21:37:47', '2019-06-11 00:14:55'),
-(199, 494, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-06-10 21:37:47', '2019-06-10 21:37:47'),
-(200, 496, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%pagseguro%\"', '>=', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2019-06-10 21:37:47', '2019-06-10 21:37:47'),
-(201, 497, 'configuration', 'PAGSEGURO_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-10 21:37:47', '2019-06-11 00:14:55'),
-(202, 498, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-10 21:37:47', '2019-06-10 21:37:47'),
-(203, 499, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-10 21:37:47', '2019-06-10 21:37:47'),
-(204, 500, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypalmx%\"', '>=', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2019-06-10 21:37:47', '2019-06-10 21:37:47'),
-(205, 501, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALMX_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_MX_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-06-10 21:37:47', '2019-06-11 00:14:55'),
-(206, 502, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-10 21:37:47', '2019-06-10 21:37:47'),
-(207, 503, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-10 21:37:47', '2019-06-10 21:37:47'),
-(208, 505, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypalusa%\"', '==', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2019-06-10 21:37:47', '2019-06-10 21:37:47'),
-(209, 506, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALUSA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_USA_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-06-10 21:37:47', '2019-06-11 00:14:55'),
-(210, 507, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalusa%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-10 21:37:47', '2019-06-10 21:37:47'),
-(211, 508, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-10 21:37:47', '2019-06-10 21:37:47');
+(1, 1, 'configuration', 'PS_REWRITING_SETTINGS', '==', '1', '', 'hook', 'actionAdminMetaControllerUpdate_optionsAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(2, 2, 'configuration', 'PS_SMARTY_FORCE_COMPILE', '!=', '2', '', 'hook', 'actionAdminPerformanceControllerSaveAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(3, 3, 'configuration', 'PS_CSS_THEME_CACHE', '==', '1', '', 'hook', 'actionAdminPerformanceControllerSaveAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(4, 4, 'configuration', 'PS_CIPHER_ALGORITHM', '==', '1', '', 'hook', 'actionAdminPerformanceControllerSaveAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(5, 5, 'configuration', 'PS_MEDIA_SERVERS', '==', '1', '', 'hook', 'actionAdminPerformanceControllerSaveAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(6, 6, 'sql', 'SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")', '>', '0', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:07', '2019-06-12 04:33:57'),
+(7, 7, 'sql', 'SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")', '>', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:07', '2019-06-12 04:33:57'),
+(8, 8, 'sql', 'SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")', '>', '0', '', 'hook', 'actionObjectCarrierAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(9, 9, 'sql', 'SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")', '>', '1', '', 'hook', 'actionObjectCarrierAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(10, 10, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '0', '', 'hook', 'actionObjectProductAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(11, 11, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '9', '', 'hook', 'actionObjectProductAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(12, 12, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '99', '', 'hook', 'actionObjectProductAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(13, 13, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '999', '', 'hook', 'actionObjectProductAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(14, 14, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '9999', '', 'hook', 'actionObjectProductAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(15, 15, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '99999', '', 'hook', 'actionObjectProductAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(16, 16, 'configuration', 'PS_SHOP_PHONE', '!=', '0', '', 'hook', 'actionAdminStoresControllerUpdate_optionsAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(17, 17, 'sql', 'SELECT COUNT(*) FROM PREFIX_contact', '>', '2', '', 'hook', 'actionObjectContactAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(18, 18, 'sql', 'SELECT COUNT(*) FROM PREFIX_contact', '>', '4', '', 'hook', 'actionObjectContactAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(19, 19, 'install', '', '>', '0', '1', 'time', '1', 1, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(20, 20, 'install', '', '>=', '7', '1', 'time', '1', 1, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(21, 21, 'configuration', 'PS_LOGO', '!=', 'logo.jpg', '', 'hook', 'actionAdminThemesControllerUpdate_optionsAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(22, 22, 'sql', 'SELECT COUNT(*) FROM PREFIX_theme WHERE directory != \"default\" AND directory != \"prestashop\" AND directory ! \"default-bootstrap\"', '>', '0', '', 'hook', 'actionObjectShopUpdateAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(23, 23, 'configuration', 'PS_LOGGED_ON_ADDONS', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:07', '2019-06-12 00:28:36'),
+(24, 24, 'configuration', 'PS_MULTISHOP_FEATURE_ACTIVE', '==', '1', '', 'hook', 'actionAdminPreferencesControllerUpdate_optionsAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(25, 25, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop', '>', '1', '', 'hook', 'actionObjectShopAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(26, 26, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop', '>', '4', '', 'hook', 'actionObjectShopAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(27, 27, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop_group', '>', '5', '', 'hook', 'actionObjectShopGroupAddAfter 	', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(28, 28, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop_group', '>', '1', '', 'hook', 'actionObjectShopGroupAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(29, 29, 'sql', 'SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")', '>', '2', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:07', '2019-06-12 04:33:57'),
+(30, 30, 'sql', 'SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")', '>', '2', '', 'hook', 'actionObjectCarrierAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(31, 31, 'sql', 'SELECT SUM(total_paid_tax_excl / c.conversion_rate)\r\nFROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '200', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(32, 32, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '2000', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(33, 33, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '20000', '0', 'time', '1', 0, '2019-06-11 21:39:07', '2019-06-12 00:28:36'),
+(34, 34, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '200000', '0', 'time', '7', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(35, 35, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '2000000', '0', 'time', '7', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(36, 36, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '20000000', '0', 'time', '7', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(37, 37, 'install', '', '>=', '30', '', 'time', '1', 0, '2019-06-11 21:39:07', '2019-06-12 00:28:36'),
+(38, 38, 'install', '', '>=', '182', '', 'time', '2', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(39, 39, 'install', '', '>=', '365', '', 'time', '2', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(40, 40, 'install', '', '>=', '730', '', 'time', '2', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(41, 41, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '10', '4', 'time', '1', 0, '2019-06-11 21:39:07', '2019-06-12 00:28:36'),
+(42, 42, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '100', '4', 'time', '1', 0, '2019-06-11 21:39:07', '2019-06-12 00:28:36'),
+(43, 43, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '1000', '4', 'time', '1', 0, '2019-06-11 21:39:07', '2019-06-12 00:28:36'),
+(44, 44, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '10000', '4', 'time', '2', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(45, 45, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '100000', '4', 'time', '3', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(46, 46, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '1000000', '4', 'time', '4', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(47, 47, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '2', '', 'hook', 'actionObjectCartAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(48, 48, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '10', '', 'hook', 'actionObjectCartAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(49, 49, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '100', '', 'hook', 'actionObjectCartAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(50, 50, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '1000', '1', 'time', '1', 0, '2019-06-11 21:39:07', '2019-06-12 00:28:36'),
+(51, 51, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '10000', '1', 'time', '4', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(52, 52, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '100000', '1', 'time', '8', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(53, 53, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '1', '', 'hook', 'actionObjectOrderAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(54, 54, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '10', '', 'hook', 'actionObjectOrderAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(55, 55, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '100', '', 'hook', 'actionObjectOrderAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(56, 56, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '1000', '0', 'time', '2', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(57, 57, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '10000', '0', 'time', '4', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(58, 58, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '100000', '0', 'time', '8', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(59, 59, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '1', '', 'hook', 'actionObjectCustomerAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(60, 60, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '10', '', 'hook', 'actionObjectCustomerAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(61, 61, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '100', '', 'hook', 'actionObjectCustomerAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(62, 62, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '1000', '0', 'time', '1', 0, '2019-06-11 21:39:07', '2019-06-12 00:28:36'),
+(63, 63, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '10000', '0', 'time', '2', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(64, 64, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '100000', '0', 'time', '4', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(65, 65, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '1', '', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(66, 66, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '10', '', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(67, 67, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '100', '', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(68, 68, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '1000', '0', 'time', '2', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(69, 69, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '10000', '0', 'time', '4', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(70, 70, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '100000', '0', 'time', '8', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(71, 76, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"CA\",\r\n\"GL\",\r\n\"PM\",\r\n\"US\"\r\n)', '!=', '0', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(72, 79, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"UM\",\r\n\"AS\",\r\n\"AU\",\r\n\"CK\",\r\n\"FJ\",\r\n\"FM\",\r\n\"GU\",\r\n\"KI\",\r\n\"MH,\"\r\n\"MP\",\r\n\"NC\",\r\n\"NF\",\r\n\"NR\",\r\n\"NU\",\r\n\"NZ\",\r\n\"PF\",\r\n\"PG\",\r\n\"PN\",\r\n\"PW\",\r\n\"SB\",\r\n\"TK\",\r\n\"TO\",\r\n\"TV\",\r\n\"VU\",\r\n\"WF\",\r\n\"WS\"\r\n)', '!=', '0', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(73, 85, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"KG\",\r\n\"KZ\",\r\n\"TJ\",\r\n\"TM\",\r\n\"UZ\",\r\n\"AE\",\r\n\"AM\",\r\n\"AZ\",\r\n\"BH\",\r\n\"CY\",\r\n\"GE\",\r\n\"IL\",\r\n\"IQ\",\r\n\"IR\",\r\n\"JO\",\r\n\"KW\",\r\n\"LB\",\r\n\"OM\",\r\n\"QA\",\r\n\"SA\",\r\n\"SY\",\r\n\"TR\",\r\n\"YE\",\r\n\"AF\",\r\n\"BD\",\r\n\"BT\",\r\n\"IN\",\r\n\"IO\",\r\n\"LK\",\r\n\"MV\",\r\n\"NP\",\r\n\"PK\",\r\n\"CN\",\r\n\"HK\",\r\n\"JP\",\r\n\"KP\",\r\n\"KR\",\r\n\"MO\",\r\n\"TW\",\r\n\"MN\",\r\n\"BN\",\r\n\"CC\",\r\n\"CX\",\r\n\"ID\",\r\n\"KH\",\r\n\"LA\",\r\n\"MM\",\r\n\"MY\",\r\n\"PH\",\r\n\"SG\",\r\n\"TH\",\r\n\"TP\",\r\n\"VN\"\r\n)', '!=', '0', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(74, 86, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BZ\",\r\n\"CR\",\r\n\"GT\",\r\n\"HN\",\r\n\"MX\",\r\n\"NI\",\r\n\"PA\",\r\n\"SV\",\r\n\"AG\",\r\n\"AI\",\r\n\"AN\",\r\n\"AW\",\r\n\"BB\",\r\n\"BM\",\r\n\"BS\",\r\n\"CU\",\r\n\"DM\",\r\n\"DO\",\r\n\"GD\",\r\n\"GP\",\r\n\"HT\",\r\n\"JM\",\r\n\"KN\",\r\n\"KY\",\r\n\"LC\",\r\n\"MQ\",\r\n\"MS\",\r\n\"PR\",\r\n\"TC\",\r\n\"TT\",\r\n\"VC\",\r\n\"VG\",\r\n\"VI\",\r\n\"AR\",\r\n\"BO\",\r\n\"BR\",\r\n\"CL\",\r\n\"CO\",\r\n\"EC\",\r\n\"FK\",\r\n\"GF\",\r\n\"GY\",\r\n\"PE\",\r\n\"PY\",\r\n\"SR\",\r\n\"UY\",\r\n\"VE\"\r\n)', '!=', '0', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(75, 87, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BE\",\r\n\"DE\",\r\n\"FR\",\r\n\"FX\",\r\n\"GB\",\r\n\"IE\",\r\n\"LU\",\r\n\"MC\",\r\n\"NL\",\r\n\"IT\",\r\n\"MT\",\r\n\"SM\",\r\n\"VA\",\r\n\"AD\",\r\n\"ES\",\r\n\"GI\",\r\n\"PT\",\r\n\"BY\",\r\n\"EE\",\r\n\"LT\",\r\n\"LV\",\r\n\"MD\",\r\n\"PL\",\r\n\"UA\",\r\n\"AL\",\r\n\"BA\",\r\n\"BG\",\r\n\"GR\",\r\n\"HR\",\r\n\"MK\",\r\n\"RO\",\r\n\"SI\",\r\n\"YU\",\r\n\"RU\",\r\n\"AT\",\r\n\"CH\",\r\n\"CZ\",\r\n\"HU\",\r\n\"LI\",\r\n\"SK\",\r\n\"DK\",\r\n\"FI\",\r\n\"FO\",\r\n\"IS\",\r\n\"NO\",\r\n\"SE\",\r\n\"SJ\"\r\n)', '!=', '0', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(76, 88, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BI\",\r\n\"CF\",\r\n\"CG\",\r\n\"RW\",\r\n\"TD\",\r\n\"ZR\",\r\n\"DJ\",\r\n\"ER\",\r\n\"ET\",\r\n\"KE\",\r\n\"SO\",\r\n\"TZ\",\r\n\"UG\",\r\n\"KM\",\r\n\"MG\",\r\n\"MU\",\r\n\"RE\",\r\n\"SC\",\r\n\"YT\",\r\n\"AO\",\r\n\"BW\",\r\n\"LS\",\r\n\"MW\",\r\n\"MZ\",\r\n\"NA\",\r\n\"SZ\",\r\n\"ZA\",\r\n\"ZM\",\r\n\"ZW\",\r\n\"BF\",\r\n\"BJ\",\r\n\"CI\",\r\n\"CM\",\r\n\"CV\",\r\n\"GA\",\r\n\"GH\",\r\n\"GM\",\r\n\"GN\",\r\n\"GQ\",\r\n\"GW\",\r\n\"LR\",\r\n\"ML\",\r\n\"MR\",\r\n\"NE\",\r\n\"NG\",\r\n\"SL\",\r\n\"SN\",\r\n\"ST\",\r\n\"TG\"\r\n)', '!=', '0', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(77, 89, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"DZ\",\r\n\"EG\",\r\n\"EH\",\r\n\"LY\",\r\n\"MA\",\r\n\"SD\",\r\n\"TN\"\r\n)', '!=', '0', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(78, 90, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '2', '', 'hook', 'actionObjectEmployeeAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(79, 91, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '3', '', 'hook', 'actionObjectEmployeeAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(80, 92, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '5', '', 'hook', 'actionObjectEmployeeAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(81, 93, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '10', '', 'hook', 'actionObjectEmployeeAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(82, 94, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '20', '', 'hook', 'actionObjectEmployeeAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(83, 95, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '40', '', 'hook', 'actionObjectEmployeeAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(84, 96, 'sql', 'SELECT id_image FROM PREFIX_image WHERE id_image > 26', '>', '0', '', 'hook', 'actionObjectImageAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(85, 97, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '50', '', 'hook', 'actionObjectImageAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(86, 98, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '100', '', 'hook', 'actionObjectImageAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(87, 99, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '1000', '338', 'time', '2', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(88, 100, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '10000', '338', 'time', '4', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(89, 101, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '50000', '338', 'time', '8', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(90, 102, 'sql', 'SELECT id_cms FROM PREFIX_cms WHERE id_cms > 5', '>', '0', '', 'hook', 'actionObjectCMSAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(91, 103, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '1', '', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(92, 104, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '10', '', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(93, 105, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '100', '', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(94, 106, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '1000', '', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(95, 107, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '500', '', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(96, 108, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '5000', '', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(97, 109, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '1', '', 'hook', 'newOrder', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(98, 110, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '10', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(99, 111, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '100', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(100, 112, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '10000', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(101, 113, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '1000', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(102, 114, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '5000', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(103, 132, 'sql', 'SELECT count(id_configuration) FROM PREFIX_configuration WHERE `name` = \'PS_SHOP_DOMAIN\' AND value IN (\'127.0.0.1\', \'localhost\' )', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(104, 136, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ebay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
+(105, 140, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%moneybookers%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
+(106, 142, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypal%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
+(107, 158, 'install', '', '>=', '90', '', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(108, 159, 'install', '', '<=', '90', '', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(109, 165, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '0', '', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(110, 166, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '1', '', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(111, 167, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '4', '', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(112, 168, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '9', '', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(113, 169, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '19', '', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(114, 170, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '49', '', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(115, 171, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '1', '', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(116, 172, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '2', '', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(117, 173, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '3', '', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(118, 174, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '4', '', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(119, 175, 'sql', 'SELECT count(*) FROM	 PREFIX_configuration WHERE name = \'PS_HOSTED_MODE\'', '==', '0', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(120, 209, 'configuration', 'EBAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:36'),
+(121, 320, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shopgate%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
+(122, 322, 'configuration', 'SHOPGATE_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:36'),
+(123, 323, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shoppingfluxexport%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
+(124, 324, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shoppingfluxexport%\" ', '==', '0', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(125, 325, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURATION_OK\' OR name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURED\'', '>=', '1', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:36'),
+(126, 326, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'MONEYBOOKERS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'MB_PAY_TO_EMAIL \') AND ( value != \'testaccount2@moneybookers.com \'))', '==', '2', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:36'),
+(127, 358, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1', '>=', '1', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:36'),
+(128, 359, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:36'),
+(129, 375, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '1', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:36'),
+(130, 376, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:36'),
+(131, 377, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%moneybookers%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '1', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:36'),
+(132, 394, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%sofortbanking%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:36'),
+(133, 399, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '499', '', 'hook', 'actionObjectProductAddAfter', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(134, 424, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%alliance3%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
+(135, 425, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ALLIANCE3_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ALLIANCE_DEMO\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:36'),
+(136, 426, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%alliance3%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(137, 427, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%alliance3%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(138, 428, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%authorizeaim%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
+(139, 429, 'configuration', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'AUTHORIZEAIM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AUTHORIZE_AIM_SANDBOX\') AND ( value = \'0\'))', '==', '2', '', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(140, 430, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(141, 431, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(142, 434, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%bluepay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
+(143, 435, 'configuration', 'BLUEPAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:36'),
+(144, 436, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluepay%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(145, 437, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluepay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(146, 438, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%payplug%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
+(147, 439, 'configuration', 'PAYPLUG_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:36'),
+(148, 440, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(149, 441, 'sql', 'SELECT SUM(o.total_paid) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '10000', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(150, 442, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%affinityitems%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
+(151, 443, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'AFFINITYITEMS_CONFIGURATION_OK\' AND value = \'1\'', '==', '1', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:36'),
+(152, 446, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%dpdpoland%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
+(153, 447, 'configuration', 'DPDPOLAND_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
+(154, 448, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(155, 449, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(156, 450, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%envoimoinscher%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
+(157, 451, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ENVOIMOINSCHER_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'EMC_ENV \') AND ( value != \'TEST\'))', '==', '2', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
+(158, 452, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(159, 453, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(160, 454, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%klikandpay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
+(161, 455, 'configuration', 'KLIKANDPAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
+(162, 456, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(163, 457, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(164, 458, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%clickline%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
+(165, 459, 'configuration', 'CLICKLINE_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
+(166, 460, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(167, 461, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(168, 462, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%cdiscount%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
+(169, 463, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(170, 464, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(171, 465, 'sql', 'SELECT SUM(o.total_paid) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 365 DAY)', '>=', '500', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(172, 467, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%erpillicopresta%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
+(173, 468, 'configuration', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ERPILLICOPRESTA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ERP_LICENCE_VALIDITY \') AND ( value == \'1\')) OR (( name LIKE \'ERP_MONTH_FREE_ACTIVE \') AND ( value == \'0\'))', '==', '3', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
+(174, 469, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(175, 470, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(176, 471, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%netreviews%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
+(177, 472, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'NETREVIEWS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AVISVERIFIES_URLCERTIFICAT \') AND ( value IS NOT LIKE \'%preprod%\'))', '==', '2', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
+(178, 473, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(179, 474, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(180, 475, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%bluesnap%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
+(181, 476, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'BLUESNAP_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'BLUESNAP_SANDBOX \') AND ( value NOT LIKE \'%sandbox%\'))', '==', '2', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
+(182, 477, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(183, 478, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(184, 479, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%desjardins%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
+(185, 480, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'DESJARDINS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'DESJARDINS_MODE \') AND ( value NOT LIKE \'%test%\'))', '==', '2', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
+(186, 481, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(187, 482, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(188, 483, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%firstdata%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
+(189, 484, 'configuration', 'FIRSTDATA_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
+(190, 485, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(191, 486, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(192, 487, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%giveit%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
+(193, 488, 'sql', 'GIVEIT_CONFIGURATION_OK', '>=', '1', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
+(194, 489, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(195, 490, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(196, 491, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ganalytics%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
+(197, 492, 'configuration', 'GANALYTICS_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
+(198, 493, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
+(199, 494, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(200, 496, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%pagseguro%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
+(201, 497, 'configuration', 'PAGSEGURO_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
+(202, 498, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(203, 499, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(204, 500, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypalmx%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
+(205, 501, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALMX_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_MX_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
+(206, 502, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(207, 503, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(208, 505, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypalusa%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
+(209, 506, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALUSA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_USA_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
+(210, 507, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalusa%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(211, 508, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08');
 INSERT INTO `jms_condition` (`id_condition`, `id_ps_condition`, `type`, `request`, `operator`, `value`, `result`, `calculation_type`, `calculation_detail`, `validated`, `date_add`, `date_upd`) VALUES
-(212, 509, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%payulatam%\"', '==', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2019-06-10 21:37:47', '2019-06-10 21:37:47'),
-(213, 510, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYULATAM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYU_LATAM_TEST\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2019-06-10 21:37:47', '2019-06-11 00:14:55'),
-(214, 511, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-10 21:37:47', '2019-06-10 21:37:47'),
-(215, 512, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-10 21:37:47', '2019-06-10 21:37:47'),
-(216, 513, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%prestastats%\"', '==', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2019-06-10 21:37:47', '2019-06-10 21:37:47'),
-(217, 514, 'configuration', 'PRESTASTATS_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-10 21:37:47', '2019-06-11 00:14:55'),
-(218, 515, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-06-10 21:37:47', '2019-06-10 21:37:47'),
-(219, 516, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-06-10 21:37:47', '2019-06-10 21:37:47'),
-(220, 517, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%riskified%\"', '==', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2019-06-10 21:37:47', '2019-06-10 21:37:47'),
-(221, 518, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'RISKIFIED_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'RISKIFIED_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2019-06-10 21:37:47', '2019-06-11 00:14:55'),
-(222, 519, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-10 21:37:47', '2019-06-10 21:37:47'),
-(223, 520, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-10 21:37:47', '2019-06-10 21:37:47'),
-(224, 521, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%simplifycommerce%\"', '==', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2019-06-10 21:37:47', '2019-06-10 21:37:47'),
-(225, 522, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'SIMPLIFY_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'SIMPLIFY_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2019-06-10 21:37:47', '2019-06-11 00:14:55'),
-(226, 523, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-10 21:37:47', '2019-06-10 21:37:47'),
-(227, 524, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-10 21:37:47', '2019-06-10 21:37:47'),
-(228, 525, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%vtpayment%\"', '==', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2019-06-10 21:37:47', '2019-06-10 21:37:47'),
-(229, 526, 'configuration', 'VTPAYMENT_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-10 21:37:47', '2019-06-11 00:14:55'),
-(230, 527, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-10 21:37:47', '2019-06-10 21:37:47'),
-(231, 528, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-10 21:37:47', '2019-06-10 21:37:47'),
-(232, 529, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%yotpo%\"', '==', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2019-06-10 21:37:47', '2019-06-10 21:37:47'),
-(233, 530, 'configuration', 'YOTPO_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-10 21:37:47', '2019-06-11 00:14:56'),
-(234, 531, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-06-10 21:37:47', '2019-06-10 21:37:47'),
-(235, 532, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-06-10 21:37:47', '2019-06-10 21:37:47'),
-(236, 533, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%yotpo%\"', '==', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2019-06-10 21:37:47', '2019-06-10 21:37:47'),
-(237, 534, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'YOUSTICERESOLUTIONSYSTEM_CONF_OK\') AND ( value = \'1\')) OR (( name LIKE \'YRS_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-06-10 21:37:47', '2019-06-11 00:14:56'),
-(238, 535, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-06-10 21:37:47', '2019-06-10 21:37:47'),
-(239, 536, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-06-10 21:37:47', '2019-06-10 21:37:47'),
-(240, 537, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%loyaltylion%\"', '>=', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2019-06-10 21:37:47', '2019-06-10 21:37:47'),
-(241, 538, 'configuration', 'LOYALTYLION_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-10 21:37:47', '2019-06-11 00:14:56'),
-(242, 539, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-06-10 21:37:47', '2019-06-10 21:37:47'),
-(243, 540, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-06-10 21:37:47', '2019-06-10 21:37:47'),
-(244, 542, 'sql', 'SELECT \'{config} PS_VERSION_DB{/config}\' >= \'1.7.0.0\' AND < \'1.8.0.0\'', '==', '1', '', 'time', '1', 0, '2019-06-10 21:37:47', '2019-06-10 21:37:47');
+(212, 509, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%payulatam%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
+(213, 510, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYULATAM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYU_LATAM_TEST\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
+(214, 511, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(215, 512, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(216, 513, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%prestastats%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
+(217, 514, 'configuration', 'PRESTASTATS_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
+(218, 515, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(219, 516, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(220, 517, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%riskified%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
+(221, 518, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'RISKIFIED_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'RISKIFIED_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
+(222, 519, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(223, 520, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(224, 521, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%simplifycommerce%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
+(225, 522, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'SIMPLIFY_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'SIMPLIFY_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
+(226, 523, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(227, 524, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(228, 525, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%vtpayment%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
+(229, 526, 'configuration', 'VTPAYMENT_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
+(230, 527, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(231, 528, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(232, 529, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%yotpo%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
+(233, 530, 'configuration', 'YOTPO_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
+(234, 531, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(235, 532, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(236, 533, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%yotpo%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
+(237, 534, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'YOUSTICERESOLUTIONSYSTEM_CONF_OK\') AND ( value = \'1\')) OR (( name LIKE \'YRS_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-06-11 21:39:09', '2019-06-12 00:28:37'),
+(238, 535, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-06-11 21:39:09', '2019-06-11 21:39:09'),
+(239, 536, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-06-11 21:39:09', '2019-06-11 21:39:09'),
+(240, 537, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%loyaltylion%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:09', '2019-06-12 04:33:57'),
+(241, 538, 'configuration', 'LOYALTYLION_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:09', '2019-06-12 00:28:37'),
+(242, 539, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-06-11 21:39:09', '2019-06-11 21:39:09'),
+(243, 540, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-06-11 21:39:09', '2019-06-11 21:39:09'),
+(244, 542, 'sql', 'SELECT \'{config} PS_VERSION_DB{/config}\' >= \'1.7.0.0\' AND < \'1.8.0.0\'', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:09', '2019-06-11 21:39:09');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_condition_advice`
+-- Cấu trúc bảng cho bảng `jms_condition_advice`
 --
 
 CREATE TABLE `jms_condition_advice` (
@@ -5420,7 +5424,7 @@ CREATE TABLE `jms_condition_advice` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_condition_advice`
+-- Đang đổ dữ liệu cho bảng `jms_condition_advice`
 --
 
 INSERT INTO `jms_condition_advice` (`id_condition`, `id_advice`, `display`) VALUES
@@ -5515,18 +5519,32 @@ INSERT INTO `jms_condition_advice` (`id_condition`, `id_advice`, `display`) VALU
 (19, 89, 1),
 (19, 90, 1),
 (19, 91, 1),
+(19, 92, 1),
+(19, 93, 1),
+(19, 94, 1),
+(19, 95, 1),
+(19, 96, 1),
+(19, 97, 1),
+(19, 98, 1),
+(19, 99, 1),
+(19, 100, 1),
+(19, 101, 1),
+(19, 102, 1),
+(19, 103, 1),
+(19, 104, 1),
 (106, 2, 0),
 (106, 15, 0),
 (106, 28, 0),
 (106, 41, 0),
 (106, 54, 0),
 (106, 67, 0),
-(106, 80, 0);
+(106, 80, 0),
+(106, 93, 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_condition_badge`
+-- Cấu trúc bảng cho bảng `jms_condition_badge`
 --
 
 CREATE TABLE `jms_condition_badge` (
@@ -5535,7 +5553,7 @@ CREATE TABLE `jms_condition_badge` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_condition_badge`
+-- Đang đổ dữ liệu cho bảng `jms_condition_badge`
 --
 
 INSERT INTO `jms_condition_badge` (`id_condition`, `id_badge`) VALUES
@@ -5779,7 +5797,7 @@ INSERT INTO `jms_condition_badge` (`id_condition`, `id_badge`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_configuration`
+-- Cấu trúc bảng cho bảng `jms_configuration`
 --
 
 CREATE TABLE `jms_configuration` (
@@ -5793,7 +5811,7 @@ CREATE TABLE `jms_configuration` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_configuration`
+-- Đang đổ dữ liệu cho bảng `jms_configuration`
 --
 
 INSERT INTO `jms_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, `name`, `value`, `date_add`, `date_upd`) VALUES
@@ -5939,7 +5957,7 @@ INSERT INTO `jms_configuration` (`id_configuration`, `id_shop_group`, `id_shop`,
 (140, NULL, NULL, 'PS_VIRTUAL_PROD_FEATURE_ACTIVE', '1', '0000-00-00 00:00:00', '2019-05-23 04:49:04'),
 (141, NULL, NULL, 'PS_CUSTOMIZATION_FEATURE_ACTIVE', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (142, NULL, NULL, 'PS_CART_RULE_FEATURE_ACTIVE', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(143, NULL, NULL, 'PS_PACK_FEATURE_ACTIVE', NULL, '0000-00-00 00:00:00', '2019-06-11 04:43:43'),
+(143, NULL, NULL, 'PS_PACK_FEATURE_ACTIVE', NULL, '0000-00-00 00:00:00', '2019-06-12 05:09:05'),
 (144, NULL, NULL, 'PS_ALIAS_FEATURE_ACTIVE', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (145, NULL, NULL, 'PS_TAX_ADDRESS_TYPE', 'id_address_delivery', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (146, NULL, NULL, 'PS_SHOP_DEFAULT', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
@@ -6272,12 +6290,14 @@ INSERT INTO `jms_configuration` (`id_configuration`, `id_shop_group`, `id_shop`,
 (473, NULL, NULL, 'PS_ROUTE_jmsblog-post', 'jmsblog/{category_slug}/{post_id}_{slug}.html', '2019-05-23 23:23:29', '2019-05-23 23:23:29'),
 (474, NULL, NULL, 'PS_ROUTE_jmsblog-category', 'jmsblog/{category_id}_{slug}.html', '2019-05-23 23:23:29', '2019-05-23 23:23:29'),
 (475, NULL, NULL, 'PS_ROUTE_jmsblog-archive', 'jmsblog/archive-month/{archive}.html', '2019-05-23 23:23:29', '2019-05-23 23:23:29'),
-(476, NULL, NULL, 'PS_ROUTE_jmsblog-tag', 'jmsblog/tag/{tag}.html', '2019-05-23 23:23:29', '2019-05-23 23:23:29');
+(476, NULL, NULL, 'PS_ROUTE_jmsblog-tag', 'jmsblog/tag/{tag}.html', '2019-05-23 23:23:29', '2019-05-23 23:23:29'),
+(477, NULL, NULL, 'CATEGORYPRODUCTS_DISPLAY_PRICE', '1', '2019-06-12 04:33:57', '2019-06-12 04:33:57'),
+(478, NULL, NULL, 'CATEGORYPRODUCTS_DISPLAY_PRODUCTS', '16', '2019-06-12 04:33:57', '2019-06-12 04:33:57');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_configuration_kpi`
+-- Cấu trúc bảng cho bảng `jms_configuration_kpi`
 --
 
 CREATE TABLE `jms_configuration_kpi` (
@@ -6291,7 +6311,7 @@ CREATE TABLE `jms_configuration_kpi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_configuration_kpi`
+-- Đang đổ dữ liệu cho bảng `jms_configuration_kpi`
 --
 
 INSERT INTO `jms_configuration_kpi` (`id_configuration_kpi`, `id_shop_group`, `id_shop`, `name`, `value`, `date_add`, `date_upd`) VALUES
@@ -6343,7 +6363,7 @@ INSERT INTO `jms_configuration_kpi` (`id_configuration_kpi`, `id_shop_group`, `i
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_configuration_kpi_lang`
+-- Cấu trúc bảng cho bảng `jms_configuration_kpi_lang`
 --
 
 CREATE TABLE `jms_configuration_kpi_lang` (
@@ -6354,7 +6374,7 @@ CREATE TABLE `jms_configuration_kpi_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_configuration_kpi_lang`
+-- Đang đổ dữ liệu cho bảng `jms_configuration_kpi_lang`
 --
 
 INSERT INTO `jms_configuration_kpi_lang` (`id_configuration_kpi`, `id_lang`, `value`, `date_upd`) VALUES
@@ -6364,7 +6384,7 @@ INSERT INTO `jms_configuration_kpi_lang` (`id_configuration_kpi`, `id_lang`, `va
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_configuration_lang`
+-- Cấu trúc bảng cho bảng `jms_configuration_lang`
 --
 
 CREATE TABLE `jms_configuration_lang` (
@@ -6375,7 +6395,7 @@ CREATE TABLE `jms_configuration_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_configuration_lang`
+-- Đang đổ dữ liệu cho bảng `jms_configuration_lang`
 --
 
 INSERT INTO `jms_configuration_lang` (`id_configuration`, `id_lang`, `value`, `date_upd`) VALUES
@@ -6500,7 +6520,7 @@ INSERT INTO `jms_configuration_lang` (`id_configuration`, `id_lang`, `value`, `d
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_connections`
+-- Cấu trúc bảng cho bảng `jms_connections`
 --
 
 CREATE TABLE `jms_connections` (
@@ -6515,7 +6535,7 @@ CREATE TABLE `jms_connections` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_connections`
+-- Đang đổ dữ liệu cho bảng `jms_connections`
 --
 
 INSERT INTO `jms_connections` (`id_connections`, `id_shop_group`, `id_shop`, `id_guest`, `id_page`, `ip_address`, `date_add`, `http_referer`) VALUES
@@ -6574,12 +6594,13 @@ INSERT INTO `jms_connections` (`id_connections`, `id_shop_group`, `id_shop`, `id
 (53, 1, 1, 4, 3, 2130706433, '2019-06-11 02:43:44', ''),
 (54, 1, 1, 4, 3, 2130706433, '2019-06-11 03:17:58', ''),
 (55, 1, 1, 4, 3, 2130706433, '2019-06-11 03:48:59', ''),
-(56, 1, 1, 4, 3, 2130706433, '2019-06-11 04:27:12', '');
+(56, 1, 1, 4, 3, 2130706433, '2019-06-11 04:27:12', ''),
+(57, 1, 1, 4, 1, 2130706433, '2019-06-11 21:39:23', '');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_connections_page`
+-- Cấu trúc bảng cho bảng `jms_connections_page`
 --
 
 CREATE TABLE `jms_connections_page` (
@@ -6592,7 +6613,7 @@ CREATE TABLE `jms_connections_page` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_connections_source`
+-- Cấu trúc bảng cho bảng `jms_connections_source`
 --
 
 CREATE TABLE `jms_connections_source` (
@@ -6607,7 +6628,7 @@ CREATE TABLE `jms_connections_source` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_contact`
+-- Cấu trúc bảng cho bảng `jms_contact`
 --
 
 CREATE TABLE `jms_contact` (
@@ -6618,7 +6639,7 @@ CREATE TABLE `jms_contact` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_contact`
+-- Đang đổ dữ liệu cho bảng `jms_contact`
 --
 
 INSERT INTO `jms_contact` (`id_contact`, `email`, `customer_service`, `position`) VALUES
@@ -6628,7 +6649,7 @@ INSERT INTO `jms_contact` (`id_contact`, `email`, `customer_service`, `position`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_contact_lang`
+-- Cấu trúc bảng cho bảng `jms_contact_lang`
 --
 
 CREATE TABLE `jms_contact_lang` (
@@ -6639,7 +6660,7 @@ CREATE TABLE `jms_contact_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_contact_lang`
+-- Đang đổ dữ liệu cho bảng `jms_contact_lang`
 --
 
 INSERT INTO `jms_contact_lang` (`id_contact`, `id_lang`, `name`, `description`) VALUES
@@ -6665,7 +6686,7 @@ INSERT INTO `jms_contact_lang` (`id_contact`, `id_lang`, `name`, `description`) 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_contact_shop`
+-- Cấu trúc bảng cho bảng `jms_contact_shop`
 --
 
 CREATE TABLE `jms_contact_shop` (
@@ -6674,7 +6695,7 @@ CREATE TABLE `jms_contact_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_contact_shop`
+-- Đang đổ dữ liệu cho bảng `jms_contact_shop`
 --
 
 INSERT INTO `jms_contact_shop` (`id_contact`, `id_shop`) VALUES
@@ -6684,7 +6705,7 @@ INSERT INTO `jms_contact_shop` (`id_contact`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_country`
+-- Cấu trúc bảng cho bảng `jms_country`
 --
 
 CREATE TABLE `jms_country` (
@@ -6702,7 +6723,7 @@ CREATE TABLE `jms_country` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_country`
+-- Đang đổ dữ liệu cho bảng `jms_country`
 --
 
 INSERT INTO `jms_country` (`id_country`, `id_zone`, `id_currency`, `iso_code`, `call_prefix`, `active`, `contains_states`, `need_identification_number`, `need_zip_code`, `zip_code_format`, `display_tax_label`) VALUES
@@ -6954,7 +6975,7 @@ INSERT INTO `jms_country` (`id_country`, `id_zone`, `id_currency`, `iso_code`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_country_lang`
+-- Cấu trúc bảng cho bảng `jms_country_lang`
 --
 
 CREATE TABLE `jms_country_lang` (
@@ -6964,7 +6985,7 @@ CREATE TABLE `jms_country_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_country_lang`
+-- Đang đổ dữ liệu cho bảng `jms_country_lang`
 --
 
 INSERT INTO `jms_country_lang` (`id_country`, `id_lang`, `name`) VALUES
@@ -9168,7 +9189,7 @@ INSERT INTO `jms_country_lang` (`id_country`, `id_lang`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_country_shop`
+-- Cấu trúc bảng cho bảng `jms_country_shop`
 --
 
 CREATE TABLE `jms_country_shop` (
@@ -9177,7 +9198,7 @@ CREATE TABLE `jms_country_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_country_shop`
+-- Đang đổ dữ liệu cho bảng `jms_country_shop`
 --
 
 INSERT INTO `jms_country_shop` (`id_country`, `id_shop`) VALUES
@@ -9429,7 +9450,7 @@ INSERT INTO `jms_country_shop` (`id_country`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cronjobs`
+-- Cấu trúc bảng cho bảng `jms_cronjobs`
 --
 
 CREATE TABLE `jms_cronjobs` (
@@ -9451,7 +9472,7 @@ CREATE TABLE `jms_cronjobs` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_currency`
+-- Cấu trúc bảng cho bảng `jms_currency`
 --
 
 CREATE TABLE `jms_currency` (
@@ -9464,7 +9485,7 @@ CREATE TABLE `jms_currency` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_currency`
+-- Đang đổ dữ liệu cho bảng `jms_currency`
 --
 
 INSERT INTO `jms_currency` (`id_currency`, `name`, `iso_code`, `conversion_rate`, `deleted`, `active`) VALUES
@@ -9474,7 +9495,7 @@ INSERT INTO `jms_currency` (`id_currency`, `name`, `iso_code`, `conversion_rate`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_currency_shop`
+-- Cấu trúc bảng cho bảng `jms_currency_shop`
 --
 
 CREATE TABLE `jms_currency_shop` (
@@ -9484,7 +9505,7 @@ CREATE TABLE `jms_currency_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_currency_shop`
+-- Đang đổ dữ liệu cho bảng `jms_currency_shop`
 --
 
 INSERT INTO `jms_currency_shop` (`id_currency`, `id_shop`, `conversion_rate`) VALUES
@@ -9494,7 +9515,7 @@ INSERT INTO `jms_currency_shop` (`id_currency`, `id_shop`, `conversion_rate`) VA
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_customer`
+-- Cấu trúc bảng cho bảng `jms_customer`
 --
 
 CREATE TABLE `jms_customer` (
@@ -9534,7 +9555,7 @@ CREATE TABLE `jms_customer` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_customer`
+-- Đang đổ dữ liệu cho bảng `jms_customer`
 --
 
 INSERT INTO `jms_customer` (`id_customer`, `id_shop_group`, `id_shop`, `id_gender`, `id_default_group`, `id_lang`, `id_risk`, `company`, `siret`, `ape`, `firstname`, `lastname`, `email`, `passwd`, `last_passwd_gen`, `birthday`, `newsletter`, `ip_registration_newsletter`, `newsletter_date_add`, `optin`, `website`, `outstanding_allow_amount`, `show_public_prices`, `max_payment_days`, `secure_key`, `note`, `active`, `is_guest`, `deleted`, `date_add`, `date_upd`, `reset_password_token`, `reset_password_validity`) VALUES
@@ -9543,7 +9564,7 @@ INSERT INTO `jms_customer` (`id_customer`, `id_shop_group`, `id_shop`, `id_gende
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_customer_group`
+-- Cấu trúc bảng cho bảng `jms_customer_group`
 --
 
 CREATE TABLE `jms_customer_group` (
@@ -9552,7 +9573,7 @@ CREATE TABLE `jms_customer_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_customer_group`
+-- Đang đổ dữ liệu cho bảng `jms_customer_group`
 --
 
 INSERT INTO `jms_customer_group` (`id_customer`, `id_group`) VALUES
@@ -9561,7 +9582,7 @@ INSERT INTO `jms_customer_group` (`id_customer`, `id_group`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_customer_message`
+-- Cấu trúc bảng cho bảng `jms_customer_message`
 --
 
 CREATE TABLE `jms_customer_message` (
@@ -9581,7 +9602,7 @@ CREATE TABLE `jms_customer_message` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_customer_message_sync_imap`
+-- Cấu trúc bảng cho bảng `jms_customer_message_sync_imap`
 --
 
 CREATE TABLE `jms_customer_message_sync_imap` (
@@ -9591,7 +9612,7 @@ CREATE TABLE `jms_customer_message_sync_imap` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_customer_thread`
+-- Cấu trúc bảng cho bảng `jms_customer_thread`
 --
 
 CREATE TABLE `jms_customer_thread` (
@@ -9612,7 +9633,7 @@ CREATE TABLE `jms_customer_thread` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_customization`
+-- Cấu trúc bảng cho bảng `jms_customization`
 --
 
 CREATE TABLE `jms_customization` (
@@ -9630,7 +9651,7 @@ CREATE TABLE `jms_customization` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_customization_field`
+-- Cấu trúc bảng cho bảng `jms_customization_field`
 --
 
 CREATE TABLE `jms_customization_field` (
@@ -9645,7 +9666,7 @@ CREATE TABLE `jms_customization_field` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_customization_field_lang`
+-- Cấu trúc bảng cho bảng `jms_customization_field_lang`
 --
 
 CREATE TABLE `jms_customization_field_lang` (
@@ -9658,7 +9679,7 @@ CREATE TABLE `jms_customization_field_lang` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_customized_data`
+-- Cấu trúc bảng cho bảng `jms_customized_data`
 --
 
 CREATE TABLE `jms_customized_data` (
@@ -9674,7 +9695,7 @@ CREATE TABLE `jms_customized_data` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_date_range`
+-- Cấu trúc bảng cho bảng `jms_date_range`
 --
 
 CREATE TABLE `jms_date_range` (
@@ -9686,7 +9707,7 @@ CREATE TABLE `jms_date_range` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_delivery`
+-- Cấu trúc bảng cho bảng `jms_delivery`
 --
 
 CREATE TABLE `jms_delivery` (
@@ -9701,7 +9722,7 @@ CREATE TABLE `jms_delivery` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_delivery`
+-- Đang đổ dữ liệu cho bảng `jms_delivery`
 --
 
 INSERT INTO `jms_delivery` (`id_delivery`, `id_shop`, `id_shop_group`, `id_carrier`, `id_range_price`, `id_range_weight`, `id_zone`, `price`) VALUES
@@ -9713,7 +9734,7 @@ INSERT INTO `jms_delivery` (`id_delivery`, `id_shop`, `id_shop_group`, `id_carri
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_emailsubscription`
+-- Cấu trúc bảng cho bảng `jms_emailsubscription`
 --
 
 CREATE TABLE `jms_emailsubscription` (
@@ -9730,7 +9751,7 @@ CREATE TABLE `jms_emailsubscription` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_employee`
+-- Cấu trúc bảng cho bảng `jms_employee`
 --
 
 CREATE TABLE `jms_employee` (
@@ -9765,7 +9786,7 @@ CREATE TABLE `jms_employee` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_employee`
+-- Đang đổ dữ liệu cho bảng `jms_employee`
 --
 
 INSERT INTO `jms_employee` (`id_employee`, `id_profile`, `id_lang`, `lastname`, `firstname`, `email`, `passwd`, `last_passwd_gen`, `stats_date_from`, `stats_date_to`, `stats_compare_from`, `stats_compare_to`, `stats_compare_option`, `preselect_date_range`, `bo_color`, `bo_theme`, `bo_css`, `default_tab`, `bo_width`, `bo_menu`, `active`, `optin`, `id_last_order`, `id_last_customer_message`, `id_last_customer`, `last_connection_date`, `reset_password_token`, `reset_password_validity`) VALUES
@@ -9774,7 +9795,7 @@ INSERT INTO `jms_employee` (`id_employee`, `id_profile`, `id_lang`, `lastname`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_employee_shop`
+-- Cấu trúc bảng cho bảng `jms_employee_shop`
 --
 
 CREATE TABLE `jms_employee_shop` (
@@ -9783,7 +9804,7 @@ CREATE TABLE `jms_employee_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_employee_shop`
+-- Đang đổ dữ liệu cho bảng `jms_employee_shop`
 --
 
 INSERT INTO `jms_employee_shop` (`id_employee`, `id_shop`) VALUES
@@ -9792,7 +9813,7 @@ INSERT INTO `jms_employee_shop` (`id_employee`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_feature`
+-- Cấu trúc bảng cho bảng `jms_feature`
 --
 
 CREATE TABLE `jms_feature` (
@@ -9801,7 +9822,7 @@ CREATE TABLE `jms_feature` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_feature`
+-- Đang đổ dữ liệu cho bảng `jms_feature`
 --
 
 INSERT INTO `jms_feature` (`id_feature`, `position`) VALUES
@@ -9814,7 +9835,7 @@ INSERT INTO `jms_feature` (`id_feature`, `position`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_feature_lang`
+-- Cấu trúc bảng cho bảng `jms_feature_lang`
 --
 
 CREATE TABLE `jms_feature_lang` (
@@ -9824,7 +9845,7 @@ CREATE TABLE `jms_feature_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_feature_lang`
+-- Đang đổ dữ liệu cho bảng `jms_feature_lang`
 --
 
 INSERT INTO `jms_feature_lang` (`id_feature`, `id_lang`, `name`) VALUES
@@ -9877,7 +9898,7 @@ INSERT INTO `jms_feature_lang` (`id_feature`, `id_lang`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_feature_product`
+-- Cấu trúc bảng cho bảng `jms_feature_product`
 --
 
 CREATE TABLE `jms_feature_product` (
@@ -9889,7 +9910,7 @@ CREATE TABLE `jms_feature_product` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_feature_shop`
+-- Cấu trúc bảng cho bảng `jms_feature_shop`
 --
 
 CREATE TABLE `jms_feature_shop` (
@@ -9898,7 +9919,7 @@ CREATE TABLE `jms_feature_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_feature_shop`
+-- Đang đổ dữ liệu cho bảng `jms_feature_shop`
 --
 
 INSERT INTO `jms_feature_shop` (`id_feature`, `id_shop`) VALUES
@@ -9911,7 +9932,7 @@ INSERT INTO `jms_feature_shop` (`id_feature`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_feature_value`
+-- Cấu trúc bảng cho bảng `jms_feature_value`
 --
 
 CREATE TABLE `jms_feature_value` (
@@ -9921,7 +9942,7 @@ CREATE TABLE `jms_feature_value` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_feature_value`
+-- Đang đổ dữ liệu cho bảng `jms_feature_value`
 --
 
 INSERT INTO `jms_feature_value` (`id_feature_value`, `id_feature`, `custom`) VALUES
@@ -9946,7 +9967,7 @@ INSERT INTO `jms_feature_value` (`id_feature_value`, `id_feature`, `custom`) VAL
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_feature_value_lang`
+-- Cấu trúc bảng cho bảng `jms_feature_value_lang`
 --
 
 CREATE TABLE `jms_feature_value_lang` (
@@ -9956,7 +9977,7 @@ CREATE TABLE `jms_feature_value_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_feature_value_lang`
+-- Đang đổ dữ liệu cho bảng `jms_feature_value_lang`
 --
 
 INSERT INTO `jms_feature_value_lang` (`id_feature_value`, `id_lang`, `value`) VALUES
@@ -10117,7 +10138,7 @@ INSERT INTO `jms_feature_value_lang` (`id_feature_value`, `id_lang`, `value`) VA
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_gender`
+-- Cấu trúc bảng cho bảng `jms_gender`
 --
 
 CREATE TABLE `jms_gender` (
@@ -10126,7 +10147,7 @@ CREATE TABLE `jms_gender` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_gender`
+-- Đang đổ dữ liệu cho bảng `jms_gender`
 --
 
 INSERT INTO `jms_gender` (`id_gender`, `type`) VALUES
@@ -10136,7 +10157,7 @@ INSERT INTO `jms_gender` (`id_gender`, `type`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_gender_lang`
+-- Cấu trúc bảng cho bảng `jms_gender_lang`
 --
 
 CREATE TABLE `jms_gender_lang` (
@@ -10146,7 +10167,7 @@ CREATE TABLE `jms_gender_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_gender_lang`
+-- Đang đổ dữ liệu cho bảng `jms_gender_lang`
 --
 
 INSERT INTO `jms_gender_lang` (`id_gender`, `id_lang`, `name`) VALUES
@@ -10172,7 +10193,7 @@ INSERT INTO `jms_gender_lang` (`id_gender`, `id_lang`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_group`
+-- Cấu trúc bảng cho bảng `jms_group`
 --
 
 CREATE TABLE `jms_group` (
@@ -10185,7 +10206,7 @@ CREATE TABLE `jms_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_group`
+-- Đang đổ dữ liệu cho bảng `jms_group`
 --
 
 INSERT INTO `jms_group` (`id_group`, `reduction`, `price_display_method`, `show_prices`, `date_add`, `date_upd`) VALUES
@@ -10196,7 +10217,7 @@ INSERT INTO `jms_group` (`id_group`, `reduction`, `price_display_method`, `show_
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_group_lang`
+-- Cấu trúc bảng cho bảng `jms_group_lang`
 --
 
 CREATE TABLE `jms_group_lang` (
@@ -10206,7 +10227,7 @@ CREATE TABLE `jms_group_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_group_lang`
+-- Đang đổ dữ liệu cho bảng `jms_group_lang`
 --
 
 INSERT INTO `jms_group_lang` (`id_group`, `id_lang`, `name`) VALUES
@@ -10241,7 +10262,7 @@ INSERT INTO `jms_group_lang` (`id_group`, `id_lang`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_group_reduction`
+-- Cấu trúc bảng cho bảng `jms_group_reduction`
 --
 
 CREATE TABLE `jms_group_reduction` (
@@ -10254,7 +10275,7 @@ CREATE TABLE `jms_group_reduction` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_group_shop`
+-- Cấu trúc bảng cho bảng `jms_group_shop`
 --
 
 CREATE TABLE `jms_group_shop` (
@@ -10263,7 +10284,7 @@ CREATE TABLE `jms_group_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_group_shop`
+-- Đang đổ dữ liệu cho bảng `jms_group_shop`
 --
 
 INSERT INTO `jms_group_shop` (`id_group`, `id_shop`) VALUES
@@ -10274,7 +10295,7 @@ INSERT INTO `jms_group_shop` (`id_group`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_gsitemap_sitemap`
+-- Cấu trúc bảng cho bảng `jms_gsitemap_sitemap`
 --
 
 CREATE TABLE `jms_gsitemap_sitemap` (
@@ -10285,7 +10306,7 @@ CREATE TABLE `jms_gsitemap_sitemap` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_guest`
+-- Cấu trúc bảng cho bảng `jms_guest`
 --
 
 CREATE TABLE `jms_guest` (
@@ -10308,7 +10329,7 @@ CREATE TABLE `jms_guest` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_guest`
+-- Đang đổ dữ liệu cho bảng `jms_guest`
 --
 
 INSERT INTO `jms_guest` (`id_guest`, `id_operating_system`, `id_web_browser`, `id_customer`, `javascript`, `screen_resolution_x`, `screen_resolution_y`, `screen_color`, `sun_java`, `adobe_flash`, `adobe_director`, `apple_quicktime`, `real_player`, `windows_media`, `accept_language`, `mobile_theme`) VALUES
@@ -10320,7 +10341,7 @@ INSERT INTO `jms_guest` (`id_guest`, `id_operating_system`, `id_web_browser`, `i
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_homeslider`
+-- Cấu trúc bảng cho bảng `jms_homeslider`
 --
 
 CREATE TABLE `jms_homeslider` (
@@ -10329,7 +10350,7 @@ CREATE TABLE `jms_homeslider` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_homeslider`
+-- Đang đổ dữ liệu cho bảng `jms_homeslider`
 --
 
 INSERT INTO `jms_homeslider` (`id_homeslider_slides`, `id_shop`) VALUES
@@ -10340,7 +10361,7 @@ INSERT INTO `jms_homeslider` (`id_homeslider_slides`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_homeslider_slides`
+-- Cấu trúc bảng cho bảng `jms_homeslider_slides`
 --
 
 CREATE TABLE `jms_homeslider_slides` (
@@ -10350,7 +10371,7 @@ CREATE TABLE `jms_homeslider_slides` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_homeslider_slides`
+-- Đang đổ dữ liệu cho bảng `jms_homeslider_slides`
 --
 
 INSERT INTO `jms_homeslider_slides` (`id_homeslider_slides`, `position`, `active`) VALUES
@@ -10361,7 +10382,7 @@ INSERT INTO `jms_homeslider_slides` (`id_homeslider_slides`, `position`, `active
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_homeslider_slides_lang`
+-- Cấu trúc bảng cho bảng `jms_homeslider_slides_lang`
 --
 
 CREATE TABLE `jms_homeslider_slides_lang` (
@@ -10375,7 +10396,7 @@ CREATE TABLE `jms_homeslider_slides_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_homeslider_slides_lang`
+-- Đang đổ dữ liệu cho bảng `jms_homeslider_slides_lang`
 --
 
 INSERT INTO `jms_homeslider_slides_lang` (`id_homeslider_slides`, `id_lang`, `title`, `description`, `legend`, `url`, `image`) VALUES
@@ -10410,7 +10431,7 @@ INSERT INTO `jms_homeslider_slides_lang` (`id_homeslider_slides`, `id_lang`, `ti
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_hook`
+-- Cấu trúc bảng cho bảng `jms_hook`
 --
 
 CREATE TABLE `jms_hook` (
@@ -10422,7 +10443,7 @@ CREATE TABLE `jms_hook` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_hook`
+-- Đang đổ dữ liệu cho bảng `jms_hook`
 --
 
 INSERT INTO `jms_hook` (`id_hook`, `name`, `title`, `description`, `position`) VALUES
@@ -10679,7 +10700,7 @@ INSERT INTO `jms_hook` (`id_hook`, `name`, `title`, `description`, `position`) V
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_hook_alias`
+-- Cấu trúc bảng cho bảng `jms_hook_alias`
 --
 
 CREATE TABLE `jms_hook_alias` (
@@ -10689,7 +10710,7 @@ CREATE TABLE `jms_hook_alias` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_hook_alias`
+-- Đang đổ dữ liệu cho bảng `jms_hook_alias`
 --
 
 INSERT INTO `jms_hook_alias` (`id_hook_alias`, `alias`, `name`) VALUES
@@ -10780,7 +10801,7 @@ INSERT INTO `jms_hook_alias` (`id_hook_alias`, `alias`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_hook_module`
+-- Cấu trúc bảng cho bảng `jms_hook_module`
 --
 
 CREATE TABLE `jms_hook_module` (
@@ -10791,7 +10812,7 @@ CREATE TABLE `jms_hook_module` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_hook_module`
+-- Đang đổ dữ liệu cho bảng `jms_hook_module`
 --
 
 INSERT INTO `jms_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VALUES
@@ -10944,6 +10965,10 @@ INSERT INTO `jms_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VA
 (68, 1, 231, 2),
 (74, 1, 7, 2),
 (74, 1, 21, 2),
+(75, 1, 17, 2),
+(75, 1, 18, 2),
+(75, 1, 24, 2),
+(75, 1, 27, 2),
 (4, 1, 185, 3),
 (4, 1, 191, 3),
 (5, 1, 192, 3),
@@ -10999,7 +11024,7 @@ INSERT INTO `jms_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VA
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_hook_module_exceptions`
+-- Cấu trúc bảng cho bảng `jms_hook_module_exceptions`
 --
 
 CREATE TABLE `jms_hook_module_exceptions` (
@@ -11013,7 +11038,7 @@ CREATE TABLE `jms_hook_module_exceptions` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_hotdeals`
+-- Cấu trúc bảng cho bảng `jms_hotdeals`
 --
 
 CREATE TABLE `jms_hotdeals` (
@@ -11022,7 +11047,7 @@ CREATE TABLE `jms_hotdeals` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_hotdeals`
+-- Đang đổ dữ liệu cho bảng `jms_hotdeals`
 --
 
 INSERT INTO `jms_hotdeals` (`id_hotdeals`, `id_shop`) VALUES
@@ -11037,7 +11062,7 @@ INSERT INTO `jms_hotdeals` (`id_hotdeals`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_hotdeals_items`
+-- Cấu trúc bảng cho bảng `jms_hotdeals_items`
 --
 
 CREATE TABLE `jms_hotdeals_items` (
@@ -11049,7 +11074,7 @@ CREATE TABLE `jms_hotdeals_items` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_hotdeals_items`
+-- Đang đổ dữ liệu cho bảng `jms_hotdeals_items`
 --
 
 INSERT INTO `jms_hotdeals_items` (`id_hotdeals`, `id_product`, `deals_time`, `ordering`, `active`) VALUES
@@ -11064,7 +11089,7 @@ INSERT INTO `jms_hotdeals_items` (`id_hotdeals`, `id_product`, `deals_time`, `or
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_image`
+-- Cấu trúc bảng cho bảng `jms_image`
 --
 
 CREATE TABLE `jms_image` (
@@ -11075,7 +11100,7 @@ CREATE TABLE `jms_image` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_image`
+-- Đang đổ dữ liệu cho bảng `jms_image`
 --
 
 INSERT INTO `jms_image` (`id_image`, `id_product`, `position`, `cover`) VALUES
@@ -11421,7 +11446,7 @@ INSERT INTO `jms_image` (`id_image`, `id_product`, `position`, `cover`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_image_lang`
+-- Cấu trúc bảng cho bảng `jms_image_lang`
 --
 
 CREATE TABLE `jms_image_lang` (
@@ -11431,7 +11456,7 @@ CREATE TABLE `jms_image_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_image_lang`
+-- Đang đổ dữ liệu cho bảng `jms_image_lang`
 --
 
 INSERT INTO `jms_image_lang` (`id_image`, `id_lang`, `legend`) VALUES
@@ -13467,7 +13492,7 @@ INSERT INTO `jms_image_lang` (`id_image`, `id_lang`, `legend`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_image_shop`
+-- Cấu trúc bảng cho bảng `jms_image_shop`
 --
 
 CREATE TABLE `jms_image_shop` (
@@ -13478,7 +13503,7 @@ CREATE TABLE `jms_image_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_image_shop`
+-- Đang đổ dữ liệu cho bảng `jms_image_shop`
 --
 
 INSERT INTO `jms_image_shop` (`id_product`, `id_image`, `id_shop`, `cover`) VALUES
@@ -13824,7 +13849,7 @@ INSERT INTO `jms_image_shop` (`id_product`, `id_image`, `id_shop`, `cover`) VALU
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_image_type`
+-- Cấu trúc bảng cho bảng `jms_image_type`
 --
 
 CREATE TABLE `jms_image_type` (
@@ -13840,7 +13865,7 @@ CREATE TABLE `jms_image_type` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_image_type`
+-- Đang đổ dữ liệu cho bảng `jms_image_type`
 --
 
 INSERT INTO `jms_image_type` (`id_image_type`, `name`, `width`, `height`, `products`, `categories`, `manufacturers`, `suppliers`, `stores`) VALUES
@@ -13855,7 +13880,7 @@ INSERT INTO `jms_image_type` (`id_image_type`, `name`, `width`, `height`, `produ
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_import_match`
+-- Cấu trúc bảng cho bảng `jms_import_match`
 --
 
 CREATE TABLE `jms_import_match` (
@@ -13868,7 +13893,7 @@ CREATE TABLE `jms_import_match` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_info`
+-- Cấu trúc bảng cho bảng `jms_info`
 --
 
 CREATE TABLE `jms_info` (
@@ -13876,7 +13901,7 @@ CREATE TABLE `jms_info` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_info`
+-- Đang đổ dữ liệu cho bảng `jms_info`
 --
 
 INSERT INTO `jms_info` (`id_info`) VALUES
@@ -13885,7 +13910,7 @@ INSERT INTO `jms_info` (`id_info`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_info_lang`
+-- Cấu trúc bảng cho bảng `jms_info_lang`
 --
 
 CREATE TABLE `jms_info_lang` (
@@ -13896,7 +13921,7 @@ CREATE TABLE `jms_info_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_info_lang`
+-- Đang đổ dữ liệu cho bảng `jms_info_lang`
 --
 
 INSERT INTO `jms_info_lang` (`id_info`, `id_shop`, `id_lang`, `text`) VALUES
@@ -13913,7 +13938,7 @@ INSERT INTO `jms_info_lang` (`id_info`, `id_shop`, `id_lang`, `text`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_info_shop`
+-- Cấu trúc bảng cho bảng `jms_info_shop`
 --
 
 CREATE TABLE `jms_info_shop` (
@@ -13922,7 +13947,7 @@ CREATE TABLE `jms_info_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_info_shop`
+-- Đang đổ dữ liệu cho bảng `jms_info_shop`
 --
 
 INSERT INTO `jms_info_shop` (`id_info`, `id_shop`) VALUES
@@ -13931,7 +13956,7 @@ INSERT INTO `jms_info_shop` (`id_info`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmsblog_categories`
+-- Cấu trúc bảng cho bảng `jms_jmsblog_categories`
 --
 
 CREATE TABLE `jms_jmsblog_categories` (
@@ -13942,7 +13967,7 @@ CREATE TABLE `jms_jmsblog_categories` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jmsblog_categories`
+-- Đang đổ dữ liệu cho bảng `jms_jmsblog_categories`
 --
 
 INSERT INTO `jms_jmsblog_categories` (`category_id`, `ordering`, `active`, `parent`) VALUES
@@ -13951,7 +13976,7 @@ INSERT INTO `jms_jmsblog_categories` (`category_id`, `ordering`, `active`, `pare
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmsblog_categories_lang`
+-- Cấu trúc bảng cho bảng `jms_jmsblog_categories_lang`
 --
 
 CREATE TABLE `jms_jmsblog_categories_lang` (
@@ -13964,7 +13989,7 @@ CREATE TABLE `jms_jmsblog_categories_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jmsblog_categories_lang`
+-- Đang đổ dữ liệu cho bảng `jms_jmsblog_categories_lang`
 --
 
 INSERT INTO `jms_jmsblog_categories_lang` (`category_id`, `id_lang`, `title`, `alias`, `description`, `image`) VALUES
@@ -13973,7 +13998,7 @@ INSERT INTO `jms_jmsblog_categories_lang` (`category_id`, `id_lang`, `title`, `a
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmsblog_posts`
+-- Cấu trúc bảng cho bảng `jms_jmsblog_posts`
 --
 
 CREATE TABLE `jms_jmsblog_posts` (
@@ -13988,7 +14013,7 @@ CREATE TABLE `jms_jmsblog_posts` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jmsblog_posts`
+-- Đang đổ dữ liệu cho bảng `jms_jmsblog_posts`
 --
 
 INSERT INTO `jms_jmsblog_posts` (`post_id`, `ordering`, `active`, `category_id`, `created`, `link_video`, `modified`, `views`) VALUES
@@ -14000,7 +14025,7 @@ INSERT INTO `jms_jmsblog_posts` (`post_id`, `ordering`, `active`, `category_id`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmsblog_posts_comments`
+-- Cấu trúc bảng cho bảng `jms_jmsblog_posts_comments`
 --
 
 CREATE TABLE `jms_jmsblog_posts_comments` (
@@ -14018,7 +14043,7 @@ CREATE TABLE `jms_jmsblog_posts_comments` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmsblog_posts_lang`
+-- Cấu trúc bảng cho bảng `jms_jmsblog_posts_lang`
 --
 
 CREATE TABLE `jms_jmsblog_posts_lang` (
@@ -14036,7 +14061,7 @@ CREATE TABLE `jms_jmsblog_posts_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jmsblog_posts_lang`
+-- Đang đổ dữ liệu cho bảng `jms_jmsblog_posts_lang`
 --
 
 INSERT INTO `jms_jmsblog_posts_lang` (`post_id`, `id_lang`, `title`, `alias`, `introtext`, `fulltext`, `meta_desc`, `meta_key`, `key_ref`, `image`, `tags`) VALUES
@@ -14068,7 +14093,7 @@ INSERT INTO `jms_jmsblog_posts_lang` (`post_id`, `id_lang`, `title`, `alias`, `i
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmsbrands`
+-- Cấu trúc bảng cho bảng `jms_jmsbrands`
 --
 
 CREATE TABLE `jms_jmsbrands` (
@@ -14077,7 +14102,7 @@ CREATE TABLE `jms_jmsbrands` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jmsbrands`
+-- Đang đổ dữ liệu cho bảng `jms_jmsbrands`
 --
 
 INSERT INTO `jms_jmsbrands` (`brand_id`, `id_shop`) VALUES
@@ -14091,7 +14116,7 @@ INSERT INTO `jms_jmsbrands` (`brand_id`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmsbrands_logos`
+-- Cấu trúc bảng cho bảng `jms_jmsbrands_logos`
 --
 
 CREATE TABLE `jms_jmsbrands_logos` (
@@ -14101,7 +14126,7 @@ CREATE TABLE `jms_jmsbrands_logos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jmsbrands_logos`
+-- Đang đổ dữ liệu cho bảng `jms_jmsbrands_logos`
 --
 
 INSERT INTO `jms_jmsbrands_logos` (`brand_id`, `ordering`, `active`) VALUES
@@ -14115,7 +14140,7 @@ INSERT INTO `jms_jmsbrands_logos` (`brand_id`, `ordering`, `active`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmsbrands_logos_lang`
+-- Cấu trúc bảng cho bảng `jms_jmsbrands_logos_lang`
 --
 
 CREATE TABLE `jms_jmsbrands_logos_lang` (
@@ -14128,7 +14153,7 @@ CREATE TABLE `jms_jmsbrands_logos_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jmsbrands_logos_lang`
+-- Đang đổ dữ liệu cho bảng `jms_jmsbrands_logos_lang`
 --
 
 INSERT INTO `jms_jmsbrands_logos_lang` (`brand_id`, `id_lang`, `title`, `description`, `url`, `image`) VALUES
@@ -14172,7 +14197,7 @@ INSERT INTO `jms_jmsbrands_logos_lang` (`brand_id`, `id_lang`, `title`, `descrip
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmsfacebookusers`
+-- Cấu trúc bảng cho bảng `jms_jmsfacebookusers`
 --
 
 CREATE TABLE `jms_jmsfacebookusers` (
@@ -14192,7 +14217,7 @@ CREATE TABLE `jms_jmsfacebookusers` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmshtml_left`
+-- Cấu trúc bảng cho bảng `jms_jmshtml_left`
 --
 
 CREATE TABLE `jms_jmshtml_left` (
@@ -14201,7 +14226,7 @@ CREATE TABLE `jms_jmshtml_left` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jmshtml_left`
+-- Đang đổ dữ liệu cho bảng `jms_jmshtml_left`
 --
 
 INSERT INTO `jms_jmshtml_left` (`html_id`, `id_shop`) VALUES
@@ -14210,7 +14235,7 @@ INSERT INTO `jms_jmshtml_left` (`html_id`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmshtml_left_lang`
+-- Cấu trúc bảng cho bảng `jms_jmshtml_left_lang`
 --
 
 CREATE TABLE `jms_jmshtml_left_lang` (
@@ -14220,7 +14245,7 @@ CREATE TABLE `jms_jmshtml_left_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jmshtml_left_lang`
+-- Đang đổ dữ liệu cho bảng `jms_jmshtml_left_lang`
 --
 
 INSERT INTO `jms_jmshtml_left_lang` (`html_id`, `id_lang`, `html`) VALUES
@@ -14234,7 +14259,7 @@ INSERT INTO `jms_jmshtml_left_lang` (`html_id`, `id_lang`, `html`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmsmaploc`
+-- Cấu trúc bảng cho bảng `jms_jmsmaploc`
 --
 
 CREATE TABLE `jms_jmsmaploc` (
@@ -14243,7 +14268,7 @@ CREATE TABLE `jms_jmsmaploc` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jmsmaploc`
+-- Đang đổ dữ liệu cho bảng `jms_jmsmaploc`
 --
 
 INSERT INTO `jms_jmsmaploc` (`id_loc`, `id_shop`) VALUES
@@ -14256,7 +14281,7 @@ INSERT INTO `jms_jmsmaploc` (`id_loc`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmsmaploc_locs`
+-- Cấu trúc bảng cho bảng `jms_jmsmaploc_locs`
 --
 
 CREATE TABLE `jms_jmsmaploc_locs` (
@@ -14270,7 +14295,7 @@ CREATE TABLE `jms_jmsmaploc_locs` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jmsmaploc_locs`
+-- Đang đổ dữ liệu cho bảng `jms_jmsmaploc_locs`
 --
 
 INSERT INTO `jms_jmsmaploc_locs` (`id_loc`, `class`, `address`, `latitude`, `longitude`, `icon`, `active`) VALUES
@@ -14283,7 +14308,7 @@ INSERT INTO `jms_jmsmaploc_locs` (`id_loc`, `class`, `address`, `latitude`, `lon
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmsmaploc_locs_lang`
+-- Cấu trúc bảng cho bảng `jms_jmsmaploc_locs_lang`
 --
 
 CREATE TABLE `jms_jmsmaploc_locs_lang` (
@@ -14295,7 +14320,7 @@ CREATE TABLE `jms_jmsmaploc_locs_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jmsmaploc_locs_lang`
+-- Đang đổ dữ liệu cho bảng `jms_jmsmaploc_locs_lang`
 --
 
 INSERT INTO `jms_jmsmaploc_locs_lang` (`id_loc`, `id_lang`, `title`, `description`, `url`) VALUES
@@ -14308,7 +14333,7 @@ INSERT INTO `jms_jmsmaploc_locs_lang` (`id_loc`, `id_lang`, `title`, `descriptio
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmsmegamenu`
+-- Cấu trúc bảng cho bảng `jms_jmsmegamenu`
 --
 
 CREATE TABLE `jms_jmsmegamenu` (
@@ -14325,7 +14350,7 @@ CREATE TABLE `jms_jmsmegamenu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jmsmegamenu`
+-- Đang đổ dữ liệu cho bảng `jms_jmsmegamenu`
 --
 
 INSERT INTO `jms_jmsmegamenu` (`mitem_id`, `id_shop`, `parent_id`, `type`, `value`, `html_content`, `active`, `target`, `params`, `ordering`) VALUES
@@ -14487,7 +14512,7 @@ INSERT INTO `jms_jmsmegamenu` (`mitem_id`, `id_shop`, `parent_id`, `type`, `valu
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmsmegamenu_lang`
+-- Cấu trúc bảng cho bảng `jms_jmsmegamenu_lang`
 --
 
 CREATE TABLE `jms_jmsmegamenu_lang` (
@@ -14498,7 +14523,7 @@ CREATE TABLE `jms_jmsmegamenu_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jmsmegamenu_lang`
+-- Đang đổ dữ liệu cho bảng `jms_jmsmegamenu_lang`
 --
 
 INSERT INTO `jms_jmsmegamenu_lang` (`mitem_id`, `id_lang`, `name`, `menulink`) VALUES
@@ -15623,7 +15648,7 @@ INSERT INTO `jms_jmsmegamenu_lang` (`mitem_id`, `id_lang`, `name`, `menulink`) V
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmspagebuilder`
+-- Cấu trúc bảng cho bảng `jms_jmspagebuilder`
 --
 
 CREATE TABLE `jms_jmspagebuilder` (
@@ -15632,7 +15657,7 @@ CREATE TABLE `jms_jmspagebuilder` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jmspagebuilder`
+-- Đang đổ dữ liệu cho bảng `jms_jmspagebuilder`
 --
 
 INSERT INTO `jms_jmspagebuilder` (`id_homepage`, `id_shop`) VALUES
@@ -15649,7 +15674,7 @@ INSERT INTO `jms_jmspagebuilder` (`id_homepage`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmspagebuilder_homepages`
+-- Cấu trúc bảng cho bảng `jms_jmspagebuilder_homepages`
 --
 
 CREATE TABLE `jms_jmspagebuilder_homepages` (
@@ -15664,7 +15689,7 @@ CREATE TABLE `jms_jmspagebuilder_homepages` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jmspagebuilder_homepages`
+-- Đang đổ dữ liệu cho bảng `jms_jmspagebuilder_homepages`
 --
 
 INSERT INTO `jms_jmspagebuilder_homepages` (`id_homepage`, `title`, `css_file`, `js_file`, `home_class`, `params`, `active`, `ordering`) VALUES
@@ -15697,7 +15722,7 @@ INSERT INTO `jms_jmspagebuilder_homepages` (`id_homepage`, `title`, `css_file`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmstestimonials`
+-- Cấu trúc bảng cho bảng `jms_jmstestimonials`
 --
 
 CREATE TABLE `jms_jmstestimonials` (
@@ -15709,7 +15734,7 @@ CREATE TABLE `jms_jmstestimonials` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jmstestimonials`
+-- Đang đổ dữ liệu cho bảng `jms_jmstestimonials`
 --
 
 INSERT INTO `jms_jmstestimonials` (`id_testimonial`, `author`, `posttime`, `image`, `active`) VALUES
@@ -15721,7 +15746,7 @@ INSERT INTO `jms_jmstestimonials` (`id_testimonial`, `author`, `posttime`, `imag
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmstestimonials_lang`
+-- Cấu trúc bảng cho bảng `jms_jmstestimonials_lang`
 --
 
 CREATE TABLE `jms_jmstestimonials_lang` (
@@ -15732,7 +15757,7 @@ CREATE TABLE `jms_jmstestimonials_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jmstestimonials_lang`
+-- Đang đổ dữ liệu cho bảng `jms_jmstestimonials_lang`
 --
 
 INSERT INTO `jms_jmstestimonials_lang` (`id_testimonial`, `id_lang`, `office`, `comment`) VALUES
@@ -15744,7 +15769,7 @@ INSERT INTO `jms_jmstestimonials_lang` (`id_testimonial`, `id_lang`, `office`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jms_hook`
+-- Cấu trúc bảng cho bảng `jms_jms_hook`
 --
 
 CREATE TABLE `jms_jms_hook` (
@@ -15753,7 +15778,7 @@ CREATE TABLE `jms_jms_hook` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_jms_hook`
+-- Đang đổ dữ liệu cho bảng `jms_jms_hook`
 --
 
 INSERT INTO `jms_jms_hook` (`id_hook`, `name`) VALUES
@@ -15766,7 +15791,7 @@ INSERT INTO `jms_jms_hook` (`id_hook`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jms_layer_style`
+-- Cấu trúc bảng cho bảng `jms_jms_layer_style`
 --
 
 CREATE TABLE `jms_jms_layer_style` (
@@ -15785,7 +15810,7 @@ CREATE TABLE `jms_jms_layer_style` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_jms_layer_style`
+-- Đang đổ dữ liệu cho bảng `jms_jms_layer_style`
 --
 
 INSERT INTO `jms_jms_layer_style` (`id_style`, `id_layer`, `type`, `data_style`, `data_font_weight`, `data_font_size`, `data_line_height`, `data_x`, `data_y`, `data_width`, `data_height`, `data_show`) VALUES
@@ -15833,7 +15858,7 @@ INSERT INTO `jms_jms_layer_style` (`id_style`, `id_layer`, `type`, `data_style`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jms_producttab`
+-- Cấu trúc bảng cho bảng `jms_jms_producttab`
 --
 
 CREATE TABLE `jms_jms_producttab` (
@@ -15842,7 +15867,7 @@ CREATE TABLE `jms_jms_producttab` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jms_producttab`
+-- Đang đổ dữ liệu cho bảng `jms_jms_producttab`
 --
 
 INSERT INTO `jms_jms_producttab` (`tab_id`, `id_shop`) VALUES
@@ -15863,7 +15888,7 @@ INSERT INTO `jms_jms_producttab` (`tab_id`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jms_producttab_ctab`
+-- Cấu trúc bảng cho bảng `jms_jms_producttab_ctab`
 --
 
 CREATE TABLE `jms_jms_producttab_ctab` (
@@ -15872,7 +15897,7 @@ CREATE TABLE `jms_jms_producttab_ctab` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jms_producttab_ctab`
+-- Đang đổ dữ liệu cho bảng `jms_jms_producttab_ctab`
 --
 
 INSERT INTO `jms_jms_producttab_ctab` (`tab_id`, `product_id`) VALUES
@@ -15893,7 +15918,7 @@ INSERT INTO `jms_jms_producttab_ctab` (`tab_id`, `product_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jms_producttab_ctab_lang`
+-- Cấu trúc bảng cho bảng `jms_jms_producttab_ctab_lang`
 --
 
 CREATE TABLE `jms_jms_producttab_ctab_lang` (
@@ -15904,7 +15929,7 @@ CREATE TABLE `jms_jms_producttab_ctab_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jms_producttab_ctab_lang`
+-- Đang đổ dữ liệu cho bảng `jms_jms_producttab_ctab_lang`
 --
 
 INSERT INTO `jms_jms_producttab_ctab_lang` (`tab_id`, `id_lang`, `tab_title`, `html_content`) VALUES
@@ -15990,7 +16015,7 @@ INSERT INTO `jms_jms_producttab_ctab_lang` (`tab_id`, `id_lang`, `tab_title`, `h
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jms_product_video`
+-- Cấu trúc bảng cho bảng `jms_jms_product_video`
 --
 
 CREATE TABLE `jms_jms_product_video` (
@@ -16002,7 +16027,7 @@ CREATE TABLE `jms_jms_product_video` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jms_product_video`
+-- Đang đổ dữ liệu cho bảng `jms_jms_product_video`
 --
 
 INSERT INTO `jms_jms_product_video` (`id`, `id_product`, `id_lang`, `title`, `link`) VALUES
@@ -16088,7 +16113,7 @@ INSERT INTO `jms_jms_product_video` (`id`, `id_product`, `id_lang`, `title`, `li
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jms_slider`
+-- Cấu trúc bảng cho bảng `jms_jms_slider`
 --
 
 CREATE TABLE `jms_jms_slider` (
@@ -16124,7 +16149,7 @@ CREATE TABLE `jms_jms_slider` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_jms_slider`
+-- Đang đổ dữ liệu cho bảng `jms_jms_slider`
 --
 
 INSERT INTO `jms_jms_slider` (`id_slider`, `title`, `delay`, `x`, `y`, `trans`, `trans_in`, `trans_out`, `ease_in`, `ease_out`, `speed_in`, `speed_out`, `duration`, `bg_animation`, `bg_ease`, `end_animate`, `full_width`, `responsive`, `max_width`, `max_height`, `mobile_height`, `tablet_height`, `mobile2_height`, `auto_change`, `pause_hover`, `show_pager`, `show_control`, `active`, `order`) VALUES
@@ -16134,7 +16159,7 @@ INSERT INTO `jms_jms_slider` (`id_slider`, `title`, `delay`, `x`, `y`, `trans`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jms_slider_hook`
+-- Cấu trúc bảng cho bảng `jms_jms_slider_hook`
 --
 
 CREATE TABLE `jms_jms_slider_hook` (
@@ -16145,7 +16170,7 @@ CREATE TABLE `jms_jms_slider_hook` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jms_slider_lang`
+-- Cấu trúc bảng cho bảng `jms_jms_slider_lang`
 --
 
 CREATE TABLE `jms_jms_slider_lang` (
@@ -16154,7 +16179,7 @@ CREATE TABLE `jms_jms_slider_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jms_slider_lang`
+-- Đang đổ dữ liệu cho bảng `jms_jms_slider_lang`
 --
 
 INSERT INTO `jms_jms_slider_lang` (`id_slider`, `id_lang`) VALUES
@@ -16164,7 +16189,7 @@ INSERT INTO `jms_jms_slider_lang` (`id_slider`, `id_lang`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jms_slides`
+-- Cấu trúc bảng cho bảng `jms_jms_slides`
 --
 
 CREATE TABLE `jms_jms_slides` (
@@ -16181,7 +16206,7 @@ CREATE TABLE `jms_jms_slides` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jms_slides`
+-- Đang đổ dữ liệu cho bảng `jms_jms_slides`
 --
 
 INSERT INTO `jms_jms_slides` (`id_slide`, `id_slider`, `title`, `class_suffix`, `bg_type`, `bg_image`, `bg_color`, `slide_link`, `order`, `status`) VALUES
@@ -16191,7 +16216,7 @@ INSERT INTO `jms_jms_slides` (`id_slide`, `id_slider`, `title`, `class_suffix`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jms_slides_layers`
+-- Cấu trúc bảng cho bảng `jms_jms_slides_layers`
 --
 
 CREATE TABLE `jms_jms_slides_layers` (
@@ -16225,7 +16250,7 @@ CREATE TABLE `jms_jms_slides_layers` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jms_slides_layers`
+-- Đang đổ dữ liệu cho bảng `jms_jms_slides_layers`
 --
 
 INSERT INTO `jms_jms_slides_layers` (`id_layer`, `id_slide`, `data_title`, `data_class_suffix`, `data_fixed`, `data_delay`, `data_time`, `data_in`, `data_out`, `data_ease_in`, `data_ease_out`, `data_transform_in`, `data_transform_out`, `data_type`, `data_image`, `data_html`, `data_video`, `data_video_controls`, `data_video_muted`, `data_video_autoplay`, `data_video_loop`, `data_video_bg`, `data_color`, `data_width`, `data_height`, `data_order`, `data_status`) VALUES
@@ -16243,7 +16268,7 @@ INSERT INTO `jms_jms_slides_layers` (`id_layer`, `id_slide`, `data_title`, `data
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jms_slides_shop`
+-- Cấu trúc bảng cho bảng `jms_jms_slides_shop`
 --
 
 CREATE TABLE `jms_jms_slides_shop` (
@@ -16252,7 +16277,7 @@ CREATE TABLE `jms_jms_slides_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jms_slides_shop`
+-- Đang đổ dữ liệu cho bảng `jms_jms_slides_shop`
 --
 
 INSERT INTO `jms_jms_slides_shop` (`id_slide`, `id_shop`) VALUES
@@ -16262,7 +16287,7 @@ INSERT INTO `jms_jms_slides_shop` (`id_slide`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_lang`
+-- Cấu trúc bảng cho bảng `jms_lang`
 --
 
 CREATE TABLE `jms_lang` (
@@ -16278,7 +16303,7 @@ CREATE TABLE `jms_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_lang`
+-- Đang đổ dữ liệu cho bảng `jms_lang`
 --
 
 INSERT INTO `jms_lang` (`id_lang`, `name`, `active`, `iso_code`, `language_code`, `locale`, `date_format_lite`, `date_format_full`, `is_rtl`) VALUES
@@ -16292,7 +16317,7 @@ INSERT INTO `jms_lang` (`id_lang`, `name`, `active`, `iso_code`, `language_code`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_lang_shop`
+-- Cấu trúc bảng cho bảng `jms_lang_shop`
 --
 
 CREATE TABLE `jms_lang_shop` (
@@ -16301,7 +16326,7 @@ CREATE TABLE `jms_lang_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_lang_shop`
+-- Đang đổ dữ liệu cho bảng `jms_lang_shop`
 --
 
 INSERT INTO `jms_lang_shop` (`id_lang`, `id_shop`) VALUES
@@ -16315,7 +16340,7 @@ INSERT INTO `jms_lang_shop` (`id_lang`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_layered_category`
+-- Cấu trúc bảng cho bảng `jms_layered_category`
 --
 
 CREATE TABLE `jms_layered_category` (
@@ -16330,7 +16355,7 @@ CREATE TABLE `jms_layered_category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `jms_layered_category`
+-- Đang đổ dữ liệu cho bảng `jms_layered_category`
 --
 
 INSERT INTO `jms_layered_category` (`id_layered_category`, `id_shop`, `id_category`, `id_value`, `type`, `position`, `filter_type`, `filter_show_limit`) VALUES
@@ -16378,7 +16403,7 @@ INSERT INTO `jms_layered_category` (`id_layered_category`, `id_shop`, `id_catego
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_layered_filter`
+-- Cấu trúc bảng cho bảng `jms_layered_filter`
 --
 
 CREATE TABLE `jms_layered_filter` (
@@ -16390,7 +16415,7 @@ CREATE TABLE `jms_layered_filter` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_layered_filter`
+-- Đang đổ dữ liệu cho bảng `jms_layered_filter`
 --
 
 INSERT INTO `jms_layered_filter` (`id_layered_filter`, `name`, `filters`, `n_categories`, `date_add`) VALUES
@@ -16399,7 +16424,7 @@ INSERT INTO `jms_layered_filter` (`id_layered_filter`, `name`, `filters`, `n_cat
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_layered_filter_shop`
+-- Cấu trúc bảng cho bảng `jms_layered_filter_shop`
 --
 
 CREATE TABLE `jms_layered_filter_shop` (
@@ -16410,7 +16435,7 @@ CREATE TABLE `jms_layered_filter_shop` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_layered_indexable_attribute_group`
+-- Cấu trúc bảng cho bảng `jms_layered_indexable_attribute_group`
 --
 
 CREATE TABLE `jms_layered_indexable_attribute_group` (
@@ -16419,7 +16444,7 @@ CREATE TABLE `jms_layered_indexable_attribute_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_layered_indexable_attribute_group`
+-- Đang đổ dữ liệu cho bảng `jms_layered_indexable_attribute_group`
 --
 
 INSERT INTO `jms_layered_indexable_attribute_group` (`id_attribute_group`, `indexable`) VALUES
@@ -16429,7 +16454,7 @@ INSERT INTO `jms_layered_indexable_attribute_group` (`id_attribute_group`, `inde
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_layered_indexable_attribute_group_lang_value`
+-- Cấu trúc bảng cho bảng `jms_layered_indexable_attribute_group_lang_value`
 --
 
 CREATE TABLE `jms_layered_indexable_attribute_group_lang_value` (
@@ -16442,7 +16467,7 @@ CREATE TABLE `jms_layered_indexable_attribute_group_lang_value` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_layered_indexable_attribute_lang_value`
+-- Cấu trúc bảng cho bảng `jms_layered_indexable_attribute_lang_value`
 --
 
 CREATE TABLE `jms_layered_indexable_attribute_lang_value` (
@@ -16453,7 +16478,7 @@ CREATE TABLE `jms_layered_indexable_attribute_lang_value` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_layered_indexable_attribute_lang_value`
+-- Đang đổ dữ liệu cho bảng `jms_layered_indexable_attribute_lang_value`
 --
 
 INSERT INTO `jms_layered_indexable_attribute_lang_value` (`id_attribute`, `id_lang`, `url_name`, `meta_title`) VALUES
@@ -16599,7 +16624,7 @@ INSERT INTO `jms_layered_indexable_attribute_lang_value` (`id_attribute`, `id_la
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_layered_indexable_feature`
+-- Cấu trúc bảng cho bảng `jms_layered_indexable_feature`
 --
 
 CREATE TABLE `jms_layered_indexable_feature` (
@@ -16608,7 +16633,7 @@ CREATE TABLE `jms_layered_indexable_feature` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_layered_indexable_feature`
+-- Đang đổ dữ liệu cho bảng `jms_layered_indexable_feature`
 --
 
 INSERT INTO `jms_layered_indexable_feature` (`id_feature`, `indexable`) VALUES
@@ -16621,7 +16646,7 @@ INSERT INTO `jms_layered_indexable_feature` (`id_feature`, `indexable`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_layered_indexable_feature_lang_value`
+-- Cấu trúc bảng cho bảng `jms_layered_indexable_feature_lang_value`
 --
 
 CREATE TABLE `jms_layered_indexable_feature_lang_value` (
@@ -16634,7 +16659,7 @@ CREATE TABLE `jms_layered_indexable_feature_lang_value` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_layered_indexable_feature_value_lang_value`
+-- Cấu trúc bảng cho bảng `jms_layered_indexable_feature_value_lang_value`
 --
 
 CREATE TABLE `jms_layered_indexable_feature_value_lang_value` (
@@ -16647,7 +16672,7 @@ CREATE TABLE `jms_layered_indexable_feature_value_lang_value` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_layered_price_index`
+-- Cấu trúc bảng cho bảng `jms_layered_price_index`
 --
 
 CREATE TABLE `jms_layered_price_index` (
@@ -16659,7 +16684,7 @@ CREATE TABLE `jms_layered_price_index` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_layered_price_index`
+-- Đang đổ dữ liệu cho bảng `jms_layered_price_index`
 --
 
 INSERT INTO `jms_layered_price_index` (`id_product`, `id_currency`, `id_shop`, `price_min`, `price_max`) VALUES
@@ -16712,7 +16737,7 @@ INSERT INTO `jms_layered_price_index` (`id_product`, `id_currency`, `id_shop`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_layered_product_attribute`
+-- Cấu trúc bảng cho bảng `jms_layered_product_attribute`
 --
 
 CREATE TABLE `jms_layered_product_attribute` (
@@ -16723,7 +16748,7 @@ CREATE TABLE `jms_layered_product_attribute` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_layered_product_attribute`
+-- Đang đổ dữ liệu cho bảng `jms_layered_product_attribute`
 --
 
 INSERT INTO `jms_layered_product_attribute` (`id_attribute`, `id_product`, `id_attribute_group`, `id_shop`) VALUES
@@ -16838,7 +16863,7 @@ INSERT INTO `jms_layered_product_attribute` (`id_attribute`, `id_product`, `id_a
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_linksmenutop`
+-- Cấu trúc bảng cho bảng `jms_linksmenutop`
 --
 
 CREATE TABLE `jms_linksmenutop` (
@@ -16850,7 +16875,7 @@ CREATE TABLE `jms_linksmenutop` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_linksmenutop_lang`
+-- Cấu trúc bảng cho bảng `jms_linksmenutop_lang`
 --
 
 CREATE TABLE `jms_linksmenutop_lang` (
@@ -16864,7 +16889,7 @@ CREATE TABLE `jms_linksmenutop_lang` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_link_block`
+-- Cấu trúc bảng cho bảng `jms_link_block`
 --
 
 CREATE TABLE `jms_link_block` (
@@ -16875,7 +16900,7 @@ CREATE TABLE `jms_link_block` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_link_block`
+-- Đang đổ dữ liệu cho bảng `jms_link_block`
 --
 
 INSERT INTO `jms_link_block` (`id_link_block`, `id_hook`, `position`, `content`) VALUES
@@ -16885,7 +16910,7 @@ INSERT INTO `jms_link_block` (`id_link_block`, `id_hook`, `position`, `content`)
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_link_block_lang`
+-- Cấu trúc bảng cho bảng `jms_link_block_lang`
 --
 
 CREATE TABLE `jms_link_block_lang` (
@@ -16896,7 +16921,7 @@ CREATE TABLE `jms_link_block_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_link_block_lang`
+-- Đang đổ dữ liệu cho bảng `jms_link_block_lang`
 --
 
 INSERT INTO `jms_link_block_lang` (`id_link_block`, `id_lang`, `name`, `custom_content`) VALUES
@@ -16922,7 +16947,7 @@ INSERT INTO `jms_link_block_lang` (`id_link_block`, `id_lang`, `name`, `custom_c
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_link_block_shop`
+-- Cấu trúc bảng cho bảng `jms_link_block_shop`
 --
 
 CREATE TABLE `jms_link_block_shop` (
@@ -16933,7 +16958,7 @@ CREATE TABLE `jms_link_block_shop` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_log`
+-- Cấu trúc bảng cho bảng `jms_log`
 --
 
 CREATE TABLE `jms_log` (
@@ -16949,7 +16974,7 @@ CREATE TABLE `jms_log` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_log`
+-- Đang đổ dữ liệu cho bảng `jms_log`
 --
 
 INSERT INTO `jms_log` (`id_log`, `severity`, `error_code`, `message`, `object_type`, `object_id`, `id_employee`, `date_add`, `date_upd`) VALUES
@@ -17134,12 +17159,18 @@ INSERT INTO `jms_log` (`id_log`, `severity`, `error_code`, `message`, `object_ty
 (179, 1, 0, 'Product modification', 'Product', 30, 1, '2019-06-11 04:41:57', '2019-06-11 04:41:57'),
 (180, 1, 0, 'Product modification', 'Product', 31, 1, '2019-06-11 04:43:14', '2019-06-11 04:43:14'),
 (181, 1, 0, 'Product modification', 'Product', 32, 1, '2019-06-11 04:43:43', '2019-06-11 04:43:43'),
-(182, 1, 0, 'AttributeGroup modification', 'AttributeGroup', 1, 1, '2019-06-11 05:13:15', '2019-06-11 05:13:15');
+(182, 1, 0, 'AttributeGroup modification', 'AttributeGroup', 1, 1, '2019-06-11 05:13:15', '2019-06-11 05:13:15'),
+(183, 1, 0, 'Back office connection from ::1', '', 0, 1, '2019-06-12 00:28:34', '2019-06-12 00:28:34'),
+(184, 1, 0, 'Back office connection from 127.0.0.1', '', 0, 1, '2019-06-12 03:20:14', '2019-06-12 03:20:14'),
+(185, 1, 0, 'Product modification', 'Product', 20, 1, '2019-06-12 03:26:19', '2019-06-12 03:26:19'),
+(186, 1, 0, 'Product modification', 'Product', 20, 1, '2019-06-12 05:08:04', '2019-06-12 05:08:04'),
+(187, 1, 0, 'Product modification', 'Product', 20, 1, '2019-06-12 05:08:21', '2019-06-12 05:08:21'),
+(188, 1, 0, 'Product modification', 'Product', 20, 1, '2019-06-12 05:09:05', '2019-06-12 05:09:05');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_mail`
+-- Cấu trúc bảng cho bảng `jms_mail`
 --
 
 CREATE TABLE `jms_mail` (
@@ -17154,7 +17185,7 @@ CREATE TABLE `jms_mail` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_manufacturer`
+-- Cấu trúc bảng cho bảng `jms_manufacturer`
 --
 
 CREATE TABLE `jms_manufacturer` (
@@ -17166,7 +17197,7 @@ CREATE TABLE `jms_manufacturer` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_manufacturer`
+-- Đang đổ dữ liệu cho bảng `jms_manufacturer`
 --
 
 INSERT INTO `jms_manufacturer` (`id_manufacturer`, `name`, `date_add`, `date_upd`, `active`) VALUES
@@ -17185,7 +17216,7 @@ INSERT INTO `jms_manufacturer` (`id_manufacturer`, `name`, `date_add`, `date_upd
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_manufacturer_lang`
+-- Cấu trúc bảng cho bảng `jms_manufacturer_lang`
 --
 
 CREATE TABLE `jms_manufacturer_lang` (
@@ -17199,7 +17230,7 @@ CREATE TABLE `jms_manufacturer_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_manufacturer_lang`
+-- Đang đổ dữ liệu cho bảng `jms_manufacturer_lang`
 --
 
 INSERT INTO `jms_manufacturer_lang` (`id_manufacturer`, `id_lang`, `description`, `short_description`, `meta_title`, `meta_keywords`, `meta_description`) VALUES
@@ -17273,7 +17304,7 @@ INSERT INTO `jms_manufacturer_lang` (`id_manufacturer`, `id_lang`, `description`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_manufacturer_shop`
+-- Cấu trúc bảng cho bảng `jms_manufacturer_shop`
 --
 
 CREATE TABLE `jms_manufacturer_shop` (
@@ -17282,7 +17313,7 @@ CREATE TABLE `jms_manufacturer_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_manufacturer_shop`
+-- Đang đổ dữ liệu cho bảng `jms_manufacturer_shop`
 --
 
 INSERT INTO `jms_manufacturer_shop` (`id_manufacturer`, `id_shop`) VALUES
@@ -17301,7 +17332,7 @@ INSERT INTO `jms_manufacturer_shop` (`id_manufacturer`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_memcached_servers`
+-- Cấu trúc bảng cho bảng `jms_memcached_servers`
 --
 
 CREATE TABLE `jms_memcached_servers` (
@@ -17314,7 +17345,7 @@ CREATE TABLE `jms_memcached_servers` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_message`
+-- Cấu trúc bảng cho bảng `jms_message`
 --
 
 CREATE TABLE `jms_message` (
@@ -17331,7 +17362,7 @@ CREATE TABLE `jms_message` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_message_readed`
+-- Cấu trúc bảng cho bảng `jms_message_readed`
 --
 
 CREATE TABLE `jms_message_readed` (
@@ -17343,7 +17374,7 @@ CREATE TABLE `jms_message_readed` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_meta`
+-- Cấu trúc bảng cho bảng `jms_meta`
 --
 
 CREATE TABLE `jms_meta` (
@@ -17353,7 +17384,7 @@ CREATE TABLE `jms_meta` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_meta`
+-- Đang đổ dữ liệu cho bảng `jms_meta`
 --
 
 INSERT INTO `jms_meta` (`id_meta`, `page`, `configurable`) VALUES
@@ -17403,7 +17434,7 @@ INSERT INTO `jms_meta` (`id_meta`, `page`, `configurable`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_meta_lang`
+-- Cấu trúc bảng cho bảng `jms_meta_lang`
 --
 
 CREATE TABLE `jms_meta_lang` (
@@ -17417,7 +17448,7 @@ CREATE TABLE `jms_meta_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_meta_lang`
+-- Đang đổ dữ liệu cho bảng `jms_meta_lang`
 --
 
 INSERT INTO `jms_meta_lang` (`id_meta`, `id_shop`, `id_lang`, `title`, `description`, `keywords`, `url_rewrite`) VALUES
@@ -17731,7 +17762,7 @@ INSERT INTO `jms_meta_lang` (`id_meta`, `id_shop`, `id_lang`, `title`, `descript
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_module`
+-- Cấu trúc bảng cho bảng `jms_module`
 --
 
 CREATE TABLE `jms_module` (
@@ -17742,7 +17773,7 @@ CREATE TABLE `jms_module` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_module`
+-- Đang đổ dữ liệu cho bảng `jms_module`
 --
 
 INSERT INTO `jms_module` (`id_module`, `name`, `active`, `version`) VALUES
@@ -17819,12 +17850,13 @@ INSERT INTO `jms_module` (`id_module`, `name`, `active`, `version`) VALUES
 (71, 'jmscustomhtmlleft', 1, '1.1.0'),
 (72, 'jmsfacebookconnect', 1, '1.1.0'),
 (73, 'jmspagebuilder', 1, '3.1.1'),
-(74, 'jmswishlist', 1, '1.1.0');
+(74, 'jmswishlist', 1, '1.1.0'),
+(75, 'ps_categoryproducts', 1, '1.0.4');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_module_access`
+-- Cấu trúc bảng cho bảng `jms_module_access`
 --
 
 CREATE TABLE `jms_module_access` (
@@ -17833,7 +17865,7 @@ CREATE TABLE `jms_module_access` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_module_access`
+-- Đang đổ dữ liệu cho bảng `jms_module_access`
 --
 
 INSERT INTO `jms_module_access` (`id_profile`, `id_authorization_role`) VALUES
@@ -18132,12 +18164,16 @@ INSERT INTO `jms_module_access` (`id_profile`, `id_authorization_role`) VALUES
 (1, 841),
 (1, 842),
 (1, 843),
-(1, 844);
+(1, 844),
+(1, 845),
+(1, 846),
+(1, 847),
+(1, 848);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_module_carrier`
+-- Cấu trúc bảng cho bảng `jms_module_carrier`
 --
 
 CREATE TABLE `jms_module_carrier` (
@@ -18147,7 +18183,7 @@ CREATE TABLE `jms_module_carrier` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_module_carrier`
+-- Đang đổ dữ liệu cho bảng `jms_module_carrier`
 --
 
 INSERT INTO `jms_module_carrier` (`id_module`, `id_shop`, `id_reference`) VALUES
@@ -18159,7 +18195,7 @@ INSERT INTO `jms_module_carrier` (`id_module`, `id_shop`, `id_reference`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_module_country`
+-- Cấu trúc bảng cho bảng `jms_module_country`
 --
 
 CREATE TABLE `jms_module_country` (
@@ -18169,7 +18205,7 @@ CREATE TABLE `jms_module_country` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_module_country`
+-- Đang đổ dữ liệu cho bảng `jms_module_country`
 --
 
 INSERT INTO `jms_module_country` (`id_module`, `id_shop`, `id_country`) VALUES
@@ -18179,7 +18215,7 @@ INSERT INTO `jms_module_country` (`id_module`, `id_shop`, `id_country`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_module_currency`
+-- Cấu trúc bảng cho bảng `jms_module_currency`
 --
 
 CREATE TABLE `jms_module_currency` (
@@ -18189,7 +18225,7 @@ CREATE TABLE `jms_module_currency` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_module_currency`
+-- Đang đổ dữ liệu cho bảng `jms_module_currency`
 --
 
 INSERT INTO `jms_module_currency` (`id_module`, `id_shop`, `id_currency`) VALUES
@@ -18201,7 +18237,7 @@ INSERT INTO `jms_module_currency` (`id_module`, `id_shop`, `id_currency`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_module_group`
+-- Cấu trúc bảng cho bảng `jms_module_group`
 --
 
 CREATE TABLE `jms_module_group` (
@@ -18211,7 +18247,7 @@ CREATE TABLE `jms_module_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_module_group`
+-- Đang đổ dữ liệu cho bảng `jms_module_group`
 --
 
 INSERT INTO `jms_module_group` (`id_module`, `id_shop`, `id_group`) VALUES
@@ -18436,12 +18472,15 @@ INSERT INTO `jms_module_group` (`id_module`, `id_shop`, `id_group`) VALUES
 (73, 1, 3),
 (74, 1, 1),
 (74, 1, 2),
-(74, 1, 3);
+(74, 1, 3),
+(75, 1, 1),
+(75, 1, 2),
+(75, 1, 3);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_module_history`
+-- Cấu trúc bảng cho bảng `jms_module_history`
 --
 
 CREATE TABLE `jms_module_history` (
@@ -18453,19 +18492,20 @@ CREATE TABLE `jms_module_history` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_module_history`
+-- Đang đổ dữ liệu cho bảng `jms_module_history`
 --
 
 INSERT INTO `jms_module_history` (`id`, `id_employee`, `id_module`, `date_add`, `date_upd`) VALUES
 (1, 1, 66, '2019-05-23 05:52:48', '2019-05-31 03:05:05'),
 (2, 1, 63, '2019-05-27 05:46:24', '2019-05-27 05:46:24'),
 (3, 1, 18, '2019-06-10 02:38:01', '2019-06-10 02:38:01'),
-(4, 1, 71, '2019-06-10 04:14:51', '2019-06-11 00:15:04');
+(4, 1, 71, '2019-06-10 04:14:51', '2019-06-11 00:15:04'),
+(5, 1, 75, '2019-06-12 04:34:14', '2019-06-12 04:34:14');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_module_preference`
+-- Cấu trúc bảng cho bảng `jms_module_preference`
 --
 
 CREATE TABLE `jms_module_preference` (
@@ -18479,7 +18519,7 @@ CREATE TABLE `jms_module_preference` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_module_shop`
+-- Cấu trúc bảng cho bảng `jms_module_shop`
 --
 
 CREATE TABLE `jms_module_shop` (
@@ -18489,7 +18529,7 @@ CREATE TABLE `jms_module_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_module_shop`
+-- Đang đổ dữ liệu cho bảng `jms_module_shop`
 --
 
 INSERT INTO `jms_module_shop` (`id_module`, `id_shop`, `enable_device`) VALUES
@@ -18566,12 +18606,13 @@ INSERT INTO `jms_module_shop` (`id_module`, `id_shop`, `enable_device`) VALUES
 (71, 1, 7),
 (72, 1, 7),
 (73, 1, 7),
-(74, 1, 7);
+(74, 1, 7),
+(75, 1, 7);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_operating_system`
+-- Cấu trúc bảng cho bảng `jms_operating_system`
 --
 
 CREATE TABLE `jms_operating_system` (
@@ -18580,7 +18621,7 @@ CREATE TABLE `jms_operating_system` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_operating_system`
+-- Đang đổ dữ liệu cho bảng `jms_operating_system`
 --
 
 INSERT INTO `jms_operating_system` (`id_operating_system`, `name`) VALUES
@@ -18597,7 +18638,7 @@ INSERT INTO `jms_operating_system` (`id_operating_system`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_orders`
+-- Cấu trúc bảng cho bảng `jms_orders`
 --
 
 CREATE TABLE `jms_orders` (
@@ -18650,7 +18691,7 @@ CREATE TABLE `jms_orders` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_orders`
+-- Đang đổ dữ liệu cho bảng `jms_orders`
 --
 
 INSERT INTO `jms_orders` (`id_order`, `reference`, `id_shop_group`, `id_shop`, `id_carrier`, `id_lang`, `id_customer`, `id_cart`, `id_currency`, `id_address_delivery`, `id_address_invoice`, `current_state`, `secure_key`, `payment`, `conversion_rate`, `module`, `recyclable`, `gift`, `gift_message`, `mobile_theme`, `shipping_number`, `total_discounts`, `total_discounts_tax_incl`, `total_discounts_tax_excl`, `total_paid`, `total_paid_tax_incl`, `total_paid_tax_excl`, `total_paid_real`, `total_products`, `total_products_wt`, `total_shipping`, `total_shipping_tax_incl`, `total_shipping_tax_excl`, `carrier_tax_rate`, `total_wrapping`, `total_wrapping_tax_incl`, `total_wrapping_tax_excl`, `round_mode`, `round_type`, `invoice_number`, `delivery_number`, `invoice_date`, `delivery_date`, `valid`, `date_add`, `date_upd`) VALUES
@@ -18663,7 +18704,7 @@ INSERT INTO `jms_orders` (`id_order`, `reference`, `id_shop_group`, `id_shop`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_carrier`
+-- Cấu trúc bảng cho bảng `jms_order_carrier`
 --
 
 CREATE TABLE `jms_order_carrier` (
@@ -18679,7 +18720,7 @@ CREATE TABLE `jms_order_carrier` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_order_carrier`
+-- Đang đổ dữ liệu cho bảng `jms_order_carrier`
 --
 
 INSERT INTO `jms_order_carrier` (`id_order_carrier`, `id_order`, `id_carrier`, `id_order_invoice`, `weight`, `shipping_cost_tax_excl`, `shipping_cost_tax_incl`, `tracking_number`, `date_add`) VALUES
@@ -18692,7 +18733,7 @@ INSERT INTO `jms_order_carrier` (`id_order_carrier`, `id_order`, `id_carrier`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_cart_rule`
+-- Cấu trúc bảng cho bảng `jms_order_cart_rule`
 --
 
 CREATE TABLE `jms_order_cart_rule` (
@@ -18709,7 +18750,7 @@ CREATE TABLE `jms_order_cart_rule` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_detail`
+-- Cấu trúc bảng cho bảng `jms_order_detail`
 --
 
 CREATE TABLE `jms_order_detail` (
@@ -18762,7 +18803,7 @@ CREATE TABLE `jms_order_detail` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_order_detail`
+-- Đang đổ dữ liệu cho bảng `jms_order_detail`
 --
 
 INSERT INTO `jms_order_detail` (`id_order_detail`, `id_order`, `id_order_invoice`, `id_warehouse`, `id_shop`, `product_id`, `product_attribute_id`, `id_customization`, `product_name`, `product_quantity`, `product_quantity_in_stock`, `product_quantity_refunded`, `product_quantity_return`, `product_quantity_reinjected`, `product_price`, `reduction_percent`, `reduction_amount`, `reduction_amount_tax_incl`, `reduction_amount_tax_excl`, `group_reduction`, `product_quantity_discount`, `product_ean13`, `product_isbn`, `product_upc`, `product_reference`, `product_supplier_reference`, `product_weight`, `id_tax_rules_group`, `tax_computation_method`, `tax_name`, `tax_rate`, `ecotax`, `ecotax_tax_rate`, `discount_quantity_applied`, `download_hash`, `download_nb`, `download_deadline`, `total_price_tax_incl`, `total_price_tax_excl`, `unit_price_tax_incl`, `unit_price_tax_excl`, `total_shipping_price_tax_incl`, `total_shipping_price_tax_excl`, `purchase_supplier_price`, `original_product_price`, `original_wholesale_price`) VALUES
@@ -18777,7 +18818,7 @@ INSERT INTO `jms_order_detail` (`id_order_detail`, `id_order`, `id_order_invoice
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_detail_tax`
+-- Cấu trúc bảng cho bảng `jms_order_detail_tax`
 --
 
 CREATE TABLE `jms_order_detail_tax` (
@@ -18790,7 +18831,7 @@ CREATE TABLE `jms_order_detail_tax` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_history`
+-- Cấu trúc bảng cho bảng `jms_order_history`
 --
 
 CREATE TABLE `jms_order_history` (
@@ -18802,7 +18843,7 @@ CREATE TABLE `jms_order_history` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_order_history`
+-- Đang đổ dữ liệu cho bảng `jms_order_history`
 --
 
 INSERT INTO `jms_order_history` (`id_order_history`, `id_employee`, `id_order`, `id_order_state`, `date_add`) VALUES
@@ -18817,7 +18858,7 @@ INSERT INTO `jms_order_history` (`id_order_history`, `id_employee`, `id_order`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_invoice`
+-- Cấu trúc bảng cho bảng `jms_order_invoice`
 --
 
 CREATE TABLE `jms_order_invoice` (
@@ -18845,7 +18886,7 @@ CREATE TABLE `jms_order_invoice` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_invoice_payment`
+-- Cấu trúc bảng cho bảng `jms_order_invoice_payment`
 --
 
 CREATE TABLE `jms_order_invoice_payment` (
@@ -18857,7 +18898,7 @@ CREATE TABLE `jms_order_invoice_payment` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_invoice_tax`
+-- Cấu trúc bảng cho bảng `jms_order_invoice_tax`
 --
 
 CREATE TABLE `jms_order_invoice_tax` (
@@ -18870,7 +18911,7 @@ CREATE TABLE `jms_order_invoice_tax` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_message`
+-- Cấu trúc bảng cho bảng `jms_order_message`
 --
 
 CREATE TABLE `jms_order_message` (
@@ -18879,7 +18920,7 @@ CREATE TABLE `jms_order_message` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_order_message`
+-- Đang đổ dữ liệu cho bảng `jms_order_message`
 --
 
 INSERT INTO `jms_order_message` (`id_order_message`, `date_add`) VALUES
@@ -18888,7 +18929,7 @@ INSERT INTO `jms_order_message` (`id_order_message`, `date_add`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_message_lang`
+-- Cấu trúc bảng cho bảng `jms_order_message_lang`
 --
 
 CREATE TABLE `jms_order_message_lang` (
@@ -18899,7 +18940,7 @@ CREATE TABLE `jms_order_message_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_order_message_lang`
+-- Đang đổ dữ liệu cho bảng `jms_order_message_lang`
 --
 
 INSERT INTO `jms_order_message_lang` (`id_order_message`, `id_lang`, `name`, `message`) VALUES
@@ -18916,7 +18957,7 @@ INSERT INTO `jms_order_message_lang` (`id_order_message`, `id_lang`, `name`, `me
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_payment`
+-- Cấu trúc bảng cho bảng `jms_order_payment`
 --
 
 CREATE TABLE `jms_order_payment` (
@@ -18937,7 +18978,7 @@ CREATE TABLE `jms_order_payment` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_return`
+-- Cấu trúc bảng cho bảng `jms_order_return`
 --
 
 CREATE TABLE `jms_order_return` (
@@ -18953,7 +18994,7 @@ CREATE TABLE `jms_order_return` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_return_detail`
+-- Cấu trúc bảng cho bảng `jms_order_return_detail`
 --
 
 CREATE TABLE `jms_order_return_detail` (
@@ -18966,7 +19007,7 @@ CREATE TABLE `jms_order_return_detail` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_return_state`
+-- Cấu trúc bảng cho bảng `jms_order_return_state`
 --
 
 CREATE TABLE `jms_order_return_state` (
@@ -18975,7 +19016,7 @@ CREATE TABLE `jms_order_return_state` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_order_return_state`
+-- Đang đổ dữ liệu cho bảng `jms_order_return_state`
 --
 
 INSERT INTO `jms_order_return_state` (`id_order_return_state`, `color`) VALUES
@@ -18988,7 +19029,7 @@ INSERT INTO `jms_order_return_state` (`id_order_return_state`, `color`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_return_state_lang`
+-- Cấu trúc bảng cho bảng `jms_order_return_state_lang`
 --
 
 CREATE TABLE `jms_order_return_state_lang` (
@@ -18998,7 +19039,7 @@ CREATE TABLE `jms_order_return_state_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_order_return_state_lang`
+-- Đang đổ dữ liệu cho bảng `jms_order_return_state_lang`
 --
 
 INSERT INTO `jms_order_return_state_lang` (`id_order_return_state`, `id_lang`, `name`) VALUES
@@ -19051,7 +19092,7 @@ INSERT INTO `jms_order_return_state_lang` (`id_order_return_state`, `id_lang`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_slip`
+-- Cấu trúc bảng cho bảng `jms_order_slip`
 --
 
 CREATE TABLE `jms_order_slip` (
@@ -19075,7 +19116,7 @@ CREATE TABLE `jms_order_slip` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_slip_detail`
+-- Cấu trúc bảng cho bảng `jms_order_slip_detail`
 --
 
 CREATE TABLE `jms_order_slip_detail` (
@@ -19093,7 +19134,7 @@ CREATE TABLE `jms_order_slip_detail` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_slip_detail_tax`
+-- Cấu trúc bảng cho bảng `jms_order_slip_detail_tax`
 --
 
 CREATE TABLE `jms_order_slip_detail_tax` (
@@ -19106,7 +19147,7 @@ CREATE TABLE `jms_order_slip_detail_tax` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_state`
+-- Cấu trúc bảng cho bảng `jms_order_state`
 --
 
 CREATE TABLE `jms_order_state` (
@@ -19127,7 +19168,7 @@ CREATE TABLE `jms_order_state` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_order_state`
+-- Đang đổ dữ liệu cho bảng `jms_order_state`
 --
 
 INSERT INTO `jms_order_state` (`id_order_state`, `invoice`, `send_email`, `module_name`, `color`, `unremovable`, `hidden`, `logable`, `delivery`, `shipped`, `paid`, `pdf_invoice`, `pdf_delivery`, `deleted`) VALUES
@@ -19148,7 +19189,7 @@ INSERT INTO `jms_order_state` (`id_order_state`, `invoice`, `send_email`, `modul
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_state_lang`
+-- Cấu trúc bảng cho bảng `jms_order_state_lang`
 --
 
 CREATE TABLE `jms_order_state_lang` (
@@ -19159,7 +19200,7 @@ CREATE TABLE `jms_order_state_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_order_state_lang`
+-- Đang đổ dữ liệu cho bảng `jms_order_state_lang`
 --
 
 INSERT INTO `jms_order_state_lang` (`id_order_state`, `id_lang`, `name`, `template`) VALUES
@@ -19284,7 +19325,7 @@ INSERT INTO `jms_order_state_lang` (`id_order_state`, `id_lang`, `name`, `templa
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_pack`
+-- Cấu trúc bảng cho bảng `jms_pack`
 --
 
 CREATE TABLE `jms_pack` (
@@ -19297,7 +19338,7 @@ CREATE TABLE `jms_pack` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_page`
+-- Cấu trúc bảng cho bảng `jms_page`
 --
 
 CREATE TABLE `jms_page` (
@@ -19307,7 +19348,7 @@ CREATE TABLE `jms_page` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_page`
+-- Đang đổ dữ liệu cho bảng `jms_page`
 --
 
 INSERT INTO `jms_page` (`id_page`, `id_page_type`, `id_object`) VALUES
@@ -19318,7 +19359,7 @@ INSERT INTO `jms_page` (`id_page`, `id_page_type`, `id_object`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_pagenotfound`
+-- Cấu trúc bảng cho bảng `jms_pagenotfound`
 --
 
 CREATE TABLE `jms_pagenotfound` (
@@ -19333,7 +19374,7 @@ CREATE TABLE `jms_pagenotfound` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_page_type`
+-- Cấu trúc bảng cho bảng `jms_page_type`
 --
 
 CREATE TABLE `jms_page_type` (
@@ -19342,7 +19383,7 @@ CREATE TABLE `jms_page_type` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_page_type`
+-- Đang đổ dữ liệu cho bảng `jms_page_type`
 --
 
 INSERT INTO `jms_page_type` (`id_page_type`, `name`) VALUES
@@ -19353,7 +19394,7 @@ INSERT INTO `jms_page_type` (`id_page_type`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_page_viewed`
+-- Cấu trúc bảng cho bảng `jms_page_viewed`
 --
 
 CREATE TABLE `jms_page_viewed` (
@@ -19367,7 +19408,7 @@ CREATE TABLE `jms_page_viewed` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_product`
+-- Cấu trúc bảng cho bảng `jms_product`
 --
 
 CREATE TABLE `jms_product` (
@@ -19427,11 +19468,11 @@ CREATE TABLE `jms_product` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_product`
+-- Đang đổ dữ liệu cho bảng `jms_product`
 --
 
 INSERT INTO `jms_product` (`id_product`, `id_supplier`, `id_manufacturer`, `id_category_default`, `id_shop_default`, `id_tax_rules_group`, `on_sale`, `online_only`, `ean13`, `isbn`, `upc`, `ecotax`, `quantity`, `minimal_quantity`, `low_stock_threshold`, `low_stock_alert`, `price`, `wholesale_price`, `unity`, `unit_price_ratio`, `additional_shipping_cost`, `reference`, `supplier_reference`, `location`, `width`, `height`, `depth`, `weight`, `out_of_stock`, `additional_delivery_times`, `quantity_discount`, `customizable`, `uploadable_files`, `text_fields`, `active`, `redirect_type`, `id_type_redirected`, `available_for_order`, `available_date`, `show_condition`, `condition`, `show_price`, `indexed`, `visibility`, `cache_is_pack`, `cache_has_attachments`, `is_virtual`, `cache_default_attribute`, `date_add`, `date_upd`, `advanced_stock_management`, `pack_stock_type`, `state`) VALUES
-(20, 0, 3, 12, 1, 0, 0, 0, '', '', '', '0.000000', 0, 1, NULL, 0, '451.000000', '0.000000', '', '0.000000', '0.00', 'demo_1', '', '', '0.000000', '0.000000', '0.000000', '0.000000', 2, 1, 0, 0, 0, 0, 1, '301-category', 0, 1, '0000-00-00', 0, 'new', 1, 1, 'both', 0, 0, 0, 42, '2019-05-24 04:14:29', '2019-06-11 04:38:27', 0, 3, 1),
+(20, 0, 3, 12, 1, 0, 0, 0, '', '', '', '0.000000', 0, 1, NULL, 0, '451.000000', '0.000000', '', '0.000000', '0.00', 'demo_1', '', '', '0.000000', '0.000000', '0.000000', '0.000000', 2, 1, 0, 0, 0, 0, 1, '301-category', 0, 1, '0000-00-00', 0, 'new', 1, 1, 'both', 0, 0, 0, 42, '2019-05-24 04:14:29', '2019-06-12 05:09:05', 0, 3, 1),
 (21, 0, 4, 12, 1, 0, 0, 0, '', '', '', '0.000000', 0, 1, NULL, 0, '171.000000', '0.000000', '', '0.000000', '0.00', 'demo_2', '', '', '0.000000', '0.000000', '0.000000', '0.000000', 2, 1, 0, 0, 0, 0, 1, '301-category', 0, 1, '0000-00-00', 0, 'new', 1, 1, 'both', 0, 0, 0, 76, '2019-05-24 04:34:05', '2019-06-11 04:39:00', 0, 3, 1),
 (22, 0, 5, 12, 1, 0, 1, 0, '', '', '', '0.000000', 0, 1, NULL, 0, '330.000000', '0.000000', '', '0.000000', '0.00', 'demo_3', '', '', '0.000000', '0.000000', '0.000000', '0.000000', 2, 1, 0, 0, 0, 0, 1, '301-category', 0, 1, '0000-00-00', 0, 'new', 1, 1, 'both', 0, 0, 0, 104, '2019-05-24 04:37:39', '2019-06-11 04:39:49', 0, 3, 1),
 (23, 0, 6, 12, 1, 0, 0, 0, '', '', '', '0.000000', 0, 1, NULL, 0, '280.000000', '0.000000', '', '0.000000', '0.00', 'demo_4', '', '', '0.000000', '0.000000', '0.000000', '0.000000', 2, 1, 0, 0, 0, 0, 1, '301-category', 0, 1, '0000-00-00', 0, 'new', 1, 1, 'both', 0, 0, 0, 106, '2019-05-24 04:39:59', '2019-06-11 04:39:58', 0, 3, 1),
@@ -19448,7 +19489,7 @@ INSERT INTO `jms_product` (`id_product`, `id_supplier`, `id_manufacturer`, `id_c
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_product_attachment`
+-- Cấu trúc bảng cho bảng `jms_product_attachment`
 --
 
 CREATE TABLE `jms_product_attachment` (
@@ -19459,7 +19500,7 @@ CREATE TABLE `jms_product_attachment` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_product_attribute`
+-- Cấu trúc bảng cho bảng `jms_product_attribute`
 --
 
 CREATE TABLE `jms_product_attribute` (
@@ -19485,7 +19526,7 @@ CREATE TABLE `jms_product_attribute` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_product_attribute`
+-- Đang đổ dữ liệu cho bảng `jms_product_attribute`
 --
 
 INSERT INTO `jms_product_attribute` (`id_product_attribute`, `id_product`, `reference`, `supplier_reference`, `location`, `ean13`, `isbn`, `upc`, `wholesale_price`, `price`, `ecotax`, `quantity`, `weight`, `unit_price_impact`, `default_on`, `minimal_quantity`, `low_stock_threshold`, `low_stock_alert`, `available_date`) VALUES
@@ -19585,7 +19626,7 @@ INSERT INTO `jms_product_attribute` (`id_product_attribute`, `id_product`, `refe
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_product_attribute_combination`
+-- Cấu trúc bảng cho bảng `jms_product_attribute_combination`
 --
 
 CREATE TABLE `jms_product_attribute_combination` (
@@ -19594,7 +19635,7 @@ CREATE TABLE `jms_product_attribute_combination` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_product_attribute_combination`
+-- Đang đổ dữ liệu cho bảng `jms_product_attribute_combination`
 --
 
 INSERT INTO `jms_product_attribute_combination` (`id_attribute`, `id_product_attribute`) VALUES
@@ -19786,7 +19827,7 @@ INSERT INTO `jms_product_attribute_combination` (`id_attribute`, `id_product_att
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_product_attribute_image`
+-- Cấu trúc bảng cho bảng `jms_product_attribute_image`
 --
 
 CREATE TABLE `jms_product_attribute_image` (
@@ -19797,7 +19838,7 @@ CREATE TABLE `jms_product_attribute_image` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_product_attribute_shop`
+-- Cấu trúc bảng cho bảng `jms_product_attribute_shop`
 --
 
 CREATE TABLE `jms_product_attribute_shop` (
@@ -19817,7 +19858,7 @@ CREATE TABLE `jms_product_attribute_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_product_attribute_shop`
+-- Đang đổ dữ liệu cho bảng `jms_product_attribute_shop`
 --
 
 INSERT INTO `jms_product_attribute_shop` (`id_product`, `id_product_attribute`, `id_shop`, `wholesale_price`, `price`, `ecotax`, `weight`, `unit_price_impact`, `default_on`, `minimal_quantity`, `low_stock_threshold`, `low_stock_alert`, `available_date`) VALUES
@@ -19917,7 +19958,7 @@ INSERT INTO `jms_product_attribute_shop` (`id_product`, `id_product_attribute`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_product_carrier`
+-- Cấu trúc bảng cho bảng `jms_product_carrier`
 --
 
 CREATE TABLE `jms_product_carrier` (
@@ -19929,7 +19970,7 @@ CREATE TABLE `jms_product_carrier` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_product_country_tax`
+-- Cấu trúc bảng cho bảng `jms_product_country_tax`
 --
 
 CREATE TABLE `jms_product_country_tax` (
@@ -19941,7 +19982,7 @@ CREATE TABLE `jms_product_country_tax` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_product_download`
+-- Cấu trúc bảng cho bảng `jms_product_download`
 --
 
 CREATE TABLE `jms_product_download` (
@@ -19960,7 +20001,7 @@ CREATE TABLE `jms_product_download` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_product_group_reduction_cache`
+-- Cấu trúc bảng cho bảng `jms_product_group_reduction_cache`
 --
 
 CREATE TABLE `jms_product_group_reduction_cache` (
@@ -19972,7 +20013,7 @@ CREATE TABLE `jms_product_group_reduction_cache` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_product_lang`
+-- Cấu trúc bảng cho bảng `jms_product_lang`
 --
 
 CREATE TABLE `jms_product_lang` (
@@ -19993,11 +20034,11 @@ CREATE TABLE `jms_product_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_product_lang`
+-- Đang đổ dữ liệu cho bảng `jms_product_lang`
 --
 
 INSERT INTO `jms_product_lang` (`id_product`, `id_shop`, `id_lang`, `description`, `description_short`, `link_rewrite`, `meta_description`, `meta_keywords`, `meta_title`, `name`, `available_now`, `available_later`, `delivery_in_stock`, `delivery_out_stock`) VALUES
-(20, 1, 1, '<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>\r\n<p>Omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunmogo1t explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.</p>\r\n<ul class=\"tt-tabs-product__list\">\r\n<li><span>Omnis iste natus error sit voluptatem</span></li>\r\n<li><span>Accusantium doloremque</span></li>\r\n<li><span>Laudantium, totam rem aperiam,</span></li>\r\n<li><span>Eaque ipsa quae ab illo inventore veritatis</span></li>\r\n</ul>', '<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur</p>', 'belted-chino-trousers-polo', '', '', '', 'Belted chino trousers polo', 'In Stock', 'Out of stock', '', ''),
+(20, 1, 1, '<div class=\"tabs__content rte overflow-hidden\">\r\n<h4>Sample Paragraph Text</h4>\r\n<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>\r\n<h4>Sample Paragraph Text With Images</h4>\r\n<div class=\"overflow-hidden\"><img src=\"https://cdn.shopify.com/s/files/1/0026/2956/6516/files/09_135c04ce-0c74-489e-9660-a4dc239c84c5_large.png?v=1538408527\" alt=\"\" class=\"mr-30 mb-25\" style=\"float:left;\" width=\"470\" height=\"343\" />\r\n<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>\r\n<p><em>Sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</em></p>\r\n</div>\r\n<div class=\"overflow-hidden\"><img src=\"https://cdn.shopify.com/s/files/1/0026/2956/6516/files/10_77ecb486-c28c-49b6-929f-170a4bf0f496_large.png?v=1538409807\" alt=\"\" class=\"ml-30 mb-25\" style=\"float:right;\" width=\"270\" height=\"197\" />\r\n<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>\r\n</div>\r\n<div class=\"overflow-hidden\">\r\n<div class=\"row\">\r\n<div class=\"col-12 col-md-6\">\r\n<h4>Sample Unordered List</h4>\r\n<ul>\r\n<li>Fabric 1: 100% Polyester</li>\r\n<li>Fabric 2: 100% Polyester,Lining: 100% Polyester</li>\r\n<li>Fabric 3: 75% Polyester, 20% Viscose, 5% Elastane</li>\r\n</ul>\r\n</div>\r\n<div class=\"col-12 col-md-6\">\r\n<h4>Sample Numbered List</h4>\r\n<ol>\r\n<li>Fabric 1: 75% Polyester, 20% Viscose, 5% Elastane</li>\r\n<li>Fabric 2: 100% Polyester,Lining: 100% Polyester</li>\r\n<li>Fabric 3: 100% Polyester</li>\r\n</ol></div>\r\n</div>\r\n</div>\r\n</div>', '<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur</p>', 'belted-chino-trousers-polo', '', '', '', 'Belted chino trousers polo', 'In Stock', 'Out of stock', '', ''),
 (20, 1, 2, '', '', 'belted-chino-trousers-polo', '', '', '', 'Belted chino trousers polo', '', '', '', ''),
 (20, 1, 3, '', '', 'belted-chino-trousers-polo', '', '', '', 'Belted chino trousers polo', '', '', '', ''),
 (20, 1, 4, '', '', 'belted-chino-trousers-polo', '', '', '', 'Belted chino trousers polo', '', '', '', ''),
@@ -20079,7 +20120,7 @@ INSERT INTO `jms_product_lang` (`id_product`, `id_shop`, `id_lang`, `description
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_product_sale`
+-- Cấu trúc bảng cho bảng `jms_product_sale`
 --
 
 CREATE TABLE `jms_product_sale` (
@@ -20092,7 +20133,7 @@ CREATE TABLE `jms_product_sale` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_product_shop`
+-- Cấu trúc bảng cho bảng `jms_product_shop`
 --
 
 CREATE TABLE `jms_product_shop` (
@@ -20132,11 +20173,11 @@ CREATE TABLE `jms_product_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_product_shop`
+-- Đang đổ dữ liệu cho bảng `jms_product_shop`
 --
 
 INSERT INTO `jms_product_shop` (`id_product`, `id_shop`, `id_category_default`, `id_tax_rules_group`, `on_sale`, `online_only`, `ecotax`, `minimal_quantity`, `low_stock_threshold`, `low_stock_alert`, `price`, `wholesale_price`, `unity`, `unit_price_ratio`, `additional_shipping_cost`, `customizable`, `uploadable_files`, `text_fields`, `active`, `redirect_type`, `id_type_redirected`, `available_for_order`, `available_date`, `show_condition`, `condition`, `show_price`, `indexed`, `visibility`, `cache_default_attribute`, `advanced_stock_management`, `date_add`, `date_upd`, `pack_stock_type`) VALUES
-(20, 1, 12, 0, 0, 0, '0.000000', 1, NULL, 0, '451.000000', '0.000000', '', '0.000000', '0.00', 0, 0, 0, 1, '301-category', 0, 1, '0000-00-00', 0, 'new', 1, 1, 'both', 42, 0, '2019-05-24 04:14:29', '2019-06-11 04:38:27', 3),
+(20, 1, 12, 0, 0, 0, '0.000000', 1, NULL, 0, '451.000000', '0.000000', '', '0.000000', '0.00', 0, 0, 0, 1, '301-category', 0, 1, '0000-00-00', 0, 'new', 1, 1, 'both', 42, 0, '2019-05-24 04:14:29', '2019-06-12 05:09:05', 3),
 (21, 1, 12, 0, 0, 0, '0.000000', 1, NULL, 0, '171.000000', '0.000000', '', '0.000000', '0.00', 0, 0, 0, 1, '301-category', 0, 1, '0000-00-00', 0, 'new', 1, 1, 'both', 76, 0, '2019-05-24 04:34:05', '2019-06-11 04:39:00', 3),
 (22, 1, 12, 0, 1, 0, '0.000000', 1, NULL, 0, '330.000000', '0.000000', '', '0.000000', '0.00', 0, 0, 0, 1, '301-category', 0, 1, '0000-00-00', 0, 'new', 1, 1, 'both', 104, 0, '2019-05-24 04:37:39', '2019-06-11 04:39:49', 3),
 (23, 1, 12, 0, 0, 0, '0.000000', 1, NULL, 0, '280.000000', '0.000000', '', '0.000000', '0.00', 0, 0, 0, 1, '301-category', 0, 1, '0000-00-00', 0, 'new', 1, 1, 'both', 106, 0, '2019-05-24 04:39:59', '2019-06-11 04:39:58', 3),
@@ -20153,7 +20194,7 @@ INSERT INTO `jms_product_shop` (`id_product`, `id_shop`, `id_category_default`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_product_supplier`
+-- Cấu trúc bảng cho bảng `jms_product_supplier`
 --
 
 CREATE TABLE `jms_product_supplier` (
@@ -20169,7 +20210,7 @@ CREATE TABLE `jms_product_supplier` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_product_tag`
+-- Cấu trúc bảng cho bảng `jms_product_tag`
 --
 
 CREATE TABLE `jms_product_tag` (
@@ -20181,7 +20222,7 @@ CREATE TABLE `jms_product_tag` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_profile`
+-- Cấu trúc bảng cho bảng `jms_profile`
 --
 
 CREATE TABLE `jms_profile` (
@@ -20189,7 +20230,7 @@ CREATE TABLE `jms_profile` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_profile`
+-- Đang đổ dữ liệu cho bảng `jms_profile`
 --
 
 INSERT INTO `jms_profile` (`id_profile`) VALUES
@@ -20201,7 +20242,7 @@ INSERT INTO `jms_profile` (`id_profile`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_profile_lang`
+-- Cấu trúc bảng cho bảng `jms_profile_lang`
 --
 
 CREATE TABLE `jms_profile_lang` (
@@ -20211,7 +20252,7 @@ CREATE TABLE `jms_profile_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_profile_lang`
+-- Đang đổ dữ liệu cho bảng `jms_profile_lang`
 --
 
 INSERT INTO `jms_profile_lang` (`id_lang`, `id_profile`, `name`) VALUES
@@ -20255,7 +20296,7 @@ INSERT INTO `jms_profile_lang` (`id_lang`, `id_profile`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_quick_access`
+-- Cấu trúc bảng cho bảng `jms_quick_access`
 --
 
 CREATE TABLE `jms_quick_access` (
@@ -20265,7 +20306,7 @@ CREATE TABLE `jms_quick_access` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_quick_access`
+-- Đang đổ dữ liệu cho bảng `jms_quick_access`
 --
 
 INSERT INTO `jms_quick_access` (`id_quick_access`, `new_window`, `link`) VALUES
@@ -20279,7 +20320,7 @@ INSERT INTO `jms_quick_access` (`id_quick_access`, `new_window`, `link`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_quick_access_lang`
+-- Cấu trúc bảng cho bảng `jms_quick_access_lang`
 --
 
 CREATE TABLE `jms_quick_access_lang` (
@@ -20289,7 +20330,7 @@ CREATE TABLE `jms_quick_access_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_quick_access_lang`
+-- Đang đổ dữ liệu cho bảng `jms_quick_access_lang`
 --
 
 INSERT INTO `jms_quick_access_lang` (`id_quick_access`, `id_lang`, `name`) VALUES
@@ -20351,7 +20392,7 @@ INSERT INTO `jms_quick_access_lang` (`id_quick_access`, `id_lang`, `name`) VALUE
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_range_price`
+-- Cấu trúc bảng cho bảng `jms_range_price`
 --
 
 CREATE TABLE `jms_range_price` (
@@ -20362,7 +20403,7 @@ CREATE TABLE `jms_range_price` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_range_price`
+-- Đang đổ dữ liệu cho bảng `jms_range_price`
 --
 
 INSERT INTO `jms_range_price` (`id_range_price`, `id_carrier`, `delimiter1`, `delimiter2`) VALUES
@@ -20371,7 +20412,7 @@ INSERT INTO `jms_range_price` (`id_range_price`, `id_carrier`, `delimiter1`, `de
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_range_weight`
+-- Cấu trúc bảng cho bảng `jms_range_weight`
 --
 
 CREATE TABLE `jms_range_weight` (
@@ -20382,7 +20423,7 @@ CREATE TABLE `jms_range_weight` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_range_weight`
+-- Đang đổ dữ liệu cho bảng `jms_range_weight`
 --
 
 INSERT INTO `jms_range_weight` (`id_range_weight`, `id_carrier`, `delimiter1`, `delimiter2`) VALUES
@@ -20391,7 +20432,7 @@ INSERT INTO `jms_range_weight` (`id_range_weight`, `id_carrier`, `delimiter1`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_reassurance`
+-- Cấu trúc bảng cho bảng `jms_reassurance`
 --
 
 CREATE TABLE `jms_reassurance` (
@@ -20401,7 +20442,7 @@ CREATE TABLE `jms_reassurance` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_reassurance`
+-- Đang đổ dữ liệu cho bảng `jms_reassurance`
 --
 
 INSERT INTO `jms_reassurance` (`id_reassurance`, `id_shop`, `file_name`) VALUES
@@ -20412,7 +20453,7 @@ INSERT INTO `jms_reassurance` (`id_reassurance`, `id_shop`, `file_name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_reassurance_lang`
+-- Cấu trúc bảng cho bảng `jms_reassurance_lang`
 --
 
 CREATE TABLE `jms_reassurance_lang` (
@@ -20422,7 +20463,7 @@ CREATE TABLE `jms_reassurance_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_reassurance_lang`
+-- Đang đổ dữ liệu cho bảng `jms_reassurance_lang`
 --
 
 INSERT INTO `jms_reassurance_lang` (`id_reassurance`, `id_lang`, `text`) VALUES
@@ -20457,7 +20498,7 @@ INSERT INTO `jms_reassurance_lang` (`id_reassurance`, `id_lang`, `text`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_referrer`
+-- Cấu trúc bảng cho bảng `jms_referrer`
 --
 
 CREATE TABLE `jms_referrer` (
@@ -20481,7 +20522,7 @@ CREATE TABLE `jms_referrer` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_referrer_cache`
+-- Cấu trúc bảng cho bảng `jms_referrer_cache`
 --
 
 CREATE TABLE `jms_referrer_cache` (
@@ -20492,7 +20533,7 @@ CREATE TABLE `jms_referrer_cache` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_referrer_shop`
+-- Cấu trúc bảng cho bảng `jms_referrer_shop`
 --
 
 CREATE TABLE `jms_referrer_shop` (
@@ -20511,7 +20552,7 @@ CREATE TABLE `jms_referrer_shop` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_request_sql`
+-- Cấu trúc bảng cho bảng `jms_request_sql`
 --
 
 CREATE TABLE `jms_request_sql` (
@@ -20523,7 +20564,7 @@ CREATE TABLE `jms_request_sql` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_required_field`
+-- Cấu trúc bảng cho bảng `jms_required_field`
 --
 
 CREATE TABLE `jms_required_field` (
@@ -20535,7 +20576,7 @@ CREATE TABLE `jms_required_field` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_risk`
+-- Cấu trúc bảng cho bảng `jms_risk`
 --
 
 CREATE TABLE `jms_risk` (
@@ -20545,7 +20586,7 @@ CREATE TABLE `jms_risk` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_risk`
+-- Đang đổ dữ liệu cho bảng `jms_risk`
 --
 
 INSERT INTO `jms_risk` (`id_risk`, `percent`, `color`) VALUES
@@ -20557,7 +20598,7 @@ INSERT INTO `jms_risk` (`id_risk`, `percent`, `color`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_risk_lang`
+-- Cấu trúc bảng cho bảng `jms_risk_lang`
 --
 
 CREATE TABLE `jms_risk_lang` (
@@ -20567,7 +20608,7 @@ CREATE TABLE `jms_risk_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_risk_lang`
+-- Đang đổ dữ liệu cho bảng `jms_risk_lang`
 --
 
 INSERT INTO `jms_risk_lang` (`id_risk`, `id_lang`, `name`) VALUES
@@ -20611,7 +20652,7 @@ INSERT INTO `jms_risk_lang` (`id_risk`, `id_lang`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_search_engine`
+-- Cấu trúc bảng cho bảng `jms_search_engine`
 --
 
 CREATE TABLE `jms_search_engine` (
@@ -20621,7 +20662,7 @@ CREATE TABLE `jms_search_engine` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_search_engine`
+-- Đang đổ dữ liệu cho bảng `jms_search_engine`
 --
 
 INSERT INTO `jms_search_engine` (`id_search_engine`, `server`, `getvar`) VALUES
@@ -20667,7 +20708,7 @@ INSERT INTO `jms_search_engine` (`id_search_engine`, `server`, `getvar`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_search_index`
+-- Cấu trúc bảng cho bảng `jms_search_index`
 --
 
 CREATE TABLE `jms_search_index` (
@@ -20677,7 +20718,7 @@ CREATE TABLE `jms_search_index` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_search_index`
+-- Đang đổ dữ liệu cho bảng `jms_search_index`
 --
 
 INSERT INTO `jms_search_index` (`id_product`, `id_word`, `weight`) VALUES
@@ -21125,47 +21166,90 @@ INSERT INTO `jms_search_index` (`id_product`, `id_word`, `weight`) VALUES
 (18, 687, 1),
 (18, 901, 1),
 (18, 667, 50),
-(20, 1377, 1),
-(20, 1378, 1),
-(20, 1379, 1),
-(20, 1380, 1),
-(20, 1381, 1),
-(20, 1382, 1),
-(20, 1383, 1),
+(20, 1344, 1),
+(20, 1345, 1),
+(20, 1346, 1),
+(20, 1347, 1),
+(20, 1348, 1),
+(20, 1349, 1),
+(20, 1351, 1),
+(20, 1352, 1),
+(20, 1353, 1),
+(20, 1354, 1),
+(20, 1355, 1),
+(20, 1356, 1),
+(20, 1357, 1),
+(20, 1358, 1),
+(20, 1359, 1),
+(20, 1360, 1),
+(20, 1361, 1),
+(20, 1362, 1),
+(20, 1363, 1),
+(20, 1364, 1),
+(20, 1365, 1),
+(20, 1366, 1),
+(20, 1367, 1),
+(20, 1368, 1),
+(20, 1369, 1),
+(20, 1370, 1),
+(20, 1371, 1),
+(20, 1373, 1),
+(20, 1374, 1),
+(20, 1375, 1),
+(20, 1376, 1),
+(20, 5333, 1),
+(20, 5334, 1),
+(20, 5335, 1),
+(20, 5336, 1),
+(20, 5337, 1),
+(20, 5338, 1),
+(20, 5339, 1),
+(20, 5340, 1),
+(20, 5341, 1),
+(20, 5342, 1),
+(20, 5343, 1),
+(20, 5344, 1),
+(20, 5345, 1),
+(20, 5346, 1),
+(20, 5347, 1),
+(20, 5348, 1),
+(20, 5349, 1),
+(20, 5350, 1),
+(20, 5351, 1),
+(20, 5352, 1),
+(20, 5353, 1),
+(20, 5354, 1),
+(20, 5355, 1),
+(20, 5356, 1),
+(20, 5357, 1),
+(20, 5358, 1),
+(20, 5359, 1),
+(20, 5360, 1),
+(20, 5361, 1),
+(20, 5362, 1),
+(20, 5363, 1),
+(20, 5364, 1),
+(20, 5365, 1),
+(20, 5366, 1),
+(20, 5367, 1),
+(20, 5368, 1),
+(20, 5369, 1),
+(20, 5370, 1),
+(20, 5371, 1),
+(20, 5372, 1),
+(20, 5373, 1),
+(20, 5374, 1),
+(20, 5375, 1),
+(20, 5376, 1),
+(20, 5377, 1),
+(20, 5378, 1),
+(20, 5379, 1),
+(20, 5380, 1),
+(20, 5381, 1),
+(20, 5382, 1),
 (20, 1343, 2),
-(20, 1344, 2),
-(20, 1345, 2),
-(20, 1346, 2),
-(20, 1347, 2),
-(20, 1348, 2),
-(20, 1349, 2),
 (20, 1350, 2),
-(20, 1351, 2),
-(20, 1352, 2),
-(20, 1353, 2),
-(20, 1354, 2),
-(20, 1355, 2),
-(20, 1356, 2),
-(20, 1357, 2),
-(20, 1358, 2),
-(20, 1359, 2),
-(20, 1360, 2),
-(20, 1361, 2),
-(20, 1362, 2),
-(20, 1363, 2),
-(20, 1364, 2),
-(20, 1365, 2),
-(20, 1366, 2),
-(20, 1367, 2),
-(20, 1368, 2),
-(20, 1369, 2),
-(20, 1370, 2),
-(20, 1371, 2),
 (20, 1372, 2),
-(20, 1373, 2),
-(20, 1374, 2),
-(20, 1375, 2),
-(20, 1376, 2),
 (20, 1427, 2),
 (20, 1428, 2),
 (20, 1429, 2),
@@ -22492,7 +22576,7 @@ INSERT INTO `jms_search_index` (`id_product`, `id_word`, `weight`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_search_word`
+-- Cấu trúc bảng cho bảng `jms_search_word`
 --
 
 CREATE TABLE `jms_search_word` (
@@ -22503,16 +22587,23 @@ CREATE TABLE `jms_search_word` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_search_word`
+-- Đang đổ dữ liệu cho bảng `jms_search_word`
 --
 
 INSERT INTO `jms_search_word` (`id_word`, `id_shop`, `id_lang`, `word`) VALUES
+(5377, 1, 1, '100'),
+(5607, 1, 1, 'aaaa'),
 (1352, 1, 1, 'accusantium'),
+(5342, 1, 1, 'adipisicing'),
+(5350, 1, 1, 'aliqua'),
+(5359, 1, 1, 'aliquip'),
+(5339, 1, 1, 'amet'),
 (1357, 1, 1, 'aperiam'),
 (1365, 1, 1, 'architecto'),
 (3106, 1, 1, 'armani'),
 (1376, 1, 1, 'aspernatur'),
 (1377, 1, 1, 'aut'),
+(5363, 1, 1, 'aute'),
 (1366, 1, 1, 'beatae'),
 (1313, 1, 1, 'belted'),
 (1429, 1, 1, 'black'),
@@ -22521,22 +22612,37 @@ INSERT INTO `jms_search_word` (`id_word`, `id_shop`, `id_lang`, `word`) VALUES
 (1385, 1, 1, 'calvin'),
 (1671, 1, 1, 'chanel'),
 (1314, 1, 1, 'chino'),
+(5369, 1, 1, 'cillum'),
+(5360, 1, 1, 'commodo'),
+(5340, 1, 1, 'conse'),
+(5361, 1, 1, 'consequat'),
 (1381, 1, 1, 'consequuntur'),
 (2715, 1, 1, 'copy'),
 (1870, 1, 1, 'cotton'),
+(5341, 1, 1, 'ctetur'),
 (1426, 1, 1, 'demo'),
 (3718, 1, 1, 'detail'),
 (1368, 1, 1, 'dicta'),
 (2067, 1, 1, 'dior'),
 (2166, 1, 1, 'dolce'),
+(5338, 1, 1, 'dolor'),
+(5348, 1, 1, 'dolore'),
 (1353, 1, 1, 'doloremque'),
 (1383, 1, 1, 'dolores'),
+(5362, 1, 1, 'duis'),
 (1358, 1, 1, 'eaque'),
+(5344, 1, 1, 'eiusmod'),
+(5381, 1, 1, 'elastane'),
+(5343, 1, 1, 'elit'),
 (1372, 1, 1, 'enim'),
 (1349, 1, 1, 'error'),
+(5368, 1, 1, 'esse'),
+(5355, 1, 1, 'exercitation'),
 (1370, 1, 1, 'explicabo'),
+(5376, 1, 1, 'fabric'),
 (4016, 1, 1, 'field'),
 (4423, 1, 1, 'fit'),
+(5370, 1, 1, 'fugiat'),
 (1379, 1, 1, 'fugit'),
 (2525, 1, 1, 'gabbana'),
 (2812, 1, 1, 'gap'),
@@ -22550,41 +22656,62 @@ INSERT INTO `jms_search_word` (`id_word`, `id_shop`, `id_lang`, `word`) VALUES
 (2811, 1, 1, 'hood'),
 (4940, 1, 1, 'hoodie'),
 (1361, 1, 1, 'illo'),
+(5373, 1, 1, 'images'),
+(5346, 1, 1, 'incididunt'),
 (1362, 1, 1, 'inventore'),
 (1359, 1, 1, 'ipsa'),
 (1373, 1, 1, 'ipsam'),
+(5337, 1, 1, 'ipsum'),
+(5364, 1, 1, 'irure'),
 (1347, 1, 1, 'iste'),
 (2810, 1, 1, 'jacket'),
 (2163, 1, 1, 'jersey'),
 (1386, 1, 1, 'klein'),
+(5347, 1, 1, 'labore'),
+(5357, 1, 1, 'laboris'),
 (3409, 1, 1, 'lacoste'),
 (1354, 1, 1, 'laudantium'),
 (3719, 1, 1, 'levi'),
 (4424, 1, 1, 'linen'),
+(5379, 1, 1, 'lining'),
+(5375, 1, 1, 'list'),
+(5336, 1, 1, 'lorem'),
+(5349, 1, 1, 'magna'),
 (1382, 1, 1, 'magni'),
 (4208, 1, 1, 'men'),
 (1546, 1, 1, 'mid'),
 (1549, 1, 1, 'mid-rise'),
 (1548, 1, 1, 'midrise'),
+(5351, 1, 1, 'minim'),
 (1348, 1, 1, 'natus'),
 (3001, 1, 1, 'neck'),
 (1371, 1, 1, 'nemo'),
 (4014, 1, 1, 'new'),
+(5358, 1, 1, 'nisi'),
+(5354, 1, 1, 'nostrud'),
+(5371, 1, 1, 'nulla'),
+(5382, 1, 1, 'numbered'),
 (1378, 1, 1, 'odit'),
 (1346, 1, 1, 'omnis'),
 (2617, 1, 1, 'orange'),
+(5334, 1, 1, 'paragraph'),
+(5372, 1, 1, 'pariatur'),
 (1344, 1, 1, 'perspiciatis'),
 (1430, 1, 1, 'pink'),
 (1316, 1, 1, 'polo'),
+(5378, 1, 1, 'polyester'),
 (4017, 1, 1, 'prada'),
 (1872, 1, 1, 'print'),
 (1360, 1, 1, 'quae'),
 (1364, 1, 1, 'quasi'),
 (1374, 1, 1, 'quia'),
+(5353, 1, 1, 'quis'),
 (5238, 1, 1, 'red'),
 (1356, 1, 1, 'rem'),
+(5365, 1, 1, 'reprehenderit'),
 (1547, 1, 1, 'rise'),
 (3000, 1, 1, 'round'),
+(5333, 1, 1, 'sample'),
 (1343, 1, 1, 'sed'),
 (1871, 1, 1, 'shirt'),
 (4510, 1, 1, 'silver'),
@@ -22596,16 +22723,24 @@ INSERT INTO `jms_search_word` (`id_word`, `id_shop`, `id_lang`, `word`) VALUES
 (2433, 1, 1, 'sweater'),
 (1874, 1, 1, 't-shirt'),
 (2165, 1, 1, 'tee'),
+(5345, 1, 1, 'tempor'),
+(5335, 1, 1, 'text'),
 (1355, 1, 1, 'totam'),
 (3716, 1, 1, 'trainers'),
 (1315, 1, 1, 'trousers'),
 (1873, 1, 1, 'tshirt'),
+(5356, 1, 1, 'ullamco'),
 (1345, 1, 1, 'unde'),
+(5374, 1, 1, 'unordered'),
+(5367, 1, 1, 'velit'),
+(5352, 1, 1, 'veniam'),
 (1363, 1, 1, 'veritatis'),
 (2339, 1, 1, 'violet'),
+(5380, 1, 1, 'viscose'),
 (1367, 1, 1, 'vitae'),
 (5151, 1, 1, 'voile'),
 (1375, 1, 1, 'voluptas'),
+(5366, 1, 1, 'voluptate'),
 (1351, 1, 1, 'voluptatem'),
 (1427, 1, 1, 'white'),
 (1384, 1, 1, 'women'),
@@ -22782,7 +22917,7 @@ INSERT INTO `jms_search_word` (`id_word`, `id_shop`, `id_lang`, `word`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_sekeyword`
+-- Cấu trúc bảng cho bảng `jms_sekeyword`
 --
 
 CREATE TABLE `jms_sekeyword` (
@@ -22796,7 +22931,7 @@ CREATE TABLE `jms_sekeyword` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_shop`
+-- Cấu trúc bảng cho bảng `jms_shop`
 --
 
 CREATE TABLE `jms_shop` (
@@ -22810,7 +22945,7 @@ CREATE TABLE `jms_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_shop`
+-- Đang đổ dữ liệu cho bảng `jms_shop`
 --
 
 INSERT INTO `jms_shop` (`id_shop`, `id_shop_group`, `name`, `id_category`, `theme_name`, `active`, `deleted`) VALUES
@@ -22819,7 +22954,7 @@ INSERT INTO `jms_shop` (`id_shop`, `id_shop_group`, `name`, `id_category`, `them
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_shop_group`
+-- Cấu trúc bảng cho bảng `jms_shop_group`
 --
 
 CREATE TABLE `jms_shop_group` (
@@ -22833,7 +22968,7 @@ CREATE TABLE `jms_shop_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_shop_group`
+-- Đang đổ dữ liệu cho bảng `jms_shop_group`
 --
 
 INSERT INTO `jms_shop_group` (`id_shop_group`, `name`, `share_customer`, `share_order`, `share_stock`, `active`, `deleted`) VALUES
@@ -22842,7 +22977,7 @@ INSERT INTO `jms_shop_group` (`id_shop_group`, `name`, `share_customer`, `share_
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_shop_url`
+-- Cấu trúc bảng cho bảng `jms_shop_url`
 --
 
 CREATE TABLE `jms_shop_url` (
@@ -22857,7 +22992,7 @@ CREATE TABLE `jms_shop_url` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_shop_url`
+-- Đang đổ dữ liệu cho bảng `jms_shop_url`
 --
 
 INSERT INTO `jms_shop_url` (`id_shop_url`, `id_shop`, `domain`, `domain_ssl`, `physical_uri`, `virtual_uri`, `main`, `active`) VALUES
@@ -22866,7 +23001,7 @@ INSERT INTO `jms_shop_url` (`id_shop_url`, `id_shop`, `domain`, `domain_ssl`, `p
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_smarty_cache`
+-- Cấu trúc bảng cho bảng `jms_smarty_cache`
 --
 
 CREATE TABLE `jms_smarty_cache` (
@@ -22880,7 +23015,7 @@ CREATE TABLE `jms_smarty_cache` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_smarty_last_flush`
+-- Cấu trúc bảng cho bảng `jms_smarty_last_flush`
 --
 
 CREATE TABLE `jms_smarty_last_flush` (
@@ -22891,7 +23026,7 @@ CREATE TABLE `jms_smarty_last_flush` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_smarty_lazy_cache`
+-- Cấu trúc bảng cho bảng `jms_smarty_lazy_cache`
 --
 
 CREATE TABLE `jms_smarty_lazy_cache` (
@@ -22905,7 +23040,7 @@ CREATE TABLE `jms_smarty_lazy_cache` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_specific_price`
+-- Cấu trúc bảng cho bảng `jms_specific_price`
 --
 
 CREATE TABLE `jms_specific_price` (
@@ -22930,7 +23065,7 @@ CREATE TABLE `jms_specific_price` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_specific_price`
+-- Đang đổ dữ liệu cho bảng `jms_specific_price`
 --
 
 INSERT INTO `jms_specific_price` (`id_specific_price`, `id_specific_price_rule`, `id_cart`, `id_product`, `id_shop`, `id_shop_group`, `id_currency`, `id_country`, `id_group`, `id_customer`, `id_product_attribute`, `price`, `from_quantity`, `reduction`, `reduction_tax`, `reduction_type`, `from`, `to`) VALUES
@@ -22942,7 +23077,7 @@ INSERT INTO `jms_specific_price` (`id_specific_price`, `id_specific_price_rule`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_specific_price_priority`
+-- Cấu trúc bảng cho bảng `jms_specific_price_priority`
 --
 
 CREATE TABLE `jms_specific_price_priority` (
@@ -22952,7 +23087,7 @@ CREATE TABLE `jms_specific_price_priority` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_specific_price_priority`
+-- Đang đổ dữ liệu cho bảng `jms_specific_price_priority`
 --
 
 INSERT INTO `jms_specific_price_priority` (`id_specific_price_priority`, `id_product`, `priority`) VALUES
@@ -22973,7 +23108,7 @@ INSERT INTO `jms_specific_price_priority` (`id_specific_price_priority`, `id_pro
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_specific_price_rule`
+-- Cấu trúc bảng cho bảng `jms_specific_price_rule`
 --
 
 CREATE TABLE `jms_specific_price_rule` (
@@ -22995,7 +23130,7 @@ CREATE TABLE `jms_specific_price_rule` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_specific_price_rule_condition`
+-- Cấu trúc bảng cho bảng `jms_specific_price_rule_condition`
 --
 
 CREATE TABLE `jms_specific_price_rule_condition` (
@@ -23008,7 +23143,7 @@ CREATE TABLE `jms_specific_price_rule_condition` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_specific_price_rule_condition_group`
+-- Cấu trúc bảng cho bảng `jms_specific_price_rule_condition_group`
 --
 
 CREATE TABLE `jms_specific_price_rule_condition_group` (
@@ -23019,7 +23154,7 @@ CREATE TABLE `jms_specific_price_rule_condition_group` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_state`
+-- Cấu trúc bảng cho bảng `jms_state`
 --
 
 CREATE TABLE `jms_state` (
@@ -23033,7 +23168,7 @@ CREATE TABLE `jms_state` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_state`
+-- Đang đổ dữ liệu cho bảng `jms_state`
 --
 
 INSERT INTO `jms_state` (`id_state`, `id_country`, `id_zone`, `name`, `iso_code`, `tax_behavior`, `active`) VALUES
@@ -23417,7 +23552,7 @@ INSERT INTO `jms_state` (`id_state`, `id_country`, `id_zone`, `name`, `iso_code`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_statssearch`
+-- Cấu trúc bảng cho bảng `jms_statssearch`
 --
 
 CREATE TABLE `jms_statssearch` (
@@ -23430,7 +23565,7 @@ CREATE TABLE `jms_statssearch` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_statssearch`
+-- Đang đổ dữ liệu cho bảng `jms_statssearch`
 --
 
 INSERT INTO `jms_statssearch` (`id_statssearch`, `id_shop`, `id_shop_group`, `keywords`, `results`, `date_add`) VALUES
@@ -23440,7 +23575,7 @@ INSERT INTO `jms_statssearch` (`id_statssearch`, `id_shop`, `id_shop_group`, `ke
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_stock`
+-- Cấu trúc bảng cho bảng `jms_stock`
 --
 
 CREATE TABLE `jms_stock` (
@@ -23460,7 +23595,7 @@ CREATE TABLE `jms_stock` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_stock_available`
+-- Cấu trúc bảng cho bảng `jms_stock_available`
 --
 
 CREATE TABLE `jms_stock_available` (
@@ -23478,7 +23613,7 @@ CREATE TABLE `jms_stock_available` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_stock_available`
+-- Đang đổ dữ liệu cho bảng `jms_stock_available`
 --
 
 INSERT INTO `jms_stock_available` (`id_stock_available`, `id_product`, `id_product_attribute`, `id_shop`, `id_shop_group`, `quantity`, `physical_quantity`, `reserved_quantity`, `depends_on_stock`, `out_of_stock`, `location`) VALUES
@@ -23596,7 +23731,7 @@ INSERT INTO `jms_stock_available` (`id_stock_available`, `id_product`, `id_produ
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_stock_mvt`
+-- Cấu trúc bảng cho bảng `jms_stock_mvt`
 --
 
 CREATE TABLE `jms_stock_mvt` (
@@ -23618,7 +23753,7 @@ CREATE TABLE `jms_stock_mvt` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_stock_mvt`
+-- Đang đổ dữ liệu cho bảng `jms_stock_mvt`
 --
 
 INSERT INTO `jms_stock_mvt` (`id_stock_mvt`, `id_stock`, `id_order`, `id_supply_order`, `id_stock_mvt_reason`, `id_employee`, `employee_lastname`, `employee_firstname`, `physical_quantity`, `date_add`, `sign`, `price_te`, `last_wa`, `current_wa`, `referer`) VALUES
@@ -23729,7 +23864,7 @@ INSERT INTO `jms_stock_mvt` (`id_stock_mvt`, `id_stock`, `id_order`, `id_supply_
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_stock_mvt_reason`
+-- Cấu trúc bảng cho bảng `jms_stock_mvt_reason`
 --
 
 CREATE TABLE `jms_stock_mvt_reason` (
@@ -23741,7 +23876,7 @@ CREATE TABLE `jms_stock_mvt_reason` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_stock_mvt_reason`
+-- Đang đổ dữ liệu cho bảng `jms_stock_mvt_reason`
 --
 
 INSERT INTO `jms_stock_mvt_reason` (`id_stock_mvt_reason`, `sign`, `date_add`, `date_upd`, `deleted`) VALUES
@@ -23761,7 +23896,7 @@ INSERT INTO `jms_stock_mvt_reason` (`id_stock_mvt_reason`, `sign`, `date_add`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_stock_mvt_reason_lang`
+-- Cấu trúc bảng cho bảng `jms_stock_mvt_reason_lang`
 --
 
 CREATE TABLE `jms_stock_mvt_reason_lang` (
@@ -23771,7 +23906,7 @@ CREATE TABLE `jms_stock_mvt_reason_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_stock_mvt_reason_lang`
+-- Đang đổ dữ liệu cho bảng `jms_stock_mvt_reason_lang`
 --
 
 INSERT INTO `jms_stock_mvt_reason_lang` (`id_stock_mvt_reason`, `id_lang`, `name`) VALUES
@@ -23887,7 +24022,7 @@ INSERT INTO `jms_stock_mvt_reason_lang` (`id_stock_mvt_reason`, `id_lang`, `name
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_store`
+-- Cấu trúc bảng cho bảng `jms_store`
 --
 
 CREATE TABLE `jms_store` (
@@ -23907,7 +24042,7 @@ CREATE TABLE `jms_store` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_store`
+-- Đang đổ dữ liệu cho bảng `jms_store`
 --
 
 INSERT INTO `jms_store` (`id_store`, `id_country`, `id_state`, `city`, `postcode`, `latitude`, `longitude`, `phone`, `fax`, `email`, `active`, `date_add`, `date_upd`) VALUES
@@ -23920,7 +24055,7 @@ INSERT INTO `jms_store` (`id_store`, `id_country`, `id_state`, `city`, `postcode
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_store_lang`
+-- Cấu trúc bảng cho bảng `jms_store_lang`
 --
 
 CREATE TABLE `jms_store_lang` (
@@ -23934,7 +24069,7 @@ CREATE TABLE `jms_store_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_store_lang`
+-- Đang đổ dữ liệu cho bảng `jms_store_lang`
 --
 
 INSERT INTO `jms_store_lang` (`id_store`, `id_lang`, `name`, `address1`, `address2`, `hours`, `note`) VALUES
@@ -23987,7 +24122,7 @@ INSERT INTO `jms_store_lang` (`id_store`, `id_lang`, `name`, `address1`, `addres
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_store_shop`
+-- Cấu trúc bảng cho bảng `jms_store_shop`
 --
 
 CREATE TABLE `jms_store_shop` (
@@ -23996,7 +24131,7 @@ CREATE TABLE `jms_store_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_store_shop`
+-- Đang đổ dữ liệu cho bảng `jms_store_shop`
 --
 
 INSERT INTO `jms_store_shop` (`id_store`, `id_shop`) VALUES
@@ -24009,7 +24144,7 @@ INSERT INTO `jms_store_shop` (`id_store`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_supplier`
+-- Cấu trúc bảng cho bảng `jms_supplier`
 --
 
 CREATE TABLE `jms_supplier` (
@@ -24023,7 +24158,7 @@ CREATE TABLE `jms_supplier` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_supplier_lang`
+-- Cấu trúc bảng cho bảng `jms_supplier_lang`
 --
 
 CREATE TABLE `jms_supplier_lang` (
@@ -24038,7 +24173,7 @@ CREATE TABLE `jms_supplier_lang` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_supplier_shop`
+-- Cấu trúc bảng cho bảng `jms_supplier_shop`
 --
 
 CREATE TABLE `jms_supplier_shop` (
@@ -24049,7 +24184,7 @@ CREATE TABLE `jms_supplier_shop` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_supply_order`
+-- Cấu trúc bảng cho bảng `jms_supply_order`
 --
 
 CREATE TABLE `jms_supply_order` (
@@ -24077,7 +24212,7 @@ CREATE TABLE `jms_supply_order` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_supply_order_detail`
+-- Cấu trúc bảng cho bảng `jms_supply_order_detail`
 --
 
 CREATE TABLE `jms_supply_order_detail` (
@@ -24110,7 +24245,7 @@ CREATE TABLE `jms_supply_order_detail` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_supply_order_history`
+-- Cấu trúc bảng cho bảng `jms_supply_order_history`
 --
 
 CREATE TABLE `jms_supply_order_history` (
@@ -24126,7 +24261,7 @@ CREATE TABLE `jms_supply_order_history` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_supply_order_receipt_history`
+-- Cấu trúc bảng cho bảng `jms_supply_order_receipt_history`
 --
 
 CREATE TABLE `jms_supply_order_receipt_history` (
@@ -24143,7 +24278,7 @@ CREATE TABLE `jms_supply_order_receipt_history` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_supply_order_state`
+-- Cấu trúc bảng cho bảng `jms_supply_order_state`
 --
 
 CREATE TABLE `jms_supply_order_state` (
@@ -24157,7 +24292,7 @@ CREATE TABLE `jms_supply_order_state` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_supply_order_state`
+-- Đang đổ dữ liệu cho bảng `jms_supply_order_state`
 --
 
 INSERT INTO `jms_supply_order_state` (`id_supply_order_state`, `delivery_note`, `editable`, `receipt_state`, `pending_receipt`, `enclosed`, `color`) VALUES
@@ -24171,7 +24306,7 @@ INSERT INTO `jms_supply_order_state` (`id_supply_order_state`, `delivery_note`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_supply_order_state_lang`
+-- Cấu trúc bảng cho bảng `jms_supply_order_state_lang`
 --
 
 CREATE TABLE `jms_supply_order_state_lang` (
@@ -24181,7 +24316,7 @@ CREATE TABLE `jms_supply_order_state_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_supply_order_state_lang`
+-- Đang đổ dữ liệu cho bảng `jms_supply_order_state_lang`
 --
 
 INSERT INTO `jms_supply_order_state_lang` (`id_supply_order_state`, `id_lang`, `name`) VALUES
@@ -24243,7 +24378,7 @@ INSERT INTO `jms_supply_order_state_lang` (`id_supply_order_state`, `id_lang`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_tab`
+-- Cấu trúc bảng cho bảng `jms_tab`
 --
 
 CREATE TABLE `jms_tab` (
@@ -24258,7 +24393,7 @@ CREATE TABLE `jms_tab` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_tab`
+-- Đang đổ dữ liệu cho bảng `jms_tab`
 --
 
 INSERT INTO `jms_tab` (`id_tab`, `id_parent`, `position`, `module`, `class_name`, `active`, `hide_host_mode`, `icon`) VALUES
@@ -24410,7 +24545,7 @@ INSERT INTO `jms_tab` (`id_tab`, `id_parent`, `position`, `module`, `class_name`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_tab_advice`
+-- Cấu trúc bảng cho bảng `jms_tab_advice`
 --
 
 CREATE TABLE `jms_tab_advice` (
@@ -24419,7 +24554,7 @@ CREATE TABLE `jms_tab_advice` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_tab_advice`
+-- Đang đổ dữ liệu cho bảng `jms_tab_advice`
 --
 
 INSERT INTO `jms_tab_advice` (`id_tab`, `id_advice`) VALUES
@@ -24513,12 +24648,25 @@ INSERT INTO `jms_tab_advice` (`id_tab`, `id_advice`) VALUES
 (1, 88),
 (1, 89),
 (1, 90),
-(1, 91);
+(1, 91),
+(1, 92),
+(1, 93),
+(1, 94),
+(1, 95),
+(1, 96),
+(1, 97),
+(1, 98),
+(1, 99),
+(1, 100),
+(1, 101),
+(1, 102),
+(1, 103),
+(1, 104);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_tab_lang`
+-- Cấu trúc bảng cho bảng `jms_tab_lang`
 --
 
 CREATE TABLE `jms_tab_lang` (
@@ -24528,7 +24676,7 @@ CREATE TABLE `jms_tab_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_tab_lang`
+-- Đang đổ dữ liệu cho bảng `jms_tab_lang`
 --
 
 INSERT INTO `jms_tab_lang` (`id_tab`, `id_lang`, `name`) VALUES
@@ -25805,7 +25953,7 @@ INSERT INTO `jms_tab_lang` (`id_tab`, `id_lang`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_tab_module_preference`
+-- Cấu trúc bảng cho bảng `jms_tab_module_preference`
 --
 
 CREATE TABLE `jms_tab_module_preference` (
@@ -25818,7 +25966,7 @@ CREATE TABLE `jms_tab_module_preference` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_tag`
+-- Cấu trúc bảng cho bảng `jms_tag`
 --
 
 CREATE TABLE `jms_tag` (
@@ -25830,7 +25978,7 @@ CREATE TABLE `jms_tag` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_tag_count`
+-- Cấu trúc bảng cho bảng `jms_tag_count`
 --
 
 CREATE TABLE `jms_tag_count` (
@@ -25844,7 +25992,7 @@ CREATE TABLE `jms_tag_count` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_tax`
+-- Cấu trúc bảng cho bảng `jms_tax`
 --
 
 CREATE TABLE `jms_tax` (
@@ -25855,7 +26003,7 @@ CREATE TABLE `jms_tax` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_tax`
+-- Đang đổ dữ liệu cho bảng `jms_tax`
 --
 
 INSERT INTO `jms_tax` (`id_tax`, `rate`, `active`, `deleted`) VALUES
@@ -25953,7 +26101,7 @@ INSERT INTO `jms_tax` (`id_tax`, `rate`, `active`, `deleted`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_tax_lang`
+-- Cấu trúc bảng cho bảng `jms_tax_lang`
 --
 
 CREATE TABLE `jms_tax_lang` (
@@ -25963,7 +26111,7 @@ CREATE TABLE `jms_tax_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_tax_lang`
+-- Đang đổ dữ liệu cho bảng `jms_tax_lang`
 --
 
 INSERT INTO `jms_tax_lang` (`id_tax`, `id_lang`, `name`) VALUES
@@ -26781,7 +26929,7 @@ INSERT INTO `jms_tax_lang` (`id_tax`, `id_lang`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_tax_rule`
+-- Cấu trúc bảng cho bảng `jms_tax_rule`
 --
 
 CREATE TABLE `jms_tax_rule` (
@@ -26797,7 +26945,7 @@ CREATE TABLE `jms_tax_rule` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_tax_rule`
+-- Đang đổ dữ liệu cho bảng `jms_tax_rule`
 --
 
 INSERT INTO `jms_tax_rule` (`id_tax_rule`, `id_tax_rules_group`, `id_country`, `id_state`, `zipcode_from`, `zipcode_to`, `id_tax`, `behavior`, `description`) VALUES
@@ -27483,7 +27631,7 @@ INSERT INTO `jms_tax_rule` (`id_tax_rule`, `id_tax_rules_group`, `id_country`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_tax_rules_group`
+-- Cấu trúc bảng cho bảng `jms_tax_rules_group`
 --
 
 CREATE TABLE `jms_tax_rules_group` (
@@ -27496,7 +27644,7 @@ CREATE TABLE `jms_tax_rules_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_tax_rules_group`
+-- Đang đổ dữ liệu cho bảng `jms_tax_rules_group`
 --
 
 INSERT INTO `jms_tax_rules_group` (`id_tax_rules_group`, `name`, `active`, `deleted`, `date_add`, `date_upd`) VALUES
@@ -27580,7 +27728,7 @@ INSERT INTO `jms_tax_rules_group` (`id_tax_rules_group`, `name`, `active`, `dele
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_tax_rules_group_shop`
+-- Cấu trúc bảng cho bảng `jms_tax_rules_group_shop`
 --
 
 CREATE TABLE `jms_tax_rules_group_shop` (
@@ -27589,7 +27737,7 @@ CREATE TABLE `jms_tax_rules_group_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_tax_rules_group_shop`
+-- Đang đổ dữ liệu cho bảng `jms_tax_rules_group_shop`
 --
 
 INSERT INTO `jms_tax_rules_group_shop` (`id_tax_rules_group`, `id_shop`) VALUES
@@ -27673,7 +27821,7 @@ INSERT INTO `jms_tax_rules_group_shop` (`id_tax_rules_group`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_timezone`
+-- Cấu trúc bảng cho bảng `jms_timezone`
 --
 
 CREATE TABLE `jms_timezone` (
@@ -27682,7 +27830,7 @@ CREATE TABLE `jms_timezone` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_timezone`
+-- Đang đổ dữ liệu cho bảng `jms_timezone`
 --
 
 INSERT INTO `jms_timezone` (`id_timezone`, `name`) VALUES
@@ -28250,7 +28398,7 @@ INSERT INTO `jms_timezone` (`id_timezone`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_translation`
+-- Cấu trúc bảng cho bảng `jms_translation`
 --
 
 CREATE TABLE `jms_translation` (
@@ -28263,7 +28411,7 @@ CREATE TABLE `jms_translation` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_translation`
+-- Đang đổ dữ liệu cho bảng `jms_translation`
 --
 
 INSERT INTO `jms_translation` (`id_translation`, `id_lang`, `key`, `translation`, `domain`, `theme`) VALUES
@@ -28274,7 +28422,7 @@ INSERT INTO `jms_translation` (`id_translation`, `id_lang`, `key`, `translation`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_warehouse`
+-- Cấu trúc bảng cho bảng `jms_warehouse`
 --
 
 CREATE TABLE `jms_warehouse` (
@@ -28291,7 +28439,7 @@ CREATE TABLE `jms_warehouse` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_warehouse_carrier`
+-- Cấu trúc bảng cho bảng `jms_warehouse_carrier`
 --
 
 CREATE TABLE `jms_warehouse_carrier` (
@@ -28302,7 +28450,7 @@ CREATE TABLE `jms_warehouse_carrier` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_warehouse_product_location`
+-- Cấu trúc bảng cho bảng `jms_warehouse_product_location`
 --
 
 CREATE TABLE `jms_warehouse_product_location` (
@@ -28316,7 +28464,7 @@ CREATE TABLE `jms_warehouse_product_location` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_warehouse_shop`
+-- Cấu trúc bảng cho bảng `jms_warehouse_shop`
 --
 
 CREATE TABLE `jms_warehouse_shop` (
@@ -28327,7 +28475,7 @@ CREATE TABLE `jms_warehouse_shop` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_webservice_account`
+-- Cấu trúc bảng cho bảng `jms_webservice_account`
 --
 
 CREATE TABLE `jms_webservice_account` (
@@ -28343,7 +28491,7 @@ CREATE TABLE `jms_webservice_account` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_webservice_account_shop`
+-- Cấu trúc bảng cho bảng `jms_webservice_account_shop`
 --
 
 CREATE TABLE `jms_webservice_account_shop` (
@@ -28354,7 +28502,7 @@ CREATE TABLE `jms_webservice_account_shop` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_webservice_permission`
+-- Cấu trúc bảng cho bảng `jms_webservice_permission`
 --
 
 CREATE TABLE `jms_webservice_permission` (
@@ -28367,7 +28515,7 @@ CREATE TABLE `jms_webservice_permission` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_web_browser`
+-- Cấu trúc bảng cho bảng `jms_web_browser`
 --
 
 CREATE TABLE `jms_web_browser` (
@@ -28376,7 +28524,7 @@ CREATE TABLE `jms_web_browser` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_web_browser`
+-- Đang đổ dữ liệu cho bảng `jms_web_browser`
 --
 
 INSERT INTO `jms_web_browser` (`id_web_browser`, `name`) VALUES
@@ -28395,7 +28543,7 @@ INSERT INTO `jms_web_browser` (`id_web_browser`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_wishlist`
+-- Cấu trúc bảng cho bảng `jms_wishlist`
 --
 
 CREATE TABLE `jms_wishlist` (
@@ -28414,7 +28562,7 @@ CREATE TABLE `jms_wishlist` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_wishlist_email`
+-- Cấu trúc bảng cho bảng `jms_wishlist_email`
 --
 
 CREATE TABLE `jms_wishlist_email` (
@@ -28426,7 +28574,7 @@ CREATE TABLE `jms_wishlist_email` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_wishlist_product`
+-- Cấu trúc bảng cho bảng `jms_wishlist_product`
 --
 
 CREATE TABLE `jms_wishlist_product` (
@@ -28441,7 +28589,7 @@ CREATE TABLE `jms_wishlist_product` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_wishlist_product_cart`
+-- Cấu trúc bảng cho bảng `jms_wishlist_product_cart`
 --
 
 CREATE TABLE `jms_wishlist_product_cart` (
@@ -28454,7 +28602,7 @@ CREATE TABLE `jms_wishlist_product_cart` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_zone`
+-- Cấu trúc bảng cho bảng `jms_zone`
 --
 
 CREATE TABLE `jms_zone` (
@@ -28464,7 +28612,7 @@ CREATE TABLE `jms_zone` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_zone`
+-- Đang đổ dữ liệu cho bảng `jms_zone`
 --
 
 INSERT INTO `jms_zone` (`id_zone`, `name`, `active`) VALUES
@@ -28480,7 +28628,7 @@ INSERT INTO `jms_zone` (`id_zone`, `name`, `active`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_zone_shop`
+-- Cấu trúc bảng cho bảng `jms_zone_shop`
 --
 
 CREATE TABLE `jms_zone_shop` (
@@ -28489,7 +28637,7 @@ CREATE TABLE `jms_zone_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_zone_shop`
+-- Đang đổ dữ liệu cho bảng `jms_zone_shop`
 --
 
 INSERT INTO `jms_zone_shop` (`id_zone`, `id_shop`) VALUES
@@ -28503,23 +28651,23 @@ INSERT INTO `jms_zone_shop` (`id_zone`, `id_shop`) VALUES
 (8, 1);
 
 --
--- Indexes for dumped tables
+-- Chỉ mục cho các bảng đã đổ
 --
 
 --
--- Indexes for table `jms_access`
+-- Chỉ mục cho bảng `jms_access`
 --
 ALTER TABLE `jms_access`
   ADD PRIMARY KEY (`id_profile`,`id_authorization_role`);
 
 --
--- Indexes for table `jms_accessory`
+-- Chỉ mục cho bảng `jms_accessory`
 --
 ALTER TABLE `jms_accessory`
   ADD KEY `accessory_product` (`id_product_1`,`id_product_2`);
 
 --
--- Indexes for table `jms_address`
+-- Chỉ mục cho bảng `jms_address`
 --
 ALTER TABLE `jms_address`
   ADD PRIMARY KEY (`id_address`),
@@ -28531,64 +28679,64 @@ ALTER TABLE `jms_address`
   ADD KEY `id_warehouse` (`id_warehouse`);
 
 --
--- Indexes for table `jms_address_format`
+-- Chỉ mục cho bảng `jms_address_format`
 --
 ALTER TABLE `jms_address_format`
   ADD PRIMARY KEY (`id_country`);
 
 --
--- Indexes for table `jms_admin_filter`
+-- Chỉ mục cho bảng `jms_admin_filter`
 --
 ALTER TABLE `jms_admin_filter`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `admin_filter_search_idx` (`employee`,`shop`,`controller`,`action`);
 
 --
--- Indexes for table `jms_advice`
+-- Chỉ mục cho bảng `jms_advice`
 --
 ALTER TABLE `jms_advice`
   ADD PRIMARY KEY (`id_advice`);
 
 --
--- Indexes for table `jms_advice_lang`
+-- Chỉ mục cho bảng `jms_advice_lang`
 --
 ALTER TABLE `jms_advice_lang`
   ADD PRIMARY KEY (`id_advice`,`id_lang`);
 
 --
--- Indexes for table `jms_alias`
+-- Chỉ mục cho bảng `jms_alias`
 --
 ALTER TABLE `jms_alias`
   ADD PRIMARY KEY (`id_alias`),
   ADD UNIQUE KEY `alias` (`alias`);
 
 --
--- Indexes for table `jms_attachment`
+-- Chỉ mục cho bảng `jms_attachment`
 --
 ALTER TABLE `jms_attachment`
   ADD PRIMARY KEY (`id_attachment`);
 
 --
--- Indexes for table `jms_attachment_lang`
+-- Chỉ mục cho bảng `jms_attachment_lang`
 --
 ALTER TABLE `jms_attachment_lang`
   ADD PRIMARY KEY (`id_attachment`,`id_lang`);
 
 --
--- Indexes for table `jms_attribute`
+-- Chỉ mục cho bảng `jms_attribute`
 --
 ALTER TABLE `jms_attribute`
   ADD PRIMARY KEY (`id_attribute`),
   ADD KEY `attribute_group` (`id_attribute_group`);
 
 --
--- Indexes for table `jms_attribute_group`
+-- Chỉ mục cho bảng `jms_attribute_group`
 --
 ALTER TABLE `jms_attribute_group`
   ADD PRIMARY KEY (`id_attribute_group`);
 
 --
--- Indexes for table `jms_attribute_group_lang`
+-- Chỉ mục cho bảng `jms_attribute_group_lang`
 --
 ALTER TABLE `jms_attribute_group_lang`
   ADD PRIMARY KEY (`id_attribute_group`,`id_lang`),
@@ -28596,7 +28744,7 @@ ALTER TABLE `jms_attribute_group_lang`
   ADD KEY `IDX_DEEAE65BBA299860` (`id_lang`);
 
 --
--- Indexes for table `jms_attribute_group_shop`
+-- Chỉ mục cho bảng `jms_attribute_group_shop`
 --
 ALTER TABLE `jms_attribute_group_shop`
   ADD PRIMARY KEY (`id_attribute_group`,`id_shop`),
@@ -28604,14 +28752,14 @@ ALTER TABLE `jms_attribute_group_shop`
   ADD KEY `IDX_43892E9B274A50A0` (`id_shop`);
 
 --
--- Indexes for table `jms_attribute_impact`
+-- Chỉ mục cho bảng `jms_attribute_impact`
 --
 ALTER TABLE `jms_attribute_impact`
   ADD PRIMARY KEY (`id_attribute_impact`),
   ADD UNIQUE KEY `id_product` (`id_product`,`id_attribute`);
 
 --
--- Indexes for table `jms_attribute_lang`
+-- Chỉ mục cho bảng `jms_attribute_lang`
 --
 ALTER TABLE `jms_attribute_lang`
   ADD PRIMARY KEY (`id_attribute`,`id_lang`),
@@ -28619,7 +28767,7 @@ ALTER TABLE `jms_attribute_lang`
   ADD KEY `IDX_64EB4FE7BA299860` (`id_lang`);
 
 --
--- Indexes for table `jms_attribute_shop`
+-- Chỉ mục cho bảng `jms_attribute_shop`
 --
 ALTER TABLE `jms_attribute_shop`
   ADD PRIMARY KEY (`id_attribute`,`id_shop`),
@@ -28627,26 +28775,26 @@ ALTER TABLE `jms_attribute_shop`
   ADD KEY `IDX_F9888727274A50A0` (`id_shop`);
 
 --
--- Indexes for table `jms_authorization_role`
+-- Chỉ mục cho bảng `jms_authorization_role`
 --
 ALTER TABLE `jms_authorization_role`
   ADD PRIMARY KEY (`id_authorization_role`),
   ADD UNIQUE KEY `slug` (`slug`);
 
 --
--- Indexes for table `jms_badge`
+-- Chỉ mục cho bảng `jms_badge`
 --
 ALTER TABLE `jms_badge`
   ADD PRIMARY KEY (`id_badge`);
 
 --
--- Indexes for table `jms_badge_lang`
+-- Chỉ mục cho bảng `jms_badge_lang`
 --
 ALTER TABLE `jms_badge_lang`
   ADD PRIMARY KEY (`id_badge`,`id_lang`);
 
 --
--- Indexes for table `jms_carrier`
+-- Chỉ mục cho bảng `jms_carrier`
 --
 ALTER TABLE `jms_carrier`
   ADD PRIMARY KEY (`id_carrier`),
@@ -28655,38 +28803,38 @@ ALTER TABLE `jms_carrier`
   ADD KEY `reference` (`id_reference`,`deleted`,`active`);
 
 --
--- Indexes for table `jms_carrier_group`
+-- Chỉ mục cho bảng `jms_carrier_group`
 --
 ALTER TABLE `jms_carrier_group`
   ADD PRIMARY KEY (`id_carrier`,`id_group`);
 
 --
--- Indexes for table `jms_carrier_lang`
+-- Chỉ mục cho bảng `jms_carrier_lang`
 --
 ALTER TABLE `jms_carrier_lang`
   ADD PRIMARY KEY (`id_lang`,`id_shop`,`id_carrier`);
 
 --
--- Indexes for table `jms_carrier_shop`
+-- Chỉ mục cho bảng `jms_carrier_shop`
 --
 ALTER TABLE `jms_carrier_shop`
   ADD PRIMARY KEY (`id_carrier`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_carrier_tax_rules_group_shop`
+-- Chỉ mục cho bảng `jms_carrier_tax_rules_group_shop`
 --
 ALTER TABLE `jms_carrier_tax_rules_group_shop`
   ADD PRIMARY KEY (`id_carrier`,`id_tax_rules_group`,`id_shop`);
 
 --
--- Indexes for table `jms_carrier_zone`
+-- Chỉ mục cho bảng `jms_carrier_zone`
 --
 ALTER TABLE `jms_carrier_zone`
   ADD PRIMARY KEY (`id_carrier`,`id_zone`);
 
 --
--- Indexes for table `jms_cart`
+-- Chỉ mục cho bảng `jms_cart`
 --
 ALTER TABLE `jms_cart`
   ADD PRIMARY KEY (`id_cart`),
@@ -28702,14 +28850,14 @@ ALTER TABLE `jms_cart`
   ADD KEY `id_shop` (`id_shop`,`date_add`);
 
 --
--- Indexes for table `jms_cart_cart_rule`
+-- Chỉ mục cho bảng `jms_cart_cart_rule`
 --
 ALTER TABLE `jms_cart_cart_rule`
   ADD PRIMARY KEY (`id_cart`,`id_cart_rule`),
   ADD KEY `id_cart_rule` (`id_cart_rule`);
 
 --
--- Indexes for table `jms_cart_product`
+-- Chỉ mục cho bảng `jms_cart_product`
 --
 ALTER TABLE `jms_cart_product`
   ADD PRIMARY KEY (`id_cart`,`id_product`,`id_product_attribute`,`id_customization`,`id_address_delivery`),
@@ -28717,7 +28865,7 @@ ALTER TABLE `jms_cart_product`
   ADD KEY `id_cart_order` (`id_cart`,`date_add`,`id_product`,`id_product_attribute`);
 
 --
--- Indexes for table `jms_cart_rule`
+-- Chỉ mục cho bảng `jms_cart_rule`
 --
 ALTER TABLE `jms_cart_rule`
   ADD PRIMARY KEY (`id_cart_rule`),
@@ -28729,13 +28877,13 @@ ALTER TABLE `jms_cart_rule`
   ADD KEY `date_to` (`date_to`);
 
 --
--- Indexes for table `jms_cart_rule_carrier`
+-- Chỉ mục cho bảng `jms_cart_rule_carrier`
 --
 ALTER TABLE `jms_cart_rule_carrier`
   ADD PRIMARY KEY (`id_cart_rule`,`id_carrier`);
 
 --
--- Indexes for table `jms_cart_rule_combination`
+-- Chỉ mục cho bảng `jms_cart_rule_combination`
 --
 ALTER TABLE `jms_cart_rule_combination`
   ADD PRIMARY KEY (`id_cart_rule_1`,`id_cart_rule_2`),
@@ -28743,49 +28891,49 @@ ALTER TABLE `jms_cart_rule_combination`
   ADD KEY `id_cart_rule_2` (`id_cart_rule_2`);
 
 --
--- Indexes for table `jms_cart_rule_country`
+-- Chỉ mục cho bảng `jms_cart_rule_country`
 --
 ALTER TABLE `jms_cart_rule_country`
   ADD PRIMARY KEY (`id_cart_rule`,`id_country`);
 
 --
--- Indexes for table `jms_cart_rule_group`
+-- Chỉ mục cho bảng `jms_cart_rule_group`
 --
 ALTER TABLE `jms_cart_rule_group`
   ADD PRIMARY KEY (`id_cart_rule`,`id_group`);
 
 --
--- Indexes for table `jms_cart_rule_lang`
+-- Chỉ mục cho bảng `jms_cart_rule_lang`
 --
 ALTER TABLE `jms_cart_rule_lang`
   ADD PRIMARY KEY (`id_cart_rule`,`id_lang`);
 
 --
--- Indexes for table `jms_cart_rule_product_rule`
+-- Chỉ mục cho bảng `jms_cart_rule_product_rule`
 --
 ALTER TABLE `jms_cart_rule_product_rule`
   ADD PRIMARY KEY (`id_product_rule`);
 
 --
--- Indexes for table `jms_cart_rule_product_rule_group`
+-- Chỉ mục cho bảng `jms_cart_rule_product_rule_group`
 --
 ALTER TABLE `jms_cart_rule_product_rule_group`
   ADD PRIMARY KEY (`id_product_rule_group`);
 
 --
--- Indexes for table `jms_cart_rule_product_rule_value`
+-- Chỉ mục cho bảng `jms_cart_rule_product_rule_value`
 --
 ALTER TABLE `jms_cart_rule_product_rule_value`
   ADD PRIMARY KEY (`id_product_rule`,`id_item`);
 
 --
--- Indexes for table `jms_cart_rule_shop`
+-- Chỉ mục cho bảng `jms_cart_rule_shop`
 --
 ALTER TABLE `jms_cart_rule_shop`
   ADD PRIMARY KEY (`id_cart_rule`,`id_shop`);
 
 --
--- Indexes for table `jms_category`
+-- Chỉ mục cho bảng `jms_category`
 --
 ALTER TABLE `jms_category`
   ADD PRIMARY KEY (`id_category`),
@@ -28797,7 +28945,7 @@ ALTER TABLE `jms_category`
   ADD KEY `activenright` (`active`,`nright`);
 
 --
--- Indexes for table `jms_category_group`
+-- Chỉ mục cho bảng `jms_category_group`
 --
 ALTER TABLE `jms_category_group`
   ADD PRIMARY KEY (`id_category`,`id_group`),
@@ -28805,14 +28953,14 @@ ALTER TABLE `jms_category_group`
   ADD KEY `id_group` (`id_group`);
 
 --
--- Indexes for table `jms_category_lang`
+-- Chỉ mục cho bảng `jms_category_lang`
 --
 ALTER TABLE `jms_category_lang`
   ADD PRIMARY KEY (`id_category`,`id_shop`,`id_lang`),
   ADD KEY `category_name` (`name`);
 
 --
--- Indexes for table `jms_category_product`
+-- Chỉ mục cho bảng `jms_category_product`
 --
 ALTER TABLE `jms_category_product`
   ADD PRIMARY KEY (`id_category`,`id_product`),
@@ -28820,84 +28968,84 @@ ALTER TABLE `jms_category_product`
   ADD KEY `id_category` (`id_category`,`position`);
 
 --
--- Indexes for table `jms_category_shop`
+-- Chỉ mục cho bảng `jms_category_shop`
 --
 ALTER TABLE `jms_category_shop`
   ADD PRIMARY KEY (`id_category`,`id_shop`);
 
 --
--- Indexes for table `jms_cms`
+-- Chỉ mục cho bảng `jms_cms`
 --
 ALTER TABLE `jms_cms`
   ADD PRIMARY KEY (`id_cms`);
 
 --
--- Indexes for table `jms_cms_category`
+-- Chỉ mục cho bảng `jms_cms_category`
 --
 ALTER TABLE `jms_cms_category`
   ADD PRIMARY KEY (`id_cms_category`),
   ADD KEY `category_parent` (`id_parent`);
 
 --
--- Indexes for table `jms_cms_category_lang`
+-- Chỉ mục cho bảng `jms_cms_category_lang`
 --
 ALTER TABLE `jms_cms_category_lang`
   ADD PRIMARY KEY (`id_cms_category`,`id_shop`,`id_lang`),
   ADD KEY `category_name` (`name`);
 
 --
--- Indexes for table `jms_cms_category_shop`
+-- Chỉ mục cho bảng `jms_cms_category_shop`
 --
 ALTER TABLE `jms_cms_category_shop`
   ADD PRIMARY KEY (`id_cms_category`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_cms_lang`
+-- Chỉ mục cho bảng `jms_cms_lang`
 --
 ALTER TABLE `jms_cms_lang`
   ADD PRIMARY KEY (`id_cms`,`id_shop`,`id_lang`);
 
 --
--- Indexes for table `jms_cms_role`
+-- Chỉ mục cho bảng `jms_cms_role`
 --
 ALTER TABLE `jms_cms_role`
   ADD PRIMARY KEY (`id_cms_role`,`id_cms`),
   ADD UNIQUE KEY `name` (`name`);
 
 --
--- Indexes for table `jms_cms_role_lang`
+-- Chỉ mục cho bảng `jms_cms_role_lang`
 --
 ALTER TABLE `jms_cms_role_lang`
   ADD PRIMARY KEY (`id_cms_role`,`id_lang`,`id_shop`);
 
 --
--- Indexes for table `jms_cms_shop`
+-- Chỉ mục cho bảng `jms_cms_shop`
 --
 ALTER TABLE `jms_cms_shop`
   ADD PRIMARY KEY (`id_cms`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_condition`
+-- Chỉ mục cho bảng `jms_condition`
 --
 ALTER TABLE `jms_condition`
   ADD PRIMARY KEY (`id_condition`,`id_ps_condition`);
 
 --
--- Indexes for table `jms_condition_advice`
+-- Chỉ mục cho bảng `jms_condition_advice`
 --
 ALTER TABLE `jms_condition_advice`
   ADD PRIMARY KEY (`id_condition`,`id_advice`);
 
 --
--- Indexes for table `jms_condition_badge`
+-- Chỉ mục cho bảng `jms_condition_badge`
 --
 ALTER TABLE `jms_condition_badge`
   ADD PRIMARY KEY (`id_condition`,`id_badge`);
 
 --
--- Indexes for table `jms_configuration`
+-- Chỉ mục cho bảng `jms_configuration`
 --
 ALTER TABLE `jms_configuration`
   ADD PRIMARY KEY (`id_configuration`),
@@ -28906,7 +29054,7 @@ ALTER TABLE `jms_configuration`
   ADD KEY `id_shop_group` (`id_shop_group`);
 
 --
--- Indexes for table `jms_configuration_kpi`
+-- Chỉ mục cho bảng `jms_configuration_kpi`
 --
 ALTER TABLE `jms_configuration_kpi`
   ADD PRIMARY KEY (`id_configuration_kpi`),
@@ -28915,19 +29063,19 @@ ALTER TABLE `jms_configuration_kpi`
   ADD KEY `id_shop_group` (`id_shop_group`);
 
 --
--- Indexes for table `jms_configuration_kpi_lang`
+-- Chỉ mục cho bảng `jms_configuration_kpi_lang`
 --
 ALTER TABLE `jms_configuration_kpi_lang`
   ADD PRIMARY KEY (`id_configuration_kpi`,`id_lang`);
 
 --
--- Indexes for table `jms_configuration_lang`
+-- Chỉ mục cho bảng `jms_configuration_lang`
 --
 ALTER TABLE `jms_configuration_lang`
   ADD PRIMARY KEY (`id_configuration`,`id_lang`);
 
 --
--- Indexes for table `jms_connections`
+-- Chỉ mục cho bảng `jms_connections`
 --
 ALTER TABLE `jms_connections`
   ADD PRIMARY KEY (`id_connections`),
@@ -28936,13 +29084,13 @@ ALTER TABLE `jms_connections`
   ADD KEY `id_page` (`id_page`);
 
 --
--- Indexes for table `jms_connections_page`
+-- Chỉ mục cho bảng `jms_connections_page`
 --
 ALTER TABLE `jms_connections_page`
   ADD PRIMARY KEY (`id_connections`,`id_page`,`time_start`);
 
 --
--- Indexes for table `jms_connections_source`
+-- Chỉ mục cho bảng `jms_connections_source`
 --
 ALTER TABLE `jms_connections_source`
   ADD PRIMARY KEY (`id_connections_source`),
@@ -28952,26 +29100,26 @@ ALTER TABLE `jms_connections_source`
   ADD KEY `request_uri` (`request_uri`);
 
 --
--- Indexes for table `jms_contact`
+-- Chỉ mục cho bảng `jms_contact`
 --
 ALTER TABLE `jms_contact`
   ADD PRIMARY KEY (`id_contact`);
 
 --
--- Indexes for table `jms_contact_lang`
+-- Chỉ mục cho bảng `jms_contact_lang`
 --
 ALTER TABLE `jms_contact_lang`
   ADD PRIMARY KEY (`id_contact`,`id_lang`);
 
 --
--- Indexes for table `jms_contact_shop`
+-- Chỉ mục cho bảng `jms_contact_shop`
 --
 ALTER TABLE `jms_contact_shop`
   ADD PRIMARY KEY (`id_contact`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_country`
+-- Chỉ mục cho bảng `jms_country`
 --
 ALTER TABLE `jms_country`
   ADD PRIMARY KEY (`id_country`),
@@ -28979,40 +29127,40 @@ ALTER TABLE `jms_country`
   ADD KEY `country_` (`id_zone`);
 
 --
--- Indexes for table `jms_country_lang`
+-- Chỉ mục cho bảng `jms_country_lang`
 --
 ALTER TABLE `jms_country_lang`
   ADD PRIMARY KEY (`id_country`,`id_lang`);
 
 --
--- Indexes for table `jms_country_shop`
+-- Chỉ mục cho bảng `jms_country_shop`
 --
 ALTER TABLE `jms_country_shop`
   ADD PRIMARY KEY (`id_country`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_cronjobs`
+-- Chỉ mục cho bảng `jms_cronjobs`
 --
 ALTER TABLE `jms_cronjobs`
   ADD PRIMARY KEY (`id_cronjob`),
   ADD KEY `id_module` (`id_module`);
 
 --
--- Indexes for table `jms_currency`
+-- Chỉ mục cho bảng `jms_currency`
 --
 ALTER TABLE `jms_currency`
   ADD PRIMARY KEY (`id_currency`);
 
 --
--- Indexes for table `jms_currency_shop`
+-- Chỉ mục cho bảng `jms_currency_shop`
 --
 ALTER TABLE `jms_currency_shop`
   ADD PRIMARY KEY (`id_currency`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_customer`
+-- Chỉ mục cho bảng `jms_customer`
 --
 ALTER TABLE `jms_customer`
   ADD PRIMARY KEY (`id_customer`),
@@ -29024,7 +29172,7 @@ ALTER TABLE `jms_customer`
   ADD KEY `id_shop` (`id_shop`,`date_add`);
 
 --
--- Indexes for table `jms_customer_group`
+-- Chỉ mục cho bảng `jms_customer_group`
 --
 ALTER TABLE `jms_customer_group`
   ADD PRIMARY KEY (`id_customer`,`id_group`),
@@ -29032,7 +29180,7 @@ ALTER TABLE `jms_customer_group`
   ADD KEY `id_customer` (`id_customer`);
 
 --
--- Indexes for table `jms_customer_message`
+-- Chỉ mục cho bảng `jms_customer_message`
 --
 ALTER TABLE `jms_customer_message`
   ADD PRIMARY KEY (`id_customer_message`),
@@ -29040,13 +29188,13 @@ ALTER TABLE `jms_customer_message`
   ADD KEY `id_employee` (`id_employee`);
 
 --
--- Indexes for table `jms_customer_message_sync_imap`
+-- Chỉ mục cho bảng `jms_customer_message_sync_imap`
 --
 ALTER TABLE `jms_customer_message_sync_imap`
   ADD KEY `md5_header_index` (`md5_header`(4));
 
 --
--- Indexes for table `jms_customer_thread`
+-- Chỉ mục cho bảng `jms_customer_thread`
 --
 ALTER TABLE `jms_customer_thread`
   ADD PRIMARY KEY (`id_customer_thread`),
@@ -29058,7 +29206,7 @@ ALTER TABLE `jms_customer_thread`
   ADD KEY `id_product` (`id_product`);
 
 --
--- Indexes for table `jms_customization`
+-- Chỉ mục cho bảng `jms_customization`
 --
 ALTER TABLE `jms_customization`
   ADD PRIMARY KEY (`id_customization`,`id_cart`,`id_product`,`id_address_delivery`),
@@ -29066,32 +29214,32 @@ ALTER TABLE `jms_customization`
   ADD KEY `id_cart_product` (`id_cart`,`id_product`,`id_product_attribute`);
 
 --
--- Indexes for table `jms_customization_field`
+-- Chỉ mục cho bảng `jms_customization_field`
 --
 ALTER TABLE `jms_customization_field`
   ADD PRIMARY KEY (`id_customization_field`),
   ADD KEY `id_product` (`id_product`);
 
 --
--- Indexes for table `jms_customization_field_lang`
+-- Chỉ mục cho bảng `jms_customization_field_lang`
 --
 ALTER TABLE `jms_customization_field_lang`
   ADD PRIMARY KEY (`id_customization_field`,`id_lang`,`id_shop`);
 
 --
--- Indexes for table `jms_customized_data`
+-- Chỉ mục cho bảng `jms_customized_data`
 --
 ALTER TABLE `jms_customized_data`
   ADD PRIMARY KEY (`id_customization`,`type`,`index`);
 
 --
--- Indexes for table `jms_date_range`
+-- Chỉ mục cho bảng `jms_date_range`
 --
 ALTER TABLE `jms_date_range`
   ADD PRIMARY KEY (`id_date_range`);
 
 --
--- Indexes for table `jms_delivery`
+-- Chỉ mục cho bảng `jms_delivery`
 --
 ALTER TABLE `jms_delivery`
   ADD PRIMARY KEY (`id_delivery`),
@@ -29101,13 +29249,13 @@ ALTER TABLE `jms_delivery`
   ADD KEY `id_range_weight` (`id_range_weight`);
 
 --
--- Indexes for table `jms_emailsubscription`
+-- Chỉ mục cho bảng `jms_emailsubscription`
 --
 ALTER TABLE `jms_emailsubscription`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `jms_employee`
+-- Chỉ mục cho bảng `jms_employee`
 --
 ALTER TABLE `jms_employee`
   ADD PRIMARY KEY (`id_employee`),
@@ -29116,27 +29264,27 @@ ALTER TABLE `jms_employee`
   ADD KEY `id_profile` (`id_profile`);
 
 --
--- Indexes for table `jms_employee_shop`
+-- Chỉ mục cho bảng `jms_employee_shop`
 --
 ALTER TABLE `jms_employee_shop`
   ADD PRIMARY KEY (`id_employee`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_feature`
+-- Chỉ mục cho bảng `jms_feature`
 --
 ALTER TABLE `jms_feature`
   ADD PRIMARY KEY (`id_feature`);
 
 --
--- Indexes for table `jms_feature_lang`
+-- Chỉ mục cho bảng `jms_feature_lang`
 --
 ALTER TABLE `jms_feature_lang`
   ADD PRIMARY KEY (`id_feature`,`id_lang`),
   ADD KEY `id_lang` (`id_lang`,`name`);
 
 --
--- Indexes for table `jms_feature_product`
+-- Chỉ mục cho bảng `jms_feature_product`
 --
 ALTER TABLE `jms_feature_product`
   ADD PRIMARY KEY (`id_feature`,`id_product`,`id_feature_value`),
@@ -29144,66 +29292,66 @@ ALTER TABLE `jms_feature_product`
   ADD KEY `id_product` (`id_product`);
 
 --
--- Indexes for table `jms_feature_shop`
+-- Chỉ mục cho bảng `jms_feature_shop`
 --
 ALTER TABLE `jms_feature_shop`
   ADD PRIMARY KEY (`id_feature`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_feature_value`
+-- Chỉ mục cho bảng `jms_feature_value`
 --
 ALTER TABLE `jms_feature_value`
   ADD PRIMARY KEY (`id_feature_value`),
   ADD KEY `feature` (`id_feature`);
 
 --
--- Indexes for table `jms_feature_value_lang`
+-- Chỉ mục cho bảng `jms_feature_value_lang`
 --
 ALTER TABLE `jms_feature_value_lang`
   ADD PRIMARY KEY (`id_feature_value`,`id_lang`);
 
 --
--- Indexes for table `jms_gender`
+-- Chỉ mục cho bảng `jms_gender`
 --
 ALTER TABLE `jms_gender`
   ADD PRIMARY KEY (`id_gender`);
 
 --
--- Indexes for table `jms_gender_lang`
+-- Chỉ mục cho bảng `jms_gender_lang`
 --
 ALTER TABLE `jms_gender_lang`
   ADD PRIMARY KEY (`id_gender`,`id_lang`),
   ADD KEY `id_gender` (`id_gender`);
 
 --
--- Indexes for table `jms_group`
+-- Chỉ mục cho bảng `jms_group`
 --
 ALTER TABLE `jms_group`
   ADD PRIMARY KEY (`id_group`);
 
 --
--- Indexes for table `jms_group_lang`
+-- Chỉ mục cho bảng `jms_group_lang`
 --
 ALTER TABLE `jms_group_lang`
   ADD PRIMARY KEY (`id_group`,`id_lang`);
 
 --
--- Indexes for table `jms_group_reduction`
+-- Chỉ mục cho bảng `jms_group_reduction`
 --
 ALTER TABLE `jms_group_reduction`
   ADD PRIMARY KEY (`id_group_reduction`),
   ADD UNIQUE KEY `id_group` (`id_group`,`id_category`);
 
 --
--- Indexes for table `jms_group_shop`
+-- Chỉ mục cho bảng `jms_group_shop`
 --
 ALTER TABLE `jms_group_shop`
   ADD PRIMARY KEY (`id_group`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_guest`
+-- Chỉ mục cho bảng `jms_guest`
 --
 ALTER TABLE `jms_guest`
   ADD PRIMARY KEY (`id_guest`),
@@ -29212,39 +29360,39 @@ ALTER TABLE `jms_guest`
   ADD KEY `id_web_browser` (`id_web_browser`);
 
 --
--- Indexes for table `jms_homeslider`
+-- Chỉ mục cho bảng `jms_homeslider`
 --
 ALTER TABLE `jms_homeslider`
   ADD PRIMARY KEY (`id_homeslider_slides`,`id_shop`);
 
 --
--- Indexes for table `jms_homeslider_slides`
+-- Chỉ mục cho bảng `jms_homeslider_slides`
 --
 ALTER TABLE `jms_homeslider_slides`
   ADD PRIMARY KEY (`id_homeslider_slides`);
 
 --
--- Indexes for table `jms_homeslider_slides_lang`
+-- Chỉ mục cho bảng `jms_homeslider_slides_lang`
 --
 ALTER TABLE `jms_homeslider_slides_lang`
   ADD PRIMARY KEY (`id_homeslider_slides`,`id_lang`);
 
 --
--- Indexes for table `jms_hook`
+-- Chỉ mục cho bảng `jms_hook`
 --
 ALTER TABLE `jms_hook`
   ADD PRIMARY KEY (`id_hook`),
   ADD UNIQUE KEY `hook_name` (`name`);
 
 --
--- Indexes for table `jms_hook_alias`
+-- Chỉ mục cho bảng `jms_hook_alias`
 --
 ALTER TABLE `jms_hook_alias`
   ADD PRIMARY KEY (`id_hook_alias`),
   ADD UNIQUE KEY `alias` (`alias`);
 
 --
--- Indexes for table `jms_hook_module`
+-- Chỉ mục cho bảng `jms_hook_module`
 --
 ALTER TABLE `jms_hook_module`
   ADD PRIMARY KEY (`id_module`,`id_hook`,`id_shop`),
@@ -29253,7 +29401,7 @@ ALTER TABLE `jms_hook_module`
   ADD KEY `position` (`id_shop`,`position`);
 
 --
--- Indexes for table `jms_hook_module_exceptions`
+-- Chỉ mục cho bảng `jms_hook_module_exceptions`
 --
 ALTER TABLE `jms_hook_module_exceptions`
   ADD PRIMARY KEY (`id_hook_module_exceptions`),
@@ -29261,19 +29409,19 @@ ALTER TABLE `jms_hook_module_exceptions`
   ADD KEY `id_hook` (`id_hook`);
 
 --
--- Indexes for table `jms_hotdeals`
+-- Chỉ mục cho bảng `jms_hotdeals`
 --
 ALTER TABLE `jms_hotdeals`
   ADD PRIMARY KEY (`id_hotdeals`);
 
 --
--- Indexes for table `jms_hotdeals_items`
+-- Chỉ mục cho bảng `jms_hotdeals_items`
 --
 ALTER TABLE `jms_hotdeals_items`
   ADD PRIMARY KEY (`id_hotdeals`);
 
 --
--- Indexes for table `jms_image`
+-- Chỉ mục cho bảng `jms_image`
 --
 ALTER TABLE `jms_image`
   ADD PRIMARY KEY (`id_image`),
@@ -29282,14 +29430,14 @@ ALTER TABLE `jms_image`
   ADD KEY `image_product` (`id_product`);
 
 --
--- Indexes for table `jms_image_lang`
+-- Chỉ mục cho bảng `jms_image_lang`
 --
 ALTER TABLE `jms_image_lang`
   ADD PRIMARY KEY (`id_image`,`id_lang`),
   ADD KEY `id_image` (`id_image`);
 
 --
--- Indexes for table `jms_image_shop`
+-- Chỉ mục cho bảng `jms_image_shop`
 --
 ALTER TABLE `jms_image_shop`
   ADD PRIMARY KEY (`id_image`,`id_shop`),
@@ -29297,230 +29445,230 @@ ALTER TABLE `jms_image_shop`
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_image_type`
+-- Chỉ mục cho bảng `jms_image_type`
 --
 ALTER TABLE `jms_image_type`
   ADD PRIMARY KEY (`id_image_type`),
   ADD KEY `image_type_name` (`name`);
 
 --
--- Indexes for table `jms_import_match`
+-- Chỉ mục cho bảng `jms_import_match`
 --
 ALTER TABLE `jms_import_match`
   ADD PRIMARY KEY (`id_import_match`);
 
 --
--- Indexes for table `jms_info`
+-- Chỉ mục cho bảng `jms_info`
 --
 ALTER TABLE `jms_info`
   ADD PRIMARY KEY (`id_info`);
 
 --
--- Indexes for table `jms_info_lang`
+-- Chỉ mục cho bảng `jms_info_lang`
 --
 ALTER TABLE `jms_info_lang`
   ADD PRIMARY KEY (`id_info`,`id_lang`,`id_shop`);
 
 --
--- Indexes for table `jms_info_shop`
+-- Chỉ mục cho bảng `jms_info_shop`
 --
 ALTER TABLE `jms_info_shop`
   ADD PRIMARY KEY (`id_info`,`id_shop`);
 
 --
--- Indexes for table `jms_jmsblog_categories`
+-- Chỉ mục cho bảng `jms_jmsblog_categories`
 --
 ALTER TABLE `jms_jmsblog_categories`
   ADD PRIMARY KEY (`category_id`);
 
 --
--- Indexes for table `jms_jmsblog_categories_lang`
+-- Chỉ mục cho bảng `jms_jmsblog_categories_lang`
 --
 ALTER TABLE `jms_jmsblog_categories_lang`
   ADD PRIMARY KEY (`category_id`,`id_lang`);
 
 --
--- Indexes for table `jms_jmsblog_posts`
+-- Chỉ mục cho bảng `jms_jmsblog_posts`
 --
 ALTER TABLE `jms_jmsblog_posts`
   ADD PRIMARY KEY (`post_id`);
 
 --
--- Indexes for table `jms_jmsblog_posts_comments`
+-- Chỉ mục cho bảng `jms_jmsblog_posts_comments`
 --
 ALTER TABLE `jms_jmsblog_posts_comments`
   ADD PRIMARY KEY (`comment_id`);
 
 --
--- Indexes for table `jms_jmsblog_posts_lang`
+-- Chỉ mục cho bảng `jms_jmsblog_posts_lang`
 --
 ALTER TABLE `jms_jmsblog_posts_lang`
   ADD PRIMARY KEY (`post_id`,`id_lang`);
 
 --
--- Indexes for table `jms_jmsbrands`
+-- Chỉ mục cho bảng `jms_jmsbrands`
 --
 ALTER TABLE `jms_jmsbrands`
   ADD PRIMARY KEY (`brand_id`,`id_shop`);
 
 --
--- Indexes for table `jms_jmsbrands_logos`
+-- Chỉ mục cho bảng `jms_jmsbrands_logos`
 --
 ALTER TABLE `jms_jmsbrands_logos`
   ADD PRIMARY KEY (`brand_id`);
 
 --
--- Indexes for table `jms_jmsbrands_logos_lang`
+-- Chỉ mục cho bảng `jms_jmsbrands_logos_lang`
 --
 ALTER TABLE `jms_jmsbrands_logos_lang`
   ADD PRIMARY KEY (`brand_id`,`id_lang`);
 
 --
--- Indexes for table `jms_jmsfacebookusers`
+-- Chỉ mục cho bảng `jms_jmsfacebookusers`
 --
 ALTER TABLE `jms_jmsfacebookusers`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `jms_jmshtml_left`
+-- Chỉ mục cho bảng `jms_jmshtml_left`
 --
 ALTER TABLE `jms_jmshtml_left`
   ADD PRIMARY KEY (`html_id`,`id_shop`);
 
 --
--- Indexes for table `jms_jmshtml_left_lang`
+-- Chỉ mục cho bảng `jms_jmshtml_left_lang`
 --
 ALTER TABLE `jms_jmshtml_left_lang`
   ADD PRIMARY KEY (`html_id`,`id_lang`);
 
 --
--- Indexes for table `jms_jmsmaploc`
+-- Chỉ mục cho bảng `jms_jmsmaploc`
 --
 ALTER TABLE `jms_jmsmaploc`
   ADD PRIMARY KEY (`id_loc`,`id_shop`);
 
 --
--- Indexes for table `jms_jmsmaploc_locs`
+-- Chỉ mục cho bảng `jms_jmsmaploc_locs`
 --
 ALTER TABLE `jms_jmsmaploc_locs`
   ADD PRIMARY KEY (`id_loc`);
 
 --
--- Indexes for table `jms_jmsmaploc_locs_lang`
+-- Chỉ mục cho bảng `jms_jmsmaploc_locs_lang`
 --
 ALTER TABLE `jms_jmsmaploc_locs_lang`
   ADD PRIMARY KEY (`id_loc`,`id_lang`);
 
 --
--- Indexes for table `jms_jmsmegamenu`
+-- Chỉ mục cho bảng `jms_jmsmegamenu`
 --
 ALTER TABLE `jms_jmsmegamenu`
   ADD PRIMARY KEY (`mitem_id`);
 
 --
--- Indexes for table `jms_jmspagebuilder`
+-- Chỉ mục cho bảng `jms_jmspagebuilder`
 --
 ALTER TABLE `jms_jmspagebuilder`
   ADD PRIMARY KEY (`id_homepage`,`id_shop`);
 
 --
--- Indexes for table `jms_jmspagebuilder_homepages`
+-- Chỉ mục cho bảng `jms_jmspagebuilder_homepages`
 --
 ALTER TABLE `jms_jmspagebuilder_homepages`
   ADD PRIMARY KEY (`id_homepage`);
 
 --
--- Indexes for table `jms_jmstestimonials`
+-- Chỉ mục cho bảng `jms_jmstestimonials`
 --
 ALTER TABLE `jms_jmstestimonials`
   ADD PRIMARY KEY (`id_testimonial`);
 
 --
--- Indexes for table `jms_jmstestimonials_lang`
+-- Chỉ mục cho bảng `jms_jmstestimonials_lang`
 --
 ALTER TABLE `jms_jmstestimonials_lang`
   ADD PRIMARY KEY (`id_testimonial`,`id_lang`);
 
 --
--- Indexes for table `jms_jms_hook`
+-- Chỉ mục cho bảng `jms_jms_hook`
 --
 ALTER TABLE `jms_jms_hook`
   ADD PRIMARY KEY (`id_hook`);
 
 --
--- Indexes for table `jms_jms_layer_style`
+-- Chỉ mục cho bảng `jms_jms_layer_style`
 --
 ALTER TABLE `jms_jms_layer_style`
   ADD PRIMARY KEY (`id_style`);
 
 --
--- Indexes for table `jms_jms_producttab`
+-- Chỉ mục cho bảng `jms_jms_producttab`
 --
 ALTER TABLE `jms_jms_producttab`
   ADD PRIMARY KEY (`tab_id`,`id_shop`);
 
 --
--- Indexes for table `jms_jms_producttab_ctab`
+-- Chỉ mục cho bảng `jms_jms_producttab_ctab`
 --
 ALTER TABLE `jms_jms_producttab_ctab`
   ADD PRIMARY KEY (`tab_id`);
 
 --
--- Indexes for table `jms_jms_producttab_ctab_lang`
+-- Chỉ mục cho bảng `jms_jms_producttab_ctab_lang`
 --
 ALTER TABLE `jms_jms_producttab_ctab_lang`
   ADD PRIMARY KEY (`tab_id`,`id_lang`);
 
 --
--- Indexes for table `jms_jms_product_video`
+-- Chỉ mục cho bảng `jms_jms_product_video`
 --
 ALTER TABLE `jms_jms_product_video`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `jms_jms_slider`
+-- Chỉ mục cho bảng `jms_jms_slider`
 --
 ALTER TABLE `jms_jms_slider`
   ADD PRIMARY KEY (`id_slider`);
 
 --
--- Indexes for table `jms_jms_slider_hook`
+-- Chỉ mục cho bảng `jms_jms_slider_hook`
 --
 ALTER TABLE `jms_jms_slider_hook`
   ADD PRIMARY KEY (`id_slider`,`id_hook`);
 
 --
--- Indexes for table `jms_jms_slider_lang`
+-- Chỉ mục cho bảng `jms_jms_slider_lang`
 --
 ALTER TABLE `jms_jms_slider_lang`
   ADD PRIMARY KEY (`id_slider`,`id_lang`);
 
 --
--- Indexes for table `jms_jms_slides`
+-- Chỉ mục cho bảng `jms_jms_slides`
 --
 ALTER TABLE `jms_jms_slides`
   ADD PRIMARY KEY (`id_slide`);
 
 --
--- Indexes for table `jms_jms_slides_layers`
+-- Chỉ mục cho bảng `jms_jms_slides_layers`
 --
 ALTER TABLE `jms_jms_slides_layers`
   ADD PRIMARY KEY (`id_layer`,`id_slide`);
 
 --
--- Indexes for table `jms_jms_slides_shop`
+-- Chỉ mục cho bảng `jms_jms_slides_shop`
 --
 ALTER TABLE `jms_jms_slides_shop`
   ADD PRIMARY KEY (`id_slide`,`id_shop`);
 
 --
--- Indexes for table `jms_lang`
+-- Chỉ mục cho bảng `jms_lang`
 --
 ALTER TABLE `jms_lang`
   ADD PRIMARY KEY (`id_lang`);
 
 --
--- Indexes for table `jms_lang_shop`
+-- Chỉ mục cho bảng `jms_lang_shop`
 --
 ALTER TABLE `jms_lang_shop`
   ADD PRIMARY KEY (`id_lang`,`id_shop`),
@@ -29528,63 +29676,63 @@ ALTER TABLE `jms_lang_shop`
   ADD KEY `IDX_FDF96F40274A50A0` (`id_shop`);
 
 --
--- Indexes for table `jms_layered_category`
+-- Chỉ mục cho bảng `jms_layered_category`
 --
 ALTER TABLE `jms_layered_category`
   ADD PRIMARY KEY (`id_layered_category`),
   ADD KEY `id_category` (`id_category`,`type`);
 
 --
--- Indexes for table `jms_layered_filter`
+-- Chỉ mục cho bảng `jms_layered_filter`
 --
 ALTER TABLE `jms_layered_filter`
   ADD PRIMARY KEY (`id_layered_filter`);
 
 --
--- Indexes for table `jms_layered_filter_shop`
+-- Chỉ mục cho bảng `jms_layered_filter_shop`
 --
 ALTER TABLE `jms_layered_filter_shop`
   ADD PRIMARY KEY (`id_layered_filter`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_layered_indexable_attribute_group`
+-- Chỉ mục cho bảng `jms_layered_indexable_attribute_group`
 --
 ALTER TABLE `jms_layered_indexable_attribute_group`
   ADD PRIMARY KEY (`id_attribute_group`);
 
 --
--- Indexes for table `jms_layered_indexable_attribute_group_lang_value`
+-- Chỉ mục cho bảng `jms_layered_indexable_attribute_group_lang_value`
 --
 ALTER TABLE `jms_layered_indexable_attribute_group_lang_value`
   ADD PRIMARY KEY (`id_attribute_group`,`id_lang`);
 
 --
--- Indexes for table `jms_layered_indexable_attribute_lang_value`
+-- Chỉ mục cho bảng `jms_layered_indexable_attribute_lang_value`
 --
 ALTER TABLE `jms_layered_indexable_attribute_lang_value`
   ADD PRIMARY KEY (`id_attribute`,`id_lang`);
 
 --
--- Indexes for table `jms_layered_indexable_feature`
+-- Chỉ mục cho bảng `jms_layered_indexable_feature`
 --
 ALTER TABLE `jms_layered_indexable_feature`
   ADD PRIMARY KEY (`id_feature`);
 
 --
--- Indexes for table `jms_layered_indexable_feature_lang_value`
+-- Chỉ mục cho bảng `jms_layered_indexable_feature_lang_value`
 --
 ALTER TABLE `jms_layered_indexable_feature_lang_value`
   ADD PRIMARY KEY (`id_feature`,`id_lang`);
 
 --
--- Indexes for table `jms_layered_indexable_feature_value_lang_value`
+-- Chỉ mục cho bảng `jms_layered_indexable_feature_value_lang_value`
 --
 ALTER TABLE `jms_layered_indexable_feature_value_lang_value`
   ADD PRIMARY KEY (`id_feature_value`,`id_lang`);
 
 --
--- Indexes for table `jms_layered_price_index`
+-- Chỉ mục cho bảng `jms_layered_price_index`
 --
 ALTER TABLE `jms_layered_price_index`
   ADD PRIMARY KEY (`id_product`,`id_currency`,`id_shop`),
@@ -29593,83 +29741,83 @@ ALTER TABLE `jms_layered_price_index`
   ADD KEY `price_max` (`price_max`);
 
 --
--- Indexes for table `jms_layered_product_attribute`
+-- Chỉ mục cho bảng `jms_layered_product_attribute`
 --
 ALTER TABLE `jms_layered_product_attribute`
   ADD PRIMARY KEY (`id_attribute`,`id_product`,`id_shop`),
   ADD UNIQUE KEY `id_attribute_group` (`id_attribute_group`,`id_attribute`,`id_product`,`id_shop`);
 
 --
--- Indexes for table `jms_linksmenutop`
+-- Chỉ mục cho bảng `jms_linksmenutop`
 --
 ALTER TABLE `jms_linksmenutop`
   ADD PRIMARY KEY (`id_linksmenutop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_linksmenutop_lang`
+-- Chỉ mục cho bảng `jms_linksmenutop_lang`
 --
 ALTER TABLE `jms_linksmenutop_lang`
   ADD KEY `id_linksmenutop` (`id_linksmenutop`,`id_lang`,`id_shop`);
 
 --
--- Indexes for table `jms_link_block`
+-- Chỉ mục cho bảng `jms_link_block`
 --
 ALTER TABLE `jms_link_block`
   ADD PRIMARY KEY (`id_link_block`);
 
 --
--- Indexes for table `jms_link_block_lang`
+-- Chỉ mục cho bảng `jms_link_block_lang`
 --
 ALTER TABLE `jms_link_block_lang`
   ADD PRIMARY KEY (`id_link_block`,`id_lang`);
 
 --
--- Indexes for table `jms_link_block_shop`
+-- Chỉ mục cho bảng `jms_link_block_shop`
 --
 ALTER TABLE `jms_link_block_shop`
   ADD PRIMARY KEY (`id_link_block`,`id_shop`);
 
 --
--- Indexes for table `jms_log`
+-- Chỉ mục cho bảng `jms_log`
 --
 ALTER TABLE `jms_log`
   ADD PRIMARY KEY (`id_log`);
 
 --
--- Indexes for table `jms_mail`
+-- Chỉ mục cho bảng `jms_mail`
 --
 ALTER TABLE `jms_mail`
   ADD PRIMARY KEY (`id_mail`),
   ADD KEY `recipient` (`recipient`(10));
 
 --
--- Indexes for table `jms_manufacturer`
+-- Chỉ mục cho bảng `jms_manufacturer`
 --
 ALTER TABLE `jms_manufacturer`
   ADD PRIMARY KEY (`id_manufacturer`);
 
 --
--- Indexes for table `jms_manufacturer_lang`
+-- Chỉ mục cho bảng `jms_manufacturer_lang`
 --
 ALTER TABLE `jms_manufacturer_lang`
   ADD PRIMARY KEY (`id_manufacturer`,`id_lang`);
 
 --
--- Indexes for table `jms_manufacturer_shop`
+-- Chỉ mục cho bảng `jms_manufacturer_shop`
 --
 ALTER TABLE `jms_manufacturer_shop`
   ADD PRIMARY KEY (`id_manufacturer`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_memcached_servers`
+-- Chỉ mục cho bảng `jms_memcached_servers`
 --
 ALTER TABLE `jms_memcached_servers`
   ADD PRIMARY KEY (`id_memcached_server`);
 
 --
--- Indexes for table `jms_message`
+-- Chỉ mục cho bảng `jms_message`
 --
 ALTER TABLE `jms_message`
   ADD PRIMARY KEY (`id_message`),
@@ -29679,20 +29827,20 @@ ALTER TABLE `jms_message`
   ADD KEY `id_employee` (`id_employee`);
 
 --
--- Indexes for table `jms_message_readed`
+-- Chỉ mục cho bảng `jms_message_readed`
 --
 ALTER TABLE `jms_message_readed`
   ADD PRIMARY KEY (`id_message`,`id_employee`);
 
 --
--- Indexes for table `jms_meta`
+-- Chỉ mục cho bảng `jms_meta`
 --
 ALTER TABLE `jms_meta`
   ADD PRIMARY KEY (`id_meta`),
   ADD UNIQUE KEY `page` (`page`);
 
 --
--- Indexes for table `jms_meta_lang`
+-- Chỉ mục cho bảng `jms_meta_lang`
 --
 ALTER TABLE `jms_meta_lang`
   ADD PRIMARY KEY (`id_meta`,`id_shop`,`id_lang`),
@@ -29700,7 +29848,7 @@ ALTER TABLE `jms_meta_lang`
   ADD KEY `id_lang` (`id_lang`);
 
 --
--- Indexes for table `jms_module`
+-- Chỉ mục cho bảng `jms_module`
 --
 ALTER TABLE `jms_module`
   ADD PRIMARY KEY (`id_module`),
@@ -29708,64 +29856,64 @@ ALTER TABLE `jms_module`
   ADD KEY `name` (`name`);
 
 --
--- Indexes for table `jms_module_access`
+-- Chỉ mục cho bảng `jms_module_access`
 --
 ALTER TABLE `jms_module_access`
   ADD PRIMARY KEY (`id_profile`,`id_authorization_role`);
 
 --
--- Indexes for table `jms_module_carrier`
+-- Chỉ mục cho bảng `jms_module_carrier`
 --
 ALTER TABLE `jms_module_carrier`
   ADD PRIMARY KEY (`id_module`,`id_shop`,`id_reference`);
 
 --
--- Indexes for table `jms_module_country`
+-- Chỉ mục cho bảng `jms_module_country`
 --
 ALTER TABLE `jms_module_country`
   ADD PRIMARY KEY (`id_module`,`id_shop`,`id_country`);
 
 --
--- Indexes for table `jms_module_currency`
+-- Chỉ mục cho bảng `jms_module_currency`
 --
 ALTER TABLE `jms_module_currency`
   ADD PRIMARY KEY (`id_module`,`id_shop`,`id_currency`),
   ADD KEY `id_module` (`id_module`);
 
 --
--- Indexes for table `jms_module_group`
+-- Chỉ mục cho bảng `jms_module_group`
 --
 ALTER TABLE `jms_module_group`
   ADD PRIMARY KEY (`id_module`,`id_shop`,`id_group`);
 
 --
--- Indexes for table `jms_module_history`
+-- Chỉ mục cho bảng `jms_module_history`
 --
 ALTER TABLE `jms_module_history`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `jms_module_preference`
+-- Chỉ mục cho bảng `jms_module_preference`
 --
 ALTER TABLE `jms_module_preference`
   ADD PRIMARY KEY (`id_module_preference`),
   ADD UNIQUE KEY `employee_module` (`id_employee`,`module`);
 
 --
--- Indexes for table `jms_module_shop`
+-- Chỉ mục cho bảng `jms_module_shop`
 --
 ALTER TABLE `jms_module_shop`
   ADD PRIMARY KEY (`id_module`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_operating_system`
+-- Chỉ mục cho bảng `jms_operating_system`
 --
 ALTER TABLE `jms_operating_system`
   ADD PRIMARY KEY (`id_operating_system`);
 
 --
--- Indexes for table `jms_orders`
+-- Chỉ mục cho bảng `jms_orders`
 --
 ALTER TABLE `jms_orders`
   ADD PRIMARY KEY (`id_order`),
@@ -29784,7 +29932,7 @@ ALTER TABLE `jms_orders`
   ADD KEY `date_add` (`date_add`);
 
 --
--- Indexes for table `jms_order_carrier`
+-- Chỉ mục cho bảng `jms_order_carrier`
 --
 ALTER TABLE `jms_order_carrier`
   ADD PRIMARY KEY (`id_order_carrier`),
@@ -29793,7 +29941,7 @@ ALTER TABLE `jms_order_carrier`
   ADD KEY `id_order_invoice` (`id_order_invoice`);
 
 --
--- Indexes for table `jms_order_cart_rule`
+-- Chỉ mục cho bảng `jms_order_cart_rule`
 --
 ALTER TABLE `jms_order_cart_rule`
   ADD PRIMARY KEY (`id_order_cart_rule`),
@@ -29801,7 +29949,7 @@ ALTER TABLE `jms_order_cart_rule`
   ADD KEY `id_cart_rule` (`id_cart_rule`);
 
 --
--- Indexes for table `jms_order_detail`
+-- Chỉ mục cho bảng `jms_order_detail`
 --
 ALTER TABLE `jms_order_detail`
   ADD PRIMARY KEY (`id_order_detail`),
@@ -29812,14 +29960,14 @@ ALTER TABLE `jms_order_detail`
   ADD KEY `id_order_id_order_detail` (`id_order`,`id_order_detail`);
 
 --
--- Indexes for table `jms_order_detail_tax`
+-- Chỉ mục cho bảng `jms_order_detail_tax`
 --
 ALTER TABLE `jms_order_detail_tax`
   ADD KEY `id_order_detail` (`id_order_detail`),
   ADD KEY `id_tax` (`id_tax`);
 
 --
--- Indexes for table `jms_order_history`
+-- Chỉ mục cho bảng `jms_order_history`
 --
 ALTER TABLE `jms_order_history`
   ADD PRIMARY KEY (`id_order_history`),
@@ -29828,14 +29976,14 @@ ALTER TABLE `jms_order_history`
   ADD KEY `id_order_state` (`id_order_state`);
 
 --
--- Indexes for table `jms_order_invoice`
+-- Chỉ mục cho bảng `jms_order_invoice`
 --
 ALTER TABLE `jms_order_invoice`
   ADD PRIMARY KEY (`id_order_invoice`),
   ADD KEY `id_order` (`id_order`);
 
 --
--- Indexes for table `jms_order_invoice_payment`
+-- Chỉ mục cho bảng `jms_order_invoice_payment`
 --
 ALTER TABLE `jms_order_invoice_payment`
   ADD PRIMARY KEY (`id_order_invoice`,`id_order_payment`),
@@ -29843,32 +29991,32 @@ ALTER TABLE `jms_order_invoice_payment`
   ADD KEY `id_order` (`id_order`);
 
 --
--- Indexes for table `jms_order_invoice_tax`
+-- Chỉ mục cho bảng `jms_order_invoice_tax`
 --
 ALTER TABLE `jms_order_invoice_tax`
   ADD KEY `id_tax` (`id_tax`);
 
 --
--- Indexes for table `jms_order_message`
+-- Chỉ mục cho bảng `jms_order_message`
 --
 ALTER TABLE `jms_order_message`
   ADD PRIMARY KEY (`id_order_message`);
 
 --
--- Indexes for table `jms_order_message_lang`
+-- Chỉ mục cho bảng `jms_order_message_lang`
 --
 ALTER TABLE `jms_order_message_lang`
   ADD PRIMARY KEY (`id_order_message`,`id_lang`);
 
 --
--- Indexes for table `jms_order_payment`
+-- Chỉ mục cho bảng `jms_order_payment`
 --
 ALTER TABLE `jms_order_payment`
   ADD PRIMARY KEY (`id_order_payment`),
   ADD KEY `order_reference` (`order_reference`);
 
 --
--- Indexes for table `jms_order_return`
+-- Chỉ mục cho bảng `jms_order_return`
 --
 ALTER TABLE `jms_order_return`
   ADD PRIMARY KEY (`id_order_return`),
@@ -29876,25 +30024,25 @@ ALTER TABLE `jms_order_return`
   ADD KEY `id_order` (`id_order`);
 
 --
--- Indexes for table `jms_order_return_detail`
+-- Chỉ mục cho bảng `jms_order_return_detail`
 --
 ALTER TABLE `jms_order_return_detail`
   ADD PRIMARY KEY (`id_order_return`,`id_order_detail`,`id_customization`);
 
 --
--- Indexes for table `jms_order_return_state`
+-- Chỉ mục cho bảng `jms_order_return_state`
 --
 ALTER TABLE `jms_order_return_state`
   ADD PRIMARY KEY (`id_order_return_state`);
 
 --
--- Indexes for table `jms_order_return_state_lang`
+-- Chỉ mục cho bảng `jms_order_return_state_lang`
 --
 ALTER TABLE `jms_order_return_state_lang`
   ADD PRIMARY KEY (`id_order_return_state`,`id_lang`);
 
 --
--- Indexes for table `jms_order_slip`
+-- Chỉ mục cho bảng `jms_order_slip`
 --
 ALTER TABLE `jms_order_slip`
   ADD PRIMARY KEY (`id_order_slip`),
@@ -29902,40 +30050,40 @@ ALTER TABLE `jms_order_slip`
   ADD KEY `id_order` (`id_order`);
 
 --
--- Indexes for table `jms_order_slip_detail`
+-- Chỉ mục cho bảng `jms_order_slip_detail`
 --
 ALTER TABLE `jms_order_slip_detail`
   ADD PRIMARY KEY (`id_order_slip`,`id_order_detail`);
 
 --
--- Indexes for table `jms_order_slip_detail_tax`
+-- Chỉ mục cho bảng `jms_order_slip_detail_tax`
 --
 ALTER TABLE `jms_order_slip_detail_tax`
   ADD KEY `id_order_slip_detail` (`id_order_slip_detail`),
   ADD KEY `id_tax` (`id_tax`);
 
 --
--- Indexes for table `jms_order_state`
+-- Chỉ mục cho bảng `jms_order_state`
 --
 ALTER TABLE `jms_order_state`
   ADD PRIMARY KEY (`id_order_state`),
   ADD KEY `module_name` (`module_name`);
 
 --
--- Indexes for table `jms_order_state_lang`
+-- Chỉ mục cho bảng `jms_order_state_lang`
 --
 ALTER TABLE `jms_order_state_lang`
   ADD PRIMARY KEY (`id_order_state`,`id_lang`);
 
 --
--- Indexes for table `jms_pack`
+-- Chỉ mục cho bảng `jms_pack`
 --
 ALTER TABLE `jms_pack`
   ADD PRIMARY KEY (`id_product_pack`,`id_product_item`,`id_product_attribute_item`),
   ADD KEY `product_item` (`id_product_item`,`id_product_attribute_item`);
 
 --
--- Indexes for table `jms_page`
+-- Chỉ mục cho bảng `jms_page`
 --
 ALTER TABLE `jms_page`
   ADD PRIMARY KEY (`id_page`),
@@ -29943,27 +30091,27 @@ ALTER TABLE `jms_page`
   ADD KEY `id_object` (`id_object`);
 
 --
--- Indexes for table `jms_pagenotfound`
+-- Chỉ mục cho bảng `jms_pagenotfound`
 --
 ALTER TABLE `jms_pagenotfound`
   ADD PRIMARY KEY (`id_pagenotfound`),
   ADD KEY `date_add` (`date_add`);
 
 --
--- Indexes for table `jms_page_type`
+-- Chỉ mục cho bảng `jms_page_type`
 --
 ALTER TABLE `jms_page_type`
   ADD PRIMARY KEY (`id_page_type`),
   ADD KEY `name` (`name`);
 
 --
--- Indexes for table `jms_page_viewed`
+-- Chỉ mục cho bảng `jms_page_viewed`
 --
 ALTER TABLE `jms_page_viewed`
   ADD PRIMARY KEY (`id_page`,`id_date_range`,`id_shop`);
 
 --
--- Indexes for table `jms_product`
+-- Chỉ mục cho bảng `jms_product`
 --
 ALTER TABLE `jms_product`
   ADD PRIMARY KEY (`id_product`),
@@ -29975,13 +30123,13 @@ ALTER TABLE `jms_product`
   ADD KEY `state` (`state`,`date_upd`);
 
 --
--- Indexes for table `jms_product_attachment`
+-- Chỉ mục cho bảng `jms_product_attachment`
 --
 ALTER TABLE `jms_product_attachment`
   ADD PRIMARY KEY (`id_product`,`id_attachment`);
 
 --
--- Indexes for table `jms_product_attribute`
+-- Chỉ mục cho bảng `jms_product_attribute`
 --
 ALTER TABLE `jms_product_attribute`
   ADD PRIMARY KEY (`id_product_attribute`),
@@ -29992,40 +30140,40 @@ ALTER TABLE `jms_product_attribute`
   ADD KEY `id_product_id_product_attribute` (`id_product_attribute`,`id_product`);
 
 --
--- Indexes for table `jms_product_attribute_combination`
+-- Chỉ mục cho bảng `jms_product_attribute_combination`
 --
 ALTER TABLE `jms_product_attribute_combination`
   ADD PRIMARY KEY (`id_attribute`,`id_product_attribute`),
   ADD KEY `id_product_attribute` (`id_product_attribute`);
 
 --
--- Indexes for table `jms_product_attribute_image`
+-- Chỉ mục cho bảng `jms_product_attribute_image`
 --
 ALTER TABLE `jms_product_attribute_image`
   ADD PRIMARY KEY (`id_product_attribute`,`id_image`),
   ADD KEY `id_image` (`id_image`);
 
 --
--- Indexes for table `jms_product_attribute_shop`
+-- Chỉ mục cho bảng `jms_product_attribute_shop`
 --
 ALTER TABLE `jms_product_attribute_shop`
   ADD PRIMARY KEY (`id_product_attribute`,`id_shop`),
   ADD UNIQUE KEY `id_product` (`id_product`,`id_shop`,`default_on`);
 
 --
--- Indexes for table `jms_product_carrier`
+-- Chỉ mục cho bảng `jms_product_carrier`
 --
 ALTER TABLE `jms_product_carrier`
   ADD PRIMARY KEY (`id_product`,`id_carrier_reference`,`id_shop`);
 
 --
--- Indexes for table `jms_product_country_tax`
+-- Chỉ mục cho bảng `jms_product_country_tax`
 --
 ALTER TABLE `jms_product_country_tax`
   ADD PRIMARY KEY (`id_product`,`id_country`);
 
 --
--- Indexes for table `jms_product_download`
+-- Chỉ mục cho bảng `jms_product_download`
 --
 ALTER TABLE `jms_product_download`
   ADD PRIMARY KEY (`id_product_download`),
@@ -30033,13 +30181,13 @@ ALTER TABLE `jms_product_download`
   ADD KEY `product_active` (`id_product`,`active`);
 
 --
--- Indexes for table `jms_product_group_reduction_cache`
+-- Chỉ mục cho bảng `jms_product_group_reduction_cache`
 --
 ALTER TABLE `jms_product_group_reduction_cache`
   ADD PRIMARY KEY (`id_product`,`id_group`);
 
 --
--- Indexes for table `jms_product_lang`
+-- Chỉ mục cho bảng `jms_product_lang`
 --
 ALTER TABLE `jms_product_lang`
   ADD PRIMARY KEY (`id_product`,`id_shop`,`id_lang`),
@@ -30047,14 +30195,14 @@ ALTER TABLE `jms_product_lang`
   ADD KEY `name` (`name`);
 
 --
--- Indexes for table `jms_product_sale`
+-- Chỉ mục cho bảng `jms_product_sale`
 --
 ALTER TABLE `jms_product_sale`
   ADD PRIMARY KEY (`id_product`),
   ADD KEY `quantity` (`quantity`);
 
 --
--- Indexes for table `jms_product_shop`
+-- Chỉ mục cho bảng `jms_product_shop`
 --
 ALTER TABLE `jms_product_shop`
   ADD PRIMARY KEY (`id_product`,`id_shop`),
@@ -30063,7 +30211,7 @@ ALTER TABLE `jms_product_shop`
   ADD KEY `indexed` (`indexed`,`active`,`id_product`);
 
 --
--- Indexes for table `jms_product_supplier`
+-- Chỉ mục cho bảng `jms_product_supplier`
 --
 ALTER TABLE `jms_product_supplier`
   ADD PRIMARY KEY (`id_product_supplier`),
@@ -30071,7 +30219,7 @@ ALTER TABLE `jms_product_supplier`
   ADD KEY `id_supplier` (`id_supplier`,`id_product`);
 
 --
--- Indexes for table `jms_product_tag`
+-- Chỉ mục cho bảng `jms_product_tag`
 --
 ALTER TABLE `jms_product_tag`
   ADD PRIMARY KEY (`id_product`,`id_tag`),
@@ -30079,140 +30227,140 @@ ALTER TABLE `jms_product_tag`
   ADD KEY `id_lang` (`id_lang`,`id_tag`);
 
 --
--- Indexes for table `jms_profile`
+-- Chỉ mục cho bảng `jms_profile`
 --
 ALTER TABLE `jms_profile`
   ADD PRIMARY KEY (`id_profile`);
 
 --
--- Indexes for table `jms_profile_lang`
+-- Chỉ mục cho bảng `jms_profile_lang`
 --
 ALTER TABLE `jms_profile_lang`
   ADD PRIMARY KEY (`id_profile`,`id_lang`);
 
 --
--- Indexes for table `jms_quick_access`
+-- Chỉ mục cho bảng `jms_quick_access`
 --
 ALTER TABLE `jms_quick_access`
   ADD PRIMARY KEY (`id_quick_access`);
 
 --
--- Indexes for table `jms_quick_access_lang`
+-- Chỉ mục cho bảng `jms_quick_access_lang`
 --
 ALTER TABLE `jms_quick_access_lang`
   ADD PRIMARY KEY (`id_quick_access`,`id_lang`);
 
 --
--- Indexes for table `jms_range_price`
+-- Chỉ mục cho bảng `jms_range_price`
 --
 ALTER TABLE `jms_range_price`
   ADD PRIMARY KEY (`id_range_price`),
   ADD UNIQUE KEY `id_carrier` (`id_carrier`,`delimiter1`,`delimiter2`);
 
 --
--- Indexes for table `jms_range_weight`
+-- Chỉ mục cho bảng `jms_range_weight`
 --
 ALTER TABLE `jms_range_weight`
   ADD PRIMARY KEY (`id_range_weight`),
   ADD UNIQUE KEY `id_carrier` (`id_carrier`,`delimiter1`,`delimiter2`);
 
 --
--- Indexes for table `jms_reassurance`
+-- Chỉ mục cho bảng `jms_reassurance`
 --
 ALTER TABLE `jms_reassurance`
   ADD PRIMARY KEY (`id_reassurance`);
 
 --
--- Indexes for table `jms_reassurance_lang`
+-- Chỉ mục cho bảng `jms_reassurance_lang`
 --
 ALTER TABLE `jms_reassurance_lang`
   ADD PRIMARY KEY (`id_reassurance`,`id_lang`);
 
 --
--- Indexes for table `jms_referrer`
+-- Chỉ mục cho bảng `jms_referrer`
 --
 ALTER TABLE `jms_referrer`
   ADD PRIMARY KEY (`id_referrer`);
 
 --
--- Indexes for table `jms_referrer_cache`
+-- Chỉ mục cho bảng `jms_referrer_cache`
 --
 ALTER TABLE `jms_referrer_cache`
   ADD PRIMARY KEY (`id_connections_source`,`id_referrer`);
 
 --
--- Indexes for table `jms_referrer_shop`
+-- Chỉ mục cho bảng `jms_referrer_shop`
 --
 ALTER TABLE `jms_referrer_shop`
   ADD PRIMARY KEY (`id_referrer`,`id_shop`);
 
 --
--- Indexes for table `jms_request_sql`
+-- Chỉ mục cho bảng `jms_request_sql`
 --
 ALTER TABLE `jms_request_sql`
   ADD PRIMARY KEY (`id_request_sql`);
 
 --
--- Indexes for table `jms_required_field`
+-- Chỉ mục cho bảng `jms_required_field`
 --
 ALTER TABLE `jms_required_field`
   ADD PRIMARY KEY (`id_required_field`),
   ADD KEY `object_name` (`object_name`);
 
 --
--- Indexes for table `jms_risk`
+-- Chỉ mục cho bảng `jms_risk`
 --
 ALTER TABLE `jms_risk`
   ADD PRIMARY KEY (`id_risk`);
 
 --
--- Indexes for table `jms_risk_lang`
+-- Chỉ mục cho bảng `jms_risk_lang`
 --
 ALTER TABLE `jms_risk_lang`
   ADD PRIMARY KEY (`id_risk`,`id_lang`),
   ADD KEY `id_risk` (`id_risk`);
 
 --
--- Indexes for table `jms_search_engine`
+-- Chỉ mục cho bảng `jms_search_engine`
 --
 ALTER TABLE `jms_search_engine`
   ADD PRIMARY KEY (`id_search_engine`);
 
 --
--- Indexes for table `jms_search_index`
+-- Chỉ mục cho bảng `jms_search_index`
 --
 ALTER TABLE `jms_search_index`
   ADD PRIMARY KEY (`id_word`,`id_product`),
   ADD KEY `id_product` (`id_product`,`weight`);
 
 --
--- Indexes for table `jms_search_word`
+-- Chỉ mục cho bảng `jms_search_word`
 --
 ALTER TABLE `jms_search_word`
   ADD PRIMARY KEY (`id_word`),
   ADD UNIQUE KEY `id_lang` (`id_lang`,`id_shop`,`word`);
 
 --
--- Indexes for table `jms_sekeyword`
+-- Chỉ mục cho bảng `jms_sekeyword`
 --
 ALTER TABLE `jms_sekeyword`
   ADD PRIMARY KEY (`id_sekeyword`);
 
 --
--- Indexes for table `jms_shop`
+-- Chỉ mục cho bảng `jms_shop`
 --
 ALTER TABLE `jms_shop`
   ADD PRIMARY KEY (`id_shop`),
   ADD KEY `IDX_74B3FAF4F5C9E40` (`id_shop_group`);
 
 --
--- Indexes for table `jms_shop_group`
+-- Chỉ mục cho bảng `jms_shop_group`
 --
 ALTER TABLE `jms_shop_group`
   ADD PRIMARY KEY (`id_shop_group`);
 
 --
--- Indexes for table `jms_shop_url`
+-- Chỉ mục cho bảng `jms_shop_url`
 --
 ALTER TABLE `jms_shop_url`
   ADD PRIMARY KEY (`id_shop_url`),
@@ -30221,7 +30369,7 @@ ALTER TABLE `jms_shop_url`
   ADD KEY `id_shop` (`id_shop`,`main`);
 
 --
--- Indexes for table `jms_smarty_cache`
+-- Chỉ mục cho bảng `jms_smarty_cache`
 --
 ALTER TABLE `jms_smarty_cache`
   ADD PRIMARY KEY (`id_smarty_cache`),
@@ -30230,19 +30378,19 @@ ALTER TABLE `jms_smarty_cache`
   ADD KEY `modified` (`modified`);
 
 --
--- Indexes for table `jms_smarty_last_flush`
+-- Chỉ mục cho bảng `jms_smarty_last_flush`
 --
 ALTER TABLE `jms_smarty_last_flush`
   ADD PRIMARY KEY (`type`);
 
 --
--- Indexes for table `jms_smarty_lazy_cache`
+-- Chỉ mục cho bảng `jms_smarty_lazy_cache`
 --
 ALTER TABLE `jms_smarty_lazy_cache`
   ADD PRIMARY KEY (`template_hash`,`cache_id`,`compile_id`);
 
 --
--- Indexes for table `jms_specific_price`
+-- Chỉ mục cho bảng `jms_specific_price`
 --
 ALTER TABLE `jms_specific_price`
   ADD PRIMARY KEY (`id_specific_price`),
@@ -30258,34 +30406,34 @@ ALTER TABLE `jms_specific_price`
   ADD KEY `to` (`to`);
 
 --
--- Indexes for table `jms_specific_price_priority`
+-- Chỉ mục cho bảng `jms_specific_price_priority`
 --
 ALTER TABLE `jms_specific_price_priority`
   ADD PRIMARY KEY (`id_specific_price_priority`,`id_product`),
   ADD UNIQUE KEY `id_product` (`id_product`);
 
 --
--- Indexes for table `jms_specific_price_rule`
+-- Chỉ mục cho bảng `jms_specific_price_rule`
 --
 ALTER TABLE `jms_specific_price_rule`
   ADD PRIMARY KEY (`id_specific_price_rule`),
   ADD KEY `id_product` (`id_shop`,`id_currency`,`id_country`,`id_group`,`from_quantity`,`from`,`to`);
 
 --
--- Indexes for table `jms_specific_price_rule_condition`
+-- Chỉ mục cho bảng `jms_specific_price_rule_condition`
 --
 ALTER TABLE `jms_specific_price_rule_condition`
   ADD PRIMARY KEY (`id_specific_price_rule_condition`),
   ADD KEY `id_specific_price_rule_condition_group` (`id_specific_price_rule_condition_group`);
 
 --
--- Indexes for table `jms_specific_price_rule_condition_group`
+-- Chỉ mục cho bảng `jms_specific_price_rule_condition_group`
 --
 ALTER TABLE `jms_specific_price_rule_condition_group`
   ADD PRIMARY KEY (`id_specific_price_rule_condition_group`,`id_specific_price_rule`);
 
 --
--- Indexes for table `jms_state`
+-- Chỉ mục cho bảng `jms_state`
 --
 ALTER TABLE `jms_state`
   ADD PRIMARY KEY (`id_state`),
@@ -30294,13 +30442,13 @@ ALTER TABLE `jms_state`
   ADD KEY `id_zone` (`id_zone`);
 
 --
--- Indexes for table `jms_statssearch`
+-- Chỉ mục cho bảng `jms_statssearch`
 --
 ALTER TABLE `jms_statssearch`
   ADD PRIMARY KEY (`id_statssearch`);
 
 --
--- Indexes for table `jms_stock`
+-- Chỉ mục cho bảng `jms_stock`
 --
 ALTER TABLE `jms_stock`
   ADD PRIMARY KEY (`id_stock`),
@@ -30309,7 +30457,7 @@ ALTER TABLE `jms_stock`
   ADD KEY `id_product_attribute` (`id_product_attribute`);
 
 --
--- Indexes for table `jms_stock_available`
+-- Chỉ mục cho bảng `jms_stock_available`
 --
 ALTER TABLE `jms_stock_available`
   ADD PRIMARY KEY (`id_stock_available`),
@@ -30320,7 +30468,7 @@ ALTER TABLE `jms_stock_available`
   ADD KEY `id_product_attribute` (`id_product_attribute`);
 
 --
--- Indexes for table `jms_stock_mvt`
+-- Chỉ mục cho bảng `jms_stock_mvt`
 --
 ALTER TABLE `jms_stock_mvt`
   ADD PRIMARY KEY (`id_stock_mvt`),
@@ -30328,57 +30476,57 @@ ALTER TABLE `jms_stock_mvt`
   ADD KEY `id_stock_mvt_reason` (`id_stock_mvt_reason`);
 
 --
--- Indexes for table `jms_stock_mvt_reason`
+-- Chỉ mục cho bảng `jms_stock_mvt_reason`
 --
 ALTER TABLE `jms_stock_mvt_reason`
   ADD PRIMARY KEY (`id_stock_mvt_reason`);
 
 --
--- Indexes for table `jms_stock_mvt_reason_lang`
+-- Chỉ mục cho bảng `jms_stock_mvt_reason_lang`
 --
 ALTER TABLE `jms_stock_mvt_reason_lang`
   ADD PRIMARY KEY (`id_stock_mvt_reason`,`id_lang`);
 
 --
--- Indexes for table `jms_store`
+-- Chỉ mục cho bảng `jms_store`
 --
 ALTER TABLE `jms_store`
   ADD PRIMARY KEY (`id_store`);
 
 --
--- Indexes for table `jms_store_lang`
+-- Chỉ mục cho bảng `jms_store_lang`
 --
 ALTER TABLE `jms_store_lang`
   ADD PRIMARY KEY (`id_store`,`id_lang`);
 
 --
--- Indexes for table `jms_store_shop`
+-- Chỉ mục cho bảng `jms_store_shop`
 --
 ALTER TABLE `jms_store_shop`
   ADD PRIMARY KEY (`id_store`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_supplier`
+-- Chỉ mục cho bảng `jms_supplier`
 --
 ALTER TABLE `jms_supplier`
   ADD PRIMARY KEY (`id_supplier`);
 
 --
--- Indexes for table `jms_supplier_lang`
+-- Chỉ mục cho bảng `jms_supplier_lang`
 --
 ALTER TABLE `jms_supplier_lang`
   ADD PRIMARY KEY (`id_supplier`,`id_lang`);
 
 --
--- Indexes for table `jms_supplier_shop`
+-- Chỉ mục cho bảng `jms_supplier_shop`
 --
 ALTER TABLE `jms_supplier_shop`
   ADD PRIMARY KEY (`id_supplier`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_supply_order`
+-- Chỉ mục cho bảng `jms_supply_order`
 --
 ALTER TABLE `jms_supply_order`
   ADD PRIMARY KEY (`id_supply_order`),
@@ -30387,7 +30535,7 @@ ALTER TABLE `jms_supply_order`
   ADD KEY `reference` (`reference`);
 
 --
--- Indexes for table `jms_supply_order_detail`
+-- Chỉ mục cho bảng `jms_supply_order_detail`
 --
 ALTER TABLE `jms_supply_order_detail`
   ADD PRIMARY KEY (`id_supply_order_detail`),
@@ -30396,7 +30544,7 @@ ALTER TABLE `jms_supply_order_detail`
   ADD KEY `id_product_product_attribute` (`id_product`,`id_product_attribute`);
 
 --
--- Indexes for table `jms_supply_order_history`
+-- Chỉ mục cho bảng `jms_supply_order_history`
 --
 ALTER TABLE `jms_supply_order_history`
   ADD PRIMARY KEY (`id_supply_order_history`),
@@ -30405,7 +30553,7 @@ ALTER TABLE `jms_supply_order_history`
   ADD KEY `id_state` (`id_state`);
 
 --
--- Indexes for table `jms_supply_order_receipt_history`
+-- Chỉ mục cho bảng `jms_supply_order_receipt_history`
 --
 ALTER TABLE `jms_supply_order_receipt_history`
   ADD PRIMARY KEY (`id_supply_order_receipt_history`),
@@ -30413,31 +30561,31 @@ ALTER TABLE `jms_supply_order_receipt_history`
   ADD KEY `id_supply_order_state` (`id_supply_order_state`);
 
 --
--- Indexes for table `jms_supply_order_state`
+-- Chỉ mục cho bảng `jms_supply_order_state`
 --
 ALTER TABLE `jms_supply_order_state`
   ADD PRIMARY KEY (`id_supply_order_state`);
 
 --
--- Indexes for table `jms_supply_order_state_lang`
+-- Chỉ mục cho bảng `jms_supply_order_state_lang`
 --
 ALTER TABLE `jms_supply_order_state_lang`
   ADD PRIMARY KEY (`id_supply_order_state`,`id_lang`);
 
 --
--- Indexes for table `jms_tab`
+-- Chỉ mục cho bảng `jms_tab`
 --
 ALTER TABLE `jms_tab`
   ADD PRIMARY KEY (`id_tab`);
 
 --
--- Indexes for table `jms_tab_advice`
+-- Chỉ mục cho bảng `jms_tab_advice`
 --
 ALTER TABLE `jms_tab_advice`
   ADD PRIMARY KEY (`id_tab`,`id_advice`);
 
 --
--- Indexes for table `jms_tab_lang`
+-- Chỉ mục cho bảng `jms_tab_lang`
 --
 ALTER TABLE `jms_tab_lang`
   ADD PRIMARY KEY (`id_tab`,`id_lang`),
@@ -30445,14 +30593,14 @@ ALTER TABLE `jms_tab_lang`
   ADD KEY `IDX_788C5C0BBA299860` (`id_lang`);
 
 --
--- Indexes for table `jms_tab_module_preference`
+-- Chỉ mục cho bảng `jms_tab_module_preference`
 --
 ALTER TABLE `jms_tab_module_preference`
   ADD PRIMARY KEY (`id_tab_module_preference`),
   ADD UNIQUE KEY `employee_module` (`id_employee`,`id_tab`,`module`);
 
 --
--- Indexes for table `jms_tag`
+-- Chỉ mục cho bảng `jms_tag`
 --
 ALTER TABLE `jms_tag`
   ADD PRIMARY KEY (`id_tag`),
@@ -30460,26 +30608,26 @@ ALTER TABLE `jms_tag`
   ADD KEY `id_lang` (`id_lang`);
 
 --
--- Indexes for table `jms_tag_count`
+-- Chỉ mục cho bảng `jms_tag_count`
 --
 ALTER TABLE `jms_tag_count`
   ADD PRIMARY KEY (`id_group`,`id_tag`),
   ADD KEY `id_group` (`id_group`,`id_lang`,`id_shop`,`counter`);
 
 --
--- Indexes for table `jms_tax`
+-- Chỉ mục cho bảng `jms_tax`
 --
 ALTER TABLE `jms_tax`
   ADD PRIMARY KEY (`id_tax`);
 
 --
--- Indexes for table `jms_tax_lang`
+-- Chỉ mục cho bảng `jms_tax_lang`
 --
 ALTER TABLE `jms_tax_lang`
   ADD PRIMARY KEY (`id_tax`,`id_lang`);
 
 --
--- Indexes for table `jms_tax_rule`
+-- Chỉ mục cho bảng `jms_tax_rule`
 --
 ALTER TABLE `jms_tax_rule`
   ADD PRIMARY KEY (`id_tax_rule`),
@@ -30488,26 +30636,26 @@ ALTER TABLE `jms_tax_rule`
   ADD KEY `category_getproducts` (`id_tax_rules_group`,`id_country`,`id_state`,`zipcode_from`);
 
 --
--- Indexes for table `jms_tax_rules_group`
+-- Chỉ mục cho bảng `jms_tax_rules_group`
 --
 ALTER TABLE `jms_tax_rules_group`
   ADD PRIMARY KEY (`id_tax_rules_group`);
 
 --
--- Indexes for table `jms_tax_rules_group_shop`
+-- Chỉ mục cho bảng `jms_tax_rules_group_shop`
 --
 ALTER TABLE `jms_tax_rules_group_shop`
   ADD PRIMARY KEY (`id_tax_rules_group`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_timezone`
+-- Chỉ mục cho bảng `jms_timezone`
 --
 ALTER TABLE `jms_timezone`
   ADD PRIMARY KEY (`id_timezone`);
 
 --
--- Indexes for table `jms_translation`
+-- Chỉ mục cho bảng `jms_translation`
 --
 ALTER TABLE `jms_translation`
   ADD PRIMARY KEY (`id_translation`),
@@ -30515,13 +30663,13 @@ ALTER TABLE `jms_translation`
   ADD KEY `key` (`domain`);
 
 --
--- Indexes for table `jms_warehouse`
+-- Chỉ mục cho bảng `jms_warehouse`
 --
 ALTER TABLE `jms_warehouse`
   ADD PRIMARY KEY (`id_warehouse`);
 
 --
--- Indexes for table `jms_warehouse_carrier`
+-- Chỉ mục cho bảng `jms_warehouse_carrier`
 --
 ALTER TABLE `jms_warehouse_carrier`
   ADD PRIMARY KEY (`id_warehouse`,`id_carrier`),
@@ -30529,14 +30677,14 @@ ALTER TABLE `jms_warehouse_carrier`
   ADD KEY `id_carrier` (`id_carrier`);
 
 --
--- Indexes for table `jms_warehouse_product_location`
+-- Chỉ mục cho bảng `jms_warehouse_product_location`
 --
 ALTER TABLE `jms_warehouse_product_location`
   ADD PRIMARY KEY (`id_warehouse_product_location`),
   ADD UNIQUE KEY `id_product` (`id_product`,`id_product_attribute`,`id_warehouse`);
 
 --
--- Indexes for table `jms_warehouse_shop`
+-- Chỉ mục cho bảng `jms_warehouse_shop`
 --
 ALTER TABLE `jms_warehouse_shop`
   ADD PRIMARY KEY (`id_warehouse`,`id_shop`),
@@ -30544,21 +30692,21 @@ ALTER TABLE `jms_warehouse_shop`
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_webservice_account`
+-- Chỉ mục cho bảng `jms_webservice_account`
 --
 ALTER TABLE `jms_webservice_account`
   ADD PRIMARY KEY (`id_webservice_account`),
   ADD KEY `key` (`key`);
 
 --
--- Indexes for table `jms_webservice_account_shop`
+-- Chỉ mục cho bảng `jms_webservice_account_shop`
 --
 ALTER TABLE `jms_webservice_account_shop`
   ADD PRIMARY KEY (`id_webservice_account`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_webservice_permission`
+-- Chỉ mục cho bảng `jms_webservice_permission`
 --
 ALTER TABLE `jms_webservice_permission`
   ADD PRIMARY KEY (`id_webservice_permission`),
@@ -30568,1056 +30716,1056 @@ ALTER TABLE `jms_webservice_permission`
   ADD KEY `id_webservice_account` (`id_webservice_account`);
 
 --
--- Indexes for table `jms_web_browser`
+-- Chỉ mục cho bảng `jms_web_browser`
 --
 ALTER TABLE `jms_web_browser`
   ADD PRIMARY KEY (`id_web_browser`);
 
 --
--- Indexes for table `jms_wishlist`
+-- Chỉ mục cho bảng `jms_wishlist`
 --
 ALTER TABLE `jms_wishlist`
   ADD PRIMARY KEY (`id_wishlist`);
 
 --
--- Indexes for table `jms_wishlist_product`
+-- Chỉ mục cho bảng `jms_wishlist_product`
 --
 ALTER TABLE `jms_wishlist_product`
   ADD PRIMARY KEY (`id_wishlist_product`);
 
 --
--- Indexes for table `jms_zone`
+-- Chỉ mục cho bảng `jms_zone`
 --
 ALTER TABLE `jms_zone`
   ADD PRIMARY KEY (`id_zone`);
 
 --
--- Indexes for table `jms_zone_shop`
+-- Chỉ mục cho bảng `jms_zone_shop`
 --
 ALTER TABLE `jms_zone_shop`
   ADD PRIMARY KEY (`id_zone`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT cho các bảng đã đổ
 --
 
 --
--- AUTO_INCREMENT for table `jms_address`
+-- AUTO_INCREMENT cho bảng `jms_address`
 --
 ALTER TABLE `jms_address`
   MODIFY `id_address` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `jms_admin_filter`
+-- AUTO_INCREMENT cho bảng `jms_admin_filter`
 --
 ALTER TABLE `jms_admin_filter`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `jms_advice`
+-- AUTO_INCREMENT cho bảng `jms_advice`
 --
 ALTER TABLE `jms_advice`
-  MODIFY `id_advice` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=92;
+  MODIFY `id_advice` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=105;
 
 --
--- AUTO_INCREMENT for table `jms_alias`
+-- AUTO_INCREMENT cho bảng `jms_alias`
 --
 ALTER TABLE `jms_alias`
   MODIFY `id_alias` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `jms_attachment`
+-- AUTO_INCREMENT cho bảng `jms_attachment`
 --
 ALTER TABLE `jms_attachment`
   MODIFY `id_attachment` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_attachment_lang`
+-- AUTO_INCREMENT cho bảng `jms_attachment_lang`
 --
 ALTER TABLE `jms_attachment_lang`
   MODIFY `id_attachment` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_attribute`
+-- AUTO_INCREMENT cho bảng `jms_attribute`
 --
 ALTER TABLE `jms_attribute`
   MODIFY `id_attribute` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
--- AUTO_INCREMENT for table `jms_attribute_group`
+-- AUTO_INCREMENT cho bảng `jms_attribute_group`
 --
 ALTER TABLE `jms_attribute_group`
   MODIFY `id_attribute_group` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `jms_attribute_impact`
+-- AUTO_INCREMENT cho bảng `jms_attribute_impact`
 --
 ALTER TABLE `jms_attribute_impact`
   MODIFY `id_attribute_impact` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_authorization_role`
+-- AUTO_INCREMENT cho bảng `jms_authorization_role`
 --
 ALTER TABLE `jms_authorization_role`
-  MODIFY `id_authorization_role` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=845;
+  MODIFY `id_authorization_role` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=849;
 
 --
--- AUTO_INCREMENT for table `jms_badge`
+-- AUTO_INCREMENT cho bảng `jms_badge`
 --
 ALTER TABLE `jms_badge`
   MODIFY `id_badge` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=235;
 
 --
--- AUTO_INCREMENT for table `jms_carrier`
+-- AUTO_INCREMENT cho bảng `jms_carrier`
 --
 ALTER TABLE `jms_carrier`
   MODIFY `id_carrier` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `jms_cart`
+-- AUTO_INCREMENT cho bảng `jms_cart`
 --
 ALTER TABLE `jms_cart`
   MODIFY `id_cart` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table `jms_cart_rule`
+-- AUTO_INCREMENT cho bảng `jms_cart_rule`
 --
 ALTER TABLE `jms_cart_rule`
   MODIFY `id_cart_rule` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_cart_rule_product_rule`
+-- AUTO_INCREMENT cho bảng `jms_cart_rule_product_rule`
 --
 ALTER TABLE `jms_cart_rule_product_rule`
   MODIFY `id_product_rule` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_cart_rule_product_rule_group`
+-- AUTO_INCREMENT cho bảng `jms_cart_rule_product_rule_group`
 --
 ALTER TABLE `jms_cart_rule_product_rule_group`
   MODIFY `id_product_rule_group` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_category`
+-- AUTO_INCREMENT cho bảng `jms_category`
 --
 ALTER TABLE `jms_category`
   MODIFY `id_category` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
--- AUTO_INCREMENT for table `jms_cms`
+-- AUTO_INCREMENT cho bảng `jms_cms`
 --
 ALTER TABLE `jms_cms`
   MODIFY `id_cms` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `jms_cms_category`
+-- AUTO_INCREMENT cho bảng `jms_cms_category`
 --
 ALTER TABLE `jms_cms_category`
   MODIFY `id_cms_category` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `jms_cms_category_shop`
+-- AUTO_INCREMENT cho bảng `jms_cms_category_shop`
 --
 ALTER TABLE `jms_cms_category_shop`
   MODIFY `id_cms_category` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `jms_cms_role`
+-- AUTO_INCREMENT cho bảng `jms_cms_role`
 --
 ALTER TABLE `jms_cms_role`
   MODIFY `id_cms_role` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `jms_condition`
+-- AUTO_INCREMENT cho bảng `jms_condition`
 --
 ALTER TABLE `jms_condition`
   MODIFY `id_condition` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=245;
 
 --
--- AUTO_INCREMENT for table `jms_configuration`
+-- AUTO_INCREMENT cho bảng `jms_configuration`
 --
 ALTER TABLE `jms_configuration`
-  MODIFY `id_configuration` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=477;
+  MODIFY `id_configuration` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=479;
 
 --
--- AUTO_INCREMENT for table `jms_configuration_kpi`
+-- AUTO_INCREMENT cho bảng `jms_configuration_kpi`
 --
 ALTER TABLE `jms_configuration_kpi`
   MODIFY `id_configuration_kpi` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
--- AUTO_INCREMENT for table `jms_connections`
+-- AUTO_INCREMENT cho bảng `jms_connections`
 --
 ALTER TABLE `jms_connections`
-  MODIFY `id_connections` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
+  MODIFY `id_connections` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 
 --
--- AUTO_INCREMENT for table `jms_connections_source`
+-- AUTO_INCREMENT cho bảng `jms_connections_source`
 --
 ALTER TABLE `jms_connections_source`
   MODIFY `id_connections_source` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_contact`
+-- AUTO_INCREMENT cho bảng `jms_contact`
 --
 ALTER TABLE `jms_contact`
   MODIFY `id_contact` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `jms_country`
+-- AUTO_INCREMENT cho bảng `jms_country`
 --
 ALTER TABLE `jms_country`
   MODIFY `id_country` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=245;
 
 --
--- AUTO_INCREMENT for table `jms_cronjobs`
+-- AUTO_INCREMENT cho bảng `jms_cronjobs`
 --
 ALTER TABLE `jms_cronjobs`
   MODIFY `id_cronjob` int(10) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_currency`
+-- AUTO_INCREMENT cho bảng `jms_currency`
 --
 ALTER TABLE `jms_currency`
   MODIFY `id_currency` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `jms_customer`
+-- AUTO_INCREMENT cho bảng `jms_customer`
 --
 ALTER TABLE `jms_customer`
   MODIFY `id_customer` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `jms_customer_message`
+-- AUTO_INCREMENT cho bảng `jms_customer_message`
 --
 ALTER TABLE `jms_customer_message`
   MODIFY `id_customer_message` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_customer_thread`
+-- AUTO_INCREMENT cho bảng `jms_customer_thread`
 --
 ALTER TABLE `jms_customer_thread`
   MODIFY `id_customer_thread` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_customization`
+-- AUTO_INCREMENT cho bảng `jms_customization`
 --
 ALTER TABLE `jms_customization`
   MODIFY `id_customization` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_customization_field`
+-- AUTO_INCREMENT cho bảng `jms_customization_field`
 --
 ALTER TABLE `jms_customization_field`
   MODIFY `id_customization_field` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_date_range`
+-- AUTO_INCREMENT cho bảng `jms_date_range`
 --
 ALTER TABLE `jms_date_range`
   MODIFY `id_date_range` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_delivery`
+-- AUTO_INCREMENT cho bảng `jms_delivery`
 --
 ALTER TABLE `jms_delivery`
   MODIFY `id_delivery` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `jms_emailsubscription`
+-- AUTO_INCREMENT cho bảng `jms_emailsubscription`
 --
 ALTER TABLE `jms_emailsubscription`
   MODIFY `id` int(6) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_employee`
+-- AUTO_INCREMENT cho bảng `jms_employee`
 --
 ALTER TABLE `jms_employee`
   MODIFY `id_employee` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `jms_feature`
+-- AUTO_INCREMENT cho bảng `jms_feature`
 --
 ALTER TABLE `jms_feature`
   MODIFY `id_feature` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `jms_feature_value`
+-- AUTO_INCREMENT cho bảng `jms_feature_value`
 --
 ALTER TABLE `jms_feature_value`
   MODIFY `id_feature_value` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
--- AUTO_INCREMENT for table `jms_gender`
+-- AUTO_INCREMENT cho bảng `jms_gender`
 --
 ALTER TABLE `jms_gender`
   MODIFY `id_gender` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `jms_group`
+-- AUTO_INCREMENT cho bảng `jms_group`
 --
 ALTER TABLE `jms_group`
   MODIFY `id_group` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `jms_group_reduction`
+-- AUTO_INCREMENT cho bảng `jms_group_reduction`
 --
 ALTER TABLE `jms_group_reduction`
   MODIFY `id_group_reduction` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_guest`
+-- AUTO_INCREMENT cho bảng `jms_guest`
 --
 ALTER TABLE `jms_guest`
   MODIFY `id_guest` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `jms_homeslider`
+-- AUTO_INCREMENT cho bảng `jms_homeslider`
 --
 ALTER TABLE `jms_homeslider`
   MODIFY `id_homeslider_slides` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `jms_homeslider_slides`
+-- AUTO_INCREMENT cho bảng `jms_homeslider_slides`
 --
 ALTER TABLE `jms_homeslider_slides`
   MODIFY `id_homeslider_slides` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `jms_hook`
+-- AUTO_INCREMENT cho bảng `jms_hook`
 --
 ALTER TABLE `jms_hook`
   MODIFY `id_hook` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=250;
 
 --
--- AUTO_INCREMENT for table `jms_hook_alias`
+-- AUTO_INCREMENT cho bảng `jms_hook_alias`
 --
 ALTER TABLE `jms_hook_alias`
   MODIFY `id_hook_alias` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=84;
 
 --
--- AUTO_INCREMENT for table `jms_hook_module_exceptions`
+-- AUTO_INCREMENT cho bảng `jms_hook_module_exceptions`
 --
 ALTER TABLE `jms_hook_module_exceptions`
   MODIFY `id_hook_module_exceptions` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_hotdeals`
+-- AUTO_INCREMENT cho bảng `jms_hotdeals`
 --
 ALTER TABLE `jms_hotdeals`
   MODIFY `id_hotdeals` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `jms_hotdeals_items`
+-- AUTO_INCREMENT cho bảng `jms_hotdeals_items`
 --
 ALTER TABLE `jms_hotdeals_items`
   MODIFY `id_hotdeals` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `jms_image`
+-- AUTO_INCREMENT cho bảng `jms_image`
 --
 ALTER TABLE `jms_image`
   MODIFY `id_image` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=362;
 
 --
--- AUTO_INCREMENT for table `jms_image_type`
+-- AUTO_INCREMENT cho bảng `jms_image_type`
 --
 ALTER TABLE `jms_image_type`
   MODIFY `id_image_type` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `jms_import_match`
+-- AUTO_INCREMENT cho bảng `jms_import_match`
 --
 ALTER TABLE `jms_import_match`
   MODIFY `id_import_match` int(10) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_info`
+-- AUTO_INCREMENT cho bảng `jms_info`
 --
 ALTER TABLE `jms_info`
   MODIFY `id_info` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `jms_jmsblog_categories`
+-- AUTO_INCREMENT cho bảng `jms_jmsblog_categories`
 --
 ALTER TABLE `jms_jmsblog_categories`
   MODIFY `category_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `jms_jmsblog_categories_lang`
+-- AUTO_INCREMENT cho bảng `jms_jmsblog_categories_lang`
 --
 ALTER TABLE `jms_jmsblog_categories_lang`
   MODIFY `category_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `jms_jmsblog_posts`
+-- AUTO_INCREMENT cho bảng `jms_jmsblog_posts`
 --
 ALTER TABLE `jms_jmsblog_posts`
   MODIFY `post_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `jms_jmsblog_posts_comments`
+-- AUTO_INCREMENT cho bảng `jms_jmsblog_posts_comments`
 --
 ALTER TABLE `jms_jmsblog_posts_comments`
   MODIFY `comment_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_jmsblog_posts_lang`
+-- AUTO_INCREMENT cho bảng `jms_jmsblog_posts_lang`
 --
 ALTER TABLE `jms_jmsblog_posts_lang`
   MODIFY `post_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `jms_jmsbrands`
+-- AUTO_INCREMENT cho bảng `jms_jmsbrands`
 --
 ALTER TABLE `jms_jmsbrands`
   MODIFY `brand_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table `jms_jmsbrands_logos`
+-- AUTO_INCREMENT cho bảng `jms_jmsbrands_logos`
 --
 ALTER TABLE `jms_jmsbrands_logos`
   MODIFY `brand_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table `jms_jmsbrands_logos_lang`
+-- AUTO_INCREMENT cho bảng `jms_jmsbrands_logos_lang`
 --
 ALTER TABLE `jms_jmsbrands_logos_lang`
   MODIFY `brand_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table `jms_jmsfacebookusers`
+-- AUTO_INCREMENT cho bảng `jms_jmsfacebookusers`
 --
 ALTER TABLE `jms_jmsfacebookusers`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_jmshtml_left`
+-- AUTO_INCREMENT cho bảng `jms_jmshtml_left`
 --
 ALTER TABLE `jms_jmshtml_left`
   MODIFY `html_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `jms_jmshtml_left_lang`
+-- AUTO_INCREMENT cho bảng `jms_jmshtml_left_lang`
 --
 ALTER TABLE `jms_jmshtml_left_lang`
   MODIFY `html_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `jms_jmsmaploc`
+-- AUTO_INCREMENT cho bảng `jms_jmsmaploc`
 --
 ALTER TABLE `jms_jmsmaploc`
   MODIFY `id_loc` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `jms_jmsmaploc_locs`
+-- AUTO_INCREMENT cho bảng `jms_jmsmaploc_locs`
 --
 ALTER TABLE `jms_jmsmaploc_locs`
   MODIFY `id_loc` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `jms_jmsmaploc_locs_lang`
+-- AUTO_INCREMENT cho bảng `jms_jmsmaploc_locs_lang`
 --
 ALTER TABLE `jms_jmsmaploc_locs_lang`
   MODIFY `id_loc` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `jms_jmsmegamenu`
+-- AUTO_INCREMENT cho bảng `jms_jmsmegamenu`
 --
 ALTER TABLE `jms_jmsmegamenu`
   MODIFY `mitem_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=260;
 
 --
--- AUTO_INCREMENT for table `jms_jmspagebuilder`
+-- AUTO_INCREMENT cho bảng `jms_jmspagebuilder`
 --
 ALTER TABLE `jms_jmspagebuilder`
   MODIFY `id_homepage` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT for table `jms_jmspagebuilder_homepages`
+-- AUTO_INCREMENT cho bảng `jms_jmspagebuilder_homepages`
 --
 ALTER TABLE `jms_jmspagebuilder_homepages`
   MODIFY `id_homepage` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
--- AUTO_INCREMENT for table `jms_jmstestimonials`
+-- AUTO_INCREMENT cho bảng `jms_jmstestimonials`
 --
 ALTER TABLE `jms_jmstestimonials`
   MODIFY `id_testimonial` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `jms_jmstestimonials_lang`
+-- AUTO_INCREMENT cho bảng `jms_jmstestimonials_lang`
 --
 ALTER TABLE `jms_jmstestimonials_lang`
   MODIFY `id_testimonial` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `jms_jms_layer_style`
+-- AUTO_INCREMENT cho bảng `jms_jms_layer_style`
 --
 ALTER TABLE `jms_jms_layer_style`
   MODIFY `id_style` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=457;
 
 --
--- AUTO_INCREMENT for table `jms_jms_producttab`
+-- AUTO_INCREMENT cho bảng `jms_jms_producttab`
 --
 ALTER TABLE `jms_jms_producttab`
   MODIFY `tab_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
--- AUTO_INCREMENT for table `jms_jms_producttab_ctab`
+-- AUTO_INCREMENT cho bảng `jms_jms_producttab_ctab`
 --
 ALTER TABLE `jms_jms_producttab_ctab`
   MODIFY `tab_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
--- AUTO_INCREMENT for table `jms_jms_producttab_ctab_lang`
+-- AUTO_INCREMENT cho bảng `jms_jms_producttab_ctab_lang`
 --
 ALTER TABLE `jms_jms_producttab_ctab_lang`
   MODIFY `tab_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
--- AUTO_INCREMENT for table `jms_jms_product_video`
+-- AUTO_INCREMENT cho bảng `jms_jms_product_video`
 --
 ALTER TABLE `jms_jms_product_video`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=79;
 
 --
--- AUTO_INCREMENT for table `jms_jms_slider`
+-- AUTO_INCREMENT cho bảng `jms_jms_slider`
 --
 ALTER TABLE `jms_jms_slider`
   MODIFY `id_slider` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `jms_jms_slides`
+-- AUTO_INCREMENT cho bảng `jms_jms_slides`
 --
 ALTER TABLE `jms_jms_slides`
   MODIFY `id_slide` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
--- AUTO_INCREMENT for table `jms_jms_slides_layers`
+-- AUTO_INCREMENT cho bảng `jms_jms_slides_layers`
 --
 ALTER TABLE `jms_jms_slides_layers`
   MODIFY `id_layer` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100;
 
 --
--- AUTO_INCREMENT for table `jms_jms_slides_shop`
+-- AUTO_INCREMENT cho bảng `jms_jms_slides_shop`
 --
 ALTER TABLE `jms_jms_slides_shop`
   MODIFY `id_slide` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
--- AUTO_INCREMENT for table `jms_lang`
+-- AUTO_INCREMENT cho bảng `jms_lang`
 --
 ALTER TABLE `jms_lang`
   MODIFY `id_lang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `jms_layered_category`
+-- AUTO_INCREMENT cho bảng `jms_layered_category`
 --
 ALTER TABLE `jms_layered_category`
   MODIFY `id_layered_category` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
--- AUTO_INCREMENT for table `jms_layered_filter`
+-- AUTO_INCREMENT cho bảng `jms_layered_filter`
 --
 ALTER TABLE `jms_layered_filter`
   MODIFY `id_layered_filter` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `jms_linksmenutop`
+-- AUTO_INCREMENT cho bảng `jms_linksmenutop`
 --
 ALTER TABLE `jms_linksmenutop`
   MODIFY `id_linksmenutop` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_link_block`
+-- AUTO_INCREMENT cho bảng `jms_link_block`
 --
 ALTER TABLE `jms_link_block`
   MODIFY `id_link_block` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `jms_link_block_shop`
+-- AUTO_INCREMENT cho bảng `jms_link_block_shop`
 --
 ALTER TABLE `jms_link_block_shop`
   MODIFY `id_link_block` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_log`
+-- AUTO_INCREMENT cho bảng `jms_log`
 --
 ALTER TABLE `jms_log`
-  MODIFY `id_log` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=183;
+  MODIFY `id_log` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=189;
 
 --
--- AUTO_INCREMENT for table `jms_mail`
+-- AUTO_INCREMENT cho bảng `jms_mail`
 --
 ALTER TABLE `jms_mail`
   MODIFY `id_mail` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_manufacturer`
+-- AUTO_INCREMENT cho bảng `jms_manufacturer`
 --
 ALTER TABLE `jms_manufacturer`
   MODIFY `id_manufacturer` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
--- AUTO_INCREMENT for table `jms_memcached_servers`
+-- AUTO_INCREMENT cho bảng `jms_memcached_servers`
 --
 ALTER TABLE `jms_memcached_servers`
   MODIFY `id_memcached_server` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_message`
+-- AUTO_INCREMENT cho bảng `jms_message`
 --
 ALTER TABLE `jms_message`
   MODIFY `id_message` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_meta`
+-- AUTO_INCREMENT cho bảng `jms_meta`
 --
 ALTER TABLE `jms_meta`
   MODIFY `id_meta` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
--- AUTO_INCREMENT for table `jms_module`
+-- AUTO_INCREMENT cho bảng `jms_module`
 --
 ALTER TABLE `jms_module`
-  MODIFY `id_module` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=75;
+  MODIFY `id_module` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
 
 --
--- AUTO_INCREMENT for table `jms_module_history`
+-- AUTO_INCREMENT cho bảng `jms_module_history`
 --
 ALTER TABLE `jms_module_history`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `jms_module_preference`
+-- AUTO_INCREMENT cho bảng `jms_module_preference`
 --
 ALTER TABLE `jms_module_preference`
   MODIFY `id_module_preference` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_operating_system`
+-- AUTO_INCREMENT cho bảng `jms_operating_system`
 --
 ALTER TABLE `jms_operating_system`
   MODIFY `id_operating_system` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT for table `jms_orders`
+-- AUTO_INCREMENT cho bảng `jms_orders`
 --
 ALTER TABLE `jms_orders`
   MODIFY `id_order` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `jms_order_carrier`
+-- AUTO_INCREMENT cho bảng `jms_order_carrier`
 --
 ALTER TABLE `jms_order_carrier`
   MODIFY `id_order_carrier` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `jms_order_cart_rule`
+-- AUTO_INCREMENT cho bảng `jms_order_cart_rule`
 --
 ALTER TABLE `jms_order_cart_rule`
   MODIFY `id_order_cart_rule` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_order_detail`
+-- AUTO_INCREMENT cho bảng `jms_order_detail`
 --
 ALTER TABLE `jms_order_detail`
   MODIFY `id_order_detail` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `jms_order_history`
+-- AUTO_INCREMENT cho bảng `jms_order_history`
 --
 ALTER TABLE `jms_order_history`
   MODIFY `id_order_history` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `jms_order_invoice`
+-- AUTO_INCREMENT cho bảng `jms_order_invoice`
 --
 ALTER TABLE `jms_order_invoice`
   MODIFY `id_order_invoice` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_order_message`
+-- AUTO_INCREMENT cho bảng `jms_order_message`
 --
 ALTER TABLE `jms_order_message`
   MODIFY `id_order_message` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `jms_order_payment`
+-- AUTO_INCREMENT cho bảng `jms_order_payment`
 --
 ALTER TABLE `jms_order_payment`
   MODIFY `id_order_payment` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_order_return`
+-- AUTO_INCREMENT cho bảng `jms_order_return`
 --
 ALTER TABLE `jms_order_return`
   MODIFY `id_order_return` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_order_return_state`
+-- AUTO_INCREMENT cho bảng `jms_order_return_state`
 --
 ALTER TABLE `jms_order_return_state`
   MODIFY `id_order_return_state` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `jms_order_slip`
+-- AUTO_INCREMENT cho bảng `jms_order_slip`
 --
 ALTER TABLE `jms_order_slip`
   MODIFY `id_order_slip` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_order_state`
+-- AUTO_INCREMENT cho bảng `jms_order_state`
 --
 ALTER TABLE `jms_order_state`
   MODIFY `id_order_state` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
--- AUTO_INCREMENT for table `jms_page`
+-- AUTO_INCREMENT cho bảng `jms_page`
 --
 ALTER TABLE `jms_page`
   MODIFY `id_page` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `jms_pagenotfound`
+-- AUTO_INCREMENT cho bảng `jms_pagenotfound`
 --
 ALTER TABLE `jms_pagenotfound`
   MODIFY `id_pagenotfound` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_page_type`
+-- AUTO_INCREMENT cho bảng `jms_page_type`
 --
 ALTER TABLE `jms_page_type`
   MODIFY `id_page_type` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `jms_product`
+-- AUTO_INCREMENT cho bảng `jms_product`
 --
 ALTER TABLE `jms_product`
   MODIFY `id_product` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
--- AUTO_INCREMENT for table `jms_product_attribute`
+-- AUTO_INCREMENT cho bảng `jms_product_attribute`
 --
 ALTER TABLE `jms_product_attribute`
   MODIFY `id_product_attribute` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=234;
 
 --
--- AUTO_INCREMENT for table `jms_product_download`
+-- AUTO_INCREMENT cho bảng `jms_product_download`
 --
 ALTER TABLE `jms_product_download`
   MODIFY `id_product_download` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_product_supplier`
+-- AUTO_INCREMENT cho bảng `jms_product_supplier`
 --
 ALTER TABLE `jms_product_supplier`
   MODIFY `id_product_supplier` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_profile`
+-- AUTO_INCREMENT cho bảng `jms_profile`
 --
 ALTER TABLE `jms_profile`
   MODIFY `id_profile` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `jms_quick_access`
+-- AUTO_INCREMENT cho bảng `jms_quick_access`
 --
 ALTER TABLE `jms_quick_access`
   MODIFY `id_quick_access` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table `jms_range_price`
+-- AUTO_INCREMENT cho bảng `jms_range_price`
 --
 ALTER TABLE `jms_range_price`
   MODIFY `id_range_price` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `jms_range_weight`
+-- AUTO_INCREMENT cho bảng `jms_range_weight`
 --
 ALTER TABLE `jms_range_weight`
   MODIFY `id_range_weight` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `jms_reassurance`
+-- AUTO_INCREMENT cho bảng `jms_reassurance`
 --
 ALTER TABLE `jms_reassurance`
   MODIFY `id_reassurance` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `jms_reassurance_lang`
+-- AUTO_INCREMENT cho bảng `jms_reassurance_lang`
 --
 ALTER TABLE `jms_reassurance_lang`
   MODIFY `id_reassurance` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `jms_referrer`
+-- AUTO_INCREMENT cho bảng `jms_referrer`
 --
 ALTER TABLE `jms_referrer`
   MODIFY `id_referrer` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_referrer_shop`
+-- AUTO_INCREMENT cho bảng `jms_referrer_shop`
 --
 ALTER TABLE `jms_referrer_shop`
   MODIFY `id_referrer` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_request_sql`
+-- AUTO_INCREMENT cho bảng `jms_request_sql`
 --
 ALTER TABLE `jms_request_sql`
   MODIFY `id_request_sql` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_required_field`
+-- AUTO_INCREMENT cho bảng `jms_required_field`
 --
 ALTER TABLE `jms_required_field`
   MODIFY `id_required_field` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_risk`
+-- AUTO_INCREMENT cho bảng `jms_risk`
 --
 ALTER TABLE `jms_risk`
   MODIFY `id_risk` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `jms_search_engine`
+-- AUTO_INCREMENT cho bảng `jms_search_engine`
 --
 ALTER TABLE `jms_search_engine`
   MODIFY `id_search_engine` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
--- AUTO_INCREMENT for table `jms_search_word`
+-- AUTO_INCREMENT cho bảng `jms_search_word`
 --
 ALTER TABLE `jms_search_word`
-  MODIFY `id_word` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8162;
+  MODIFY `id_word` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5882;
 
 --
--- AUTO_INCREMENT for table `jms_sekeyword`
+-- AUTO_INCREMENT cho bảng `jms_sekeyword`
 --
 ALTER TABLE `jms_sekeyword`
   MODIFY `id_sekeyword` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_shop`
+-- AUTO_INCREMENT cho bảng `jms_shop`
 --
 ALTER TABLE `jms_shop`
   MODIFY `id_shop` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `jms_shop_group`
+-- AUTO_INCREMENT cho bảng `jms_shop_group`
 --
 ALTER TABLE `jms_shop_group`
   MODIFY `id_shop_group` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `jms_shop_url`
+-- AUTO_INCREMENT cho bảng `jms_shop_url`
 --
 ALTER TABLE `jms_shop_url`
   MODIFY `id_shop_url` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `jms_specific_price`
+-- AUTO_INCREMENT cho bảng `jms_specific_price`
 --
 ALTER TABLE `jms_specific_price`
   MODIFY `id_specific_price` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `jms_specific_price_priority`
+-- AUTO_INCREMENT cho bảng `jms_specific_price_priority`
 --
 ALTER TABLE `jms_specific_price_priority`
-  MODIFY `id_specific_price_priority` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=70;
+  MODIFY `id_specific_price_priority` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
--- AUTO_INCREMENT for table `jms_specific_price_rule`
+-- AUTO_INCREMENT cho bảng `jms_specific_price_rule`
 --
 ALTER TABLE `jms_specific_price_rule`
   MODIFY `id_specific_price_rule` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_specific_price_rule_condition`
+-- AUTO_INCREMENT cho bảng `jms_specific_price_rule_condition`
 --
 ALTER TABLE `jms_specific_price_rule_condition`
   MODIFY `id_specific_price_rule_condition` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_specific_price_rule_condition_group`
+-- AUTO_INCREMENT cho bảng `jms_specific_price_rule_condition_group`
 --
 ALTER TABLE `jms_specific_price_rule_condition_group`
   MODIFY `id_specific_price_rule_condition_group` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_state`
+-- AUTO_INCREMENT cho bảng `jms_state`
 --
 ALTER TABLE `jms_state`
   MODIFY `id_state` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=377;
 
 --
--- AUTO_INCREMENT for table `jms_statssearch`
+-- AUTO_INCREMENT cho bảng `jms_statssearch`
 --
 ALTER TABLE `jms_statssearch`
   MODIFY `id_statssearch` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `jms_stock`
+-- AUTO_INCREMENT cho bảng `jms_stock`
 --
 ALTER TABLE `jms_stock`
   MODIFY `id_stock` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_stock_available`
+-- AUTO_INCREMENT cho bảng `jms_stock_available`
 --
 ALTER TABLE `jms_stock_available`
   MODIFY `id_stock_available` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=271;
 
 --
--- AUTO_INCREMENT for table `jms_stock_mvt`
+-- AUTO_INCREMENT cho bảng `jms_stock_mvt`
 --
 ALTER TABLE `jms_stock_mvt`
   MODIFY `id_stock_mvt` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=104;
 
 --
--- AUTO_INCREMENT for table `jms_stock_mvt_reason`
+-- AUTO_INCREMENT cho bảng `jms_stock_mvt_reason`
 --
 ALTER TABLE `jms_stock_mvt_reason`
   MODIFY `id_stock_mvt_reason` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
--- AUTO_INCREMENT for table `jms_store`
+-- AUTO_INCREMENT cho bảng `jms_store`
 --
 ALTER TABLE `jms_store`
   MODIFY `id_store` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `jms_supplier`
+-- AUTO_INCREMENT cho bảng `jms_supplier`
 --
 ALTER TABLE `jms_supplier`
   MODIFY `id_supplier` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_supply_order`
+-- AUTO_INCREMENT cho bảng `jms_supply_order`
 --
 ALTER TABLE `jms_supply_order`
   MODIFY `id_supply_order` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_supply_order_detail`
+-- AUTO_INCREMENT cho bảng `jms_supply_order_detail`
 --
 ALTER TABLE `jms_supply_order_detail`
   MODIFY `id_supply_order_detail` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_supply_order_history`
+-- AUTO_INCREMENT cho bảng `jms_supply_order_history`
 --
 ALTER TABLE `jms_supply_order_history`
   MODIFY `id_supply_order_history` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_supply_order_receipt_history`
+-- AUTO_INCREMENT cho bảng `jms_supply_order_receipt_history`
 --
 ALTER TABLE `jms_supply_order_receipt_history`
   MODIFY `id_supply_order_receipt_history` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_supply_order_state`
+-- AUTO_INCREMENT cho bảng `jms_supply_order_state`
 --
 ALTER TABLE `jms_supply_order_state`
   MODIFY `id_supply_order_state` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table `jms_tab`
+-- AUTO_INCREMENT cho bảng `jms_tab`
 --
 ALTER TABLE `jms_tab`
   MODIFY `id_tab` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=145;
 
 --
--- AUTO_INCREMENT for table `jms_tab_module_preference`
+-- AUTO_INCREMENT cho bảng `jms_tab_module_preference`
 --
 ALTER TABLE `jms_tab_module_preference`
   MODIFY `id_tab_module_preference` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_tag`
+-- AUTO_INCREMENT cho bảng `jms_tag`
 --
 ALTER TABLE `jms_tag`
   MODIFY `id_tag` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_tax`
+-- AUTO_INCREMENT cho bảng `jms_tax`
 --
 ALTER TABLE `jms_tax`
   MODIFY `id_tax` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=91;
 
 --
--- AUTO_INCREMENT for table `jms_tax_rule`
+-- AUTO_INCREMENT cho bảng `jms_tax_rule`
 --
 ALTER TABLE `jms_tax_rule`
   MODIFY `id_tax_rule` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=679;
 
 --
--- AUTO_INCREMENT for table `jms_tax_rules_group`
+-- AUTO_INCREMENT cho bảng `jms_tax_rules_group`
 --
 ALTER TABLE `jms_tax_rules_group`
   MODIFY `id_tax_rules_group` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=77;
 
 --
--- AUTO_INCREMENT for table `jms_timezone`
+-- AUTO_INCREMENT cho bảng `jms_timezone`
 --
 ALTER TABLE `jms_timezone`
   MODIFY `id_timezone` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=561;
 
 --
--- AUTO_INCREMENT for table `jms_translation`
+-- AUTO_INCREMENT cho bảng `jms_translation`
 --
 ALTER TABLE `jms_translation`
   MODIFY `id_translation` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `jms_warehouse`
+-- AUTO_INCREMENT cho bảng `jms_warehouse`
 --
 ALTER TABLE `jms_warehouse`
   MODIFY `id_warehouse` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_warehouse_product_location`
+-- AUTO_INCREMENT cho bảng `jms_warehouse_product_location`
 --
 ALTER TABLE `jms_warehouse_product_location`
   MODIFY `id_warehouse_product_location` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_webservice_account`
+-- AUTO_INCREMENT cho bảng `jms_webservice_account`
 --
 ALTER TABLE `jms_webservice_account`
   MODIFY `id_webservice_account` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_webservice_permission`
+-- AUTO_INCREMENT cho bảng `jms_webservice_permission`
 --
 ALTER TABLE `jms_webservice_permission`
   MODIFY `id_webservice_permission` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_web_browser`
+-- AUTO_INCREMENT cho bảng `jms_web_browser`
 --
 ALTER TABLE `jms_web_browser`
   MODIFY `id_web_browser` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT for table `jms_wishlist`
+-- AUTO_INCREMENT cho bảng `jms_wishlist`
 --
 ALTER TABLE `jms_wishlist`
   MODIFY `id_wishlist` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_wishlist_product`
+-- AUTO_INCREMENT cho bảng `jms_wishlist_product`
 --
 ALTER TABLE `jms_wishlist_product`
   MODIFY `id_wishlist_product` int(10) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_zone`
+-- AUTO_INCREMENT cho bảng `jms_zone`
 --
 ALTER TABLE `jms_zone`
   MODIFY `id_zone` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;

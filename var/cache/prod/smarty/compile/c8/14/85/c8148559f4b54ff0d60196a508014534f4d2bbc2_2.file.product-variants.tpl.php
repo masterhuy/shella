@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-10 00:15:56
+/* Smarty version 3.1.33, created on 2019-06-12 05:16:11
   from 'D:\xamppp\htdocs\jms_shella\themes\jms_shella\templates\catalog\_partials\product-variants.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cfdd97c99da00_94452865',
+  'unifunc' => 'content_5d00c2db3af578_68432256',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c8148559f4b54ff0d60196a508014534f4d2bbc2' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_shella\\themes\\jms_shella\\templates\\catalog\\_partials\\product-variants.tpl',
-      1 => 1558585495,
+      1 => 1560304332,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cfdd97c99da00_94452865 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d00c2db3af578_68432256 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_shella\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.replace.php','function'=>'smarty_modifier_replace',),));
 ?>
  <div class="product-variants">
@@ -32,7 +32,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['id_attribute_group']->value => $_smar
         <div class="clearfix product-variants-item <?php echo htmlspecialchars(smarty_modifier_replace(mb_strtolower($_smarty_tpl->tpl_vars['group']->value['name'], 'UTF-8'),' ',''), ENT_QUOTES, 'UTF-8');?>
 ">
             <span class="control-label"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['group']->value['name'], ENT_QUOTES, 'UTF-8');?>
-</span>
+:</span>
             <?php if ($_smarty_tpl->tpl_vars['group']->value['group_type'] == 'select') {?>
                 <select
                     id="group_<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['id_attribute_group']->value, ENT_QUOTES, 'UTF-8');?>
@@ -70,7 +70,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['id_attribute']->value => $_smarty_tpl
 "<?php if ($_smarty_tpl->tpl_vars['group_attribute']->value['selected']) {?> checked="checked"<?php }?>>
                         <span
                             <?php if ($_smarty_tpl->tpl_vars['group_attribute']->value['html_color_code']) {?>class="color" style="background-color: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['group_attribute']->value['html_color_code'], ENT_QUOTES, 'UTF-8');?>
-" <?php }?>
+; <?php if ($_smarty_tpl->tpl_vars['group_attribute']->value['html_color_code'] == '#ffffff') {?>border:1px solid #e5e5e5<?php }?>" <?php }?>
                             <?php if ($_smarty_tpl->tpl_vars['group_attribute']->value['texture']) {?>class="color texture" style="background-image: url(<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['group_attribute']->value['texture'], ENT_QUOTES, 'UTF-8');?>
 )" <?php }?>
                         >

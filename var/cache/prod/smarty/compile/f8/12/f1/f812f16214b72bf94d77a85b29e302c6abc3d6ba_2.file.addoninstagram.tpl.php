@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-11 03:26:52
+/* Smarty version 3.1.33, created on 2019-06-12 04:59:22
   from 'D:\xamppp\htdocs\jms_shella\themes\jms_shella\modules\jmspagebuilder\views\templates\hook\addoninstagram.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cff57bcdd1273_04850072',
+  'unifunc' => 'content_5d00beea90ba35_50440452',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cff57bcdd1273_04850072 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d00beea90ba35_50440452 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="addon-instagram">
 	<div class="addon-title">
 		<h3>
