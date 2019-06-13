@@ -8,8 +8,16 @@
 *  @license   license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
 *  @Website: http://www.joommasters.com
 */
+@media (min-width: 1200px){
+	#module-jmsblog-post #wrapper > .container{
+		max-width: 770px;
+	}
+}
 #module-jmsblog-post .addon-title h3{
 	font-size: 18px;
+}
+#module-jmsblog-post .breadcrumb{
+	margin-bottom: 14px;
 }
 #module-jmsblog-category .block-categories,
 #module-jmsblog-category .best-sellers_block_right,
@@ -33,13 +41,7 @@
 	text-align: left;
 }
 #module-jmsblog-category .breadcrumb{
-	margin-bottom: 66px;
-}
-.created span{
-	color: #000;
-}
-.blog-list-title{
-	font-size: 24px;
+	margin-bottom: 17px;
 }
 .widget-tabs .nav-tabs {
     border-bottom: 0 none;
@@ -212,13 +214,57 @@
 	width:100%;
 }
 /* Single Categoy Page */
+#module-jmsblog-category #wrapper{
+	position: relative;
+	z-index: 2;
+}
+#module-jmsblog-category #footer{
+	position: relative;
+	z-index: 1;
+}
 .cat-post-list {
-	max-width: 870px;
+	max-width: 772px;
 	margin: auto;
 }
 .cat-post-list .item {
-	margin-bottom: 60px;
+	margin-bottom: 38px;
+	border-bottom: 1px solid #e5e5e5;
+	padding-bottom: 40px;
+}
+.cat-post-list.more-columns{
+	margin-bottom: 100px;
+}
+.cat-post-list.more-columns .item{
+	border-bottom: 0;
+	margin-bottom: 19px;
 	padding-bottom: 0;
+}
+.cat-post-list.more-columns::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.cat-post-list.more-columns .item:hover .group{
+	opacity: 1;
+	visibility: visible;
+}
+.cat-post-list.more-columns .group{
+	position: absolute;
+	width: 100%;
+	opacity: 0;
+	padding-bottom: 15px;
+	visibility: hidden;
+	background: #fff;
+	transition: .4s all;
+	z-index: 1;
+}
+.cat-post-list.more-columns .post-info{
+	text-align: center;
+	margin-top: 17px;
+	position: relative;
+}
+.cat-post-list.more-columns .item .post-title{
+	font-size: 18px;
 }
 .cat-post-list .item:last-child {
 	border-bottom: none;
@@ -229,34 +275,26 @@
 	margin-bottom:0;
 }
 .cat-post-list .post-intro p {
-	line-height: 1.71;
-	color: #8f8f8f;
+	line-height: 23px;
+	color: #858585;
+	font-size: 15px;
 }
-.cat-post-list .post-intro{
-	margin-top: 20px;
-	margin-bottom: 31px;
+.cat-post-list .post-intro {
+	margin-top: 0;
+	margin-bottom: 14px;
 }
 .cat-post-list .item .post-title, #module-jmsblog-archive .post-title {
-	padding:0;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	text-transform: capitalize;
-	white-space: nowrap;
-	width:100%;
-	display:block;
-	margin-top: 26px;
-	margin-bottom:-7px;
-	font-size:22px;
-	font-weight:500;
-	line-height:2;
-}
-
-.cat-post-list .post-meta {
-	margin: 10px 0 0;
+	padding: 0;
+	font-size: 24px;
+	line-height: 1.1;
+	padding-bottom: 18px;
 }
 .cat-post-list .post-meta li {
     font-size: 14px;
     padding: 0;
+}
+.cat-post-list .post-meta {
+	margin-bottom: 17px;
 }
 .cat-post-list .post-meta a:hover{
 	color: #b20f0f;
@@ -281,25 +319,20 @@
 /* Single Post Page */
 .single-blog .title {
 	font-size: 32px;
-	font-weight: 700;
 	padding: 0;
-	color: #000;
 	text-align: center;
+	line-height: 1.1;
 }
 .single-blog .post-meta {
 	display: flex;
-	margin: 22px 0 25px;
+	margin-top: 17px;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 .single-blog .post-meta li {
 	padding: 0 5px 0 0;
-	font-size: 14px;
-	color: #888;
+	color: #858585;
 	position: relative;
-}
-.single-blog .post-meta li.created span span{
-	color: #000;
 }
 .single-blog .post-meta a:hover{
 	color: #b20f0f;
@@ -310,14 +343,14 @@
 .single-blog .post-thumb {
 	display: block;
 	width: 100%;
-	margin-top: 93px;
-	margin-bottom: 67px;
+	margin-top: 26px;
+	margin-bottom: 40px;
 }
 .single-blog .social-sharing {
-	margin-top: 100px;
+	margin-top: 40px;
 	margin-bottom: 20px;
 	padding-top: 40px;
-	border-top: 1px solid #ebebeb;
+	border-top: 1px solid #e5e5e5;
 }
 .post-comment {
 	padding: 35px 0;
@@ -327,11 +360,11 @@
 	padding-bottom: 46px;
 	border-bottom: 1px solid #ededed;
 }
-.commentForm{
-	margin-top: 78px;
+.commentForm {
+	margin-top: 15px;
 	display: inline-block;
 	width: 100%;
-	margin-bottom: 100px;
+	margin-bottom: 0;
 }
 .commentForm > h3{
 	font-size: 22px;

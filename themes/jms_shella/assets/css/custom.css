@@ -111,11 +111,20 @@ hr {
 .mb-25{
   margin-bottom: 25px;
 }
+.mb-20{
+  margin-bottom: 20px;
+}
+.mt-20{
+  margin-top: 20px;
+}
 .mr-30{
   margin-right: 30px;
 }
 .ml-30{
   margin-left: 30px;
+}
+.ml-40{
+  margin-left: 40px;
 }
 .d-flex{
   display: flex;
@@ -324,9 +333,13 @@ abbr.initialism {
   text-transform: uppercase; }
 
 blockquote {
-  padding: 10px 20px;
-  margin: 0 0 20px;
-  border-left: 5px solid #eeeeee; }
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  margin-left: 20px;
+  border-left: solid 2px transparent;
+  font-style: italic;
+}
   blockquote p {
     font-size: 1.25em;
     font-weight: 300;
@@ -3741,6 +3754,12 @@ footer .blog-carousel {
 .blog-carousel .owl-dots {
   bottom: -48px;
 }
+.blog-item .post-thumb img{
+  width: 270px;
+}
+.blog-item .post-thumb{
+  margin-right: 20px;
+}
 .post-thumb {
   overflow: hidden;
   position: relative; }
@@ -3853,11 +3872,6 @@ sup.required {
   line-height: 1.9;
   margin-bottom: 16px;
 }
-.post-fulltext p {
-  margin-bottom: 17px;
-  line-height: 2;
-  letter-spacing: 0;
-}
 .post-fulltext .images {
   margin: 41px 0 45px;
 }
@@ -3868,12 +3882,6 @@ sup.required {
 .post-fulltext .images img{
   width: 100%;
 }
-.post-fulltext h3 {
-  font-size: 24px;
-  color: #000;
-  letter-spacing: -0.1px;
-}
-
 /**** Preload *****/
 .preloader {
   position: fixed;

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th6 12, 2019 lúc 12:30 PM
+-- Thời gian đã tạo: Th6 13, 2019 lúc 12:29 PM
 -- Phiên bản máy phục vụ: 10.1.31-MariaDB
 -- Phiên bản PHP: 7.0.29
 
@@ -5187,7 +5187,7 @@ INSERT INTO `jms_condition` (`id_condition`, `id_ps_condition`, `type`, `request
 (20, 20, 'install', '', '>=', '7', '1', 'time', '1', 1, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
 (21, 21, 'configuration', 'PS_LOGO', '!=', 'logo.jpg', '', 'hook', 'actionAdminThemesControllerUpdate_optionsAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
 (22, 22, 'sql', 'SELECT COUNT(*) FROM PREFIX_theme WHERE directory != \"default\" AND directory != \"prestashop\" AND directory ! \"default-bootstrap\"', '>', '0', '', 'hook', 'actionObjectShopUpdateAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
-(23, 23, 'configuration', 'PS_LOGGED_ON_ADDONS', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:07', '2019-06-12 00:28:36'),
+(23, 23, 'configuration', 'PS_LOGGED_ON_ADDONS', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:07', '2019-06-13 00:14:25'),
 (24, 24, 'configuration', 'PS_MULTISHOP_FEATURE_ACTIVE', '==', '1', '', 'hook', 'actionAdminPreferencesControllerUpdate_optionsAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
 (25, 25, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop', '>', '1', '', 'hook', 'actionObjectShopAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
 (26, 26, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop', '>', '4', '', 'hook', 'actionObjectShopAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
@@ -5197,42 +5197,42 @@ INSERT INTO `jms_condition` (`id_condition`, `id_ps_condition`, `type`, `request
 (30, 30, 'sql', 'SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")', '>', '2', '', 'hook', 'actionObjectCarrierAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
 (31, 31, 'sql', 'SELECT SUM(total_paid_tax_excl / c.conversion_rate)\r\nFROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '200', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
 (32, 32, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '2000', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
-(33, 33, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '20000', '0', 'time', '1', 0, '2019-06-11 21:39:07', '2019-06-12 00:28:36'),
+(33, 33, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '20000', '0', 'time', '1', 0, '2019-06-11 21:39:07', '2019-06-13 00:14:25'),
 (34, 34, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '200000', '0', 'time', '7', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
 (35, 35, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '2000000', '0', 'time', '7', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
 (36, 36, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '20000000', '0', 'time', '7', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
-(37, 37, 'install', '', '>=', '30', '', 'time', '1', 0, '2019-06-11 21:39:07', '2019-06-12 00:28:36'),
-(38, 38, 'install', '', '>=', '182', '', 'time', '2', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
-(39, 39, 'install', '', '>=', '365', '', 'time', '2', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
-(40, 40, 'install', '', '>=', '730', '', 'time', '2', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
-(41, 41, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '10', '4', 'time', '1', 0, '2019-06-11 21:39:07', '2019-06-12 00:28:36'),
-(42, 42, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '100', '4', 'time', '1', 0, '2019-06-11 21:39:07', '2019-06-12 00:28:36'),
-(43, 43, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '1000', '4', 'time', '1', 0, '2019-06-11 21:39:07', '2019-06-12 00:28:36'),
-(44, 44, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '10000', '4', 'time', '2', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(37, 37, 'install', '', '>=', '30', '', 'time', '1', 0, '2019-06-11 21:39:07', '2019-06-13 00:14:25'),
+(38, 38, 'install', '', '>=', '182', '', 'time', '2', 0, '2019-06-11 21:39:07', '2019-06-12 21:38:02'),
+(39, 39, 'install', '', '>=', '365', '', 'time', '2', 0, '2019-06-11 21:39:07', '2019-06-12 21:38:02'),
+(40, 40, 'install', '', '>=', '730', '', 'time', '2', 0, '2019-06-11 21:39:07', '2019-06-12 21:38:02'),
+(41, 41, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '10', '4', 'time', '1', 0, '2019-06-11 21:39:07', '2019-06-13 00:14:25'),
+(42, 42, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '100', '4', 'time', '1', 0, '2019-06-11 21:39:07', '2019-06-13 00:14:25'),
+(43, 43, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '1000', '4', 'time', '1', 0, '2019-06-11 21:39:07', '2019-06-13 00:14:25'),
+(44, 44, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '10000', '4', 'time', '2', 0, '2019-06-11 21:39:07', '2019-06-12 21:38:02'),
 (45, 45, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '100000', '4', 'time', '3', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
 (46, 46, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '1000000', '4', 'time', '4', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
 (47, 47, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '2', '', 'hook', 'actionObjectCartAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
 (48, 48, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '10', '', 'hook', 'actionObjectCartAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
 (49, 49, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '100', '', 'hook', 'actionObjectCartAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
-(50, 50, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '1000', '1', 'time', '1', 0, '2019-06-11 21:39:07', '2019-06-12 00:28:36'),
+(50, 50, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '1000', '1', 'time', '1', 0, '2019-06-11 21:39:07', '2019-06-13 00:14:25'),
 (51, 51, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '10000', '1', 'time', '4', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
 (52, 52, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '100000', '1', 'time', '8', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
 (53, 53, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '1', '', 'hook', 'actionObjectOrderAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
 (54, 54, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '10', '', 'hook', 'actionObjectOrderAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
 (55, 55, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '100', '', 'hook', 'actionObjectOrderAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
-(56, 56, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '1000', '0', 'time', '2', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(56, 56, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '1000', '0', 'time', '2', 0, '2019-06-11 21:39:07', '2019-06-12 21:38:02'),
 (57, 57, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '10000', '0', 'time', '4', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
 (58, 58, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '100000', '0', 'time', '8', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
 (59, 59, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '1', '', 'hook', 'actionObjectCustomerAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
 (60, 60, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '10', '', 'hook', 'actionObjectCustomerAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
 (61, 61, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '100', '', 'hook', 'actionObjectCustomerAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
-(62, 62, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '1000', '0', 'time', '1', 0, '2019-06-11 21:39:07', '2019-06-12 00:28:36'),
-(63, 63, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '10000', '0', 'time', '2', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(62, 62, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '1000', '0', 'time', '1', 0, '2019-06-11 21:39:07', '2019-06-13 00:14:25'),
+(63, 63, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '10000', '0', 'time', '2', 0, '2019-06-11 21:39:07', '2019-06-12 21:38:03'),
 (64, 64, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '100000', '0', 'time', '4', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
 (65, 65, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '1', '', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
 (66, 66, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '10', '', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
 (67, 67, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '100', '', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
-(68, 68, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '1000', '0', 'time', '2', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(68, 68, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '1000', '0', 'time', '2', 0, '2019-06-11 21:39:07', '2019-06-12 21:38:03'),
 (69, 69, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '10000', '0', 'time', '4', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
 (70, 70, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '100000', '0', 'time', '8', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
 (71, 76, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"CA\",\r\n\"GL\",\r\n\"PM\",\r\n\"US\"\r\n)', '!=', '0', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
@@ -5251,7 +5251,7 @@ INSERT INTO `jms_condition` (`id_condition`, `id_ps_condition`, `type`, `request
 (84, 96, 'sql', 'SELECT id_image FROM PREFIX_image WHERE id_image > 26', '>', '0', '', 'hook', 'actionObjectImageAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
 (85, 97, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '50', '', 'hook', 'actionObjectImageAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
 (86, 98, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '100', '', 'hook', 'actionObjectImageAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
-(87, 99, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '1000', '338', 'time', '2', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
+(87, 99, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '1000', '338', 'time', '2', 0, '2019-06-11 21:39:07', '2019-06-12 21:38:03'),
 (88, 100, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '10000', '338', 'time', '4', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
 (89, 101, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '50000', '338', 'time', '8', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
 (90, 102, 'sql', 'SELECT id_cms FROM PREFIX_cms WHERE id_cms > 5', '>', '0', '', 'hook', 'actionObjectCMSAddAfter', 0, '2019-06-11 21:39:07', '2019-06-11 21:39:07'),
@@ -5284,129 +5284,129 @@ INSERT INTO `jms_condition` (`id_condition`, `id_ps_condition`, `type`, `request
 (117, 173, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '3', '', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
 (118, 174, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '4', '', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
 (119, 175, 'sql', 'SELECT count(*) FROM	 PREFIX_configuration WHERE name = \'PS_HOSTED_MODE\'', '==', '0', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
-(120, 209, 'configuration', 'EBAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:36'),
+(120, 209, 'configuration', 'EBAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-13 00:14:25'),
 (121, 320, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shopgate%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
-(122, 322, 'configuration', 'SHOPGATE_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:36'),
+(122, 322, 'configuration', 'SHOPGATE_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-13 00:14:25'),
 (123, 323, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shoppingfluxexport%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
 (124, 324, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shoppingfluxexport%\" ', '==', '0', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
-(125, 325, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURATION_OK\' OR name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURED\'', '>=', '1', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:36'),
-(126, 326, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'MONEYBOOKERS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'MB_PAY_TO_EMAIL \') AND ( value != \'testaccount2@moneybookers.com \'))', '==', '2', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:36'),
-(127, 358, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1', '>=', '1', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:36'),
-(128, 359, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:36'),
-(129, 375, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '1', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:36'),
-(130, 376, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:36'),
-(131, 377, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%moneybookers%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '1', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:36'),
-(132, 394, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%sofortbanking%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:36'),
+(125, 325, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURATION_OK\' OR name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURED\'', '>=', '1', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-13 00:14:25'),
+(126, 326, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'MONEYBOOKERS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'MB_PAY_TO_EMAIL \') AND ( value != \'testaccount2@moneybookers.com \'))', '==', '2', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-13 00:14:25'),
+(127, 358, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1', '>=', '1', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-13 00:14:25'),
+(128, 359, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-13 00:14:25'),
+(129, 375, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '1', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-13 00:14:25'),
+(130, 376, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-13 00:14:25'),
+(131, 377, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%moneybookers%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '1', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-13 00:14:25'),
+(132, 394, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%sofortbanking%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-13 00:14:25'),
 (133, 399, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '499', '', 'hook', 'actionObjectProductAddAfter', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
 (134, 424, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%alliance3%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
-(135, 425, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ALLIANCE3_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ALLIANCE_DEMO\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:36'),
-(136, 426, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%alliance3%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(135, 425, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ALLIANCE3_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ALLIANCE_DEMO\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-13 00:14:25'),
+(136, 426, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%alliance3%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-12 21:38:03'),
 (137, 427, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%alliance3%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
 (138, 428, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%authorizeaim%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
-(139, 429, 'configuration', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'AUTHORIZEAIM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AUTHORIZE_AIM_SANDBOX\') AND ( value = \'0\'))', '==', '2', '', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
-(140, 430, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(139, 429, 'configuration', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'AUTHORIZEAIM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AUTHORIZE_AIM_SANDBOX\') AND ( value = \'0\'))', '==', '2', '', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-12 21:38:03'),
+(140, 430, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-12 21:38:03'),
 (141, 431, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
 (142, 434, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%bluepay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
-(143, 435, 'configuration', 'BLUEPAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:36'),
-(144, 436, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluepay%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(143, 435, 'configuration', 'BLUEPAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-13 00:14:25'),
+(144, 436, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluepay%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-12 21:38:03'),
 (145, 437, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluepay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
 (146, 438, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%payplug%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
-(147, 439, 'configuration', 'PAYPLUG_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:36'),
-(148, 440, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(147, 439, 'configuration', 'PAYPLUG_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-13 00:14:25'),
+(148, 440, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-12 21:38:03'),
 (149, 441, 'sql', 'SELECT SUM(o.total_paid) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '10000', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
 (150, 442, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%affinityitems%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
-(151, 443, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'AFFINITYITEMS_CONFIGURATION_OK\' AND value = \'1\'', '==', '1', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:36'),
+(151, 443, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'AFFINITYITEMS_CONFIGURATION_OK\' AND value = \'1\'', '==', '1', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-13 00:14:25'),
 (152, 446, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%dpdpoland%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
-(153, 447, 'configuration', 'DPDPOLAND_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
-(154, 448, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(153, 447, 'configuration', 'DPDPOLAND_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-13 00:14:25'),
+(154, 448, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-12 21:38:03'),
 (155, 449, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
 (156, 450, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%envoimoinscher%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
-(157, 451, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ENVOIMOINSCHER_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'EMC_ENV \') AND ( value != \'TEST\'))', '==', '2', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
-(158, 452, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(157, 451, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ENVOIMOINSCHER_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'EMC_ENV \') AND ( value != \'TEST\'))', '==', '2', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-13 00:14:25'),
+(158, 452, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-12 21:38:03'),
 (159, 453, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
 (160, 454, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%klikandpay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
-(161, 455, 'configuration', 'KLIKANDPAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
-(162, 456, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(161, 455, 'configuration', 'KLIKANDPAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-13 00:14:25'),
+(162, 456, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-12 21:38:03'),
 (163, 457, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
 (164, 458, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%clickline%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
-(165, 459, 'configuration', 'CLICKLINE_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
-(166, 460, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(165, 459, 'configuration', 'CLICKLINE_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-13 00:14:25'),
+(166, 460, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-12 21:38:03'),
 (167, 461, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
 (168, 462, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%cdiscount%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
 (169, 463, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
-(170, 464, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(170, 464, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-12 21:38:03'),
 (171, 465, 'sql', 'SELECT SUM(o.total_paid) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 365 DAY)', '>=', '500', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
 (172, 467, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%erpillicopresta%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
-(173, 468, 'configuration', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ERPILLICOPRESTA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ERP_LICENCE_VALIDITY \') AND ( value == \'1\')) OR (( name LIKE \'ERP_MONTH_FREE_ACTIVE \') AND ( value == \'0\'))', '==', '3', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
+(173, 468, 'configuration', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ERPILLICOPRESTA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ERP_LICENCE_VALIDITY \') AND ( value == \'1\')) OR (( name LIKE \'ERP_MONTH_FREE_ACTIVE \') AND ( value == \'0\'))', '==', '3', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-13 00:14:25'),
 (174, 469, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
 (175, 470, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
 (176, 471, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%netreviews%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
-(177, 472, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'NETREVIEWS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AVISVERIFIES_URLCERTIFICAT \') AND ( value IS NOT LIKE \'%preprod%\'))', '==', '2', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
+(177, 472, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'NETREVIEWS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AVISVERIFIES_URLCERTIFICAT \') AND ( value IS NOT LIKE \'%preprod%\'))', '==', '2', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-13 00:14:25'),
 (178, 473, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
 (179, 474, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
 (180, 475, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%bluesnap%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
-(181, 476, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'BLUESNAP_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'BLUESNAP_SANDBOX \') AND ( value NOT LIKE \'%sandbox%\'))', '==', '2', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
-(182, 477, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(181, 476, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'BLUESNAP_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'BLUESNAP_SANDBOX \') AND ( value NOT LIKE \'%sandbox%\'))', '==', '2', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-13 00:14:25'),
+(182, 477, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-12 21:38:03'),
 (183, 478, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
 (184, 479, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%desjardins%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
-(185, 480, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'DESJARDINS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'DESJARDINS_MODE \') AND ( value NOT LIKE \'%test%\'))', '==', '2', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
-(186, 481, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(185, 480, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'DESJARDINS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'DESJARDINS_MODE \') AND ( value NOT LIKE \'%test%\'))', '==', '2', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-13 00:14:25'),
+(186, 481, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-12 21:38:03'),
 (187, 482, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
 (188, 483, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%firstdata%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
-(189, 484, 'configuration', 'FIRSTDATA_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
-(190, 485, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(189, 484, 'configuration', 'FIRSTDATA_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-13 00:14:25'),
+(190, 485, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-12 21:38:03'),
 (191, 486, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
 (192, 487, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%giveit%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
-(193, 488, 'sql', 'GIVEIT_CONFIGURATION_OK', '>=', '1', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
+(193, 488, 'sql', 'GIVEIT_CONFIGURATION_OK', '>=', '1', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-13 00:14:25'),
 (194, 489, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
 (195, 490, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
 (196, 491, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ganalytics%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
-(197, 492, 'configuration', 'GANALYTICS_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
-(198, 493, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
+(197, 492, 'configuration', 'GANALYTICS_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-13 00:14:25'),
+(198, 493, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-13 00:14:25'),
 (199, 494, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
 (200, 496, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%pagseguro%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
-(201, 497, 'configuration', 'PAGSEGURO_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
-(202, 498, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(201, 497, 'configuration', 'PAGSEGURO_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-13 00:14:25'),
+(202, 498, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-12 21:38:03'),
 (203, 499, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
 (204, 500, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypalmx%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
-(205, 501, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALMX_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_MX_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
-(206, 502, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(205, 501, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALMX_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_MX_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-13 00:14:25'),
+(206, 502, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-12 21:38:03'),
 (207, 503, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
 (208, 505, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypalusa%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
-(209, 506, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALUSA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_USA_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
-(210, 507, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalusa%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(209, 506, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALUSA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_USA_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-13 00:14:25'),
+(210, 507, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalusa%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-12 21:38:03'),
 (211, 508, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08');
 INSERT INTO `jms_condition` (`id_condition`, `id_ps_condition`, `type`, `request`, `operator`, `value`, `result`, `calculation_type`, `calculation_detail`, `validated`, `date_add`, `date_upd`) VALUES
 (212, 509, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%payulatam%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
-(213, 510, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYULATAM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYU_LATAM_TEST\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
-(214, 511, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(213, 510, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYULATAM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYU_LATAM_TEST\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-13 00:14:25'),
+(214, 511, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-12 21:38:03'),
 (215, 512, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
 (216, 513, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%prestastats%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
-(217, 514, 'configuration', 'PRESTASTATS_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
+(217, 514, 'configuration', 'PRESTASTATS_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-13 00:14:25'),
 (218, 515, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
 (219, 516, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
 (220, 517, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%riskified%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
-(221, 518, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'RISKIFIED_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'RISKIFIED_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
-(222, 519, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(221, 518, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'RISKIFIED_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'RISKIFIED_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-13 00:14:25'),
+(222, 519, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-12 21:38:03'),
 (223, 520, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
 (224, 521, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%simplifycommerce%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
-(225, 522, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'SIMPLIFY_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'SIMPLIFY_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
-(226, 523, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(225, 522, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'SIMPLIFY_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'SIMPLIFY_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-13 00:14:25'),
+(226, 523, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-12 21:38:03'),
 (227, 524, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
 (228, 525, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%vtpayment%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
-(229, 526, 'configuration', 'VTPAYMENT_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
-(230, 527, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
+(229, 526, 'configuration', 'VTPAYMENT_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-13 00:14:25'),
+(230, 527, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-06-11 21:39:08', '2019-06-12 21:38:03'),
 (231, 528, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
 (232, 529, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%yotpo%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
-(233, 530, 'configuration', 'YOTPO_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-12 00:28:37'),
+(233, 530, 'configuration', 'YOTPO_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:08', '2019-06-13 00:14:25'),
 (234, 531, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
 (235, 532, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-06-11 21:39:08', '2019-06-11 21:39:08'),
 (236, 533, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%yotpo%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:08', '2019-06-12 04:33:57'),
-(237, 534, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'YOUSTICERESOLUTIONSYSTEM_CONF_OK\') AND ( value = \'1\')) OR (( name LIKE \'YRS_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-06-11 21:39:09', '2019-06-12 00:28:37'),
+(237, 534, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'YOUSTICERESOLUTIONSYSTEM_CONF_OK\') AND ( value = \'1\')) OR (( name LIKE \'YRS_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-06-11 21:39:09', '2019-06-13 00:14:25'),
 (238, 535, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-06-11 21:39:09', '2019-06-11 21:39:09'),
 (239, 536, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-06-11 21:39:09', '2019-06-11 21:39:09'),
 (240, 537, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%loyaltylion%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-06-11 21:39:09', '2019-06-12 04:33:57'),
-(241, 538, 'configuration', 'LOYALTYLION_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:09', '2019-06-12 00:28:37'),
+(241, 538, 'configuration', 'LOYALTYLION_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:09', '2019-06-13 00:14:25'),
 (242, 539, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-06-11 21:39:09', '2019-06-11 21:39:09'),
 (243, 540, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-06-11 21:39:09', '2019-06-11 21:39:09'),
 (244, 542, 'sql', 'SELECT \'{config} PS_VERSION_DB{/config}\' >= \'1.7.0.0\' AND < \'1.8.0.0\'', '==', '1', '', 'time', '1', 0, '2019-06-11 21:39:09', '2019-06-11 21:39:09');
@@ -6192,9 +6192,9 @@ INSERT INTO `jms_configuration` (`id_configuration`, `id_shop_group`, `id_shop`,
 (375, NULL, NULL, 'PRVD_SHOW', '0', '2019-05-22 23:45:44', '2019-05-22 23:45:44'),
 (376, NULL, NULL, 'PRVD_AUTOPLAY', '0', '2019-05-22 23:45:44', '2019-05-22 23:45:44'),
 (377, NULL, NULL, 'JMSBLOG_INTROTEXT_LIMIT', '300', '2019-05-22 23:45:45', '2019-05-22 23:45:45'),
-(378, NULL, NULL, 'JMSBLOG_SHOW_CATEGORY', '1', '2019-05-22 23:45:45', '2019-05-22 23:45:45'),
-(379, NULL, NULL, 'JMSBLOG_SHOW_VIEWS', '1', '2019-05-22 23:45:45', '2019-05-22 23:45:45'),
-(380, NULL, NULL, 'JMSBLOG_SHOW_COMMENTS', '1', '2019-05-22 23:45:45', '2019-05-22 23:45:45'),
+(378, NULL, NULL, 'JMSBLOG_SHOW_CATEGORY', '0', '2019-05-22 23:45:45', '2019-06-12 22:17:11'),
+(379, NULL, NULL, 'JMSBLOG_SHOW_VIEWS', '0', '2019-05-22 23:45:45', '2019-06-12 22:17:11'),
+(380, NULL, NULL, 'JMSBLOG_SHOW_COMMENTS', '0', '2019-05-22 23:45:45', '2019-06-12 22:17:11'),
 (381, NULL, NULL, 'JMSBLOG_SHOW_MEDIA', '1', '2019-05-22 23:45:45', '2019-05-22 23:45:45'),
 (382, NULL, NULL, 'JMSBLOG_IMAGE_WIDTH', '1000', '2019-05-22 23:45:45', '2019-05-22 23:45:45'),
 (383, NULL, NULL, 'JMSBLOG_IMAGE_HEIGHT', '1000', '2019-05-22 23:45:45', '2019-05-22 23:45:45'),
@@ -6226,12 +6226,12 @@ INSERT INTO `jms_configuration` (`id_configuration`, `id_shop_group`, `id_shop`,
 (409, NULL, NULL, 'JBW_SHOW_COMMENT', '1', '2019-05-22 23:45:46', '2019-05-22 23:45:46'),
 (410, NULL, NULL, 'JBW_SHOW_VIEWS', '1', '2019-05-22 23:45:46', '2019-05-22 23:45:46'),
 (411, NULL, NULL, 'JBW_SB_ITEM_SHOW', '6', '2019-05-22 23:45:46', '2019-05-22 23:45:46'),
-(412, NULL, NULL, 'JBW_SB_SHOW_POPULAR', '1', '2019-05-22 23:45:46', '2019-05-22 23:45:46'),
+(412, NULL, NULL, 'JBW_SB_SHOW_POPULAR', '0', '2019-05-22 23:45:46', '2019-06-13 03:48:01'),
 (413, NULL, NULL, 'JBW_SB_SHOW_RECENT', '1', '2019-05-22 23:45:46', '2019-05-22 23:45:46'),
-(414, NULL, NULL, 'JBW_SB_SHOW_LATESTCOMMENT', '1', '2019-05-22 23:45:46', '2019-05-22 23:45:46'),
+(414, NULL, NULL, 'JBW_SB_SHOW_LATESTCOMMENT', '0', '2019-05-22 23:45:46', '2019-06-13 03:48:01'),
 (415, NULL, NULL, 'JBW_SB_COMMENT_LIMIT', '50', '2019-05-22 23:45:46', '2019-05-22 23:45:46'),
 (416, NULL, NULL, 'JBW_SB_SHOW_CATEGORYMENU', '1', '2019-05-22 23:45:46', '2019-05-22 23:45:46'),
-(417, NULL, NULL, 'JBW_SB_SHOW_ARCHIVES', '1', '2019-05-22 23:45:46', '2019-05-22 23:45:46'),
+(417, NULL, NULL, 'JBW_SB_SHOW_ARCHIVES', '0', '2019-05-22 23:45:46', '2019-06-13 03:48:01'),
 (418, NULL, NULL, 'JMSFB_APP_ID', '293392564478667', '2019-05-22 23:45:46', '2019-05-22 23:45:46'),
 (419, NULL, NULL, 'JMSFB_REDIRECT', 'no_redirect', '2019-05-22 23:45:46', '2019-05-22 23:45:46'),
 (420, NULL, NULL, 'JMSFB_BUTTON_SIZE', 'large', '2019-05-22 23:45:46', '2019-05-22 23:45:46'),
@@ -6292,7 +6292,11 @@ INSERT INTO `jms_configuration` (`id_configuration`, `id_shop_group`, `id_shop`,
 (475, NULL, NULL, 'PS_ROUTE_jmsblog-archive', 'jmsblog/archive-month/{archive}.html', '2019-05-23 23:23:29', '2019-05-23 23:23:29'),
 (476, NULL, NULL, 'PS_ROUTE_jmsblog-tag', 'jmsblog/tag/{tag}.html', '2019-05-23 23:23:29', '2019-05-23 23:23:29'),
 (477, NULL, NULL, 'CATEGORYPRODUCTS_DISPLAY_PRICE', '1', '2019-06-12 04:33:57', '2019-06-12 04:33:57'),
-(478, NULL, NULL, 'CATEGORYPRODUCTS_DISPLAY_PRODUCTS', '16', '2019-06-12 04:33:57', '2019-06-12 04:33:57');
+(478, NULL, NULL, 'CATEGORYPRODUCTS_DISPLAY_PRODUCTS', '16', '2019-06-12 04:33:57', '2019-06-12 04:33:57'),
+(479, NULL, NULL, 'JMSBLOG_POST_LAYOUT', 'post-layout-default.tpl', '2019-06-12 22:01:16', '2019-06-12 22:01:16'),
+(480, NULL, NULL, 'JMSBLOG_CATEGORY_LAYOUT', 'category-layout-default.tpl', '2019-06-12 22:01:16', '2019-06-12 22:01:16'),
+(481, NULL, NULL, 'JMSBLOG_CATEGORIES_LAYOUT', 'categories-layout-defaut.tpl', '2019-06-12 22:01:16', '2019-06-12 22:01:16'),
+(482, NULL, NULL, 'JBW_SCROLLPERPAGE', '0', '2019-06-13 03:48:01', '2019-06-13 03:48:01');
 
 -- --------------------------------------------------------
 
@@ -6595,7 +6599,8 @@ INSERT INTO `jms_connections` (`id_connections`, `id_shop_group`, `id_shop`, `id
 (54, 1, 1, 4, 3, 2130706433, '2019-06-11 03:17:58', ''),
 (55, 1, 1, 4, 3, 2130706433, '2019-06-11 03:48:59', ''),
 (56, 1, 1, 4, 3, 2130706433, '2019-06-11 04:27:12', ''),
-(57, 1, 1, 4, 1, 2130706433, '2019-06-11 21:39:23', '');
+(57, 1, 1, 4, 1, 2130706433, '2019-06-11 21:39:23', ''),
+(58, 1, 1, 4, 1, 2130706433, '2019-06-12 21:38:09', '');
 
 -- --------------------------------------------------------
 
@@ -10830,7 +10835,6 @@ INSERT INTO `jms_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VA
 (6, 1, 50, 1),
 (7, 1, 54, 1),
 (9, 1, 195, 1),
-(10, 1, 12, 1),
 (11, 1, 5, 1),
 (11, 1, 196, 1),
 (12, 1, 197, 1),
@@ -10922,6 +10926,7 @@ INSERT INTO `jms_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VA
 (67, 1, 231, 1),
 (67, 1, 232, 1),
 (69, 1, 233, 1),
+(70, 1, 12, 1),
 (73, 1, 13, 1),
 (73, 1, 21, 1),
 (73, 1, 35, 1),
@@ -10935,9 +10940,9 @@ INSERT INTO `jms_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VA
 (3, 1, 191, 2),
 (4, 1, 192, 2),
 (5, 1, 186, 2),
+(10, 1, 12, 2),
 (13, 1, 229, 2),
 (17, 1, 183, 2),
-(18, 1, 12, 2),
 (19, 1, 76, 2),
 (20, 1, 202, 2),
 (24, 1, 14, 2),
@@ -10973,6 +10978,7 @@ INSERT INTO `jms_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VA
 (4, 1, 191, 3),
 (5, 1, 192, 3),
 (15, 1, 229, 3),
+(18, 1, 12, 3),
 (23, 1, 76, 3),
 (23, 1, 202, 3),
 (26, 1, 14, 3),
@@ -10980,7 +10986,6 @@ INSERT INTO `jms_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VA
 (54, 1, 186, 3),
 (55, 1, 65, 3),
 (68, 1, 87, 3),
-(71, 1, 12, 3),
 (74, 1, 52, 3),
 (5, 1, 185, 4),
 (6, 1, 191, 4),
@@ -10989,6 +10994,7 @@ INSERT INTO `jms_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VA
 (57, 1, 65, 4),
 (60, 1, 14, 4),
 (60, 1, 202, 4),
+(71, 1, 12, 4),
 (34, 1, 49, 5),
 (61, 1, 202, 5),
 (62, 1, 14, 5),
@@ -11034,6 +11040,88 @@ CREATE TABLE `jms_hook_module_exceptions` (
   `id_hook` int(10) UNSIGNED NOT NULL,
   `file_name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `jms_hook_module_exceptions`
+--
+
+INSERT INTO `jms_hook_module_exceptions` (`id_hook_module_exceptions`, `id_shop`, `id_module`, `id_hook`, `file_name`) VALUES
+(1, 1, 70, 12, 'address'),
+(2, 1, 70, 12, 'addresses'),
+(3, 1, 70, 12, 'attachment'),
+(4, 1, 70, 12, 'auth'),
+(5, 1, 70, 12, 'bestsales'),
+(6, 1, 70, 12, 'cart'),
+(7, 1, 70, 12, 'category'),
+(8, 1, 70, 12, 'changecurrency'),
+(9, 1, 70, 12, 'cms'),
+(10, 1, 70, 12, 'contact'),
+(11, 1, 70, 12, 'discount'),
+(12, 1, 70, 12, 'getfile'),
+(13, 1, 70, 12, 'guesttracking'),
+(14, 1, 70, 12, 'history'),
+(15, 1, 70, 12, 'identity'),
+(16, 1, 70, 12, 'index'),
+(17, 1, 70, 12, 'manufacturer'),
+(18, 1, 70, 12, 'myaccount'),
+(19, 1, 70, 12, 'newproducts'),
+(20, 1, 70, 12, 'order'),
+(21, 1, 70, 12, 'orderconfirmation'),
+(22, 1, 70, 12, 'orderdetail'),
+(23, 1, 70, 12, 'orderfollow'),
+(24, 1, 70, 12, 'orderreturn'),
+(25, 1, 70, 12, 'orderslip'),
+(26, 1, 70, 12, 'pagenotfound'),
+(27, 1, 70, 12, 'password'),
+(28, 1, 70, 12, 'pdfinvoice'),
+(29, 1, 70, 12, 'pdforderreturn'),
+(30, 1, 70, 12, 'pdforderslip'),
+(31, 1, 70, 12, 'pricesdrop'),
+(32, 1, 70, 12, 'product'),
+(33, 1, 70, 12, 'search'),
+(34, 1, 70, 12, 'sitemap'),
+(35, 1, 70, 12, 'statistics'),
+(36, 1, 70, 12, 'stores'),
+(37, 1, 70, 12, 'supplier'),
+(38, 1, 70, 12, 'module-ps_buybuttonlite-AdminAjaxPs_buybuttonliteController'),
+(39, 1, 70, 12, 'module-cronjobs-AdminCronJobsController'),
+(40, 1, 70, 12, 'module-dashgoals-AdminDashgoalsController'),
+(41, 1, 70, 12, 'module-jmsblog-AdminJmsblogCategories'),
+(42, 1, 70, 12, 'module-jmsblog-AdminJmsblogComment'),
+(43, 1, 70, 12, 'module-jmsblog-AdminJmsblogDashboard'),
+(44, 1, 70, 12, 'module-jmsblog-AdminJmsblogPost'),
+(45, 1, 70, 12, 'module-jmsblog-AdminJmsblogSetting'),
+(46, 1, 70, 12, 'module-jmsmegamenu-AdminJmsmegamenuManager'),
+(47, 1, 70, 12, 'module-jmsmegamenu-AdminJmsmegamenuStyle'),
+(48, 1, 70, 12, 'module-jmspagebuilder-AdminJmspagebuilderHomepages'),
+(49, 1, 70, 12, 'module-jmspagebuilder-AdminJmspagebuilderMedia'),
+(50, 1, 70, 12, 'module-jmspagebuilder-AdminJmspagebuilderSetting'),
+(51, 1, 70, 12, 'module-jmsvermegamenu-AdminJmsvermegamenuManager'),
+(52, 1, 70, 12, 'module-jmsvermegamenu-AdminJmsvermegamenuStyle'),
+(53, 1, 70, 12, 'module-ps_legalcompliance-AdminAEUCController'),
+(54, 1, 70, 12, 'module-ps_linklist-AdminLinkWidgetController'),
+(55, 1, 70, 12, 'module-ps_mbo-AdminPsMboModuleController'),
+(56, 1, 70, 12, 'module-ps_mbo-AdminPsMboThemeController'),
+(57, 1, 70, 12, 'module-gamification-AdminGamificationController'),
+(58, 1, 70, 12, 'module-ps_faviconnotificationbo-AdminAjaxFaviconBOController'),
+(59, 1, 70, 12, 'module-ps_themecusto-AdminPsThemeCustoAdvanced'),
+(60, 1, 70, 12, 'module-ps_themecusto-AdminPsThemeCustoConfiguration'),
+(61, 1, 70, 12, 'module-welcome-AdminWelcomeController'),
+(62, 1, 70, 12, 'module-ps_wirepayment-payment'),
+(63, 1, 70, 12, 'module-ps_wirepayment-validation'),
+(64, 1, 70, 12, 'module-ps_buybuttonlite-RedirectManager'),
+(65, 1, 70, 12, 'module-cronjobs-callback'),
+(66, 1, 70, 12, 'module-ps_emailsubscription-subscription'),
+(67, 1, 70, 12, 'module-ps_emailsubscription-verification'),
+(68, 1, 70, 12, 'module-eugdpr-customer'),
+(69, 1, 70, 12, 'module-hotdeals-allproduct'),
+(70, 1, 70, 12, 'module-jmsadvsearch-search'),
+(71, 1, 70, 12, 'module-jmsflashsales-flashsales'),
+(72, 1, 70, 12, 'module-jmswishlist-mywishlist'),
+(73, 1, 70, 12, 'module-jmswishlist-view'),
+(74, 1, 70, 12, 'module-ps_checkpayment-payment'),
+(75, 1, 70, 12, 'module-ps_checkpayment-validation'),
+(76, 1, 70, 12, 'module-ps_shoppingcart-ajax');
 
 -- --------------------------------------------------------
 
@@ -13971,7 +14059,10 @@ CREATE TABLE `jms_jmsblog_categories` (
 --
 
 INSERT INTO `jms_jmsblog_categories` (`category_id`, `ordering`, `active`, `parent`) VALUES
-(1, 0, 1, 0);
+(1, 0, 1, 0),
+(2, 0, 1, 0),
+(3, 0, 1, 0),
+(4, 0, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -13993,7 +14084,30 @@ CREATE TABLE `jms_jmsblog_categories_lang` (
 --
 
 INSERT INTO `jms_jmsblog_categories_lang` (`category_id`, `id_lang`, `title`, `alias`, `description`, `image`) VALUES
-(1, 1, 'News', 'news', '', '');
+(1, 1, 'Fashion', 'fashion', '<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet conse ctetur adipisicing eli.</p>', '3dc4d72cf56cb1bcd2efd5886d951cd4.jpg'),
+(1, 2, 'Fashion', 'fashion', '', ''),
+(1, 3, 'Fashion', 'fashion', '', ''),
+(1, 4, 'Fashion', 'fashion', '', ''),
+(1, 5, 'Fashion', 'fashion', '', ''),
+(1, 7, 'Fashion', 'fashion', '', ''),
+(2, 1, 'Trends', 'trends', '<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet conse ctetur adipisicing eli.</p>', '134a87c5e16426880e4cb35a1b93ed8f.jpg'),
+(2, 2, 'Trends', 'trends', '', ''),
+(2, 3, 'Trends', 'trends', '', ''),
+(2, 4, 'Trends', 'trends', '', ''),
+(2, 5, 'Trends', 'trends', '', ''),
+(2, 7, 'Trends', 'trends', '', ''),
+(3, 1, 'Women', 'women', '<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet conse ctetur adipisicing eli.</p>', 'ab9b9ca37c11981767816384b3a266e6.jpg'),
+(3, 2, 'Women', 'women', '', ''),
+(3, 3, 'Women', 'women', '', ''),
+(3, 4, 'Women', 'women', '', ''),
+(3, 5, 'Women', 'women', '', ''),
+(3, 7, 'Women', 'women', '', ''),
+(4, 1, 'Men', 'men', '<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet conse ctetur adipisicing eli.</p>', 'e5c72b4872c239fa9a4e14e06f1a73ee.jpg'),
+(4, 2, 'Men', 'men', '', ''),
+(4, 3, 'Men', 'men', '', ''),
+(4, 4, 'Men', 'men', '', ''),
+(4, 5, 'Men', 'men', '', ''),
+(4, 7, 'Men', 'men', '', '');
 
 -- --------------------------------------------------------
 
@@ -14017,10 +14131,10 @@ CREATE TABLE `jms_jmsblog_posts` (
 --
 
 INSERT INTO `jms_jmsblog_posts` (`post_id`, `ordering`, `active`, `category_id`, `created`, `link_video`, `modified`, `views`) VALUES
-(1, 0, 1, 1, '2019-05-22 11:45:45', '', '2019-05-22 11:45:45', 5),
-(2, 0, 1, 1, '2019-05-22 11:45:45', '', '2019-05-22 11:45:45', 5),
-(3, 0, 1, 1, '2019-05-22 11:45:45', '', '2019-05-22 11:45:45', 5),
-(4, 0, 1, 1, '2019-05-22 11:45:45', '', '2019-05-22 11:45:45', 5);
+(1, 0, 1, 1, '2019-05-22 11:45:45', '', '2019-05-22 11:45:45', 48),
+(2, 0, 1, 1, '2019-05-22 11:45:45', '', '2019-05-22 11:45:45', 19),
+(3, 0, 1, 1, '2019-05-22 11:45:45', '', '2019-05-22 11:45:45', 6),
+(4, 0, 1, 1, '2019-05-22 11:45:45', '', '2019-05-22 11:45:45', 6);
 
 -- --------------------------------------------------------
 
@@ -14065,25 +14179,25 @@ CREATE TABLE `jms_jmsblog_posts_lang` (
 --
 
 INSERT INTO `jms_jmsblog_posts_lang` (`post_id`, `id_lang`, `title`, `alias`, `introtext`, `fulltext`, `meta_desc`, `meta_key`, `key_ref`, `image`, `tags`) VALUES
-(1, 1, 'One of the best?', 'one-of-the-best', '<p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. ivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>', '<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>\r\n<p><span class=\"quote\"><span class=\"quote-author\"><em class=\"placeholder\">Hello</em> wrote:</span>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. At vero eos et accusam et justo duo dolores et ea rebum. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</span></p>\r\n<h1>h1. Heading 1</h1>\r\n<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>\r\n<ul>\r\n<li>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</li>\r\n<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</li>\r\n<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</li>\r\n</ul>\r\n<h2>h2. Heading 2</h2>\r\n<p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>\r\n<h3>h3. Heading 3</h3>\r\n<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Sanctus sea sed takimata ut vero voluptua.</p>', '', '', '', '0c6dfaaea5f8c7a319c3c2390f4f7c3d.jpg', ''),
+(1, 1, 'One of the best?', 'one-of-the-best', '<p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. ivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>', '<div class=\"rte\">\r\n<p class=\"article-text\">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet conse ctetur adipisicing eli. Shella HTML Theme.</p>\r\n<p class=\"article-text\">Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur. <span>Shella </span><span>S</span><span>hopify Theme. </span></p>\r\n<h3>Sample Paragraph Text With Images</h3>\r\n<p class=\"article-text\">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit <span>amet conse ctetur </span>amet conse ctetur adipisicing eli.</p>\r\n<p class=\"article-text\"><img src=\"https://cdn.shopify.com/s/files/1/0026/2956/6516/files/01_9ced00b0-22b8-437f-b3da-5e20738cdd34_large.png?v=1533832119\" alt=\"\" style=\"float: left;\" class=\"mt-20 mb-20 mr-30\" width=\"469\" height=\"343\" />Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur <span>amet conse ctetur </span><span>adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</span><img src=\"https://cdn.shopify.com/s/files/1/0026/2956/6516/files/12_large.png?v=1533833654\" alt=\"\" style=\"float: right;\" class=\"mb-20 mt-20 ml-30\" width=\"272\" height=\"198\" />Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></p>\r\n<h3>Sample Unordered List</h3>\r\n<ul class=\"mb-25 ml-40\">\r\n<li>Lorem ipsum dolor sit amet conse ctetur adipisicing elit;</li>\r\n<li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>\r\n<li>Quis nostrud exercitation ullamco laboris nisi ut aliquip.</li>\r\n</ul>\r\n<p class=\"article-text\">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing eli.</p>\r\n<blockquote>\r\n<p>To create something exceptional, your mindset must be relentlessly focused on the smallest detail.</p>\r\n<span>— Giorgio Armani</span></blockquote>\r\n<p class=\"article-text\">Iusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet conse ctetur adipisicing eli. <span>Shella Prestashop Theme. </span></p>\r\n</div>', '', '', '', '0c6dfaaea5f8c7a319c3c2390f4f7c3d.jpg', ''),
 (1, 2, 'One of the best?', 'one-of-the-best', '', '', '', '', '', '', ''),
 (1, 3, 'One of the best?', 'one-of-the-best', '', '', '', '', '', '', ''),
 (1, 4, 'One of the best?', 'one-of-the-best', '', '', '', '', '', '', ''),
 (1, 5, 'One of the best?', 'one-of-the-best', '', '', '', '', '', '', ''),
 (1, 7, 'One of the best?', 'one-of-the-best', '', '', '', '', '', '', ''),
-(2, 1, 'High-street cleansing creams', 'high-street-cleansing-creams', '<p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. ivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>', '<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>\r\n<p><span class=\"quote\"><span class=\"quote-author\"><em class=\"placeholder\">Hello</em> wrote:</span>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. At vero eos et accusam et justo duo dolores et ea rebum. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</span></p>\r\n<h1>h1. Heading 1</h1>\r\n<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>\r\n<ul>\r\n<li>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</li>\r\n<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</li>\r\n<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</li>\r\n</ul>\r\n<h2>h2. Heading 2</h2>\r\n<p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>\r\n<h3>h3. Heading 3</h3>\r\n<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Sanctus sea sed takimata ut vero voluptua.</p>', '', '', '', '4872d796ff0b3bb70529950a7f7bb3e9.jpg', 'fashion,women collection,men fashion'),
+(2, 1, 'High-street cleansing creams', 'high-street-cleansing-creams', '<p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. ivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>', '<div class=\"rte v2\">\r\n<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet conse ctetur adipisicing eli.</p>\r\n<p><em>Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse cte</em>tur. <span>Shella </span><span>S</span><span>hopify Theme. </span></p>\r\n<h4>Sample Paragraph</h4>\r\n<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing eli.</p>\r\n<div class=\"rte__video-wrapper mb-20\"><iframe width=\"100%\" height=\"433\" style=\"border: 0;\" src=\"https://www.youtube.com/embed/MUCVB0TuQr4\" allow=\"autoplay; encrypted-media\" allowfullscreen=\"allowfullscreen\"></iframe></div>\r\n<p>Iusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet conse ctetur adipisicing eli..</p>\r\n<p><span> </span><span>Shella Prestashop Theme. </span></p>\r\n</div>', '', '', '', '4872d796ff0b3bb70529950a7f7bb3e9.jpg', 'fashion,women collection,men fashion'),
 (2, 2, 'High-street cleansing creams', 'high-street-cleansing-creams', '', '', '', '', '', '', ''),
 (2, 3, 'High-street cleansing creams', 'high-street-cleansing-creams', '', '', '', '', '', '', ''),
 (2, 4, 'High-street cleansing creams', 'high-street-cleansing-creams', '', '', '', '', '', '', ''),
 (2, 5, 'High-street cleansing creams', 'high-street-cleansing-creams', '', '', '', '', '', '', ''),
 (2, 7, 'High-street cleansing creams', 'high-street-cleansing-creams', '', '', '', '', '', '', ''),
-(3, 1, 'Three of the best red lipsticks for spring', 'three-of-the-best-red-lipsticks-for-spring', '<p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. ivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>', '<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>\r\n<p><span class=\"quote\"><span class=\"quote-author\"><em class=\"placeholder\">Hello</em> wrote:</span>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. At vero eos et accusam et justo duo dolores et ea rebum. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</span></p>\r\n<h1>h1. Heading 1</h1>\r\n<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>\r\n<ul>\r\n<li>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</li>\r\n<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</li>\r\n<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</li>\r\n</ul>\r\n<h2>h2. Heading 2</h2>\r\n<p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>\r\n<h3>h3. Heading 3</h3>\r\n<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Sanctus sea sed takimata ut vero voluptua.</p>', '', '', '', '87f723a96316364536ae51752b52d9b4.jpg', 'fashion,women collection,men fashion'),
+(3, 1, 'Three of the best red lipsticks for spring', 'three-of-the-best-red-lipsticks-for-spring', '<p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. ivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>', '<div class=\"rte\">\r\n<p class=\"article-text\">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet conse ctetur adipisicing eli. Shella HTML Theme.</p>\r\n<p class=\"article-text\">Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur. <span>Shella </span><span>S</span><span>hopify Theme. </span></p>\r\n<h3>Sample Paragraph Text With Images</h3>\r\n<p class=\"article-text\">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit <span>amet conse ctetur </span>amet conse ctetur adipisicing eli.</p>\r\n<p class=\"article-text\"><img src=\"https://cdn.shopify.com/s/files/1/0026/2956/6516/files/01_9ced00b0-22b8-437f-b3da-5e20738cdd34_large.png?v=1533832119\" alt=\"\" style=\"float: left;\" class=\"mt-20 mb-20 mr-30\" width=\"469\" height=\"343\" />Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur <span>amet conse ctetur </span><span>adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</span><img src=\"https://cdn.shopify.com/s/files/1/0026/2956/6516/files/12_large.png?v=1533833654\" alt=\"\" style=\"float: right;\" class=\"mb-20 mt-20 ml-30\" width=\"272\" height=\"198\" />Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></p>\r\n<h3>Sample Unordered List</h3>\r\n<ul class=\"mb-25 ml-40\">\r\n<li>Lorem ipsum dolor sit amet conse ctetur adipisicing elit;</li>\r\n<li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>\r\n<li>Quis nostrud exercitation ullamco laboris nisi ut aliquip.</li>\r\n</ul>\r\n<p class=\"article-text\">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing eli.</p>\r\n<blockquote>\r\n<p>To create something exceptional, your mindset must be relentlessly focused on the smallest detail.</p>\r\n<span>— Giorgio Armani</span></blockquote>\r\n<p class=\"article-text\">Iusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet conse ctetur adipisicing eli. <span>Shella Prestashop Theme. </span></p>\r\n</div>', '', '', '', '87f723a96316364536ae51752b52d9b4.jpg', 'fashion,women collection,men fashion'),
 (3, 2, 'Three of the best red lipsticks for spring', 'three-of-the-best-red-lipsticks-for-spring', '', '', '', '', '', '', ''),
 (3, 3, 'Three of the best red lipsticks for spring', 'three-of-the-best-red-lipsticks-for-spring', '', '', '', '', '', '', ''),
 (3, 4, 'Three of the best red lipsticks for spring', 'three-of-the-best-red-lipsticks-for-spring', '', '', '', '', '', '', ''),
 (3, 5, 'Three of the best red lipsticks for spring', 'three-of-the-best-red-lipsticks-for-spring', '', '', '', '', '', '', ''),
 (3, 7, 'Three of the best red lipsticks for spring', 'three-of-the-best-red-lipsticks-for-spring', '', '', '', '', '', '', ''),
-(4, 1, 'Blast from the past: check out the 90s fashion revival', 'blast-from-the-past-check-out-the-90s-fashion-revival', '<p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. ivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>', '<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>\r\n<p><span class=\"quote\"><span class=\"quote-author\"><em class=\"placeholder\">Hello</em> wrote:</span>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. At vero eos et accusam et justo duo dolores et ea rebum. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</span></p>\r\n<h1>h1. Heading 1</h1>\r\n<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>\r\n<ul>\r\n<li>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</li>\r\n<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</li>\r\n<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</li>\r\n</ul>\r\n<h2>h2. Heading 2</h2>\r\n<p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>\r\n<h3>h3. Heading 3</h3>\r\n<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Sanctus sea sed takimata ut vero voluptua.</p>', '', '', '', '655efb83925b9a135fd3243d1c474481.jpg', 'fashion,women collection,men fashion'),
+(4, 1, 'Blast from the past: check out the 90s fashion revival', 'blast-from-the-past-check-out-the-90s-fashion-revival', '<p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. ivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>', '<div class=\"rte v2\">\r\n<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet conse ctetur adipisicing eli.</p>\r\n<p><em>Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse cte</em>tur. <span>Shella </span><span>S</span><span>hopify Theme. </span></p>\r\n<h4>Sample Paragraph</h4>\r\n<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing eli.</p>\r\n<div class=\"rte__video-wrapper mb-20\"><iframe width=\"100%\" height=\"433\" style=\"border: 0;\" src=\"https://www.youtube.com/embed/MUCVB0TuQr4\" allow=\"autoplay; encrypted-media\" allowfullscreen=\"allowfullscreen\"></iframe></div>\r\n<p>Iusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet conse ctetur adipisicing eli..</p>\r\n<p><span> </span><span>Shella Prestashop Theme. </span></p>\r\n</div>', '', '', '', '655efb83925b9a135fd3243d1c474481.jpg', 'fashion,women collection,men fashion'),
 (4, 2, 'Blast from the past: check out the 90s fashion revival', 'blast-from-the-past-check-out-the-90s-fashion-revival', '', '', '', '', '', '', ''),
 (4, 3, 'Blast from the past: check out the 90s fashion revival', 'blast-from-the-past-check-out-the-90s-fashion-revival', '', '', '', '', '', '', ''),
 (4, 4, 'Blast from the past: check out the 90s fashion revival', 'blast-from-the-past-check-out-the-90s-fashion-revival', '', '', '', '', '', '', ''),
@@ -14358,7 +14472,7 @@ INSERT INTO `jms_jmsmegamenu` (`mitem_id`, `id_shop`, `parent_id`, `type`, `valu
 (85, 1, 0, 'category', '40', '', 1, '_self', '{\"class\":\"must-see mega-fullwidth\",\"align\":\"center\",\"sub\":{\"fullwidth\":\"1\",\"row\":[[{\"width\":\"3\",\"items\":[{\"item\":\"143\"},{\"item\":\"144\"},{\"item\":\"145\"},{\"item\":\"146\"},{\"item\":\"147\"},{\"item\":\"148\"},{\"item\":\"149\"},{\"item\":\"150\"}]},{\"width\":\"3\",\"items\":[{\"item\":\"151\"},{\"item\":\"152\"},{\"item\":\"153\"},{\"item\":\"154\"},{\"item\":\"155\"},{\"item\":\"156\"},{\"item\":\"157\"},{\"item\":\"158\"}]},{\"width\":\"3\",\"items\":[{\"item\":\"159\"},{\"item\":\"160\"},{\"item\":\"161\"},{\"item\":\"162\"},{\"item\":\"163\"},{\"item\":\"164\"},{\"item\":\"165\"}]},{\"width\":\"3\",\"items\":[{\"item\":\"166\"},{\"item\":\"167\"},{\"item\":\"168\"},{\"item\":\"169\"},{\"item\":\"170\"},{\"item\":\"171\"},{\"item\":\"172\"},{\"item\":\"173\"},{\"item\":\"174\"},{\"item\":\"175\"},{\"item\":\"176\"},{\"item\":\"177\"},{\"item\":\"178\"}]}]]}}', 1),
 (86, 1, 0, 'product', '', '', 1, '_self', '{\"class\":\"mega-fullwidth\",\"align\":\"center\",\"sub\":{\"fullwidth\":\"1\",\"row\":[[{\"width\":\"2\",\"items\":[{\"item\":\"112\"},{\"item\":\"113\"},{\"item\":\"114\"},{\"item\":\"115\"},{\"item\":\"116\"},{\"item\":\"117\"},{\"item\":\"118\"},{\"item\":\"233\"},{\"item\":\"120\"},{\"item\":\"121\"},{\"item\":\"122\"},{\"item\":\"123\"},{\"item\":\"124\"},{\"item\":\"125\"},{\"item\":\"133\"}]},{\"width\":\"2\",\"items\":[{\"item\":\"128\"},{\"item\":\"129\"},{\"item\":\"130\"},{\"item\":\"131\"},{\"item\":\"132\"},{\"item\":\"134\"},{\"item\":\"111\"}]},{\"width\":\"2\",\"items\":[{\"item\":\"126\"},{\"item\":\"127\"},{\"item\":\"135\"},{\"item\":\"232\"},{\"item\":\"137\"},{\"item\":\"138\"},{\"item\":\"139\"},{\"item\":\"140\"},{\"item\":\"141\"},{\"item\":\"142\"},{\"item\":\"227\"},{\"item\":\"228\"}]},{\"width\":\"3\",\"items\":[{\"item\":\"119\"},{\"item\":\"230\"}]},{\"width\":\"3\",\"items\":[{\"item\":\"229\"},{\"item\":\"231\"}]}]]}}', 2),
 (87, 1, 0, 'product', '', '', 1, '_self', '{\"sub\":{\"row\":[[{\"width\":\"12\",\"items\":[{\"item\":\"98\"},{\"item\":\"99\"},{\"item\":\"100\"},{\"item\":\"101\"},{\"item\":\"102\"},{\"item\":\"103\"},{\"item\":\"104\"},{\"item\":\"105\"}]}]]}}', 4),
-(88, 1, 0, 'jmsblog-singlepost', '13', '', 1, '_self', '{\"sub\":{\"row\":[[{\"width\":\"12\",\"items\":[{\"item\":\"179\"},{\"item\":\"180\"},{\"item\":\"181\"},{\"item\":\"182\"},{\"item\":\"183\"}]}]]}}', 5),
+(88, 1, 0, 'jmsblog-singlepost', '13', '', 1, '_self', '{\"sub\":{\"row\":[[{\"width\":\"12\",\"items\":[{\"item\":\"179\"},{\"item\":\"260\"},{\"item\":\"261\"},{\"item\":\"182\"},{\"item\":\"183\"},{\"item\":\"180\"}]}]]}}', 5),
 (89, 1, 0, 'link', 'index.php?controller=contact', '', 1, '_self', '{}', 6),
 (90, 1, 84, 'link', '', '', 1, '_self', '{\"class\":\"hot\",\"title\":\"1\"}', 1),
 (91, 1, 84, 'link', '', '', 1, '_self', '{\"title\":\"1\"}', 2),
@@ -14443,26 +14557,13 @@ INSERT INTO `jms_jmsmegamenu` (`mitem_id`, `id_shop`, `parent_id`, `type`, `valu
 (176, 1, 85, 'link', 'index.php?id_category=46&controller=category&id_lang=1&sidebar=no&ppr=5', '', 1, '_self', '{\"title\":\"1\"}', 34),
 (177, 1, 85, 'link', 'index.php?id_category=46&controller=category&id_lang=1&sidebar=no&ppr=6', '', 1, '_self', '{\"title\":\"1\"}', 35),
 (178, 1, 85, 'link', '#', '', 1, '_self', '{\"title\":\"1\"}', 36),
-(179, 1, 88, 'jmsblog-category', '1', '', 1, '_self', '{\"title\":\"1\"}', 1),
-(180, 1, 88, 'jmsblog-singlepost', '13', '', 1, '_self', '{\"title\":\"1\"}', 2),
-(181, 1, 88, 'jmsblog-categories', 'jmsblog_categories', '', 1, '_self', '{\"title\":\"1\"}', 3),
-(182, 1, 88, 'jmsblog-tag', 'blog', '', 1, '_self', '{\"title\":\"1\"}', 4),
-(183, 1, 88, 'jmsblog-archive', '2017-09', '', 1, '_self', '{\"title\":\"1\"}', 5),
-(184, 1, 179, 'link', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=left', '', 1, '_self', '', 1),
-(185, 1, 179, 'link', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=right', '', 1, '_self', '', 2),
-(186, 1, 179, 'link', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no', '', 1, '_self', '', 3),
-(187, 1, 179, 'link', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no&layout=category-layout-default', '', 1, '_self', '', 4),
-(188, 1, 179, 'link', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no&layout=category-layout-3columns', '', 1, '_self', '', 5),
-(189, 1, 179, 'link', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no&layout=category-layout-4columns', '', 1, '_self', '', 6),
+(179, 1, 88, 'jmsblog-category', '1', '', 1, '_self', '{\"title\":\"1\"}', 0),
+(180, 1, 88, 'jmsblog-singlepost', '4', '', 1, '_self', '{\"title\":\"1\"}', 5),
+(182, 1, 88, 'jmsblog-tag', 'blog', '', 1, '_self', '{\"title\":\"1\"}', 3),
+(183, 1, 88, 'jmsblog-archive', '2017-09', '', 1, '_self', '{\"title\":\"1\"}', 4),
 (190, 1, 180, 'link', 'index.php?fc=module&module=jmsblog&category_slug=news&post_id=13&controller=post&id_lang=1&sidebar=left', '', 1, '_self', '', 1),
 (191, 1, 180, 'link', 'index.php?fc=module&module=jmsblog&category_slug=news&post_id=13&controller=post&id_lang=1&sidebar=right', '', 1, '_self', '', 2),
 (192, 1, 180, 'link', 'index.php?fc=module&module=jmsblog&category_slug=news&post_id=13&controller=post&id_lang=1&sidebar=no', '', 1, '_self', '', 3),
-(193, 1, 181, 'link', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=left', '', 1, '_self', '', 1),
-(194, 1, 181, 'link', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=right', '', 1, '_self', '', 2),
-(195, 1, 181, 'link', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=no', '', 1, '_self', '', 3),
-(196, 1, 181, 'link', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=left', '', 1, '_self', '', 4),
-(197, 1, 181, 'link', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=no&layout=categories-layout-3columns', '', 1, '_self', '', 5),
-(198, 1, 181, 'link', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=no&layout=categories-layout-4columns', '', 1, '_self', '', 6),
 (215, 1, 0, 'product', '', '', 1, '_self', '{\"align\":\"center\",\"sub\":{\"fullwidth\":\"1\",\"row\":[[{\"width\":\"3\",\"items\":[{\"item\":\"234\"}]},{\"width\":\"2\",\"items\":[{\"item\":\"216\"},{\"item\":\"235\"},{\"item\":\"236\"},{\"item\":\"237\"},{\"item\":\"238\"},{\"item\":\"239\"},{\"item\":\"240\"},{\"item\":\"241\"},{\"item\":\"242\"},{\"item\":\"243\"},{\"item\":\"244\"}]},{\"width\":\"2\",\"items\":[{\"item\":\"245\"},{\"item\":\"246\"},{\"item\":\"247\"},{\"item\":\"248\"},{\"item\":\"249\"},{\"item\":\"250\"}]},{\"width\":\"2\",\"items\":[{\"item\":\"251\"},{\"item\":\"252\"},{\"item\":\"253\"},{\"item\":\"254\"},{\"item\":\"255\"},{\"item\":\"256\"},{\"item\":\"257\"},{\"item\":\"258\"}]},{\"width\":\"3\",\"items\":[{\"item\":\"259\"}]}]]}}', 3),
 (216, 1, 215, 'link', '', '', 1, '_self', '{\"title\":\"1\",\"group\":\"1\"}', 1),
 (217, 1, 84, 'link', '', '', 1, '_self', '{\"title\":\"1\"}', 9),
@@ -14473,8 +14574,8 @@ INSERT INTO `jms_jmsmegamenu` (`mitem_id`, `id_shop`, `parent_id`, `type`, `valu
 (222, 1, 84, 'link', '', '', 1, '_self', '{\"title\":\"1\"}', 14),
 (223, 1, 84, 'link', '', '', 1, '_self', '{\"title\":\"1\"}', 15),
 (224, 1, 84, 'link', '', '', 1, '_self', '{\"title\":\"1\",\"group\":\"1\"}', 0),
-(225, 1, 84, 'html', 'html_content', '<p><a href=\"#\"><img src=\"themes/jms_shella/assets/img/sub-layouts-img1.jpg\" /></a></p>\r\n<p class=\"title\">NEW IN</p>\r\n<p class=\"desc\">Spring/Summer 2019 Collection</p>', 1, '_self', '{\"class\":\"\",\"title\":\"0\"}', 16),
-(226, 1, 84, 'html', 'html_content', '<p><a href=\"#\"><img src=\"themes/jms_shella/assets/img/sub-layouts-img2.jpg\" /></a></p>\r\n<p class=\"title\">SALE & SPECIAL OFFERS</p>\r\n<p class=\"desc\">Get up to 20% off</p>', 1, '_self', '{\"class\":\"\",\"title\":\"0\"}', 17),
+(225, 1, 84, 'html', 'html_content', '<p><a href=\"#\"><img src=\"themes/jms_shella/assets/img/sub-layouts-img1.jpg\" /></a></p>\r\n<p class=\"title\">NEW IN</p>\r\n<p class=\"desc\">Spring/Summer 2019 Collection</p>', 1, '_self', '{\"class\":\"img\",\"title\":\"0\"}', 16),
+(226, 1, 84, 'html', 'html_content', '<p><a href=\"#\"><img src=\"themes/jms_shella/assets/img/sub-layouts-img2.jpg\" /></a></p>\r\n<p class=\"title\">SALE & SPECIAL OFFERS</p>\r\n<p class=\"desc\">Get up to 20% off</p>', 1, '_self', '{\"class\":\"img\",\"title\":\"0\"}', 17),
 (227, 1, 86, 'link', '', '', 1, '_self', '{\"title\":\"1\"}', 30),
 (228, 1, 86, 'link', '', '', 1, '_self', '{\"title\":\"1\"}', 31),
 (229, 1, 86, 'html', 'html_content', '<div class=\"sub-banner\"><a href=\"#\"><img class=\"img-responsive\" src=\"themes/jms_shella/assets/img/sub-women-img2.jpg\" /></a>\r\n<div class=\"banner-content\">\r\n<p class=\"title\">SALE & SPECIAL OFFERS</p>\r\n<p class=\"desc\">Get up to 20% off</p>\r\n</div>\r\n</div>', 1, '_self', '{\"class\":\"banner-2 img\",\"title\":\"0\"}', 33),
@@ -14507,7 +14608,9 @@ INSERT INTO `jms_jmsmegamenu` (`mitem_id`, `id_shop`, `parent_id`, `type`, `valu
 (256, 1, 215, 'link', '', '', 1, '_self', '{\"title\":\"1\"}', 23),
 (257, 1, 215, 'link', '', '', 1, '_self', '{\"title\":\"1\"}', 24),
 (258, 1, 215, 'link', '', '', 1, '_self', '{\"title\":\"1\"}', 25),
-(259, 1, 215, 'html', 'html_content', '<p><a href=\"#\"><img src=\"themes/jms_shella/assets/img/sub-men-img5.jpg\" /></a></p>\r\n<div class=\"banner-content\">\r\n<p class=\"title\">SALE & SPECIAL OFFERS</p>\r\n<p class=\"desc\">Get up to 20% off</p>\r\n</div>', 1, '_self', '{\"class\":\"img\",\"title\":\"0\"}', 26);
+(259, 1, 215, 'html', 'html_content', '<p><a href=\"#\"><img src=\"themes/jms_shella/assets/img/sub-men-img5.jpg\" /></a></p>\r\n<div class=\"banner-content\">\r\n<p class=\"title\">SALE & SPECIAL OFFERS</p>\r\n<p class=\"desc\">Get up to 20% off</p>\r\n</div>', 1, '_self', '{\"class\":\"img\",\"title\":\"0\"}', 26),
+(260, 1, 88, 'link', '', '', 1, '_self', '{\"title\":\"1\"}', 1),
+(261, 1, 88, 'link', '', '', 1, '_self', '{\"title\":\"1\"}', 2);
 
 -- --------------------------------------------------------
 
@@ -14962,7 +15065,7 @@ INSERT INTO `jms_jmsmegamenu_lang` (`mitem_id`, `id_lang`, `name`, `menulink`) V
 (178, 6, 'List Layout', '#'),
 (178, 7, 'List Layout', '#'),
 (178, 8, 'List Layout', '#'),
-(179, 1, 'Blog Category', ''),
+(179, 1, 'Blog V1 — Classic', ''),
 (179, 2, 'Blog Category', ''),
 (179, 3, 'Blog Category', ''),
 (179, 4, 'Blog Category', ''),
@@ -14970,7 +15073,7 @@ INSERT INTO `jms_jmsmegamenu_lang` (`mitem_id`, `id_lang`, `name`, `menulink`) V
 (179, 6, 'Blog Category', ''),
 (179, 7, 'Blog Category', ''),
 (179, 8, 'Blog Category', ''),
-(180, 1, 'Blog single post', ''),
+(180, 1, 'Single Post', ''),
 (180, 2, 'Blog single post', ''),
 (180, 3, 'Blog single post', ''),
 (180, 4, 'Blog single post', ''),
@@ -14978,14 +15081,6 @@ INSERT INTO `jms_jmsmegamenu_lang` (`mitem_id`, `id_lang`, `name`, `menulink`) V
 (180, 6, 'Blog single post', ''),
 (180, 7, 'Blog single post', ''),
 (180, 8, 'Blog single post', ''),
-(181, 1, 'Blog categories', ''),
-(181, 2, 'Blog categories', ''),
-(181, 3, 'Blog categories', ''),
-(181, 4, 'Blog categories', ''),
-(181, 5, 'Blog categories', ''),
-(181, 6, 'Blog categories', ''),
-(181, 7, 'Blog categories', ''),
-(181, 8, 'Blog categories', ''),
 (182, 1, 'Blog Tags', ''),
 (182, 2, 'Blog Tags', ''),
 (182, 3, 'Blog Tags', ''),
@@ -15002,54 +15097,6 @@ INSERT INTO `jms_jmsmegamenu_lang` (`mitem_id`, `id_lang`, `name`, `menulink`) V
 (183, 6, 'Blog Archives', ''),
 (183, 7, 'Blog Archives', ''),
 (183, 8, 'Blog Archives', ''),
-(184, 1, 'Category - Left sidebar', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=left'),
-(184, 2, 'Category - Left sidebar', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=left'),
-(184, 3, 'Category - Left sidebar', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=left'),
-(184, 4, 'Category - Left sidebar', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=left'),
-(184, 5, 'Category - Left sidebar', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=left'),
-(184, 6, 'Category - Left sidebar', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=left'),
-(184, 7, 'Category - Left sidebar', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=left'),
-(184, 8, 'Category - Left sidebar', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=left'),
-(185, 1, 'Category - Right sidebar', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=right'),
-(185, 2, 'Category - Right sidebar', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=right'),
-(185, 3, 'Category - Right sidebar', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=right'),
-(185, 4, 'Category - Right sidebar', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=right'),
-(185, 5, 'Category - Right sidebar', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=right'),
-(185, 6, 'Category - Right sidebar', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=right'),
-(185, 7, 'Category - Right sidebar', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=right'),
-(185, 8, 'Category - Right sidebar', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=right'),
-(186, 1, 'Category - No sidebar', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no'),
-(186, 2, 'Category - No sidebar', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no'),
-(186, 3, 'Category - No sidebar', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no'),
-(186, 4, 'Category - No sidebar', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no'),
-(186, 5, 'Category - No sidebar', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no'),
-(186, 6, 'Category - No sidebar', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no'),
-(186, 7, 'Category - No sidebar', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no'),
-(186, 8, 'Category - No sidebar', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no'),
-(187, 1, '2 Columns', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no&layout=category-layout-default'),
-(187, 2, '2 Columns', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no&layout=category-layout-default'),
-(187, 3, '2 Columns', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no&layout=category-layout-default'),
-(187, 4, '2 Columns', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no&layout=category-layout-default'),
-(187, 5, '2 Columns', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no&layout=category-layout-default'),
-(187, 6, '2 Columns', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no&layout=category-layout-default'),
-(187, 7, '2 Columns', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no&layout=category-layout-default'),
-(187, 8, '2 Columns', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no&layout=category-layout-default'),
-(188, 1, '3 Columns', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no&layout=category-layout-3columns'),
-(188, 2, '3 Columns', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no&layout=category-layout-3columns'),
-(188, 3, '3 Columns', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no&layout=category-layout-3columns'),
-(188, 4, '3 Columns', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no&layout=category-layout-3columns'),
-(188, 5, '3 Columns', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no&layout=category-layout-3columns'),
-(188, 6, '3 Columns', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no&layout=category-layout-3columns'),
-(188, 7, '3 Columns', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no&layout=category-layout-3columns'),
-(188, 8, '3 Columns', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no&layout=category-layout-3columns'),
-(189, 1, '4 Columns', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no&layout=category-layout-4columns'),
-(189, 2, '4 Columns', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no&layout=category-layout-4columns'),
-(189, 3, '4 Columns', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no&layout=category-layout-4columns'),
-(189, 4, '4 Columns', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no&layout=category-layout-4columns'),
-(189, 5, '4 Columns', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no&layout=category-layout-4columns'),
-(189, 6, '4 Columns', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no&layout=category-layout-4columns'),
-(189, 7, '4 Columns', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no&layout=category-layout-4columns'),
-(189, 8, '4 Columns', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no&layout=category-layout-4columns'),
 (190, 1, 'Left sidebar', 'index.php?fc=module&module=jmsblog&category_slug=news&post_id=13&controller=post&id_lang=1&sidebar=left'),
 (190, 2, 'Left sidebar', 'index.php?fc=module&module=jmsblog&category_slug=news&post_id=13&controller=post&id_lang=1&sidebar=left'),
 (190, 3, 'Left sidebar', 'index.php?fc=module&module=jmsblog&category_slug=news&post_id=13&controller=post&id_lang=1&sidebar=left'),
@@ -15074,54 +15121,6 @@ INSERT INTO `jms_jmsmegamenu_lang` (`mitem_id`, `id_lang`, `name`, `menulink`) V
 (192, 6, 'No Sidebar', 'index.php?fc=module&module=jmsblog&category_slug=news&post_id=13&controller=post&id_lang=1&sidebar=no'),
 (192, 7, 'No Sidebar', 'index.php?fc=module&module=jmsblog&category_slug=news&post_id=13&controller=post&id_lang=1&sidebar=no'),
 (192, 8, 'No Sidebar', 'index.php?fc=module&module=jmsblog&category_slug=news&post_id=13&controller=post&id_lang=1&sidebar=no'),
-(193, 1, 'Categories - Left sidebar', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=left'),
-(193, 2, 'Categories - Left sidebar', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=left'),
-(193, 3, 'Categories - Left sidebar', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=left'),
-(193, 4, 'Categories - Left sidebar', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=left'),
-(193, 5, 'Categories - Left sidebar', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=left'),
-(193, 6, 'Categories - Left sidebar', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=left'),
-(193, 7, 'Categories - Left sidebar', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=left'),
-(193, 8, 'Categories - Left sidebar', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=left'),
-(194, 1, 'Categories - Right sidebar', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=right'),
-(194, 2, 'Categories - Right sidebar', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=right'),
-(194, 3, 'Categories - Right sidebar', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=right'),
-(194, 4, 'Categories - Right sidebar', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=right'),
-(194, 5, 'Categories - Right sidebar', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=right'),
-(194, 6, 'Categories - Right sidebar', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=right'),
-(194, 7, 'Categories - Right sidebar', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=right'),
-(194, 8, 'Categories - Right sidebar', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=right'),
-(195, 1, 'Categories - No sidebar', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=no'),
-(195, 2, 'Categories - No sidebar', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=no'),
-(195, 3, 'Categories - No sidebar', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=no'),
-(195, 4, 'Categories - No sidebar', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=no'),
-(195, 5, 'Categories - No sidebar', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=no'),
-(195, 6, 'Categories - No sidebar', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=no'),
-(195, 7, 'Categories - No sidebar', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=no'),
-(195, 8, 'Categories - No sidebar', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=no'),
-(196, 1, '2 Columns', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=left'),
-(196, 2, '2 Columns', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=left'),
-(196, 3, '2 Columns', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=left'),
-(196, 4, '2 Columns', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=left'),
-(196, 5, '2 Columns', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=left'),
-(196, 6, '2 Columns', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=left'),
-(196, 7, '2 Columns', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=left'),
-(196, 8, '2 Columns', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=left'),
-(197, 1, '3 Columns', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=no&layout=categories-layout-3columns'),
-(197, 2, '3 Columns', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=no&layout=categories-layout-3columns'),
-(197, 3, '3 Columns', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=no&layout=categories-layout-3columns'),
-(197, 4, '3 Columns', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=no&layout=categories-layout-3columns'),
-(197, 5, '3 Columns', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=no&layout=categories-layout-3columns'),
-(197, 6, '3 Columns', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=no&layout=categories-layout-3columns'),
-(197, 7, '3 Columns', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=no&layout=categories-layout-3columns'),
-(197, 8, '3 Columns', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=no&layout=categories-layout-3columns'),
-(198, 1, '4 Columns', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=no&layout=categories-layout-4columns'),
-(198, 2, '4 Columns', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=no&layout=categories-layout-4columns'),
-(198, 3, '4 Columns', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=no&layout=categories-layout-4columns'),
-(198, 4, '4 Columns', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=no&layout=categories-layout-4columns'),
-(198, 5, '4 Columns', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=no&layout=categories-layout-4columns'),
-(198, 6, '4 Columns', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=no&layout=categories-layout-4columns'),
-(198, 7, '4 Columns', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=no&layout=categories-layout-4columns'),
-(198, 8, '4 Columns', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=no&layout=categories-layout-4columns'),
 (84, 2, 'Home', 'indexfr.php'),
 (84, 3, 'Home', 'index.php'),
 (84, 4, 'Home', 'index.php'),
@@ -15172,8 +15171,7 @@ INSERT INTO `jms_jmsmegamenu_lang` (`mitem_id`, `id_lang`, `name`, `menulink`) V
 (100, 8, 'Our Store', '#'),
 (101, 4, 'Search Page', 'index.php?controller=search&search_query=adiva'),
 (101, 6, 'Search Page', 'index.php?controller=search&search_query=adiva'),
-(101, 7, 'Search Page', 'index.php?controller=search&search_query=adiva');
-INSERT INTO `jms_jmsmegamenu_lang` (`mitem_id`, `id_lang`, `name`, `menulink`) VALUES
+(101, 7, 'Search Page', 'index.php?controller=search&search_query=adiva'),
 (102, 4, 'Compare page', 'index.php?controller=products-comparison'),
 (102, 6, 'Compare page', 'index.php?controller=products-comparison'),
 (102, 7, 'Compare page', 'index.php?controller=products-comparison'),
@@ -15638,12 +15636,25 @@ INSERT INTO `jms_jmsmegamenu_lang` (`mitem_id`, `id_lang`, `name`, `menulink`) V
 (258, 4, 'Socks', ''),
 (258, 5, 'Socks', ''),
 (258, 7, 'Socks', ''),
-(259, 1, 'Image5', ''),
+(259, 1, 'Image5', '');
+INSERT INTO `jms_jmsmegamenu_lang` (`mitem_id`, `id_lang`, `name`, `menulink`) VALUES
 (259, 2, 'Image5', ''),
 (259, 3, 'Image5', ''),
 (259, 4, 'Image5', ''),
 (259, 5, 'Image5', ''),
-(259, 7, 'Image5', '');
+(259, 7, 'Image5', ''),
+(260, 1, 'Blog V2 — Grid', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no&layout=category-layout-3columns'),
+(260, 2, 'Blog V2 — Grid', ''),
+(260, 3, 'Blog V2 — Grid', ''),
+(260, 4, 'Blog V2 — Grid', ''),
+(260, 5, 'Blog V2 — Grid', ''),
+(260, 7, 'Blog V2 — Grid', ''),
+(261, 1, 'Blog V3 — With Sidebar', ''),
+(261, 2, 'Blog V3 — With Sidebar', ''),
+(261, 3, 'Blog V3 — With Sidebar', ''),
+(261, 4, 'Blog V3 — With Sidebar', ''),
+(261, 5, 'Blog V3 — With Sidebar', ''),
+(261, 7, 'Blog V3 — With Sidebar', '');
 
 -- --------------------------------------------------------
 
@@ -18500,7 +18511,8 @@ INSERT INTO `jms_module_history` (`id`, `id_employee`, `id_module`, `date_add`, 
 (2, 1, 63, '2019-05-27 05:46:24', '2019-05-27 05:46:24'),
 (3, 1, 18, '2019-06-10 02:38:01', '2019-06-10 02:38:01'),
 (4, 1, 71, '2019-06-10 04:14:51', '2019-06-11 00:15:04'),
-(5, 1, 75, '2019-06-12 04:34:14', '2019-06-12 04:34:14');
+(5, 1, 75, '2019-06-12 04:34:14', '2019-06-12 04:34:14'),
+(6, 1, 70, '2019-06-13 03:47:31', '2019-06-13 03:47:31');
 
 -- --------------------------------------------------------
 
@@ -30886,7 +30898,7 @@ ALTER TABLE `jms_condition`
 -- AUTO_INCREMENT cho bảng `jms_configuration`
 --
 ALTER TABLE `jms_configuration`
-  MODIFY `id_configuration` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=479;
+  MODIFY `id_configuration` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=483;
 
 --
 -- AUTO_INCREMENT cho bảng `jms_configuration_kpi`
@@ -30898,7 +30910,7 @@ ALTER TABLE `jms_configuration_kpi`
 -- AUTO_INCREMENT cho bảng `jms_connections`
 --
 ALTER TABLE `jms_connections`
-  MODIFY `id_connections` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
+  MODIFY `id_connections` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
 
 --
 -- AUTO_INCREMENT cho bảng `jms_connections_source`
@@ -31048,7 +31060,7 @@ ALTER TABLE `jms_hook_alias`
 -- AUTO_INCREMENT cho bảng `jms_hook_module_exceptions`
 --
 ALTER TABLE `jms_hook_module_exceptions`
-  MODIFY `id_hook_module_exceptions` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id_hook_module_exceptions` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=77;
 
 --
 -- AUTO_INCREMENT cho bảng `jms_hotdeals`
@@ -31090,13 +31102,13 @@ ALTER TABLE `jms_info`
 -- AUTO_INCREMENT cho bảng `jms_jmsblog_categories`
 --
 ALTER TABLE `jms_jmsblog_categories`
-  MODIFY `category_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `category_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT cho bảng `jms_jmsblog_categories_lang`
 --
 ALTER TABLE `jms_jmsblog_categories_lang`
-  MODIFY `category_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `category_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT cho bảng `jms_jmsblog_posts`
@@ -31174,7 +31186,7 @@ ALTER TABLE `jms_jmsmaploc_locs_lang`
 -- AUTO_INCREMENT cho bảng `jms_jmsmegamenu`
 --
 ALTER TABLE `jms_jmsmegamenu`
-  MODIFY `mitem_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=260;
+  MODIFY `mitem_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=262;
 
 --
 -- AUTO_INCREMENT cho bảng `jms_jmspagebuilder`
@@ -31336,7 +31348,7 @@ ALTER TABLE `jms_module`
 -- AUTO_INCREMENT cho bảng `jms_module_history`
 --
 ALTER TABLE `jms_module_history`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT cho bảng `jms_module_preference`
@@ -31540,7 +31552,7 @@ ALTER TABLE `jms_search_engine`
 -- AUTO_INCREMENT cho bảng `jms_search_word`
 --
 ALTER TABLE `jms_search_word`
-  MODIFY `id_word` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5882;
+  MODIFY `id_word` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5608;
 
 --
 -- AUTO_INCREMENT cho bảng `jms_sekeyword`
@@ -31576,7 +31588,7 @@ ALTER TABLE `jms_specific_price`
 -- AUTO_INCREMENT cho bảng `jms_specific_price_priority`
 --
 ALTER TABLE `jms_specific_price_priority`
-  MODIFY `id_specific_price_priority` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
+  MODIFY `id_specific_price_priority` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
 -- AUTO_INCREMENT cho bảng `jms_specific_price_rule`

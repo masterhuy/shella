@@ -49,7 +49,6 @@
 			{/if}
 			<li class="created">
 				<span>
-					{l s='on' d='Modules.JmsBlog'} 
 					<span>{$post.created|escape:'html':'UTF-8'|date_format:"%b %e, %Y"}</span>
 				</span>
 			</li>
@@ -124,9 +123,10 @@
 					</ul>
 				{/if}
 				<div id="accordion" class="panel-group">
-					<div class="panels">		
+					<div class="panels">	
+					{if $comments}	
 						<div id="post-comments">
-						{if $comments}
+						
 							{foreach from=$comments item=comment key = k}
 								<div class="post-comment clearfix">
 									<div class="post-comment-info">
@@ -149,8 +149,9 @@
 									</div>
 								</div>
 							{/foreach}	
-						{/if}
+						
 						</div>
+					{/if}
 					</div>
 				</div>
 				{if $jmsblog_setting.JMSBLOG_ALLOW_GUEST_COMMENT || (!$jmsblog_setting.JMSBLOG_ALLOW_GUEST_COMMENT && $logged)}	
@@ -184,7 +185,7 @@
 							<input id="item_id_comment_send" name="post_id" type="hidden" value="{$post.post_id|escape:'html':'UTF-8'}" />
 							<input id="item_id_comment_reply" name="post_id_comment_reply" type="hidden" value="" />
 							<p class="">
-								<button id="submitComment" class="btn-underline" name="submitComment" type="submit">{l s='Submit review' d='Modules.JmsBlog'}</button>
+								<button id="submitComment" class="btn-default" name="submitComment" type="submit">{l s='Submit review' d='Modules.JmsBlog'}</button>
 							</p>
 						</div>
 					</form>

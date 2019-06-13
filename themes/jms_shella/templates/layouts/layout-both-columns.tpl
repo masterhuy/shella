@@ -108,7 +108,6 @@
         
 		{/if}
       </div>
-      </div>
 
 
       <footer id="footer">

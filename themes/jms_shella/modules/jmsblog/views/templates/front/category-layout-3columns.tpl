@@ -62,7 +62,6 @@
 								</li>
 							{/if}
 							<li class="created">
-								{l s='on' d='Modules.JmsBlog'} 
 								<span>{$post.created|escape:'html':'UTF-8'|date_format:"%b %d, %Y"}</span>
 							</li>
 							{if $jmsblog_setting.JMSBLOG_SHOW_VIEWS}
@@ -76,12 +75,14 @@
 								</li>
 							{/if}
 						</ul>
-						<div class="post-intro">
-							{$post.introtext|truncate:200:'...' nofilter}
+						<div class="group">
+							<div class="post-intro">
+								{$post.introtext|truncate:200:'...' nofilter}
+							</div>
+							<a class="btn-default" href="{jmsblog::getPageLink('jmsblog-post', $params)}">
+								{l s='Learn more' d='Modules.JmsBlog'}
+							</a>
 						</div>
-						<a class="btn-underline" href="{jmsblog::getPageLink('jmsblog-post', $params)}">
-							{l s='Continue' d='Modules.JmsBlog'}
-						</a>
 					</div>
 				</div>
 			</div>
