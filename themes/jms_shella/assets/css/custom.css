@@ -277,10 +277,9 @@ h6 {
 }
 
 .page-heading {
-  font-size: 22px;
+  font-size: 15px;
   line-height: 24px;
   padding-bottom: 30px;
-  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -5054,11 +5053,28 @@ sup.required {
   text-align: left; }
 
 .carousel-indicators li {
-  background: #ccc none repeat scroll 0 0;
-  border: 0 none;
-  border-radius: 0; }
-  .carousel-indicators li.active {
-    background-color: #111; }
+  background: #e5e5e5 none repeat scroll 0 0;
+  width: 6px;
+  height: 6px;
+  min-width: 6px;
+  padding: 0;
+  margin-left: 3px;
+  margin-right: 3px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 0;
+  position: relative;
+  bottom: 1px;
+}
+.carousel-indicators li.active {
+  background-color: #141414;
+  width: 10px;
+  height: 10px;
+  margin-left: 3px;
+  margin-right: 3px;
+  position: relative;
+  bottom: 0;
+}
 
 .team-carousel {
   clear: both;

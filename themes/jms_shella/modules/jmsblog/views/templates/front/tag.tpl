@@ -27,7 +27,7 @@
 {capture name=path}{$tag|escape:'html':'UTF-8'}{/capture}
 <h1 class="page-heading">{l s='Tag' d='Modules.JmsBlog'} : {$tag}</h1>
 {if isset($posts) AND $posts}		
-	<div class="cat-post-list more-columns">
+	<div class="cat-post-list more-columns tag">
 		{foreach from=$posts item=post}
 			{assign var=params value=['post_id' => $post.post_id, 'category_slug' => $post.category_alias, 'slug' => $post.alias]}
 			{assign var=catparams value=['category_id' => $post.category_id, 'slug' => $post.category_alias]}				
@@ -46,7 +46,7 @@
 					{/if}
 					<div class="post-info">
 						<h4 class="post-title">
-							<a class="blog-title" href="{jmsblog::getPageLink('jmsblog-post', $params)}" alt="{l s='Blog Images' d='Modules.JmsBlog'}">{$post.title|escape:'htmlall':'UTF-8'}</a>
+							<a href="{jmsblog::getPageLink('jmsblog-post', $params)}" alt="{l s='Blog Images' d='Modules.JmsBlog'}">{$post.title|escape:'htmlall':'UTF-8'}</a>
 						</h4>
 						<ul class="post-meta">
 							{if $jmsblog_setting.JMSBLOG_SHOW_CATEGORY}
@@ -60,8 +60,7 @@
 								</li>
 							{/if}
 							<li class="created">
-								{l s='on' d='Modules.JmsBlog'} 
-								<span>{$post.created|escape:'html':'UTF-8'|date_format:"%b %d, %Y"}</span>
+								<span>{$post.created|escape:'html':'UTF-8'|date_format:"%B %d, %Y"}</span>
 							</li>
 							{if $jmsblog_setting.JMSBLOG_SHOW_VIEWS}
 								<li>
@@ -77,7 +76,7 @@
 						<div class="post-intro">
 							{$post.introtext|truncate:200:'...' nofilter}
 						</div>
-						<a class="btn-underline" href="{jmsblog::getPageLink('jmsblog-post', $params)}">{l s='Continue' d='Modules.JmsBlog'}</a>
+						<a class="btn-default" href="{jmsblog::getPageLink('jmsblog-post', $params)}">{l s='Learn more' d='Modules.JmsBlog'}</a>
 					</div>
 				</div>
 			</div>

@@ -49,7 +49,7 @@
 			{/if}
 			<li class="created">
 				<span>
-					<span>{$post.created|escape:'html':'UTF-8'|date_format:"%b %e, %Y"}</span>
+					<span>{$post.created|escape:'html':'UTF-8'|date_format:"%B %e, %Y"}</span>
 				</span>
 			</li>
 			{if $jmsblog_setting.JMSBLOG_SHOW_VIEWS}

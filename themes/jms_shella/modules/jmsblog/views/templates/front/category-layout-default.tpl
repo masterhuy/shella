@@ -50,8 +50,7 @@
 							</li>
 						{/if}
 						<li class="created">
-							{l s='on' d='Modules.JmsBlog'} 
-							<span>{$post.created|escape:'html':'UTF-8'|date_format:"%b %d, %Y"}</span>
+							<span>{$post.created|escape:'html':'UTF-8'|date_format:"%B %d, %Y"}</span>
 						</li>
 						{if $jmsblog_setting.JMSBLOG_SHOW_VIEWS}
 							<li>
