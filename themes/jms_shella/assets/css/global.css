@@ -2069,102 +2069,114 @@ a.wishlist_top {
   margin-bottom: 0;
   font-size: 16px; }
 
-.our-team {
-  margin-bottom: 70px; }
+.h3.about-us-title {
+  text-align: center;
+  margin: 17px 0 8px; }
 
-.au-testimonial-body {
-  padding: 0 100px;
-  margin-top: 94px;
-  margin-bottom: 90px; }
+.rte.about-us p {
+  margin-bottom: 0; }
 
-.au-comment {
-  font-size: 21px;
-  font-weight: 600;
-  letter-spacing: 0.2px;
-  line-height: 1.7;
-  margin-top: 32px; }
-  .au-comment .au-name-client {
-    font-size: 13px;
-    text-transform: uppercase;
-    font-weight: 500;
-    margin-top: 23px;
-    display: block; }
+@media (min-width: 1200px) {
+  .rte.about-us .container {
+    max-width: 770px;
+    margin: auto; } }
 
-.au-video {
-  position: relative;
-  padding-bottom: 107px; }
-  .au-video a {
-    position: relative;
-    z-index: 2; }
-  .au-video::after {
-    content: url("../img/bg-video-au.jpg");
-    bottom: 0;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    position: absolute;
-    z-index: 1; }
+.rte.customer-service .container {
+  max-width: 770px;
+  margin: auto; }
 
-.au-brand {
-  margin-bottom: 88px; }
+.rte.customer-service h5 {
+  margin-left: 17px;
+  letter-spacing: 0.75px; }
 
-.au-title {
-  font-size: 24px;
-  font-weight: 500;
-  padding: 0px 110px;
-  letter-spacing: -0.7px;
-  line-height: 1.25;
-  margin-bottom: 53px; }
-
-.au-desc {
-  font-size: 16px;
-  padding: 0 200px;
-  line-height: 1.87;
-  margin-bottom: 60px; }
-
-.member-job {
-  font-size: 12px;
-  text-transform: uppercase; }
-
-.member:hover .social-team {
-  opacity: 1;
-  visibility: visible; }
-
-.member:hover .member-name {
-  color: #141414; }
-
-.member-photo {
+.rte.customer-service ul li {
+  color: #858585;
+  padding-left: 16px;
   position: relative; }
-  .member-photo img {
-    width: 100%; }
-  .member-photo .social-team {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    width: calc(100% - 30px);
-    height: calc(100% - 30px);
-    background: #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: .4s all;
-    -o-transition: .4s all;
-    transition: .4s all; }
-    .member-photo .social-team a {
-      font-size: 12px;
-      margin: 0 13px; }
+  .rte.customer-service ul li::before {
+    display: inline-block;
+    content: '';
+    margin-bottom: 2px;
+    margin-right: 10px;
+    margin-left: -16px;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    background-color: #141414; }
 
-.force-full-width .feature-icon span {
-  display: none; }
+.rte.size-guide h4 {
+  padding-bottom: 15px; }
+
+.rte.size-guide .fs {
+  font-size: 13px !important;
+  line-height: 17px !important; }
+
+.h3.size-guide-title {
+  margin-top: 17px;
+  margin-bottom: 8px; }
+
+.table-size-guide th {
+  background: #141414;
+  color: #fff; }
+
+.table-size-guide tr:last-child td {
+  border-bottom: solid 1px #E5E5E5; }
+
+.table-size-guide tr:first-child th:first-child {
+  width: 200px; }
+
+.table-center td:not(:first-child), .table-center th:not(:first-child) {
+  text-align: center; }
+
+.responsive-table td {
+  border-top: 1px solid #dee2e6; }
+
+.responsive-table td, .responsive-table th, .table td, .table th {
+  font-size: 13px;
+  height: 34px;
+  padding: 8px 15px !important;
+  vertical-align: middle !important;
+  line-height: 17px; }
+
+.responsive-table {
+  line-height: 17px;
+  width: 100%;
+  max-width: 100%; }
+
+.h3.faqs-title {
+  margin: 17px 0 8px; }
+
+.rte.faqs > .container p {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 50px;
+  margin-bottom: 2px; }
+
+#theme-section-faqs .container {
+  max-width: 770px; }
+
+#theme-section-faqs .faqs__head {
+  font-size: 15px;
+  letter-spacing: 0.7px; }
+
+#theme-section-faqs .list-lg {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 30px;
+  margin-bottom: 14px; }
+
+#theme-section-faqs ul li {
+  color: #858585;
+  padding-left: 16px;
+  position: relative; }
+  #theme-section-faqs ul li::before {
+    display: inline-block;
+    content: '';
+    margin-bottom: 2px;
+    margin-right: 10px;
+    margin-left: -16px;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    background-color: #141414; }
 
 .currency-info.type-2, .currency-info.type-3 {
   display: none; }
@@ -2774,7 +2786,9 @@ a.wishlist_top {
     display: -ms-flexbox;
     display: flex; }
   div.blog-carousel .post-info {
-    margin-top: 0; } }
+    margin-top: 0; }
+  .container--sm.px-0 {
+    width: 770px; } }
 
 @media (max-width: 1366px) {
   .fancybox-margin {

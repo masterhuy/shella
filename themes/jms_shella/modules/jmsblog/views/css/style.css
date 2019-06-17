@@ -355,6 +355,17 @@
 	margin:10px 0;
 }
 /* Single Post Page */
+.single-blog,
+.single-blog + #comments {
+	max-width: 770px;
+	margin: auto;
+}
+.left-column .single-blog,
+.right-column .single-blog,
+.left-column .single-blog + #comments,
+.right-column .single-blog + #comments {
+	max-width: 100%;
+}
 .single-blog #myCarousel{
 	margin-bottom: 22px;
 }

@@ -15,11 +15,13 @@
 
       <div class="col-lg-12 col-md-12 col-sm-12 col-sm-12">
           <div class="addon-title">
-            <h3>{l s='Send Us Message' d='Shop.Theme.Global'}</h3>
+            <h3>{l s='Drop Us A Line' d='Shop.Theme.Global'}</h3>
+            <span>{l s='We’re happy to answer any questions you have or provide you with an estimate. Just send us a message in the form below with any questions you may have.' d='Shop.Theme.Global'}</span>
           </div>
       </div>
 
-      <div class="form-group col-md-6 col-sx-12">
+      <div class="form-group col-md-12 col-sx-12">
+          <label>{l s='Select Option' d='Shop.Theme.Global'}</label>
           <select name="id_contact" class="form-control form-control-select">
             {foreach from=$contact.contacts item=contact_elt}
               <option value="{$contact_elt.id_contact}">{$contact_elt.name}</option>
@@ -27,18 +29,20 @@
           </select>
       </div>
 
-      <div class="form-group col-md-6 col-sx-12">
+      <div class="form-group col-md-12 col-sx-12">
+          <label>{l s='Email' d='Shop.Theme.Global'} <span>(required)*</span></label>
           <input
             class="form-control"
             name="from"
             type="email"
             value="{$contact.email}"
-            placeholder="{l s='Email address' d='Shop.Forms.Help'}"
+            placeholder="{l s='Enter Your Email Address' d='Shop.Forms.Help'}"
           >
       </div>
 
       {if $contact.orders}
         <div class="form-group col-md-12 col-sx-12">
+            
             <select name="id_order" class="form-control form-control-select">
               <option value="">{l s='Select reference' d='Shop.Forms.Help'}</option>
               {foreach from=$contact.orders item=order}
@@ -50,16 +54,18 @@
 
       {if $contact.allow_file_upload}
         <div class="form-group col-md-12 col-sx-12">
+            <label>{l s='Choose File' d='Shop.Theme.Global'}</label>
             <input type="file" name="fileUpload" class="filestyle" data-buttonText="{l s='Choose file' d='Shop.Theme.Actions'}">
         </div>
       {/if}
 
       <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <label>{l s='Your Message' d='Shop.Theme.Global'}</label>
           <textarea
             class="form-control"
             name="message"
-            placeholder="{l s='Comment' d='Shop.Forms.Help'}"
-            rows="2"
+            placeholder="{l s='Enter Your Message' d='Shop.Forms.Help'}"
+            rows="6"
           >{if $contact.message}{$contact.message}{/if}</textarea>
       </div>
 
@@ -74,7 +80,7 @@
         </style>
         <input type="text" name="url" value=""/>
         <input type="hidden" name="token" value="{$token}" />
-        <input class="btn-underline" type="submit" name="submitMessage" value="{l s='Submit review' d='Shop.Theme.Actions'}">
+        <input class="btn-default active" type="submit" name="submitMessage" value="{l s='Submit' d='Shop.Theme.Actions'}">
       </footer>
     {/if}
   </form>

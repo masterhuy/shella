@@ -24,22 +24,22 @@
 *}
 
 <div class="contact-rich">
-  <h4> <i class="fa fa-map-marker"></i> {l s='Store information' d='Shop.Theme.Global'}</h4>
-  <div class="block">
-    <div class="data">{$contact_infos.address.formatted nofilter}</div>
+  <div class="addon-title">
+    <h3>{l s='Here to Help' d='Shop.Theme.Global'}</h3>
+    <span>{l s='Have a question? You may find an answer in our FAQs. But you can also contact us:' d='Shop.Theme.Global'}</span>
   </div>
-  {if $contact_infos.phone}
-    <hr/>
-    <div class="block">
-      <div class="icon"><i class="material-icons">&#xE0CD;</i></div>
-      <div class="data">
-        {l s='Call us:' d='Shop.Theme.Global'}<br/>
-        <a href="tel:{$contact_infos.phone}">{$contact_infos.phone}</a>
-       </div>
+  <div class="block">
+    <div class="address section">
+        {if $contact_infos.phone}
+          <div class="data">
+            {l s='Call us:' d='Shop.Theme.Global'}
+            <a href="tel:{$contact_infos.phone}">{$contact_infos.phone}</a>
+          </div>
+        {/if}
+        <p class="info-address">{$contact_infos.address.address1 nofilter}</p>
     </div>
-  {/if}
+  </div>
   {if $contact_infos.fax}
-    <hr/>
     <div class="block">
       <div class="icon"><i class="material-icons">&#xE0DF;</i></div>
       <div class="data">
@@ -49,13 +49,16 @@
     </div>
   {/if}
   {if $contact_infos.email}
-    <hr/>
     <div class="block">
-      <div class="icon"><h4> <i class="fa fa-envelope"></i>{l s='Email Contact' d='Shop.Theme.Global'} </h4></div>
       <div class="data email">
-        {l s='Email us:' d='Shop.Theme.Global'}<br/>
-       </div>
+        {l s='Email us:' d='Shop.Theme.Global'}
        <a href="mailto:{$contact_infos.email}">{$contact_infos.email}</a>
+      </div>
     </div>
   {/if}
+  <div class="block contact-map">
+    <iframe width="100%" height="240" style="border:0"
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBwY_0PWuwH_A5y4iwNAqpaUbUjRPySkFc%0A%20%20%20%20&q=7563%20St.%20Vicent%20Place,%20Glasgow"
+      allowfullscreen=""></iframe>
+    </div>
 </div>

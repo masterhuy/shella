@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-14 06:05:29
+/* Smarty version 3.1.33, created on 2019-06-17 06:18:19
   from 'D:\xamppp\htdocs\jms_shella\themes\jms_shella\templates\layouts\layout-full-width.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d037169576025_37478959',
+  'unifunc' => 'content_5d0768eb8f0ac7_44928149',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,34 +20,34 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d037169576025_37478959 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d0768eb8f0ac7_44928149 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5722580895d03716956a4a5_49014899', 'left_column');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9318433645d0768eb8e8dc6_72390059', 'left_column');
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_16674084985d03716956e326_33517122', 'right_column');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2448405165d0768eb8e8dc9_56475864', 'right_column');
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15534319375d03716956e326_30631059', 'content_wrapper');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7946702615d0768eb8ecc49_27749522', 'content_wrapper');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'layouts/layout-both-columns.tpl');
 }
 /* {block 'left_column'} */
-class Block_5722580895d03716956a4a5_49014899 extends Smarty_Internal_Block
+class Block_9318433645d0768eb8e8dc6_72390059 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'left_column' => 
   array (
-    0 => 'Block_5722580895d03716956a4a5_49014899',
+    0 => 'Block_9318433645d0768eb8e8dc6_72390059',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -55,12 +55,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'left_column'} */
 /* {block 'right_column'} */
-class Block_16674084985d03716956e326_33517122 extends Smarty_Internal_Block
+class Block_2448405165d0768eb8e8dc9_56475864 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'right_column' => 
   array (
-    0 => 'Block_16674084985d03716956e326_33517122',
+    0 => 'Block_2448405165d0768eb8e8dc9_56475864',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -68,7 +68,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'right_column'} */
 /* {block 'content'} */
-class Block_15046774455d0371695721a0_25543470 extends Smarty_Internal_Block
+class Block_12228858475d0768eb8ecc40_88440213 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -79,16 +79,16 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'content'} */
 /* {block 'content_wrapper'} */
-class Block_15534319375d03716956e326_30631059 extends Smarty_Internal_Block
+class Block_7946702615d0768eb8ecc49_27749522 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content_wrapper' => 
   array (
-    0 => 'Block_15534319375d03716956e326_30631059',
+    0 => 'Block_7946702615d0768eb8ecc49_27749522',
   ),
   'content' => 
   array (
-    0 => 'Block_15046774455d0371695721a0_25543470',
+    0 => 'Block_12228858475d0768eb8ecc40_88440213',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -96,7 +96,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 
   <div id="content-wrapper" <?php if ($_smarty_tpl->tpl_vars['page']->value['page_name'] != "index") {?>class="col-lg-12 col-md-12 col-sm-12 col-xs-12"<?php }?>>
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15046774455d0371695721a0_25543470', 'content', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12228858475d0768eb8ecc40_88440213', 'content', $this->tplIndex);
 ?>
 
   </div>
