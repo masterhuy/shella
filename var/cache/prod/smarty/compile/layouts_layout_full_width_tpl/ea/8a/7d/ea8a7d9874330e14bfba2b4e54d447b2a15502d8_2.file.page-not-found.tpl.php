@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-17 04:04:00
+/* Smarty version 3.1.33, created on 2019-06-17 22:58:39
   from 'D:\xamppp\htdocs\jms_shella\themes\jms_shella\templates\errors\page-not-found.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d074970d07cf0_66245405',
+  'unifunc' => 'content_5d08535fb9ae60_90828750',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ea8a7d9874330e14bfba2b4e54d447b2a15502d8' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_shella\\themes\\jms_shella\\templates\\errors\\page-not-found.tpl',
-      1 => 1558585495,
+      1 => 1560824825,
       2 => 'file',
     ),
   ),
@@ -20,65 +20,38 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d074970d07cf0_66245405 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d08535fb9ae60_90828750 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
 <section id="content" class="page-content page-not-found">
     <div class="row">
-        <div class="layout-column col-lg-5 col-md-5 col-sm-12 col-xs-12 text-left">
-            <img src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['base_url'], ENT_QUOTES, 'UTF-8');?>
-themes/jms_mella/assets/img/error.png">
-            <p class="text-1"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'This page not be found','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
+        <div class="layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+            <h1>404</h1>
+            <p class="text-1"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Page Not Found','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
 </p>
-            <p class="text-2">
-                <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'We are really sorry, but the page you requested is missing..
-                Perhaps searching again can help. Or back to','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
-
-                <a class="back-to-home" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['base_url'], ENT_QUOTES, 'UTF-8');?>
-"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'home page','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
-</a>
-            </p>
+            <p class="text-2"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'We looked everywhere for this page.Are you sure the website URL is correct? Get in touch with the site owner.','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
+</p>
             
-            <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10786341035d074970d07cf4_98581128', 'search');
-?>
-
+            <a class="btn-default back-to-home" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['base_url'], ENT_QUOTES, 'UTF-8');?>
+"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Go back','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
+</a>
         
             <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_4523080955d074970d07cf5_79402622', 'hook_not_found');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5533914205d08535fb9ae65_46214716', 'hook_not_found');
 ?>
 
         </div>
-        <div class="layout-column col-lg-7 col-md-7 col-sm-12 col-xs-12"></div>
     </div>
 </section>
 <?php }
-/* {block 'search'} */
-class Block_10786341035d074970d07cf4_98581128 extends Smarty_Internal_Block
-{
-public $subBlocks = array (
-  'search' => 
-  array (
-    0 => 'Block_10786341035d074970d07cf4_98581128',
-  ),
-);
-public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
-?>
-
-                <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'displaySearch'),$_smarty_tpl ) );?>
-
-            <?php
-}
-}
-/* {/block 'search'} */
 /* {block 'hook_not_found'} */
-class Block_4523080955d074970d07cf5_79402622 extends Smarty_Internal_Block
+class Block_5533914205d08535fb9ae65_46214716 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'hook_not_found' => 
   array (
-    0 => 'Block_4523080955d074970d07cf5_79402622',
+    0 => 'Block_5533914205d08535fb9ae65_46214716',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

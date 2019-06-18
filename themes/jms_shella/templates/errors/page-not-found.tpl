@@ -24,23 +24,16 @@
  *}
 <section id="content" class="page-content page-not-found">
     <div class="row">
-        <div class="layout-column col-lg-5 col-md-5 col-sm-12 col-xs-12 text-left">
-            <img src="{$urls.base_url}themes/jms_mella/assets/img/error.png">
-            <p class="text-1">{l s='This page not be found' d='Shop.Theme'}</p>
-            <p class="text-2">
-                {l s='We are really sorry, but the page you requested is missing..
-                Perhaps searching again can help. Or back to' d='Shop.Theme'}
-                <a class="back-to-home" href="{$urls.base_url}">{l s='home page' d='Shop.Theme'}</a>
-            </p>
+        <div class="layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+            <h1>404</h1>
+            <p class="text-1">{l s='Page Not Found' d='Shop.Theme.Global'}</p>
+            <p class="text-2">{l s='We looked everywhere for this page.Are you sure the website URL is correct? Get in touch with the site owner.' d='Shop.Theme.Global'}</p>
             
-            {block name='search'}
-                {hook h='displaySearch'}
-            {/block}
+            <a class="btn-default back-to-home" href="{$urls.base_url}">{l s='Go back' d='Shop.Theme.Global'}</a>
         
             {block name='hook_not_found'}
                 {hook h='displayNotFound'}
             {/block}
         </div>
-        <div class="layout-column col-lg-7 col-md-7 col-sm-12 col-xs-12"></div>
     </div>
 </section>

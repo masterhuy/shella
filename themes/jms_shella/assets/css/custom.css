@@ -64,7 +64,7 @@ div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, 
 
 button:focus {outline:0;}
 button[disabled], html input[disabled] {
-  cursor: not-allowed;
+  background: transparent;
 }
 input, button, select, textarea {
   font-family: inherit;
@@ -112,8 +112,17 @@ hr {
 .m-0{
   margin: 0;
 }
+.mt-5{
+  margin-top: 5px;
+}
+.mb-5{
+  margin-bottom: 5px;
+}
 .mr-10{
   margin-right: 10px;
+}
+.mt-15{
+  margin-top: 15px;
 }
 .mb-25{
   margin-bottom: 25px;
@@ -132,6 +141,9 @@ hr {
 }
 .mt-30{
   margin-top: 30px;
+}
+.mb-30{
+  margin-bottom: 30px;
 }
 .mt-35{
   margin-top: 35px;
@@ -263,10 +275,11 @@ p {
     font-size: 1.5em; } }
 
 small {
-  font-size: 0.96em; }
+  font-size: 80%; }
 
-cite {
-  font-style: normal; }
+.label-hidden {
+  display: none;
+}
 
 .highlight {
   background-color: #FFC;
@@ -335,6 +348,22 @@ h6 {
 label {
   font-weight: 400; }
 
+label.error{
+  color: #F54337;
+  padding: 0;
+  margin: 0 0 2px;
+  border: 0;
+  background: transparent;
+  font-weight: 400;
+}
+label.success{
+  color: #25A799;
+  padding: 0;
+  margin: 0 0 2px;
+  border: 0;
+  background: transparent;
+  font-weight: 400;
+}
 ul, ol {
   margin-top: 0;
   margin-bottom: 10px;
@@ -600,13 +629,108 @@ code, kbd, pre, samp {
     .comment .comments > .comment:first-child .inside {
       border: none; }
 
+.note {
+  font-size: 11px;
+  line-height: 18px;
+  position: relative;
+  display: inline-block;
+  min-height: 25px;
+  padding: 4px 15px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+.note::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 100%;
+  left: 15px;
+  border: 4px solid transparent;
+  border-bottom-width: 5px;
+}
+.note:not([class*="note--"])::before {
+  border-bottom-color: #F2F2F2;
+}
+.note--success::before {
+  border-bottom-color: #25A799;
+}
+.note--error::before {
+  border-bottom-color: #F54337;
+}
+.note--error ul li::before, .note--success ul li::before {
+  background-color: #fff !important;
+}
+.note p {
+  margin-top: 15px;
+}
+.note--error, .note--error *, .note--error ol li::before, .note--success, .note--success *, .note--success ol li::before {
+  color: #fff !important;
+}
+.note--error {
+  background-color: #F54337;
+}
+.note--success {
+  background-color: #25A799;
+}
+.note:not([class*="note--"]) {
+  background-color: #F2F2F2;
+}
+
 select, textarea {
   border-radius: 0px;
-  border-color: #eee; }
-
+  width: 100%;
+  border: 1px solid #e5e5e5;
+}
+textarea{
+  margin-bottom: 20px;
+  padding: 10px;
+}
+textarea:hover, textarea:focus{
+  border-color: #141414;
+}
+fieldset {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+legend {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin-bottom: 8px;
+  font-size: 24px;
+  line-height: inherit;
+  color: inherit;
+  white-space: normal;
+  border: 0;
+}
+input.error {
+  border-color: #F54337 !important;
+  background: transparent;
+  font-weight: 400;
+}
+input.success {
+  border-color: #25A799 !important;
+  background: transparent;
+  font-weight: 400;
+  color: #858585;
+}
+input.error:hover, input.error:focus,
+input.success:hover, input.success:focus{
+  border-color: #141414 !important;
+}
+input[type="file"] {
+  display: inline-block;
+}
 input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
   border-radius: 0px;
-  border-color: #eee; }
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  height: 35px;
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
 
 .inputbox, .form-control {
   border-radius: 0px;
@@ -752,14 +876,27 @@ textareainput[type="text"], textareainput[type="password"], textareainput[type="
 textarea.inputbox {
   height: auto; }
 
+input[type="checkbox"], input[type="radio"] {
+  margin: 0;
+  margin-right: 7px;
+  vertical-align: -1px;
+}
+
 select {
   background: transparent none repeat scroll 0 0;
   border: 1px solid #eee;
   -webkit-box-shadow: none;
   box-shadow: none;
   min-width: 120px;
-  padding-right: 5px;
-  width: auto; }
+  padding: 0 15px;
+  width: 100%;
+  height: 35px;
+  margin-bottom: 20px;
+}
+select:focus{
+  outline: none;
+  border-color: #141414;
+}
   select.form-control, select.inputbox, select.input {
     background: transparent none repeat scroll 0 0;
     border: 1px solid #eee;
@@ -768,6 +905,8 @@ select {
     min-width: 120px;
     padding-right: 5px;
     width: auto; }
+}
+}
 
 .input-append input, .input-prepend input, .input-append select, .input-prepend select, .input-append .uneditable-input, .input-prepend .uneditable-input {
   -webkit-box-shadow: none;
@@ -1134,6 +1273,7 @@ table td[class*="col-"], table table th[class*="col-"] {
   border-color: #141414;
 }
 .btn-default {
+  color: #141414;
   display: inline-block;
   border: 1px solid #141414;
   letter-spacing: 0.5px;
@@ -1142,17 +1282,13 @@ table td[class*="col-"], table table th[class*="col-"] {
   background: transparent;
   justify-content: center;
   line-height: 1; }
-  .btn-default.disabled {
-    background: #9b9b9b; }
-    .btn-default.disabled.active, .btn-default.disabled:active, .btn-default.disabled:focus, .btn-default.disabled:hover {
-      background: #9b9b9b; }
-  .btn-default[disabled], .btn-default.active[disabled] {
-    background: #9b9b9b; }
-  .btn-default[disabled]:active, .btn-default[disabled]:focus, .btn-default[disabled]:hover {
-    background: #9b9b9b; }
-
-.btn-default.active:hover{
-  color: #141414;
+.btn-default.disabled {
+  opacity: 0.4;
+  border-color: #141414;
+  cursor: context-menu
+}
+.btn-default.active:hover {
+  color: #141414 !important;
   background: #fff;
 }
 
@@ -1216,37 +1352,27 @@ fieldset[disabled] .btn-default {
   padding: 5.5px 20px;
   border-radius: 30px;
 }
-
-.btn-default.disabled {
-  background: #9b9b9b; }
-  .btn-default.disabled.active, .btn-default.disabled:active, .btn-default.disabled:focus, .btn-default.disabled:hover {
-    background: #9b9b9b; }
-
 .btn-default[disabled], .btn-default.active[disabled] {
   background: #fff;
   cursor: not-allowed;
   color: #858585;
 }
-.btn-default[disabled]:hover, 
-.btn-default.active[disabled]:hover {
-  background: #9b9b9b !important;
-  border-color: #9b9b9b !important;
+.btn-default.disabled, .btn-default.disabled.focus, .btn-default.disabled:active, .btn-default.disabled:focus, .btn-default.disabled:hover, .btn-default[disabled], .btn-default[disabled].active, .btn-default[disabled].focus, .btn-default[disabled]:active, .btn-default[disabled]:focus, .btn-default[disabled]:hover, fieldset[disabled] .btn-default, fieldset[disabled] .btn-default.active, fieldset[disabled] .btn-default.focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default:hover {
+  background-color: #fff;
+  border-color: #141414;
+  color: #141414 !important;
 }
-
-.btn-default[disabled]:active, .btn-default[disabled]:focus, .btn-default[disabled]:hover {
-  background: #9b9b9b; }
-
-fieldset[disabled] .btn-default {
-  background: #9b9b9b; }
-  fieldset[disabled] .btn-default.active, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default:hover {
-    background: #9b9b9b; }
-
+.btn-default.disabled.active{
+  background-color: #141414;
+  border-color: #141414;
+  color: #fff !important;
+}
 .btn-transparent:hover {
   color: #fff;
   outline: 0 none !important; }
 
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
-  color: #fff;
+  color: #fff !important;
   background: #141414;
   outline: 0 none !important; }
 
@@ -1331,15 +1457,16 @@ input[type="color"]:active {
   box-shadow: none;
   border-color: transparent; }
 
-select:focus, textarea:focus {
-  border-color: transparent; }
-
   input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus {
   border-color: #141414; }
 
 .inputbox:focus, .form-control:focus {
   border-color: #141414;
   box-shadow: unset;
+}
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
 }
 
 ul#order_step li {
