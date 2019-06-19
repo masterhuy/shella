@@ -32,7 +32,7 @@
 }
 .facet.size .facet-label.active a{
     color: #fff !important;
-    background: #b20f0f !important;
+    background: #141414 !important;
 }
 .facet-label .magnitude {
     float: right;
@@ -458,7 +458,7 @@
     background: url("../img/icon/plus.png") no-repeat center;
 }
 .product-quantity .btn-touchspin:hover::before{
-    color: #b20f0f;
+    color: #141414;
 }
 .product-quantity .bootstrap-touchspin-down {
     background: url("../img/icon/minus.png") no-repeat center;
@@ -601,7 +601,7 @@
     top: 5px;
     width: 5px;
     height: 5px;
-    background: #b20f0f;
+    background: #141414;
 }
 .other-info > li span {
     padding-left: 0;
@@ -815,7 +815,7 @@
     padding-left: 6px;
 }
 .product-preview.flex-box button.cart-button:hover{
-    background: #b20f0f;
+    background: #141414;
     border-radius: 30px;
     width: 126px;
 }
@@ -904,8 +904,7 @@
     padding: 15px;
 }
 .active_filters h3 {
-    font-size: 17px;
-    font-weight: 600;
+    font-size: 13px;
     padding-bottom: 0;
     padding-right: 15px;
 }

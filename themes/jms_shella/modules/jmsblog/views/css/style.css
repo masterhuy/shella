@@ -335,7 +335,7 @@
 	margin-bottom: 17px;
 }
 .cat-post-list .post-meta a:hover{
-	color: #b20f0f;
+	color: #141414;
 }
 .cat-post-list .post-meta li span {
 	font-size: 13px;
@@ -398,7 +398,7 @@
 	position: relative;
 }
 .single-blog .post-meta a:hover{
-	color: #b20f0f;
+	color: #141414;
 }
 .single-blog .post-meta li:last-child {
 	margin-right:0;
@@ -440,7 +440,7 @@
 	left: 0;
 	position: absolute;
 	width: 35px;
-	background: #b20f0f;
+	background: #141414;
 }
 /* Categories Page */
 .categories-list .blog-category {

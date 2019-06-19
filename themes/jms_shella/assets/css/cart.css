@@ -59,8 +59,8 @@
 .cart-box .btn-shopping:active,
 .cart-box .btn-shopping:focus {
 	color: #fff;
-	background: #b20f0f;
-	border-color: #b20f0f !important;
+	background: #141414;
+	border-color: #141414 !important;
 }
 .text-xs-center{
 	text-align:center;
@@ -98,7 +98,7 @@
 	
 }
 .product-qty .input-group-btn-vertical button:hover i{
-	color: #b20f0f;
+	color: #141414;
 }
 .product-qty .js-cart-line-product-quantity {
 	font-size: 14px;
@@ -190,12 +190,12 @@
 	color: #666;
 }
 .cart-line-product-actions .remove-from-cart:hover{
-	color: #b20f0f;
+	color: #141414;
 }
 .alert.alert-danger.js-error {
 	position: relative;
 	margin-top: 2.25rem;
-	background: #b20f0f;
+	background: #141414;
 	color: #fff;
 	width: 100%;
 	text-align: center;

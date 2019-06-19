@@ -32,19 +32,19 @@
   <div class="container-fluid">
     <div class="row sitemap col-xs-12">
         <div class="col-md-3">
-          <h2>{$our_offers}</h2>
+          <h5>{$our_offers}</h5>
           {include file='cms/_partials/sitemap-nested-list.tpl' links=$links.offers}
         </div>
         <div class="col-md-3">
-          <h2>{$categories}</h2>
+          <h5>{$categories}</h5>
           {include file='cms/_partials/sitemap-nested-list.tpl' links=$links.categories}
         </div>
         <div class="col-md-3">
-          <h2>{$your_account}</h2>
+          <h5>{$your_account}</h5>
           {include file='cms/_partials/sitemap-nested-list.tpl' links=$links.user_account}
         </div>
         <div class="col-md-3">
-          <h2>{$pages}</h2>
+          <h5>{$pages}</h5>
           {include file='cms/_partials/sitemap-nested-list.tpl' links=$links.pages}
         </div>
     </div>

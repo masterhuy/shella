@@ -57,7 +57,7 @@
     height: 0;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-bottom: 5px solid #b20f0f;
+    border-bottom: 5px solid #141414;
 }
 #jms_ajax_search .label-form {
     display: flex;

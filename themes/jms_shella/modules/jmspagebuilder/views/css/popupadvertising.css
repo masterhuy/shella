@@ -31,7 +31,7 @@
 .jms-popup #social_block {
   padding: 17px 0 19px;
   text-align: center;
-  background: #b20f0f;
+  background: #141414;
   border: 2px solid #fff;
   color: #fff;
   position: absolute;
@@ -94,7 +94,7 @@ line-height: 1.64;
   font-size: 16px;
   display: block !important;
   width: 18px;
-  color: #b20f0f;
+  color: #141414;
 }
 .jms-popup p {
 	line-height:26px;
