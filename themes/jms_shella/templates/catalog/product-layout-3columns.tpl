@@ -78,7 +78,7 @@
 		<div class="column_left col-lg-7 col-sm-6 col-md-6 col-sx-12">
 			{block name='page_header_container'}
 				{block name='page_header'}
-					<h2  itemprop="name">{block name='page_title'}{$product.name}{/block}</h2>
+					<h2 class="pd-name" itemprop="name">{block name='page_title'}{$product.name}{/block}</h2>
 				{/block}
 			{/block}
 			{block name='product_prices'}
@@ -158,6 +158,10 @@
 							{block name='product_discounts'}
 								{include file='catalog/_partials/product-discounts.tpl'}
 							{/block}
+
+              {block name='product_variants'}
+                  {include file='catalog/_partials/product-variants.tpl'}
+              {/block}
 							
 							{block name='product_add_to_cart'}
 								{include file='catalog/_partials/product-add-to-cart.tpl'}

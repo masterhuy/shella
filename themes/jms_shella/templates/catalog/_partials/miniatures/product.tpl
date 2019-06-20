@@ -57,6 +57,9 @@
 	                        <span class="label label-discount discount-percentage discount-product">{$product.discount_percentage}</span>
 						{/if}
 					{/if}
+					{if $product.quantity < 1}
+						<span class="label label-outstock">{l s='Out Stock' d='Shop.Theme.Actions'}</span>
+					{/if}
 			   {/block}	
 			</div>
 	   	    <a href="#" data-link-action="quickview" class="d-flex flex-center quick-view product-btn hidden-xs">

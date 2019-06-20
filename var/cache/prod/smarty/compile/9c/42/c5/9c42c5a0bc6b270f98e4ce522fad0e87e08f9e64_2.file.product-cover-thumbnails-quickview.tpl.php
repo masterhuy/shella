@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-19 04:39:39
+/* Smarty version 3.1.33, created on 2019-06-20 05:58:27
   from 'D:\xamppp\htdocs\jms_shella\themes\jms_shella\templates\catalog\_partials\product-cover-thumbnails-quickview.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d09f4cbb58372_63498999',
+  'unifunc' => 'content_5d0b58c3c29543_74859659',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9c42c5a0bc6b270f98e4ce522fad0e87e08f9e64' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_shella\\themes\\jms_shella\\templates\\catalog\\_partials\\product-cover-thumbnails-quickview.tpl',
-      1 => 1558585495,
+      1 => 1561019597,
       2 => 'file',
     ),
   ),
@@ -20,56 +20,31 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d09f4cbb58372_63498999 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d0b58c3c29543_74859659 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
 <div class="images-container">
   <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15520536425d09f4cbb48976_71276487', 'product_cover');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_8202276405d0b58c3c02446_53921635', 'product_images');
 ?>
 
 
   <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_854383775d09f4cbb50675_69452551', 'product_images');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_17274489625d0b58c3c02440_66132859', 'product_cover');
 ?>
 
 </div>
 <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'displayAfterProductThumbs'),$_smarty_tpl ) );?>
 
 <?php }
-/* {block 'product_cover'} */
-class Block_15520536425d09f4cbb48976_71276487 extends Smarty_Internal_Block
-{
-public $subBlocks = array (
-  'product_cover' => 
-  array (
-    0 => 'Block_15520536425d09f4cbb48976_71276487',
-  ),
-);
-public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
-?>
-
-    <div class="product-cover">
-      <img class="js-qv-product-cover" src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['cover']['bySize']['large_default']['url'], ENT_QUOTES, 'UTF-8');?>
-" alt="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['cover']['legend'], ENT_QUOTES, 'UTF-8');?>
-" title="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['cover']['legend'], ENT_QUOTES, 'UTF-8');?>
-" style="width:100%;" itemprop="image">
-      <div class="layer hidden-sm-down" data-toggle="modal" data-target="#product-modal">
-        <i class="material-icons zoom-in">&#xE8FF;</i>
-      </div>
-    </div>
-  <?php
-}
-}
-/* {/block 'product_cover'} */
 /* {block 'product_images'} */
-class Block_854383775d09f4cbb50675_69452551 extends Smarty_Internal_Block
+class Block_8202276405d0b58c3c02446_53921635 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_images' => 
   array (
-    0 => 'Block_854383775d09f4cbb50675_69452551',
+    0 => 'Block_8202276405d0b58c3c02446_53921635',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -109,4 +84,29 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 }
 }
 /* {/block 'product_images'} */
+/* {block 'product_cover'} */
+class Block_17274489625d0b58c3c02440_66132859 extends Smarty_Internal_Block
+{
+public $subBlocks = array (
+  'product_cover' => 
+  array (
+    0 => 'Block_17274489625d0b58c3c02440_66132859',
+  ),
+);
+public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+?>
+
+    <div class="product-cover">
+      <img class="js-qv-product-cover" src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['cover']['bySize']['large_default']['url'], ENT_QUOTES, 'UTF-8');?>
+" alt="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['cover']['legend'], ENT_QUOTES, 'UTF-8');?>
+" title="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['cover']['legend'], ENT_QUOTES, 'UTF-8');?>
+" style="width:100%;" itemprop="image">
+      <div class="layer hidden-sm-down" data-toggle="modal" data-target="#product-modal">
+        <i class="material-icons zoom-in">&#xE8FF;</i>
+      </div>
+    </div>
+  <?php
+}
+}
+/* {/block 'product_cover'} */
 }

@@ -22,17 +22,22 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<section class="featured-products clearfix mt-3 addon-title">
-  <h3>
-    {l s='Related Products' d='Shop.Theme.Catalog'}
-  </h3>
-  <div class="product_box">
-    <div class="products customs-carousel-product"> 
-      {foreach from=$products item="product"}
-          <div class="item ajax_block_product">
-              {include file="catalog/_partials/miniatures/product.tpl" product=$product}
-          </div>
-      {/foreach}
+<div class="same-category">
+    <div class="container">
+        <div class="addon-title">
+            <h3>
+                {l s='Related Products' d='Shop.Theme.Catalog'}
+            </h3>
+        </div>
+        <div class="product_box">
+            <div class="products customs-carousel-product"> 
+                {foreach from=$products item="product"}
+                    <div class="item ajax_block_product">
+                        {include file="catalog/_partials/miniatures/product.tpl" product=$product}
+                    </div>
+                {/foreach}
+            </div>
+        </div>
     </div>
-  </div>
-</section>
+</div>
+

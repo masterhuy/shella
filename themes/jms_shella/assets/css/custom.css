@@ -182,6 +182,9 @@ hr {
 .d-flex{
   display: flex;
 }
+.d-i-flex{
+  display: inline-flex;
+}
 .flex-column {
   flex-direction: column;
 }
@@ -1793,6 +1796,10 @@ ul.cart_block_list li:not(:last-child){
   background: #F54337;
   top: 0 !important;
 }
+.product-miniature .preview .label.label-outstock {
+  background: #858585;
+  text-transform: capitalize;
+}
 
 .categoryname {
   display: block;
@@ -2943,12 +2950,8 @@ ul.footer_links {
   top: 8px;
   width: 24px;
   border-radius: 50%;
-  background: url("../img/icon/close.png") no-repeat scroll 50% 50%;
+  background: url("../img/icon/icon_close.png") no-repeat scroll 50% 50%;
   z-index: 99;
-}
-.modal-dialog .close:hover{
-  background-image: url("../img/icon/close-hover.png");
-  transform: rotate(180deg);
 }
 .js-modal-product-cover.product-cover-modal {
   width: 100%; }
@@ -2957,7 +2960,8 @@ ul.footer_links {
   border: 0;
   margin-top: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  padding: 0;
 }
 .modal-footer span{
   margin-right: 15px;
@@ -2965,7 +2969,7 @@ ul.footer_links {
 
 /* Quick view */
 .modal-dialog.cover_product1 {
-  max-width: 1170px;
+  max-width: 1200px;
   width: 100%;
   margin: 66px auto; }
 
@@ -3008,9 +3012,6 @@ ul.footer_links {
   .modal-dialog.cover_product1 .thumbs-list .thumb-container img {
     width: 100%;
     border: 1px solid #ebebeb; }
-  .modal-dialog.cover_product1 .images-container .image-box .layer, .modal-dialog.cover_product1 .scroll-box-arrows {
-    display: block;
-    position: relative; }
   .modal-dialog.cover_product1 .images-container .thumb-box .arrows.js-arrows {
     display: block; }
   .modal-dialog.cover_product1 .modal-footer .block-social .social-title {
@@ -3037,7 +3038,7 @@ ul.footer_links {
         content: "\f0d2"; }
       .modal-dialog.cover_product1 .modal-footer .block-social ul li a::before {
   font-family: "FontAwesome";
-  font-size: 20px;
+  font-size: 13px;
 }
 .modal-dialog.cover_product1 .modal-footer .block-social ul li a:hover::before {
   color: #141414;

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-12 21:49:37
+/* Smarty version 3.1.33, created on 2019-06-20 05:00:30
   from 'D:\xamppp\htdocs\jms_shella\themes\jms_shella\templates\catalog\_partials\product-add-to-cart.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d01abb19acd58_67100855',
+  'unifunc' => 'content_5d0b4b2e12e340_36317053',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,31 +20,31 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d01abb19acd58_67100855 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d0b4b2e12e340_36317053 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
 <div class="product-add-to-cart">
     <?php if (isset($_smarty_tpl->tpl_vars['configuration']->value['is_catalog']) && !$_smarty_tpl->tpl_vars['configuration']->value['is_catalog']) {?>
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14572923285d01abb1985c57_34459017', 'product_quantity');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15488160105d0b4b2e112dc8_75794233', 'product_quantity');
 ?>
 
 
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7995579785d01abb1985c50_53185087', 'product_minimal_quantity');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1620555375d0b4b2e12a4c2_13259192', 'product_minimal_quantity');
 ?>
 
     <?php }?>
 </div>
 <?php }
 /* {block 'product_quantity'} */
-class Block_14572923285d01abb1985c57_34459017 extends Smarty_Internal_Block
+class Block_15488160105d0b4b2e112dc8_75794233 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_quantity' => 
   array (
-    0 => 'Block_14572923285d01abb1985c57_34459017',
+    0 => 'Block_15488160105d0b4b2e112dc8_75794233',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -131,12 +131,12 @@ echo htmlspecialchars($_smarty_tpl->tpl_vars['static_token']->value, ENT_QUOTES,
 }
 /* {/block 'product_quantity'} */
 /* {block 'product_minimal_quantity'} */
-class Block_7995579785d01abb1985c50_53185087 extends Smarty_Internal_Block
+class Block_1620555375d0b4b2e12a4c2_13259192 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_minimal_quantity' => 
   array (
-    0 => 'Block_7995579785d01abb1985c50_53185087',
+    0 => 'Block_1620555375d0b4b2e12a4c2_13259192',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

@@ -129,6 +129,10 @@
                                 </li>
                             </ul>
                         </div>
+                        <div class="modal-footer">
+                            <span>Share with:</span>
+                            {hook h='displayProductButtons' product=$product}
+                        </div>
                     </div>
                 </div>
             </div>
