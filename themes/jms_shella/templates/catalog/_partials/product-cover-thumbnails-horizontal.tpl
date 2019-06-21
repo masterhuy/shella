@@ -28,7 +28,7 @@
     <div class="js-qv-mask mask">
       <ul id="gal1" class="product-images js-qv-product-images">
         {foreach from=$product.images item=image}
-        <div class="product-cover">
+        <div class="product-cover-horizontal">
           <img class="zoom_01 js-qv-product-cover" src="{$image.bySize.large_default.url}" alt="{$product.cover.legend}" title="{$product.cover.legend}" style="width:100%;" itemprop="image">
         </div>
         {/foreach}

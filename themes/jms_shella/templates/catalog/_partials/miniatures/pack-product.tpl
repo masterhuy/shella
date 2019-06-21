@@ -37,7 +37,7 @@
         </td>
         <td>
             <div class="pack-product-price">
-                <strong>{$product.price}</strong>
+                {$product.price}
             </div>
         </td>
         <td>

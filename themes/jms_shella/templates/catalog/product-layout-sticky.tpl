@@ -69,6 +69,19 @@
                 </div>
             </div>
             <div class="pb-right-column col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                {block name='product_availability'}
+                    {if $product.show_availability && $product.availability_message}
+                    <span id="product-availability">
+                        {if $product.availability == 'available'}
+                            <span style="color:#fff; background:#25A799">{$product.availability_message}</span>
+                        {elseif $product.availability == 'last_remaining_items'}
+                            <i class="material-icons product-last-items">&#xE002;</i>
+                        {else}
+                            <span style="color:#fff; background:#858585;">{$product.availability_message}</span>
+                        {/if}
+                    </span>
+                    {/if}
+                {/block}
                 {block name='page_header_container'}
                     {block name='page_header'}
                         <h2 itemprop="name" class="pd-name">{block name='page_title'}{$product.name}{/block}</h2>
@@ -188,96 +201,129 @@
                 </div>
                 <!-- Go to www.addthis.com/dashboard to customize your tools -->
                 <div class="addthis_inline_share_toolbox_ld1s"></div>
-            </div>
-        </div>
-        
-        <div id="more_info_block" class="tabs">
-            {block name='product_tabs'}
-                <div class="tabs">
-                    <ul class="nav nav-tabs" role="tablist">
+
+                <div id="more_info_block" class="tabs v2">
+                    {block name='product_tabs'}
+                    <div class="panel-group" id="accordion">
                         {if $product.description}
-                            <li class="nav-item">
-                                <a
-                                    class="nav-link{if $product.description} active{/if}"
-                                    data-toggle="tab"
-                                    href="#description"
-                                    role="tab"
-                                    aria-controls="description"
-                                    {if $product.description} aria-selected="true"{/if}>{l s='Description' d='Shop.Theme.Catalog'}
-                                </a>
-                            </li>
-                        {/if}
-                        <li class="nav-item">
-                            <a
-                            class="nav-link{if !$product.description} active{/if}"
-                            data-toggle="tab"
-                            href="#product-details"
-                            role="tab"
-                            aria-controls="product-details"
-                            {if !$product.description} aria-selected="true"{/if}>{l s='Details' d='Shop.Theme.Catalog'}</a>
-                        </li>
-                        {if $product.attachments}
-                            <li class="nav-item">
-                                <a
-                                    class="nav-link"
-                                    data-toggle="tab"
-                                    href="#attachments"
-                                    role="tab"
-                                    aria-controls="attachments">{l s='Attachments' d='Shop.Theme.Catalog'}
-                                </a>
-                            </li>
-                        {/if}
-                        {foreach from=$product.extraContent item=extra key=extraKey}
-                            <li class="nav-item">
-                                <a
-                                    class="nav-link"
-                                    data-toggle="tab"
-                                    href="#extra-{$extraKey}"
-                                    role="tab"
-                                    aria-controls="extra-{$extraKey}">{$extra.title}
-                                </a>
-                            </li>
-                        {/foreach}
-                    </ul>
-
-                    <div class="tab-content" id="tab-content">
-                        <div class="tab-pane fade in{if $product.description} active{/if}" id="description" role="tabpanel">
-                            {block name='product_description'}
-                                <div class="product-description">{$product.description nofilter}</div>
-                            {/block}
-                        </div>
-
-                        {block name='product_details'}
-                            {include file='catalog/_partials/product-details.tpl'}
-                        {/block}
-
-                        {block name='product_attachments'}
-                            {if $product.attachments}
-                                <div class="tab-pane fade in" id="attachments" role="tabpanel">
-                                    <section class="product-attachments">
-                                        <h3 class="h5 text-uppercase">{l s='Download' d='Shop.Theme.Actions'}</h3>
-                                            {foreach from=$product.attachments item=attachment}
-                                            <div class="attachment">
-                                                <h4><a href="{url entity='attachment' params=['id_attachment' => $attachment.id_attachment]}">{$attachment.name}</a></h4>
-                                                <p>{$attachment.description}</p>
-                                                <a href="{url entity='attachment' params=['id_attachment' => $attachment.id_attachment]}">
-                                                    {l s='Download' d='Shop.Theme.Actions'} ({$attachment.file_size_formatted})
-                                                </a>
-                                            </div>
-                                            {/foreach}
-                                    </section>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#descriptionn">
+                                            {l s='Description' d='Shop.Theme.Catalog'}
+                                            <i class="d-i-flex">
+                                                <svg aria-hidden="true" focusable="false"
+                                                    role="presentation" class="icon icon-theme-188"
+                                                    viewBox="0 0 24 24">
+                                                    <path d="M7.158 12.206a.598.598 0 0 1-.186-.439.6.6 0 0 1 .186-.439.602.602 0 0 1 .439-.186h3.75v-3.75a.6.6 0 0 1 .186-.439.602.602 0 0 1 .439-.186c.169 0 .315.063.439.186a.605.605 0 0 1 .186.439v3.75h3.75c.169 0 .315.063.439.186a.605.605 0 0 1 .186.439.6.6 0 0 1-.186.439.601.601 0 0 1-.439.186h-3.75v3.75a.6.6 0 0 1-.186.439.601.601 0 0 1-.439.186.597.597 0 0 1-.439-.186.598.598 0 0 1-.186-.439v-3.75h-3.75a.598.598 0 0 1-.439-.186z"/>
+                                                </svg>
+                                            </i>
+                                        </a>
+                                    </h4>
                                 </div>
-                            {/if}
-                        {/block}
-
+                                <div id="descriptionn" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        {block name='product_description'}
+                                            <div class="product-description">{$product.description nofilter}</div>
+                                        {/block}
+                                    </div>
+                                </div>
+                            </div>
+                        {/if}
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#product-details">
+                                        {l s='Product Details' d='Shop.Theme.Catalog'}
+                                        <i class="d-i-flex">
+                                            <svg aria-hidden="true" focusable="false"
+                                                role="presentation" class="icon icon-theme-188"
+                                                viewBox="0 0 24 24">
+                                                <path d="M7.158 12.206a.598.598 0 0 1-.186-.439.6.6 0 0 1 .186-.439.602.602 0 0 1 .439-.186h3.75v-3.75a.6.6 0 0 1 .186-.439.602.602 0 0 1 .439-.186c.169 0 .315.063.439.186a.605.605 0 0 1 .186.439v3.75h3.75c.169 0 .315.063.439.186a.605.605 0 0 1 .186.439.6.6 0 0 1-.186.439.601.601 0 0 1-.439.186h-3.75v3.75a.6.6 0 0 1-.186.439.601.601 0 0 1-.439.186.597.597 0 0 1-.439-.186.598.598 0 0 1-.186-.439v-3.75h-3.75a.598.598 0 0 1-.439-.186z"/>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="product-details" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    {block name='product_details'}
+                                        {include file='catalog/_partials/product-details.tpl'}
+                                    {/block}
+                                </div>
+                            </div>
+                        </div>
+                        {if $product.attachments}
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#attachmentss">
+                                            {l s='Attachments' d='Shop.Theme.Catalog'}
+                                            <i class="d-i-flex">
+                                                <svg aria-hidden="true" focusable="false"
+                                                    role="presentation" class="icon icon-theme-188"
+                                                    viewBox="0 0 24 24">
+                                                    <path d="M7.158 12.206a.598.598 0 0 1-.186-.439.6.6 0 0 1 .186-.439.602.602 0 0 1 .439-.186h3.75v-3.75a.6.6 0 0 1 .186-.439.602.602 0 0 1 .439-.186c.169 0 .315.063.439.186a.605.605 0 0 1 .186.439v3.75h3.75c.169 0 .315.063.439.186a.605.605 0 0 1 .186.439.6.6 0 0 1-.186.439.601.601 0 0 1-.439.186h-3.75v3.75a.6.6 0 0 1-.186.439.601.601 0 0 1-.439.186.597.597 0 0 1-.439-.186.598.598 0 0 1-.186-.439v-3.75h-3.75a.598.598 0 0 1-.439-.186z"/>
+                                                </svg>
+                                            </i>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="attachmentss" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        {block name='product_attachments'}
+                                            {if $product.attachments}
+                                                <div class="tab-pane fade in" id="attachments" role="tabpanel">
+                                                    <section class="product-attachments">
+                                                        <h3 class="h5 text-uppercase">{l s='Download' d='Shop.Theme.Actions'}</h3>
+                                                        {foreach from=$product.attachments item=attachment}
+                                                            <div class="attachment">
+                                                                <h4><a href="{url entity='attachment' params=['id_attachment' => $attachment.id_attachment]}">{$attachment.name}</a></h4>
+                                                                <p>{$attachment.description}</p>
+                                                                <a href="{url entity='attachment' params=['id_attachment' => $attachment.id_attachment]}">
+                                                                {l s='Download' d='Shop.Theme.Actions'} ({$attachment.file_size_formatted})
+                                                                </a>
+                                                            </div>
+                                                        {/foreach}
+                                                    </section>
+                                                </div>
+                                            {/if}
+                                        {/block}
+                                    </div>
+                                </div>
+                            </div>
+                        {/if}
                         {foreach from=$product.extraContent item=extra key=extraKey}
-                            <div class="tab-pane fade in {$extra.attr.class}" id="extra-{$extraKey}" role="tabpanel" {foreach $extra.attr as $key => $val} {$key}="{$val}"{/foreach}>
-                                {$extra.content nofilter}
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#extra-{$extraKey}">
+                                            {$extra.title}
+                                            <i class="d-i-flex">
+                                                <svg aria-hidden="true" focusable="false"
+                                                    role="presentation" class="icon icon-theme-188"
+                                                    viewBox="0 0 24 24">
+                                                    <path d="M7.158 12.206a.598.598 0 0 1-.186-.439.6.6 0 0 1 .186-.439.602.602 0 0 1 .439-.186h3.75v-3.75a.6.6 0 0 1 .186-.439.602.602 0 0 1 .439-.186c.169 0 .315.063.439.186a.605.605 0 0 1 .186.439v3.75h3.75c.169 0 .315.063.439.186a.605.605 0 0 1 .186.439.6.6 0 0 1-.186.439.601.601 0 0 1-.439.186h-3.75v3.75a.6.6 0 0 1-.186.439.601.601 0 0 1-.439.186.597.597 0 0 1-.439-.186.598.598 0 0 1-.186-.439v-3.75h-3.75a.598.598 0 0 1-.439-.186z"/>
+                                                </svg>
+                                            </i>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="extra-{$extraKey}" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        {foreach from=$product.extraContent item=extra key=extraKey}
+                                            <div class="tab-pane fade in {$extra.attr.class}" id="extra-{$extraKey}" role="tabpanel" {foreach $extra.attr as $key => $val} {$key}="{$val}"{/foreach}>
+                                                {$extra.content nofilter}
+                                            </div>
+                                        {/foreach}
+                                    </div>
+                                </div>
                             </div>
                         {/foreach}
-                    </div>  
+                    {/block}
                 </div>
-            {/block}
+
+            </div>
         </div>
 
         {block name='product_accessories'}

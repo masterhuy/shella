@@ -44,8 +44,8 @@
       		    
                 <div class="add">
                     <div class="row">
-                        <div class="col-lg-6 col-md-6">
-                            <button class="btn-default ajax-add-to-cart product-btn {if $product.quantity < 1}disabled{/if} cart-button" {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Sold Out' d='Shop.Theme.Actions'}{else}{l s='Add to Cart' d='Shop.Theme.Actions'}{/if}" {if $product.quantity < 1}disabled{/if} data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
+                        <div class="col-lg-12 col-md-12 mb-10">
+                            <button class="btn-default active ajax-add-to-cart product-btn {if $product.quantity < 1}disabled{/if} cart-button" {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Sold Out' d='Shop.Theme.Actions'}{else}{l s='Add to Cart' d='Shop.Theme.Actions'}{/if}" {if $product.quantity < 1}disabled{/if} data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
                                 <span class="la la-spin la-spinner"></span>
                                 <span class="la la-check">
                                     <i class="d-flex">
@@ -72,7 +72,7 @@
                                 </span>                                
                             </button>
                         </div>
-            			<div class="col-lg-6 col-md-6">
+            			<div class="col-lg-12 col-md-12">
                             {if isset($jpb_wishlist) && $jpb_wishlist}                          
                                 <a class="btn-default addToWishlist product-btn" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}" title="{l s='Add to Wishlist'}">
                                     {l s='Add to wishlist' d='Shop.Theme.Actions'}

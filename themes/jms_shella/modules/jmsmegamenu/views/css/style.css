@@ -298,6 +298,9 @@ div.jms-megamenu .dropdown-menu::before{
 .jms-megamenu .nav > .menu-item .mega-nav li{
     position: relative;
 }
+.jms-megamenu .nav > .menu-item .mega-nav li.new{
+    top: 0 !important;
+}
 .jms-megamenu .nav > .menu-item .mega-nav li:not(.group):hover::before{
     content: "";
     width: calc(100% + 10px);
