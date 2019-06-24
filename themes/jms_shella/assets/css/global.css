@@ -195,9 +195,11 @@
     transform: translate(-50%, -50%); }
   #jmsproductvideo .popup_close {
     font-size: 17px;
-    float: right;
     color: #FFF;
-    cursor: pointer; }
+    cursor: pointer;
+    position: absolute;
+    right: -15px;
+    top: -20px; }
   #jmsproductvideo .open-video .jms-video {
     z-index: 11111; }
   #jmsproductvideo .open-video .jms-popup-overlay {
@@ -1035,13 +1037,6 @@ a.wishlist_top {
     position: relative;
     top: 1px; }
 
-.wlp_bought_list {
-  margin: 0 -15px; }
-
-.wlp_bought .group_btn a {
-  display: inline-block;
-  margin-right: 10px; }
-
 #module-jmswishlist-mywishlist .wl_send .submit input {
   padding: 0 20px;
   background: transparent;
@@ -1071,8 +1066,7 @@ a.wishlist_top {
   align-items: center; }
 
 .text-xs-center.order-actions > a {
-  font-size: 14px;
-  text-transform: capitalize; }
+  margin: 0 3px; }
 
 .label.label-pill {
   color: #fff;
@@ -1080,12 +1074,9 @@ a.wishlist_top {
   font-size: 12px;
   font-weight: 500; }
 
-.form-footer.clearfix button {
-  font-size: 14px; }
-
 #conditions-to-approve .js-terms > a {
-  font-size: 14px;
-  font-weight: 700; }
+  font-size: 13px;
+  text-decoration: underline; }
 
 #order-confirmation #content-wrapper {
   margin-bottom: 0px; }
@@ -2571,20 +2562,21 @@ a.wishlist_top {
     font-size: 0.7vw;
     color: #555; }
 
-#form_wishlist .inputTxt {
-  border: 1px solid #ebebeb;
-  margin-left: 20px;
-  height: 40px;
-  padding: 0 10px; }
-
 #form_wishlist {
   margin-top: 20px; }
+  #form_wishlist fieldset {
+    padding: 15px 0; }
 
 .wishlist_top.home_page {
   display: inline-block;
   color: #000; }
   .wishlist_top.home_page:hover {
     color: #141414; }
+
+#block-order-detail .display_list li {
+  margin-bottom: 10px; }
+  #block-order-detail .display_list li a {
+    margin-right: 6px; }
 
 .flashsales-tab-carousel2 .product-miniature {
   display: -webkit-box;

@@ -15,11 +15,15 @@
             
                 <img class="product-image" src="{$product.cover.large.url}" alt="{$product.cover.legend}" title="{$product.cover.legend}" itemprop="image">        
                 <h6 class="h6 product-name">{$product.name}</h6>
-                {$product.price}
+                <div class="content_price">
+				          <span class="price new">{$product.price}</span>
+                </div>
                 {hook h='displayProductPriceBlock' product=$product type="unit_price"}
-                <strong>{l s='Quantity:' d='Shop.Theme.Checkout'}</strong>&nbsp;{$product.cart_quantity}
+                <span>
+                  {l s='Quantity:' d='Shop.Theme.Checkout'}{$product.cart_quantity}
+                </span>
                 {foreach from=$product.attributes item="property_value" key="property"}
-                  <span><strong>{$property}</strong>: {$property_value}</span><br>
+                  <span>{$property}: {$property_value}</span>
                 {/foreach}
                 
              
@@ -32,14 +36,14 @@
               {else}
                 <p class="cart-products-count">{l s='There is %product_count% item in your cart.' sprintf=['%product_count%' =>$cart.products_count] d='Shop.Theme.Checkout'}</p>
               {/if}
-              <p><strong>{l s='Total products:' d='Shop.Theme.Checkout'}</strong>&nbsp;{$cart.subtotals.products.value}</p>
-              <p><strong>{l s='Total shipping:' d='Shop.Theme.Checkout'}</strong>&nbsp;{$cart.subtotals.shipping.value} {hook h='displayCheckoutSubtotalDetails' subtotal=$cart.subtotals.shipping}</p>
+              <p>{l s='Total products:' d='Shop.Theme.Checkout'}{$cart.subtotals.products.value}</p>
+              <p>{l s='Total shipping:' d='Shop.Theme.Checkout'}{$cart.subtotals.shipping.value} {hook h='displayCheckoutSubtotalDetails' subtotal=$cart.subtotals.shipping}</p>
               {if $cart.subtotals.tax}
-              	<p><strong>{$cart.subtotals.tax.label}</strong>&nbsp;{$cart.subtotals.tax.value}</p>
+              	<p>{$cart.subtotals.tax.label}{$cart.subtotals.tax.value}</p>
               {/if}
-              <p><strong>{l s='Total:' d='Shop.Theme.Checkout'}</strong>&nbsp;{$cart.totals.total.value} {$cart.labels.tax_short}</p>
-              <button type="button" class="btn-default btn-secondary btn-effect btn-cart" data-dismiss="modal">{l s='Continue shopping' d='Shop.Theme.Actions'}</button>
-              <a href="{$cart_url}" class="btn-default btn-secondary btn-effect btn-cart">{l s='proceed to checkout' d='Shop.Theme.Actions'}</a>
+              <p>{l s='Total:' d='Shop.Theme.Checkout'}{$cart.totals.total.value} {$cart.labels.tax_short}</p>
+              <button type="button" class="btn-default" data-dismiss="modal">{l s='Continue shopping' d='Shop.Theme.Actions'}</button>
+              <a href="{$cart_url}" class="btn-default">{l s='proceed to checkout' d='Shop.Theme.Actions'}</a>
             </div>
           </div>
         </div>

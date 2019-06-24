@@ -76,10 +76,10 @@
   {/if}
   {block name='action_button'}
 	<div class="action-buttons">
-		<a class="btn-default btn-shopping btn-effect button-small" href="{$urls.pages.index}">
+		<a class="btn-default" href="{$urls.pages.index}">
 			{l s='Home' d='Shop.Theme.Actions'}
 		</a>
-		<a href="{$link->getPageLink('my-account', true)}" class="btn-default btn-effect button-small">
+		<a href="{$link->getPageLink('my-account', true)}" class="btn-default">
 			{l s='Account Page' d='Shop.Theme.Actions'}
 		</a>
 	</div>

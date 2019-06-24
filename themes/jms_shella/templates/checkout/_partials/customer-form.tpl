@@ -39,7 +39,7 @@
 
 {block "form_buttons"}
     <button
-      class="btn-default continue btn btn-primary button-small pull-xs-right"
+      class="btn-default pull-xs-right"
       name="continue"
       data-link-action="register-new-customer"
       type="submit"

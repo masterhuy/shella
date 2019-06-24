@@ -91,10 +91,9 @@
 #contact .form-fields textarea{
 	padding-bottom: 21px;
 }
-#contact .form-fields select,
-#contact .form-fields input,
-#contact .form-fields textarea{
-	
+#contact .form-fields .bootstrap-filestyle input{
+	background: transparent;
+	cursor: default;
 }
 #contact .form-fields textarea {
 	padding: 6px 16px 0px;

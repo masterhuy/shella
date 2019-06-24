@@ -48,7 +48,7 @@
 					<input type="text" id="name" name="name" class="inputTxt" value="{if isset($smarty.post.name) and $errors|@count > 0}{$smarty.post.name|escape:'html':'UTF-8'}{/if}" />
 				</p>
 				<p class="submit">
-					<button type="submit" name="submitWishlist" id="submitWishlist" class="btn btn-default button-small" value="{l s='Save' d='Shop.Theme'}" class="exclusive" />{l s='Save' d='Shop.Theme'}</button>
+					<button type="submit" name="submitWishlist" id="submitWishlist" class="btn-default" value="{l s='Save' d='Shop.Theme'}" class="exclusive" />{l s='Save' d='Shop.Theme'}</button>
 				</p>
 			</fieldset>
 		</form>
@@ -114,8 +114,8 @@
 	{/if}
 
 	<ul class="footer_links">
-		<li><a href="{$link->getPageLink('my-account', true)}"></a><a class="btn btn-default button button-small" href="{$link->getPageLink('my-account', true)|escape:'html'}">{l s='Back to Your Account' d='Shop.Theme'}</a></li>
-		<li class="f_right"><a href="#"></a><a href="{$urls.pages.index}" class="btn btn-default button button-small">{l s='Home' d='Shop.Theme'}</a></li>
+		<li><a href="{$link->getPageLink('my-account', true)}"></a><a class="btn-default" href="{$link->getPageLink('my-account', true)|escape:'html'}">{l s='Back to Your Account' d='Shop.Theme'}</a></li>
+		<li class="f_right"><a href="#"></a><a href="{$urls.pages.index}" class="btn-default">{l s='Home' d='Shop.Theme'}</a></li>
 	</ul>
 </div>
 {/block}

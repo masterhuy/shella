@@ -1,3 +1,6 @@
+#address .form-fields .form-group {
+	margin-bottom: 0;
+}
 #addresses .page-header {
 	border-bottom:0;
 }
@@ -8,40 +11,34 @@
 }
 #addresses .card.card-block {
 	padding:30px 20px;
-	border:1px solid #ebebeb;
-	box-shadow:2px 2px 11px 0 rgba(0, 0, 0, 0.1);
+	border:1px solid #e5e5e5;
 }
 #addresses .address {
 	background: white none repeat scroll 0 0;
-	box-shadow: 2px 2px 11px 0 rgba(0, 0, 0, 0.1);
 	margin-bottom: 1.875rem;
 }
-#addresses .addresses-footer > a {
-	font-size: 14px;
+#addresses #content-wrapper .fa{
+	font-size: 12px;
 }
 #addresses .address .address-body {
 	padding: 20px;
+	border: 1px solid #e5e5e5;
 }
 #addresses .address .address-body h4 {
-	font-size:18px;
-	font-weight:500;
+	font-size: 15px;
+	text-transform: uppercase;
 }
 #addresses .address .address-body address {
 	line-height:25px;
+	font-size: 13px;
 }
 #addresses .address .address-footer {
-	border-top: 1px solid #ebebeb;
 	padding: 10px 15px;
 	text-align:right;
 }
-#addresses .address .address-footer a {
-	margin-right: 5px;
-	font-size: 12px;
-	display: inline-block;
-	padding: 8px 20px;
-}
 #addresses .address .address-footer a:last-child {
 	margin-right:0;
+	margin-left: 6px;
 }
 #addresses .card.card-block .addresses-footer {
 	padding:0 15px;

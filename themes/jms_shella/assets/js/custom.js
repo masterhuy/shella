@@ -1046,10 +1046,6 @@ $(document).ready(function() {
 		initialLoad = false;
 	}
 
-	$('.shoppingcart-bottom .tab-title').click(function() {
-		$('.shoppingcart-bottom').toggleClass('open');
-	});
-
 	if ($("#product .product-detail").hasClass("carousel")){
 		$("#product").addClass("product-layout-carousel");
 	}

@@ -125,7 +125,7 @@
           >
           <span class="input-group-btn show-pass">
             <button
-              type="button" class="btn-show"
+              type="button" class="btn-default"
               data-action="show-password"
               data-text-show="{l s='Show' d='Shop.Theme.Actions'}"
               data-text-hide="{l s='Hide' d='Shop.Theme.Actions'}" title="Show password"

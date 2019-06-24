@@ -277,9 +277,11 @@
 	}
 	.popup_close {
 		font-size: 17px;
-		float: right;
 		color: #FFF;
 		cursor: pointer;
+		position: absolute;
+		right: -15px;
+		top: -20px;
 	}
 	.open-video{
 		.jms-video{
@@ -1278,17 +1280,6 @@ a.wishlist_top{
 		}
 	}
 }
-.wlp_bought_list{
-	margin: 0 -15px;
-}
-.wlp_bought{
-	.group_btn{
-		a{
-			display: inline-block;
-			margin-right: 10px;
-		}
-	}
-}
 #module-jmswishlist-mywishlist{
 	.wl_send{
 		.submit input{
@@ -1323,8 +1314,7 @@ a.wishlist_top{
 	}
 }
 .text-xs-center.order-actions > a {
-	font-size: 14px;
-	text-transform: capitalize;
+	margin: 0 3px;
 }
 .label.label-pill {
 	color: #fff;
@@ -1332,12 +1322,9 @@ a.wishlist_top{
 	font-size: 12px;
 	font-weight: 500;
 }
-.form-footer.clearfix button {
-	font-size: 14px;
-}
 #conditions-to-approve .js-terms > a {
-	font-size: 14px;
-	font-weight: 700;
+	font-size: 13px;
+	text-decoration: underline;
 }
 #order-confirmation{
 	#content-wrapper {
@@ -3168,14 +3155,11 @@ a.wishlist_top{
 }
 
 // wishlist
-#form_wishlist .inputTxt {
-	border: 1px solid #ebebeb;
-	margin-left: 20px;
-	height: 40px;
-	padding: 0 10px;
-}
 #form_wishlist {
   margin-top: 20px;
+  fieldset{
+  	padding: 15px 0;
+  }
 }
 .wishlist_top.home_page{
 	display: inline-block;
@@ -3184,6 +3168,13 @@ a.wishlist_top{
 		color: $active;
 	}
 }
+#block-order-detail .display_list li{
+	margin-bottom: 10px;
+	a{
+		margin-right: 6px;
+	}
+}
+
 
 //flashsale type2
 .flashsales-tab-carousel2{

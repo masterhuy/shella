@@ -26,24 +26,24 @@
 	{if $products}
 	{if !$refresh}
 	<div class="wishlistLinkTop">
-		<a href="#" id="hideWishlist" class="button_account btn btn-default" onclick="WishlistVisibility('wishlistLinkTop', 'Wishlist'); return false;" title="{l s='Close this wishlist' d='Shop.Theme'}" rel="nofollow">{l s='Close this wishlist' d='Shop.Theme'}
+		<a href="#" id="hideWishlist" class="btn-default" onclick="WishlistVisibility('wishlistLinkTop', 'Wishlist'); return false;" title="{l s='Close this wishlist' d='Shop.Theme'}" rel="nofollow">{l s='Close this wishlist' d='Shop.Theme'}
 		</a>
-		<ul class="clearfix display_list">
+		<ul class="clearfix display_list mt-10">
 			<li>
-				<a href="#" id="hideBoughtProducts" class="button_account btn btn-default"  onclick="WishlistVisibility('wlp_bought', 'BoughtProducts'); return false;" title="{l s='Hide products' d='Shop.Theme'}">{l s='Hide products' d='Shop.Theme'}</a>
-				<a href="#" id="showBoughtProducts" class="button_account btn btn-default"  onclick="WishlistVisibility('wlp_bought', 'BoughtProducts'); return false;" title="{l s='Show products' d='Shop.Theme'}">{l s='Show products' d='Shop.Theme'}</a>
+				<a href="#" id="hideBoughtProducts" class="btn-default"  onclick="WishlistVisibility('wlp_bought', 'BoughtProducts'); return false;" title="{l s='Hide products' d='Shop.Theme'}">{l s='Hide products' d='Shop.Theme'}</a>
+				<a href="#" id="showBoughtProducts" class="btn-default"  onclick="WishlistVisibility('wlp_bought', 'BoughtProducts'); return false;" title="{l s='Show products' d='Shop.Theme'}">{l s='Show products' d='Shop.Theme'}</a>
 			</li>
 			{if count($productsBoughts)}
 			<li>
-				<a href="#" id="hideBoughtProductsInfos" class="button_account btn btn-default" onclick="WishlistVisibility('wlp_bought_infos', 'BoughtProductsInfos'); return false;" title="{l s="Hide products" d='Shop.Theme'}">{l s="Hide bought products' info" d='Shop.Theme'}</a>
-				<a href="#" id="showBoughtProductsInfos" class="button_account btn btn-default"  onclick="WishlistVisibility('wlp_bought_infos', 'BoughtProductsInfos'); return false;" title="{l s="Show products" d='Shop.Theme'}">{l s="Show bought products' info" d='Shop.Theme'}</a>
+				<a href="#" id="hideBoughtProductsInfos" class="btn-default" onclick="WishlistVisibility('wlp_bought_infos', 'BoughtProductsInfos'); return false;" title="{l s="Hide products" d='Shop.Theme'}">{l s="Hide bought products' info" d='Shop.Theme'}</a>
+				<a href="#" id="showBoughtProductsInfos" class="btn-default"  onclick="WishlistVisibility('wlp_bought_infos', 'BoughtProductsInfos'); return false;" title="{l s="Show products" d='Shop.Theme'}">{l s="Show bought products' info" d='Shop.Theme'}</a>
 			</li>
 			{/if}
 		</ul>
 		<p class="wishlisturl">{l s='Permalink' d='Shop.Theme'}: <input type="text" value="{$link->getModuleLink('jmswishlist', 'view', ['token' => $token_wish])|escape:'html':'UTF-8'}" style="width:540px;" readonly="readonly" /></p>
 		<p class="submit">
 			<div id="showSendWishlist">
-				<a href="#" class="button_account exclusive btn btn-default" onclick="WishlistVisibility('wl_send', 'SendWishlist'); return false;" title="{l s='Send this wishlist' d='Shop.Theme'}">{l s='Send this wishlist' d='Shop.Theme'}</a>
+				<a href="#" class="btn-default" onclick="WishlistVisibility('wl_send', 'SendWishlist'); return false;" title="{l s='Send this wishlist' d='Shop.Theme'}">{l s='Send this wishlist' d='Shop.Theme'}</a>
 			</div>
 		</p>
 		{/if}

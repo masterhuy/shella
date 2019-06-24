@@ -23,14 +23,14 @@
 {block name='form_buttons'}
   {if !$form_has_continue_button}
     <button type="submit" class="btn btn-primary pull-xs-right button-small">{l s='Save' d='Shop.Theme.Actions'}</button>
-    <a class="js-cancel-address cancel-address pull-xs-right btn-default button-small" href="?cancelAddress={$type}">{l s='Cancel' d='Shop.Theme.Actions'}</a>
+    <a class="js-cancel-address pull-xs-right btn-default" href="?cancelAddress={$type}">{l s='Cancel' d='Shop.Theme.Actions'}</a>
   {else}
     <form>
-      <button type="submit" class="btn-default continue btn btn-primary button-small pull-xs-right button-small" name="confirm-addresses" value="1">
+      <button type="submit" class="btn-default pull-xs-right" name="confirm-addresses" value="1">
           {l s='Continue' d='Shop.Theme.Actions'}
       </button>
       {if $customer.addresses|count > 0}
-        <a class="js-cancel-address cancel-address pull-xs-right btn-default button-small" href="?cancelAddress={$type}">{l s='Cancel' d='Shop.Theme.Actions'}</a>
+        <a class="js-cancel-address pull-xs-right btn-default" href="?cancelAddress={$type}">{l s='Cancel' d='Shop.Theme.Actions'}</a>
       {/if}
     </form>
   {/if}

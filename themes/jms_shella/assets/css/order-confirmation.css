@@ -11,7 +11,7 @@
       margin-bottom: 0.625rem; }
 
 #order-items {
-  border-right: #ebebeb 1px solid; }
+  border-right: #e5e5e5 1px solid; }
   #order-items hr {
     border-top-color: #414141; }
   #order-items table {
@@ -49,24 +49,22 @@
 	padding:10px 15px;
 }
 #order-confirmation .title-block .card-title {
-  font-size: 26px;
+  font-size: 15px;
   color: #fff;
   border: 0;
 }
 #order-confirmation .title-block p{
 	margin-bottom:0;
 }
-#order-confirmation .card-title{
-	text-transform:uppercase;
-	font-weight:300;
-	font-size:20px;
-	padding:0;
-	font-weight:400;
-	margin:0;
+#order-confirmation .card-title {
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+  color: #141414;
 }
 #order-confirmation #content-hook_order_confirmation .title-block, #order-confirmation .page-order-confirmation, #order-confirmation .definition-list {
-	border: 1px solid #ebebeb;
-	box-shadow:2px 2px 11px 0 rgba(0, 0, 0, 0.1);
+	border: 1px solid #e5e5e5;
 }
 #order-confirmation #content-hook_order_confirmation, #order-confirmation .page-order-confirmation {
 	margin-bottom:50px;
@@ -80,6 +78,17 @@
 }
 #order-confirmation #content-hook_payment_return, #order-confirmation .page-order-confirmation { 
 	padding:30px 15px;
+  color: #858585;
+}
+#order-confirmation .action-buttons a{
+  margin-left: 6px;
+}
+.payment_return a{
+  color: #858585;
+  text-decoration: underline !important;
+}
+.payment_return a:hover{
+  color: #141414;
 }
   .definition-list dl {
   display: -webkit-box;
@@ -108,7 +117,7 @@
     -moz-flex: 0 0 45%;
     -ms-flex: 0 0 45%;
     flex: 0 0 45%;
-    background: #ebebeb;
+    background: #e5e5e5;
     padding: 0.625rem;
     margin: 0.125rem; 
 	line-height:28px;
@@ -135,7 +144,9 @@
 }
 #payment-confirmation + #modal .modal-content {
   padding: 30px;
+  border-radius: 0;
 }
 .orders .status{
   margin-bottom: 20px;
+  margin-top: 10px;
 }

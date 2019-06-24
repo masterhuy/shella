@@ -263,20 +263,19 @@
 	position: relative;
 }
 #category .color-style .custom-checkbox input:checked ~ span {
-	border: 2px solid #fff;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	border: 0;
 }
 #category .color-style .custom-checkbox input:checked ~ .color::after {
-	display: block;
-}
-#category .color-style .custom-checkbox .color::after {
-	content: "\f00c";
-	font-family: FontAwesome;
-	color: #fff;
-	font-size: 16px;
-	display: none;
+	content: "\f17b";
+	font-family: LineAwesome;
+	font-size: 10px;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	left: 50%;
 }
 #category .facet >.flex-box {
 	display: flex;

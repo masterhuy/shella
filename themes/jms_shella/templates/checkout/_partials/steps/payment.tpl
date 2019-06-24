@@ -114,7 +114,7 @@
 
   <div id="payment-confirmation">
     <div class="ps-shown-by-js">
-      <button type="submit" {if !$selected_payment_option} disabled {/if} class="btn-default center-block button-small">
+      <button type="submit" {if !$selected_payment_option} disabled {/if} class="btn-default active center-block">
         {l s='Order with an obligation to pay' d='Shop.Theme.Checkout'}
       </button>
       {if $show_final_summary}

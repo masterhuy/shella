@@ -23,33 +23,35 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div class="product-line-grid">
-    <!-- remove button -->
-    <div class="row_cs remove-button col-lg-1 col-md-1 col-sm-1 col-xs-12">
-        <div class="cart-line-product-actions ">
-            <a
-                class                     = "remove-from-cart"
-                rel                       = "nofollow"
-                href                      = "{$product.remove_from_cart_url}"
-                data-link-action          = "delete-from-cart"
-                data-id-product           = "{$product.id_product|escape:'javascript'}"
-                data-id-product-attribute = "{$product.id_product_attribute|escape:'javascript'}"
-                data-id-customization     = "{$product.id_customization|escape:'javascript'}"
-            >
-            {if !isset($product.is_gift) || !$product.is_gift}
-                <i class="pull-xs-left fa fa-times"></i>
-            {/if}
-            </a>
-            {hook h='displayCartExtraProductActions' product=$product}
-        </div>
-    </div> 
     <!--  products -->
-    <div class="row_cs product-info col-lg-5 col-md-5 col-sm-5 col-xs-12">
+    <div class="row_cs product-info col-lg-7 col-md-7 col-sm-7 col-xs-12">
         <span class="product-image media-middle">
+            <div class="cart-line-product-actions ">
+                <a
+                    class                     = "remove-from-cart"
+                    rel                       = "nofollow"
+                    href                      = "{$product.remove_from_cart_url}"
+                    data-link-action          = "delete-from-cart"
+                    data-id-product           = "{$product.id_product|escape:'javascript'}"
+                    data-id-product-attribute = "{$product.id_product_attribute|escape:'javascript'}"
+                    data-id-customization     = "{$product.id_customization|escape:'javascript'}"
+                >
+                {if !isset($product.is_gift) || !$product.is_gift}
+                    <i>
+                        <svg aria-hidden="true" focusable="false" role="presentation"
+                                class="icon icon-theme-165" viewBox="0 0 24 24">
+                            <path d="M4.741 21.654a.601.601 0 0 1-.186-.439v-15h-1.25a.598.598 0 0 1-.439-.186.597.597 0 0 1-.186-.439.6.6 0 0 1 .186-.439.604.604 0 0 1 .439-.186h5v-2.5a.6.6 0 0 1 .186-.439.598.598 0 0 1 .439-.186h6.25c.169 0 .315.063.439.186a.601.601 0 0 1 .186.439v2.5h5c.169 0 .315.063.439.186a.601.601 0 0 1 .186.439c0 .17-.062.316-.186.439a.601.601 0 0 1-.439.186h-1.25v15a.6.6 0 0 1-.186.439.601.601 0 0 1-.439.186H5.18a.598.598 0 0 1-.439-.186zM18.305 6.215h-12.5V20.59h12.5V6.215zM9.37 9.525a.601.601 0 0 1 .186.439v6.875c0 .17-.062.316-.186.439a.601.601 0 0 1-.439.186.598.598 0 0 1-.439-.186.598.598 0 0 1-.186-.439V9.965a.6.6 0 0 1 .186-.439.594.594 0 0 1 .438-.186c.169 0 .316.062.44.185zm.185-4.56h5V3.09h-5v1.875zm2.94 4.56a.601.601 0 0 1 .186.439v6.875c0 .17-.062.316-.186.439a.601.601 0 0 1-.439.186.598.598 0 0 1-.439-.186.598.598 0 0 1-.186-.439V9.965a.6.6 0 0 1 .186-.439.604.604 0 0 1 .439-.186c.168 0 .315.062.439.185zm2.246 0a.604.604 0 0 1 .439-.186c.169 0 .315.063.439.186a.601.601 0 0 1 .186.439v6.875c0 .17-.062.316-.186.439a.601.601 0 0 1-.439.186.598.598 0 0 1-.439-.186.598.598 0 0 1-.186-.439V9.965c0-.169.062-.316.186-.44z"/>
+                        </svg>
+                    </i>
+                {/if}
+                </a>
+                {hook h='displayCartExtraProductActions' product=$product}
+            </div>
             <img src="{$product.cover.bySize.large_default.url}" alt="{$product.name|escape:'quotes'}">
             <div class="product-line-info">
                 <a class="product-link" href="{$product.url}" data-id_customization="{$product.id_customization|intval}">{$product.name}</a>
                 {foreach from=$product.attributes key="attribute" item="value"}
-                    <div class="product-line-info">
+                    <div class="product-info-value">
                         <span class="value">{$value}</span>
                     </div>
                 {/foreach}
@@ -94,48 +96,50 @@
         </span>
     </div>
 
-    <!--  price -->
-    <div class="row_cs product-price col-lg-2 col-md-2 col-sm-2 col-xs-12">
-        <div class="product-line-info">
-    		<span class="value">{$product.price}</span>
-            {if $product.unit_price_full}
-                <div class="unit-price-cart">{$product.unit_price_full}</div>
+    <div class="row_cs product-right col-lg-5 col-md-5 col-sm-5 col-xs-12">
+        <!--  price -->
+        <div class="row_cs product-price col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="product-line-info">
+                <span class="value">{$product.price}</span>
+                {if $product.unit_price_full}
+                    <div class="unit-price-cart">{$product.unit_price_full}</div>
+                {/if}
+            </div>
+        </div>
+
+        <!--  qty -->
+        <div class="row_cs product-qty col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            {if isset($product.is_gift) && $product.is_gift}
+                <span class="gift-quantity">{$product.quantity}</span>
+            {else}
+            <input
+                class="js-cart-line-product-quantity"
+                data-down-url="{$product.down_quantity_url}"
+                data-up-url="{$product.up_quantity_url}"
+                data-update-url="{$product.update_quantity_url}"
+                data-product-id="{$product.id_product}"
+                type="text"
+                value="{$product.quantity}"
+                name="product-quantity-spin"
+                min="{$product.minimal_quantity}"
+            />
             {/if}
         </div>
-    </div>
 
-    <!--  qty -->
-    <div class="row_cs product-qty col-lg-2 col-md-2 col-sm-2 col-xs-12">
-        {if isset($product.is_gift) && $product.is_gift}
-            <span class="gift-quantity">{$product.quantity}</span>
-        {else}
-        <input
-            class="js-cart-line-product-quantity"
-            data-down-url="{$product.down_quantity_url}"
-            data-up-url="{$product.up_quantity_url}"
-            data-update-url="{$product.update_quantity_url}"
-            data-product-id="{$product.id_product}"
-            type="text"
-            value="{$product.quantity}"
-            name="product-quantity-spin"
-            min="{$product.minimal_quantity}"
-        />
-        {/if}
-    </div>
-
-    <!--  total -->
-    <div class="row_cs product-total col-lg-2 col-md-2 col-sm-2 col-xs-12">
-        <span class="product-price">
-            <span class="value">
-                {if isset($product.is_gift) && $product.is_gift}
-                  <span class="gift">{l s='Gift' d='Shop.Theme.Checkout'}</span>
-                {else}
-                  {$product.total}
-                {/if}
+        <!--  total -->
+        <div class="row_cs product-total col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <span class="product-price">
+                <span class="value">
+                    {if isset($product.is_gift) && $product.is_gift}
+                    <span class="gift">{l s='Gift' d='Shop.Theme.Checkout'}</span>
+                    {else}
+                    {$product.total}
+                    {/if}
+                </span>
+                <span class="value"> </span>
             </span>
-             <span class="value"> </span>
-        </span>
-    </div>
+        </div>
 
-    <div class="clearfix"></div>
+        <div class="clearfix"></div>
+    </div>
 </div>

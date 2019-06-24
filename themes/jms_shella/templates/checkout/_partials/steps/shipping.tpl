@@ -106,7 +106,7 @@
             {/if}
           </div>
         </div>
-        <button type="submit" class="btn-default continue btn btn-primary button-small pull-xs-right" name="confirmDeliveryOption" value="1">
+        <button type="submit" class="btn-default pull-xs-right" name="confirmDeliveryOption" value="1">
           {l s='Continue' d='Shop.Theme.Actions'}
         </button>
       </form>
