@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-24 06:15:44
+/* Smarty version 3.1.33, created on 2019-06-25 05:01:37
   from 'D:\xamppp\htdocs\jms_shella\themes\jms_shella\templates\catalog\_partials\variant-links.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d10a2d0d13df3_41854824',
+  'unifunc' => 'content_5d11e2f19f17b1_21350697',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ec8548f9ab334c302c10d654327cbc9fc391cb5a' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_shella\\themes\\jms_shella\\templates\\catalog\\_partials\\variant-links.tpl',
-      1 => 1558924439,
+      1 => 1561451929,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d10a2d0d13df3_41854824 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d11e2f19f17b1_21350697 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="variant-links">
   <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['variants']->value, 'variant');

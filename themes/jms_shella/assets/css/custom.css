@@ -130,6 +130,9 @@ hr {
 .mt-15{
   margin-top: 15px;
 }
+.mb-15{
+  margin-bottom: 15px;
+}
 .mb-25{
   margin-bottom: 25px;
 }
@@ -178,6 +181,11 @@ hr {
 .w-100{
   width: 100%;
 }
+.ml-auto{
+  margin-left: auto;
+}
+.cursor-pointer{  cursor: pointer;
+}
 .rte{
   font-size: 15px;
   line-height: 23px;
@@ -196,6 +204,9 @@ hr {
 }
 .align-items-center{
   align-items: center;
+}
+.align-items-start {
+  align-items: flex-start;
 }
 .flex-center{
   justify-content: center;
@@ -218,7 +229,7 @@ hr {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0,0,0,0.5);
+  background: rgba(20,20,20,0.5);
   z-index: 999;
 }
 .download-invoice {
@@ -467,7 +478,6 @@ address {
   margin-bottom: 20px;
   font-style: normal;
   line-height: 20px;
-  font-size: 14px;
   color: #858585;
 }
 
@@ -479,6 +489,17 @@ code, kbd, pre, samp {
 
 .btn-actions {
   text-align: center; }
+
+.btn-link{
+  color: #858585;
+  text-decoration: underline;
+}
+.btn-link:hover,
+.btn-link:active,
+.btn-link:focus{
+  color: #141414;
+  text-decoration: underline;
+}
 
 .dropcap {
   display: block;
@@ -5744,6 +5765,8 @@ button,
 .promobox__border,
 .arrows.js-arrows i, 
 .scroll-box-arrows i,
+.popup-customer-services,
+.bg-overlay,
 .images-container .product-images > li.thumb-container > .thumb{
   transition: all 400ms;
   -webkit-transition: all 400ms;

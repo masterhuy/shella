@@ -118,12 +118,15 @@
 			border-color: #fff;
 			&:hover{
 				background: #fff;
-				color: $active;
+				color: $active !important;
 			}
 		}
 		#newsletter-input {
 			background: transparent;
 			border-color: #3e3e3e;
+			&:hover, &:focus{
+				border-color: #fff;
+			}
 		}
 	}
 	.footer-top{

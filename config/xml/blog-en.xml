@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>5 Ways To Manage Your After Sales Service Effectively</title>
+    <link>https://www.prestashop.com/en/blog/ecommerce-after-sales-service</link>
+    <description>If you have ever worked in real-world retail as opposed to eCommerce, you may have heard it said that just one negative customer experience is a sure way to lose ten customers!</description>
+     <pubDate>Fri, 21 Jun 2019 15:27:07 +0200</pubDate>
+ <dc:creator>Teapot</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/ecommerce-after-sales-service</guid>
+  </item>
+  <item>
     <title>5 Marketing Content Mistakes to Avoid</title>
     <link>https://www.prestashop.com/en/blog/marketing-content-ecommerce</link>
     <description>The amount of data we produce each day is truly mind-blowing. It’s hard to stand out with your content when there are 2.5 quintillion bytes of data created every day.</description>
@@ -76,14 +84,6 @@
      <pubDate>Fri, 10 May 2019 17:18:27 +0200</pubDate>
  <dc:creator>Carts Guru EN</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/recovery-of-abandoned-carts-tips-advices</guid>
-  </item>
-  <item>
-    <title>Going global</title>
-    <link>https://www.prestashop.com/en/blog/international-going-global-NS8</link>
-    <description>Expanding into new markets can be confusing and difficult. Here are some areas to research before deciding the next steps for your business.</description>
-     <pubDate>Thu, 09 May 2019 10:31:55 +0200</pubDate>
- <dc:creator>JackieLong</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/international-going-global-NS8</guid>
   </item>
   </channel>
 </rss>

@@ -108,10 +108,6 @@
 .images-container .product-images > a.thumb-container {
     display: inline;
 }
-.images-container .product-images > li.thumb-container > .thumb {
-    margin-right: 6px;
-    border: 1px solid #f2f2f2;
-}
 .product-images > li.thumb-container > .thumb.selected, 
 .product-images > li.thumb-container > .thumb:hover {
     border: 1px solid #141414;

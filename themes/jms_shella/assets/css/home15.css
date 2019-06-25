@@ -92,10 +92,12 @@
     border-color: #fff; }
     #footer #newsletter_block_left button:hover {
       background: #fff;
-      color: #141414; }
+      color: #141414 !important; }
   #footer #newsletter_block_left #newsletter-input {
     background: transparent;
     border-color: #3e3e3e; }
+    #footer #newsletter_block_left #newsletter-input:hover, #footer #newsletter_block_left #newsletter-input:focus {
+      border-color: #fff; }
   #footer .footer-top .addon-social .addon-title h3 {
     padding-bottom: 15px; }
   #footer .footer-top #social_block ul .fa {

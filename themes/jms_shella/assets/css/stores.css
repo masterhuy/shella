@@ -1,7 +1,6 @@
 #stores .page-stores {
 	margin: 0 auto; 
-	border:1px solid #ebebeb;
-	box-shadow:2px 2px 11px 0 rgba(0, 0, 0, 0.1);
+	border:1px solid #e5e5e5;
 	padding:30px 20px;
  }
   #stores .page-stores .store-item {
@@ -39,16 +38,14 @@
     -ms-flex-align: center;
     padding: 1.875rem 0; }
     #stores .page-stores .store-item-container ul {
-      margin-bottom: 0;
-      font-size: 14px; }
+      margin-bottom: 0; }
     #stores .page-stores .store-item-container .divide-left {
-      border-left: #ebebeb 1px solid; }
+      border-left: #e5e5e5 1px solid; }
       #stores .page-stores .store-item-container .divide-left tr {
         height: 1.5625rem; }
       #stores .page-stores .store-item-container .divide-left td {
         padding-left: 0.375rem; }
 #stores .page-stores .store-item-container .divide-left th {
-	font-size: 14px;	
 text-align:left;	
 }
     #stores .page-stores .store-item-container .store-description {
@@ -74,7 +71,7 @@ text-align:left;
     justify-content: space-around;
     -ms-flex-pack: distribute; }
     #stores .page-stores .store-item-footer.divide-top {
-      border-top: #ebebeb 1px solid; }
+      border-top: #e5e5e5 1px solid; }
     #stores .page-stores .store-item-footer div:first-child {
       -webkit-box-flex: 0;
       -moz-box-flex: 0;

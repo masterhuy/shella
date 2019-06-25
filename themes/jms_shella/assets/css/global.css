@@ -54,6 +54,11 @@
       display: -ms-flexbox;
       display: flex; }
 
+.home_3 .jms-row.header, .home_5 .jms-row.header, .home_7 .jms-row.header, .home_12 .jms-row.header, .home_13 .jms-row.header {
+  position: relative; }
+  .home_3 .jms-row.header .container, .home_3 .jms-row.header .layout-column, .home_5 .jms-row.header .container, .home_5 .jms-row.header .layout-column, .home_7 .jms-row.header .container, .home_7 .jms-row.header .layout-column, .home_12 .jms-row.header .container, .home_12 .jms-row.header .layout-column, .home_13 .jms-row.header .container, .home_13 .jms-row.header .layout-column {
+    position: unset; }
+
 .jms-row.menu {
   position: relative; }
   .jms-row.menu .container, .jms-row.menu .layout-column {
@@ -65,6 +70,36 @@
     max-width: 1170px;
     margin: auto;
     padding: 0; }
+
+.open-service .popup-customer-services {
+  right: 0; }
+  .open-service .popup-customer-services + .bg-overlay {
+    opacity: 1;
+    visibility: visible; }
+
+.popup-customer-services {
+  position: fixed;
+  right: -270px;
+  top: 0;
+  width: 270px;
+  z-index: 9999;
+  background: #fff;
+  padding: 25px 0;
+  height: 100%;
+  overflow-y: auto; }
+  .popup-customer-services .container {
+    width: 270px;
+    padding: 0 20px; }
+  .popup-customer-services h1, .popup-customer-services h2, .popup-customer-services h3, .popup-customer-services h4, .popup-customer-services h5, .popup-customer-services h6 {
+    padding-bottom: 0; }
+  .popup-customer-services h5 {
+    letter-spacing: 0.7px; }
+  .popup-customer-services p {
+    color: #858585;
+    line-height: 17px;
+    margin-bottom: 20px; }
+  .popup-customer-services .popup-services__content [class*="icon-"] {
+    margin-top: -2px; }
 
 .service {
   border-top: 1px solid #e5e5e5;
@@ -948,7 +983,8 @@
 
 .languages-info ul > li > a, #_desktop_currency_selector ul > li > a, #_desktop_user_info ul > li > a {
   padding: 0 7px;
-  color: #858585; }
+  color: #858585;
+  text-transform: capitalize; }
   .languages-info ul > li > a:hover, #_desktop_currency_selector ul > li > a:hover, #_desktop_user_info ul > li > a:hover {
     color: #141414; }
 
@@ -1051,7 +1087,7 @@ a.wishlist_top {
 #sitemap ul.nested > li {
   margin: 0 0 0 21px;
   padding: 5px 0 0 33px;
-  border-left: 1px solid #d6d4d4;
+  border-left: 1px solid #e5e5e5;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAABCAIAAABR8BlyAAAADklEQVQI12O4duUK2QgA8Owx2QWUkx4AAAAASUVORK5CYII=) no-repeat left 15px transparent; }
 
 #history .text-xs-right div {
@@ -1623,6 +1659,11 @@ a.wishlist_top {
     height: 4px;
     background: #141414; }
 
+.rte a {
+  color: #858585; }
+  .rte a:hover {
+    color: #141414; }
+
 #commentForm {
   padding-top: 35px;
   margin-top: 0; }
@@ -2168,34 +2209,46 @@ a.wishlist_top {
   font-size: 13px !important;
   line-height: 17px !important; }
 
-.page-style .h3.size-guide-title {
+.page-style .h3.size-guide-title,
+.rte.size-guide .h3.size-guide-title {
   margin-top: 17px;
   margin-bottom: 8px; }
 
-.page-style .table-size-guide th {
+.page-style .table-size-guide th,
+.rte.size-guide .table-size-guide th {
   background: #141414;
   color: #fff; }
 
-.page-style .table-size-guide tr:last-child td {
+.page-style .table-size-guide tr:last-child td,
+.rte.size-guide .table-size-guide tr:last-child td {
   border-bottom: solid 1px #E5E5E5; }
 
-.page-style .table-size-guide tr:first-child th:first-child {
+.page-style .table-size-guide tr:first-child th:first-child,
+.rte.size-guide .table-size-guide tr:first-child th:first-child {
   width: 200px; }
 
-.page-style .table-center td:not(:first-child), .page-style .table-center th:not(:first-child) {
+.page-style .table-center td:not(:first-child), .page-style .table-center th:not(:first-child),
+.rte.size-guide .table-center td:not(:first-child),
+.rte.size-guide .table-center th:not(:first-child) {
   text-align: center; }
 
-.page-style .responsive-table td {
+.page-style .responsive-table td,
+.rte.size-guide .responsive-table td {
   border-top: 1px solid #dee2e6; }
 
-.page-style .responsive-table td, .page-style .responsive-table th, .page-style .table td, .page-style .table th {
+.page-style .responsive-table td, .page-style .responsive-table th, .page-style .table td, .page-style .table th,
+.rte.size-guide .responsive-table td,
+.rte.size-guide .responsive-table th,
+.rte.size-guide .table td,
+.rte.size-guide .table th {
   font-size: 13px;
   height: 34px;
   padding: 8px 15px !important;
   vertical-align: middle !important;
   line-height: 17px; }
 
-.page-style .responsive-table {
+.page-style .responsive-table,
+.rte.size-guide .responsive-table {
   line-height: 17px;
   width: 100%;
   max-width: 100%; }

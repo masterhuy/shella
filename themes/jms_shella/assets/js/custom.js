@@ -35,21 +35,19 @@
 	// 	lensSize : 200
 	// });
 	
-	// $(".zoom_01").elevateZoom({
-	// 	gallery: 'gal1',
-	// 	zoomType: "inner",
-	// 	cursor: "crosshair"
-	// });
-    // $("#zoom_01").elevateZoom({ gallery: 'gal1', cursor: 'pointer', galleryActiveClass: 'active', imageCrossfade: true});
-    //pass the images to Fancybox
+	$(".zoom_01").elevateZoom({
+		gallery: 'gal1',
+		zoomType: "inner",
+		cursor: "crosshair"
+	});
+	$("#zoom_01").elevateZoom({ gallery: 'gal1', cursor: 'pointer', galleryActiveClass: 'active', imageCrossfade: true});
+	
+	//pass the images to Fancybox
     $(".zoom_01").bind("click", function (e) { 
 		var ez = $('.zoom_01').data('elevateZoom'); 
 		$.fancybox(ez.getGalleryList()); 
 		return false; 
 	});
-	
-	$('[data-toggle="tooltip"]').tooltip();   
-
 });
  
 $('body').on('click', '.ajax-add-to-cart', function (event) {	
@@ -1060,6 +1058,50 @@ $(document).ready(function() {
 
 });
 
+//popup custommer service
+jQuery(function ($) {
+    "use strict";
+	var content_1 = $('.main-site'),
+		openbtn_1 = $('.header__btn-services'),
+		closebtn_1 = $('account__close' ),
+		isOpen_1 = false;
+
+	function init() {
+		initEvents();
+	}
+
+	function initEvents() {
+		openbtn_1.click(function(e) {		
+			toggleMenu();
+			e.stopPropagation();
+		});
+		if( closebtn_1 ) {
+			closebtn_1.click(function() {		
+				toggleMenu();
+			});
+		}
+		content_1.click(function(e) {		
+			var target = e.target;
+			if( isOpen_1 && target !== openbtn_1 ) {
+				toggleMenu();
+			}
+		});		
+	}
+	function toggleMenu() {		
+		if( isOpen_1 ) {
+			content_1.removeClass('open-service');
+		}
+		else {
+			content_1.addClass('open-service');
+		}
+		isOpen_1 = !isOpen_1;
+	}
+	init();
+
+});
+
+
+//sidebar
 jQuery(function ($) {
     "use strict";
 	var content = $('.main-site'),
@@ -1101,23 +1143,3 @@ jQuery(function ($) {
 
 });
 
-
-jQuery(function ($) {
-    "use strict";
-	$('.team-carousel').owlCarousel({
-	    loop:true,
-	    margin:10,
-	    nav:false,
-	    responsive:{
-	        0:{
-	            items:1
-	        },
-	        600:{
-	            items:3
-	        },
-	        1000:{
-	            items:1
-	        }
-	    }
-	})
-});
