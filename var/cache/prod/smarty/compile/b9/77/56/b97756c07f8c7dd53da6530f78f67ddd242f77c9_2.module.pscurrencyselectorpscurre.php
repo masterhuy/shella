@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-25 05:01:39
+/* Smarty version 3.1.33, created on 2019-06-26 05:43:53
   from 'module:pscurrencyselectorpscurre' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d11e2f317dbe0_77860287',
+  'unifunc' => 'content_5d133e597e0e39_78724536',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b97756c07f8c7dd53da6530f78f67ddd242f77c9' => 
     array (
       0 => 'module:pscurrencyselectorpscurre',
-      1 => 1558667468,
+      1 => 1561523478,
       2 => 'module',
     ),
   ),
@@ -20,9 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d11e2f317dbe0_77860287 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d133e597e0e39_78724536 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="_desktop_currency_selector" class="btn-group compact-hidden currency-info type-1">
-   	<a href="#currency-1" class="title btn-xs" data-toggle="collapse">
+   	<a href="#" class="title btn-xs dropdown-toggle" data-toggle="dropdown">
 		<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['current_currency']->value['iso_code'], ENT_QUOTES, 'UTF-8');?>
  
 		<i>
@@ -32,7 +32,7 @@ function content_5d11e2f317dbe0_77860287 (Smarty_Internal_Template $_smarty_tpl)
             </svg>
         </i>
 	</a>
-	<div id="currency-1" class="collapse">
+	<div id="currency-1" class="collapse dropdown-menu">
 		<ul>
 			<?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['currencies']->value, 'currency');
@@ -58,11 +58,11 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 <div id="_desktop_currency_selector" class="btn-group compact-hidden currency-info type-2">
 	<p class=""><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Select Currency','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
 </p>
-   	<a href="#currency-2" class="title btn-xs" data-toggle="collapse">
+   	<a href="#" class="title btn-xs dropdown-toggle" data-toggle="dropdown">
 		<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['current_currency']->value['iso_code'], ENT_QUOTES, 'UTF-8');?>
  <i class="fa fa-angle-down" aria-hidden="true"></i>
 	</a>
-	<div id="currency-2" class="collapse">
+	<div id="currency-2" class="collapse dropdown-menu">
 		<ul>
 			<?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['currencies']->value, 'currency');

@@ -768,6 +768,7 @@
 	.collapse, .collapsing {
 		position: absolute !important;
 		right: 0;
+		left: auto;
 		top: 100%;
 		min-width: 169px;
 		margin-bottom: 0;
@@ -989,6 +990,24 @@
 		letter-spacing: 0;
 		padding-top: 3px;
 		margin-left: 35px;
+	}
+}
+//
+
+//product modal
+#product-modal{
+	.modal-body{
+		padding: 0;
+	}
+	.modal-content{
+		border: 0;
+		box-shadow: unset;
+	}
+	#thumbnails{
+		display: none;
+	}
+	.modal-dialog{
+		width: 800px;
 	}
 }
 //
@@ -1656,6 +1675,9 @@ a.wishlist_top{
 				color: $active;
 			}
 		}
+	}
+	#jmsproductvideo{
+		display: none;
 	}
 }
 //
@@ -3611,10 +3633,15 @@ a.wishlist_top{
 }
 
 #new-products{
-	#left-column #search_widget{
+	#search_filters_wrapper{
+		border: 0;
+	}
+	#left-column #search_widget,
+	#newsletter_block_left{
 		display: none;
 	}
-	.blog-widget{
+	.blog-widget,
+	.contact-rich{
 		display: none;
 	}
 }

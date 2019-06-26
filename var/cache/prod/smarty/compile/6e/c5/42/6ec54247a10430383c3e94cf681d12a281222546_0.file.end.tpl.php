@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-25 05:03:06
+/* Smarty version 3.1.33, created on 2019-06-26 05:29:17
   from 'D:\xamppp\htdocs\jms_shella\modules\welcome\views\contents\end.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d11e34ad58f65_51409914',
+  'unifunc' => 'content_5d133aeda8b594_30680206',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d11e34ad58f65_51409914 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d133aeda8b594_30680206 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div id="onboarding-welcome" class="modal-body">
     <div class="col-12">

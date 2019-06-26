@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-25 05:01:39
+/* Smarty version 3.1.33, created on 2019-06-26 05:43:53
   from 'module:pslanguageselectorpslangu' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d11e2f31a8b74_47546199',
+  'unifunc' => 'content_5d133e59807f39_71408102',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1c00f78dace25d509ec3a1f54176b7ae2000accf' => 
     array (
       0 => 'module:pslanguageselectorpslangu',
-      1 => 1559113062,
+      1 => 1561523373,
       2 => 'module',
     ),
   ),
@@ -20,11 +20,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d11e2f31a8b74_47546199 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d133e59807f39_71408102 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- Block languages module -->
 <?php if (count($_smarty_tpl->tpl_vars['languages']->value) > 1) {?>
 	<div class="btn-group compact-hidden languages-info type-1">
-		<a href="#languages-1" class="btn-xs" data-toggle="collapse">
+		<a href="#" class="btn-xs dropdown-toggle" data-toggle="dropdown">
 			<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['current_language']->value['name_simple'], ENT_QUOTES, 'UTF-8');?>
  
 			<i>
@@ -34,7 +34,7 @@ function content_5d11e2f31a8b74_47546199 (Smarty_Internal_Template $_smarty_tpl)
 	            </svg>
 	        </i>
 		</a>
-		<div id="languages-1" class="collapse">
+		<div id="languages-1" class="collapse dropdown-menu">
 			<ul>
 				<?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['languages']->value, 'language', false, 'k', 'languages', array (
@@ -60,11 +60,11 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 	<div class="btn-group compact-hidden languages-info type-2">
 		<p class=""><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Select Language','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
 </p>
-		<a href="#languages-2" class="btn-xs" data-toggle="collapse">
+		<a href="#" class="btn-xs dropdown-toggle" data-toggle="dropdown">
 			<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['current_language']->value['name_simple'], ENT_QUOTES, 'UTF-8');?>
  <i class="fa fa-angle-down" aria-hidden="true"></i>
 		</a>
-		<div id="languages-2" class="collapse">
+		<div id="languages-2" class="collapse dropdown-menu">
 			<ul>
 				<?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['languages']->value, 'language', false, 'k', 'languages', array (

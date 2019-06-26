@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-25 05:01:39
+/* Smarty version 3.1.33, created on 2019-06-26 05:43:54
   from 'D:\xamppp\htdocs\jms_shella\themes\jms_shella\modules\jmspagebuilder\views\templates\hook\jmspagebuilder_footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d11e2f38ffba0_78027611',
+  'unifunc' => 'content_5d133e5a066d34_74303773',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '01f7c92fc7ae76304814a54a960ac2411da5b5b5' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_shella\\themes\\jms_shella\\modules\\jmspagebuilder\\views\\templates\\hook\\jmspagebuilder_footer.tpl',
-      1 => 1559190285,
+      1 => 1561542228,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d11e2f38ffba0_78027611 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d133e5a066d34_74303773 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['rows']->value, 'row');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['row']->value) {
@@ -195,8 +195,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 " />
 			
 			<div class="form-group btn-action">
-				<button type="submit" class="btn" name="apply" value="1">Apply</button>
-				<a class="btn" href="index.php?settingreset=1">Reset</a>
+				<button type="submit" class="btn-default active" name="apply" value="1">Apply</button>
+				<a class="btn-default active" href="index.php?settingreset=1">Reset</a>
 			</div>
 			<input type="hidden" name="settingpanel" value="1" />
 		</form>	

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-25 04:54:07
+/* Smarty version 3.1.33, created on 2019-06-26 05:21:59
   from 'D:\xamppp\htdocs\jms_shella\themes\jms_shella\templates\catalog\_partials\product-discounts.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d11e12f812762_13439582',
+  'unifunc' => 'content_5d1339374877f4_25045488',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d11e12f812762_13439582 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d1339374877f4_25045488 (Smarty_Internal_Template $_smarty_tpl) {
 ?><section class="product-discounts">
   <?php if ($_smarty_tpl->tpl_vars['product']->value['quantity_discounts']) {?>
     <h3 class="h6 product-discounts-title"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Volume discounts','d'=>'Shop.Theme.Catalog'),$_smarty_tpl ) );?>

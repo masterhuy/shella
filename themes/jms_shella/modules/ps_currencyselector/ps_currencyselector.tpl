@@ -23,7 +23,7 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 <div id="_desktop_currency_selector" class="btn-group compact-hidden currency-info type-1">
-   	<a href="#currency-1" class="title btn-xs" data-toggle="collapse">
+   	<a href="#" class="title btn-xs dropdown-toggle" data-toggle="dropdown">
 		{$current_currency.iso_code} 
 		<i>
             <svg aria-hidden="true" focusable="false" role="presentation"
@@ -32,7 +32,7 @@
             </svg>
         </i>
 	</a>
-	<div id="currency-1" class="collapse">
+	<div id="currency-1" class="collapse dropdown-menu">
 		<ul>
 			{foreach from=$currencies item=currency}
 				<li {if $currency.current} class="current" {/if}>
@@ -46,10 +46,10 @@
 </div>
 <div id="_desktop_currency_selector" class="btn-group compact-hidden currency-info type-2">
 	<p class="">{l s='Select Currency' d='Shop.Theme.Actions'}</p>
-   	<a href="#currency-2" class="title btn-xs" data-toggle="collapse">
+   	<a href="#" class="title btn-xs dropdown-toggle" data-toggle="dropdown">
 		{$current_currency.iso_code} <i class="fa fa-angle-down" aria-hidden="true"></i>
 	</a>
-	<div id="currency-2" class="collapse">
+	<div id="currency-2" class="collapse dropdown-menu">
 		<ul>
 			{foreach from=$currencies item=currency}
 				<li {if $currency.current} class="current" {/if}>

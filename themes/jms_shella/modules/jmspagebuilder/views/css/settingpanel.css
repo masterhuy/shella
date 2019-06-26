@@ -16,13 +16,9 @@
 	position:fixed;
 	left:-270px;
 	top:140px;
-	font-weight:bold;
-	color:#FFF;
-	line-height:30px;	
 	cursor:pointer;    
 	width:300px;	
 	z-index:999991; 
-	font-size:12px;	
 	text-align: left;
 }
 #jmstools-arrow {
@@ -47,13 +43,11 @@
 	display: flex;
 }
 #jmstools-content {
-	width:270px;
-	background:#f0f0f2;		
-    padding:20px;
-    color:#000;
-    line-height:30px;	
-	overflow:auto;
-	border: 1px solid #e1e1e1;
+	width: 270px;
+	background: #fff;
+	padding: 20px;
+	overflow: auto;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.15);
 }
 select#jmsskin {
 	width:auto;
@@ -61,24 +55,15 @@ select#jmsskin {
 	font-weight:normal;
 	font-size:12px;
 }
-#jmstools-content select {	
-	line-height:38px;
-	height:38px;
-	border:1px solid #e2e2e2;
-	width:100%;
-	color:#8c8c8c;
-	font-weight:300;
+#jmstools-content select {
+	border: 1px solid #e2e2e2;
+	font-weight: 400;
+	color: #858585;
 }
 #jmstools label {
-	color:#595959;	
-	font-size:13px;
-	display:block;
-	clear:both;
-	min-width:100px;
-	float:left;
-	font-weight:500;
-	margin-top:10px;
-	width:100%;
+	display: block;
+	min-width: 100px;
+	width: 100%;
 }
 #jmswidth {
 	width:70px;
@@ -114,7 +99,7 @@ select#jmsskin {
 	border:none;
 }
 #jmstools .form-group {
-	margin-bottom:10px;
+	margin-bottom:0;
 }
 #jmstools .panel-heading a {
 	display:block;
@@ -235,22 +220,10 @@ select#jmsskin {
 	padding-top:10px;
 	text-align:right;
 }
-#jmstools .btn-action .btn {
-	margin-right: 10px;
-	height: 35px;
-	line-height: 34px;
-	padding: 0px 30px;
-	letter-spacing: 0.5px;
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 11px;
-	min-width: 80px;
+#jmstools .btn-action .btn-default {
 	float: left;
-	border-radius: 0;
-	border-color: #141414;
-}
-#jmstools .btn-action .btn:hover {
-	color: #FFF !important;
+	font-weight: 400;
+	margin-right: 10px;
 }
 .form-content label {
 	float:left;

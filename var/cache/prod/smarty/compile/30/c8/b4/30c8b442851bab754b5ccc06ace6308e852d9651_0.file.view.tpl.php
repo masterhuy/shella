@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-17 06:33:10
+/* Smarty version 3.1.33, created on 2019-06-26 04:34:16
   from 'D:\xamppp\htdocs\jms_shella\modules\ps_facetedsearch\views\templates\admin\view.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d076c661949b7_53009995',
+  'unifunc' => 'content_5d132e08046c44_67301236',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d076c661949b7_53009995 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d132e08046c44_67301236 (Smarty_Internal_Template $_smarty_tpl) {
 if (isset($_smarty_tpl->tpl_vars['message']->value)) {
 echo $_smarty_tpl->tpl_vars['message']->value;
 }?>

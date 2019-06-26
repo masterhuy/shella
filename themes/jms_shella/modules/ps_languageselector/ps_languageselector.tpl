@@ -25,7 +25,7 @@
 <!-- Block languages module -->
 {if count($languages) > 1}
 	<div class="btn-group compact-hidden languages-info type-1">
-		<a href="#languages-1" class="btn-xs" data-toggle="collapse">
+		<a href="#" class="btn-xs dropdown-toggle" data-toggle="dropdown">
 			{$current_language.name_simple} 
 			<i>
 	            <svg aria-hidden="true" focusable="false" role="presentation"
@@ -34,7 +34,7 @@
 	            </svg>
 	        </i>
 		</a>
-		<div id="languages-1" class="collapse">
+		<div id="languages-1" class="collapse dropdown-menu">
 			<ul>
 				{foreach from=$languages key=k item=language name="languages"}
 					<li {if $language.id_lang == $current_language.id_lang} class="current" {/if}>
@@ -49,10 +49,10 @@
 
 	<div class="btn-group compact-hidden languages-info type-2">
 		<p class="">{l s='Select Language' d='Shop.Theme.Actions'}</p>
-		<a href="#languages-2" class="btn-xs" data-toggle="collapse">
+		<a href="#" class="btn-xs dropdown-toggle" data-toggle="dropdown">
 			{$current_language.name_simple} <i class="fa fa-angle-down" aria-hidden="true"></i>
 		</a>
-		<div id="languages-2" class="collapse">
+		<div id="languages-2" class="collapse dropdown-menu">
 			<ul>
 				{foreach from=$languages key=k item=language name="languages"}
 					<li {if $language.id_lang == $current_language.id_lang} class="current" {/if}>

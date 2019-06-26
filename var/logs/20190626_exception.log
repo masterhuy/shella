@@ -1,0 +1,7 @@
+*ERROR* 	v1.7.5.2	2019/06/26 - 03:37:50: Link to database cannot be established: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at line 127 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.5.2	2019/06/26 - 04:18:41: Link to database cannot be established: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at line 127 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.5.2	2019/06/26 - 04:18:43: Link to database cannot be established: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at line 127 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.5.2	2019/06/26 - 03:54:51: Can not retrieve the id_product_attribute at line 6310 in file classes/Product.php

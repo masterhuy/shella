@@ -271,15 +271,6 @@
     justify-content: center;
     text-align: center;
 }
-.product-variants-item input:checked ~ .color.texture::before{
-    content: "";
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    position: absolute;
-    background: rgba(0,0,0,0.7);
-
-}
 .product-variants-item .color::after{
     content: "\f00c";
     font-family: FontAwesome;

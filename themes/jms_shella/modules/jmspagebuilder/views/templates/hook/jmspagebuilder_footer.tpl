@@ -115,8 +115,8 @@
 			<input id="jmsskin" type="hidden" name="jpb_skin" value="{$jpb_skin|escape:'htmlall':'UTF-8'}" />
 			
 			<div class="form-group btn-action">
-				<button type="submit" class="btn" name="apply" value="1">Apply</button>
-				<a class="btn" href="index.php?settingreset=1">Reset</a>
+				<button type="submit" class="btn-default active" name="apply" value="1">Apply</button>
+				<a class="btn-default active" href="index.php?settingreset=1">Reset</a>
 			</div>
 			<input type="hidden" name="settingpanel" value="1" />
 		</form>	

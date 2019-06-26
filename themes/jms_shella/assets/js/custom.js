@@ -22,10 +22,6 @@
 	// var footerHeight2 = footerHeight + 60;
 	// console.log(footerHeight2);
 	// $("#wrapper").attr("style","margin-bottom:" + footerHeight2 + "px");
-
-	$('.menu-item.collection .mega-dropdown-inner').addClass('collection-carousel');
-
-	$('#mobile-vermegamenu').addClass('collapse');
 	
 	//initiate the plugin and pass the id of the div containing gallery images
 	// $(".zoom_01").elevateZoom({
@@ -35,12 +31,11 @@
 	// 	lensSize : 200
 	// });
 	
-	$(".zoom_01").elevateZoom({
-		gallery: 'gal1',
-		zoomType: "inner",
-		cursor: "crosshair"
-	});
-	$("#zoom_01").elevateZoom({ gallery: 'gal1', cursor: 'pointer', galleryActiveClass: 'active', imageCrossfade: true});
+	// $(".zoom_01").elevateZoom({
+	// 	gallery: 'gal1',
+	// 	zoomType: "inner",
+	// 	cursor: "crosshair"
+	// });
 	
 	//pass the images to Fancybox
     $(".zoom_01").bind("click", function (e) { 

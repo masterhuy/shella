@@ -41,10 +41,10 @@
 				{/foreach}
 			</div>
 			<div class="cart-button">
-				<a class="btn-default active" href="{$cart_url}" title="{l s='Proceed to checkout' d='Shop.Theme.Actions'}" rel="nofollow">
+				<a class="btn-default active" href="{$urls.pages.order}" title="{l s='Proceed to checkout' d='Shop.Theme.Actions'}" rel="nofollow">
 					{l s='PROCEED TO CHECKOUT' d='Shop.Theme.Actions'}
 				</a>
-				<a class="btn-default" href="{$urls.pages.order}" title="{l s='View shopping bag' d='Shop.Theme.Actions'}" rel="nofollow">
+				<a class="btn-default" href="{$cart_url}" title="{l s='View shopping bag' d='Shop.Theme.Actions'}" rel="nofollow">
 					{l s='VIEW SHOPPING BAG' d='Shop.Theme.Actions'}
 				</a> 
 			</div>
