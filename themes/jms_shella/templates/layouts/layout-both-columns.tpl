@@ -45,12 +45,19 @@
     {hook h='displayAfterBodyOpeningTag'}
 	{if $jpb_mobilemenu}
 		<div class="menu-wrap hidden-lg hidden-md">
-			<button id="close-button" class="close-button"> {l s='Menu' d='Shop.Theme'}</button>
-				<nav id="off-canvas-menu">					
+			<button id="close-button" class="close-button">
+         <i class="d-i-flex">
+              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-theme-164"
+                    viewBox="0 0 24 24">
+                  <path d="M19.583 4.965a.65.65 0 0 1-.176.449l-6.445 6.426 6.445 6.426c.117.131.176.28.176.449a.65.65 0 0 1-.176.449.846.846 0 0 1-.215.127.596.596 0 0 1-.468 0 .846.846 0 0 1-.215-.127l-6.426-6.445-6.426 6.445a.846.846 0 0 1-.215.127.596.596 0 0 1-.468 0 .846.846 0 0 1-.215-.127.65.65 0 0 1-.176-.449c0-.169.059-.318.176-.449l6.445-6.426-6.445-6.426a.65.65 0 0 1-.176-.449c0-.169.059-.318.176-.449a.652.652 0 0 1 .449-.176c.169 0 .319.059.449.176l6.426 6.445 6.426-6.445a.652.652 0 0 1 .449-.176c.169 0 .319.059.449.176.117.13.176.28.176.449z"></path>
+              </svg>
+          </i>
+      </button>
+			<nav id="off-canvas-menu">					
 					{hook h='displayTopColumn'}
-				</nav>				
-				
-			</div>
+			</nav>				
+		</div>
+    <div class="bg-overlay"></div>
 	{/if}
     <div class="main-site">
       {block name='product_activation'}

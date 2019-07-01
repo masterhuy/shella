@@ -61,7 +61,7 @@
 	margin-top: 70px;
 	.footer-bottom{
 		background: #141414;
-		padding: 18px 0;
+		padding: 9px 0;
 		border-top: 0;
 		.container > .row{
 			display: flex;
@@ -75,11 +75,14 @@
 		}
 		p {
 			font-size: 10px;
-			color: #fff;
+			color: $subcolor;
 			margin-bottom: 0;
 			a{
 				text-decoration: underline;
-				color: #fff !important;
+				color: $subcolor;
+				&:hover{
+					color: #fff;
+				}
 			}
 		}
 	}

@@ -15,17 +15,17 @@ body.toplevel_page_woo-notification {
 #woorebought-popup {
     border: 0 none;
     border-radius: 0;
-    bottom: 20px;
+    bottom: 15px;
     box-shadow: 0 0 20px 0 rgba(0,0,0,.15);
     display: none;
-    left: 20px;
+    left: 15px;
     padding: 0;
     position: fixed;
     right: auto !important;
     text-align: left;
     top: auto !important;
     width: auto;
-    z-index: 9999;
+    z-index: 99;
 }
 
 #woorebought-popup.bottom_right {
@@ -102,52 +102,7 @@ body.toplevel_page_woo-notification {
 }
 
 @media screen and (max-width: 767px) {
-    #woorebought-popup .woorebought-content{
-        display: flex !important;
-        align-items: center;
-        max-width: 100%;
-    }
-    #woorebought-popup a{
-        width: 30%;
-    }
-    #woorebought-popup p{
-        width: 70%;
-    }
-    #woorebought-popup p a {
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        display: block;
-    }
-    #woorebought-popup {
-        bottom: 0 !important;
-        box-sizing: border-box;
-        left: 15px !important;
-        top: auto !important;
-        width: calc(100% - 30px);
-        padding: 0;
-    }
-
-    #woorebought-popup img {
-        max-width: 20%;
-    }
-
-    #woorebought-popup a img {
-        max-width: 100%;
-    }
-
-    #woorebought-popup p {
-        font-size: 11px;
-        width: 70%;
-    }
-
-    #woorebought-popup p a {
-        font-size: 13px;
-    }
-
-    #woorebought-popup p small {
-        margin-bottom: 0;
-    }
+    
 }
 
 #woo-notification-audio {

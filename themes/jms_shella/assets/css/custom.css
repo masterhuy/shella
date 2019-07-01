@@ -770,6 +770,22 @@ input[type="text"], input[type="password"], input[type="datetime"], input[type="
   padding: 0 15px;
   margin-bottom: 20px;
 }
+input[type="text"]:hover, 
+input[type="password"]:hover, 
+input[type="datetime"]:hover, 
+input[type="datetime-local"]:hover, 
+input[type="date"]:hover, 
+input[type="month"]:hover, 
+input[type="time"]:hover, 
+input[type="week"]:hover, 
+input[type="number"]:hover, 
+input[type="email"]:hover, 
+input[type="url"]:hover, 
+input[type="search"]:hover, 
+input[type="tel"]:hover, 
+input[type="color"]:hover {
+  border-color: #141414;
+}
 
 .inputbox, .form-control {
   border-radius: 0px;
@@ -1327,7 +1343,9 @@ table td[class*="col-"], table table th[class*="col-"] {
   border-color: #141414;
   cursor: context-menu
 }
-.btn-default.active:hover {
+.btn-default.active:hover,
+.btn-default.active:focus,
+.btn-default.active:active {
   color: #141414 !important;
   background: #fff;
 }
@@ -2379,6 +2397,7 @@ li.product-flag {
 }
 
 .jms-videos {
+  z-index: 99999;
   position: relative;}
 
 .popup{
@@ -2840,6 +2859,7 @@ li.product-flag {
   color: rgba(32, 37, 78, 0.75); }
 
 .cat_desc {
+  margin-top: 4px;
   margin-bottom: 60px; }
 
 /* ------ */
@@ -3402,15 +3422,6 @@ ul.footer_links {
 .close_menu{
   cursor: pointer;
 }
-.close-button::after {
-  content: " \f191";
-  font-family: LineAwesome;
-  font-size: 18px;
-  position: absolute;
-  right: 28px;
-  top: 50%;
-  transform: translateY(-50%);
-}
 
 .btn-group {
   display: block;
@@ -3497,18 +3508,8 @@ ul.footer_links {
   }
 
 .languages-list li {
-  display: inline-block;
-  margin-right: 4px;
+  display: block;
   position: relative; }
-.languages-list li.current::before {
-  content: "";
-  position: absolute;
-  left: -5px;
-  top: 1px;
-  width: 30px;
-  height: 24px;
-  border: 1px dashed #333;
-}
 
 .languages-list a {
   line-height: 25px; }
@@ -3952,11 +3953,6 @@ footer .blog-carousel {
 }
 .blog-carousel .owl-dots {
   bottom: -48px;
-}
-.blog-item .post-thumb{
-  margin-right: 20px;
-  width: 270px;
-  min-width: 270px;
 }
 .post-thumb {
   overflow: hidden;

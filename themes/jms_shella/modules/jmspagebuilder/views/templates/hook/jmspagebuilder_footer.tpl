@@ -63,6 +63,7 @@
 			</svg>
 		</i>
 	</a>
+	<div id="setting-overlay"></div>
 	<div id="jmstools-content" class="pull-left">
 		<form action="index.php" method="POST">
 			{if $themeskins|@count > 0}

@@ -39,31 +39,26 @@
 /* Close Button */
 .close-button {
 	border: 0 none;
-	font-size: 16px;
-	margin-bottom: 15px;
-	margin-top: 20px;
-	padding: 10px 30px;
+	margin-top: 0;
+	padding: 10px 20px;
 	text-align: left;
-	text-transform: uppercase;
 	width: 100%;
-	font-weight: 600;
 	position: relative;
+	background: #fff;
+	padding-top: 20px;
 }
 /* Menu */
 .menu-wrap {
-    background: #fff none repeat scroll 0 0;
-    height: 100%;
+    background: #f2f2f2 none repeat scroll 0 0;
     left: -300px;
-    max-height: 700px;
     overflow-y: auto;
     position: fixed;
     top: 0;
     transition: left 0.4s cubic-bezier(0.7, 0, 0.3, 1) 0s;
-    width: 300px;
+    width: 270px;
+    max-height: 750px;
+    height: 100%;
     z-index: 999999;
-}
-#off-canvas-menu {
-	background: #fff;
 }
 /* Shown menu */
 .show-menu .menu-wrap {
@@ -74,7 +69,10 @@
 	left: 0;
 	top:0;
 }
-
+.show-menu .menu-wrap + .bg-overlay{
+	opacity: 1;
+	visibility: visible;
+}
 .show-menu .content::before {
 	opacity: 1;
 	-webkit-transition: opacity 0.8s;

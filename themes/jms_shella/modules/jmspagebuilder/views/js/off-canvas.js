@@ -12,7 +12,7 @@
 jQuery(function ($) {
     "use strict";
 	var bodyEl = $("body"),
-		content = $('.main-site'),
+		content = $('.bg-overlay'),
 		openbtn = $('#open-button'),
 		closebtn = $('#close-button' ),
 		isOpen = false;

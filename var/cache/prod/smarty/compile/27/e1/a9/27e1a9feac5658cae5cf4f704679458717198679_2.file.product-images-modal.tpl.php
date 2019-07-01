@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-25 04:43:17
+/* Smarty version 3.1.33, created on 2019-06-30 22:40:52
   from 'D:\xamppp\htdocs\jms_shella\themes\jms_shella\templates\catalog\_partials\product-images-modal.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d11dea52f5759_60590009',
+  'unifunc' => 'content_5d1972b4e990f2_26291700',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '27e1a9feac5658cae5cf4f704679458717198679' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_shella\\themes\\jms_shella\\templates\\catalog\\_partials\\product-images-modal.tpl',
-      1 => 1558585495,
+      1 => 1561522155,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d11dea52f5759_60590009 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d1972b4e990f2_26291700 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -41,7 +41,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
         </figure>
         <aside id="thumbnails" class="thumbnails js-thumbnails text-xs-center">
           <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_19507557875d11dea52e5d55_56927263', 'product_images');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_4113670455d1972b4e990f9_20334605', 'product_images');
 ?>
 
           <?php if ($_smarty_tpl->tpl_vars['imagesCount']->value > 4) {?>
@@ -57,12 +57,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_19507557875d11dea5
 </div><!-- /.modal -->
 <?php }
 /* {block 'product_images'} */
-class Block_19507557875d11dea52e5d55_56927263 extends Smarty_Internal_Block
+class Block_4113670455d1972b4e990f9_20334605 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_images' => 
   array (
-    0 => 'Block_19507557875d11dea52e5d55_56927263',
+    0 => 'Block_4113670455d1972b4e990f9_20334605',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

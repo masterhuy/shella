@@ -250,11 +250,11 @@
 #category .facet.size ul li{
 	border-bottom: 0;
 }
-#category .color-style .custom-checkbox input,
-#category .color-style .custom-checkbox .checkmark {
+#category .facet.color ul li .custom-checkbox input,
+#category .facet.color ul li .custom-checkbox .checkmark {
     display: none;
 }
-#category .color-style .custom-checkbox .color {
+#category .facet.color ul li .custom-checkbox .color {
 	border-radius: 50%;
 	display: block;
 	height: 18px;
@@ -262,13 +262,13 @@
 	cursor: pointer;
 	position: relative;
 }
-#category .color-style .custom-checkbox input:checked ~ span {
+#category .facet.color ul li .custom-checkbox input:checked ~ span {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border: 0;
 }
-#category .color-style .custom-checkbox input:checked ~ .color::after {
+#category .facet.color ul li .custom-checkbox input:checked ~ .color::after {
 	content: "\f17b";
 	font-family: LineAwesome;
 	font-size: 10px;

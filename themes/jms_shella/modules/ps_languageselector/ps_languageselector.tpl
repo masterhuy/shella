@@ -67,12 +67,11 @@
 	</div>
 
 	<div class="btn-group compact-hidden languages-info type-3">
-		<span class="title btn-name">{l s='Select Language:' d='Shop.Theme.Global'}</span>
 		<ul class="languages-list">
 			{foreach from=$languages key=k item=language name="languages"}
 				<li {if $language.id_lang == $current_language.id_lang} class="current" {/if}>
-					<a href="{url entity='language' id=$language.id_lang}" class="dropdown-item">
-					  <img alt="{$language.iso_code}" src="{$urls.base_url}img/l/{$language.id_lang}.jpg" width="20" height="14"/>
+					<a href="{url entity='language' id=$language.id_lang}" class="collapse-item">
+						{$language.name_simple}
 					</a>
 				</li>
 			{/foreach}		

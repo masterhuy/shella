@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-26 05:43:53
+/* Smarty version 3.1.33, created on 2019-07-01 05:06:20
   from 'D:\xamppp\htdocs\jms_shella\themes\jms_shella\modules\jmsmegamenu\views\templates\hook\jmsmegamenu.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d133e59dfb639_85936291',
+  'unifunc' => 'content_5d19cd0c904975_82588190',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5976501eec4f3ee1677e11e2849820104f71af9c' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_shella\\themes\\jms_shella\\modules\\jmsmegamenu\\views\\templates\\hook\\jmsmegamenu.tpl',
-      1 => 1560917237,
+      1 => 1561619832,
       2 => 'file',
     ),
   ),
@@ -20,11 +20,14 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d133e59dfb639_85936291 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d19cd0c904975_82588190 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="jms-megamenu-wrap">
 	<a id="open-button" class="open-button hidden-lg hidden-md" href="#">
-		<img src="themes/jms_shella/assets/img/icon/open-menu.png">
+		<i class="d-i-flex">
+			<svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-theme-191" viewBox="0 0 24 24"><path d="M3.438 5.479h17.375v1.25H3.438zM3.438 11.104h17.375v1.25H3.438zM3.438 16.729h17.375v1.25H3.438z"/>
+			</svg>
+		</i>
 	</a>
 	<?php echo call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['menu_html']->value,'' ));?>
 

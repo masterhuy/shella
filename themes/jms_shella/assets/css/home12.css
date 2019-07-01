@@ -76,6 +76,8 @@
     color: #fff; }
   #footer .footer-bottom {
     border-top-color: #3e3e3e; }
+    #footer .footer-bottom .copyright p a:hover {
+      color: #fff; }
   #footer #newsletter_block_left button {
     color: #fff;
     border-color: #fff; }
@@ -94,7 +96,7 @@
   #footer .footer-top #social_block ul li {
     line-height: normal;
     padding: 0;
-    padding-right: 17px; }
+    margin-right: 17px; }
   #footer .addon-social {
     margin-top: 40px; }
   #footer #social_block.type-2 ul {

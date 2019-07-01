@@ -53,7 +53,7 @@
                 <ul id="group_{$id_attribute_group}">
                     {foreach from=$group.attributes key=id_attribute item=group_attribute}
                         <li class="input-container pull-xs-left">
-                            <input id="test" class="input-radio" type="radio" data-product-attribute="{$id_attribute_group}" name="group[{$id_attribute_group}]" value="{$id_attribute}"{if $group_attribute.selected} checked="checked"{/if}>
+                            <input class="input-radio" type="radio" data-product-attribute="{$id_attribute_group}" name="group[{$id_attribute_group}]" value="{$id_attribute}"{if $group_attribute.selected} checked="checked"{/if}>
                             <span class="radio-label">{$group_attribute.name}</span>
                         </li>
                     {/foreach}

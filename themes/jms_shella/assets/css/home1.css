@@ -31,3 +31,39 @@
 
 .banner-4 .banner-content .text-3 {
   margin-bottom: 27px; }
+
+@media (max-width: 1366px) and (min-width: 1200px) {
+  .jms-slider-wrapper .text-1 {
+    font-size: 9px !important; }
+  .jms-slider-wrapper .text-2 {
+    font-size: 35px !important;
+    letter-spacing: 0; }
+  .jms-slider-wrapper .text-3 {
+    font-size: 14px !important; }
+  .jms-slider-wrapper .btn-shop .btn-default {
+    min-width: 150px !important;
+    font-size: 10px !important; } }
+
+@media (max-width: 1199px) {
+  .jms-slider-wrapper .text-2 {
+    letter-spacing: 0; }
+  .jms-slider-wrapper .btn-shop .btn-default {
+    min-width: 97px !important;
+    padding: 7px 9px; } }
+
+@media (max-width: 991px) {
+  .jms-slider-wrapper .btn-shop .btn-default {
+    min-width: 90px !important; } }
+
+@media (max-width: 767px) {
+  .jms-slider-wrapper .btn-shop .btn-default {
+    min-width: 70px !important; } }
+
+@media (max-width: 481px) {
+  .jms-slider-wrapper .btn-shop .btn-default {
+    min-width: 50px !important;
+    padding: 5px 4px; }
+  .banner-4 .banner-content .text-1 {
+    font-size: 10px; }
+  .banner-4 .banner-content .text-2 {
+    font-size: 18px; } }

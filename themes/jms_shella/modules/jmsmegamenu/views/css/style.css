@@ -410,10 +410,13 @@ div.jms-megamenu .dropdown-menu::before{
     width: 100%;
     transition: .4s all;
 }
-.mega-col-nav > .mega-inner > ul > li .mod-content p{
+.mega-col-nav > .mega-inner > ul > li .mod-content p,
+#off-canvas-menu .mod-content p{
     text-align: center;
+    margin-bottom: 0;
 }
-.mega-col-nav > .mega-inner > ul > li .mod-content .title{
+.mega-col-nav > .mega-inner > ul > li .mod-content .title,
+#off-canvas-menu .mod-content .title{
     font-size: 15px;
     padding-bottom: 8px;
     letter-spacing: 0.7px;
@@ -421,7 +424,8 @@ div.jms-megamenu .dropdown-menu::before{
 .mega-col-nav.image > .mega-inner > ul > li .mod-content .title{
     margin-top: 18px;
 }
-.mega-col-nav > .mega-inner > ul > li .mod-content .banner-content {
+.mega-col-nav > .mega-inner > ul > li .mod-content .banner-content,
+#off-canvas-menu .mod-content .banner-content {
     top: auto;
     left: 20px;
     bottom: 13px;
@@ -429,7 +433,11 @@ div.jms-megamenu .dropdown-menu::before{
     padding: 10px 10px;
     background: rgba(255,255,255,0.9);
 }
-.mega-col-nav > .mega-inner > ul > li .mod-content .desc{
+#off-canvas-menu .mod-content .banner-content{
+    bottom: 23px;
+}
+.mega-col-nav > .mega-inner > ul > li .mod-content .desc,
+#off-canvas-menu .mod-content .desc{
     color: #858585;
 }
 .mega-col-nav > .mega-inner > ul > li .mod-content a{
@@ -498,7 +506,12 @@ div.jms-megamenu .dropdown-menu::before{
 .jms-megamenu .nav li.hot > a > span::after, 
 .jms-megamenu .nav li.new > a > span::after,
 .jms-megamenu .nav li.s-slider > a > span::after,
-.jms-megamenu .nav li.sale > a > span::after {
+.jms-megamenu .nav li.sale > a > span::after,
+#off-canvas-menu ul li.must-see a::after,
+#off-canvas-menu ul li.hot a::after,
+#off-canvas-menu ul li.new a::after,
+#off-canvas-menu ul li.s-slider a::after,
+#off-canvas-menu ul li.sale a::after{
     color: #ffffff;
     display: inline-block;
     font-size: 9px;
@@ -509,13 +522,23 @@ div.jms-megamenu .dropdown-menu::before{
     font-weight: 400;
     min-width: 56px;
 }
-.jms-megamenu .nav li.new > a > span::after {
+#off-canvas-menu ul li.must-see a::after,
+#off-canvas-menu ul li.hot a::after,
+#off-canvas-menu ul li.new a::after,
+#off-canvas-menu ul li.s-slider a::after,
+#off-canvas-menu ul li.sale a::after{
+    position: unset;
+    margin-left: 3px;
+}
+.jms-megamenu .nav li.new > a > span::after,
+#off-canvas-menu ul li.new a::after {
     background: #42A5F6 none repeat scroll 0 0;    
     content: "NEW";    
     right: -30px;    
 	min-width:25px;
 }
-.jms-megamenu .nav li.hot > a > span::after {
+.jms-megamenu .nav li.hot > a > span::after,
+#off-canvas-menu ul li.hot a::after {
     background: #FF7143 none repeat scroll 0 0;
     content: "HOT";
     right: -30px;

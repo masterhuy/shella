@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-26 05:43:54
+/* Smarty version 3.1.33, created on 2019-07-01 05:06:20
   from 'D:\xamppp\htdocs\jms_shella\themes\jms_shella\modules\jmspagebuilder\views\templates\hook\jmspagebuilder_footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d133e5a066d34_74303773',
+  'unifunc' => 'content_5d19cd0caba1d5_91891383',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '01f7c92fc7ae76304814a54a960ac2411da5b5b5' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_shella\\themes\\jms_shella\\modules\\jmspagebuilder\\views\\templates\\hook\\jmspagebuilder_footer.tpl',
-      1 => 1561542228,
+      1 => 1561618541,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d133e5a066d34_74303773 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d19cd0caba1d5_91891383 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['rows']->value, 'row');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['row']->value) {
@@ -102,6 +102,7 @@ if ($_smarty_tpl->tpl_vars['settingpanel']->value) {?>
 			</svg>
 		</i>
 	</a>
+	<div id="setting-overlay"></div>
 	<div id="jmstools-content" class="pull-left">
 		<form action="index.php" method="POST">
 			<?php if (count($_smarty_tpl->tpl_vars['themeskins']->value) > 0) {?>

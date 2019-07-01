@@ -92,7 +92,7 @@
 				border-color: #fff;
 				&:hover{
 					background: #fff;
-					color: $active;
+					color: $active !important;
 				}
 			}
 		}
@@ -101,6 +101,9 @@
 			margin-bottom: 20px;
 			background: transparent;
 			border-color: #3e3e3e;
+			&:hover, &:focus{
+				border-color: #fff;
+			}
 		}
 		.news_content{
 			margin-top: 20px;
@@ -110,6 +113,10 @@
 		margin-top: 50px;
 		padding: 18px 0;
 		border-top: 1px solid #3e3e3e;
+		.addon-social{
+			display: flex;
+			align-items: center;
+		}
 		.addon-box{
 			display: flex;
 			align-items: center;

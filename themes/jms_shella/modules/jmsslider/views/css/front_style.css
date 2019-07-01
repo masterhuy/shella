@@ -4,19 +4,29 @@
 	width: 100%;
 	text-align: center;
 	z-index: 998;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.fs-pager-wrapper span{
-	width: 11px;
-	height: 11px;
-	background: #ccc;
+.fs-pager-wrapper span {
+	width: 6px;
+	height: 6px;
+	background: #141414;
 	border-radius: 50%;
 	text-indent: -100px;
 	display: inline-block;
 	overflow: hidden;
-	margin: 0 4px;
+	margin: 0 12px;
+	border: 1px solid #858585;
 }
-.fs-pager-wrapper .active span{
+.fs-pager-wrapper .active span {
 	background: #141414;
+	width: 10px;
+	height: 10px;
+}
+.fs-pager-wrapper a {
+	display: flex;
+	align-items: center;
 }
 .jms-slider-wrapper {
 	position:relative;
@@ -24,7 +34,9 @@
 	width:100%;
 	margin:0px auto;
 }
-
+.jms-slider-wrapper .fs-pager-wrapper{
+	bottom: 65px;
+}
 .jms-slider-wrapper .slider{
 	position:relative;
 	width:100%; 

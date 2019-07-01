@@ -22,8 +22,7 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<div class="images-container">
-  
+<div class="images-container slider">
   {block name='product_images'}
     <div class="js-qv-mask mask">
       <ul id="gal1" class="product-images js-qv-product-images image-layout-carousel owl-theme">

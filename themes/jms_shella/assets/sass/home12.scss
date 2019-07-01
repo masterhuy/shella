@@ -96,6 +96,9 @@
 	}
 	.footer-bottom{
 		border-top-color: #3e3e3e;
+		.copyright p a:hover{
+			color: #fff;
+		}
 	}
 	#newsletter_block_left{
 		button{
@@ -126,7 +129,7 @@
 				li {
 					line-height: normal;
 					padding: 0;
-					padding-right: 17px;
+					margin-right: 17px;
 				}
 			}
 		}

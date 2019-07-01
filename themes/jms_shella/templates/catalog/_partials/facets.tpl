@@ -60,7 +60,7 @@
                           {if isset($filter.properties.color)}
                             <span class="color" style="background-color:{$filter.properties.color};{if $filter.properties.color == '#ffffff'}border: 1px solid #e5e5e5{/if}"></span>
                             {elseif isset($filter.properties.texture)}
-                              <span class="color texture" style="background-image:url({$filter.properties.texture})"></span>
+                              <span class="color texture" style="background-image:url({$filter.properties.texture});background-size:cover;"></span>
                             {else}
                             <span {if !$js_enabled} class="ps-shown-by-js" {/if}></span>
                           {/if}

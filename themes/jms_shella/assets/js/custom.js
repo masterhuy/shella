@@ -905,10 +905,10 @@ jQuery(function ($) {
 					items:4
 				},
 				481:{
-					items:2
+					items:3
 				},
 				0: {
-					items:1
+					items:2
 				}
 			},
 			rtl: rtl,
@@ -957,7 +957,7 @@ jQuery(function ($) {
 	if($(".image-layout-carousel").length) {
 		var imageLayoutCarousel = $(".image-layout-carousel");
 		var rtl = false;
-		if ($("body").hasClass("rtl")) rtl = true;				
+		if ($("body").hasClass("rtl")) rtl = true;		
 		imageLayoutCarousel.owlCarousel({
 			responsiveClass:true,
 			responsive:{			

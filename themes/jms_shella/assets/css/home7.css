@@ -51,7 +51,7 @@
   margin-top: 70px; }
   #footer .footer-bottom {
     background: #141414;
-    padding: 18px 0;
+    padding: 9px 0;
     border-top: 0; }
     #footer .footer-bottom .container > .row {
       display: -webkit-box;
@@ -68,8 +68,10 @@
         color: #fff; }
     #footer .footer-bottom p {
       font-size: 10px;
-      color: #fff;
+      color: #858585;
       margin-bottom: 0; }
       #footer .footer-bottom p a {
         text-decoration: underline;
-        color: #fff !important; }
+        color: #858585; }
+        #footer .footer-bottom p a:hover {
+          color: #fff; }
