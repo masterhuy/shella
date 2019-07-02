@@ -132,7 +132,7 @@
 						src="http://www.youtube.com/embed/{$layer->data_video|substr:($layer->data_video|strpos:'?v='+3)}?autoplay={$layer->data_video_autoplay nofilter}&controls={$layer->data_video_controls nofilter}&loop={$layer->data_video_loop nofilter}"
 					{else if $layer->videotype == 'vimeo'}
 						 {assign var=vimeo_link value = ("/"|explode:$layer->data_video)}
-						src="https://player.vimeo.com/video/{$vimeo_link[$vimeo_link|count-1]}?autoplay={$layer->data_video_autoplay nofilter}&loop={$layer->data_video_loop nofilter}"
+						src="https://player.vimeo.com/video/{$vimeo_link[$vimeo_link|count-1]}?autoplay={$layer->data_video_autoplay nofilter}&loop={$layer->data_video_loop nofilter}" allow="autoplay"
 					{/if}
 					allowfullscreen
 					frameborder="0">

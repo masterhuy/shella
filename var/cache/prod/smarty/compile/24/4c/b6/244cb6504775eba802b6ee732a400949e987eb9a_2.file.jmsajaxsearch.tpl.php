@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-07-01 05:06:20
+/* Smarty version 3.1.33, created on 2019-07-02 05:53:57
   from 'D:\xamppp\htdocs\jms_shella\themes\jms_shella\modules\jmsajaxsearch\views\templates\hook\jmsajaxsearch.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d19cd0c13c4a0_07690313',
+  'unifunc' => 'content_5d1b29b57d6630_50117316',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d19cd0c13c4a0_07690313 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d1b29b57d6630_50117316 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="btn-group menu-collapse compact-hidden jms_ajax_search" id="jms_ajax_search">
 	<a href="#" class="btn-search" data-toggle="modal" data-target="#search-form">
 		<span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Search','d'=>'Modules.JmsAjaxsearch'),$_smarty_tpl ) );?>

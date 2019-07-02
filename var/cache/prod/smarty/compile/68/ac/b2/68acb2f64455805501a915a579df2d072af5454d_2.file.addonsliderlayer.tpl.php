@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-07-01 04:23:45
+/* Smarty version 3.1.33, created on 2019-07-02 05:35:14
   from 'D:\xamppp\htdocs\jms_shella\themes\jms_shella\modules\jmspagebuilder\views\templates\hook\addonsliderlayer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d19c311d7fe12_05462660',
+  'unifunc' => 'content_5d1b2552c2ed48_43332232',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '68acb2f64455805501a915a579df2d072af5454d' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_shella\\themes\\jms_shella\\modules\\jmspagebuilder\\views\\templates\\hook\\addonsliderlayer.tpl',
-      1 => 1561954432,
+      1 => 1562038012,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d19c311d7fe12_05462660 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d1b2552c2ed48_43332232 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['sliders']->value, 'slider');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['slider']->value) {
@@ -287,7 +287,7 @@ modules/jmsslider/views/img/layers/<?php echo $_smarty_tpl->tpl_vars['layer']->v
 						src="https://player.vimeo.com/video/<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['vimeo_link']->value[count($_smarty_tpl->tpl_vars['vimeo_link']->value)-1], ENT_QUOTES, 'UTF-8');?>
 ?autoplay=<?php echo $_smarty_tpl->tpl_vars['layer']->value->data_video_autoplay;?>
 &loop=<?php echo $_smarty_tpl->tpl_vars['layer']->value->data_video_loop;?>
-"
+" allow="autoplay"
 					<?php }?>
 					allowfullscreen
 					frameborder="0">

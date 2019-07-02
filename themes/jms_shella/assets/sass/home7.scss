@@ -55,6 +55,28 @@
 		}
 	}
 }
+.banner-type-2{
+	.banner-content{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+		width: 100%;
+		padding: 0 20px;
+		margin-top: 0;
+		text-align: center;
+		.text-1{
+			font-size: 44px;
+			text-transform: uppercase;
+			padding-bottom: 27px;
+			letter-spacing: 2px;
+		}
+		.text-2{
+			font-size: 18px;
+			padding-bottom: 37px;
+		}
+	}
+}
 #footer {
 	border-top: 0;
 	padding-top: 0;
@@ -84,6 +106,61 @@
 					color: #fff;
 				}
 			}
+		}
+	}
+}
+@media (max-width: 1199px){
+	.jms-megamenu .nav > li {
+		padding: 0 3px;
+	}
+	.right-icon-group .addon-box {
+		margin-left: 10px;
+	}
+	.jms-slider-wrapper{
+		.text-2{
+			letter-spacing: 0;
+		}
+	}
+}
+@media (max-width: 991px){
+	.menu #open-button .icon{
+		fill: #fff;
+	}
+	#footer .footer-bottom{
+		.container > .row{
+			display: block;
+			text-align: center;
+		}
+		.find-us{
+			justify-content: center;
+			margin-top: 10px;
+		}
+	}
+}
+@media (max-width: 767px){
+	.banner-type-2 .banner-content{
+		.text-1 {
+			font-size: 25px;
+			padding-bottom: 10px;
+		}
+		.text-2{
+			font-size: 16px;
+			padding-bottom: 10px;
+		}
+	}
+	.jms-banner .banner-content .banner-title {
+		font-size: 16px;
+	}
+}
+@media (max-width: 481px){
+	.banner-type-2 .banner-content{
+		.text-1 {
+			font-size: 16px;
+			padding-bottom: 10px;
+		}
+		.text-2{
+			font-size: 10px;
+			padding-bottom: 10px;
 		}
 	}
 }

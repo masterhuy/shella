@@ -23,6 +23,11 @@
 		color: #fff;
 	}
 }
+.jms-slider-wrapper{
+	.text-2{
+		letter-spacing: 2px;
+	}
+}
 #footer {
 	margin-top: 0;
 	padding-top: 0;
@@ -41,6 +46,18 @@
 					color: $active;
 				}
 			}
+		}
+	}
+}
+
+@media (max-width: 1366px) and (min-width: 1200px){
+	.jms-slider-wrapper{
+		.text-2{
+			font-size: 35px !important;
+			letter-spacing: 0;
+		}
+		.text-3{
+			font-size: 14px !important;
 		}
 	}
 }

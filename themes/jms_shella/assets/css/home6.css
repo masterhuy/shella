@@ -26,6 +26,26 @@
     font-size: 13px;
     color: #858585; }
 
+.banner-type-2 .banner-content {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  padding: 0 20px;
+  margin-top: 0;
+  text-align: center; }
+  .banner-type-2 .banner-content .text-1 {
+    font-size: 44px;
+    text-transform: uppercase;
+    padding-bottom: 27px;
+    letter-spacing: 2px; }
+  .banner-type-2 .banner-content .text-2 {
+    font-size: 18px;
+    padding-bottom: 37px; }
+
 #footer {
   margin-top: 55px;
   background: #141414; }
@@ -70,3 +90,33 @@
 
 #social_block.type-2 ul li a {
   color: #fff !important; }
+
+@media (max-width: 991px) {
+  .jms-row.menu {
+    background: #fff; }
+    .jms-row.menu .icon {
+      fill: #141414; } }
+
+@media (max-width: 767px) {
+  .banner-type-2 .banner-content .text-1 {
+    font-size: 25px;
+    padding-bottom: 10px; }
+  .banner-type-2 .banner-content .text-2 {
+    font-size: 16px;
+    padding-bottom: 10px; }
+  .banner-type-1 {
+    margin-bottom: 20px; }
+    .banner-type-1 .banner-content .banner-title {
+      font-size: 16px; } }
+
+@media (max-width: 481px) {
+  .banner-type-2 .banner-content .text-1 {
+    font-size: 16px;
+    padding-bottom: 10px; }
+  .banner-type-2 .banner-content .text-2 {
+    font-size: 10px;
+    padding-bottom: 10px; }
+  .banner-type-1 {
+    margin-bottom: 20px; }
+    .banner-type-1 .banner-content .banner-title {
+      font-size: 16px; } }
