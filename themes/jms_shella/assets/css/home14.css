@@ -44,8 +44,10 @@
   .service svg {
     fill: #fff; }
 
+.page-index #footer {
+  margin-top: 0; }
+
 #footer {
-  margin-top: 0;
   border-top: 0; }
   #footer .footer-top {
     margin-bottom: 50px; }

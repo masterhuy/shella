@@ -65,10 +65,12 @@
     font-size: 18px;
     padding-bottom: 37px; }
 
+.page-index #footer {
+  margin-top: 70px; }
+
 #footer {
   border-top: 0;
-  padding-top: 0;
-  margin-top: 70px; }
+  padding-top: 0; }
   #footer .footer-bottom {
     background: #141414;
     padding: 9px 0;
@@ -105,8 +107,6 @@
     letter-spacing: 0; } }
 
 @media (max-width: 991px) {
-  .menu #open-button .icon {
-    fill: #fff; }
   #footer .footer-bottom .container > .row {
     display: block;
     text-align: center; }

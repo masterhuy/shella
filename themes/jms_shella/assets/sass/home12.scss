@@ -11,6 +11,26 @@
 		}
 	}
 }
+.jms-slider-wrapper{
+	.slide-2{
+		.text-1{
+			letter-spacing: 0.75px;
+		}
+		.text-2{
+			letter-spacing: 2.2px;
+		}
+		.btn-default{
+			min-width: 220px;
+			color: #fff;
+			border-color: #fff;
+			letter-spacing: 0.7px;
+			&:hover{
+				background: #fff;
+				color: $active !important;
+			}
+		}
+	}
+}
 .jms-megamenu .nav > li > a {
 	line-height: 27px;
 	color: #fff;
@@ -70,9 +90,11 @@
 		}
 	}
 }
+.page-index #footer{
+	margin-top: 0;
+}
 #footer{
 	border-top: 0;
-	margin-top: 0;
 	background: #141414;
 	.addon-title h3{
 		color: #fff;

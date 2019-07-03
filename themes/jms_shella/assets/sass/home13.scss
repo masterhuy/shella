@@ -32,8 +32,10 @@
 .service{
 	border: 0;
 }
-#footer{
+.page-index #footer{
 	margin-top: 0;
+}
+#footer{
 	.newsletter{
 		margin-bottom: 50px;
 		.container > .row{

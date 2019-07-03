@@ -68,14 +68,14 @@
 			margin-top: 20px;
 		}
 	}
+	.addon-social{
+		display: flex;
+		align-items: center;
+	}
 	.footer-social{
 		margin-top: 50px;
 		padding: 18px 0;
 		border-top: 1px solid #e5e5e5;
-		.addon-social{
-			display: flex;
-			align-items: center;
-		}
 		.addon-box{
 			display: flex;
 			align-items: center;
@@ -112,5 +112,10 @@
 				}
 			}
 		}
+	}
+}
+@media (max-width: 767px){
+	.jms-banner .banner-content .banner-title {
+		font-size: 16px;
 	}
 }

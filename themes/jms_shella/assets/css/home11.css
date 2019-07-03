@@ -43,8 +43,10 @@
 .service {
   border-bottom: 0; }
 
+.page-index #footer {
+  margin-top: 0; }
+
 #footer {
-  margin-top: 0;
   border-top: 0;
   background: #141414; }
   #footer .addon-title h3 {
@@ -52,7 +54,7 @@
   #footer ul li a:hover {
     color: #fff; }
   #footer svg {
-    fill: #fff; }
+    fill: #bfbfbf; }
   #footer .addon-desc a:hover {
     color: #fff; }
   #footer .footer-top .contact-info p a:hover {
@@ -61,6 +63,8 @@
     color: #fff; }
   #footer .footer-bottom {
     border-top-color: #3e3e3e; }
+    #footer .footer-bottom .copyright p a:hover {
+      color: #fff; }
   #footer #newsletter_block_left button {
     color: #fff;
     border-color: #fff; }
@@ -72,3 +76,9 @@
     border-color: #3e3e3e; }
     #footer #newsletter_block_left #newsletter-input:hover, #footer #newsletter_block_left #newsletter-input:focus {
       border-color: #fff; }
+
+@media (max-width: 991px) {
+  .jms-row.menu {
+    padding-bottom: 0; }
+    .jms-row.menu #open-button .icon {
+      fill: #fff; } }

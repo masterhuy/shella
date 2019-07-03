@@ -130,10 +130,6 @@
     {/block}
 
     {hook h='displayBeforeBodyClosingTag'}
-	{if $page.page_name == cms}		 
-		 <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv9p77jYCRrlLa3xx1hwemtEjUyH3YcZo&callback=initMap">
-        </script>
-		{/if}
   </body>
 
 </html>

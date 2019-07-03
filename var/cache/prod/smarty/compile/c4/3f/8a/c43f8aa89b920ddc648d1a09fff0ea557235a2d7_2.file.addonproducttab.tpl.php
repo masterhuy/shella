@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-07-01 23:17:27
+/* Smarty version 3.1.33, created on 2019-07-03 05:58:47
   from 'D:\xamppp\htdocs\jms_shella\themes\jms_shella\modules\jmspagebuilder\views\templates\hook\addonproducttab.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d1accc7ed6110_30621742',
+  'unifunc' => 'content_5d1c7c57ee3983_82861463',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c43f8aa89b920ddc648d1a09fff0ea557235a2d7' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_shella\\themes\\jms_shella\\modules\\jmspagebuilder\\views\\templates\\hook\\addonproducttab.tpl',
-      1 => 1558690567,
+      1 => 1562145037,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product.tpl' => 5,
   ),
 ),false)) {
-function content_5d1accc7ed6110_30621742 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d1c7c57ee3983_82861463 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">
 var tab_items = <?php if ($_smarty_tpl->tpl_vars['cols']->value) {
@@ -60,27 +60,27 @@ var auto_play_tab = <?php if ($_smarty_tpl->tpl_vars['autoplay']->value == 1) {?
 		<ul class="nav d-flex" role="tablist">
 		<?php $_smarty_tpl->_assignInScope('cf', 0);?>
 			<?php if ($_smarty_tpl->tpl_vars['config']->value['show_featured'] == '1') {?>
-				<li class="nav-item"><a class="button active" data-toggle="tab" href="#featured"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Featured','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
+				<li class="nav-item"><a class="button active" data-toggle="tab" href="#featured"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Featured','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
 </a></li>
 			<?php $_smarty_tpl->_assignInScope('cf', $_smarty_tpl->tpl_vars['cf']->value+1);?>
 			<?php }?>	
 			<?php if ($_smarty_tpl->tpl_vars['config']->value['show_new'] == '1') {?>
-				<li class="nav-item"><a class="<?php if ($_smarty_tpl->tpl_vars['cf']->value == 0) {?>active<?php }?> button" data-toggle="tab" href="#latest"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'New Arrival','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
+				<li class="nav-item"><a class="<?php if ($_smarty_tpl->tpl_vars['cf']->value == 0) {?>active<?php }?> button" data-toggle="tab" href="#latest"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'New Arrival','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
 </a></li>
 				<?php $_smarty_tpl->_assignInScope('cf', $_smarty_tpl->tpl_vars['cf']->value+1);?>
 			<?php }?>		
 			<?php if ($_smarty_tpl->tpl_vars['config']->value['show_topseller'] == '1') {?>
-				<li class="nav-item"><a class="<?php if ($_smarty_tpl->tpl_vars['cf']->value == 0) {?>active<?php }?> button" data-toggle="tab" href="#topseller"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Best Seller','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
+				<li class="nav-item"><a class="<?php if ($_smarty_tpl->tpl_vars['cf']->value == 0) {?>active<?php }?> button" data-toggle="tab" href="#topseller"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Best Seller','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
 </a></li>
 				<?php $_smarty_tpl->_assignInScope('cf', $_smarty_tpl->tpl_vars['cf']->value+1);?>
 			<?php }?>		
 			<?php if ($_smarty_tpl->tpl_vars['config']->value['show_special'] == '1') {?>
-				<li class="nav-item"><a class="<?php if ($_smarty_tpl->tpl_vars['cf']->value == 0) {?>active<?php }?> button" data-toggle="tab" href="#special"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Special','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
+				<li class="nav-item"><a class="<?php if ($_smarty_tpl->tpl_vars['cf']->value == 0) {?>active<?php }?> button" data-toggle="tab" href="#special"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Special','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
 </a></li>
 				<?php $_smarty_tpl->_assignInScope('cf', $_smarty_tpl->tpl_vars['cf']->value+1);?>
 			<?php }?>			
 			<?php if ($_smarty_tpl->tpl_vars['config']->value['show_onsale'] == '1') {?>
-				<li class="nav-item"><a class="<?php if ($_smarty_tpl->tpl_vars['cf']->value == 0) {?>active<?php }?> button" data-toggle="tab" href="#onsale"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Sale Off','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
+				<li class="nav-item"><a class="<?php if ($_smarty_tpl->tpl_vars['cf']->value == 0) {?>active<?php }?> button" data-toggle="tab" href="#onsale"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Sale Off','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
 </a></li>
 				<?php $_smarty_tpl->_assignInScope('cf', $_smarty_tpl->tpl_vars['cf']->value+1);?>
 			<?php }?>			

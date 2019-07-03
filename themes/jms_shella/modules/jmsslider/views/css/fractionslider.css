@@ -4,7 +4,6 @@
 	height:100%;
 	overflow:visible;
 }
-
 .fraction-slider .slide{
 	display:none; width:100%; 
 	height:100%;
@@ -36,7 +35,6 @@
 	position:relative;
 	top:0px; 
 	left:0px;
-	w
 }
 
 .fs_loader{
@@ -60,6 +58,11 @@
     visibility: hidden;
     z-index: 999;
 }
+.fraction-slider .prev i,
+.fraction-slider .next i{
+	font-size: 50px;
+	color: #858585;
+}
 .fraction-slider .prev{
 	left: 20px;
 }
@@ -68,21 +71,18 @@
 }
 .fraction-slider:hover .prev{
 	left: 40px;
-	opacity: 0.3;
 	visibility: visible;
+	opacity: 1;
 }
 .fraction-slider:hover .next{
 	right: 40px;
-	opacity: 0.3;
 	visibility: visible;
-}
-.fraction-slider .prev:hover{
 	opacity: 1;
 }
-.fraction-slider .next:hover{
-	opacity: 1;
+.fraction-slider .prev:hover i,
+.fraction-slider .next:hover i{
+	color: #141414;
 }
-
 
 /** PAGER **/
 

@@ -27,27 +27,29 @@
 .service {
   border: 0; }
 
-#footer {
+.page-index #footer {
   margin-top: 0; }
-  #footer .newsletter {
-    margin-bottom: 50px; }
-    #footer .newsletter .container > .row {
-      max-width: 600px;
-      margin: auto; }
-    #footer .newsletter .addon-title h3, #footer .newsletter .addon-title span {
-      display: block;
-      text-align: center; }
-    #footer .newsletter .news_content {
-      margin-top: 20px; }
-  #footer .footer-bottom {
-    text-align: center;
-    padding: 18px 0 12px; }
-    #footer .footer-bottom p {
-      font-size: 10px;
-      color: #858585;
-      margin-bottom: 10px; }
-      #footer .footer-bottom p a {
-        text-decoration: underline;
-        color: #858585; }
-        #footer .footer-bottom p a:hover {
-          color: #141414; }
+
+#footer .newsletter {
+  margin-bottom: 50px; }
+  #footer .newsletter .container > .row {
+    max-width: 600px;
+    margin: auto; }
+  #footer .newsletter .addon-title h3, #footer .newsletter .addon-title span {
+    display: block;
+    text-align: center; }
+  #footer .newsletter .news_content {
+    margin-top: 20px; }
+
+#footer .footer-bottom {
+  text-align: center;
+  padding: 18px 0 12px; }
+  #footer .footer-bottom p {
+    font-size: 10px;
+    color: #858585;
+    margin-bottom: 10px; }
+    #footer .footer-bottom p a {
+      text-decoration: underline;
+      color: #858585; }
+      #footer .footer-bottom p a:hover {
+        color: #141414; }

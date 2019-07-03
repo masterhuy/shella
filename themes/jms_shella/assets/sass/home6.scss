@@ -58,8 +58,10 @@
 		}
 	}
 }
-#footer{
+.page-index #footer{
 	margin-top: 55px;
+}
+#footer{
 	background: #141414;
 	.newsletter{
 		margin-bottom: 50px;
@@ -118,14 +120,6 @@
 }
 #social_block.type-2 ul li a {
 	color: #fff !important;
-}
-@media (max-width: 991px){
-	.jms-row.menu{
-		background: #fff;
-		.icon{
-			fill: #141414;
-		}
-	}
 }
 @media (max-width: 767px){
 	.banner-type-2 .banner-content{

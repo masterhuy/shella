@@ -55,6 +55,11 @@
   .jms-slider-wrapper .btn-shop .btn-default {
     min-width: 90px !important; } }
 
+@media (max-width: 991px) and (min-width: 768px) {
+  .jms-row.banner-category > .container,
+  .jms-row.banner > .container {
+    width: 540px; } }
+
 @media (max-width: 767px) {
   .jms-slider-wrapper .btn-shop .btn-default {
     min-width: 70px !important; } }

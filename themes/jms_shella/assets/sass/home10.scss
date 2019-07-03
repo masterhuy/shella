@@ -42,8 +42,10 @@
 		}
 	}
 }
-#footer{
+.page-index #footer{
 	margin-top: 0;
+}
+#footer{
 	border-top: 0;
 	text-align: center;
 	background: #141414;
@@ -109,14 +111,14 @@
 			margin-top: 20px;
 		}
 	}
+	.addon-social{
+		display: flex;
+		align-items: center;
+	}
 	.footer-social{
 		margin-top: 50px;
 		padding: 18px 0;
 		border-top: 1px solid #3e3e3e;
-		.addon-social{
-			display: flex;
-			align-items: center;
-		}
 		.addon-box{
 			display: flex;
 			align-items: center;
@@ -172,5 +174,11 @@
 				}
 			}
 		}
+	}
+}
+
+@media (max-width: 767px){
+	.jms-banner .banner-content .banner-title {
+		font-size: 16px;
 	}
 }

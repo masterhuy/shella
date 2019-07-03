@@ -10,6 +10,21 @@
     .header .menu .addon-box:first-child {
       margin-right: 20px; }
 
+.jms-slider-wrapper .slide-2 .text-1 {
+  letter-spacing: 0.75px; }
+
+.jms-slider-wrapper .slide-2 .text-2 {
+  letter-spacing: 2.2px; }
+
+.jms-slider-wrapper .slide-2 .btn-default {
+  min-width: 220px;
+  color: #fff;
+  border-color: #fff;
+  letter-spacing: 0.7px; }
+  .jms-slider-wrapper .slide-2 .btn-default:hover {
+    background: #fff;
+    color: #141414 !important; }
+
 .jms-megamenu .nav > li > a {
   line-height: 27px;
   color: #fff; }
@@ -58,9 +73,11 @@
       background: #141414;
       color: #fff; }
 
+.page-index #footer {
+  margin-top: 0; }
+
 #footer {
   border-top: 0;
-  margin-top: 0;
   background: #141414; }
   #footer .addon-title h3 {
     color: #fff; }

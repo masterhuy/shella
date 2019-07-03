@@ -396,15 +396,8 @@
 		min-width: 290px;
 		padding: 20px;
 	}
-	.text-large {
-		font-size: 4.5vw;
-	}
-	div.fs-pager-wrapper a, div.fs-custom-pager-wrapper a{
-		width: 6px;
-		height: 6px;
-	}
-	.fs-pager-wrapper {
-        bottom: 2px
+	.jms-slider-wrapper .fs-pager-wrapper {
+		bottom: 15px;
 	}
 	.logo > span {
 		font-size: 36px;

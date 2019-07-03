@@ -55,8 +55,10 @@
 .service{
 	border-bottom: 0;
 }
-#footer{
+.page-index #footer{
 	margin-top: 0;
+}
+#footer{
 	border-top: 0;
 	background: #141414;
 	.addon-title h3{
@@ -66,7 +68,7 @@
 		color: #fff;
 	}
 	svg{
-		fill: #fff;
+		fill: #bfbfbf;
 	}
 	.addon-desc a:hover{
 		color: #fff;
@@ -81,6 +83,9 @@
 	}
 	.footer-bottom{
 		border-top-color: #3e3e3e;
+		.copyright p a:hover{
+			color: #fff;
+		}
 	}
 	#newsletter_block_left{
 		button{
@@ -97,6 +102,15 @@
 			&:hover, &:focus{
 				border-color: #fff;
 			}
+		}
+	}
+}
+
+@media (max-width: 991px){
+	.jms-row.menu{
+		padding-bottom: 0;
+		#open-button .icon{
+			fill: #fff;
 		}
 	}
 }

@@ -27,9 +27,14 @@
 	.text-2{
 		letter-spacing: 2px;
 	}
+	.fraction-slider{
+		height: 100% !important;
+	}
+}
+.page-index #footer{
+	margin-top: 0;
 }
 #footer {
-	margin-top: 0;
 	padding-top: 0;
 	border-top: 0;
 	.footer-bottom{

@@ -30,9 +30,11 @@
     color: #858585;
     padding-bottom: 19px; }
 
-#footer {
-  border-top: 0;
+.page-index #footer {
   margin-top: 0; }
+
+#footer {
+  border-top: 0; }
   #footer #social_block.type-2 ul {
     -webkit-box-pack: start;
     -ms-flex-pack: start;

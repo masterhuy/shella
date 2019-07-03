@@ -27,6 +27,9 @@
 #header{
 	position: relative;
 }
+.popup_home{
+	margin-top: -1px;
+}
 .icon {
 	width: 20px;
 	min-width: 20px;
@@ -192,8 +195,14 @@
 
 //banner bg
 .banner-bg{
-	padding: 162px 0 166px;
+	padding: 162px 0 165px;
 	text-align: center;
+	&.v1{
+		padding: 168px 0 160px;
+		.btn-group .btn-default:first-child{
+			margin-bottom: 10px;
+		}
+	}
 	p{
 		color: #fff;
 		margin-bottom: 0;
@@ -218,7 +227,8 @@
 		margin: 0 3px;
 		&:hover{
 			background: #fff;
-			color: $active;
+			color: $active !important;
+			border-color: #fff;
 		}
 	}
 }
@@ -3885,7 +3895,7 @@ a.wishlist_top{
 	}
 }
 @media (max-width: 991px) and (min-width: 768px){
-	.home_1, .home_2, .home_4, .home_6{
+	.home_1, .home_2, .home_4, .home_6, .home_8, .home_9, .home_11{
 		.jms-row.menu{
 			position: absolute;
 			bottom: 0;
@@ -3898,15 +3908,6 @@ a.wishlist_top{
 			}
 		}
 	}
-	.jms-row.banner-category,
-	.jms-row.banner {
-		.container{
-			width: 540px;
-		}
-		.layout-column:not(:last-child){
-			margin-bottom: 15px;
-		}
-	}
 	div.service .feature-box {
 		justify-content: flex-start;
 		padding-left: 15px;
@@ -3916,12 +3917,17 @@ a.wishlist_top{
 	}
 }
 @media (max-width: 991px){
-	.jms-row.menu{
-		margin-bottom: 0;
+	.home_2, .home_9, .home_10{
+		#footer .footer-social{
+			margin-top: 0;
+		}
 	}
-	.service{
-		.layout-column:not(:last-child){
-			margin-bottom: 10px;
+	.home_6, .home_8{
+		.jms-row.menu {
+			background: #fff;
+			.icon{
+				fill: #141414;
+			}
 		}
 	}
 	.home_1, .home_6{
@@ -3933,7 +3939,7 @@ a.wishlist_top{
 			}
 		}
 	}
-	.home_2, .home_3, .home_4, .home_5, .home_7{
+	.home_2, .home_3, .home_4, .home_5, .home_7, .home_8, .home_9, .home_10, .home_11{
 		.right-icon-group{
 			.addon-box{
 				&:nth-child(1), &:nth-child(6), &:nth-child(7){
@@ -3942,10 +3948,7 @@ a.wishlist_top{
 			}
 		}
 	}
-	.right-icon-group{
-		margin-top: 10px;
-	}
-	.home_5{
+	.home_5, .home_7{
 		.right-icon-group{
 			margin-top: 0;
 		}
@@ -3962,6 +3965,17 @@ a.wishlist_top{
 			margin-right: 0;
 			order: 2;
 		}
+	}
+	.jms-row.menu{
+		margin-bottom: 0;
+	}
+	.service{
+		.layout-column:not(:last-child){
+			margin-bottom: 10px;
+		}
+	}
+	.right-icon-group{
+		margin-top: 10px;
 	}
 	.jms-row.banner-category,
 	.jms-row.banner {
@@ -4049,12 +4063,28 @@ a.wishlist_top{
 	}
 }
 @media (max-width: 767px){
+	.banner-bg,
+	.banner-bg.v1 {
+		padding: 100px 0;
+		.layout-column .addon-box{
+			padding: 0 15px;
+		}
+		.text-2{
+			font-size: 30px;
+		}
+		.btn-group .btn-default:first-child{
+			margin-bottom: 10px;
+		}
+	}
+	div.jms-banner.type-1 .banner-content .banner-title {
+		font-size: 16px;
+	}
 	.home_3, .home_7{
 		.header .menu .addon-box:first-child {
 			margin-left: 10px;
 		}
 	}
-	.home_1, .home_2, .home_4, .home_6{
+	.home_1, .home_2, .home_4, .home_6, .home_8, .home_9, .home_10, .home_11{
 		.jms-row.menu{
 			position: absolute;
 			bottom: 0;
@@ -4067,6 +4097,10 @@ a.wishlist_top{
 				padding: 0 !important;
 			}
 		}
+	}
+	.fraction-slider .prev i, 
+	.fraction-slider .next i {
+		font-size: 30px;
 	}
 	#footer div.addon-social{
 		display: block;
@@ -4109,10 +4143,6 @@ a.wishlist_top{
 	}
 	div#module-group{
 		right: 0;
-	}
-	div.fs-pager-wrapper a{
-		width: 10px;
-		height: 10px;
 	}
 	div#jms_ajax_search{
 		#search-form .searchbox{
@@ -4312,9 +4342,7 @@ a.wishlist_top{
 	}
 	div.fraction-slider{
 		.prev, .next{
-			width: 20px;
-			height: 20px;
-			font-size: 10px;
+			display: none;
 		}
 	}
 	.product_tab{
