@@ -3150,14 +3150,14 @@ a.wishlist_top {
     top: 60px; } }
 
 @media (max-width: 991px) and (min-width: 768px) {
-  .home_1 .jms-row.menu, .home_2 .jms-row.menu, .home_4 .jms-row.menu, .home_6 .jms-row.menu, .home_8 .jms-row.menu, .home_9 .jms-row.menu, .home_11 .jms-row.menu {
+  .home_1 .jms-row.menu, .home_2 .jms-row.menu, .home_4 .jms-row.menu, .home_6 .jms-row.menu, .home_8 .jms-row.menu, .home_9 .jms-row.menu, .home_11 .jms-row.menu, .home_14 .jms-row.menu {
     position: absolute;
     bottom: 0;
     display: inline-block;
     left: calc((100% - 750px)/2 - 3px);
     width: 22px;
     border: 0; }
-    .home_1 .jms-row.menu .container, .home_2 .jms-row.menu .container, .home_4 .jms-row.menu .container, .home_6 .jms-row.menu .container, .home_8 .jms-row.menu .container, .home_9 .jms-row.menu .container, .home_11 .jms-row.menu .container {
+    .home_1 .jms-row.menu .container, .home_2 .jms-row.menu .container, .home_4 .jms-row.menu .container, .home_6 .jms-row.menu .container, .home_8 .jms-row.menu .container, .home_9 .jms-row.menu .container, .home_11 .jms-row.menu .container, .home_14 .jms-row.menu .container {
       width: 22px; }
   div.service .feature-box {
     -webkit-box-pack: start;
@@ -3174,22 +3174,29 @@ a.wishlist_top {
     background: #fff; }
     .home_6 .jms-row.menu .icon, .home_8 .jms-row.menu .icon {
       fill: #141414; }
-  .home_1 .right-icon-group .addon-box:nth-child(5), .home_1 .right-icon-group .addon-box:nth-child(6), .home_6 .right-icon-group .addon-box:nth-child(5), .home_6 .right-icon-group .addon-box:nth-child(6) {
+  .home_1 .right-icon-group .addon-box:nth-child(5), .home_1 .right-icon-group .addon-box:nth-child(6), .home_6 .right-icon-group .addon-box:nth-child(5), .home_6 .right-icon-group .addon-box:nth-child(6), .home_14 .right-icon-group .addon-box:nth-child(5), .home_14 .right-icon-group .addon-box:nth-child(6) {
     display: none; }
-  .home_2 .right-icon-group .addon-box:nth-child(1), .home_2 .right-icon-group .addon-box:nth-child(6), .home_2 .right-icon-group .addon-box:nth-child(7), .home_3 .right-icon-group .addon-box:nth-child(1), .home_3 .right-icon-group .addon-box:nth-child(6), .home_3 .right-icon-group .addon-box:nth-child(7), .home_4 .right-icon-group .addon-box:nth-child(1), .home_4 .right-icon-group .addon-box:nth-child(6), .home_4 .right-icon-group .addon-box:nth-child(7), .home_5 .right-icon-group .addon-box:nth-child(1), .home_5 .right-icon-group .addon-box:nth-child(6), .home_5 .right-icon-group .addon-box:nth-child(7), .home_7 .right-icon-group .addon-box:nth-child(1), .home_7 .right-icon-group .addon-box:nth-child(6), .home_7 .right-icon-group .addon-box:nth-child(7), .home_8 .right-icon-group .addon-box:nth-child(1), .home_8 .right-icon-group .addon-box:nth-child(6), .home_8 .right-icon-group .addon-box:nth-child(7), .home_9 .right-icon-group .addon-box:nth-child(1), .home_9 .right-icon-group .addon-box:nth-child(6), .home_9 .right-icon-group .addon-box:nth-child(7), .home_10 .right-icon-group .addon-box:nth-child(1), .home_10 .right-icon-group .addon-box:nth-child(6), .home_10 .right-icon-group .addon-box:nth-child(7), .home_11 .right-icon-group .addon-box:nth-child(1), .home_11 .right-icon-group .addon-box:nth-child(6), .home_11 .right-icon-group .addon-box:nth-child(7) {
+  .home_2 .right-icon-group .addon-box:nth-child(1), .home_2 .right-icon-group .addon-box:nth-child(6), .home_2 .right-icon-group .addon-box:nth-child(7), .home_3 .right-icon-group .addon-box:nth-child(1), .home_3 .right-icon-group .addon-box:nth-child(6), .home_3 .right-icon-group .addon-box:nth-child(7), .home_4 .right-icon-group .addon-box:nth-child(1), .home_4 .right-icon-group .addon-box:nth-child(6), .home_4 .right-icon-group .addon-box:nth-child(7), .home_5 .right-icon-group .addon-box:nth-child(1), .home_5 .right-icon-group .addon-box:nth-child(6), .home_5 .right-icon-group .addon-box:nth-child(7), .home_7 .right-icon-group .addon-box:nth-child(1), .home_7 .right-icon-group .addon-box:nth-child(6), .home_7 .right-icon-group .addon-box:nth-child(7), .home_8 .right-icon-group .addon-box:nth-child(1), .home_8 .right-icon-group .addon-box:nth-child(6), .home_8 .right-icon-group .addon-box:nth-child(7), .home_9 .right-icon-group .addon-box:nth-child(1), .home_9 .right-icon-group .addon-box:nth-child(6), .home_9 .right-icon-group .addon-box:nth-child(7), .home_10 .right-icon-group .addon-box:nth-child(1), .home_10 .right-icon-group .addon-box:nth-child(6), .home_10 .right-icon-group .addon-box:nth-child(7), .home_11 .right-icon-group .addon-box:nth-child(1), .home_11 .right-icon-group .addon-box:nth-child(6), .home_11 .right-icon-group .addon-box:nth-child(7), .home_12 .right-icon-group .addon-box:nth-child(1), .home_12 .right-icon-group .addon-box:nth-child(6), .home_12 .right-icon-group .addon-box:nth-child(7), .home_13 .right-icon-group .addon-box:nth-child(1), .home_13 .right-icon-group .addon-box:nth-child(6), .home_13 .right-icon-group .addon-box:nth-child(7) {
     display: none; }
-  .home_5 .right-icon-group, .home_7 .right-icon-group {
+  .home_5 .right-icon-group, .home_7 .right-icon-group, .home_12 .right-icon-group {
     margin-top: 0; }
-  .home_5 .header .menu .icon, .home_7 .header .menu .icon {
+  .home_5 .header .menu .icon, .home_7 .header .menu .icon, .home_12 .header .menu .icon {
     fill: #fff; }
-  .home_3 .right-icon-group, .home_7 .right-icon-group {
+  .home_3 .right-icon-group, .home_7 .right-icon-group, .home_12 .right-icon-group, .home_13 .right-icon-group {
     margin-top: 0; }
-  .home_3 .header .menu .addon-box:first-child, .home_7 .header .menu .addon-box:first-child {
+  .home_3 .header .menu .addon-box:first-child, .home_7 .header .menu .addon-box:first-child, .home_12 .header .menu .addon-box:first-child, .home_13 .header .menu .addon-box:first-child {
     margin-left: 20px;
     margin-right: 0;
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2; }
+  div.product-box .flexbox {
+    width: 30%; }
+  div.product-preview .flexbox + .product-info {
+    width: 70%;
+    padding: 0 10px; }
+    div.product-preview .flexbox + .product-info .label.label-discount {
+      margin-bottom: 10px; }
   .jms-row.menu {
     margin-bottom: 0; }
   .service .layout-column:not(:last-child) {
@@ -3229,12 +3236,8 @@ a.wishlist_top {
     top: 10px; }
   .quickview .arrows.js-arrows i.js-arrow-down {
     bottom: 0px; }
-  .quickview .images-container .product-images > li.thumb-container img {
-    width: 80px; }
   .quickview .images-container .js-qv-mask {
-    left: 43px;
-    top: calc(50% - 4px);
-    max-height: 310px; }
+    max-height: 295px; }
   .header .container > .row, .header .container-fluid > .row {
     display: block; }
   input#ajax_search {
@@ -3255,30 +3258,32 @@ a.wishlist_top {
     margin-bottom: 15px; } }
 
 @media (max-width: 767px) {
-  .banner-bg,
-  .banner-bg.v1 {
+  div.banner-bg,
+  div.banner-bg.v1 {
     padding: 100px 0; }
-    .banner-bg .layout-column .addon-box,
-    .banner-bg.v1 .layout-column .addon-box {
+    div.banner-bg .layout-column .addon-box,
+    div.banner-bg.v1 .layout-column .addon-box {
       padding: 0 15px; }
-    .banner-bg .text-2,
-    .banner-bg.v1 .text-2 {
+    div.banner-bg .text-2,
+    div.banner-bg.v1 .text-2 {
       font-size: 30px; }
-    .banner-bg .btn-group .btn-default:first-child,
-    .banner-bg.v1 .btn-group .btn-default:first-child {
+    div.banner-bg .btn-group .btn-default:first-child,
+    div.banner-bg.v1 .btn-group .btn-default:first-child {
       margin-bottom: 10px; }
+  div.jms-slider-wrapper .fs-pager-wrapper {
+    bottom: 15px; }
   div.jms-banner.type-1 .banner-content .banner-title {
     font-size: 16px; }
-  .home_3 .header .menu .addon-box:first-child, .home_7 .header .menu .addon-box:first-child {
+  .home_3 .header .menu .addon-box:first-child, .home_7 .header .menu .addon-box:first-child, .home_12 .header .menu .addon-box:first-child, .home_13 .header .menu .addon-box:first-child {
     margin-left: 10px; }
-  .home_1 .jms-row.menu, .home_2 .jms-row.menu, .home_4 .jms-row.menu, .home_6 .jms-row.menu, .home_8 .jms-row.menu, .home_9 .jms-row.menu, .home_10 .jms-row.menu, .home_11 .jms-row.menu {
+  .home_1 .jms-row.menu, .home_2 .jms-row.menu, .home_4 .jms-row.menu, .home_6 .jms-row.menu, .home_8 .jms-row.menu, .home_9 .jms-row.menu, .home_10 .jms-row.menu, .home_11 .jms-row.menu, .home_14 .jms-row.menu {
     position: absolute;
     bottom: 0;
     display: inline-block;
     left: 11px;
     width: 22px;
     border: 0; }
-    .home_1 .jms-row.menu .container, .home_2 .jms-row.menu .container, .home_4 .jms-row.menu .container, .home_6 .jms-row.menu .container, .home_8 .jms-row.menu .container, .home_9 .jms-row.menu .container, .home_10 .jms-row.menu .container, .home_11 .jms-row.menu .container {
+    .home_1 .jms-row.menu .container, .home_2 .jms-row.menu .container, .home_4 .jms-row.menu .container, .home_6 .jms-row.menu .container, .home_8 .jms-row.menu .container, .home_9 .jms-row.menu .container, .home_10 .jms-row.menu .container, .home_11 .jms-row.menu .container, .home_14 .jms-row.menu .container {
       width: 22px;
       padding: 0 !important; }
   .fraction-slider .prev i,

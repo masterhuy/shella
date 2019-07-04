@@ -68,10 +68,10 @@
       color: #858585; }
   .banner-bg .btn-default {
     color: #141414;
-    border-color: #141414; }
+    border-color: #141414 !important; }
     .banner-bg .btn-default:hover {
       background: #141414;
-      color: #fff; }
+      color: #fff !important; }
 
 .page-index #footer {
   margin-top: 0; }
@@ -120,3 +120,44 @@
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start; }
+
+@media (max-width: 1366px) and (min-width: 1200px) {
+  .jms-slider-wrapper .text-1 {
+    font-size: 9px !important; }
+  .jms-slider-wrapper .text-2 {
+    font-size: 35px !important;
+    letter-spacing: 0; }
+  .jms-slider-wrapper .text-3 {
+    font-size: 14px !important; }
+  .jms-slider-wrapper .btn-shop .btn-default {
+    min-width: 150px !important;
+    font-size: 10px !important; } }
+
+@media (max-width: 1199px) {
+  .jms-megamenu .nav > li {
+    padding: 0 3px; }
+  .right-icon-group .addon-box {
+    margin-left: 10px; }
+  .jms-slider-wrapper .text-2 {
+    letter-spacing: 0 !important; }
+  .jms-slider-wrapper .btn-shop .btn-default {
+    min-width: 97px !important;
+    padding: 7px 9px; } }
+
+@media (max-width: 991px) {
+  .jms-slider-wrapper .btn-shop .btn-default {
+    min-width: 90px !important; } }
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .jms-row.banner-category > .container,
+  .jms-row.banner > .container {
+    width: 540px; } }
+
+@media (max-width: 767px) {
+  .jms-slider-wrapper .btn-shop .btn-default {
+    min-width: 70px !important; } }
+
+@media (max-width: 481px) {
+  .jms-slider-wrapper .btn-shop .btn-default {
+    min-width: 50px !important;
+    padding: 5px 4px; } }

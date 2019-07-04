@@ -1,14 +1,17 @@
-1562125322
-s:353:"HTTP/1.1 200 OK
+1562215572
+s:775:"HTTP/1.1 200 OK
 Server: nginx
-Date: Wed, 03 Jul 2019 01:42:04 GMT
+Date: Thu, 04 Jul 2019 02:46:15 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 15
-X-XSS-Protection: 1; mode=block
+Transfer-Encoding: chunked
+Vary: Accept-Encoding
+X-XSS-Protection: 1; mode=block;
 X-Content-Type-Options: nosniff
-X-Frame-Options: SAMEORIGIN
-Access-Control-Allow-Origin: *
-X-UA-Compatible: IE=Edge,chrome=1
-Strict-Transport-Security: max-age=0
+X-Frame-Options: sameorigin
+Referrer-Policy: strict-origin-when-cross-origin
+X-Permitted-Cross-Domain-Policies: none
+Expect-CT: enforce, max-age=604800
+Feature-Policy: accelerometer 'self'; ambient-light-sensor 'self'; autoplay 'self'; camera 'self'; encrypted-media 'self'; fullscreen 'self'; geolocation 'self'; gyroscope 'self'; magnetometer 'self'; microphone 'self'; midi 'self'; payment 'self'; picture-in-picture *; speaker 'self'; sync-xhr *; usb 'self'; vr 'self';
+X-Backend-Server: vm2728.jn-hebergement.com
 
 {"services":[]}";

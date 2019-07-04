@@ -3895,7 +3895,7 @@ a.wishlist_top{
 	}
 }
 @media (max-width: 991px) and (min-width: 768px){
-	.home_1, .home_2, .home_4, .home_6, .home_8, .home_9, .home_11{
+	.home_1, .home_2, .home_4, .home_6, .home_8, .home_9, .home_11, .home_14{
 		.jms-row.menu{
 			position: absolute;
 			bottom: 0;
@@ -3930,7 +3930,7 @@ a.wishlist_top{
 			}
 		}
 	}
-	.home_1, .home_6{
+	.home_1, .home_6, .home_14{
 		.right-icon-group{
 			.addon-box{
 				&:nth-child(5), &:nth-child(6){
@@ -3939,7 +3939,7 @@ a.wishlist_top{
 			}
 		}
 	}
-	.home_2, .home_3, .home_4, .home_5, .home_7, .home_8, .home_9, .home_10, .home_11{
+	.home_2, .home_3, .home_4, .home_5, .home_7, .home_8, .home_9, .home_10, .home_11, .home_12, .home_13{
 		.right-icon-group{
 			.addon-box{
 				&:nth-child(1), &:nth-child(6), &:nth-child(7){
@@ -3948,7 +3948,7 @@ a.wishlist_top{
 			}
 		}
 	}
-	.home_5, .home_7{
+	.home_5, .home_7, .home_12{
 		.right-icon-group{
 			margin-top: 0;
 		}
@@ -3956,7 +3956,7 @@ a.wishlist_top{
 			fill: #fff;
 		}
 	}
-	.home_3, .home_7{
+	.home_3, .home_7, .home_12, .home_13{
 		.right-icon-group{
 			margin-top: 0;
 		}
@@ -3964,6 +3964,16 @@ a.wishlist_top{
 			margin-left: 20px;
 			margin-right: 0;
 			order: 2;
+		}
+	}
+	div.product-box .flexbox {
+		width: 30%;
+	}
+	div.product-preview .flexbox + .product-info {
+		width: 70%;
+		padding: 0 10px;
+		.label.label-discount{
+			margin-bottom: 10px;
 		}
 	}
 	.jms-row.menu{
@@ -4026,13 +4036,8 @@ a.wishlist_top{
 			}
 		}
 		.images-container{
-			.product-images > li.thumb-container img{
-				width: 80px;
-			}
 			.js-qv-mask{
-				left: 43px;
-				top: calc(50% - 4px);
-				max-height: 310px;
+				max-height: 295px;
 			}
 		}
 	}
@@ -4063,8 +4068,8 @@ a.wishlist_top{
 	}
 }
 @media (max-width: 767px){
-	.banner-bg,
-	.banner-bg.v1 {
+	div.banner-bg,
+	div.banner-bg.v1 {
 		padding: 100px 0;
 		.layout-column .addon-box{
 			padding: 0 15px;
@@ -4076,15 +4081,18 @@ a.wishlist_top{
 			margin-bottom: 10px;
 		}
 	}
+	div.jms-slider-wrapper .fs-pager-wrapper {
+		bottom: 15px;
+	}
 	div.jms-banner.type-1 .banner-content .banner-title {
 		font-size: 16px;
 	}
-	.home_3, .home_7{
+	.home_3, .home_7 , .home_12, .home_13{
 		.header .menu .addon-box:first-child {
 			margin-left: 10px;
 		}
 	}
-	.home_1, .home_2, .home_4, .home_6, .home_8, .home_9, .home_10, .home_11{
+	.home_1, .home_2, .home_4, .home_6, .home_8, .home_9, .home_10, .home_11, .home_14{
 		.jms-row.menu{
 			position: absolute;
 			bottom: 0;
