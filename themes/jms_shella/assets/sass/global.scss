@@ -1725,8 +1725,6 @@ a.wishlist_top{
 		}
 	}
 	#footer {
-		display: inline-block;
-		width: 100%;
 		margin-top: 34px;
 	}
 }
@@ -3895,7 +3893,7 @@ a.wishlist_top{
 	}
 }
 @media (max-width: 991px) and (min-width: 768px){
-	.home_1, .home_2, .home_4, .home_6, .home_8, .home_9, .home_11, .home_14{
+	.home_1, .home_2, .home_4, .home_6, .home_8, .home_9, .home_11, .home_14, .home_15{
 		.jms-row.menu{
 			position: absolute;
 			bottom: 0;
@@ -3917,6 +3915,9 @@ a.wishlist_top{
 	}
 }
 @media (max-width: 991px){
+	#header{
+		border-bottom: 1px solid #e5e5e5;
+	}
 	.home_2, .home_9, .home_10{
 		#footer .footer-social{
 			margin-top: 0;
@@ -3930,7 +3931,7 @@ a.wishlist_top{
 			}
 		}
 	}
-	.home_1, .home_6, .home_14{
+	.home_1, .home_6, .home_14, .home_15{
 		.right-icon-group{
 			.addon-box{
 				&:nth-child(5), &:nth-child(6){
@@ -4092,7 +4093,7 @@ a.wishlist_top{
 			margin-left: 10px;
 		}
 	}
-	.home_1, .home_2, .home_4, .home_6, .home_8, .home_9, .home_10, .home_11, .home_14{
+	.home_1, .home_2, .home_4, .home_6, .home_8, .home_9, .home_10, .home_11, .home_14, .home_15{
 		.jms-row.menu{
 			position: absolute;
 			bottom: 0;

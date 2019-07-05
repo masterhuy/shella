@@ -29,12 +29,12 @@
 {else}
 
   <div class="form-group row {if !empty($field.errors)}has-error{/if}">
-    <label class="col-md-3 form-control-label{if $field.required} required{/if}">
+    <label class="col-lg-12 col-md-12 form-control-label{if $field.required} required{/if}">
       {if $field.type !== 'checkbox'}
-        {$field.label}
+        {$field.label}*
       {/if}
     </label>
-    <div class="col-md-6{if ($field.type === 'radio-buttons')} form-control-valign{/if}">
+    <div class="col-lg-12 col-md-12{if ($field.type === 'radio-buttons')} form-control-valign{/if}">
 
       {if $field.type === 'select'}
 
@@ -125,7 +125,7 @@
           >
           <span class="input-group-btn show-pass">
             <button
-              type="button" class="btn-default"
+              type="button"
               data-action="show-password"
               data-text-show="{l s='Show' d='Shop.Theme.Actions'}"
               data-text-hide="{l s='Hide' d='Shop.Theme.Actions'}" title="Show password"
@@ -155,7 +155,7 @@
 
     </div>
 
-    <div class="col-md-3 form-control-comment">
+    <div class="col-lg-12 col-md-12 form-control-comment">
       {if (!$field.required && !in_array($field.type, ['radio-buttons', 'checkbox']))}
        {l s='Optional' d='Shop.Forms.Labels'}
       {/if}

@@ -45,7 +45,7 @@
 .text-xs-center{
 	text-align:center;
 }
-.product-image > .product-line-info {
+.product-image .product-line-info {
 	margin-left: 20px;
 	text-align: left;
 }
@@ -140,7 +140,11 @@
 	display: flex;
 	align-items: center;
 }
-.cart-grid .product-image.media-middle > img {
+.product-image.media-middle .info{
+	display: flex;
+	align-items: center;
+}
+.cart-grid .product-image.media-middle img {
 	margin-right: 0;
 	width: 150px;
 }
@@ -335,24 +339,18 @@
 	clear: both;
 	background: #f2f2f2;
 }
-@media(max-width:1199px){
-	.cart-grid-right {
-		margin-top: 35px;
+@media(max-width:767px) and (min-width: 482px){
+	.product-image .product-line-info{
+		margin-left: 0;
+		margin-top: 10px;
 	}
-	.cart-grid .product-image.media-middle > img {
-		width: 90px;
-		height: 90px;
+	.product-image.media-middle .info{
+		display: block;
 	}
 }
 @media (max-width: 767px){
 	#promo-code .promo-input{
 		max-width: 160px;
-	}
-	.product-image.media-middle{
-		display: block;
-	}
-	.product-line-grid .product-info .product-line-info {
-		text-align: center;
 	}
 	.cart-items li{
 		margin-bottom: 15px;
@@ -361,16 +359,6 @@
 	.cart-items{
 		border: 0;
 	}
-	.product-line-grid{
-		display: block;
-		text-align: center;
-		border: 1px solid #ebebeb;
-	}
-	.product-line-grid .product-info .product-line-info{
-		text-align: center;
-		margin-left: 0;
-		margin-top: 15px;
-	}
 	.row_cs.product-qty{
 		display: flex;
 		justify-content: center;
@@ -378,41 +366,24 @@
 	.product-line-grid .row_cs:not(:last-child){
 		margin-bottom: 20px;
 	}
+	.product-line-grid {
+		border-bottom: 1px solid #e5e5e5;
+	}
 	.product-qty .bootstrap-touchspin {
 		justify-content: center;
 	}
 	.product-image.media-middle {
 		justify-content: center;
 	}
-	.cart-grid .product-image.media-middle > img {
-		width: 150px;
-		height: 150px;
-	}
-}
-@media(max-width:600px){
-	.product-line-grid{
-		display:block;
-	}
-	.product-line-grid-right.product-line-actions{
-		margin-top:20px;
-	}
 }
 @media (max-width: 481px){
-	.product-image.media-middle {
-		display: block;	
+	.product-line-grid::after {
+		content: "";
+		display: table;
+		clear: both;
 	}
-	.cart-grid .product-image.media-middle > img{
-		width: 100%;
+	.product-line-grid{
 		display: block;
-		height: auto;
-		margin: 0;
-	}
-	.product-line-grid .product-info .product-line-info {
-		text-align: center;
-		padding-top: 10px;
-	}
-	.product-line-info .label.product-name{
-		text-align: center;
 	}
 }
 @media(max-width:320px){

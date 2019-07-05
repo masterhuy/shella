@@ -799,6 +799,16 @@
 }
 
 @media (max-width: 767px){
+    #more_info_block .tabs li{
+        display: block;
+    }
+    #more_info_block .nav.nav-tabs {
+        margin: 0;
+    }
+    #more_info_block .tabs li a.active {
+        border: 1px solid #141414;
+        border-bottom-color: #141414;
+    }
     .zoomContainer{
         display: none !important;
     }
@@ -948,7 +958,7 @@
 .same-category .container {
     border-top: 1px solid #e5e5e5;
     margin-top: 56px;
-    padding-top: 53px;
+    padding-top: 53px !important;
     width: 100%;
 }
 .thumbslist .same-category .container {
@@ -976,16 +986,16 @@
 }
 @media(max-width:1199px){
     .images-container .js-qv-mask {
-        max-height: 430px;
-    }
-    .product-layout-3columns .scroll-box-arrows i{
-        height: 137px;
+        max-height: 486px;
     }
 	div.products-list-in-row .content_price .price.new {
         font-size: 20px;
     }
 }
 @media(max-width:991px){
+    .images-container .js-qv-mask {
+        max-height: 335px;
+    }
     #product-modal .modal-dialog{
         width: 475px;
     }
@@ -1016,6 +1026,9 @@
     }
 }
 @media(max-width:767px) {
+    .images-container .js-qv-mask {
+        max-height: 390px;
+    }
     #search_filter_controls {
         margin-bottom: 30px;
     }
@@ -1054,30 +1067,27 @@
 	#product .pb-right-column{
 		margin-top:25px;
 	}
-	#more_info_block .tabs li{
-		padding-right:35px;
-	}
 	/*Product Layout*/
 	.column-right{
 		margin-top:30px;
 	}
 }
+@media (max-width: 540px){
+    .rte img{
+        width: 100%;
+        height: auto;
+    }
+}
 @media(max-width:481px){
+    .images-container .js-qv-mask {
+        max-height: 245px;
+    }
     #product-availability {
         margin-left: 0;
         display: block;
     }
-    .arrows.js-arrows i, .scroll-box-arrows i {
-        height: 124px;
-    }
 	.images-container .thumb-box {
 		height: 105px;
-	}
-	.images-container .product-images > li.thumb-container > .thumb {
-        width: 105px;
-    }
-	#more_info_block .tabs li a.active{
-		border-bottom:0 !important;
 	}
 	.product-quantity .add-to-cart{
 		padding:8px 16px;
@@ -1104,11 +1114,5 @@
 	#product #block-reassurance .block-reassurance-item span {
 		font-size: 12px;
 	}
-	.images-container .product-images > li.thumb-container > .thumb {
-		width: 90px;
-	}
-    .arrows.js-arrows i, .scroll-box-arrows i {
-        height: 106px;
-    }
 }
 

@@ -1410,8 +1410,6 @@ a.wishlist_top {
   left: 0; }
 
 #product #footer {
-  display: inline-block;
-  width: 100%;
   margin-top: 34px; }
 
 #search #content .search-box {
@@ -3150,14 +3148,14 @@ a.wishlist_top {
     top: 60px; } }
 
 @media (max-width: 991px) and (min-width: 768px) {
-  .home_1 .jms-row.menu, .home_2 .jms-row.menu, .home_4 .jms-row.menu, .home_6 .jms-row.menu, .home_8 .jms-row.menu, .home_9 .jms-row.menu, .home_11 .jms-row.menu, .home_14 .jms-row.menu {
+  .home_1 .jms-row.menu, .home_2 .jms-row.menu, .home_4 .jms-row.menu, .home_6 .jms-row.menu, .home_8 .jms-row.menu, .home_9 .jms-row.menu, .home_11 .jms-row.menu, .home_14 .jms-row.menu, .home_15 .jms-row.menu {
     position: absolute;
     bottom: 0;
     display: inline-block;
     left: calc((100% - 750px)/2 - 3px);
     width: 22px;
     border: 0; }
-    .home_1 .jms-row.menu .container, .home_2 .jms-row.menu .container, .home_4 .jms-row.menu .container, .home_6 .jms-row.menu .container, .home_8 .jms-row.menu .container, .home_9 .jms-row.menu .container, .home_11 .jms-row.menu .container, .home_14 .jms-row.menu .container {
+    .home_1 .jms-row.menu .container, .home_2 .jms-row.menu .container, .home_4 .jms-row.menu .container, .home_6 .jms-row.menu .container, .home_8 .jms-row.menu .container, .home_9 .jms-row.menu .container, .home_11 .jms-row.menu .container, .home_14 .jms-row.menu .container, .home_15 .jms-row.menu .container {
       width: 22px; }
   div.service .feature-box {
     -webkit-box-pack: start;
@@ -3168,13 +3166,15 @@ a.wishlist_top {
     margin-bottom: 10px; } }
 
 @media (max-width: 991px) {
+  #header {
+    border-bottom: 1px solid #e5e5e5; }
   .home_2 #footer .footer-social, .home_9 #footer .footer-social, .home_10 #footer .footer-social {
     margin-top: 0; }
   .home_6 .jms-row.menu, .home_8 .jms-row.menu {
     background: #fff; }
     .home_6 .jms-row.menu .icon, .home_8 .jms-row.menu .icon {
       fill: #141414; }
-  .home_1 .right-icon-group .addon-box:nth-child(5), .home_1 .right-icon-group .addon-box:nth-child(6), .home_6 .right-icon-group .addon-box:nth-child(5), .home_6 .right-icon-group .addon-box:nth-child(6), .home_14 .right-icon-group .addon-box:nth-child(5), .home_14 .right-icon-group .addon-box:nth-child(6) {
+  .home_1 .right-icon-group .addon-box:nth-child(5), .home_1 .right-icon-group .addon-box:nth-child(6), .home_6 .right-icon-group .addon-box:nth-child(5), .home_6 .right-icon-group .addon-box:nth-child(6), .home_14 .right-icon-group .addon-box:nth-child(5), .home_14 .right-icon-group .addon-box:nth-child(6), .home_15 .right-icon-group .addon-box:nth-child(5), .home_15 .right-icon-group .addon-box:nth-child(6) {
     display: none; }
   .home_2 .right-icon-group .addon-box:nth-child(1), .home_2 .right-icon-group .addon-box:nth-child(6), .home_2 .right-icon-group .addon-box:nth-child(7), .home_3 .right-icon-group .addon-box:nth-child(1), .home_3 .right-icon-group .addon-box:nth-child(6), .home_3 .right-icon-group .addon-box:nth-child(7), .home_4 .right-icon-group .addon-box:nth-child(1), .home_4 .right-icon-group .addon-box:nth-child(6), .home_4 .right-icon-group .addon-box:nth-child(7), .home_5 .right-icon-group .addon-box:nth-child(1), .home_5 .right-icon-group .addon-box:nth-child(6), .home_5 .right-icon-group .addon-box:nth-child(7), .home_7 .right-icon-group .addon-box:nth-child(1), .home_7 .right-icon-group .addon-box:nth-child(6), .home_7 .right-icon-group .addon-box:nth-child(7), .home_8 .right-icon-group .addon-box:nth-child(1), .home_8 .right-icon-group .addon-box:nth-child(6), .home_8 .right-icon-group .addon-box:nth-child(7), .home_9 .right-icon-group .addon-box:nth-child(1), .home_9 .right-icon-group .addon-box:nth-child(6), .home_9 .right-icon-group .addon-box:nth-child(7), .home_10 .right-icon-group .addon-box:nth-child(1), .home_10 .right-icon-group .addon-box:nth-child(6), .home_10 .right-icon-group .addon-box:nth-child(7), .home_11 .right-icon-group .addon-box:nth-child(1), .home_11 .right-icon-group .addon-box:nth-child(6), .home_11 .right-icon-group .addon-box:nth-child(7), .home_12 .right-icon-group .addon-box:nth-child(1), .home_12 .right-icon-group .addon-box:nth-child(6), .home_12 .right-icon-group .addon-box:nth-child(7), .home_13 .right-icon-group .addon-box:nth-child(1), .home_13 .right-icon-group .addon-box:nth-child(6), .home_13 .right-icon-group .addon-box:nth-child(7) {
     display: none; }
@@ -3276,14 +3276,14 @@ a.wishlist_top {
     font-size: 16px; }
   .home_3 .header .menu .addon-box:first-child, .home_7 .header .menu .addon-box:first-child, .home_12 .header .menu .addon-box:first-child, .home_13 .header .menu .addon-box:first-child {
     margin-left: 10px; }
-  .home_1 .jms-row.menu, .home_2 .jms-row.menu, .home_4 .jms-row.menu, .home_6 .jms-row.menu, .home_8 .jms-row.menu, .home_9 .jms-row.menu, .home_10 .jms-row.menu, .home_11 .jms-row.menu, .home_14 .jms-row.menu {
+  .home_1 .jms-row.menu, .home_2 .jms-row.menu, .home_4 .jms-row.menu, .home_6 .jms-row.menu, .home_8 .jms-row.menu, .home_9 .jms-row.menu, .home_10 .jms-row.menu, .home_11 .jms-row.menu, .home_14 .jms-row.menu, .home_15 .jms-row.menu {
     position: absolute;
     bottom: 0;
     display: inline-block;
     left: 11px;
     width: 22px;
     border: 0; }
-    .home_1 .jms-row.menu .container, .home_2 .jms-row.menu .container, .home_4 .jms-row.menu .container, .home_6 .jms-row.menu .container, .home_8 .jms-row.menu .container, .home_9 .jms-row.menu .container, .home_10 .jms-row.menu .container, .home_11 .jms-row.menu .container, .home_14 .jms-row.menu .container {
+    .home_1 .jms-row.menu .container, .home_2 .jms-row.menu .container, .home_4 .jms-row.menu .container, .home_6 .jms-row.menu .container, .home_8 .jms-row.menu .container, .home_9 .jms-row.menu .container, .home_10 .jms-row.menu .container, .home_11 .jms-row.menu .container, .home_14 .jms-row.menu .container, .home_15 .jms-row.menu .container {
       width: 22px;
       padding: 0 !important; }
   .fraction-slider .prev i,

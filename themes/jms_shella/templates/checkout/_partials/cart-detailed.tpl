@@ -26,9 +26,9 @@
     <div class="label-title hidden-xs">
         <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">{l s='Products' d='Shop.Theme.Checkout'}</div>
         <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
-            <div class="pd-0 col-lg-4 col-md-4 col-sm-12">{l s='Price' d='Shop.Theme.Checkout'}</div>
-            <div class="pd-0 col-lg-4 col-md-4 col-sm-12 text-center">{l s='Quantity' d='Shop.Theme.Checkout'}</div>
-            <div class="pd-0 col-lg-4 col-md-4 col-sm-12 text-right">{l s='Total' d='Shop.Theme.Checkout'}</div>
+            <div class="pd-0 col-lg-4 col-md-4 col-sm-4 col-xs-12">{l s='Price' d='Shop.Theme.Checkout'}</div>
+            <div class="pd-0 col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">{l s='Quantity' d='Shop.Theme.Checkout'}</div>
+            <div class="pd-0 col-lg-4 col-md-4 col-sm-4 col-xs-12 text-right">{l s='Total' d='Shop.Theme.Checkout'}</div>
         </div>
     </div>
     {if $cart.products}

@@ -71,17 +71,17 @@
 	padding:0px 15px;
 }
 #contact #footer {
-	margin-top: 90px;
+	margin-top: 80px;
 }
 #contact #content-wrapper {
 	margin-bottom: 0;
 }
-.contact-map iframe {
+#contact .contact-map iframe {
 	width: 100%;
 	-webkit-filter: grayscale(90%);
 	filter: grayscale(90%);
 }
-.contact-map:hover iframe {
+#contact .contact-map:hover iframe {
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
 }
@@ -159,9 +159,12 @@
 	}
 }
 @media(max-width:767px) {
+	#contact #left-column {
+		width: 100%;
+		padding: 0;
+	}
 	body#contact #wrapper #content-wrapper{
 		width: 100%;
-		margin-bottom: 50px;
 		padding-right: 0;
 	}
 	#contact #right-column{

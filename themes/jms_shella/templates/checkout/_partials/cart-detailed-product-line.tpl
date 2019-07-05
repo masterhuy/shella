@@ -47,14 +47,16 @@
                 </a>
                 {hook h='displayCartExtraProductActions' product=$product}
             </div>
-            <img src="{$product.cover.bySize.large_default.url}" alt="{$product.name|escape:'quotes'}">
-            <div class="product-line-info">
-                <a class="product-link" href="{$product.url}" data-id_customization="{$product.id_customization|intval}">{$product.name}</a>
-                {foreach from=$product.attributes key="attribute" item="value"}
-                    <div class="product-info-value">
-                        <span class="value">{$value}</span>
-                    </div>
-                {/foreach}
+            <div class="info">
+                <img src="{$product.cover.bySize.large_default.url}" alt="{$product.name|escape:'quotes'}">
+                <div class="product-line-info">
+                    <a class="product-link" href="{$product.url}" data-id_customization="{$product.id_customization|intval}">{$product.name}</a>
+                    {foreach from=$product.attributes key="attribute" item="value"}
+                        <div class="product-info-value">
+                            <span class="value">{$value}</span>
+                        </div>
+                    {/foreach}
+                </div>
             </div>
             {if $product.customizations|count}
                 {foreach from=$product.customizations item="customization"}

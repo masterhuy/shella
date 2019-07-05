@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-30 23:44:30
+/* Smarty version 3.1.33, created on 2019-07-05 05:40:59
   from 'D:\xamppp\htdocs\jms_shella\themes\jms_shella\templates\catalog\listing\search.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d19819e5c43c0_57143848',
+  'unifunc' => 'content_5d1f1b2b1f4797_61613420',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d19819e5c43c0_57143848 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d1f1b2b1f4797_61613420 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>

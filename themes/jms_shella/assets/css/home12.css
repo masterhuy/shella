@@ -10,11 +10,11 @@
     .header .menu .addon-box:first-child {
       margin-right: 20px; }
 
+.jms-slider-wrapper .text-2 {
+  letter-spacing: 2.2px; }
+
 .jms-slider-wrapper .slide-2 .text-1 {
   letter-spacing: 0.75px; }
-
-.jms-slider-wrapper .slide-2 .text-2 {
-  letter-spacing: 2.2px; }
 
 .jms-slider-wrapper .slide-2 .btn-default {
   min-width: 220px;

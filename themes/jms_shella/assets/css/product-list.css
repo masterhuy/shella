@@ -178,7 +178,7 @@
   width:100%;
 }
 #search_filters .custom-checkbox {
-	margin-right: 4px;
+	margin-right: 8px;
 	display: inline-block;
 	width: 18px;
 	height: 18px;
@@ -242,7 +242,7 @@
 }
 #category .facet .facet-label {
 	margin-bottom: 0;
-	display: block;
+	display: flex;
 }
 #category .facet.size ul li a .magnitude {
 	display: none;
@@ -340,9 +340,6 @@
 	.product_list.products-list-in-column .product-box {
 		width: 50%;
 		clear:unset;
-	}
-	#content-wrapper.left-column {
-		margin-top:60px;
 	}
 	#category .facet ul li a .magnitude {
 		right: 15px;

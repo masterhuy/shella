@@ -41,6 +41,21 @@
 .right-icon-group .currency-info .btn-xs {
   color: #fff; }
 
+.jms-slider-wrapper .text-1 {
+  letter-spacing: 0.75px; }
+
+.jms-slider-wrapper .text-2 {
+  letter-spacing: 2.2px; }
+
+.jms-slider-wrapper .slide-2 .btn-default {
+  min-width: 220px;
+  color: #fff;
+  border-color: #fff;
+  letter-spacing: 0.7px; }
+  .jms-slider-wrapper .slide-2 .btn-default:hover {
+    background: #fff;
+    color: #141414 !important; }
+
 .banner-content {
   top: auto;
   padding: 9px 10px;
@@ -116,3 +131,39 @@
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start; }
+
+@media (max-width: 1366px) and (min-width: 1200px) {
+  .jms-slider-wrapper .text-1 {
+    font-size: 9px !important; }
+  .jms-slider-wrapper .text-2 {
+    font-size: 35px !important;
+    letter-spacing: 0; }
+  .jms-slider-wrapper .text-3 {
+    font-size: 10px !important; }
+  .jms-slider-wrapper .btn-shop .btn-default {
+    min-width: 150px !important;
+    font-size: 10px !important; } }
+
+@media (max-width: 1199px) {
+  .jms-megamenu .nav > li {
+    padding: 0 3px; }
+  .right-icon-group .addon-box {
+    margin-left: 10px; }
+  .jms-slider-wrapper .text-2 {
+    letter-spacing: 0 !important; }
+  .jms-slider-wrapper .btn-shop .btn-default {
+    min-width: 97px !important;
+    padding: 7px 9px; } }
+
+@media (max-width: 991px) {
+  .jms-slider-wrapper .btn-shop .btn-default {
+    min-width: 90px !important; } }
+
+@media (max-width: 767px) {
+  .jms-slider-wrapper .btn-shop .btn-default {
+    min-width: 70px !important; } }
+
+@media (max-width: 481px) {
+  .jms-slider-wrapper .btn-shop .btn-default {
+    min-width: 50px !important;
+    padding: 5px 4px; } }

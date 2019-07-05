@@ -31,15 +31,26 @@
 {block name='page_content'}
     {block name='login_form_container'}
       <section class="login-form">
+        <h3 class="text-center">{l s='Login' d='Shop.Theme.CustomerAccount'}</h3>
         {render file='customer/_partials/login-form.tpl' ui=$login_form}
       </section>
-      <hr/>
       {block name='display_after_login_form'}
         {hook h='displayCustomerLoginFormAfter'}
       {/block}
       <div class="no-account">
-        <a class="" href="{$urls.pages.register}" data-link-action="display-register-form">
-          {l s='No account? Create one here' d='Shop.Theme.CustomerAccount'}
+          <h2 class="h3 text-center">Sign Up</h2>
+            <div class="mb-35">
+                <p class="mb-15">Enjoy The Benefits Of Registering:</p>
+                <ul class="mb-0">
+                    <li>Order: view Order History, track and manage purchases and returns.</li>
+                    <li>Address Book and Card Wallet: safely store delivery and payment details for faster
+                        checkout
+                    </li>
+                    <li>Saved for later: wish list your preferred items and track their availability</li>
+                </ul>
+            </div>
+          <a class="btn-default w-100 text-center" href="{$urls.pages.register}" data-link-action="display-register-form">
+          {l s='Sign up now!' d='Shop.Theme.CustomerAccount'}
         </a>
       </div>
     {/block}
