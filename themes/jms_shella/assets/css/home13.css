@@ -108,4 +108,6 @@
 @media (max-width: 481px) {
   .jms-slider-wrapper .btn-shop .btn-default {
     min-width: 50px !important;
-    padding: 5px 4px; } }
+    padding: 5px 4px; }
+  #footer .newsletter .container > .row {
+    margin: 0 -15px; } }

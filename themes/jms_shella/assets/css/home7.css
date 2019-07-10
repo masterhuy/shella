@@ -71,6 +71,8 @@
 #footer {
   border-top: 0;
   padding-top: 0; }
+  #footer #social_block.type-2 ul li:last-child {
+    padding-right: 0; }
   #footer .footer-bottom {
     background: #141414;
     padding: 9px 0;

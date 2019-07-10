@@ -244,6 +244,9 @@
 	margin-bottom: 0;
 	display: flex;
 }
+#category .facet .facet-label .search-link{
+	width: 100%;
+}
 #category .facet.size ul li a .magnitude {
 	display: none;
 }

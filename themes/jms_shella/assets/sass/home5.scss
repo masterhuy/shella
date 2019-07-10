@@ -38,12 +38,18 @@
 	padding-top: 0;
 	border-top: 0;
 	.footer-bottom{
-		text-align: center;
-		padding: 18px 0 12px;
+		padding: 8.5px 0;
+		#social_block.type-2 ul{
+			justify-content: flex-end;
+			li:last-child{
+				padding-right: 0;
+			}
+		}
 		p {
 			font-size: 10px;
 			color: #858585;
-			margin-bottom: 10px;
+			line-height: 23px;
+			margin-bottom: 0;
 			a{
 				text-decoration: underline;
 				color: $subcolor;
@@ -63,6 +69,16 @@
 		}
 		.text-3{
 			font-size: 14px !important;
+		}
+	}
+}
+@media (max-width: 991px){
+	#footer .footer-bottom{
+		p{
+			text-align: center;
+		}
+		#social_block.type-2 ul {
+			justify-content: center;
 		}
 	}
 }

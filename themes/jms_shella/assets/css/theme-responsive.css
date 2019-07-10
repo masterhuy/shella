@@ -159,15 +159,6 @@
 	.title_meta{
 		font-size: 16px;
 	}
-	div#jms-vermegamenu-container{
-		max-width: calc(100% - 30px);
-	}
-	.service .left, .service .center{
-		margin-bottom: 15px;
-	}
-	.product-preview .product_action {
-		padding-bottom: 35px;
-	}
 	#cart_block #button_order_cart{
 		font-size: 12px;
 	}
@@ -180,9 +171,6 @@
 	.breadcrumb-box{
 		text-align:center;
 	}
-	.pagenotfound h1 {
-		font-size: 25vw;
-	}
 	.filters-panel{
 		margin-top:15px;
 	}
@@ -194,18 +182,6 @@
 	}
 	.jms-video .jms-popup-overlay{
 		display:block !important;
-	}
-	.jms-popup-wrap{
-   		width:570px !important;
-   		position: absolute  !important;
-   		left:0  !important;
-   		right:0  !important;
-   		top:0 !important;
-   		bottom: 0  !important;
-   		margin:auto  !important;
-	}
-	.flash_countdown {
-		width: 100%;
 	}
 	.flashdeal {
 		padding: 50px 15px;

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-07-05 05:49:19
+/* Smarty version 3.1.33, created on 2019-07-10 03:50:00
   from 'D:\xamppp\htdocs\jms_shella\themes\jms_shella\templates\_partials\stylesheets.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d1f1d1fc9b630_72010624',
+  'unifunc' => 'content_5d2598a82d90f4_73211042',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a0bb4e78a202c69dc606809267556ac92b0cf818' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_shella\\themes\\jms_shella\\templates\\_partials\\stylesheets.tpl',
-      1 => 1558595837,
+      1 => 1562636843,
       2 => 'file',
     ),
   ),
@@ -20,10 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d1f1d1fc9b630_72010624 (Smarty_Internal_Template $_smarty_tpl) {
-?><link rel="stylesheet" type="text/css" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['theme_assets'], ENT_QUOTES, 'UTF-8');?>
-css/icomoon.css" />
-<link rel="stylesheet" href="//maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
+function content_5d2598a82d90f4_73211042 (Smarty_Internal_Template $_smarty_tpl) {
+?><link rel="stylesheet" href="//maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet" type="text/css">
