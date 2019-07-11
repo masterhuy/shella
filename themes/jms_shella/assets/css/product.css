@@ -370,12 +370,17 @@
 .product-add-to-cart .product-btn i {
     font-size: 18px;
 }
+.product-quantity .product-btn.cart-button{
+    height: 35px;
+    padding: 0;
+}
 .product-quantity .product-btn {
     overflow: hidden;
     width: 100%;
     text-align: center;
     margin: 0;
     display: flex;
+    transition: unset;
 }
 .product-quantity .add .row{
     margin: 0 -5px;

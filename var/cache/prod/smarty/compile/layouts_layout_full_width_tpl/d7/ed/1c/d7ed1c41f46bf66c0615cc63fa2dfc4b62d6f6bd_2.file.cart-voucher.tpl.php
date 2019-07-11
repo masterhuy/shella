@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-07-10 02:47:03
+/* Smarty version 3.1.33, created on 2019-07-10 23:35:08
   from 'D:\xamppp\htdocs\jms_shella\themes\jms_shella\templates\checkout\_partials\cart-voucher.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d2589e701b543_71671667',
+  'unifunc' => 'content_5d26ae6c282cf1_29615104',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d2589e701b543_71671667 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d26ae6c282cf1_29615104 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['cart']->value['vouchers']['allowed']) {?>
   <div class="block-promo">
     <div class="cart-voucher">

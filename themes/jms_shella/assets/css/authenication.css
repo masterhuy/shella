@@ -36,6 +36,9 @@
 	color: #858585;
 	z-index: 11;
 }
+#authentication .show-pass button:hover{
+	color: #141414 !important;
+}
 #authentication .show-pass:hover,
 #authentication .forgot-password a:hover{
 	color: #141414;

@@ -40,10 +40,8 @@
 	padding-top:10px;
 	margin-right:30px !important;
 }
-.tab-content .form-group .input-group-btn button {
-    border-color: #ebebeb;
-    border-left: 0 none #ebebeb;
-    padding: 8px 20px;
+#checkout #customer-form .form-group{
+	margin-bottom: 0;
 }
 #checkout .tab-content > .tab-pane {
 	display: none;

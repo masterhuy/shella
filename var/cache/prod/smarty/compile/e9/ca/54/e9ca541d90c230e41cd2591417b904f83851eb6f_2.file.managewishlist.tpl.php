@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-27 02:31:59
+/* Smarty version 3.1.33, created on 2019-07-11 00:54:59
   from 'D:\xamppp\htdocs\jms_shella\themes\jms_shella\modules\jmswishlist\views\templates\front\managewishlist.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d1462df3e18f4_77811511',
+  'unifunc' => 'content_5d26c123bc23f1_36410750',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d1462df3e18f4_77811511 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d26c123bc23f1_36410750 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_shella\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 ?>
 

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-07-10 05:12:43
+/* Smarty version 3.1.33, created on 2019-07-11 04:44:27
   from 'D:\xamppp\htdocs\jms_shella\admin4672dprho\themes\new-theme\template\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d25ac0b46a3f3_36457644',
+  'unifunc' => 'content_5d26f6eb4a9246_65516932',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d25ac0b46a3f3_36457644 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d26f6eb4a9246_65516932 (Smarty_Internal_Template $_smarty_tpl) {
 ?><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=0.75, maximum-scale=0.75, user-scalable=0">
 <meta name="apple-mobile-web-app-capable" content="yes">

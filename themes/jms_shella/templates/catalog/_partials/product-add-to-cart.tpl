@@ -94,7 +94,7 @@
                     {elseif $product.availability == 'last_remaining_items'}
                         <i class="hidden material-icons product-last-items">&#xE002;</i>
                     {else}
-                        <span style="color:#fff; background:#858585;">{$product.availability_message}</span>
+                        <span style="color:#d43f3a;">{$product.availability_message}</span>
                     {/if}
                 </span>
                 {/if}

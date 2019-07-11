@@ -29,6 +29,9 @@
 			   {if $page.page_name=="category"}
 				
 						<div class="cat_desc">
+              <div class="addon-title">
+                <h3>{$page.meta.title}</h3>
+              </div>
 							<div class="flex-box">
 								 {if $category.description}
 									<div id="category-description">{$category.description nofilter}</div>

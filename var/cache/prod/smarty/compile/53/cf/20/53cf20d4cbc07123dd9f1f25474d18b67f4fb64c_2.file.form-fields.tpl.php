@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-07-10 04:45:24
+/* Smarty version 3.1.33, created on 2019-07-11 00:54:38
   from 'D:\xamppp\htdocs\jms_shella\themes\jms_shella\templates\_partials\form-fields.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d25a5a4984174_38474669',
+  'unifunc' => 'content_5d26c10ebd8e65_66608211',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '53cf20d4cbc07123dd9f1f25474d18b67f4fb64c' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_shella\\themes\\jms_shella\\templates\\_partials\\form-fields.tpl',
-      1 => 1562317822,
+      1 => 1562815895,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:_partials/form-errors.tpl' => 1,
   ),
 ),false)) {
-function content_5d25a5a4984174_38474669 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d26c10ebd8e65_66608211 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_shella\\vendor\\smarty\\smarty\\libs\\plugins\\function.html_select_date.php','function'=>'smarty_function_html_select_date',),));
 if ($_smarty_tpl->tpl_vars['field']->value['type'] == 'hidden') {?>
 
@@ -176,6 +176,7 @@ echo smarty_function_html_select_date(array('field_order'=>'DMY','time'=>$_prefi
           >
           <span class="input-group-btn show-pass">
             <button
+              class="btn-default"
               type="button"
               data-action="show-password"
               data-text-show="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Show','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>

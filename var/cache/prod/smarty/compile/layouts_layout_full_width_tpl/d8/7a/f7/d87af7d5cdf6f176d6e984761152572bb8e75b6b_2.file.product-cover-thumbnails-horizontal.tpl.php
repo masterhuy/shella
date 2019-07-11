@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-07-10 04:20:54
+/* Smarty version 3.1.33, created on 2019-07-11 03:17:32
   from 'D:\xamppp\htdocs\jms_shella\themes\jms_shella\templates\catalog\_partials\product-cover-thumbnails-horizontal.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d259fe61326d4_10057792',
+  'unifunc' => 'content_5d26e28cdd7be3_15841830',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,14 +20,14 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d259fe61326d4_10057792 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d26e28cdd7be3_15841830 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
 <div class="images-container">
   
   <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1163859885d259fe612e856_99988969', 'product_images');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_13533007485d26e28cdcfed4_98521155', 'product_images');
 ?>
 
 </div>
@@ -36,12 +36,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1163859885d259fe61
 
 <?php }
 /* {block 'product_images'} */
-class Block_1163859885d259fe612e856_99988969 extends Smarty_Internal_Block
+class Block_13533007485d26e28cdcfed4_98521155 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_images' => 
   array (
-    0 => 'Block_1163859885d259fe612e856_99988969',
+    0 => 'Block_13533007485d26e28cdcfed4_98521155',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

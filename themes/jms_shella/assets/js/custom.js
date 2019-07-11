@@ -1029,6 +1029,10 @@ $(document).ready(function() {
 		initialLoad = false;
 	}
 
+	$("#jms_ajax_search .btn-search").click(function(event) {
+		$("body").addClass("open-search");
+	});
+
 	if ($("#product .product-detail").hasClass("carousel")){
 		$("#product").addClass("product-layout-carousel");
 	}
