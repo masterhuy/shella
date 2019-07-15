@@ -91,11 +91,13 @@
 						<td class="wishlist_default">
 							{if isset($wishlists[i].default) && $wishlists[i].default == 1}
 								<p class="is_wish_list_default">
-									<i class="la la-check-square"></i>
+									{* <i class="la la-check-square"></i> *}
+									<img src="themes/jms_shella/assets/img/icon/checked.png">
 								</p>
 							{else}
 								<a href="#" onclick="javascript:event.preventDefault();(WishlistDefault('wishlist_{$wishlists[i].id_wishlist|intval}', '{$wishlists[i].id_wishlist|intval}'));">
-									<i class="la la-square-o"></i>
+									{* <i class="la la-square-o"></i> *}
+									<img src="themes/jms_shella/assets/img/icon/uncheck.png">
 								</a>
 							{/if}
 						</td>

@@ -2,9 +2,6 @@
 #checkout section#content {
 	background:#ffffff;
 }
-#checkout section#content .left {
-	padding-bottom:60px;
-}
 .input-group-btn {
 	font-size: 13px;
 }
@@ -27,13 +24,9 @@
 .content ul li:first-child a{
 	padding-left:0;
 }
-.content ul li a {
-    font-size: 16px;
-}
 .tab-content .form-group label{
 	line-height: 40px;
 	margin: 0;
-	font-size:15px;
 }
 .tab-content .form-control-valign label{
 	line-height:20px !important;

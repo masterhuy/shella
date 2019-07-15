@@ -21,10 +21,6 @@
 .cart-items li:last-child {
 	border-bottom:none;
 }
-.collapse-button.promo-code-button {
-	font-size: 14px;
-	font-weight: 500;
-}
 .card.cart-summary .btn-checkout {
 	font-size: 13px;
 	font-weight: 400;

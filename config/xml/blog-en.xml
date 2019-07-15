@@ -6,11 +6,19 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>New features, developments, advanced functionalities, download PrestaShop 1.7.6 now!</title>
+    <link>https://www.prestashop.com/en/blog/prestashop-1-7-6</link>
+    <description>So, what&#039;s new in version 1.7.6?</description>
+     <pubDate>Tue, 09 Jul 2019 16:23:04 +0200</pubDate>
+ <dc:creator>Méguy Solvet</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/prestashop-1-7-6</guid>
+  </item>
+  <item>
     <title>How to reduce the size and weight of your eCommerce photos</title>
     <link>https://www.prestashop.com/en/blog/reduce-size-weight-photos</link>
     <description>Do you know the real importance of reducing the weight and size of photos on your PrestaShop store&#039;s website?</description>
      <pubDate>Tue, 02 Jul 2019 16:39:16 +0200</pubDate>
- <dc:creator>José Facchin 1</dc:creator>
+ <dc:creator>Eva Lacalle</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/reduce-size-weight-photos</guid>
   </item>
   <item>
@@ -76,14 +84,6 @@
      <pubDate>Mon, 27 May 2019 10:33:12 +0200</pubDate>
  <dc:creator>shipstation</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/international-shipping</guid>
-  </item>
-  <item>
-    <title>Simplify cross-border selling with multi-currency</title>
-    <link>https://www.prestashop.com/en/blog/business-international-sell-multicurrency</link>
-    <description>Digital cross-border buying continues to grow in popularity. Based on a survey of consumers in 12 countries, 70% of online buyers made a purchase from a foreign site in 2017.</description>
-     <pubDate>Fri, 24 May 2019 12:05:12 +0200</pubDate>
- <dc:creator>Amazon Pay</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/business-international-sell-multicurrency</guid>
   </item>
   </channel>
 </rss>

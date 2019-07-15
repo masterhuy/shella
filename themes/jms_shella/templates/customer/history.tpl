@@ -67,11 +67,11 @@
               {/if}
             </td>
             <td class="text-xs-center order-actions">
-              <a href="{$order.details.details_url}" data-link-action="view-order-details" class="btn-default btn-effect">
+              <a href="{$order.details.details_url}" data-link-action="view-order-details" class="btn-default sm-mb-10">
                 {l s='Details' d='Shop.Theme.CustomerAccount'}
               </a>
               {if $order.details.reorder_url}
-                <a href="{$order.details.reorder_url}"class="btn-default btn-effect" >{l s='Reorder' d='Shop.Theme.Actions'}</a>
+                <a href="{$order.details.reorder_url}"class="btn-default" >{l s='Reorder' d='Shop.Theme.Actions'}</a>
               {/if}
             </td>
           </tr>
@@ -84,7 +84,7 @@
         <div class="order">
           <div class="row">
             <div class="col-xs-10">
-              <a href="{$order.details.details_url}"><h3>{$order.details.reference}</h3></a>
+              <a href="{$order.details.details_url}"><h5>{$order.details.reference}</h5></a>
               <div class="date">{$order.details.order_date}</div>
               <div class="total">{$order.totals.total.value}</div>
               <div class="status">

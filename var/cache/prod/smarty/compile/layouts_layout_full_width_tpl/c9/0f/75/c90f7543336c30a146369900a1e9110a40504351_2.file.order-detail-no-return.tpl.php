@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-24 03:16:40
+/* Smarty version 3.1.33, created on 2019-07-15 06:14:29
   from 'D:\xamppp\htdocs\jms_shella\themes\jms_shella\templates\customer\_partials\order-detail-no-return.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d1078d8474e07_85863231',
+  'unifunc' => 'content_5d2c520517d216_08472391',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c90f7543336c30a146369900a1e9110a40504351' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_shella\\themes\\jms_shella\\templates\\customer\\_partials\\order-detail-no-return.tpl',
-      1 => 1558585495,
+      1 => 1563185544,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d1078d8474e07_85863231 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d2c520517d216_08472391 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="box hidden-sm-down">
   <table id="order-products" class="table table-bordered">
     <thead class="thead-default">
@@ -46,8 +46,8 @@ foreach ($_from as $_smarty_tpl->tpl_vars['product']->value) {
 		<td class="product-image"><img src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['cover']['bySize']['home_default']['url'], ENT_QUOTES, 'UTF-8');?>
 " /></td>
         <td>
-          <strong><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['name'], ENT_QUOTES, 'UTF-8');?>
-</strong><br/>
+          <span><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['name'], ENT_QUOTES, 'UTF-8');?>
+</span><br/>
           <?php if ($_smarty_tpl->tpl_vars['product']->value['reference']) {?>
             <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Reference','d'=>'Shop.Theme.Catalog'),$_smarty_tpl ) );?>
 : <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['reference'], ENT_QUOTES, 'UTF-8');?>
@@ -256,8 +256,8 @@ foreach ($_from as $_smarty_tpl->tpl_vars['line']->value) {
 ?>
     <?php if ($_smarty_tpl->tpl_vars['line']->value['value']) {?>
       <div class="order-total row">
-        <div class="col-xs-8"><strong><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['line']->value['label'], ENT_QUOTES, 'UTF-8');?>
-</strong></div>
+        <div class="col-xs-8"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['line']->value['label'], ENT_QUOTES, 'UTF-8');?>
+</div>
         <div class="col-xs-4 text-xs-right"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['line']->value['value'], ENT_QUOTES, 'UTF-8');?>
 </div>
       </div>
@@ -267,8 +267,8 @@ foreach ($_from as $_smarty_tpl->tpl_vars['line']->value) {
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
   <div class="order-total row">
-    <div class="col-xs-8"><strong><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['order']->value['totals']['total']['label'], ENT_QUOTES, 'UTF-8');?>
-</strong></div>
+    <div class="col-xs-8"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['order']->value['totals']['total']['label'], ENT_QUOTES, 'UTF-8');?>
+</div>
     <div class="col-xs-4 text-xs-right"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['order']->value['totals']['total']['value'], ENT_QUOTES, 'UTF-8');?>
 </div>
   </div>

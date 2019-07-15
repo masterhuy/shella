@@ -79,7 +79,7 @@
       </tbody>
     </table>
 
-    <div class="orders hidden-md-up">
+    <div class="orders hidden-md-up hidden">
       {foreach from=$orders item=order}
         <div class="order">
           <div class="row">

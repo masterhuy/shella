@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-24 03:17:46
+/* Smarty version 3.1.33, created on 2019-07-15 05:37:50
   from 'D:\xamppp\htdocs\jms_shella\themes\jms_shella\templates\customer\history.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d10791a16c735_90663567',
+  'unifunc' => 'content_5d2c496e20f580_03805900',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '36d78f5a8a73317ff3d03fd646e07b792f4c382f' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_shella\\themes\\jms_shella\\templates\\customer\\history.tpl',
-      1 => 1558585495,
+      1 => 1563183467,
       2 => 'file',
     ),
   ),
@@ -20,30 +20,30 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d10791a16c735_90663567 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d2c496e20f580_03805900 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_4567969065d10791a11e533_73797261', 'page_title');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_13522861185d2c496e1b7738_52673793', 'page_title');
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12901038795d10791a11e531_17318946', 'page_content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10970389625d2c496e1c1370_58828230', 'page_content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'customer/page.tpl');
 }
 /* {block 'page_title'} */
-class Block_4567969065d10791a11e533_73797261 extends Smarty_Internal_Block
+class Block_13522861185d2c496e1b7738_52673793 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_title' => 
   array (
-    0 => 'Block_4567969065d10791a11e533_73797261',
+    0 => 'Block_13522861185d2c496e1b7738_52673793',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -56,12 +56,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'page_title'} */
 /* {block 'page_content'} */
-class Block_12901038795d10791a11e531_17318946 extends Smarty_Internal_Block
+class Block_10970389625d2c496e1c1370_58828230 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_content' => 
   array (
-    0 => 'Block_12901038795d10791a11e531_17318946',
+    0 => 'Block_10970389625d2c496e1c1370_58828230',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -125,7 +125,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['order']->value) {
             </td>
             <td class="text-xs-center order-actions">
               <a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['order']->value['details']['details_url'], ENT_QUOTES, 'UTF-8');?>
-" data-link-action="view-order-details" class="btn-default btn-effect">
+" data-link-action="view-order-details" class="btn-default btn-effect sm-mb-10">
                 <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Details','d'=>'Shop.Theme.CustomerAccount'),$_smarty_tpl ) );?>
 
               </a>
@@ -153,8 +153,8 @@ foreach ($_from as $_smarty_tpl->tpl_vars['order']->value) {
           <div class="row">
             <div class="col-xs-10">
               <a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['order']->value['details']['details_url'], ENT_QUOTES, 'UTF-8');?>
-"><h3><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['order']->value['details']['reference'], ENT_QUOTES, 'UTF-8');?>
-</h3></a>
+"><h5><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['order']->value['details']['reference'], ENT_QUOTES, 'UTF-8');?>
+</h5></a>
               <div class="date"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['order']->value['details']['order_date'], ENT_QUOTES, 'UTF-8');?>
 </div>
               <div class="total"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['order']->value['totals']['total']['value'], ENT_QUOTES, 'UTF-8');?>

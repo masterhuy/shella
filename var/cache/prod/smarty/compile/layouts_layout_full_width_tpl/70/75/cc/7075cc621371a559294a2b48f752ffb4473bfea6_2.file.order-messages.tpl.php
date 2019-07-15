@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-24 03:16:40
+/* Smarty version 3.1.33, created on 2019-07-15 06:14:29
   from 'D:\xamppp\htdocs\jms_shella\themes\jms_shella\templates\customer\_partials\order-messages.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d1078d85ad601_49555826',
+  'unifunc' => 'content_5d2c52052f4279_50880627',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7075cc621371a559294a2b48f752ffb4473bfea6' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_shella\\themes\\jms_shella\\templates\\customer\\_partials\\order-messages.tpl',
-      1 => 1558585495,
+      1 => 1563185627,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d1078d85ad601_49555826 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d2c52052f4279_50880627 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['order']->value['messages']) {?>
 <div class="box messages">
   <h3><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Messages','d'=>'Shop.Theme.CustomerAccount'),$_smarty_tpl ) );?>
@@ -54,8 +54,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 " method="post">
 
     <header>
-      <h3><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Add a message','d'=>'Shop.Theme.CustomerAccount'),$_smarty_tpl ) );?>
-</h3>
+      <h4><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Add a message','d'=>'Shop.Theme.CustomerAccount'),$_smarty_tpl ) );?>
+</h4>
       <p><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'If you would like to add a comment about your order, please write it in the field below.','d'=>'Shop.Theme.CustomerAccount'),$_smarty_tpl ) );?>
 </p>
     </header>
@@ -97,7 +97,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
     <footer class="form-footer text-xs-center">
       <input type="hidden" name="id_order" value="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['order']->value['details']['id'], ENT_QUOTES, 'UTF-8');?>
 ">
-      <button type="submit" name="submitMessage" class="btn btn-default btn-effect form-control-submit">
+      <button type="submit" name="submitMessage" class="btn-default">
         <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Send','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
 
       </button>

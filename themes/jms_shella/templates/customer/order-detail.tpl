@@ -34,17 +34,17 @@
       <div class="box">
           <div class="row">
             <div class="col-md-{if $order.details.reorder_url}9{else}12{/if} col-xs-12">
-              <strong>
+              <p>
                 {l
                   s='Order Reference %reference% - placed on %date%'
                   d='Shop.Theme.CustomerAccount'
                   sprintf=['%reference%' => $order.details.reference, '%date%' => $order.details.order_date]
                 }
-              </strong>
+              </p>
             </div>
             {if $order.details.reorder_url}
               <div class="col-md-3 text-xs-right col-xs-12">
-                <a href="{$order.details.reorder_url}" class="btn-default btn-effect">{l s='Reorder' d='Shop.Theme.Actions'}</a>
+                <a href="{$order.details.reorder_url}" class="btn-default pull-right">{l s='Reorder' d='Shop.Theme.Actions'}</a>
               </div>
             {/if}
             <div class="clearfix"></div>
@@ -53,8 +53,8 @@
 
       <div class="box">
           <ul>
-            <li><strong>{l s='Carrier' d='Shop.Theme.Checkout'}</strong> {$order.carrier.name}</li>
-            <li><strong>{l s='Payment method' d='Shop.Theme.Checkout'}</strong> {$order.details.payment}</li>
+            <li><span>{l s='Carrier' d='Shop.Theme.Checkout'}</span>: {$order.carrier.name}</li>
+            <li><span>{l s='Payment method' d='Shop.Theme.Checkout'}</span>: {$order.details.payment}</li>
 
             {if $order.details.invoice_url}
               <li>
@@ -81,7 +81,7 @@
 
   {block name='order_history'}
     <section id="order-history" class="box">
-      <h3>{l s='Follow your order\'s status step-by-step' d='Shop.Theme.CustomerAccount'}</h3>
+      <h5 class="text-uppercase">{l s='Follow your order\'s status step-by-step' d='Shop.Theme.CustomerAccount'}</h5>
       <table class="table table-striped table-bordered table-labeled hidden-xs-down">
         <thead class="thead-default">
           <tr>
@@ -185,19 +185,19 @@
             <div class="shipping-line">
               <ul>
                 <li>
-                  <strong>{l s='Date' d='Shop.Theme'}</strong> {$line.shipping_date}
+                  <span>{l s='Date' d='Shop.Theme'}</span> {$line.shipping_date}
                 </li>
                 <li>
-                  <strong>{l s='Carrier' d='Shop.Theme.Checkout'}</strong> {$line.carrier_name}
+                  <span>{l s='Carrier' d='Shop.Theme.Checkout'}</span> {$line.carrier_name}
                 </li>
                 <li>
-                  <strong>{l s='Weight' d='Shop.Theme.Checkout'}</strong> {$line.shipping_weight}
+                  <span>{l s='Weight' d='Shop.Theme.Checkout'}</span> {$line.shipping_weight}
                 </li>
                 <li>
-                  <strong>{l s='Shipping cost' d='Shop.Theme.Checkout'}</strong> {$line.shipping_cost}
+                  <span>{l s='Shipping cost' d='Shop.Theme.Checkout'}</span> {$line.shipping_cost}
                 </li>
                 <li>
-                  <strong>{l s='Tracking number' d='Shop.Theme.Checkout'}</strong> {$line.tracking}
+                  <span>{l s='Tracking number' d='Shop.Theme.Checkout'}</span> {$line.tracking}
                 </li>
               </ul>
             </div>

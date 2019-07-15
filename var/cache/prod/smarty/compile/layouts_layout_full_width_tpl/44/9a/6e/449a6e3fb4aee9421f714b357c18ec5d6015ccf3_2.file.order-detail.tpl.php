@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-24 03:16:39
+/* Smarty version 3.1.33, created on 2019-07-15 06:14:27
   from 'D:\xamppp\htdocs\jms_shella\themes\jms_shella\templates\customer\order-detail.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d1078d7474de8_98275903',
+  'unifunc' => 'content_5d2c5203c13c76_56382117',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '449a6e3fb4aee9421f714b357c18ec5d6015ccf3' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_shella\\themes\\jms_shella\\templates\\customer\\order-detail.tpl',
-      1 => 1558585495,
+      1 => 1563185404,
       2 => 'file',
     ),
   ),
@@ -23,30 +23,30 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:customer/_partials/order-messages.tpl' => 1,
   ),
 ),false)) {
-function content_5d1078d7474de8_98275903 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d2c5203c13c76_56382117 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12257715565d1078d73ffae6_84331986', 'page_title');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_11128816005d2c5203baa4d2_15525660', 'page_title');
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14045800975d1078d73ffae0_58798865', 'page_content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_19737493945d2c5203bae355_92654227', 'page_content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'customer/page.tpl');
 }
 /* {block 'page_title'} */
-class Block_12257715565d1078d73ffae6_84331986 extends Smarty_Internal_Block
+class Block_11128816005d2c5203baa4d2_15525660 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_title' => 
   array (
-    0 => 'Block_12257715565d1078d73ffae6_84331986',
+    0 => 'Block_11128816005d2c5203baa4d2_15525660',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -59,7 +59,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'page_title'} */
 /* {block 'order_infos'} */
-class Block_416914295d1078d73ffae4_46033890 extends Smarty_Internal_Block
+class Block_1816161345d2c5203bae356_43310404 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -68,15 +68,15 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
       <div class="box">
           <div class="row">
             <div class="col-md-<?php if ($_smarty_tpl->tpl_vars['order']->value['details']['reorder_url']) {?>9<?php } else { ?>12<?php }?> col-xs-12">
-              <strong>
+              <p>
                 <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Order Reference %reference% - placed on %date%','d'=>'Shop.Theme.CustomerAccount','sprintf'=>array('%reference%'=>$_smarty_tpl->tpl_vars['order']->value['details']['reference'],'%date%'=>$_smarty_tpl->tpl_vars['order']->value['details']['order_date'])),$_smarty_tpl ) );?>
 
-              </strong>
+              </p>
             </div>
             <?php if ($_smarty_tpl->tpl_vars['order']->value['details']['reorder_url']) {?>
               <div class="col-md-3 text-xs-right col-xs-12">
                 <a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['order']->value['details']['reorder_url'], ENT_QUOTES, 'UTF-8');?>
-" class="btn-default btn-effect"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Reorder','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
+" class="btn-default pull-right"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Reorder','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
 </a>
               </div>
             <?php }?>
@@ -86,11 +86,11 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 
       <div class="box">
           <ul>
-            <li><strong><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Carrier','d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>
-</strong> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['order']->value['carrier']['name'], ENT_QUOTES, 'UTF-8');?>
+            <li><span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Carrier','d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>
+</span>: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['order']->value['carrier']['name'], ENT_QUOTES, 'UTF-8');?>
 </li>
-            <li><strong><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Payment method','d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>
-</strong> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['order']->value['details']['payment'], ENT_QUOTES, 'UTF-8');?>
+            <li><span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Payment method','d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>
+</span>: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['order']->value['details']['payment'], ENT_QUOTES, 'UTF-8');?>
 </li>
 
             <?php if ($_smarty_tpl->tpl_vars['order']->value['details']['invoice_url']) {?>
@@ -125,14 +125,14 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'order_infos'} */
 /* {block 'order_history'} */
-class Block_11392332905d1078d7426be2_19324947 extends Smarty_Internal_Block
+class Block_21193815745d2c5203bd15e5_61251843 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
     <section id="order-history" class="box">
-      <h3><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Follow your order\'s status step-by-step','d'=>'Shop.Theme.CustomerAccount'),$_smarty_tpl ) );?>
-</h3>
+      <h5 class="text-uppercase"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Follow your order\'s status step-by-step','d'=>'Shop.Theme.CustomerAccount'),$_smarty_tpl ) );?>
+</h5>
       <table class="table table-striped table-bordered table-labeled hidden-xs-down">
         <thead class="thead-default">
           <tr>
@@ -195,7 +195,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 }
 /* {/block 'order_history'} */
 /* {block 'addresses'} */
-class Block_12467106255d1078d744dce1_86581431 extends Smarty_Internal_Block
+class Block_16475849905d2c5203be8ce4_15284869 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -227,7 +227,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'addresses'} */
 /* {block 'order_detail'} */
-class Block_16219836085d1078d744dce1_70362319 extends Smarty_Internal_Block
+class Block_19179882095d2c5203bf4864_30103546 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -244,7 +244,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'order_detail'} */
 /* {block 'order_carriers'} */
-class Block_1814439745d1078d744dce5_42915706 extends Smarty_Internal_Block
+class Block_2379960185d2c5203bfc567_25883174 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -299,28 +299,28 @@ foreach ($_from as $_smarty_tpl->tpl_vars['line']->value) {
             <div class="shipping-line">
               <ul>
                 <li>
-                  <strong><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Date','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
-</strong> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['line']->value['shipping_date'], ENT_QUOTES, 'UTF-8');?>
+                  <span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Date','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
+</span> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['line']->value['shipping_date'], ENT_QUOTES, 'UTF-8');?>
 
                 </li>
                 <li>
-                  <strong><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Carrier','d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>
-</strong> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['line']->value['carrier_name'], ENT_QUOTES, 'UTF-8');?>
+                  <span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Carrier','d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>
+</span> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['line']->value['carrier_name'], ENT_QUOTES, 'UTF-8');?>
 
                 </li>
                 <li>
-                  <strong><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Weight','d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>
-</strong> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['line']->value['shipping_weight'], ENT_QUOTES, 'UTF-8');?>
+                  <span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Weight','d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>
+</span> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['line']->value['shipping_weight'], ENT_QUOTES, 'UTF-8');?>
 
                 </li>
                 <li>
-                  <strong><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Shipping cost','d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>
-</strong> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['line']->value['shipping_cost'], ENT_QUOTES, 'UTF-8');?>
+                  <span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Shipping cost','d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>
+</span> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['line']->value['shipping_cost'], ENT_QUOTES, 'UTF-8');?>
 
                 </li>
                 <li>
-                  <strong><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Tracking number','d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>
-</strong> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['line']->value['tracking'], ENT_QUOTES, 'UTF-8');?>
+                  <span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Tracking number','d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>
+</span> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['line']->value['tracking'], ENT_QUOTES, 'UTF-8');?>
 
                 </li>
               </ul>
@@ -337,7 +337,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 }
 /* {/block 'order_carriers'} */
 /* {block 'order_messages'} */
-class Block_15869311705d1078d7474de7_00281190 extends Smarty_Internal_Block
+class Block_7141869685d2c5203c0fdf2_21247655 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -349,48 +349,48 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'order_messages'} */
 /* {block 'page_content'} */
-class Block_14045800975d1078d73ffae0_58798865 extends Smarty_Internal_Block
+class Block_19737493945d2c5203bae355_92654227 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_content' => 
   array (
-    0 => 'Block_14045800975d1078d73ffae0_58798865',
+    0 => 'Block_19737493945d2c5203bae355_92654227',
   ),
   'order_infos' => 
   array (
-    0 => 'Block_416914295d1078d73ffae4_46033890',
+    0 => 'Block_1816161345d2c5203bae356_43310404',
   ),
   'order_history' => 
   array (
-    0 => 'Block_11392332905d1078d7426be2_19324947',
+    0 => 'Block_21193815745d2c5203bd15e5_61251843',
   ),
   'addresses' => 
   array (
-    0 => 'Block_12467106255d1078d744dce1_86581431',
+    0 => 'Block_16475849905d2c5203be8ce4_15284869',
   ),
   'order_detail' => 
   array (
-    0 => 'Block_16219836085d1078d744dce1_70362319',
+    0 => 'Block_19179882095d2c5203bf4864_30103546',
   ),
   'order_carriers' => 
   array (
-    0 => 'Block_1814439745d1078d744dce5_42915706',
+    0 => 'Block_2379960185d2c5203bfc567_25883174',
   ),
   'order_messages' => 
   array (
-    0 => 'Block_15869311705d1078d7474de7_00281190',
+    0 => 'Block_7141869685d2c5203c0fdf2_21247655',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
   <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_416914295d1078d73ffae4_46033890', 'order_infos', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1816161345d2c5203bae356_43310404', 'order_infos', $this->tplIndex);
 ?>
 
 
   <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_11392332905d1078d7426be2_19324947', 'order_history', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_21193815745d2c5203bd15e5_61251843', 'order_history', $this->tplIndex);
 ?>
 
 
@@ -405,7 +405,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_11392332905d1078d7
   <?php }?>
 
   <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12467106255d1078d744dce1_86581431', 'addresses', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_16475849905d2c5203be8ce4_15284869', 'addresses', $this->tplIndex);
 ?>
 
 
@@ -413,17 +413,17 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12467106255d1078d7
 
 
   <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_16219836085d1078d744dce1_70362319', 'order_detail', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_19179882095d2c5203bf4864_30103546', 'order_detail', $this->tplIndex);
 ?>
 
 
   <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1814439745d1078d744dce5_42915706', 'order_carriers', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2379960185d2c5203bfc567_25883174', 'order_carriers', $this->tplIndex);
 ?>
 
 
   <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15869311705d1078d7474de7_00281190', 'order_messages', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7141869685d2c5203c0fdf2_21247655', 'order_messages', $this->tplIndex);
 ?>
 
 <?php

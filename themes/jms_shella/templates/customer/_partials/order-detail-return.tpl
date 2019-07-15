@@ -242,7 +242,7 @@
   </section>
   <footer class="form-footer">
     <input type="hidden" name="id_order" value="{$order.details.id}">
-    <button class="form-control-submit btn btn-default btn-effect" type="submit" name="submitReturnMerchandise">
+    <button class="btn-default" type="submit" name="submitReturnMerchandise">
       {l s='Request a return' d='Shop.Theme.CustomerAccount'}
     </button>
   </footer>

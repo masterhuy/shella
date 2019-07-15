@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-24 06:01:20
+/* Smarty version 3.1.33, created on 2019-07-15 05:08:25
   from 'D:\xamppp\htdocs\jms_shella\pdf\invoice.tax-tab.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d109f70532804_85732179',
+  'unifunc' => 'content_5d2c42893a22f7_87813076',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d109f70532804_85732179 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d2c42893a22f7_87813076 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!--  TAX DETAILS -->
 <?php if ($_smarty_tpl->tpl_vars['tax_exempt']->value) {?>

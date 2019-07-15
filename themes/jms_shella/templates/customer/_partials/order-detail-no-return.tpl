@@ -37,7 +37,7 @@
       <tr>
 		<td class="product-image"><img src="{$product.cover.bySize.home_default.url}" /></td>
         <td>
-          <strong>{$product.name}</strong><br/>
+          <span>{$product.name}</span><br/>
           {if $product.reference}
             {l s='Reference' d='Shop.Theme.Catalog'}: {$product.reference}<br/>
           {/if}
@@ -159,13 +159,13 @@
   {foreach $order.subtotals as $line}
     {if $line.value}
       <div class="order-total row">
-        <div class="col-xs-8"><strong>{$line.label}</strong></div>
+        <div class="col-xs-8">{$line.label}</div>
         <div class="col-xs-4 text-xs-right">{$line.value}</div>
       </div>
     {/if}
   {/foreach}
   <div class="order-total row">
-    <div class="col-xs-8"><strong>{$order.totals.total.label}</strong></div>
+    <div class="col-xs-8">{$order.totals.total.label}</div>
     <div class="col-xs-4 text-xs-right">{$order.totals.total.value}</div>
   </div>
 </div>

@@ -216,7 +216,12 @@
     background: rgba(255, 255, 255, 0.9);
     -webkit-transition: .4s all;
     -o-transition: .4s all;
-    transition: .4s all; }
+    transition: .4s all;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform; }
   .banner-category .banner-content ul {
     position: absolute;
     top: 20px;
@@ -813,11 +818,11 @@
   -webkit-box-shadow: unset;
   box-shadow: unset; }
 
-#product-modal #thumbnails {
-  display: none; }
-
 #product-modal .modal-dialog {
   width: 800px; }
+
+#thumbnails ul li {
+  margin-bottom: 10px; }
 
 #search_widget h3 {
   display: none; }
@@ -1616,12 +1621,9 @@ a.wishlist_top {
   .post-comment-info .left h6 {
     padding-bottom: 11px;
     font-size: 14px;
-    margin-top: 0;
-    color: #888; }
+    margin-top: 0; }
     .post-comment-info .left h6 span {
-      font-weight: 600;
-      font-size: 16px;
-      color: #000; }
+      color: #141414; }
   .post-comment-info .left .title {
     margin-bottom: 12px; }
     .post-comment-info .left .title p {
@@ -3144,6 +3146,8 @@ a.wishlist_top {
   cursor: pointer; }
 
 @media (min-width: 1200px) {
+  .page-index .product-preview .product-info {
+    min-height: 85px; }
   .product-detail.thumbslist .images-container .js-qv-mask ul li.thumb-container:nth-child(5n) img {
     margin-right: 0; }
   .rte.about-us .container {
@@ -3163,6 +3167,10 @@ a.wishlist_top {
       min-width: 270px; }
   div.blog-carousel .post-info {
     margin-top: 0; } }
+
+@media (min-width: 768px) {
+  .hidden-md-up {
+    display: none !important; } }
 
 @media (max-width: 1366px) {
   .fancybox-margin {
@@ -3224,6 +3232,8 @@ a.wishlist_top {
     width: 113px; } }
 
 @media (max-width: 991px) {
+  .sm-mb-10 {
+    margin-bottom: 10px !important; }
   #header {
     border-bottom: 1px solid #e5e5e5; }
   .home_2 #footer .footer-social, .home_9 #footer .footer-social, .home_10 #footer .footer-social {
@@ -3316,6 +3326,8 @@ a.wishlist_top {
     margin-bottom: 15px; } }
 
 @media (max-width: 767px) {
+  .hidden-sm-down {
+    display: none !important; }
   div.jms-banner .banner-content .banner-title {
     font-size: 16px; }
   div.banner-bg,

@@ -43,7 +43,7 @@
   <form action="{$urls.pages.order_detail}" method="post">
 
     <header>
-      <h3>{l s='Add a message' d='Shop.Theme.CustomerAccount'}</h3>
+      <h4>{l s='Add a message' d='Shop.Theme.CustomerAccount'}</h4>
       <p>{l s='If you would like to add a comment about your order, please write it in the field below.' d='Shop.Theme.CustomerAccount'}</p>
     </header>
 
@@ -72,7 +72,7 @@
 
     <footer class="form-footer text-xs-center">
       <input type="hidden" name="id_order" value="{$order.details.id}">
-      <button type="submit" name="submitMessage" class="btn btn-default btn-effect form-control-submit">
+      <button type="submit" name="submitMessage" class="btn-default">
         {l s='Send' d='Shop.Theme.Actions'}
       </button>
     </footer>

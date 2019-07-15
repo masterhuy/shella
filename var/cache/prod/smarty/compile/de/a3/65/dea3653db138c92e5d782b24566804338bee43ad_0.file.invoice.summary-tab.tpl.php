@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-24 06:01:20
+/* Smarty version 3.1.33, created on 2019-07-15 05:08:25
   from 'D:\xamppp\htdocs\jms_shella\pdf\invoice.summary-tab.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d109f70580a15_33334449',
+  'unifunc' => 'content_5d2c42893f8201_49657435',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d109f70580a15_33334449 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d2c42893f8201_49657435 (Smarty_Internal_Template $_smarty_tpl) {
 ?><table id="summary-tab" width="100%">
 	<tr>
 		<th class="header small" valign="middle"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Invoice Number','d'=>'Shop.Pdf','pdf'=>'true'),$_smarty_tpl ) );?>
