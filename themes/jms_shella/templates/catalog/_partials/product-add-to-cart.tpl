@@ -45,7 +45,7 @@
                 <div class="add">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mb-10">
-                            <button class="btn-default active ajax-add-to-cart product-btn {if $product.quantity < 1}disabled{/if} cart-button" {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Sold Out' d='Shop.Theme.Actions'}{else}{l s='Add to Cart' d='Shop.Theme.Actions'}{/if}"  {if $product.quantity < 1}disabled{/if} data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}" {if !$product.add_to_cart_url}disabled{/if}>
+                            <button title="{if $product.quantity < 1}{l s='Sold Out' d='Shop.Theme.Actions'}{else}{l s='Add to Cart' d='Shop.Theme.Actions'}{/if}" class="btn-default active add-to-cart product-btn cart-button {if $product.quantity < 1}disabled{/if}" data-button-action="add-to-cart" type="submit" {if !$product.add_to_cart_url}disabled{/if}>
                                 <span class="la la-spin la-spinner"></span>
                                 <span class="la la-check">
                                     <i class="d-flex">

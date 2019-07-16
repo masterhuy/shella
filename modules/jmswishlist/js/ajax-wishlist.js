@@ -297,7 +297,7 @@ function WishlistDelete(id, id_wishlist, msg)
 			{
 				var td_default = $("#wishlist_"+data.id_default+" > .wishlist_default");
 				$("#wishlist_"+data.id_default+" > .wishlist_default > a").remove();
-				td_default.append('<p class="is_wish_list_default"><i class="icon icon-check-square"></i></p>');
+				td_default.append('<p class="is_wish_list_default"><img src="themes/jms_shella/assets/img/icon/checked.png"></p>');
 			}
 		}
 	});

@@ -29,10 +29,13 @@
 #header {
   position: relative; }
 
+.modal-open .header.fixed, .modal-open .menu.fixed {
+  z-index: 998; }
+
 .popup_home {
   margin-top: -2px; }
 
-.open-search.modal-open .menu.fixed {
+.open-search.modal-open .menu.fixed, .open-search.modal-open .header.fixed {
   z-index: 999; }
 
 .icon {
@@ -41,11 +44,14 @@
   min-height: 20px; }
 
 .addon-alertbox p {
-  display: inline-block; }
+  display: inline-block;
+  margin-bottom: 0; }
 
 .addon-alertbox .close {
   opacity: 1;
-  margin-left: 15px; }
+  position: absolute;
+  right: -35px;
+  top: 0; }
 
 .addon-alertbox .icon {
   fill: #858585; }
@@ -2707,7 +2713,7 @@ a.wishlist_top {
     margin-left: 48px; }
 
 #jms_ajax_search #ajax_search {
-  background: #fff url("../img/icon/search-bg.png") no-repeat right; }
+  background: #fff url("../img/icon/search-bg.png") no-repeat right 0px; }
 
 .mega-tab-center .mega_cates_tab .addon-desc {
   margin-bottom: 44px; }

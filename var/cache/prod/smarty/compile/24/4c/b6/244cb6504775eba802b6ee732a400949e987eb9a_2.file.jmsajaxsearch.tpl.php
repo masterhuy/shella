@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-07-15 06:21:51
+/* Smarty version 3.1.33, created on 2019-07-16 04:17:35
   from 'D:\xamppp\htdocs\jms_shella\themes\jms_shella\modules\jmsajaxsearch\views\templates\hook\jmsajaxsearch.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d2c53bfec8c40_12461595',
+  'unifunc' => 'content_5d2d881f782643_97379607',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '244cb6504775eba802b6ee732a400949e987eb9a' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_shella\\themes\\jms_shella\\modules\\jmsajaxsearch\\views\\templates\\hook\\jmsajaxsearch.tpl',
-      1 => 1559113225,
+      1 => 1563259238,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d2c53bfec8c40_12461595 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d2d881f782643_97379607 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="btn-group menu-collapse compact-hidden jms_ajax_search" id="jms_ajax_search">
 	<a href="#" class="btn-search" data-toggle="modal" data-target="#search-form">
 		<span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Search','d'=>'Modules.JmsAjaxsearch'),$_smarty_tpl ) );?>
@@ -50,7 +50,7 @@ function content_5d2c53bfec8c40_12461595 (Smarty_Internal_Template $_smarty_tpl)
 						<input type="hidden" name="controller" value="search" />
 						<input type="hidden" name="orderby" value="position" />
 						<input type="hidden" name="orderway" value="desc" />
-						<input autofocus type="text" id="ajax_search" name="search_query" placeholder="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Search products...','d'=>'Modules.JmsAjaxsearch'),$_smarty_tpl ) );?>
+						<input autofocus type="text" id="ajax_search" name="search_query" placeholder="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Search Products...','d'=>'Modules.JmsAjaxsearch'),$_smarty_tpl ) );?>
 " class="form-control ajax_search" />
 					</form>
 					<div id="search_result"></div>

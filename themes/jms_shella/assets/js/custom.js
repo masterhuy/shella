@@ -1033,9 +1033,9 @@ $(document).ready(function() {
 		$("body").addClass("open-search");
 	});
 
-	if ($("#product .product-detail").hasClass("carousel")){
-		$("#product").addClass("product-layout-carousel");
-	}
+	$("#product .thumbslist .product-cover .layer").click(function(event) {
+		$("body").removeClass("open-search");
+	});
 
 	$('.jms-addon.jms-video').click(function() {
 		$('.jms-row.video').addClass('show-video');

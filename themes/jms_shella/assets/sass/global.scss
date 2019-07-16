@@ -38,11 +38,20 @@
 #header{
 	position: relative;
 }
+.modal-open{
+	.header, .menu{
+		&.fixed{
+			z-index: 998;
+		}
+	}
+}
 .popup_home{
 	margin-top: -2px;
 }
-.open-search.modal-open .menu.fixed{
-	z-index: 999;
+.open-search.modal-open{
+	.menu.fixed, .header.fixed{
+		z-index: 999;
+	}
 }
 .icon {
 	width: 20px;
@@ -53,10 +62,13 @@
 .addon-alertbox{
 	p{
 		display: inline-block;
+		margin-bottom: 0;
 	}
 	.close{
 		opacity: 1;
-		margin-left: 15px;
+		position: absolute;
+		right: -35px;
+		top: 0;
 	}
 	.icon{
 		fill: #858585;
@@ -3310,7 +3322,7 @@ a.wishlist_top{
 
 //ajaxsearch
 #jms_ajax_search #ajax_search{
-	background: #fff url("../img/icon/search-bg.png") no-repeat right;
+	background: #fff url("../img/icon/search-bg.png") no-repeat right 0px;
 }
 //
 

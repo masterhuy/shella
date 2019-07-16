@@ -26,7 +26,7 @@
 
 {block name='form_buttons'}
   <button
-    class="btn-default continue btn btn-primary pull-xs-right button-small"
+    class="btn-default pull-xs-right"
     name="continue"
     data-link-action="sign-in"
     type="submit"

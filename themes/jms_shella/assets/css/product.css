@@ -23,7 +23,6 @@
     color: #141414;
 }
 .block-categories .sub-list li a {
-    font-size: 14px;
     text-transform: capitalize;
     font-weight: 400;
 }
@@ -42,9 +41,11 @@
     width: 30px;
     cursor: pointer;
     float: right;
-    height: 30px;
+    height: 29px;
     align-items: center;
     justify-content: flex-end;
+    position: absolute;
+    right: 0;
 }
 .block-categories .cat-item .sub-list {
     padding-left: 23px;
@@ -465,6 +466,12 @@
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 20px;
+}
+.product-quantity .product-btn.checking .la-spin {
+    width: 12px;
+    height: 12px;
+    position: relative;
+    top: 10px;
 }
 .product-price.h5.has-discount {
     display: none;

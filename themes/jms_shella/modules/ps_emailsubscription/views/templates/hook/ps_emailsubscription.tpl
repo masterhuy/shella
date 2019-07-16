@@ -33,7 +33,7 @@
         	<div  class="block_c_right">
 				<form action="{$urls.pages.index}#footer" method="post">
 					<div class="form-group{if isset($msg) && $msg} {if $nw_error}form-error{else}form-ok{/if}{/if}" >
-						<input class="inputNew form-control grey newsletter-input" id="newsletter-input" type="text" name="email" size="18" value="{$value}" placeholder="{l s='Enter your email address' d='Shop.Forms.Labels'}" />
+						<input class="inputNew form-control grey newsletter-input" id="newsletter-input" type="text" name="email" size="18" value="{$value}" placeholder="{l s='Enter Your Email Address' d='Shop.Forms.Labels'}" />
 						<button type="submit" name="submitNewsletter" class="btn-default">
 							{l s='SUBSCRIBE!' d='Shop.Theme.Global'}
 						</button>

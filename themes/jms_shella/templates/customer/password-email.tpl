@@ -30,7 +30,13 @@
 
 {block name='page_content'}
   <form action="{$urls.pages.password}" method="post">
-
+    <ul class="ps-alert-error">
+      {foreach $errors as $error}
+        <li class="item">
+          <p>{$error}</p>
+        </li>
+      {/foreach}
+    </ul>
     <header>
       <p>{l s='Please enter the email address you used to register. You will receive a temporary link to reset your password.' d='Shop.Theme.CustomerAccount'}</p>
     </header>

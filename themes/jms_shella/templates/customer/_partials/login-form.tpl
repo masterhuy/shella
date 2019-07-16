@@ -22,8 +22,9 @@
         {l s='Login' d='Shop.Theme.Actions'}
       </button>
     {/block}
-
-    <a class="return-to-store" href="{$urls.base_url}">{l s='Return to store' d='Shop.Theme.Global'}</a>
+    <div class="d-block text-center">
+      <a class="return-to-store" href="{$urls.base_url}">{l s='Return to store' d='Shop.Theme.Global'}</a>
+    </div>
 
     <div class="forgot-password">
       <a href="{$urls.pages.password}" rel="nofollow">

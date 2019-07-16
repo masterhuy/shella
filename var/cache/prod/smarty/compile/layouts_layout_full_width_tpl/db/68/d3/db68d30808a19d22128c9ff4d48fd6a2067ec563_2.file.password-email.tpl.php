@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-07-15 03:23:04
+/* Smarty version 3.1.33, created on 2019-07-15 23:37:47
   from 'D:\xamppp\htdocs\jms_shella\themes\jms_shella\templates\customer\password-email.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d2c29d8e71c34_95817308',
+  'unifunc' => 'content_5d2d468bb9f630_35978558',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'db68d30808a19d22128c9ff4d48fd6a2067ec563' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_shella\\themes\\jms_shella\\templates\\customer\\password-email.tpl',
-      1 => 1558585495,
+      1 => 1563248252,
       2 => 'file',
     ),
   ),
@@ -20,35 +20,35 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d2c29d8e71c34_95817308 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d2d468bb9f630_35978558 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_16899964625d2c29d8e5e3a8_46304738', 'page_title');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_3231954435d2d468bb840a4_41563423', 'page_title');
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7415053355d2c29d8e62222_49715268', 'page_content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15753099905d2d468bb87f30_66888216', 'page_content');
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6125214185d2c29d8e6ddb3_72258546', 'page_footer');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_21379594605d2d468bb9b7b0_85230033', 'page_footer');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'page.tpl');
 }
 /* {block 'page_title'} */
-class Block_16899964625d2c29d8e5e3a8_46304738 extends Smarty_Internal_Block
+class Block_3231954435d2d468bb840a4_41563423 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_title' => 
   array (
-    0 => 'Block_16899964625d2c29d8e5e3a8_46304738',
+    0 => 'Block_3231954435d2d468bb840a4_41563423',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -61,12 +61,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'page_title'} */
 /* {block 'page_content'} */
-class Block_7415053355d2c29d8e62222_49715268 extends Smarty_Internal_Block
+class Block_15753099905d2d468bb87f30_66888216 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_content' => 
   array (
-    0 => 'Block_7415053355d2c29d8e62222_49715268',
+    0 => 'Block_15753099905d2d468bb87f30_66888216',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -74,7 +74,21 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 
   <form action="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['pages']['password'], ENT_QUOTES, 'UTF-8');?>
 " method="post">
-
+    <ul class="ps-alert-error">
+      <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['errors']->value, 'error');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['error']->value) {
+?>
+        <li class="item">
+          <p><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['error']->value, ENT_QUOTES, 'UTF-8');?>
+</p>
+        </li>
+      <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+    </ul>
     <header>
       <p><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Please enter the email address you used to register. You will receive a temporary link to reset your password.','d'=>'Shop.Theme.CustomerAccount'),$_smarty_tpl ) );?>
 </p>
@@ -92,7 +106,7 @@ echo htmlspecialchars(stripslashes($_POST['email']), ENT_QUOTES, 'UTF-8');
     </section>
 
     <footer class="form-footer text-xs-center">
-      <button class="form-control-submit btn-default btn-effect" name="submit" type="submit">
+      <button class="form-control-submit btn-default" name="submit" type="submit">
         <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Send reset link','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
 
       </button>
@@ -104,12 +118,12 @@ echo htmlspecialchars(stripslashes($_POST['email']), ENT_QUOTES, 'UTF-8');
 }
 /* {/block 'page_content'} */
 /* {block 'page_footer'} */
-class Block_6125214185d2c29d8e6ddb3_72258546 extends Smarty_Internal_Block
+class Block_21379594605d2d468bb9b7b0_85230033 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_footer' => 
   array (
-    0 => 'Block_6125214185d2c29d8e6ddb3_72258546',
+    0 => 'Block_21379594605d2d468bb9b7b0_85230033',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
