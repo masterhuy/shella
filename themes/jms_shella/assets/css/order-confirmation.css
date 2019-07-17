@@ -125,21 +125,12 @@
     .definition-list dl dd:nth-of-type(even),
     .definition-list dl dt:nth-of-type(even) {
       background: #f6f6f6; }
-@media(max-width:767px){
-	#order-confirmation #content-hook-order-confirmation-footer {
-		padding:0 15px;
-	}
-}
 @media(max-width:360px){
 	#order-items .order-line {
 		display: block;
 	}
 	#order-items .qty {
 		margin-top: 1rem;
-	}
-	#order-confirmation .title-block .card-title {
-		color: #fff;
-		font-size: 22px;
 	}
 }
 #payment-confirmation + #modal .modal-content {

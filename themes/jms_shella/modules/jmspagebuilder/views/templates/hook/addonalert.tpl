@@ -25,7 +25,7 @@
 *}
 <div class="addon-alertbox">
 	<div class="alert alert-{$alert_type}{if $box_class} {$box_class}{/if} d-flex flex-center">
-		<div class="d-i-block p-relative">
+		<div class="d-i-block p-relative sm-d-flex">
 			{$alert_message nofilter}
 			{if $show_close_btn}
 				<a href="#" class="close d-flex flex-center" data-dismiss="alert" aria-label="close">

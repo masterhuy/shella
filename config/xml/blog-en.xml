@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Discover the Customer Reviews module available in version 1.7.6 of PrestaShop!</title>
+    <link>https://www.prestashop.com/en/blog/customer-reviews-module</link>
+    <description>Reassurance on an online store plays a huge part in building trust between merchants and visitors.</description>
+     <pubDate>Mon, 15 Jul 2019 12:13:57 +0200</pubDate>
+ <dc:creator>Coline Ginestet</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/customer-reviews-module</guid>
+  </item>
+  <item>
     <title>New features, developments, advanced functionalities, download PrestaShop 1.7.6 now!</title>
     <link>https://www.prestashop.com/en/blog/prestashop-1-7-6</link>
     <description>So, what&#039;s new in version 1.7.6?</description>
@@ -76,14 +84,6 @@
      <pubDate>Tue, 28 May 2019 10:52:41 +0200</pubDate>
  <dc:creator>WebDesk</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/e-commerce-optimize-product-pages</guid>
-  </item>
-  <item>
-    <title>International Shipping</title>
-    <link>https://www.prestashop.com/en/blog/international-shipping</link>
-    <description>International shipping takes planning, patience, and going through a bit of red tape.</description>
-     <pubDate>Mon, 27 May 2019 10:33:12 +0200</pubDate>
- <dc:creator>shipstation</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/international-shipping</guid>
   </item>
   </channel>
 </rss>

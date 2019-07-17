@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-07-16 04:17:34
+/* Smarty version 3.1.33, created on 2019-07-17 05:58:49
   from 'D:\xamppp\htdocs\jms_shella\themes\jms_shella\modules\jmspagebuilder\views\templates\hook\addonalert.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d2d881ec7bae0_09958864',
+  'unifunc' => 'content_5d2ef159b22006_78078367',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1bae3913bb5dcbd947077988208a0c08c93d1b1a' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_shella\\themes\\jms_shella\\modules\\jmspagebuilder\\views\\templates\\hook\\addonalert.tpl',
-      1 => 1563260265,
+      1 => 1563352853,
       2 => 'file',
     ),
   ),
@@ -20,12 +20,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d2d881ec7bae0_09958864 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d2ef159b22006_78078367 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="addon-alertbox">
 	<div class="alert alert-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['alert_type']->value, ENT_QUOTES, 'UTF-8');
 if ($_smarty_tpl->tpl_vars['box_class']->value) {?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['box_class']->value, ENT_QUOTES, 'UTF-8');
 }?> d-flex flex-center">
-		<div class="d-i-block p-relative">
+		<div class="d-i-block p-relative sm-d-flex">
 			<?php echo $_smarty_tpl->tpl_vars['alert_message']->value;?>
 
 			<?php if ($_smarty_tpl->tpl_vars['show_close_btn']->value) {?>

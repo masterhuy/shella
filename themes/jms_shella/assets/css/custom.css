@@ -1966,7 +1966,7 @@ ul.cart_block_list li:not(:last-child){
 .addToWishlist {
   position: relative;
   cursor: pointer;
-  margin-left: 14px;
+  margin-left: 18px;
 }
 .tooltip-text {
   white-space: nowrap;

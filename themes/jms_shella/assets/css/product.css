@@ -375,6 +375,7 @@
 .product-quantity .product-btn.cart-button{
     height: 35px;
     padding: 0;
+    align-items: center;
 }
 .product-quantity .product-btn {
     overflow: hidden;
@@ -466,12 +467,6 @@
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 20px;
-}
-.product-quantity .product-btn.checking .la-spin {
-    width: 12px;
-    height: 12px;
-    position: relative;
-    top: 10px;
 }
 .product-price.h5.has-discount {
     display: none;

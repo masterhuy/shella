@@ -15,7 +15,7 @@
 }
 #addresses .address {
 	background: white none repeat scroll 0 0;
-	margin-bottom: 1.875rem;
+	margin-bottom: 0;
 }
 #addresses #content-wrapper .fa{
 	font-size: 12px;
@@ -33,8 +33,8 @@
 	font-size: 13px;
 }
 #addresses .address .address-footer {
-	padding: 10px 15px;
-	text-align:right;
+	padding: 10px 0px;
+	text-align: left;
 }
 #addresses .address .address-footer a:last-child {
 	margin-right:0;
@@ -44,14 +44,12 @@
 	padding:0 15px;
 }
 @media(max-width:767px) {
+	#addresses .card.card-block {
+		padding: 15px 0px;
+	}	
 	#addresses #wrapper>.row{
 		margin-right:0;
 		margin-left:0;
-	}
-}
-@media(max-width:320px) {
-	#addresses .address .address-footer {
-		padding: 10px 8px;
 	}
 }
 /* Address Page */
