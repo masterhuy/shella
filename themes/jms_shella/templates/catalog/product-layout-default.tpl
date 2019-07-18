@@ -206,6 +206,10 @@
                 </div>
                 <!-- Go to www.addthis.com/dashboard to customize your tools -->
                 <div class="addthis_inline_share_toolbox_ld1s"></div>
+                <div class="guaranteed text-center p-relative mt-30">
+                    <span>{l s='Guaranteed safe checkout' d='Shop.Theme.Catalog'}</span>
+                    <img class="img-responsive mg-auto px-15" src="themes/jms_shella/assets/img/guaranteed.png" alt="">
+                </div>
             </div>
         </div>
         

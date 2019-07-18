@@ -1919,6 +1919,19 @@ blockquote {
   border-right: solid 2px transparent;
   border-left: 0;
 }
+.thumbnails.js-thumbnails {
+  left: auto;
+  right: calc(100% + 20px);
+}
+#thumbnails.thumbnails.js-thumbnails.text-xs-center{
+  margin-right: 0;
+}
+#footer .footer-top .border-beside .contact-info p {
+  padding-right: 91px;
+  padding-left: 0;
+}
+
+
 
 
 

@@ -26,6 +26,9 @@
 .page-index #footer {
   margin-top: 0; }
 
+#woorebought-popup {
+  z-index: 992; }
+
 #footer {
   padding-top: 0;
   border-top: 0; }

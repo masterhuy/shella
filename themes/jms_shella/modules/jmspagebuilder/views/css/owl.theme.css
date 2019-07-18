@@ -60,11 +60,8 @@
 .owl-theme .owl-controls div:hover{
 	opacity: 1;
 }
-.owl-theme .owl-controls div{
-
-}
 .jms-row:hover .owl-theme .owl-controls div{
-	opacity: 0.3;
+	opacity: 1;
 	visibility: visible;
 }
 .owl-theme .owl-controls  div.owl-prev {

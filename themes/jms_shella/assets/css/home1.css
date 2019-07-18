@@ -18,6 +18,14 @@
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
 
+.banner-4:hover > a > img {
+  -webkit-transform: scale3d(1.1, 1.1, 1) translate3d(4%, 0, 0);
+  transform: scale3d(1.1, 1.1, 1) translate3d(4%, 0, 0); }
+
+.banner-4 > a > img {
+  -webkit-transform: scale3d(1.1, 1.1, 1) translate3d(0, 0, 0);
+  transform: scale3d(1.1, 1.1, 1) translate3d(0, 0, 0); }
+
 .banner-4 .banner-content .text-1 {
   font-size: 15px;
   letter-spacing: 0.7px;

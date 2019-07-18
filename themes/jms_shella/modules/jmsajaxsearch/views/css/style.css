@@ -18,6 +18,12 @@
     align-items: center;
     justify-content: flex-end;
 }
+#jms_ajax_search .btn-search:hover{
+    color: #858585;
+}
+#jms_ajax_search .btn-search:hover i{
+    fill: #858585;
+}
 #jms_ajax_search .btn-search span{
     text-transform: uppercase;
     padding-right: 6px;

@@ -93,8 +93,16 @@
     letter-spacing: 0.5px;
     display: flex;
 }
+.jms-megamenu .nav > li.open > a,
+.jms-megamenu .nav > li > a:hover{
+    color: #858585;
+}
+.jms-megamenu .nav > li.open > a i{
+    fill: #858585;
+}
 .jms-megamenu .nav > li > a i{
     display: flex;
+    transition: .4s all;
 }
 .jms-megamenu .nav > li:hover, .jms-megamenu .nav > li.open {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;

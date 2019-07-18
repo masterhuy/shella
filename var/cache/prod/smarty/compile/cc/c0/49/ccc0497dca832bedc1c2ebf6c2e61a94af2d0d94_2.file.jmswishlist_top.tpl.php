@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-07-17 05:58:50
+/* Smarty version 3.1.33, created on 2019-07-18 06:29:57
   from 'D:\xamppp\htdocs\jms_shella\themes\jms_shella\modules\jmswishlist\jmswishlist_top.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d2ef15a33aab1_81832630',
+  'unifunc' => 'content_5d304a25a97511_63105854',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d2ef15a33aab1_81832630 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d304a25a97511_63105854 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">
     var loggin_required= '<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['loggin_required']->value, ENT_QUOTES, 'UTF-8');?>

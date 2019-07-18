@@ -115,6 +115,16 @@
 		p{
 			margin-bottom: 0;
 		}
+		a:hover svg{
+			fill: #858585;
+		}
+	}
+	.open > a,
+	.btn-xs:hover{
+		color: #858585;
+	}
+	.open a svg{
+		fill: #858585;
 	}
 	.languages-info, .currency-info{
 		margin-right: -6px;
@@ -307,6 +317,7 @@
 			background: rgba(255,255,255,0.9);
 			transition: .4s all;
 			transform: scale(0);
+			box-shadow: 0 0 1px #141414;
 			li{
 				&.group{
 					a{
@@ -1760,7 +1771,7 @@ a.wishlist_top{
 		}
 	}
 	#footer {
-		margin-top: 34px;
+		margin-top: 78px;
 	}
 }
 #search #content .search-box {
@@ -2354,6 +2365,25 @@ a.wishlist_top{
 	}
 
 }
+
+//guaranteed
+.guaranteed{
+	padding: 10px 0 15px;
+	border: 1px solid #e5e5e5;
+	span{
+		font-size: 15px;
+		line-height: 21px;
+		padding: 0 15px;
+		color: $subcolor;
+		background: #fff;
+		position: absolute;
+		top: -11px;
+		left: 50%;
+		transform: translateX(-50%);
+		min-width: 215px;
+	}
+}
+//
 
 //flashsaletab2
 .jmsflashsales-tab2{

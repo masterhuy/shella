@@ -132,11 +132,11 @@ jQuery(function ($) {
 			},
 			rtl: rtl,
 			margin: 30,
-			nav: true,
-			dots: false,
-			autoplay: false,
+			nav: false,
+			dots: true,
+			autoplay: true,
 			slideSpeed: 200,
-			loop:true,
+			loop: true
 		});
 	}
     

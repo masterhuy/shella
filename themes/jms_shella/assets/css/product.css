@@ -376,6 +376,7 @@
     height: 35px;
     padding: 0;
     align-items: center;
+    transition: unset;
 }
 .product-quantity .product-btn {
     overflow: hidden;
@@ -383,7 +384,6 @@
     text-align: center;
     margin: 0;
     display: flex;
-    transition: unset;
 }
 .product-quantity .add .row{
     margin: 0 -5px;
@@ -561,8 +561,6 @@
 	margin:0;
 }
 .pb-right-column .product-add-to-cart {
-    margin-bottom: 22px;
-    padding-bottom: 18px;
     margin-top: 31px;
 }
 #product-availability img {

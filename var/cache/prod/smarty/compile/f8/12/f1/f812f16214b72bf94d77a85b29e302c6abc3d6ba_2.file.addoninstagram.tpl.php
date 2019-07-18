@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-07-17 05:37:36
+/* Smarty version 3.1.33, created on 2019-07-18 06:29:56
   from 'D:\xamppp\htdocs\jms_shella\themes\jms_shella\modules\jmspagebuilder\views\templates\hook\addoninstagram.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d2eec60e0fa53_87032586',
+  'unifunc' => 'content_5d304a24a5c7f2_41397729',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f812f16214b72bf94d77a85b29e302c6abc3d6ba' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_shella\\themes\\jms_shella\\modules\\jmspagebuilder\\views\\templates\\hook\\addoninstagram.tpl',
-      1 => 1559013419,
+      1 => 1563439874,
       2 => 'file',
     ),
   ),
@@ -20,16 +20,16 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d2eec60e0fa53_87032586 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d304a24a5c7f2_41397729 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="addon-instagram">
 	<div class="addon-title">
 		<h3>
-			<span class="text-underline">
-				<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'@Shella','d'=>'Modules.JmsPagebuilder'),$_smarty_tpl ) );?>
+			<a href="https://www.instagram.com/shellatemplate" target="_blank">
+				<span class="text-underline"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'@Shella','d'=>'Modules.JmsPagebuilder'),$_smarty_tpl ) );?>
+</span>
+				<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Follow Us On Instagram','d'=>'Modules.JmsPagebuilder'),$_smarty_tpl ) );?>
 
-			</span>
-			<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Follow Us On Instagram','d'=>'Modules.JmsPagebuilder'),$_smarty_tpl ) );?>
-
+			</a>
 		</h3>
 	</div>
 	<div class="instagram-carousel">
