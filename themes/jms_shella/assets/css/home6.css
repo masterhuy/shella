@@ -10,9 +10,16 @@
   .menu #jms_ajax_search .btn-search {
     color: #fff; }
 
-.jms-banner > a {
+.jms-banner.type-2:hover > a img {
+  -webkit-transform: scale3d(1.1, 1.1, 1) translate3d(0, -4%, 0);
+  transform: scale3d(1.1, 1.1, 1) translate3d(0, -4%, 0); }
+
+.jms-banner.type-2 > a {
   display: block;
   overflow: hidden; }
+  .jms-banner.type-2 > a img {
+    -webkit-transform: scale3d(1.1, 1.1, 1) translate3d(0, 4%, 0);
+    transform: scale3d(1.1, 1.1, 1) translate3d(0, 4%, 0); }
 
 .jms-banner .banner-content {
   position: unset;

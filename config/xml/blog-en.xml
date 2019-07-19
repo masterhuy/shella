@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Essential inventory management tips for eCommerce businesses</title>
+    <link>https://www.prestashop.com/en/blog/inventory-management-tips</link>
+    <description>Inventory management sounds as straightforward as it gets. You stock your stores and warehouses with products you can sell to your customers.</description>
+     <pubDate>Wed, 17 Jul 2019 10:44:29 +0200</pubDate>
+ <dc:creator>Samantha Novick</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/inventory-management-tips</guid>
+  </item>
+  <item>
     <title>Discover the Customer Reviews module available in version 1.7.6 of PrestaShop!</title>
     <link>https://www.prestashop.com/en/blog/customer-reviews-module</link>
     <description>Reassurance on an online store plays a huge part in building trust between merchants and visitors.</description>
@@ -76,14 +84,6 @@
      <pubDate>Wed, 29 May 2019 15:27:55 +0200</pubDate>
  <dc:creator>JackieLong</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/everyday-artificial-intelligence</guid>
-  </item>
-  <item>
-    <title>E-Commerce SEO: How to Optimize Product Pages</title>
-    <link>https://www.prestashop.com/en/blog/e-commerce-optimize-product-pages</link>
-    <description>Did you know that 39% of all global e-commerce traffic comes from search?</description>
-     <pubDate>Tue, 28 May 2019 10:52:41 +0200</pubDate>
- <dc:creator>WebDesk</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/e-commerce-optimize-product-pages</guid>
   </item>
   </channel>
 </rss>

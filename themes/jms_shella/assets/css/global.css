@@ -264,6 +264,9 @@
       .banner-category .banner-content ul li a:hover {
         color: #141414; }
 
+.home_1 #jms_ajax_search .btn-search > span + i + span, .home_6 #jms_ajax_search .btn-search > span + i + span, .home_14 #jms_ajax_search .btn-search > span + i + span, .home_15 #jms_ajax_search .btn-search > span + i + span {
+  display: none !important; }
+
 #jms_ajax_search #search-form .close-search {
   background: #141414 url("../img/icon/close-search.png") no-repeat center; }
 

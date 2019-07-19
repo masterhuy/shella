@@ -45,11 +45,9 @@
     fill: #fff; }
 
 .page-index #footer {
+  border-top: 0;
   margin-top: 0; }
-
-#footer {
-  border-top: 0; }
-  #footer .footer-top {
+  .page-index #footer .footer-top {
     margin-bottom: 50px; }
 
 @media (max-width: 1366px) and (min-width: 1200px) {

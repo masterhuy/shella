@@ -16,11 +16,19 @@
 		color: #fff;
 	}
 }
-.jms-banner{
+.jms-banner.type-2{
+	&:hover > a img{
+		transform: scale3d(1.1,1.1,1) translate3d(0,-4%,0);
+	}
 	> a{
 		display: block;
 		overflow: hidden;
+		img{
+			transform: scale3d(1.1,1.1,1) translate3d(0,4%,0);
+		}
 	}
+}
+.jms-banner{
 	.banner-content{
 		position: unset;
 		text-align: center;

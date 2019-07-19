@@ -342,6 +342,11 @@
 //
 
 //close search
+.home_1, .home_6, .home_14, .home_15{
+	#jms_ajax_search .btn-search > span + i + span{
+	    display: none !important;
+	}
+}
 #jms_ajax_search #search-form .close-search{
 	background: #141414 url('../img/icon/close-search.png') no-repeat center;
 }

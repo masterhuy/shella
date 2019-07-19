@@ -25,8 +25,10 @@
 <nav class="pagination col-lg-12 col-sm-12 col-xs-12 col-md-12">
   <div class="col-md-6 col-sm-6 col-xs-6 left-pagination">
     {block name='pagination_summary'}
-    <span>{l s='%total%' d='Shop.Theme.Catalog' sprintf=['%from%' => $pagination.items_shown_from ,'%to%' => $pagination.items_shown_to, '%total%' => $pagination.total_items]}</span>
-      {l s='Products Found' d='Shop.Theme.Catalog'}
+    <span>
+      {l s='Showing' d='Shop.Theme.Catalog'}
+      {l s='%total%' d='Shop.Theme.Catalog' sprintf=['%from%' => $pagination.items_shown_from ,'%to%' => $pagination.items_shown_to, '%total%' => $pagination.total_items]}</span>
+      {l s='results' d='Shop.Theme.Catalog'}
     {/block}
   </div>
 
