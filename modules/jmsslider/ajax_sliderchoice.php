@@ -5,7 +5,7 @@
 * Slider Layer module for prestashop
 *
 *  @author    Joommasters <joommasters@gmail.com>
-*  @copyright 2007-2018 Joommasters
+*  @copyright 2007-2019 Joommasters
 *  @license   license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
 *  @Website: http://www.joommasters.com
 */
@@ -13,6 +13,13 @@
 include_once('../../config/config.inc.php');
 include_once('../../init.php');
 include_once('controller/slidercontroller.php');
+include_once('jmsslider.php');
+
+$module = new Jmsslider();
+
+if (!Tools::isSubmit('secure_key') || Tools::getValue('secure_key') != $module->secure_key) {
+    die(1);
+}
 
 $context = Context::getContext();
 function getDisplay($id_slider)

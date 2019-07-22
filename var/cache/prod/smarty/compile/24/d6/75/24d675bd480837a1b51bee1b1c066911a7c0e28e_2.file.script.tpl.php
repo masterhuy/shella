@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-07-19 06:29:13
+/* Smarty version 3.1.33, created on 2019-07-22 06:32:39
   from 'D:\xamppp\htdocs\jms_shella\modules\jmsslider\views\templates\hook\script.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d319b798dd029_73129000',
+  'unifunc' => 'content_5d3590c7457be4_59505847',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '24d675bd480837a1b51bee1b1c066911a7c0e28e' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_shella\\modules\\jmsslider\\views\\templates\\hook\\script.tpl',
-      1 => 1556089480,
+      1 => 1563530017,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d319b798dd029_73129000 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d3590c7457be4_59505847 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">
     $(window).load(function(){

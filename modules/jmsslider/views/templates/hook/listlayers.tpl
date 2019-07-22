@@ -4,38 +4,12 @@
 * Slider Layer module for prestashop
 *
 *  @author    Joommasters <joommasters@gmail.com>
-*  @copyright 2007-2018 Joommasters
+*  @copyright 2007-2019 Joommasters
 *  @license   license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
 *  @Website: http://www.joommasters.com
 *}
 
 <form id="layer_form" action="{$link->getAdminLink('AdminModules') nofilter}&configure=jmsslider&layer=1" method="post">
-<script>
-$(function() {
-                var $myLayers = $("#layers");
-                $myLayers.sortable({
-                    opacity: 0.6,
-                    cursor: "move",
-                    update: function() {
-                        var order = $(this).sortable("serialize") + "&action=updateLayersOrdering";
-                        $.post("{$root_url nofilter}modules/jmsslider/ajax_jmsslider.php?" + order);
-                        var temp = $(this).sortable("serialize").substring(9,200);
-                        var layerids = temp.split("&layers[]=");
-                        var i = 1;
-                        jQuery.each(layerids, function(index, value) {
-                            $("#caption_" + value).css("z-index",i);
-                            i++;
-                        });
-                    }
-                });
-                $myLayers.hover(function() {
-                    $(this).css("cursor","move");
-                    },
-                    function() {
-                    $(this).css("cursor","auto");
-                });
-            });
-</script>
 <div class="panel area-display">
 	<h3>
 	<span title="" data-toggle="tooltip" class="label-tooltip toogle" data-original-title="Click to Toggle" data-html="true">

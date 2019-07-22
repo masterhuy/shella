@@ -4,7 +4,7 @@
 * Slider Layer module for prestashop
 *
 *  @author    Joommasters <joommasters@gmail.com>
-*  @copyright 2007-2018 Joommasters
+*  @copyright 2007-2019 Joommasters
 *  @license   license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
 *  @Website: http://www.joommasters.com
 *}
@@ -15,7 +15,7 @@
                     opacity: 0.6,
                     cursor: "move",
                     update: function() {
-                        var order = $(this).sortable("serialize") + "&action=updateSlidesOrdering";
+                        var order = $(this).sortable("serialize") + "&action=updateSlidesOrdering&secure_key="+secure_key;
                         $.post("{$root_url nofilter}modules/jmsslider/ajax_jmsslider.php?" + order);
                         }
                     });

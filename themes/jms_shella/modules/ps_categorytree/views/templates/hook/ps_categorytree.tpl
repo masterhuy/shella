@@ -33,7 +33,7 @@
                             {$node.name}
                         </a>
                         {if $node.children}
-                            <span class="navbar-toggler collapse-icons" data-toggle="collapse" data-target="#exCollapsingNavbar{$node.id}">
+                            <span class="navbar-toggler collapse-icons collapsed" data-toggle="collapse" data-target="#exCollapsingNavbar{$node.id}">
                                 <i class="d-i-flex">
                                     <svg aria-hidden="true" focusable="false" role="presentation"
                                             class="icon icon-theme-229" viewBox="0 0 24 24">

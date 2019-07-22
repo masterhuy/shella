@@ -5,7 +5,7 @@
 * Slider Layer module for prestashop
 *
 *  @author    Joommasters <joommasters@gmail.com>
-*  @copyright 2007-2018 Joommasters
+*  @copyright 2007-2019 Joommasters
 *  @license   license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
 *  @Website: http://www.joommasters.com
 */
@@ -14,6 +14,12 @@ include_once('../../config/config.inc.php');
 include_once('../../init.php');
 include_once('jmsslider.php');
 
+
+$module = new Jmsslider();
+
+if (!Tools::isSubmit('secure_key') || Tools::getValue('secure_key') != $module->secure_key) {
+    die(1);
+}
 
 $context = Context::getContext();
 $slides = array();
@@ -128,15 +134,15 @@ if (Tools::getValue('action') == 'addLayer' && Tools::getValue('id_slide')) {
             UPDATE `'._DB_PREFIX_.'jms_slider` SET `order` = '.(int)$position.'
             WHERE `id_slider` = '.(int)$id_slider);
     }
-} elseif (Tools::getValue('action') == 'updateLayersOrdering' && Tools::getValue('layers')) {
-    $layers = Tools::getValue('layers');
-    foreach ($layers as $position => $id_layer) {
-        $res = Db::getInstance()->execute('
-            UPDATE `'._DB_PREFIX_.'jms_slides_layers` SET `data_order` = '.(int)$position.'
-            WHERE `id_layer` = '.(int)$id_layer);
-    }
-    $jms_layer = new LayerObject();
-    $jms_layer->clearCache();
+// } elseif (Tools::getValue('action') == 'updateLayersOrdering' && Tools::getValue('layers')) {
+//     $layers = Tools::getValue('layers');
+//     foreach ($layers as $position => $id_layer) {
+//         $res = Db::getInstance()->execute('
+//             UPDATE `'._DB_PREFIX_.'jms_slides_layers` SET `data_order` = '.(int)$position.'
+//             WHERE `id_layer` = '.(int)$id_layer);
+//     }
+//     $jms_layer = new LayerObject();
+//     $jms_layer->clearCache();
 } elseif (Tools::getValue('action') == 'quickEdit') {
     $res = array();
     $res['status'] = false;

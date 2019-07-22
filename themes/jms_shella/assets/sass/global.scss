@@ -3914,6 +3914,14 @@ a.wishlist_top{
 	}
 }
 @media (min-width: 768px){
+	.pagination div.left-pagination {
+	  text-align: center;
+	  color: #858585;
+	  position: absolute;
+	  top: -54px;
+	  left: 50%;
+	  transform: translateX(-50%);
+	}
 	.hidden-md-up {
 		display: none !important;
 	}

@@ -71,7 +71,7 @@
                 </i>
                 <span class="tooltip-wrap left">
 			       	<span class="tooltip-text">
-			      	 	{l s='Quick view' d='Shop.Theme.Actions'}
+			      	 	{l s='Quick View' d='Shop.Theme.Actions'}
 			   		</span>
 		       </span>
 			</a>

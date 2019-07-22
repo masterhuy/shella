@@ -26,7 +26,7 @@
 <style>
 	.jms-popup-wrap {
 		width : {$video_width}px;
-		height :{$video_height}px;				
+		height : {$video_height}px;				
 	}
 </style>
 

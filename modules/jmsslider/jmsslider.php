@@ -5,7 +5,7 @@
 * Slider Layer module for prestashop
 *
 *  @author    Joommasters <joommasters@gmail.com>
-*  @copyright 2007-2018 Joommasters
+*  @copyright 2007-2019 Joommasters
 *  @license   license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
 *  @Website: http://www.joommasters.com
 */
@@ -111,7 +111,15 @@ class Jmsslider extends Module
 
         $this->context->controller->addJqueryUI('ui.sortable');
     }
-
+    private function generalVariables()
+    {
+        $this->smarty->assign(
+            array(
+                'secure_key' => $this->secure_key,
+            )
+        );
+        return $this->display(__FILE__, 'variables.tpl');
+    }
     public function getContent()
     {
         $slider = new Slider($this);
@@ -119,6 +127,7 @@ class Jmsslider extends Module
         $this->context->controller->addJqueryUI('ui.draggable');
         $this->context->controller->addJqueryUI('ui.resizable');
         $this->headerHTML();
+        $this->_html .= $this->generalVariables();
         if (Tools::isSubmit('submitSlide') || Tools::isSubmit('submitLayer') || Tools::isSubmit('copySlide')) {
             $this->process();
         } elseif (Tools::isSubmit('changeSliderStatus') && Tools::isSubmit('id_slider')) {

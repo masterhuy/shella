@@ -122,3 +122,9 @@ body.toplevel_page_woo-notification {
     display: inline-flex;
     align-items: center;
 }
+
+@media (max-width: 481px){
+    #woorebought-popup{
+        width: calc(100% - 30px);
+    }
+}

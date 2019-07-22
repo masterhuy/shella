@@ -1360,18 +1360,6 @@ table td[class*="col-"], table table th[class*="col-"] {
 
 /* ----- */
 /********* BUTTON *******/
-.btn {
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  font-size: 16px;
-  letter-spacing: 0;
-  padding: 10px 20px;
-  text-transform: uppercase;
-  -webkit-box-shadow: 0 0 1px transparent;
-  box-shadow: 0 0 1px transparent; }
-.btn-black{
-  background: #000;
-}
 .btn-active{
   background: #141414;
   color: #fff;
@@ -2028,10 +2016,12 @@ ul.cart_block_list li:not(:last-child){
   opacity: 0;
   filter: alpha(opacity=0);
   pointer-events: none;
-  font-style: italic;
   letter-spacing: 0.5px;
   max-height: 15px;
-  line-height: 12px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
 }
 .tooltip-wrap.left{
   margin-right: 5px;
@@ -2063,7 +2053,6 @@ ul.cart_block_list li:not(:last-child){
   transform: translate(-50%, -50%) scale(0);
   bottom: -25px;
   top: auto;
-  z-index: 9;
 }
 .tooltip-wrap.top::after {
   border-left: 3px solid transparent;
@@ -2560,14 +2549,6 @@ li.product-flag {
 }
 .pagination div {
   padding: 0;
-}
-.pagination div.left-pagination {
-  text-align: center;
-  color: #858585;
-  position: absolute;
-  top: -54px;
-  left: 50%;
-  transform: translateX(-50%);
 }
 .pagination li {
   display: inline-block;

@@ -4,7 +4,7 @@
 * Slider Layer module for prestashop
 *
 *  @author    Joommasters <joommasters@gmail.com>
-*  @copyright 2007-2018 Joommasters
+*  @copyright 2007-2019 Joommasters
 *  @license   license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
 *  @Website: http://www.joommasters.com
 *}
@@ -37,7 +37,7 @@
 		 	class="slider" >
 		<div class="fs_loader"></div>
 		{foreach from=$slider->slides item=slide}
-			<div class="slide {$slide->class_suffix}" style="background:{$slide->bg_color} {if $slide->bg_type}url({$root_url nofilter}modules/jmsslider/views/img/slides/{$slide->bg_image nofilter}){/if} no-repeat center top;background-size:cover;" {if $slide->slide_link}onclick="document.location='{$slide->slide_link nofilter}';"{/if}>
+			<div class="slide {$slide->class_suffix}" style="background:{$slide->bg_color} {if $slide->bg_type}url({$root_url nofilter}modules/jmsslider/views/img/slides/{$slide->bg_image nofilter}){/if} no-repeat left top;background-size:cover;" {if $slide->slide_link}onclick="document.location='{$slide->slide_link nofilter}';"{/if}>
 				{foreach from=$slide->layers item=layer}
 					{if $layer->data_type=='text'}
 					<div class="{$layer->data_class_suffix nofilter} jms-slide-content"

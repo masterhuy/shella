@@ -28,10 +28,11 @@
     <section id="products">
 			{if $page.page_name=="category"}
 				{if isset($category.image.bySize.category_default.url) && {$category.image.bySize.category_default.url} != ""}
-					
+					{if $jpb_productperrow < 5}
           <div class="image-banner-category">
             <img class="img-responsive" src="{$category.image.bySize.category_default.url}" alt="">
           </div>
+          {/if}
 				{/if}
 			{/if}
       <div class="cat_desc">

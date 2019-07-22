@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>PSD2 Is Coming to the EU – Are You Ready?</title>
+    <link>https://www.prestashop.com/en/blog/psd2-coming-to-eu</link>
+    <description>Companies that sell in the European Union have dealt with many changes over the years to payment services, cross-market regulations, and individual country mandates.</description>
+     <pubDate>Fri, 19 Jul 2019 14:11:59 +0200</pubDate>
+ <dc:creator>ns8</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/psd2-coming-to-eu</guid>
+  </item>
+  <item>
     <title>Essential inventory management tips for eCommerce businesses</title>
     <link>https://www.prestashop.com/en/blog/inventory-management-tips</link>
     <description>Inventory management sounds as straightforward as it gets. You stock your stores and warehouses with products you can sell to your customers.</description>
@@ -76,14 +84,6 @@
      <pubDate>Mon, 03 Jun 2019 20:54:20 +0200</pubDate>
  <dc:creator>MLNielsen</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/prestashop-checkout</guid>
-  </item>
-  <item>
-    <title>Everyday AI</title>
-    <link>https://www.prestashop.com/en/blog/everyday-artificial-intelligence</link>
-    <description>The way most people picture artificial intelligence are futuristic robots with human-like features that exist alongside us.</description>
-     <pubDate>Wed, 29 May 2019 15:27:55 +0200</pubDate>
- <dc:creator>JackieLong</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/everyday-artificial-intelligence</guid>
   </item>
   </channel>
 </rss>

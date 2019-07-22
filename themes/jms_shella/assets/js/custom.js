@@ -1022,6 +1022,8 @@ $(document).ready(function() {
     	}
     });
 
+    
+
 	if(initialLoad){
 		setTimeout(function() {
 			jQuery('.preloader').fadeOut();
