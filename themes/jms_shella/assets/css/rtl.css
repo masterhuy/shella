@@ -1930,8 +1930,26 @@ blockquote {
   padding-right: 91px;
   padding-left: 0;
 }
-
-
+.product-detail.sticky.fixed-right-column .pb-right-column .product-cover {
+  margin-left: 15px;
+  margin-right: 0;
+}
+.product-detail.sticky.fixed-right-column .pb-right-column .pd-name{
+  margin-left: 20px;
+  margin-right: 0;
+}
+.product-detail.sticky.fixed-right-column .pb-right-column .product-variants {
+  margin-left: 65px;
+  margin-right: 0;
+}
+.product-detail.sticky.fixed-right-column .pb-right-column .product-add-to-cart .product-quantity .add .row > div {
+  padding-left: 0;
+  padding-right: 20px;
+}
+.product-detail.sticky.fixed-right-column .pb-right-column .product-information{
+  margin-right: auto;
+  margin-left: 0;
+}
 
 
 

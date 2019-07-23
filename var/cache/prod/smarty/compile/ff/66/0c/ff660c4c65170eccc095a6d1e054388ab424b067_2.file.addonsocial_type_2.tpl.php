@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-07-22 06:31:06
+/* Smarty version 3.1.33, created on 2019-07-23 06:22:58
   from 'D:\xamppp\htdocs\jms_shella\themes\jms_shella\modules\jmspagebuilder\views\templates\hook\addonsocial_type_2.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d35906ae68c54_01220697',
+  'unifunc' => 'content_5d36e002309915_42198693',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d35906ae68c54_01220697 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d36e002309915_42198693 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="addon-social">
     <?php if ($_smarty_tpl->tpl_vars['addon_title']->value) {?>
         <div class="addon-title">

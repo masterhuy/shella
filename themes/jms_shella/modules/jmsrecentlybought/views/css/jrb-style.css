@@ -127,4 +127,7 @@ body.toplevel_page_woo-notification {
     #woorebought-popup{
         width: calc(100% - 30px);
     }
+    #woorebought-popup p a{
+        max-width: 100%;
+    }
 }

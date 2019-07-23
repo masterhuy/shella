@@ -29,7 +29,16 @@
       <ul id="gal1" class="product-images js-qv-product-images">
         {foreach from=$product.images item=image}
         <div class="product-cover-horizontal">
-          <img class="zoom_01 js-qv-product-cover" src="{$image.bySize.large_default.url}" alt="{$product.cover.legend}" title="{$product.cover.legend}" style="width:100%;" itemprop="image">
+          <img
+                            class="thumb js-thumb cursor-pointer {if $image.id_image == $product.cover.id_image} selected {/if}"
+                            data-image-medium-src="{$image.bySize.medium_default.url}"
+                            data-image-large-src="{$image.bySize.large_default.url}"
+                            src="{$image.bySize.large_default.url}"
+                            alt="{$image.legend}"
+                            title="{$image.legend}"
+                            width="100%"
+                            itemprop="image"
+                        >
         </div>
         {/foreach}
       </ul>

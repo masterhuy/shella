@@ -308,10 +308,12 @@
     margin-right: 10px;
     position: relative;
 }
-.product-variants-item.size ul li{
+.product-variants-item.size ul li,
+.product-variants-item.taille ul li{
     display: inline-flex;
 }
-.product-variants-item.size input {
+.product-variants-item.size input,
+.product-variants-item.taille input {
     margin-top: 0;
     position: absolute;
     opacity: 0;
@@ -407,6 +409,7 @@
     width: 35px;
     height: 35px;
     display: inline-block;
+    border: 1px solid #e5e5e5;
 }
 .product-quantity button.btn-touchspin:hover{
     background-color: transparent;
@@ -759,7 +762,7 @@
 }
 .thumbnails.js-thumbnails{
 	height: 100%;
-	left: calc(100% + 20px);
+	left: calc(100% + 10px);
 	position: absolute;
 	top: 0;
 	padding:40px 0;

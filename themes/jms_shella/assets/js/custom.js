@@ -1001,6 +1001,21 @@ jQuery(function ($) {
 			$("#back-to-top").removeClass('show');
 		}
     });
+
+    $(window).scroll(function () {
+		if ($(document).scrollTop() >= 500) {
+			$(".product-detail.sticky").addClass('fixed-right-column');			
+		} else if ($(document).scrollTop() < 500) {
+			$(".product-detail.sticky").removeClass('fixed-right-column');
+		}
+    });
+
+    if ($(".product-detail").hasClass("sticky")){
+		$("#footer").addClass('mb-80');
+    } else{
+    	$("#footer").removeClass('mb-80');
+    }
+
 });
 
 $(window).load(function () {     
